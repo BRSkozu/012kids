@@ -177,6 +177,13 @@ export default async function ArticlePage({ params }: PageProps) {
               </div>
               <p className="text-sm text-blue-700">{article.source.perspectives.positive}</p>
             </div>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center text-gray-700 text-xs font-bold">=</span>
+                <p className="text-sm font-medium text-gray-700">中立的な見方</p>
+              </div>
+              <p className="text-sm text-gray-600">{article.source.perspectives.neutral}</p>
+            </div>
             {article.source.perspectives.cautious && (
               <div className="bg-amber-50 border border-amber-100 rounded-lg p-4">
                 <div className="flex items-center gap-2 mb-2">

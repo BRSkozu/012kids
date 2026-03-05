@@ -61,7 +61,8 @@ export interface ArticleSource {
   references: ArticleReference[];
   perspectives?: {
     positive: string;
-    cautious?: string;
+    neutral: string;
+    cautious: string;
   };
 }
 
