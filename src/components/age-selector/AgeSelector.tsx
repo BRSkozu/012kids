@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AGE_STAGES } from '@/data/stages';
 import { getStageByAge } from '@/data/stages';
+import GrowthBarIllustration from '@/components/illustrations/GrowthBarIllustration';
 
 export default function AgeSelector() {
   const [age, setAge] = useState<number | null>(null);
@@ -28,15 +29,24 @@ export default function AgeSelector() {
     <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-amber-50 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-[var(--color-primary)] mb-4">
-            012<span className="text-gray-400">.kids</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            0歳から12歳の子育てに役立つ情報を
-            <br className="hidden md:block" />
-            わかりやすくまとめてお届けします
-          </p>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-12">
+          <GrowthBarIllustration size={180} animate className="shrink-0" />
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl font-bold mb-3">
+              <span className="text-[#A0C4FF]">0</span>
+              <span className="text-[#7BC67E]">1</span>
+              <span className="text-[#E8943D]">2</span>
+              <span className="text-gray-400">.kids</span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-md">
+              0歳から12歳の子育てに役立つ情報を
+              <br className="hidden md:block" />
+              わかりやすくまとめてお届けします
+            </p>
+            <p className="mt-3 text-sm text-gray-400">
+              公的機関・専門家の情報をもとに、信頼度スコア付きでお届け
+            </p>
+          </div>
         </div>
 
         {/* Age Selector */}
