@@ -601,10 +601,9 @@ export const ARTICLES: Article[] = [
       name: '中学受験・進学に関する各種情報',
       references: [
         { title: '学校基本調査', url: 'https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/', org: '文部科学省', stance: 'neutral' },
-        { title: '子どもの学習費調査', url: 'https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/', org: '文部科学省', stance: 'neutral' },
+        { title: '子どもの学習費調査（公立・私立の比較）', url: 'https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/', org: '文部科学省', stance: 'neutral' },
         { title: '子どもの生活と学びに関する親子調査（進路選択）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所', stance: 'neutral' },
         { title: '小学校学習指導要領（公立中学への接続）', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm', org: '文部科学省', stance: 'positive' },
-        { title: '子どもの学習費調査（公私比較）', url: 'https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/', org: '文部科学省', stance: 'neutral' },
         { title: 'こころの情報サイト（子どものストレス）', url: 'https://kokoro.ncnp.go.jp/', org: '国立精神・神経医療研究センター', stance: 'cautious' },
       ],
       perspectives: {
