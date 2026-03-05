@@ -205,7 +205,11 @@ export default async function ArticlePage({ params }: PageProps) {
           <ul className="space-y-2">
             {article.source.references.map((ref, i) => (
               <li key={i} className="text-sm flex items-start gap-2">
-                <span className="mt-1 w-2 h-2 rounded-full flex-shrink-0 bg-gray-300" />
+                <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${
+                  ref.stance === 'positive' ? 'bg-blue-400' :
+                  ref.stance === 'cautious' ? 'bg-amber-400' :
+                  'bg-gray-400'
+                }`} />
                 <div>
                   <a
                     href={ref.url}

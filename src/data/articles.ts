@@ -45,12 +45,12 @@ export const ARTICLES: Article[] = [
     source: {
       name: '乳幼児の睡眠に関する公的ガイドライン等',
       references: [
-        { title: '健康づくりのための睡眠ガイド2023', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html', org: '厚生労働省' },
-        { title: '健やか親子21（第2次）', url: 'https://sukoyaka21.cfa.go.jp/', org: 'こども家庭庁' },
-        { title: '乳児の安全な睡眠環境の確保に関する見解（2024年改訂）', url: 'https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=160', org: '日本小児科学会' },
-        { title: '子どもとメディア — スマホに子守りをさせないで', url: 'https://www.jpa-web.org/information/sumaho.html', org: '日本小児科医会' },
-        { title: 'Guidelines on physical activity, sedentary behaviour and sleep', url: 'https://www.who.int/publications/i/item/9789241550536', org: 'WHO' },
-        { title: '保育環境の整備に関する提言', url: 'https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=64', org: '日本小児科学会' },
+        { title: '健康づくりのための睡眠ガイド2023', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/index.html', org: '厚生労働省', stance: 'positive' },
+        { title: '健やか親子21（第2次）', url: 'https://sukoyaka21.cfa.go.jp/', org: 'こども家庭庁', stance: 'positive' },
+        { title: '乳児の安全な睡眠環境の確保に関する見解（2024年改訂）', url: 'https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=160', org: '日本小児科学会', stance: 'cautious' },
+        { title: '子どもとメディア — スマホに子守りをさせないで', url: 'https://www.jpa-web.org/information/sumaho.html', org: '日本小児科医会', stance: 'cautious' },
+        { title: 'Guidelines on physical activity, sedentary behaviour and sleep', url: 'https://www.who.int/publications/i/item/9789241550536', org: 'WHO', stance: 'neutral' },
+        { title: '保育環境の整備に関する提言', url: 'https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=64', org: '日本小児科学会', stance: 'neutral' },
       ],
       perspectives: {
         positive: '国内外の多くの機関が、月齢に応じた睡眠時間の目安と睡眠環境の整備を推奨しています。',
@@ -108,12 +108,12 @@ export const ARTICLES: Article[] = [
     source: {
       name: '離乳食に関する公的ガイドライン等',
       references: [
-        { title: '授乳・離乳の支援ガイド（2019年改定版）', url: 'https://www.mhlw.go.jp/stf/newpage_04250.html', org: '厚生労働省' },
-        { title: '食物アレルギー診療ガイドライン2021', url: 'https://www.jspaci.jp/guide2021/', org: '日本小児アレルギー学会' },
-        { title: '幼児期の健やかな発育のための栄養・食生活支援ガイド', url: 'https://www.niph.go.jp/soshiki/07shougai/youjishokuguide/YoujiShokuGuideKakutei.pdf', org: '国立保健医療科学院' },
-        { title: '乳幼児栄養調査結果', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000134208.html', org: '厚生労働省' },
-        { title: 'Complementary Feeding', url: 'https://www.who.int/health-topics/complementary-feeding', org: 'WHO' },
-        { title: 'ナッツ類も離乳食初期から摂取が可能（早期導入研究）', url: 'https://www.ncchd.go.jp/press/2024/0613.html', org: '国立成育医療研究センター' },
+        { title: '授乳・離乳の支援ガイド（2019年改定版）', url: 'https://www.mhlw.go.jp/stf/newpage_04250.html', org: '厚生労働省', stance: 'positive' },
+        { title: '食物アレルギー診療ガイドライン2021', url: 'https://www.jspaci.jp/guide2021/', org: '日本小児アレルギー学会', stance: 'cautious' },
+        { title: '幼児期の健やかな発育のための栄養・食生活支援ガイド', url: 'https://www.niph.go.jp/soshiki/07shougai/youjishokuguide/YoujiShokuGuideKakutei.pdf', org: '国立保健医療科学院', stance: 'neutral' },
+        { title: '乳幼児栄養調査結果', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000134208.html', org: '厚生労働省', stance: 'neutral' },
+        { title: 'Complementary Feeding', url: 'https://www.who.int/health-topics/complementary-feeding', org: 'WHO', stance: 'positive' },
+        { title: 'ナッツ類も離乳食初期から摂取が可能（早期導入研究）', url: 'https://www.ncchd.go.jp/press/2024/0613.html', org: '国立成育医療研究センター', stance: 'cautious' },
       ],
       perspectives: {
         positive: '厚生労働省のガイドラインでは生後5〜6ヶ月頃の開始が推奨されており、多くの機関が段階的な進め方を提唱しています。',
@@ -160,11 +160,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '乳幼児の発達に関する専門情報',
       references: [
-        { title: '乳幼児健康診査身体診察マニュアル', url: 'https://www.ncchd.go.jp/center/activity/kokoro/manual.html', org: '国立成育医療研究センター' },
-        { title: '母子健康手帳の改正について', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/kenkou-04.html', org: '厚生労働省' },
-        { title: '学会からの提言・主張（発達関連）', url: 'https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=27', org: '日本小児科学会' },
-        { title: 'Child Growth Standards', url: 'https://www.who.int/tools/child-growth-standards', org: 'WHO' },
-        { title: '発達についてのよくある質問（乳幼児期の早期発見FAQ）', url: 'https://www.rehab.go.jp/ddis/aware/baby/faq/', org: '発達障害情報・支援センター' },
+        { title: '乳幼児健康診査身体診察マニュアル', url: 'https://www.ncchd.go.jp/center/activity/kokoro/manual.html', org: '国立成育医療研究センター', stance: 'positive' },
+        { title: '母子健康手帳の改正について', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/kenkou-04.html', org: '厚生労働省', stance: 'neutral' },
+        { title: '学会からの提言・主張（発達関連）', url: 'https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=27', org: '日本小児科学会', stance: 'positive' },
+        { title: 'Child Growth Standards', url: 'https://www.who.int/tools/child-growth-standards', org: 'WHO', stance: 'neutral' },
+        { title: '発達についてのよくある質問（乳幼児期の早期発見FAQ）', url: 'https://www.rehab.go.jp/ddis/aware/baby/faq/', org: '発達障害情報・支援センター', stance: 'cautious' },
       ],
       perspectives: {
         positive: '各種ガイドラインでは月齢ごとの発達の目安を示し、乳幼児健診での確認を推奨しています。',
@@ -230,11 +230,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '幼児教育に関する各種研究・情報',
       references: [
-        { title: '幼稚園教育要領', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/', org: '文部科学省' },
-        { title: '幼児教育の実践の質向上に関する検討会', url: 'https://www.mext.go.jp/b_menu/shingi/chousa/shotou/140/index.htm', org: '文部科学省' },
-        { title: '第6回 幼児の生活アンケート（遊び・学び）', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=5851', org: 'ベネッセ教育総合研究所' },
-        { title: '幼児教育研究センター（幼小接続・遊びと学び）', url: 'https://www.nier.go.jp/youji_kyouiku_kenkyuu_center/y_index.html', org: '国立教育政策研究所' },
-        { title: 'Learning through play', url: 'https://www.unicef.org/early-childhood-development', org: 'UNICEF' },
+        { title: '幼稚園教育要領', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/', org: '文部科学省', stance: 'positive' },
+        { title: '幼児教育の実践の質向上に関する検討会', url: 'https://www.mext.go.jp/b_menu/shingi/chousa/shotou/140/index.htm', org: '文部科学省', stance: 'cautious' },
+        { title: '第6回 幼児の生活アンケート（遊び・学び）', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=5851', org: 'ベネッセ教育総合研究所', stance: 'neutral' },
+        { title: '幼児教育研究センター（幼小接続・遊びと学び）', url: 'https://www.nier.go.jp/youji_kyouiku_kenkyuu_center/y_index.html', org: '国立教育政策研究所', stance: 'neutral' },
+        { title: 'Learning through play', url: 'https://www.unicef.org/early-childhood-development', org: 'UNICEF', stance: 'positive' },
       ],
       perspectives: {
         positive: '国内外の研究で、幼児期の遊びが認知発達・社会性・創造力の基盤になることが広く支持されています。',
@@ -284,11 +284,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '幼稚園・保育園に関する公的情報',
       references: [
-        { title: '幼稚園教育要領（平成29年告示）', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/', org: '文部科学省' },
-        { title: '子ども・子育て支援新制度について', url: 'https://www8.cao.go.jp/shoushi/shinseido/', org: '内閣府' },
-        { title: '保育所保育指針', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html', org: '厚生労働省' },
-        { title: '認定こども園に関する情報', url: 'https://www8.cao.go.jp/shoushi/kodomoen/', org: '内閣府' },
-        { title: '幼児期の健やかな発育のための栄養・食生活支援ガイド（園の活用含む）', url: 'https://www.niph.go.jp/soshiki/07shougai/youjishokuguide/YoujiShokuGuideKakutei.pdf', org: '国立保健医療科学院' },
+        { title: '幼稚園教育要領（平成29年告示）', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/', org: '文部科学省', stance: 'positive' },
+        { title: '子ども・子育て支援新制度について', url: 'https://www8.cao.go.jp/shoushi/shinseido/', org: '内閣府', stance: 'neutral' },
+        { title: '保育所保育指針', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html', org: '厚生労働省', stance: 'positive' },
+        { title: '認定こども園に関する情報', url: 'https://www8.cao.go.jp/shoushi/kodomoen/', org: '内閣府', stance: 'neutral' },
+        { title: '幼児期の健やかな発育のための栄養・食生活支援ガイド（園の活用含む）', url: 'https://www.niph.go.jp/soshiki/07shougai/youjishokuguide/YoujiShokuGuideKakutei.pdf', org: '国立保健医療科学院', stance: 'cautious' },
       ],
       perspectives: {
         positive: '各自治体や公的機関は、教育方針・安全対策・職員配置などを総合的にチェックすることを推奨しています。',
@@ -344,12 +344,12 @@ export const ARTICLES: Article[] = [
     source: {
       name: '食物アレルギーに関するガイドライン等',
       references: [
-        { title: '食物アレルギー診療ガイドライン2021', url: 'https://www.jspaci.jp/guide2021/', org: '日本小児アレルギー学会' },
-        { title: 'アレルギー疾患対策の推進に関する基本的な指針', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/allergy/', org: '厚生労働省' },
-        { title: 'アレルギーセンター 研究成果（早期介入・食物アレルギー予防）', url: 'https://www.ncchd.go.jp/hospital/about/section/allergy/allergy_achievement.html', org: '国立成育医療研究センター' },
-        { title: '就学時の健康診断マニュアル（アレルギー含む）', url: 'https://www.gakkohoken.jp/books/archives/205', org: '日本学校保健会' },
-        { title: 'LEAP Study（早期導入に関する研究）', url: 'https://www.leapstudy.co.uk/', org: 'King\'s College London' },
-        { title: '保育所におけるアレルギー対応ガイドライン', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/', org: '厚生労働省' },
+        { title: '食物アレルギー診療ガイドライン2021', url: 'https://www.jspaci.jp/guide2021/', org: '日本小児アレルギー学会', stance: 'positive' },
+        { title: 'アレルギー疾患対策の推進に関する基本的な指針', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/allergy/', org: '厚生労働省', stance: 'positive' },
+        { title: 'アレルギーセンター 研究成果（早期介入・食物アレルギー予防）', url: 'https://www.ncchd.go.jp/hospital/about/section/allergy/allergy_achievement.html', org: '国立成育医療研究センター', stance: 'cautious' },
+        { title: '就学時の健康診断マニュアル（アレルギー含む）', url: 'https://www.gakkohoken.jp/books/archives/205', org: '日本学校保健会', stance: 'neutral' },
+        { title: 'LEAP Study（早期導入に関する研究）', url: 'https://www.leapstudy.co.uk/', org: 'King\'s College London', stance: 'cautious' },
+        { title: '保育所におけるアレルギー対応ガイドライン', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/', org: '厚生労働省', stance: 'neutral' },
       ],
       perspectives: {
         positive: '診断には食物経口負荷試験が最も信頼性が高いとされ、正しい除去と定期的な再評価が推奨されています。',
@@ -396,11 +396,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '小学校入学に関する公的情報',
       references: [
-        { title: '小学校学習指導要領（平成29年告示）', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm', org: '文部科学省' },
-        { title: '幼児教育と小学校教育の円滑な接続（スタートカリキュラム）', url: 'https://www.mext.go.jp/a_menu/shotou/youchien/', org: '文部科学省' },
-        { title: '幼児期から中学生の家庭教育調査・縦断調査', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=3684', org: 'ベネッセ教育総合研究所' },
-        { title: '就学時の健康診断マニュアル 平成29年度改訂', url: 'https://www.gakkohoken.jp/books/archives/205', org: '日本学校保健会' },
-        { title: 'スタートカリキュラム スタートブック（幼小接続）', url: 'https://www.nier.go.jp/kaihatsu/pdf/startcurriculum_mini.pdf', org: '国立教育政策研究所' },
+        { title: '小学校学習指導要領（平成29年告示）', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm', org: '文部科学省', stance: 'positive' },
+        { title: '幼児教育と小学校教育の円滑な接続（スタートカリキュラム）', url: 'https://www.mext.go.jp/a_menu/shotou/youchien/', org: '文部科学省', stance: 'positive' },
+        { title: '幼児期から中学生の家庭教育調査・縦断調査', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=3684', org: 'ベネッセ教育総合研究所', stance: 'neutral' },
+        { title: '就学時の健康診断マニュアル 平成29年度改訂', url: 'https://www.gakkohoken.jp/books/archives/205', org: '日本学校保健会', stance: 'neutral' },
+        { title: 'スタートカリキュラム スタートブック（幼小接続）', url: 'https://www.nier.go.jp/kaihatsu/pdf/startcurriculum_mini.pdf', org: '国立教育政策研究所', stance: 'cautious' },
       ],
       perspectives: {
         positive: '文部科学省は「スタートカリキュラム」を通じて、幼稚園・保育園と小学校の接続を重視しています。基本的な生活習慣の定着が推奨されています。',
@@ -447,11 +447,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '家庭学習に関する教育研究等',
       references: [
-        { title: '全国学力・学習状況調査の結果', url: 'https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html', org: '国立教育政策研究所' },
-        { title: '子どもの生活と学びに関する親子調査', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所' },
-        { title: '小学校学習指導要領 総則', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm', org: '文部科学省' },
-        { title: '生徒指導リーフシリーズ（学習習慣）', url: 'https://www.nier.go.jp/shido/leaf/index.html', org: '国立教育政策研究所' },
-        { title: '第6回 幼児の生活アンケート（家庭教育の影響）', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=5851', org: 'ベネッセ教育総合研究所' },
+        { title: '全国学力・学習状況調査の結果', url: 'https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html', org: '国立教育政策研究所', stance: 'positive' },
+        { title: '子どもの生活と学びに関する親子調査', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所', stance: 'neutral' },
+        { title: '小学校学習指導要領 総則', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm', org: '文部科学省', stance: 'positive' },
+        { title: '生徒指導リーフシリーズ（学習習慣）', url: 'https://www.nier.go.jp/shido/leaf/index.html', org: '国立教育政策研究所', stance: 'neutral' },
+        { title: '第6回 幼児の生活アンケート（家庭教育の影響）', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=5851', org: 'ベネッセ教育総合研究所', stance: 'cautious' },
       ],
       perspectives: {
         positive: '全国学力調査のデータでは、家庭学習の習慣がある児童は学力が高い傾向にあることが示されています。',
@@ -501,11 +501,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '習い事・課外活動に関する各種調査',
       references: [
-        { title: '子どもの生活と学びに関する親子調査（学校外活動）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所' },
-        { title: '小学生白書Web版（習い事ランキング）', url: 'https://www.gakken.co.jp/kyouikusouken/whitepaper/index.html', org: '学研教育総合研究所' },
-        { title: '令和5年度 全国体力・運動能力、運動習慣等調査', url: 'https://www.mext.go.jp/sports/b_menu/toukei/kodomo/zencyo/1411922_00004.html', org: 'スポーツ庁' },
-        { title: '第6回 幼児の生活アンケート（習い事）', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=5851', org: 'ベネッセ教育総合研究所' },
-        { title: '子どもの生活と学びに関する親子調査2016（学校外学習）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5095', org: 'ベネッセ教育総合研究所' },
+        { title: '子どもの生活と学びに関する親子調査（学校外活動）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所', stance: 'neutral' },
+        { title: '小学生白書Web版（習い事ランキング）', url: 'https://www.gakken.co.jp/kyouikusouken/whitepaper/index.html', org: '学研教育総合研究所', stance: 'neutral' },
+        { title: '令和5年度 全国体力・運動能力、運動習慣等調査', url: 'https://www.mext.go.jp/sports/b_menu/toukei/kodomo/zencyo/1411922_00004.html', org: 'スポーツ庁', stance: 'positive' },
+        { title: '第6回 幼児の生活アンケート（習い事）', url: 'https://berd.benesse.jp/jisedai/research/detail1.php?id=5851', org: 'ベネッセ教育総合研究所', stance: 'cautious' },
+        { title: '子どもの生活と学びに関する親子調査2016（学校外学習）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5095', org: 'ベネッセ教育総合研究所', stance: 'positive' },
       ],
       perspectives: {
         positive: '適切な習い事は、子どもの自信や社会性の発達に寄与するとされています。特にスポーツ系は体力向上に効果的です。',
@@ -552,12 +552,12 @@ export const ARTICLES: Article[] = [
     source: {
       name: 'スクリーンタイムに関する国際的ガイドライン',
       references: [
-        { title: 'Guidelines on physical activity, sedentary behaviour and sleep for children under 5', url: 'https://www.who.int/publications/i/item/9789241550536', org: 'WHO' },
-        { title: 'Media and Young Minds (Policy Statement)', url: 'https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/', org: '米国小児科学会 (AAP)' },
-        { title: '青少年のインターネット利用環境実態調査', url: 'https://www8.cao.go.jp/youth/kankyou/internet_torikumi/', org: '内閣府' },
-        { title: '子どもとメディアに関する提言全文', url: 'https://www.jpa-web.org/dcms_media/other/ktmedia_teigenzenbun.pdf', org: '日本小児科医会' },
-        { title: 'デジタル社会の子育て啓発資料2024', url: 'https://www.jpa-web.org/dcms_media/other/digital_kosodate2024.pdf', org: '日本小児科医会' },
-        { title: '子どもとスマホ・メディア（スマホに子守りをさせないで）', url: 'https://www.jpa-web.org/information/sumaho.html', org: '日本小児科医会' },
+        { title: 'Guidelines on physical activity, sedentary behaviour and sleep for children under 5', url: 'https://www.who.int/publications/i/item/9789241550536', org: 'WHO', stance: 'cautious' },
+        { title: 'Media and Young Minds (Policy Statement)', url: 'https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/', org: '米国小児科学会 (AAP)', stance: 'cautious' },
+        { title: '青少年のインターネット利用環境実態調査', url: 'https://www8.cao.go.jp/youth/kankyou/internet_torikumi/', org: '内閣府', stance: 'neutral' },
+        { title: '子どもとメディアに関する提言全文', url: 'https://www.jpa-web.org/dcms_media/other/ktmedia_teigenzenbun.pdf', org: '日本小児科医会', stance: 'cautious' },
+        { title: 'デジタル社会の子育て啓発資料2024', url: 'https://www.jpa-web.org/dcms_media/other/digital_kosodate2024.pdf', org: '日本小児科医会', stance: 'neutral' },
+        { title: '子どもとスマホ・メディア（スマホに子守りをさせないで）', url: 'https://www.jpa-web.org/information/sumaho.html', org: '日本小児科医会', stance: 'positive' },
       ],
       perspectives: {
         positive: 'デジタルメディアを「教育的に質の高いコンテンツ」「親子で一緒に」使う場合は、学びのツールとなりうるという見方もあります。',
@@ -610,11 +610,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '中学受験・進学に関する各種情報',
       references: [
-        { title: '学校基本調査', url: 'https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/', org: '文部科学省' },
-        { title: '子どもの学習費調査（公立・私立の比較）', url: 'https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/', org: '文部科学省' },
-        { title: '子どもの生活と学びに関する親子調査（進路選択）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所' },
-        { title: '小学校学習指導要領（公立中学への接続）', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm', org: '文部科学省' },
-        { title: 'こころの情報サイト（子どものストレス）', url: 'https://kokoro.ncnp.go.jp/', org: '国立精神・神経医療研究センター' },
+        { title: '学校基本調査', url: 'https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/', org: '文部科学省', stance: 'neutral' },
+        { title: '子どもの学習費調査（公立・私立の比較）', url: 'https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/', org: '文部科学省', stance: 'neutral' },
+        { title: '子どもの生活と学びに関する親子調査（進路選択）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所', stance: 'positive' },
+        { title: '小学校学習指導要領（公立中学への接続）', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm', org: '文部科学省', stance: 'positive' },
+        { title: 'こころの情報サイト（子どものストレス）', url: 'https://kokoro.ncnp.go.jp/', org: '国立精神・神経医療研究センター', stance: 'cautious' },
       ],
       perspectives: {
         positive: '私立中学は一貫教育や少人数制のメリットがあり、公立中学は多様性や地域との繋がりが強みとされています。どちらにも教育的な価値があります。',
@@ -660,11 +660,11 @@ export const ARTICLES: Article[] = [
     source: {
       name: '自主学習・学習指導に関する公的情報',
       references: [
-        { title: '学習指導要領「主体的・対話的で深い学び」', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/', org: '文部科学省' },
-        { title: '教育課程研究センター（主体的な学び研究）', url: 'https://www.nier.go.jp/04_kenkyu_annai/div08-katei.html', org: '国立教育政策研究所' },
-        { title: '子どもの生活と学びに関する親子調査（学習意欲）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所' },
-        { title: '全国学力・学習状況調査（家庭学習と学力の関連）', url: 'https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html', org: '国立教育政策研究所' },
-        { title: '生徒指導リーフシリーズ（学習動機づけ）', url: 'https://www.nier.go.jp/shido/leaf/index.html', org: '国立教育政策研究所' },
+        { title: '学習指導要領「主体的・対話的で深い学び」', url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/', org: '文部科学省', stance: 'positive' },
+        { title: '教育課程研究センター（主体的な学び研究）', url: 'https://www.nier.go.jp/04_kenkyu_annai/div08-katei.html', org: '国立教育政策研究所', stance: 'neutral' },
+        { title: '子どもの生活と学びに関する親子調査（学習意欲）', url: 'https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438', org: '東京大学社会科学研究所・ベネッセ教育総合研究所', stance: 'neutral' },
+        { title: '全国学力・学習状況調査（家庭学習と学力の関連）', url: 'https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html', org: '国立教育政策研究所', stance: 'positive' },
+        { title: '生徒指導リーフシリーズ（学習動機づけ）', url: 'https://www.nier.go.jp/shido/leaf/index.html', org: '国立教育政策研究所', stance: 'cautious' },
       ],
       perspectives: {
         positive: '「主体的な学び」は新学習指導要領の柱であり、自分で計画・実行・振り返りする力の育成が重視されています。',
@@ -718,12 +718,12 @@ export const ARTICLES: Article[] = [
     source: {
       name: 'いじめ防止に関する公的情報',
       references: [
-        { title: 'いじめ防止対策推進法', url: 'https://www.mext.go.jp/a_menu/shotou/seitoshidou/1337278.htm', org: '文部科学省' },
-        { title: '児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査', url: 'https://www.mext.go.jp/b_menu/toukei/chousa01/shidou/', org: '文部科学省' },
-        { title: '子どもの人権110番', url: 'https://www.moj.go.jp/JINKEN/jinken112.html', org: '法務省' },
-        { title: '24時間子供SOSダイヤル', url: 'https://www.mext.go.jp/a_menu/shotou/seitoshidou/06112210.htm', org: '文部科学省' },
-        { title: 'いじめ重大事態に関する第三者委員会への提言', url: 'https://child-adolesc.jp/proposal/20180617/', org: '日本児童青年精神医学会' },
-        { title: 'いじめ追跡調査2019-2022', url: 'https://www.nier.go.jp/shido/centerhp/sien/sien04.html', org: '国立教育政策研究所' },
+        { title: 'いじめ防止対策推進法', url: 'https://www.mext.go.jp/a_menu/shotou/seitoshidou/1337278.htm', org: '文部科学省', stance: 'positive' },
+        { title: '児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査', url: 'https://www.mext.go.jp/b_menu/toukei/chousa01/shidou/', org: '文部科学省', stance: 'neutral' },
+        { title: '子どもの人権110番', url: 'https://www.moj.go.jp/JINKEN/jinken112.html', org: '法務省', stance: 'positive' },
+        { title: '24時間子供SOSダイヤル', url: 'https://www.mext.go.jp/a_menu/shotou/seitoshidou/06112210.htm', org: '文部科学省', stance: 'positive' },
+        { title: 'いじめ重大事態に関する第三者委員会への提言', url: 'https://child-adolesc.jp/proposal/20180617/', org: '日本児童青年精神医学会', stance: 'cautious' },
+        { title: 'いじめ追跡調査2019-2022', url: 'https://www.nier.go.jp/shido/centerhp/sien/sien04.html', org: '国立教育政策研究所', stance: 'neutral' },
       ],
       perspectives: {
         positive: '法律に基づき、学校・教育委員会・相談機関が連携して対応する仕組みが整備されています。早期発見・早期対応が基本方針です。',
@@ -772,12 +772,12 @@ export const ARTICLES: Article[] = [
     source: {
       name: '子どもの心理・自己肯定感に関する研究等',
       references: [
-        { title: '健やか親子21（第2次）', url: 'https://sukoyaka21.mhlw.go.jp/', org: '厚生労働省' },
-        { title: '子供・若者の意識に関する調査（自己肯定感）', url: 'https://www8.cao.go.jp/youth/kenkyu/ishiki/h28/pdf-index.html', org: '内閣府' },
-        { title: '子供・若者白書 第1節 自己形成のための支援', url: 'https://www8.cao.go.jp/youth/whitepaper/r02honpen/s2_1.html', org: '内閣府' },
-        { title: 'こころの診療科（子どものメンタルヘルス）', url: 'https://www.ncchd.go.jp/hospital/about/section/naika/kokoro.html', org: '国立成育医療研究センター' },
-        { title: 'こどもの心の診療ネットワーク事業', url: 'https://ncchd.go.jp/kokoro/index.html', org: '国立成育医療研究センター' },
-        { title: '「学びに向かう力」を見取り、育み、つなぐために', url: 'https://berd.benesse.jp/special/manabi/manabi_23.php', org: 'ベネッセ教育総合研究所' },
+        { title: '健やか親子21（第2次）', url: 'https://sukoyaka21.mhlw.go.jp/', org: '厚生労働省', stance: 'positive' },
+        { title: '子供・若者の意識に関する調査（自己肯定感）', url: 'https://www8.cao.go.jp/youth/kenkyu/ishiki/h28/pdf-index.html', org: '内閣府', stance: 'neutral' },
+        { title: '子供・若者白書 第1節 自己形成のための支援', url: 'https://www8.cao.go.jp/youth/whitepaper/r02honpen/s2_1.html', org: '内閣府', stance: 'neutral' },
+        { title: 'こころの診療科（子どものメンタルヘルス）', url: 'https://www.ncchd.go.jp/hospital/about/section/naika/kokoro.html', org: '国立成育医療研究センター', stance: 'positive' },
+        { title: 'こどもの心の診療ネットワーク事業', url: 'https://ncchd.go.jp/kokoro/index.html', org: '国立成育医療研究センター', stance: 'cautious' },
+        { title: '「学びに向かう力」を見取り、育み、つなぐために', url: 'https://berd.benesse.jp/special/manabi/manabi_23.php', org: 'ベネッセ教育総合研究所', stance: 'cautious' },
       ],
       perspectives: {
         positive: '多くの研究で、「結果よりプロセスを認める」「比較しない」関わりが自己肯定感を育むとされています。',
@@ -832,12 +832,12 @@ export const ARTICLES: Article[] = [
     source: {
       name: 'プログラミング教育に関する公的情報',
       references: [
-        { title: '小学校プログラミング教育の手引（第三版）', url: 'https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1403162.htm', org: '文部科学省' },
-        { title: 'プログラミング教育の推進', url: 'https://www.soumu.go.jp/programming/', org: '総務省' },
-        { title: '未来の学びコンソーシアム', url: 'https://miraino-manabi.mext.go.jp/', org: '文部科学省・総務省・経済産業省' },
-        { title: 'Scratch（ビジュアルプログラミング環境）', url: 'https://scratch.mit.edu/', org: 'MITメディアラボ' },
-        { title: 'プロジェクト研究（情報教育・プログラミング教育）', url: 'https://www.nier.go.jp/05_kenkyu_seika/seika_digest_r06.html', org: '国立教育政策研究所' },
-        { title: '子どもとメディア — スマホに子守りをさせないで（ICTと健康）', url: 'https://www.jpa-web.org/information/sumaho.html', org: '日本小児科医会' },
+        { title: '小学校プログラミング教育の手引（第三版）', url: 'https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1403162.htm', org: '文部科学省', stance: 'positive' },
+        { title: 'プログラミング教育の推進', url: 'https://www.soumu.go.jp/programming/', org: '総務省', stance: 'positive' },
+        { title: '未来の学びコンソーシアム', url: 'https://miraino-manabi.mext.go.jp/', org: '文部科学省・総務省・経済産業省', stance: 'neutral' },
+        { title: 'Scratch（ビジュアルプログラミング環境）', url: 'https://scratch.mit.edu/', org: 'MITメディアラボ', stance: 'neutral' },
+        { title: 'プロジェクト研究（情報教育・プログラミング教育）', url: 'https://www.nier.go.jp/05_kenkyu_seika/seika_digest_r06.html', org: '国立教育政策研究所', stance: 'cautious' },
+        { title: '子どもとメディア — スマホに子守りをさせないで（ICTと健康）', url: 'https://www.jpa-web.org/information/sumaho.html', org: '日本小児科医会', stance: 'cautious' },
       ],
       perspectives: {
         positive: '2020年の必修化以降、「プログラミング的思考」の重要性は広く認められ、多くの教育機関が推進しています。',
