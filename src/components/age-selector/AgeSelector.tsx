@@ -30,7 +30,7 @@ export default function AgeSelector() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-12">
-          <GrowthBarIllustration size={180} animate className="shrink-0" />
+          <GrowthBarIllustration size={180} className="shrink-0" />
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-3">
               <span className="text-[#A0C4FF]">0</span>
