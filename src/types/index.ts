@@ -54,7 +54,6 @@ export interface ArticleReference {
   title: string;
   url: string;
   org: string;
-  stance: 'positive' | 'neutral' | 'cautious';
 }
 
 export interface ArticleSource {
