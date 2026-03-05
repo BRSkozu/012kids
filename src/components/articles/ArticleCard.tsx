@@ -3,6 +3,7 @@ import { Article } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
 import ScoreBadge from '@/components/ui/ScoreBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
+import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
 
 interface ArticleCardProps {
   article: Article;
@@ -10,20 +11,16 @@ interface ArticleCardProps {
 }
 
 export default function ArticleCard({ article, variant = 'default' }: ArticleCardProps) {
+  const Illustration = getCategoryIllustration(article.categories[0]);
+
   if (variant === 'compact') {
     return (
       <Link
         href={`/articles/${article.slug}`}
         className="flex gap-4 p-4 rounded-xl hover:bg-orange-50/50 transition-colors group"
       >
-        <div className="w-20 h-20 rounded-lg bg-orange-50 shrink-0 flex items-center justify-center text-2xl">
-          {article.categories[0] === 'health' ? '🏥' :
-           article.categories[0] === 'nutrition' ? '🍎' :
-           article.categories[0] === 'education' ? '📚' :
-           article.categories[0] === 'development' ? '🌱' :
-           article.categories[0] === 'mental' ? '💚' :
-           article.categories[0] === 'digital' ? '💻' :
-           article.categories[0] === 'social' ? '🌍' : '👨‍⚕️'}
+        <div className="w-20 h-20 rounded-lg bg-orange-50 shrink-0 flex items-center justify-center overflow-hidden">
+          <Illustration size={64} />
         </div>
         <div className="min-w-0">
           <h3 className="text-sm font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2">
@@ -44,14 +41,8 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
         href={`/articles/${article.slug}`}
         className="group block rounded-2xl overflow-hidden bg-white border border-orange-100 hover:shadow-lg hover:shadow-orange-100/50 transition-shadow"
       >
-        <div className="aspect-[16/9] bg-orange-50 flex items-center justify-center text-5xl">
-          {article.categories[0] === 'health' ? '🏥' :
-           article.categories[0] === 'nutrition' ? '🍎' :
-           article.categories[0] === 'education' ? '📚' :
-           article.categories[0] === 'development' ? '🌱' :
-           article.categories[0] === 'mental' ? '💚' :
-           article.categories[0] === 'digital' ? '💻' :
-           article.categories[0] === 'social' ? '🌍' : '👨‍⚕️'}
+        <div className="aspect-[16/9] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center">
+          <Illustration size={120} />
         </div>
         <div className="p-5">
           <div className="flex items-center gap-2 mb-3">
@@ -82,14 +73,8 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
       href={`/articles/${article.slug}`}
       className="group block rounded-xl overflow-hidden bg-white border border-orange-100 hover:shadow-md hover:shadow-orange-100/50 transition-shadow"
     >
-      <div className="aspect-[2/1] bg-orange-50 flex items-center justify-center text-4xl">
-        {article.categories[0] === 'health' ? '🏥' :
-         article.categories[0] === 'nutrition' ? '🍎' :
-         article.categories[0] === 'education' ? '📚' :
-         article.categories[0] === 'development' ? '🌱' :
-         article.categories[0] === 'mental' ? '💚' :
-         article.categories[0] === 'digital' ? '💻' :
-         article.categories[0] === 'social' ? '🌍' : '👨‍⚕️'}
+      <div className="aspect-[2/1] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center">
+        <Illustration size={96} />
       </div>
       <div className="p-4">
         <div className="flex items-center gap-2 mb-2">

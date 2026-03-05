@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AgeSelector from '@/components/age-selector/AgeSelector';
 import ArticleCard from '@/components/articles/ArticleCard';
+import WorrySearchCompact from '@/components/search/WorrySearchCompact';
 import { getFeaturedArticles, getLatestArticles } from '@/data/articles';
 import { CATEGORIES } from '@/data/categories';
 import { EXPERTS } from '@/data/experts';
@@ -19,6 +20,13 @@ export default function HomePage() {
         <div className="bg-[var(--color-warm-cream)] rounded-xl p-4 text-center text-sm text-gray-600 border border-orange-100">
           012.kidsは、子育て・教育に関する公的機関や専門家の情報をわかりやすくまとめて紹介するサイトです。
         </div>
+      </section>
+
+      {/* Worry Search */}
+      <section className="max-w-7xl mx-auto px-4 py-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">お悩みから探す</h2>
+        <p className="text-sm text-gray-500 mb-6">同じ悩みを持つパパ・ママの「あるある」から、役立つ記事を見つけましょう</p>
+        <WorrySearchCompact />
       </section>
 
       {/* Featured Articles */}
