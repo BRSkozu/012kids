@@ -14,9 +14,9 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
     return (
       <Link
         href={`/articles/${article.slug}`}
-        className="flex gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors group"
+        className="flex gap-4 p-4 rounded-xl hover:bg-orange-50/50 transition-colors group"
       >
-        <div className="w-20 h-20 rounded-lg bg-gray-200 shrink-0 flex items-center justify-center text-2xl">
+        <div className="w-20 h-20 rounded-lg bg-orange-50 shrink-0 flex items-center justify-center text-2xl">
           {article.categories[0] === 'health' ? '🏥' :
            article.categories[0] === 'nutrition' ? '🍎' :
            article.categories[0] === 'education' ? '📚' :
@@ -42,9 +42,9 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
     return (
       <Link
         href={`/articles/${article.slug}`}
-        className="group block rounded-2xl overflow-hidden bg-white border border-gray-200 hover:shadow-lg transition-shadow"
+        className="group block rounded-2xl overflow-hidden bg-white border border-orange-100 hover:shadow-lg hover:shadow-orange-100/50 transition-shadow"
       >
-        <div className="aspect-[16/9] bg-gray-200 flex items-center justify-center text-5xl">
+        <div className="aspect-[16/9] bg-orange-50 flex items-center justify-center text-5xl">
           {article.categories[0] === 'health' ? '🏥' :
            article.categories[0] === 'nutrition' ? '🍎' :
            article.categories[0] === 'education' ? '📚' :
@@ -80,9 +80,9 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
   return (
     <Link
       href={`/articles/${article.slug}`}
-      className="group block rounded-xl overflow-hidden bg-white border border-gray-200 hover:shadow-md transition-shadow"
+      className="group block rounded-xl overflow-hidden bg-white border border-orange-100 hover:shadow-md hover:shadow-orange-100/50 transition-shadow"
     >
-      <div className="aspect-[2/1] bg-gray-200 flex items-center justify-center text-4xl">
+      <div className="aspect-[2/1] bg-orange-50 flex items-center justify-center text-4xl">
         {article.categories[0] === 'health' ? '🏥' :
          article.categories[0] === 'nutrition' ? '🍎' :
          article.categories[0] === 'education' ? '📚' :
@@ -105,11 +105,8 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             <CategoryTag key={cat} category={cat} />
           ))}
         </div>
-        <div className="mt-2 flex items-center justify-between text-xs text-gray-400">
+        <div className="mt-2 text-xs text-gray-400">
           <span>{article.readingTime}分</span>
-          {article.source.organization && (
-            <span>出典: {article.source.organization}</span>
-          )}
         </div>
       </div>
     </Link>

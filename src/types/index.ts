@@ -56,8 +56,7 @@ export interface Article {
 export interface ArticleSource {
   name: string;
   url: string;
-  organization: string;
-  publishedDate: string;
+  references: string[];
 }
 
 export interface QualityScore {

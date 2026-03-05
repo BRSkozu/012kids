@@ -3,19 +3,35 @@ import Link from 'next/link';
 import { AGE_STAGES } from '@/data/stages';
 
 export const metadata: Metadata = {
-  title: '012.kidsについて',
-  description: '012.kidsは0歳から12歳の子どもに関わるすべての大人に、偏りのない正確な最新の教育情報を届けるプラットフォームです。',
+  title: 'このサイトについて',
+  description: '012.kidsは0歳から12歳の子どもに関わるすべての方に向けて、公的機関や専門家の情報をわかりやすくまとめて紹介する情報サイトです。',
 };
 
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">012.kidsについて</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">このサイトについて</h1>
+
+      {/* What is this site */}
+      <section className="mb-12">
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 mb-8">
+          <h2 className="text-lg font-bold text-[var(--color-primary)] mb-3">012.kidsは「情報まとめサイト」です</h2>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            当サイトは、子育て・教育に関する公的機関（厚生労働省、文部科学省、WHO など）や
+            専門家の発信情報を、子育て中のパパ・ママにわかりやすい形でまとめて紹介するサイトです。
+          </p>
+          <p className="text-sm text-gray-700 leading-relaxed mt-2">
+            掲載している記事は、012.kids編集部が各種情報源をもとに独自にまとめたものです。
+            各機関や専門家が当サイトの記事を直接監修・承認しているわけではありません。
+            元の情報については、各記事の「参考にした情報」欄をご確認ください。
+          </p>
+        </div>
+      </section>
 
       {/* Domain Meaning */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">ドメイン「012.kids」に込めた想い</h2>
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 space-y-4">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">「012.kids」に込めた想い</h2>
+        <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 space-y-4">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center font-bold shrink-0">
               0→2
@@ -23,7 +39,7 @@ export default function AboutPage() {
             <div>
               <h3 className="font-bold text-gray-900">ステップアップの象徴</h3>
               <p className="text-sm text-gray-600">
-                赤ちゃんが立ち、歩き、走るように。子どもの成長過程を段階的にサポートするという思想を表しています。
+                赤ちゃんが立ち、歩き、走るように。子どもの成長に寄り添いたいという思いを込めています。
               </p>
             </div>
           </div>
@@ -34,7 +50,7 @@ export default function AboutPage() {
             <div>
               <h3 className="font-bold text-gray-900">0歳から12歳まで</h3>
               <p className="text-sm text-gray-600">
-                乳幼児から小学校卒業まで、子育ての全期間をカバーするワンストップ情報源を目指しています。
+                乳幼児から小学校卒業まで、子育ての情報をひとつのサイトで探せるようにしたいと考えています。
               </p>
             </div>
           </div>
@@ -43,9 +59,9 @@ export default function AboutPage() {
               .kids
             </div>
             <div>
-              <h3 className="font-bold text-gray-900">子ども向けの安心TLD</h3>
+              <h3 className="font-bold text-gray-900">子ども向けの安心ドメイン</h3>
               <p className="text-sm text-gray-600">
-                .kids ドメインは、子ども向け・家族向けの安心・信頼を想起させるドメイン拡張子です。
+                .kids ドメインは、子ども・家族向けの安心感を大切にしたドメインです。
               </p>
             </div>
           </div>
@@ -54,53 +70,48 @@ export default function AboutPage() {
 
       {/* Mission */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">ミッション</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">やりたいこと</h2>
         <div className="bg-[var(--color-primary)] text-white rounded-xl p-8 text-center">
           <p className="text-xl font-bold leading-relaxed">
             0歳から12歳の子どもに関わる
             <br />
-            すべての大人に、偏りのない・正確な・
+            すべての方に、わかりやすく
             <br />
-            最新の教育情報を届ける
+            信頼できる情報をまとめて届けたい
           </p>
         </div>
       </section>
 
-      {/* Vision */}
+      {/* What we do and don't do */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">ビジョン</h2>
-        <p className="text-gray-600 leading-relaxed">
-          日本最大の子育て・教育情報プラットフォームとなり、子どもの成長に伴走するメディアになることを目指しています。
-        </p>
-      </section>
-
-      {/* Values */}
-      <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">5つの原則</h2>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          {[
-            { title: '中立性', desc: '商業的偏りのない、公正な情報提供' },
-            { title: '科学的根拠', desc: 'エビデンスに基づいた信頼できる情報' },
-            { title: '最新性', desc: '常にアップデートされる最新情報' },
-            { title: '安全性', desc: '子どもの安全を最優先に考えた設計' },
-            { title: '多様性', desc: 'すべての家族形態に寄り添う情報' },
-          ].map((value) => (
-            <div
-              key={value.title}
-              className="bg-white rounded-xl border border-gray-200 p-4 text-center"
-            >
-              <h3 className="font-bold text-[var(--color-primary)]">{value.title}</h3>
-              <p className="text-xs text-gray-500 mt-2">{value.desc}</p>
-            </div>
-          ))}
+        <h2 className="text-xl font-bold text-gray-900 mb-4">私たちがやること・やらないこと</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+            <h3 className="font-bold text-green-800 mb-3">やること</h3>
+            <ul className="space-y-2 text-sm text-green-700">
+              <li>* 公的機関や専門家の情報をわかりやすくまとめる</li>
+              <li>* 参考にした情報源を明記する</li>
+              <li>* 記事内容を定期的に見直す</li>
+              <li>* 誤りがあれば速やかに訂正する</li>
+            </ul>
+          </div>
+          <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+            <h3 className="font-bold text-red-800 mb-3">やらないこと</h3>
+            <ul className="space-y-2 text-sm text-red-700">
+              <li>* 医療行為の代替となるアドバイス</li>
+              <li>* 特定商品・サービスへの誘導</li>
+              <li>* 他機関が承認したかのような表示</li>
+              <li>* 子育てに「唯一の正解」を押しつけること</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* Age Stages */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">年齢帯セグメント</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">年齢帯で情報を整理</h2>
         <p className="text-gray-600 mb-4">
-          サイト全体を5つの年齢帯で分類し、お子さまの年齢に合った情報を提供します。
+          お子さまの年齢に合った情報を探しやすいよう、5つの年齢帯で記事を分類しています。
         </p>
         <div className="space-y-3">
           {AGE_STAGES.map((stage) => (
@@ -130,29 +141,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Target Users */}
+      {/* Who is this for */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">ターゲットユーザー</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">こんな方に読んでほしい</h2>
         <div className="space-y-3">
           {[
-            { label: 'Primary', desc: '0〜12歳の子を持つ保護者（特に20代後半〜40代）' },
-            { label: 'Secondary', desc: '保育士・幼稚園教諭・小学校教師・学童指導員' },
-            { label: 'Tertiary', desc: '祖父母・子どもに関わるすべての大人' },
-          ].map((user) => (
-            <div key={user.label} className="bg-gray-50 rounded-xl p-4">
-              <span className="text-xs font-medium text-[var(--color-primary)] bg-blue-50 px-2 py-0.5 rounded">
-                {user.label}
-              </span>
-              <p className="text-sm text-gray-700 mt-1">{user.desc}</p>
+            '0〜12歳のお子さんを育てているパパ・ママ',
+            '保育士・幼稚園教諭・小学校の先生',
+            'おじいちゃん・おばあちゃん、子どもに関わるすべての方',
+          ].map((desc) => (
+            <div key={desc} className="bg-[var(--color-warm-cream)] rounded-xl p-4">
+              <p className="text-sm text-gray-700">{desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* CTA */}
-      <div className="text-center bg-gray-50 rounded-xl p-8">
+      <div className="text-center bg-[var(--color-warm-cream)] rounded-xl p-8">
         <p className="text-gray-600 mb-4">
-          012.kidsの編集方針について詳しく知りたい方はこちら
+          編集方針について詳しく知りたい方はこちら
         </p>
         <Link
           href="/editorial-policy"

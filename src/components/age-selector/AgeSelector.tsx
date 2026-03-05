@@ -25,7 +25,7 @@ export default function AgeSelector() {
   const currentStage = age !== null ? getStageByAge(age) : null;
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16 md:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-amber-50 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero */}
         <div className="text-center mb-12">
@@ -33,17 +33,17 @@ export default function AgeSelector() {
             012<span className="text-gray-400">.kids</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            0歳から12歳の子どもの成長に寄り添う
+            0歳から12歳の子育てに役立つ情報を
             <br className="hidden md:block" />
-            信頼できる教育情報プラットフォーム
+            わかりやすくまとめてお届けします
           </p>
         </div>
 
         {/* Age Selector */}
         <div className="max-w-3xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+          <div className="bg-white rounded-2xl shadow-lg shadow-orange-100/50 p-6 md:p-8">
             <p className="text-center text-sm font-medium text-gray-500 mb-4">
-              お子さまの年齢を選んでください
+              お子さまの年齢を選んでみてください
             </p>
 
             {/* Age Buttons Grid */}
@@ -63,7 +63,7 @@ export default function AgeSelector() {
                     `}
                     style={{
                       backgroundColor: isSelected ? stage.color : `${stage.color}66`,
-                      color: '#1a1a2e',
+                      color: '#2d2a26',
                     }}
                     aria-label={`${yr}歳`}
                     aria-pressed={isSelected}
@@ -101,7 +101,7 @@ export default function AgeSelector() {
 
             {mounted && age === null && (
               <p className="text-center text-sm text-gray-400">
-                年齢を選択すると、お子さまに合った情報が表示されます
+                年齢を選ぶと、お子さまの年齢に合った記事が見つかりますよ
               </p>
             )}
           </div>
@@ -113,7 +113,7 @@ export default function AgeSelector() {
             <Link
               key={stage.id}
               href={`/age-guide/${stage.id}`}
-              className="group block rounded-xl p-4 text-center hover:shadow-md transition-all border-2 border-transparent hover:border-gray-200"
+              className="group block rounded-xl p-4 text-center hover:shadow-md transition-all border-2 border-transparent hover:border-orange-200"
               style={{ backgroundColor: stage.colorLight }}
             >
               <div

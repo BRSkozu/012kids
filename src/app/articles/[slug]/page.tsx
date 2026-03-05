@@ -58,7 +58,7 @@ export default async function ArticlePage({ params }: PageProps) {
         return <blockquote key={i} dangerouslySetInnerHTML={{ __html: line.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />;
       }
       if (line.startsWith('- ')) {
-        return null; // handled by list grouping below
+        return null;
       }
       if (line.trim() === '') {
         return <br key={i} />;
@@ -101,16 +101,21 @@ export default async function ArticlePage({ params }: PageProps) {
     <div className="max-w-4xl mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
-        <Link href="/" className="hover:text-gray-700">TOP</Link>
+        <Link href="/" className="hover:text-[var(--color-primary)]">TOP</Link>
         <span>/</span>
-        <Link href="/articles" className="hover:text-gray-700">記事一覧</Link>
+        <Link href="/articles" className="hover:text-[var(--color-primary)]">記事一覧</Link>
         <span>/</span>
-        <Link href={`/age-guide/${article.stage}`} className="hover:text-gray-700">
+        <Link href={`/age-guide/${article.stage}`} className="hover:text-[var(--color-primary)]">
           {stage.label}
         </Link>
         <span>/</span>
         <span className="text-gray-400 truncate">{article.title}</span>
       </nav>
+
+      {/* Matome disclaimer banner */}
+      <div className="mb-6 p-3 bg-[var(--color-warm-cream)] rounded-xl text-sm text-gray-600 border border-orange-100">
+        この記事は、公的機関や専門家の発信情報をもとに012.kids編集部が独自にまとめたものです。元の情報についてはページ下部の「参考にした情報」をご確認ください。
+      </div>
 
       {/* Article Header */}
       <header className="mb-8">
@@ -139,10 +144,10 @@ export default async function ArticlePage({ params }: PageProps) {
 
         {/* Author / Supervisor */}
         {(article.author || article.supervisor) && (
-          <div className="mt-4 p-4 bg-gray-50 rounded-xl flex flex-wrap gap-6">
+          <div className="mt-4 p-4 bg-[var(--color-warm-cream)] rounded-xl flex flex-wrap gap-6">
             {article.author && (
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-[var(--color-primary)]">
+                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-sm font-bold text-[var(--color-primary)]">
                   {article.author.name[0]}
                 </div>
                 <div>
@@ -173,24 +178,27 @@ export default async function ArticlePage({ params }: PageProps) {
         {contentHtml}
       </article>
 
-      {/* Source */}
-      <div className="border-t border-gray-200 pt-6 mb-8">
-        <h3 className="text-sm font-semibold text-gray-700 mb-2">情報元・出典</h3>
-        <div className="bg-gray-50 rounded-lg p-4">
-          <p className="text-sm">
-            <span className="font-medium">{article.source.organization}</span>
-          </p>
-          <p className="text-xs text-gray-500 mt-1">
-            発行日: {article.source.publishedDate}
-          </p>
-          <p className="text-xs text-blue-600 mt-1">
-            {article.source.url}
+      {/* References */}
+      <div className="border-t border-orange-100 pt-6 mb-8">
+        <h3 className="text-sm font-semibold text-gray-700 mb-2">参考にした情報</h3>
+        <div className="bg-[var(--color-warm-cream)] rounded-lg p-4">
+          <p className="text-sm font-medium text-gray-700 mb-2">{article.source.name}</p>
+          <ul className="space-y-1">
+            {article.source.references.map((ref, i) => (
+              <li key={i} className="text-xs text-gray-500 flex items-start gap-2">
+                <span className="text-[var(--color-primary)] mt-0.5">*</span>
+                <span>{ref}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs text-gray-400 mt-3">
+            ※ 上記は参考にした情報源です。記事の内容は012.kids編集部が独自にまとめたものであり、各機関が本記事を監修・承認したものではありません。
           </p>
         </div>
       </div>
 
       {/* Quality Score Detail */}
-      <div className="border-t border-gray-200 pt-6 mb-8">
+      <div className="border-t border-orange-100 pt-6 mb-8">
         <h3 className="text-sm font-semibold text-gray-700 mb-3">品質スコア詳細</h3>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
           {[
@@ -200,12 +208,12 @@ export default async function ArticlePage({ params }: PageProps) {
             { label: '年齢適合', value: article.score.ageRelevance, max: 15 },
             { label: '読みやすさ', value: article.score.readability, max: 10 },
           ].map((item) => (
-            <div key={item.label} className="bg-gray-50 rounded-lg p-3 text-center">
+            <div key={item.label} className="bg-[var(--color-warm-cream)] rounded-lg p-3 text-center">
               <p className="text-xs text-gray-500">{item.label}</p>
               <p className="text-lg font-bold text-[var(--color-primary)]">
                 {item.value}<span className="text-xs text-gray-400">/{item.max}</span>
               </p>
-              <div className="mt-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+              <div className="mt-1 h-1.5 bg-orange-100 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-[var(--color-primary)] rounded-full"
                   style={{ width: `${(item.value / item.max) * 100}%` }}
@@ -225,7 +233,7 @@ export default async function ArticlePage({ params }: PageProps) {
           <Link
             key={tag}
             href={`/search?q=${encodeURIComponent(tag)}`}
-            className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full hover:bg-gray-200 transition-colors"
+            className="text-xs bg-orange-50 text-[var(--color-primary-dark)] px-3 py-1 rounded-full hover:bg-orange-100 transition-colors"
           >
             #{tag}
           </Link>
@@ -234,7 +242,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Related Articles */}
       {relatedArticles.length > 0 && (
-        <div className="border-t border-gray-200 pt-8">
+        <div className="border-t border-orange-100 pt-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4">関連記事</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {relatedArticles.map((a) => (
@@ -245,10 +253,12 @@ export default async function ArticlePage({ params }: PageProps) {
       )}
 
       {/* Disclaimer */}
-      <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-sm text-yellow-800">
-        <p className="font-semibold mb-1">ご注意</p>
+      <div className="mt-8 p-4 bg-orange-50 border border-orange-200 rounded-xl text-sm text-orange-800">
+        <p className="font-semibold mb-1">ご利用にあたって</p>
         <p>
-          当サイトの情報は一般的な参考情報であり、個別の医療アドバイスではありません。
+          当サイトは子育て・教育に関する情報をまとめて紹介する「情報まとめサイト」です。
+          掲載情報は公的機関や専門家の発信をもとに編集部が独自にまとめたものであり、
+          各情報源の機関が本サイトを監修・承認したものではありません。
           お子さまの健康や発達について心配がある場合は、必ず医師や専門家にご相談ください。
         </p>
       </div>

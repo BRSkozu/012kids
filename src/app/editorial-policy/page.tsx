@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: '編集方針',
-  description: '012.kidsの編集方針。中立性・科学的根拠・最新性・安全性・多様性の5原則に基づく情報提供ポリシー。',
+  description: '012.kidsの編集方針。情報まとめサイトとしての透明性と信頼性を確保するための編集ポリシーです。',
 };
 
 export default function EditorialPolicyPage() {
@@ -11,24 +11,35 @@ export default function EditorialPolicyPage() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-gray-900 mb-2">編集方針</h1>
       <p className="text-gray-500 mb-8">
-        012.kidsが情報の中立性と信頼性を担保するために定めた編集ポリシーです。
+        012.kidsが情報まとめサイトとして、透明性と信頼性を確保するために定めた編集ポリシーです。
       </p>
 
-      <div className="prose max-w-none space-y-8">
+      {/* Site nature clarification */}
+      <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 mb-8">
+        <h2 className="text-lg font-bold text-[var(--color-primary)] mb-2">当サイトの位置づけ</h2>
+        <p className="text-sm text-gray-700 leading-relaxed">
+          012.kidsは、公的機関や専門家の発信する子育て・教育情報を、わかりやすくまとめて紹介する「情報まとめサイト」です。
+          掲載記事は編集部が各種情報源をもとに独自にまとめたものであり、
+          引用元の機関が当サイトの記事を監修・承認したものではありません。
+        </p>
+      </div>
+
+      <div className="space-y-8">
         {/* Principle 1 */}
-        <section className="bg-white rounded-xl border border-gray-200 p-6">
+        <section className="bg-white rounded-xl border border-orange-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
             <span className="w-8 h-8 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-sm font-bold">1</span>
-            出典の明示
+            参考情報の明示
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
-            すべての記事は必ず「情報元URL・発行機関・発行日」を明示します。
+            すべての記事に「参考にした情報」を明記します。
             読者が元の情報に直接アクセスし、内容を検証できる透明性を確保します。
+            なお、参考元として記載した機関が当サイトの記事を承認しているわけではありません。
           </p>
         </section>
 
         {/* Principle 2 */}
-        <section className="bg-white rounded-xl border border-gray-200 p-6">
+        <section className="bg-white rounded-xl border border-orange-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
             <span className="w-8 h-8 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-sm font-bold">2</span>
             スポンサーとの独立性
@@ -40,50 +51,51 @@ export default function EditorialPolicyPage() {
         </section>
 
         {/* Principle 3 */}
-        <section className="bg-white rounded-xl border border-gray-200 p-6">
+        <section className="bg-white rounded-xl border border-orange-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
             <span className="w-8 h-8 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-sm font-bold">3</span>
-            医療情報の免責事項
+            医療情報に関する免責
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
-            医療情報には必ず「この情報は一般的な参考情報です。診断・治療は必ず医師に相談ください」
-            の免責事項を明記します。当サイトは医療行為の代替となるものではありません。
+            医療・健康に関する記事には、必ず「この情報は一般的な参考情報であり、
+            個別の医療アドバイスではありません」という趣旨の免責事項を明記します。
+            当サイトは医療行為の代替となるものではありません。
           </p>
         </section>
 
         {/* Principle 4 */}
-        <section className="bg-white rounded-xl border border-gray-200 p-6">
+        <section className="bg-white rounded-xl border border-orange-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
             <span className="w-8 h-8 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-sm font-bold">4</span>
-            多元的アプローチの提示
+            多様なアプローチの提示
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
             特定の教育方法・しつけ方法を「唯一の正解」として提示しません。
-            複数のアプローチを並列提示し、読者が自らの状況に合った方法を選択できるようにします。
+            複数のアプローチを並べて紹介し、読者がご自身の状況に合った方法を選択できるようにします。
           </p>
         </section>
 
         {/* Principle 5 */}
-        <section className="bg-white rounded-xl border border-gray-200 p-6">
+        <section className="bg-white rounded-xl border border-orange-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
             <span className="w-8 h-8 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-sm font-bold">5</span>
-            有用性スコアによる優先表示
+            品質スコアによる記事評価
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
-            アクセス数・閲覧数ではなく「有用性スコア」で記事の優先表示を決定します。
-            信頼性・中立性・新規性・年齢適合性・読みやすさの5軸で自動評価を行います。
+            アクセス数ではなく「品質スコア」で記事の優先表示を決定します。
+            信頼性・中立性・新規性・年齢適合性・読みやすさの5軸で評価を行います。
           </p>
         </section>
 
         {/* Principle 6 */}
-        <section className="bg-white rounded-xl border border-gray-200 p-6">
+        <section className="bg-white rounded-xl border border-orange-100 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
             <span className="w-8 h-8 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-sm font-bold">6</span>
-            外部有識者レビュー
+            誤り・訂正への対応
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
-            年1回の外部有識者による「編集方針レビュー」を実施し、結果を公開します。
-            第三者の目による評価を通じて、継続的な改善を行います。
+            記事の内容に誤りや古い情報が含まれている場合は、速やかに訂正します。
+            読者からの指摘や訂正依頼にも真摯に対応いたします。
           </p>
         </section>
       </div>
@@ -92,19 +104,19 @@ export default function EditorialPolicyPage() {
       <section className="mt-12">
         <h2 className="text-xl font-bold text-gray-900 mb-4">品質スコアリング</h2>
         <p className="text-gray-600 text-sm mb-6">
-          各記事は以下の5軸で自動評価し、重み付きスコアを算出します。
+          各記事は以下の5軸で評価し、重み付きスコアを算出します。
         </p>
-        <div className="bg-gray-50 rounded-xl p-6">
+        <div className="bg-[var(--color-warm-cream)] rounded-xl p-6">
           <div className="space-y-4">
             {[
-              { label: '信頼性・出典', weight: '30%', desc: '政府機関・学会・査読済み論文の引用。著者の専門性。' },
-              { label: '中立性・偏り', weight: '25%', desc: '商業的バイアス・特定商品誘導・極端な主張の有無。' },
-              { label: '新規性・鮮度', weight: '20%', desc: '公開・更新日。医療情報は3年以内を優先。' },
-              { label: '年齢適合性', weight: '15%', desc: '対象年齢の明記。内容の年齢帯合致度。' },
-              { label: '読みやすさ', weight: '10%', desc: '平易な日本語。図表・画像の活用。' },
+              { label: '信頼性・参考元', weight: '30%', desc: '公的機関・学会・専門家の情報を参考にしているか。' },
+              { label: '中立性・偏り', weight: '25%', desc: '商業的バイアス・特定商品誘導・極端な主張がないか。' },
+              { label: '新規性・鮮度', weight: '20%', desc: '最新の情報を反映しているか。医療情報は定期的に見直し。' },
+              { label: '年齢適合性', weight: '15%', desc: '対象年齢が明確で、内容が年齢帯に合っているか。' },
+              { label: '読みやすさ', weight: '10%', desc: 'わかりやすい言葉で書かれているか。' },
             ].map((item) => (
               <div key={item.label} className="flex items-start gap-4">
-                <span className="text-sm font-bold text-[var(--color-primary)] bg-blue-50 px-2 py-1 rounded shrink-0">
+                <span className="text-sm font-bold text-[var(--color-primary)] bg-orange-50 px-2 py-1 rounded shrink-0">
                   {item.weight}
                 </span>
                 <div>
@@ -114,16 +126,16 @@ export default function EditorialPolicyPage() {
               </div>
             ))}
           </div>
-          <div className="mt-4 pt-4 border-t border-gray-200 text-sm text-gray-500">
-            <p>70点以上: 自動掲載 / 50〜69点: 編集者レビュー / 49点以下: 非掲載</p>
+          <div className="mt-4 pt-4 border-t border-orange-200 text-sm text-gray-500">
+            <p>70点以上: 掲載 / 50〜69点: 編集部レビュー後に判断 / 49点以下: 非掲載</p>
           </div>
         </div>
       </section>
 
       {/* Contact */}
-      <div className="mt-12 text-center bg-yellow-50 rounded-xl p-6">
+      <div className="mt-12 text-center bg-orange-50 rounded-xl p-6">
         <p className="text-sm text-gray-600 mb-3">
-          記事の誤りや改善提案がありましたらお知らせください
+          記事の誤りや改善のご提案がありましたらお知らせください
         </p>
         <Link
           href="/contact"

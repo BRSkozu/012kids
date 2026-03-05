@@ -4,18 +4,18 @@ import { CATEGORIES } from '@/data/categories';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 mt-16">
+    <footer className="bg-[var(--color-warm-bg)] border-t border-orange-100 mt-16">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
+            <Link href="/" className="flex items-center gap-1.5 mb-4">
               <span className="text-3xl font-bold text-[var(--color-primary)]">012</span>
-              <span className="text-lg font-semibold text-gray-600">.kids</span>
+              <span className="text-lg font-semibold text-gray-500">.kids</span>
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed">
-              0歳から12歳の子どもに関わるすべての大人に、
-              偏りのない正確な最新の教育情報を届けます。
+              0歳から12歳の子どもに関わるすべての方へ。
+              公的機関や専門家の情報をもとに、子育てに役立つ情報をわかりやすくまとめています。
             </p>
           </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
                 <li key={stage.id}>
                   <Link
                     href={`/age-guide/${stage.id}`}
-                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2"
+                    className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-2"
                   >
                     <span
                       className="inline-block w-2 h-2 rounded-full"
@@ -48,7 +48,7 @@ export default function Footer() {
                 <li key={cat.id}>
                   <Link
                     href={`/articles?category=${cat.id}`}
-                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                    className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors"
                   >
                     {cat.label}
                   </Link>
@@ -62,22 +62,22 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-900 mb-4">サイト情報</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  012.kidsについて
+                <Link href="/about" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
+                  このサイトについて
                 </Link>
               </li>
               <li>
-                <Link href="/editorial-policy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="/editorial-policy" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
                   編集方針
                 </Link>
               </li>
               <li>
-                <Link href="/experts" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  専門家紹介
+                <Link href="/experts" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
+                  編集チーム紹介
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="/contact" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
                   お問い合わせ・訂正依頼
                 </Link>
               </li>
@@ -85,13 +85,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
+        <div className="mt-12 pt-8 border-t border-orange-100">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-gray-400">
               &copy; {new Date().getFullYear()} 012.kids All rights reserved.
             </p>
-            <p className="text-xs text-gray-400 text-center">
-              当サイトの情報は一般的な参考情報です。医療・健康に関する判断は必ず専門家にご相談ください。
+            <p className="text-xs text-gray-400 text-center max-w-xl">
+              当サイトは情報まとめサイトです。掲載情報は各種公的機関や専門家の発信をもとに編集部が独自にまとめたものであり、
+              医療行為の代替となるものではありません。心配なことがあれば専門家にご相談ください。
             </p>
           </div>
         </div>
