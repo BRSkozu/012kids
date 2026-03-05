@@ -7,6 +7,7 @@ import StageBadge from '@/components/ui/StageBadge';
 import ScoreBadge from '@/components/ui/ScoreBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import ArticleCard from '@/components/articles/ArticleCard';
+import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -115,6 +116,11 @@ export default async function ArticlePage({ params }: PageProps) {
       {/* Matome disclaimer banner */}
       <div className="mb-6 p-3 bg-[var(--color-warm-cream)] rounded-xl text-sm text-gray-600 border border-orange-100">
         この記事は、公的機関や専門家の発信情報をもとに012.kids編集部が独自にまとめたものです。元の情報についてはページ下部の「参考にした情報」をご確認ください。
+      </div>
+
+      {/* Hero Illustration */}
+      <div className="mb-8 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center py-8">
+        {(() => { const Illustration = getArticleIllustration(article.slug); return <Illustration size={180} />; })()}
       </div>
 
       {/* Article Header */}
