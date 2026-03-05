@@ -159,19 +159,62 @@ export default async function ArticlePage({ params }: PageProps) {
         {contentHtml}
       </article>
 
+      {/* Perspectives (opinion patterns) */}
+      {article.source.perspectives && (
+        <div className="border-t border-orange-100 pt-6 mb-8">
+          <h3 className="text-sm font-semibold text-gray-700 mb-3">さまざまな見方・意見</h3>
+          <div className="space-y-3">
+            <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-5 h-5 rounded-full bg-blue-200 flex items-center justify-center text-blue-700 text-xs font-bold">+</span>
+                <p className="text-sm font-medium text-blue-800">多くの機関が支持する見方</p>
+              </div>
+              <p className="text-sm text-blue-700">{article.source.perspectives.positive}</p>
+            </div>
+            {article.source.perspectives.cautious && (
+              <div className="bg-amber-50 border border-amber-100 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-5 h-5 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 text-xs font-bold">!</span>
+                  <p className="text-sm font-medium text-amber-800">一方でこんな意見も</p>
+                </div>
+                <p className="text-sm text-amber-700">{article.source.perspectives.cautious}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* References */}
       <div className="border-t border-orange-100 pt-6 mb-8">
-        <h3 className="text-sm font-semibold text-gray-700 mb-2">参考にした情報</h3>
+        <h3 className="text-sm font-semibold text-gray-700 mb-3">参考にした情報（{article.source.references.length}件）</h3>
         <div className="bg-[var(--color-warm-cream)] rounded-lg p-4">
-          <p className="text-sm font-medium text-gray-700 mb-2">{article.source.name}</p>
-          <ul className="space-y-1">
+          <p className="text-sm font-medium text-gray-700 mb-3">{article.source.name}</p>
+          <ul className="space-y-2">
             {article.source.references.map((ref, i) => (
-              <li key={i} className="text-xs text-gray-500 flex items-start gap-2">
-                <span className="text-[var(--color-primary)] mt-0.5">*</span>
-                <span>{ref}</span>
+              <li key={i} className="text-sm flex items-start gap-2">
+                <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${
+                  ref.stance === 'positive' ? 'bg-blue-400' :
+                  ref.stance === 'cautious' ? 'bg-amber-400' : 'bg-gray-300'
+                }`} />
+                <div>
+                  <a
+                    href={ref.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--color-primary)] hover:underline font-medium"
+                  >
+                    {ref.title}
+                  </a>
+                  <span className="text-xs text-gray-500 ml-2">{ref.org}</span>
+                </div>
               </li>
             ))}
           </ul>
+          <div className="mt-4 pt-3 border-t border-orange-100 flex items-center gap-4 text-xs text-gray-400">
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-blue-400" /> 支持的</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-300" /> 中立</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-400" /> 慎重</span>
+          </div>
           <p className="text-xs text-gray-400 mt-3">
             ※ 上記は参考にした情報源です。記事の内容は012.kids編集部が独自にまとめたものであり、各機関が本記事を監修・承認したものではありません。
           </p>

@@ -50,10 +50,20 @@ export interface Article {
   relatedArticleIds: string[];
 }
 
+export interface ArticleReference {
+  title: string;
+  url: string;
+  org: string;
+  stance: 'positive' | 'neutral' | 'cautious';
+}
+
 export interface ArticleSource {
   name: string;
-  url: string;
-  references: string[];
+  references: ArticleReference[];
+  perspectives?: {
+    positive: string;
+    cautious?: string;
+  };
 }
 
 export interface QualityScore {
