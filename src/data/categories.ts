@@ -43,12 +43,6 @@ export const CATEGORIES: CategoryInfo[] = [
     icon: '🌍',
     description: 'SDGs教育、多様性・インクルーシブ教育、地域資源の活用',
   },
-  {
-    id: 'expert',
-    label: '専門家コラム',
-    icon: '👨‍⚕️',
-    description: '小児科医・心理士・教育専門家による監修コンテンツ',
-  },
 ];
 
 export function getCategoryById(id: string): CategoryInfo | undefined {

@@ -107,7 +107,7 @@ export default function Header() {
                 検索
               </Link>
               <Link href="/experts" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-sm rounded-lg hover:bg-orange-50">
-                編集チーム紹介
+                編集部について
               </Link>
               <Link href="/about" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-sm rounded-lg hover:bg-orange-50">
                 このサイトについて

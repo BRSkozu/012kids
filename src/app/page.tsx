@@ -4,7 +4,6 @@ import ArticleCard from '@/components/articles/ArticleCard';
 import WorrySearchCompact from '@/components/search/WorrySearchCompact';
 import { getFeaturedArticles, getLatestArticles } from '@/data/articles';
 import { CATEGORIES } from '@/data/categories';
-import { EXPERTS } from '@/data/experts';
 
 export default function HomePage() {
   const featured = getFeaturedArticles();
@@ -91,37 +90,6 @@ export default function HomePage() {
               <p className="text-xs text-gray-500 mt-1 line-clamp-2">{cat.description}</p>
             </Link>
           ))}
-        </div>
-      </section>
-
-      {/* Experts Preview */}
-      <section className="bg-[var(--color-primary)] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl font-bold">編集チーム</h2>
-              <p className="text-sm text-orange-200 mt-1">
-                各分野の専門家が記事の執筆・監修を担当しています
-              </p>
-            </div>
-            <Link
-              href="/experts"
-              className="text-sm font-medium text-orange-200 hover:text-white transition-colors"
-            >
-              チーム紹介 →
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {EXPERTS.map((expert) => (
-              <div key={expert.id} className="text-center">
-                <div className="w-16 h-16 rounded-full bg-white/20 mx-auto mb-2 flex items-center justify-center text-xl">
-                  {expert.name[0]}
-                </div>
-                <p className="font-semibold text-sm">{expert.name}</p>
-                <p className="text-xs text-orange-200">{expert.title}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

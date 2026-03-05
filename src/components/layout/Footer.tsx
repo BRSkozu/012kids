@@ -73,7 +73,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/experts" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
-                  編集チーム紹介
+                  編集部について
                 </Link>
               </li>
               <li>

@@ -22,8 +22,7 @@ export type ContentCategory =
   | 'health'
   | 'mental'
   | 'digital'
-  | 'social'
-  | 'expert';
+  | 'social';
 
 export interface CategoryInfo {
   id: ContentCategory;
@@ -43,8 +42,6 @@ export interface Article {
   categories: ContentCategory[];
   source: ArticleSource;
   score: QualityScore;
-  author?: Expert;
-  supervisor?: Expert;
   publishedAt: string;
   updatedAt: string;
   imageUrl: string;
@@ -66,16 +63,6 @@ export interface QualityScore {
   freshness: number;
   ageRelevance: number;
   readability: number;
-}
-
-export interface Expert {
-  id: string;
-  name: string;
-  title: string;
-  organization: string;
-  speciality: string;
-  imageUrl: string;
-  bio: string;
 }
 
 // Search & filter

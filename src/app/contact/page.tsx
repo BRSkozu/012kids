@@ -56,7 +56,7 @@ export default function ContactPage() {
             <option value="correction">記事の訂正依頼</option>
             <option value="error">誤情報の報告</option>
             <option value="suggestion">改善提案</option>
-            <option value="collaboration">取材・監修のご依頼</option>
+            <option value="collaboration">コラボレーション・ご提案</option>
           </select>
         </div>
 

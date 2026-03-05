@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: 'article',
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
-      authors: article.author ? [article.author.name] : undefined,
+      authors: ['012.kids 編集部'],
     },
   };
 }
@@ -142,35 +142,16 @@ export default async function ArticlePage({ params }: PageProps) {
           <span>{article.readingTime}分で読めます</span>
         </div>
 
-        {/* Author / Supervisor */}
-        {(article.author || article.supervisor) && (
-          <div className="mt-4 p-4 bg-[var(--color-warm-cream)] rounded-xl flex flex-wrap gap-6">
-            {article.author && (
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-sm font-bold text-[var(--color-primary)]">
-                  {article.author.name[0]}
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">執筆</p>
-                  <p className="text-sm font-medium">{article.author.name}</p>
-                  <p className="text-xs text-gray-500">{article.author.title}</p>
-                </div>
-              </div>
-            )}
-            {article.supervisor && article.supervisor.id !== article.author?.id && (
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">
-                  {article.supervisor.name[0]}
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">監修</p>
-                  <p className="text-sm font-medium">{article.supervisor.name}</p>
-                  <p className="text-xs text-gray-500">{article.supervisor.title}</p>
-                </div>
-              </div>
-            )}
+        {/* Editorial attribution */}
+        <div className="mt-4 p-3 bg-[var(--color-warm-cream)] rounded-xl flex items-center gap-3">
+          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-xs font-bold text-[var(--color-primary)]">
+            編
           </div>
-        )}
+          <div>
+            <p className="text-sm font-medium text-gray-700">012.kids 編集部</p>
+            <p className="text-xs text-gray-500">公的機関・専門家の情報をもとにまとめています</p>
+          </div>
+        </div>
       </header>
 
       {/* Article Content */}
