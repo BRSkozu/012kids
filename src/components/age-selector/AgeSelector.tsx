@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { AGE_STAGES } from '@/data/stages';
 import { getStageByAge } from '@/data/stages';
-import GrowthBarIllustration from '@/components/illustrations/GrowthBarIllustration';
 
 export default function AgeSelector() {
   const [age, setAge] = useState<number | null>(null);
@@ -30,7 +30,13 @@ export default function AgeSelector() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-12">
-          <GrowthBarIllustration size={180} className="shrink-0" />
+          <Image
+              src="/logo-badge.png"
+              alt="012.kids"
+              width={180}
+              height={180}
+              className="shrink-0"
+            />
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-3">
               <span className="text-[#A0C4FF]">0</span>

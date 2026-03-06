@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { AGE_STAGES } from '@/data/stages';
-import { GrowthBarLogo } from '@/components/illustrations/GrowthBarIllustration';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,14 +13,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <GrowthBarLogo size={28} />
-            <span className="text-2xl font-bold">
-              <span className="text-[#A0C4FF]">0</span>
-              <span className="text-[#7BC67E]">1</span>
-              <span className="text-[#E8943D]">2</span>
-            </span>
-            <span className="text-lg font-semibold text-gray-500">.kids</span>
+          <Link href="/" className="shrink-0">
+            <Image
+              src="/logo-badge.png"
+              alt="012.kids"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
