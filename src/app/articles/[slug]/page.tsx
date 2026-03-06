@@ -9,6 +9,8 @@ import CategoryTag from '@/components/ui/CategoryTag';
 import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 import ShareButtons from '@/components/articles/ShareButtons';
+import TableOfContents from '@/components/articles/TableOfContents';
+import ReadingProgress from '@/components/articles/ReadingProgress';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -164,6 +166,12 @@ export default async function ArticlePage({ params }: PageProps) {
           </div>
         </div>
       </header>
+
+      {/* Table of Contents */}
+      <TableOfContents />
+
+      {/* Reading Progress + Back to Top */}
+      <ReadingProgress />
 
       {/* Article Content */}
       <article

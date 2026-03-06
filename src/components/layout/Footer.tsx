@@ -81,6 +81,16 @@ export default function Footer() {
                   お問い合わせ・訂正依頼
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
+                  プライバシーポリシー
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
+                  利用規約
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

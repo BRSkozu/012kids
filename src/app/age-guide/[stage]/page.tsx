@@ -35,8 +35,19 @@ export default async function AgeGuidePage({ params }: PageProps) {
   const articles = getArticlesByStage(stageId);
   const stageInfo = getStageById(stageId as AgeStage);
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'TOP', item: 'https://012.kids' },
+      { '@type': 'ListItem', position: 2, name: '年齢別ガイド' },
+      { '@type': 'ListItem', position: 3, name: stage.label, item: `https://012.kids/age-guide/${stage.id}` },
+    ],
+  };
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {/* Hero Banner */}
       <section
         className="py-12 md:py-20"
