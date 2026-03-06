@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { AGE_STAGES } from '@/data/stages';
 import { getStageByAge } from '@/data/stages';
 
@@ -30,8 +29,8 @@ export default function AgeSelector() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-12">
-          <Image
-              src="/logo-badge.png"
+          <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-badge.png`}
               alt="012.kids"
               width={180}
               height={180}
