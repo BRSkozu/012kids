@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { AGE_STAGES, getStageById } from '@/data/stages';
-import { getArticlesByStage } from '@/data/articles';
+import { getArticlesByStage } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 import { AgeStage } from '@/types';
 import ArticleCard from '@/components/articles/ArticleCard';

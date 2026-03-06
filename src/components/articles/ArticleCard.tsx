@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { Article } from '@/types';
+import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
 import ScoreBadge from '@/components/ui/ScoreBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
 
 interface ArticleCardProps {
-  article: Article;
+  article: Article | ArticleMeta;
   variant?: 'default' | 'featured' | 'compact';
 }
 

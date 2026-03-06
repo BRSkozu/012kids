@@ -84,6 +84,9 @@ export interface ArticleFilter {
   sort?: 'newest' | 'popular' | 'score';
 }
 
+// Article metadata (without content, for client components)
+export type ArticleMeta = Omit<Article, 'content'>;
+
 // Age selector
 export interface ChildProfile {
   id: string;

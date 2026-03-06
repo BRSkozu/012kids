@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { ARTICLES, getArticleBySlug } from '@/data/articles';
+import { getAllArticlesSync, getArticleBySlug, getArticleContentHtml } from '@/lib/articles';
 import { getStageById } from '@/data/stages';
 import StageBadge from '@/components/ui/StageBadge';
 import ScoreBadge from '@/components/ui/ScoreBadge';
@@ -14,7 +14,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return ARTICLES.map((article) => ({ slug: article.slug }));
+  return getAllArticlesSync().map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -42,61 +42,12 @@ export default async function ArticlePage({ params }: PageProps) {
   if (!article) notFound();
 
   const stage = getStageById(article.stage);
+  const allArticles = getAllArticlesSync();
   const relatedArticles = article.relatedArticleIds
-    .map((id) => ARTICLES.find((a) => a.id === id))
-    .filter(Boolean) as typeof ARTICLES;
+    .map((id) => allArticles.find((a) => a.id === id || a.slug === id))
+    .filter(Boolean) as typeof allArticles;
 
-  // Simple markdown-like rendering
-  const renderContent = (content: string) => {
-    return content.split('\n').map((line, i) => {
-      if (line.startsWith('## ')) {
-        return <h2 key={i}>{line.slice(3)}</h2>;
-      }
-      if (line.startsWith('### ')) {
-        return <h3 key={i}>{line.slice(4)}</h3>;
-      }
-      if (line.startsWith('> ')) {
-        return <blockquote key={i} dangerouslySetInnerHTML={{ __html: line.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />;
-      }
-      if (line.startsWith('- ')) {
-        return null;
-      }
-      if (line.trim() === '') {
-        return <br key={i} />;
-      }
-      return <p key={i} dangerouslySetInnerHTML={{ __html: line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />;
-    });
-  };
-
-  // Group list items
-  const contentHtml = article.content.split('\n\n').map((block, i) => {
-    const lines = block.split('\n');
-    if (lines.every((l) => l.startsWith('- '))) {
-      return (
-        <ul key={i}>
-          {lines.map((l, j) => (
-            <li key={j} dangerouslySetInnerHTML={{ __html: l.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
-          ))}
-        </ul>
-      );
-    }
-    if (lines.some((l) => l.startsWith('- ')) && lines.some((l) => !l.startsWith('- '))) {
-      return (
-        <div key={i}>
-          {lines.map((l, j) => {
-            if (l.startsWith('- ')) return <ul key={j}><li dangerouslySetInnerHTML={{ __html: l.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} /></ul>;
-            if (l.startsWith('## ')) return <h2 key={j}>{l.slice(3)}</h2>;
-            if (l.startsWith('### ')) return <h3 key={j}>{l.slice(4)}</h3>;
-            if (l.startsWith('> ')) return <blockquote key={j} dangerouslySetInnerHTML={{ __html: l.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />;
-            if (l.match(/^\d+\. /)) return <ol key={j}><li dangerouslySetInnerHTML={{ __html: l.replace(/^\d+\. /, '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} /></ol>;
-            if (l.trim() === '') return null;
-            return <p key={j} dangerouslySetInnerHTML={{ __html: l.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />;
-          })}
-        </div>
-      );
-    }
-    return <div key={i}>{renderContent(block)}</div>;
-  });
+  const contentHtml = await getArticleContentHtml(article.content);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
@@ -161,9 +112,10 @@ export default async function ArticlePage({ params }: PageProps) {
       </header>
 
       {/* Article Content */}
-      <article className="article-content mb-12">
-        {contentHtml}
-      </article>
+      <article
+        className="article-content mb-12"
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
 
       {/* Perspectives (opinion patterns) */}
       {article.source.perspectives && (

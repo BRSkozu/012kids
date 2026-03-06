@@ -5,9 +5,9 @@ import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 import ArticleCard from '@/components/articles/ArticleCard';
 import WorrySearch from '@/components/search/WorrySearch';
-import { ARTICLES } from '@/data/articles';
 import { AGE_STAGES } from '@/data/stages';
 import { CATEGORIES } from '@/data/categories';
+import { ARTICLES } from '@/data/articles';
 import { AgeStage, ContentCategory } from '@/types';
 
 function SearchContent() {

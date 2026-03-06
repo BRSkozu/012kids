@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AgeSelector from '@/components/age-selector/AgeSelector';
 import ArticleCard from '@/components/articles/ArticleCard';
 import WorrySearchCompact from '@/components/search/WorrySearchCompact';
-import { getFeaturedArticles, getLatestArticles } from '@/data/articles';
+import { getFeaturedArticles, getLatestArticles } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 
 export default function HomePage() {
