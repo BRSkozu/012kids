@@ -8,6 +8,7 @@ import ScoreBadge from '@/components/ui/ScoreBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
+import ShareButtons from '@/components/articles/ShareButtons';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -23,9 +24,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!article) return { title: '記事が見つかりません' };
 
   const siteUrl = 'https://012.kids';
+  const articleUrl = `${siteUrl}/articles/${article.slug}`;
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: {
+      canonical: articleUrl,
+    },
     openGraph: {
       title: article.title,
       description: article.excerpt,
@@ -33,8 +38,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
       authors: ['012.kids 編集部'],
-      url: `${siteUrl}/articles/${article.slug}`,
-      images: [{ url: `${siteUrl}/ogp.png`, width: 1200, height: 630 }],
+      url: articleUrl,
+      images: [{ url: `${siteUrl}/ogp/articles/${article.slug}.png`, width: 1200, height: 630 }],
     },
   };
 }
@@ -46,9 +51,26 @@ export default async function ArticlePage({ params }: PageProps) {
 
   const stage = getStageById(article.stage);
   const allArticles = getAllArticlesSync();
-  const relatedArticles = article.relatedArticleIds
+  let relatedArticles = article.relatedArticleIds
     .map((id) => allArticles.find((a) => a.id === id || a.slug === id))
     .filter(Boolean) as typeof allArticles;
+
+  // If fewer than 4 explicit related articles, fill with same category/stage
+  if (relatedArticles.length < 4) {
+    const existingIds = new Set([article.id, ...relatedArticles.map((a) => a.id)]);
+    const candidates = allArticles
+      .filter((a) => !existingIds.has(a.id))
+      .map((a) => {
+        let score = 0;
+        if (a.stage === article.stage) score += 2;
+        if (a.categories.some((c) => article.categories.includes(c))) score += 3;
+        return { article: a, score };
+      })
+      .filter((c) => c.score > 0)
+      .sort((a, b) => b.score - a.score || b.article.score.total - a.article.score.total);
+    const needed = 4 - relatedArticles.length;
+    relatedArticles = [...relatedArticles, ...candidates.slice(0, needed).map((c) => c.article)];
+  }
 
   const contentHtml = await getArticleContentHtml(article.content);
 
@@ -250,7 +272,7 @@ export default async function ArticlePage({ params }: PageProps) {
       </div>
 
       {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-8">
+      <div className="flex flex-wrap gap-2 mb-6">
         {article.tags.map((tag) => (
           <Link
             key={tag}
@@ -262,10 +284,19 @@ export default async function ArticlePage({ params }: PageProps) {
         ))}
       </div>
 
+      {/* Share Buttons */}
+      <div className="mb-8 py-4 border-t border-b border-orange-100">
+        <ShareButtons
+          url={`https://012.kids/articles/${article.slug}`}
+          title={article.title}
+        />
+      </div>
+
       {/* Related Articles */}
       {relatedArticles.length > 0 && (
         <div className="border-t border-orange-100 pt-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">関連記事</h3>
+          <h3 className="text-lg font-bold text-gray-900 mb-2">あわせて読みたい</h3>
+          <p className="text-sm text-gray-500 mb-4">同じテーマの記事をチェック</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {relatedArticles.map((a) => (
               <ArticleCard key={a.id} article={a} variant="compact" />

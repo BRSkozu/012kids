@@ -2,12 +2,15 @@ import Link from 'next/link';
 import AgeSelector from '@/components/age-selector/AgeSelector';
 import ArticleCard from '@/components/articles/ArticleCard';
 import WorrySearchCompact from '@/components/search/WorrySearchCompact';
-import { getFeaturedArticles, getLatestArticles } from '@/lib/articles';
+import { getFeaturedArticles, getLatestArticles, getAllArticlesSync } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 
 export default function HomePage() {
   const featured = getFeaturedArticles();
   const latest = getLatestArticles(6);
+  const ranking = [...getAllArticlesSync()]
+    .sort((a, b) => b.score.total - a.score.total)
+    .slice(0, 10);
 
   return (
     <>
@@ -69,6 +72,40 @@ export default function HomePage() {
               <ArticleCard key={article.id} article={article} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Ranking */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">人気記事ランキング</h2>
+        <p className="text-sm text-gray-500 mb-6">品質スコアの高い記事トップ10</p>
+        <div className="space-y-3">
+          {ranking.map((article, i) => (
+            <Link
+              key={article.id}
+              href={`/articles/${article.slug}`}
+              className="group flex items-center gap-4 p-4 rounded-xl bg-white border border-orange-100 hover:shadow-md hover:border-orange-200 transition-all"
+            >
+              <span
+                className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                  i < 3
+                    ? 'bg-[var(--color-primary)] text-white'
+                    : 'bg-orange-100 text-[var(--color-primary-dark)]'
+                }`}
+              >
+                {i + 1}
+              </span>
+              <div className="min-w-0 flex-1">
+                <p className="font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors truncate">
+                  {article.title}
+                </p>
+                <p className="text-xs text-gray-500 mt-0.5 truncate">{article.excerpt}</p>
+              </div>
+              <span className="shrink-0 text-xs font-bold text-[var(--color-primary)] bg-orange-50 px-2 py-1 rounded-lg">
+                {article.score.total}点
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 

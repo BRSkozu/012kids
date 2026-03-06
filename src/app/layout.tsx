@@ -7,6 +7,7 @@ import './globals.css';
 const siteUrl = 'https://012.kids';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: '012.kids - 子育て・教育情報まとめサイト',
     template: '%s | 012.kids',
@@ -60,6 +61,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
+    canonical: siteUrl,
     types: {
       'application/rss+xml': `${siteUrl}/feed.xml`,
     },
