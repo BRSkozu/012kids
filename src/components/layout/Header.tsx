@@ -13,13 +13,16 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="shrink-0">
-            <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-badge.png`}
-              alt="012.kids"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
-            />
+            <picture>
+              <source srcSet={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-badge.webp`} type="image/webp" />
+              <img
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-badge.png`}
+                alt="012.kids"
+                width={120}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </picture>
           </Link>
 
           {/* Desktop Navigation */}

@@ -3,12 +3,24 @@
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
+import Fuse from 'fuse.js';
 import ArticleCard from '@/components/articles/ArticleCard';
 import WorrySearch from '@/components/search/WorrySearch';
 import { AGE_STAGES } from '@/data/stages';
 import { CATEGORIES } from '@/data/categories';
 import { ARTICLES } from '@/data/articles';
 import { AgeStage, ContentCategory } from '@/types';
+
+const fuse = new Fuse(ARTICLES, {
+  keys: [
+    { name: 'title', weight: 3 },
+    { name: 'excerpt', weight: 2 },
+    { name: 'tags', weight: 2 },
+    { name: 'categories', weight: 1 },
+  ],
+  threshold: 0.4,
+  includeScore: true,
+});
 
 function SearchContent() {
   const searchParams = useSearchParams();
@@ -24,18 +36,9 @@ function SearchContent() {
       return [];
     }
 
-    let filtered = [...ARTICLES];
-
-    if (query.trim()) {
-      const q = query.toLowerCase();
-      filtered = filtered.filter(
-        (a) =>
-          a.title.toLowerCase().includes(q) ||
-          a.excerpt.toLowerCase().includes(q) ||
-          a.tags.some((t) => t.toLowerCase().includes(q)) ||
-          a.categories.some((c) => c.toLowerCase().includes(q))
-      );
-    }
+    let filtered = query.trim()
+      ? fuse.search(query.trim()).map((r) => r.item)
+      : [...ARTICLES];
 
     if (selectedStage !== 'all') {
       filtered = filtered.filter((a) => a.stage === selectedStage);

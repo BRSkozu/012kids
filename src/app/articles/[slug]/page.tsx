@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const article = getArticleBySlug(slug);
   if (!article) return { title: '記事が見つかりません' };
 
+  const siteUrl = 'https://012.kids';
   return {
     title: article.title,
     description: article.excerpt,
@@ -32,6 +33,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
       authors: ['012.kids 編集部'],
+      url: `${siteUrl}/articles/${article.slug}`,
+      images: [{ url: `${siteUrl}/ogp.png`, width: 1200, height: 630 }],
     },
   };
 }
@@ -49,8 +52,37 @@ export default async function ArticlePage({ params }: PageProps) {
 
   const contentHtml = await getArticleContentHtml(article.content);
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.excerpt,
+    datePublished: article.publishedAt,
+    dateModified: article.updatedAt,
+    author: { '@type': 'Organization', name: '012.kids 編集部' },
+    publisher: {
+      '@type': 'Organization',
+      name: '012.kids',
+      logo: { '@type': 'ImageObject', url: 'https://012.kids/ogp.png' },
+    },
+    mainEntityOfPage: `https://012.kids/articles/${article.slug}`,
+  };
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'TOP', item: 'https://012.kids' },
+      { '@type': 'ListItem', position: 2, name: '記事一覧', item: 'https://012.kids/articles' },
+      { '@type': 'ListItem', position: 3, name: stage.label, item: `https://012.kids/age-guide/${article.stage}` },
+      { '@type': 'ListItem', position: 4, name: article.title },
+    ],
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
         <Link href="/" className="hover:text-[var(--color-primary)]">TOP</Link>
