@@ -1645,7 +1645,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/gaming-addiction-prevention.jpg",
     readingTime: 8,
     tags: ["ゲーム依存","スクリーンタイム","デジタル","ルール"],
-    relatedArticleIds: ["art-010","art-050"],
+    relatedArticleIds: ["art-010","art-065","art-050"],
   },
   {
     id: "art-040",
@@ -2256,6 +2256,62 @@ export const ARTICLES: Article[] = [
     readingTime: 7,
     tags: ["カルシウム","鉄分","栄養素","成長期"],
     relatedArticleIds: ["art-023","art-021","art-022"],
+  },
+  {
+    id: "art-065",
+    slug: "online-safety-kids",
+    title: "子どものネット安全ガイド：フィルタリングと家庭のルール作り",
+    excerpt: "子どもが安全にインターネットを利用するためのフィルタリング設定と、家庭でのルール作りのポイントを紹介します。",
+    content: '',
+    stage: "mid",
+    categories: ["digital"],
+    source: {
+      name: "インターネット安全利用に関する公的資料等",
+      references: [
+          {
+                "title": "青少年のインターネット利用環境実態調査",
+                "url": "https://www8.cao.go.jp/youth/youth-harm/chousa/net-jittai_list.html",
+                "org": "内閣府",
+                "stance": "neutral"
+          },
+          {
+                "title": "青少年が安全に安心してインターネットを利用できる環境の整備等に関する法律",
+                "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/filtering.html",
+                "org": "総務省",
+                "stance": "positive"
+          },
+          {
+                "title": "インターネットトラブル事例集",
+                "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/kyouiku_joho-ka/jireishu.html",
+                "org": "総務省",
+                "stance": "cautious"
+          },
+          {
+                "title": "GIGAスクール構想における情報モラル教育",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1403162.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもとメディアに関する提言",
+                "url": "https://www.jpa-web.org/information/sumaho.html",
+                "org": "日本小児科医会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "フィルタリングの活用と家庭でのルール作りにより、子どもがインターネットのメリットを安全に享受できる環境が整えられます。",
+          "neutral": "インターネットリテラシーは制限だけでなく、子ども自身が判断する力を育てることも含めた包括的なアプローチが求められています。",
+          "cautious": "SNSでのトラブルやネット犯罪に子どもが巻き込まれるケースは増加傾向にあり、技術的対策と教育の両面からの対応が必要です。"
+    },
+    },
+    score: {"total":83,"reliability":26,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-01-28",
+    updatedAt: "2026-02-22",
+    imageUrl: "/articles/online-safety-kids.jpg",
+    readingTime: 8,
+    tags: ["ネット安全","フィルタリング","SNS","ルール"],
+    relatedArticleIds: ["art-010","art-064","art-015"],
   },
   {
     id: "art-045",
