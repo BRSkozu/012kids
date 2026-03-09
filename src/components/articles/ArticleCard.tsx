@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
-import ScoreBadge from '@/components/ui/ScoreBadge';
+
 import CategoryTag from '@/components/ui/CategoryTag';
 import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
 
@@ -47,7 +47,6 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
         <div className="p-5">
           <div className="flex items-center gap-2 mb-3">
             <StageBadge stage={article.stage} />
-            <ScoreBadge score={article.score.total} />
           </div>
           <h3 className="text-lg font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2 mb-2">
             {article.title}
@@ -79,7 +78,6 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
       <div className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <StageBadge stage={article.stage} />
-          <ScoreBadge score={article.score.total} />
         </div>
         <h3 className="font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2 mb-1">
           {article.title}

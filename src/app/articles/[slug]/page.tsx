@@ -4,7 +4,6 @@ import { Metadata } from 'next';
 import { getAllArticlesSync, getArticleBySlug, getArticleContentHtml } from '@/lib/articles';
 import { getStageById } from '@/data/stages';
 import StageBadge from '@/components/ui/StageBadge';
-import ScoreBadge from '@/components/ui/ScoreBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
@@ -134,7 +133,6 @@ export default async function ArticlePage({ params }: PageProps) {
       <header className="mb-8">
         <div className="flex items-center gap-2 mb-3 flex-wrap">
           <StageBadge stage={article.stage} size="md" />
-          <ScoreBadge score={article.score.total} showLabel />
           {article.categories.map((cat) => (
             <CategoryTag key={cat} category={cat} />
           ))}
@@ -247,36 +245,6 @@ export default async function ArticlePage({ params }: PageProps) {
             ※ 上記は参考にした情報源です。記事の内容は012.kids編集部が独自にまとめたものであり、各機関が本記事を監修・承認したものではありません。
           </p>
         </div>
-      </div>
-
-      {/* Quality Score Detail */}
-      <div className="border-t border-orange-100 pt-6 mb-8">
-        <h3 className="text-sm font-semibold text-gray-700 mb-3">品質スコア詳細</h3>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-          {[
-            { label: '信頼性', value: article.score.reliability, max: 30 },
-            { label: '中立性', value: article.score.neutrality, max: 25 },
-            { label: '新規性', value: article.score.freshness, max: 20 },
-            { label: '年齢適合', value: article.score.ageRelevance, max: 15 },
-            { label: '読みやすさ', value: article.score.readability, max: 10 },
-          ].map((item) => (
-            <div key={item.label} className="bg-[var(--color-warm-cream)] rounded-lg p-3 text-center">
-              <p className="text-xs text-gray-500">{item.label}</p>
-              <p className="text-lg font-bold text-[var(--color-primary)]">
-                {item.value}<span className="text-xs text-gray-400">/{item.max}</span>
-              </p>
-              <div className="mt-1 h-1.5 bg-orange-100 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-[var(--color-primary)] rounded-full"
-                  style={{ width: `${(item.value / item.max) * 100}%` }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="text-xs text-gray-400 mt-2">
-          総合スコア: {article.score.total}/100 点
-        </p>
       </div>
 
       {/* Tags */}
