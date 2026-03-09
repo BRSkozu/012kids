@@ -31,7 +31,7 @@ export default function ArticlesPageClient({ articles }: Props) {
         result.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
         break;
       case 'score':
-        result.sort((a, b) => b.score.total - a.score.total);
+        result.sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0));
         break;
       case 'popular':
         result.sort((a, b) => b.readingTime - a.readingTime);

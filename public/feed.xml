@@ -6,7 +6,70 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 06 Mar 2026 04:50:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 03:49:04 GMT</lastBuildDate>
+    <item>
+      <title>子どもの初めてのスマホ：何歳から？機種選び・ルール作り・フィルタリング設定</title>
+      <link>https://012.kids/articles/kids-first-smartphone</link>
+      <guid isPermaLink="true">https://012.kids/articles/kids-first-smartphone</guid>
+      <description>子どもにスマホを持たせるタイミング、機種選び、料金プラン、フィルタリング設定、家族のルール作りまで、初めてのスマホに必要なすべてを解説します。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>学童保育の選び方完全ガイド：公立vs民間、小1の壁の乗り越え方</title>
+      <link>https://012.kids/articles/after-school-childcare-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/after-school-childcare-guide</guid>
+      <description>学童保育の種類・費用・選び方から「小1の壁」「小4の壁」の対策まで、共働き家庭のリアルな悩みに答えます。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>小学校の転校手続きと子どものケア：引っ越し・転勤時の完全ガイド</title>
+      <link>https://012.kids/articles/elementary-school-transfer</link>
+      <guid isPermaLink="true">https://012.kids/articles/elementary-school-transfer</guid>
+      <description>転校の手続きから、子どもの心のケア、新しい学校へのスムーズな適応まで、経験者の声を交えて解説します。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>子どものお小遣い制度設計：年齢別の金額目安と金銭感覚の育て方</title>
+      <link>https://012.kids/articles/kids-money-allowance</link>
+      <guid isPermaLink="true">https://012.kids/articles/kids-money-allowance</guid>
+      <description>いつから、いくら渡す？報酬型vs定額型のメリット・デメリット、お金の教育を家庭で始める具体的な方法をまとめました。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>子どもの自然体験・サマーキャンプ選び方ガイド：非認知能力を育てる外遊び</title>
+      <link>https://012.kids/articles/summer-camp-outdoor-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/summer-camp-outdoor-guide</guid>
+      <description>自然体験やサマーキャンプが子どもの成長に与える効果と、安心できるキャンプの選び方・準備のポイントを解説します。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>子どもの病院・小児科の選び方と上手なかかり方ガイド</title>
+      <link>https://012.kids/articles/kids-hospital-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/kids-hospital-guide</guid>
+      <description>かかりつけ小児科の選び方、受診のコツ、夜間・休日の対応、医療費助成制度まで、知っておきたい情報を網羅しました。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>子どもの肌トラブル対策：アトピー・乾燥肌・虫刺され・日焼けの正しいケア</title>
+      <link>https://012.kids/articles/kids-skin-trouble-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/kids-skin-trouble-guide</guid>
+      <description>子どもに多い肌トラブルの予防とケア方法を、皮膚科の診療ガイドラインに基づいて解説します。ステロイド外用薬の正しい知識も紹介。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>子どもが本音を話してくれる親子コミュニケーション術：年齢別アプローチ</title>
+      <link>https://012.kids/articles/parent-child-communication</link>
+      <guid isPermaLink="true">https://012.kids/articles/parent-child-communication</guid>
+      <description>「別に」「ふつう」で会話が終わってしまう…。子どもが安心して本音を話せる関係をつくるための、年齢別コミュニケーション術を解説します。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>スポーツをする子どもの食事と栄養：競技別・目的別ガイド</title>
+      <link>https://012.kids/articles/kids-sports-nutrition</link>
+      <guid isPermaLink="true">https://012.kids/articles/kids-sports-nutrition</guid>
+      <description>スポーツをする子どもに必要な栄養素、試合前後の食事、水分補給の方法を競技別・目的別に詳しく解説します。</description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>自主学習力の育て方：小学校高学年から始める自立した学び</title>
       <link>https://012.kids/articles/self-study-skills-upper-elementary</link>
@@ -19,13 +82,6 @@
       <link>https://012.kids/articles/gifted-twice-exceptional</link>
       <guid isPermaLink="true">https://012.kids/articles/gifted-twice-exceptional</guid>
       <description>ギフテッドや2E（二重の特別支援ニーズ）について、定義や特徴、家庭と学校でできる支援方法をまとめました。</description>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>中学受験と公立進学、どう考える？：メリット・デメリット比較</title>
-      <link>https://012.kids/articles/junior-high-exam-vs-public</link>
-      <guid isPermaLink="true">https://012.kids/articles/junior-high-exam-vs-public</guid>
-      <description>中学受験を検討するご家庭が増えています。公立中学との違い、費用、子どもへの影響を中立的にまとめました。</description>
       <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -160,62 +216,6 @@
       <guid isPermaLink="true">https://012.kids/articles/kids-obesity-prevention</guid>
       <description>増加傾向にある子どもの肥満の原因と、家庭で取り組める食事・運動・生活習慣の改善ポイントを解説します。</description>
       <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>子どもの朝食の重要性：学力・体力との関連データ</title>
-      <link>https://012.kids/articles/kids-breakfast-importance</link>
-      <guid isPermaLink="true">https://012.kids/articles/kids-breakfast-importance</guid>
-      <description>朝食を毎日食べる子どもは学力・体力テストの成績が高い傾向にあります。データに基づく朝食の重要性と、忙しい朝でもできる工夫を紹介します。</description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>小学校入学準備チェックリスト：学習面・生活面・心の準備</title>
-      <link>https://012.kids/articles/first-grade-preparation</link>
-      <guid isPermaLink="true">https://012.kids/articles/first-grade-preparation</guid>
-      <description>小学校入学を控えた年長さんの保護者に向けて、入学までに身につけておきたい力と準備のコツ。</description>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>STEM教育入門：理系の力を家庭で伸ばすアイデア</title>
-      <link>https://012.kids/articles/stem-education-kids</link>
-      <guid isPermaLink="true">https://012.kids/articles/stem-education-kids</guid>
-      <description>科学・技術・工学・数学を統合的に学ぶSTEM教育を家庭で実践するためのアイデアと教材を紹介します。</description>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>SDGs教育を家庭で始める方法：子どもと一緒に考えるサステナビリティ</title>
-      <link>https://012.kids/articles/sdgs-education-kids</link>
-      <guid isPermaLink="true">https://012.kids/articles/sdgs-education-kids</guid>
-      <description>SDGs（持続可能な開発目標）を家庭で楽しく学ぶ方法を紹介。親子で取り組めるアクティビティや日常の中での気づきの促し方をまとめました。</description>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>子どもの歯科ケアガイド：年齢別のケア方法とフッ素の効果</title>
-      <link>https://012.kids/articles/kids-dental-care</link>
-      <guid isPermaLink="true">https://012.kids/articles/kids-dental-care</guid>
-      <description>乳歯が生え始めてからのケア方法、フッ素塗布の効果、歯科健診のタイミングなど、子どもの歯の健康を守る情報をまとめました。</description>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>子どものメンタル不調のサイン：見逃さないためのチェックリスト</title>
-      <link>https://012.kids/articles/kids-mental-health-signs</link>
-      <guid isPermaLink="true">https://012.kids/articles/kids-mental-health-signs</guid>
-      <description>子どもの心の不調を早期に気づくためのサインと、適切な対応・相談先について解説します。</description>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>ゲーム依存を防ぐ：健全なゲームとの付き合い方</title>
-      <link>https://012.kids/articles/gaming-addiction-prevention</link>
-      <guid isPermaLink="true">https://012.kids/articles/gaming-addiction-prevention</guid>
-      <description>子どものゲーム依存の兆候と予防策、健全にゲームを楽しむための家庭ルールの作り方を解説します。</description>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>知育アプリの選び方ガイド：年齢別おすすめと注意点</title>
-      <link>https://012.kids/articles/educational-apps-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/educational-apps-guide</guid>
-      <description>子ども向け知育アプリの選び方のポイント、年齢別の活用法、スクリーンタイムとのバランスについてまとめました。</description>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

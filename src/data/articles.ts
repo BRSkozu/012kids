@@ -6,6 +6,462 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-074",
+    slug: "kids-first-smartphone",
+    title: "子どもの初めてのスマホ：何歳から？機種選び・ルール作り・フィルタリング設定",
+    excerpt: "子どもにスマホを持たせるタイミング、機種選び、料金プラン、フィルタリング設定、家族のルール作りまで、初めてのスマホに必要なすべてを解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["digital"],
+    source: {
+      name: "子どものインターネット利用に関する公的調査等",
+      references: [
+          {
+                "title": "青少年のインターネット利用環境実態調査",
+                "url": "https://www8.cao.go.jp/youth/kankyou/internet_torikumi/",
+                "org": "内閣府",
+                "stance": "neutral"
+          },
+          {
+                "title": "青少年が安全に安心してインターネットを利用できる環境の整備等に関する法律",
+                "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/seisyonen.html",
+                "org": "総務省",
+                "stance": "positive"
+          },
+          {
+                "title": "インターネットトラブル事例集",
+                "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/kyouiku_joho-ka/jireishu.html",
+                "org": "総務省",
+                "stance": "cautious"
+          },
+          {
+                "title": "フィルタリング（有害サイトアクセス制限サービス）について",
+                "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/filtering.html",
+                "org": "総務省",
+                "stance": "positive"
+          },
+          {
+                "title": "こどもの安全に関する取り組み",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "スマートフォンは適切に管理すれば、子どもの安全を守るツール（GPS、緊急連絡）として有効に活用できます。",
+          "neutral": "スマホを持たせる適切な年齢に一律の正解はなく、子どもの成熟度、家庭環境、利用目的によって判断が分かれます。",
+          "cautious": "内閣府の調査では、スマホ所持の低年齢化に伴いネットトラブルも増加傾向にあり、フィルタリング設定と家庭でのルール作りが不可欠とされています。"
+    },
+    },
+    score: {"total":85,"reliability":26,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/kids-first-smartphone.jpg",
+    readingTime: 15,
+    tags: ["スマートフォン","フィルタリング","ペアレンタルコントロール","SNS","子どものネット利用"],
+    relatedArticleIds: ["art-010","art-065","art-039"],
+  },
+  {
+    id: "art-069",
+    slug: "after-school-childcare-guide",
+    title: "学童保育の選び方完全ガイド：公立vs民間、小1の壁の乗り越え方",
+    excerpt: "学童保育の種類・費用・選び方から「小1の壁」「小4の壁」の対策まで、共働き家庭のリアルな悩みに答えます。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "放課後児童クラブ・学童保育に関する公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブについて",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "学童保育は、放課後の安全な居場所を提供するだけでなく、異年齢交流や体験活動を通じて社会性を育む場としても重要です。",
+          "neutral": "学童保育の質は施設によって大きく異なり、「ただ預かっているだけ」というケースもあります。見学して確認することが重要です。",
+          "cautious": "待機児童問題は学童保育にも存在し、特に都市部では利用できない家庭もあります。"
+    },
+    },
+    score: {"total":80,"reliability":24,"neutrality":22,"freshness":18,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/after-school-childcare-guide.jpg",
+    readingTime: 16,
+    tags: ["学童保育","小1の壁","共働き","放課後","民間学童"],
+    relatedArticleIds: ["art-007","art-009","art-038"],
+  },
+  {
+    id: "art-067",
+    slug: "elementary-school-transfer",
+    title: "小学校の転校手続きと子どものケア：引っ越し・転勤時の完全ガイド",
+    excerpt: "転校の手続きから、子どもの心のケア、新しい学校へのスムーズな適応まで、経験者の声を交えて解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","mental"],
+    source: {
+      name: "転校手続き・子どもの適応に関する情報",
+      references: [
+          {
+                "title": "就学手続きについて",
+                "url": "https://www.mext.go.jp/a_menu/shotou/shugaku/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "生徒指導提要（転学児童への配慮）",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1404008.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの心のケアに関する情報",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "転校は子どもにとって新しい環境で成長するチャンスにもなりえます。適応力やコミュニケーション力が高まることもあります。",
+          "neutral": "転校の影響は、子どもの年齢・性格・転校の理由・受け入れ側の環境など複合的な要因で決まります。",
+          "cautious": "特に学期途中の転校は、友人関係の構築が難しく、不登校のリスクが高まるケースもあるため、丁寧なフォローが必要です。"
+    },
+    },
+    score: {"total":78,"reliability":23,"neutrality":22,"freshness":16,"ageRelevance":12,"readability":5},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/elementary-school-transfer.jpg",
+    readingTime: 14,
+    tags: ["転校","引っ越し","手続き","適応","転勤"],
+    relatedArticleIds: ["art-007","art-062","art-036"],
+  },
+  {
+    id: "art-066",
+    slug: "kids-money-allowance",
+    title: "子どものお小遣い制度設計：年齢別の金額目安と金銭感覚の育て方",
+    excerpt: "いつから、いくら渡す？報酬型vs定額型のメリット・デメリット、お金の教育を家庭で始める具体的な方法をまとめました。",
+    content: '',
+    stage: "mid",
+    categories: ["education"],
+    source: {
+      name: "金融教育・子どものお金に関する調査",
+      references: [
+          {
+                "title": "金融リテラシー調査",
+                "url": "https://www.shiruporuto.jp/public/document/container/literacy_chosa/",
+                "org": "金融広報中央委員会",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どものくらしとお金に関する調査",
+                "url": "https://www.shiruporuto.jp/public/document/container/kodomo_chosa/",
+                "org": "金融広報中央委員会",
+                "stance": "neutral"
+          },
+          {
+                "title": "学習指導要領（家庭科・消費者教育）",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "消費者教育推進法",
+                "url": "https://www.caa.go.jp/policies/policy/consumer_education/",
+                "org": "消費者庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "早期からの金融教育は、将来の健全な金銭感覚の基盤になるとされています。お小遣いは最も身近な「お金の教育ツール」です。",
+          "neutral": "お小遣いの金額や渡し方に「正解」はなく、家庭の経済状況や教育方針によって異なります。大切なのは「お金について話す機会を作る」ことです。",
+          "cautious": "お小遣いを報酬型（お手伝いの対価）にすると、報酬がないと動かなくなるリスクがあるとの指摘もあります。"
+    },
+    },
+    score: {"total":76,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/kids-money-allowance.jpg",
+    readingTime: 14,
+    tags: ["お小遣い","金融教育","お金の教育","貯金"],
+    relatedArticleIds: ["art-047","art-012"],
+  },
+  {
+    id: "art-072",
+    slug: "summer-camp-outdoor-guide",
+    title: "子どもの自然体験・サマーキャンプ選び方ガイド：非認知能力を育てる外遊び",
+    excerpt: "自然体験やサマーキャンプが子どもの成長に与える効果と、安心できるキャンプの選び方・準備のポイントを解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["education","social"],
+    source: {
+      name: "子どもの自然体験・野外活動に関する公的資料等",
+      references: [
+          {
+                "title": "青少年の体験活動等に関する意識調査",
+                "url": "https://www.niye.go.jp/research/taikenkatudo.html",
+                "org": "国立青少年教育振興機構",
+                "stance": "positive"
+          },
+          {
+                "title": "子供の体験活動の実態に関する調査研究",
+                "url": "https://www.niye.go.jp/research/tyosa.html",
+                "org": "国立青少年教育振興機構",
+                "stance": "neutral"
+          },
+          {
+                "title": "体験活動の推進について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/04121502/055.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子ども・子育て支援に関する情報",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立青少年教育振興機構の大規模調査で、子ども時代の自然体験が豊富な人ほど、大人になってからの自己肯定感や意欲が高い傾向が報告されています。",
+          "neutral": "自然体験の効果は個人差が大きく、すべての子どもに同じ効果が期待できるわけではありません。体験の質や本人の意欲も重要です。",
+          "cautious": "自然体験活動には一定のリスクが伴うため、安全管理体制が整った団体を選ぶことが重要です。事故防止と体験のバランスが議論されています。"
+    },
+    },
+    score: {"total":82,"reliability":25,"neutrality":21,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/summer-camp-outdoor-guide.jpg",
+    readingTime: 13,
+    tags: ["サマーキャンプ","自然体験","非認知能力","外遊び","野外教育"],
+    relatedArticleIds: ["art-063","art-018","art-019"],
+  },
+  {
+    id: "art-068",
+    slug: "kids-hospital-guide",
+    title: "子どもの病院・小児科の選び方と上手なかかり方ガイド",
+    excerpt: "かかりつけ小児科の選び方、受診のコツ、夜間・休日の対応、医療費助成制度まで、知っておきたい情報を網羅しました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "小児医療・子どもの受診に関する公的情報",
+      references: [
+          {
+                "title": "小児救急電話相談事業（#8000）",
+                "url": "https://www.mhlw.go.jp/topics/2006/10/tp1010-3.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子ども医療電話相談事業",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000132718.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "こどもの救急（ONLINE-QQ）",
+                "url": "http://kodomo-qq.jp/",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "乳幼児健診について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "かかりつけ医を持つことで、子どもの成長の経過を見てもらえ、緊急時の相談もスムーズになります。",
+          "neutral": "「良い小児科」の基準は家庭によって異なります。アクセス、診療時間、先生との相性など総合的に判断することが大切です。",
+          "cautious": "夜間・休日の安易な受診（コンビニ受診）は小児救急医療を逼迫させるため、まず#8000に電話相談することが推奨されています。"
+    },
+    },
+    score: {"total":84,"reliability":27,"neutrality":22,"freshness":17,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/kids-hospital-guide.jpg",
+    readingTime: 16,
+    tags: ["小児科","かかりつけ医","救急","#8000","医療費"],
+    relatedArticleIds: ["art-026","art-028","art-029"],
+  },
+  {
+    id: "art-073",
+    slug: "kids-skin-trouble-guide",
+    title: "子どもの肌トラブル対策：アトピー・乾燥肌・虫刺され・日焼けの正しいケア",
+    excerpt: "子どもに多い肌トラブルの予防とケア方法を、皮膚科の診療ガイドラインに基づいて解説します。ステロイド外用薬の正しい知識も紹介。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "子どもの皮膚疾患に関する診療ガイドライン等",
+      references: [
+          {
+                "title": "アトピー性皮膚炎診療ガイドライン2024",
+                "url": "https://www.dermatol.or.jp/modules/guideline/index.php?content_id=2",
+                "org": "日本皮膚科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "アレルギー疾患対策について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/allergy/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの健康と環境に関する全国調査（エコチル調査）",
+                "url": "https://www.env.go.jp/chemi/ceh/",
+                "org": "環境省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どものアレルギー疾患に関する情報",
+                "url": "https://www.ncchd.go.jp/hospital/sickness/allergy/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "紫外線環境保健マニュアル",
+                "url": "https://www.env.go.jp/chemi/uv/uv_manual.html",
+                "org": "環境省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "適切なスキンケアの習慣化と、必要に応じた医療機関の受診で、多くの肌トラブルはコントロール可能です。",
+          "neutral": "子どもの肌はバリア機能が未熟なため大人よりトラブルが起きやすいですが、成長とともに改善するケースも多くあります。",
+          "cautious": "ステロイド外用薬への不安から自己判断で中断するケースが問題視されており、医師の指示に従った適切な使用が重要とされています。"
+    },
+    },
+    score: {"total":85,"reliability":27,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/kids-skin-trouble-guide.jpg",
+    readingTime: 14,
+    tags: ["肌トラブル","アトピー","スキンケア","日焼け止め","ステロイド"],
+    relatedArticleIds: ["art-006","art-053","art-001"],
+  },
+  {
+    id: "art-070",
+    slug: "parent-child-communication",
+    title: "子どもが本音を話してくれる親子コミュニケーション術：年齢別アプローチ",
+    excerpt: "「別に」「ふつう」で会話が終わってしまう…。子どもが安心して本音を話せる関係をつくるための、年齢別コミュニケーション術を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["mental"],
+    source: {
+      name: "親子コミュニケーションに関する研究・公的資料等",
+      references: [
+          {
+                "title": "子供・若者白書",
+                "url": "https://www8.cao.go.jp/youth/whitepaper/r05honpen/index.html",
+                "org": "内閣府",
+                "stance": "neutral"
+          },
+          {
+                "title": "健やか親子21（第2次）",
+                "url": "https://sukoyaka21.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの心の診療ネットワーク事業",
+                "url": "https://ncchd.go.jp/kokoro/index.html",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "家庭教育支援の推進について",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/index.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "温かく受容的な親子コミュニケーションは、子どもの自己肯定感や社会性の発達に大きく寄与することが多くの研究で示されています。",
+          "neutral": "コミュニケーションの「正解」は家庭ごとに異なり、子どもの気質や親子の関係性によって最適なアプローチは変わります。",
+          "cautious": "「話を聞くこと」の重要性が強調される一方で、親が聞き出そうとしすぎることが逆効果になるケースもあり、適度な距離感が大切とされています。"
+    },
+    },
+    score: {"total":83,"reliability":25,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/parent-child-communication.jpg",
+    readingTime: 12,
+    tags: ["親子コミュニケーション","傾聴","本音","子育て","対話"],
+    relatedArticleIds: ["art-014","art-062","art-036"],
+  },
+  {
+    id: "art-071",
+    slug: "kids-sports-nutrition",
+    title: "スポーツをする子どもの食事と栄養：競技別・目的別ガイド",
+    excerpt: "スポーツをする子どもに必要な栄養素、試合前後の食事、水分補給の方法を競技別・目的別に詳しく解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["nutrition","health"],
+    source: {
+      name: "ジュニアアスリートの栄養に関する公的資料等",
+      references: [
+          {
+                "title": "日本人の食事摂取基準（2020年版）",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校における体育活動中の事故防止等について",
+                "url": "https://www.mext.go.jp/a_menu/sports/jyujitsu/index.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "スポーツ栄養に関する情報",
+                "url": "https://www.jpnsport.go.jp/hpsc/study/sports_nutrition/tabid/1522/Default.aspx",
+                "org": "国立スポーツ科学センター（JISS）",
+                "stance": "neutral"
+          },
+          {
+                "title": "食育ガイド",
+                "url": "https://www.maff.go.jp/j/syokuiku/guide/index.html",
+                "org": "農林水産省",
+                "stance": "positive"
+          },
+          {
+                "title": "成長期の栄養管理",
+                "url": "https://www.ncchd.go.jp/hospital/about/section/nutrition/index.html",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な栄養管理はジュニアアスリートのパフォーマンス向上だけでなく、成長期の体づくりの基盤となります。",
+          "neutral": "スポーツの種類や練習量、個人の体格によって必要な栄養量は大きく異なり、一律の基準では対応できない面があります。",
+          "cautious": "成長期の過度な食事制限や体重管理は、発育障害や摂食障害のリスクがあるため、専門家の指導のもとで行うことが重要です。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-09",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/kids-sports-nutrition.jpg",
+    readingTime: 14,
+    tags: ["スポーツ栄養","ジュニアアスリート","食事","水分補給","成長期"],
+    relatedArticleIds: ["art-024","art-023","art-009"],
+  },
+  {
     id: "art-012",
     slug: "self-study-skills-upper-elementary",
     title: "自主学習力の育て方：小学校高学年から始める自立した学び",
@@ -110,62 +566,6 @@ export const ARTICLES: Article[] = [
     readingTime: 7,
     tags: ["ギフテッド","2E","才能教育","発達特性"],
     relatedArticleIds: ["art-032","art-036","art-008"],
-  },
-  {
-    id: "art-011",
-    slug: "junior-high-exam-vs-public",
-    title: "中学受験と公立進学、どう考える？：メリット・デメリット比較",
-    excerpt: "中学受験を検討するご家庭が増えています。公立中学との違い、費用、子どもへの影響を中立的にまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["education"],
-    source: {
-      name: "中学受験・進学に関する各種情報",
-      references: [
-          {
-                "title": "学校基本調査",
-                "url": "https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          },
-          {
-                "title": "子どもの学習費調査（公立・私立の比較）",
-                "url": "https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          },
-          {
-                "title": "子どもの生活と学びに関する親子調査（進路選択）",
-                "url": "https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438",
-                "org": "東京大学社会科学研究所・ベネッセ教育総合研究所",
-                "stance": "positive"
-          },
-          {
-                "title": "小学校学習指導要領（公立中学への接続）",
-                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "こころの情報サイト（子どものストレス）",
-                "url": "https://kokoro.ncnp.go.jp/",
-                "org": "国立精神・神経医療研究センター",
-                "stance": "cautious"
-          }
-    ],
-      perspectives: {
-          "positive": "私立中学は一貫教育や少人数制のメリットがあり、公立中学は多様性や地域との繋がりが強みとされています。どちらにも教育的な価値があります。",
-          "neutral": "中学受験の選択は、地域の公立中学の状況、家庭の経済事情、お子さんの学習意欲など複合的な要因で判断されるものです。統計的にも「どちらが正解」とは言えないデータが多いです。",
-          "cautious": "受験に伴う長時間の塾通いが子どもの心身に与える負担を懸念する声があります。「子ども本人の意思」を最優先にすべきという意見が増えています。"
-    },
-    },
-    score: {"total":80,"reliability":23,"neutrality":23,"freshness":18,"ageRelevance":11,"readability":5},
-    publishedAt: "2026-03-01",
-    updatedAt: "2026-03-01",
-    imageUrl: "/articles/junior-high-exam-vs-public.jpg",
-    readingTime: 12,
-    tags: ["中学受験","公立中学","進学","教育費"],
-    relatedArticleIds: ["art-012","art-009"],
   },
   {
     id: "art-039",
@@ -341,11 +741,11 @@ export const ARTICLES: Article[] = [
     },
     score: {"total":86,"reliability":28,"neutrality":23,"freshness":16,"ageRelevance":12,"readability":7},
     publishedAt: "2026-02-25",
-    updatedAt: "2026-02-25",
+    updatedAt: "2026-03-09",
     imageUrl: "/articles/screen-time-management.jpg",
-    readingTime: 8,
-    tags: ["スクリーンタイム","デジタルリテラシー","WHO","メディア"],
-    relatedArticleIds: ["art-011"],
+    readingTime: 16,
+    tags: ["スクリーンタイム","デジタルリテラシー","WHO","メディア","YouTube","ゲーム"],
+    relatedArticleIds: ["art-064","art-065","art-030"],
   },
   {
     id: "art-030",
@@ -571,9 +971,9 @@ export const ARTICLES: Article[] = [
     },
     score: {"total":86,"reliability":28,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":6},
     publishedAt: "2026-02-22",
-    updatedAt: "2026-03-05",
+    updatedAt: "2026-03-09",
     imageUrl: "/articles/school-refusal-support.jpg",
-    readingTime: 8,
+    readingTime: 20,
     tags: ["不登校","メンタルヘルス","居場所","教育機会確保"],
     relatedArticleIds: ["art-013","art-014","art-035"],
   },
@@ -683,11 +1083,11 @@ export const ARTICLES: Article[] = [
     },
     score: {"total":74,"reliability":21,"neutrality":19,"freshness":18,"ageRelevance":11,"readability":5},
     publishedAt: "2026-02-20",
-    updatedAt: "2026-02-20",
+    updatedAt: "2026-03-09",
     imageUrl: "/articles/extracurricular-activities-guide.jpg",
-    readingTime: 9,
-    tags: ["習い事","ゴールデンエイジ","適性","小学校中学年"],
-    relatedArticleIds: ["art-010","art-008"],
+    readingTime: 15,
+    tags: ["習い事","ゴールデンエイジ","適性","小学校中学年","スイミング","ピアノ","プログラミング"],
+    relatedArticleIds: ["art-010","art-008","art-015"],
   },
   {
     id: "art-053",
@@ -1137,9 +1537,9 @@ export const ARTICLES: Article[] = [
     },
     score: {"total":76,"reliability":22,"neutrality":20,"freshness":17,"ageRelevance":12,"readability":5},
     publishedAt: "2026-02-15",
-    updatedAt: "2026-02-15",
+    updatedAt: "2026-03-09",
     imageUrl: "/articles/home-study-habits-elementary.jpg",
-    readingTime: 7,
+    readingTime: 17,
     tags: ["家庭学習","学習習慣","小学生","学年別"],
     relatedArticleIds: ["art-007","art-009"],
   },
@@ -1815,9 +2215,9 @@ export const ARTICLES: Article[] = [
     },
     score: {"total":90,"reliability":29,"neutrality":24,"freshness":18,"ageRelevance":13,"readability":6},
     publishedAt: "2026-02-05",
-    updatedAt: "2026-02-28",
+    updatedAt: "2026-03-09",
     imageUrl: "/articles/food-allergy-children.jpg",
-    readingTime: 11,
+    readingTime: 22,
     tags: ["食物アレルギー","アレルギー検査","給食対応","アナフィラキシー"],
     relatedArticleIds: ["art-002"],
   },
@@ -2699,9 +3099,9 @@ export const ARTICLES: Article[] = [
     },
     score: {"total":82,"reliability":26,"neutrality":22,"freshness":16,"ageRelevance":12,"readability":6},
     publishedAt: "2026-01-22",
-    updatedAt: "2026-02-15",
+    updatedAt: "2026-03-09",
     imageUrl: "/articles/toddler-picky-eating.jpg",
-    readingTime: 6,
+    readingTime: 16,
     tags: ["偏食","好き嫌い","幼児食","食育"],
     relatedArticleIds: ["art-002","art-024","art-023"],
   },
@@ -2762,6 +3162,62 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-003","art-045","art-004"],
   },
   {
+    id: "art-011",
+    slug: "junior-high-exam-vs-public",
+    title: "中学受験と公立進学、どう考える？：メリット・デメリット比較",
+    excerpt: "中学受験を検討するご家庭が増えています。公立中学との違い、費用、子どもへの影響を中立的にまとめました。",
+    content: '',
+    stage: "upper",
+    categories: ["education"],
+    source: {
+      name: "中学受験・進学に関する各種情報",
+      references: [
+          {
+                "title": "学校基本調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの学習費調査（公立・私立の比較）",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの生活と学びに関する親子調査（進路選択）",
+                "url": "https://berd.benesse.jp/shotouchutou/research/detail1.php?id=5438",
+                "org": "東京大学社会科学研究所・ベネッセ教育総合研究所",
+                "stance": "positive"
+          },
+          {
+                "title": "小学校学習指導要領（公立中学への接続）",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "こころの情報サイト（子どものストレス）",
+                "url": "https://kokoro.ncnp.go.jp/",
+                "org": "国立精神・神経医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "私立中学は一貫教育や少人数制のメリットがあり、公立中学は多様性や地域との繋がりが強みとされています。どちらにも教育的な価値があります。",
+          "neutral": "中学受験の選択は、地域の公立中学の状況、家庭の経済事情、お子さんの学習意欲など複合的な要因で判断されるものです。統計的にも「どちらが正解」とは言えないデータが多いです。",
+          "cautious": "受験に伴う長時間の塾通いが子どもの心身に与える負担を懸念する声があります。「子ども本人の意思」を最優先にすべきという意見が増えています。"
+    },
+    },
+    score: {"total":80,"reliability":23,"neutrality":23,"freshness":18,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-01-20",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/junior-high-exam-vs-public.jpg",
+    readingTime: 18,
+    tags: ["中学受験","公立中学","進学","教育費","塾選び"],
+    relatedArticleIds: ["art-012","art-009","art-008"],
+  },
+  {
     id: "art-001",
     slug: "baby-sleep-training-guide",
     title: "赤ちゃんの睡眠リズムを整える方法：月齢別ガイド",
@@ -2817,9 +3273,9 @@ export const ARTICLES: Article[] = [
     },
     score: {"total":88,"reliability":28,"neutrality":23,"freshness":18,"ageRelevance":13,"readability":6},
     publishedAt: "2026-01-20",
-    updatedAt: "2026-02-15",
+    updatedAt: "2026-03-09",
     imageUrl: "/articles/baby-sleep-training-guide.jpg",
-    readingTime: 8,
+    readingTime: 18,
     tags: ["睡眠","赤ちゃん","月齢別","寝かしつけ"],
     relatedArticleIds: ["art-002","art-003"],
   },
@@ -3656,6 +4112,1514 @@ export const ARTICLES: Article[] = [
     readingTime: 8,
     tags: ["レジリエンス","非認知能力","逆境","心の強さ"],
     relatedArticleIds: ["art-014","art-055","art-057"],
+  },
+  {
+    id: "art-102",
+    slug: "developmental-disability-support",
+    title: "発達障害の基礎知識：特性の理解と家庭でできるサポート",
+    excerpt: "ASD・ADHD・LDの特徴、早期発見のサイン、診断の流れ、療育、学校での支援、家族のケアについてまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "発達障害に関する公的情報・診療ガイドライン",
+      references: [
+          {
+                "title": "発達障害者支援法",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/hattatsu/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "発達障害情報・支援センター",
+                "url": "https://www.rehab.go.jp/ddis/",
+                "org": "国立障害者リハビリテーションセンター",
+                "stance": "positive"
+          },
+          {
+                "title": "注意欠如・多動症（ADHD）診断・治療ガイドライン",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児神経学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "自閉スペクトラム症に関する提言",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "特別支援教育について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "発達障害のある子の親のためのペアレント・トレーニング",
+                "url": "https://www.ncnp.go.jp/",
+                "org": "国立精神・神経医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "発達障害は脳の機能的な特性であり、早期からの適切な支援によって困りごとを軽減し、本人の強みを伸ばすことが可能です。",
+          "neutral": "発達障害は「育て方のせい」ではありません。特性を理解し、環境を調整することで、子どもも家族も楽になれる方法があります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/developmental-disability-support.jpg",
+    readingTime: 20,
+    tags: ["発達障害","ASD","ADHD","学習障害","療育","特別支援教育","ペアレントトレーニング"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-088",
+    slug: "indoor-play-ideas",
+    title: "雨の日もOK！年齢別・室内遊びアイデア50選",
+    excerpt: "雨の日や猛暑日でも楽しめる、年齢別の室内遊びアイデアを50個厳選。知育・運動・創造力を育む遊びが満載です。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "幼児教育・発達に関する各種研究",
+      references: [
+          {
+                "title": "幼稚園教育要領",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "保育所保育指針（遊びと発達）",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの遊びと発達に関する研究",
+                "url": "https://www.nier.go.jp/youji_kyouiku_kenkyuu_center/y_index.html",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "Learning through play",
+                "url": "https://www.unicef.org/early-childhood-development",
+                "org": "UNICEF",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "室内遊びでも全身運動の機会を確保することが子どもの運動発達や体力維持に重要です。",
+          "neutral": "天候に左右されず遊べるレパートリーを持っておくと、親子ともにストレスが減り、充実した時間を過ごせます。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/indoor-play-ideas.jpg",
+    readingTime: 18,
+    tags: ["室内遊び","雨の日","年齢別","知育","運動遊び"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-095",
+    slug: "month-by-month-baby-0-12",
+    title: "赤ちゃんの月齢別発達ガイド：0〜12ヶ月の成長と関わり方",
+    excerpt: "生まれてから1歳の誕生日まで、月ごとの発達の目安と赤ちゃんとの遊び方・関わり方をまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "乳児の月齢別発達に関する専門情報",
+      references: [
+          {
+                "title": "乳幼児健康診査身体診察マニュアル",
+                "url": "https://www.ncchd.go.jp/center/activity/kokoro/manual.html",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "母子健康手帳の改正について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/kenkou-04.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "学会からの提言・主張（発達関連）",
+                "url": "https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=27",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "Child Growth Standards",
+                "url": "https://www.who.int/tools/child-growth-standards",
+                "org": "WHO",
+                "stance": "neutral"
+          },
+          {
+                "title": "Denver式発達スクリーニング検査",
+                "url": "https://www.jasdi.jp/",
+                "org": "日本小児保健協会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "月齢ごとの発達の目安は乳幼児健診で活用される重要な指標ですが、個人差を考慮し総合的に評価することが推奨されています。",
+          "neutral": "目安はあくまで参考。赤ちゃん一人ひとりのペースを大切にしながら、日々の成長を楽しみましょう。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/month-by-month-baby-0-12.jpg",
+    readingTime: 15,
+    tags: ["月齢別発達","赤ちゃん","運動発達","言語発達","社会性"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-089",
+    slug: "seasonal-crafts-activities",
+    title: "季節の工作＆遊び：春夏秋冬を楽しむ親子アクティビティ",
+    excerpt: "日本の四季と行事を楽しむ工作・遊びアイデアを月別に紹介。節分、ひな祭り、七夕など伝統行事の工作も満載です。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "幼児教育・季節行事に関する情報",
+      references: [
+          {
+                "title": "幼稚園教育要領（表現領域）",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "保育所保育指針（表現活動）",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの造形活動と発達",
+                "url": "https://www.nier.go.jp/youji_kyouiku_kenkyuu_center/y_index.html",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "工作活動は手指の巧緻性を高め、脳の発達を促進します。安全な材料選びと誤飲防止が重要です。",
+          "neutral": "季節の行事を通じた工作は、日本の文化を自然に学ぶ機会になり、親子の思い出づくりにもなります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/seasonal-crafts-activities.jpg",
+    readingTime: 18,
+    tags: ["季節の工作","行事","親子遊び","手作り","日本文化"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-096",
+    slug: "toddler-development-1-3",
+    title: "1〜3歳の発達と成長：イヤイヤ期を含む幼児期の見守り方",
+    excerpt: "言葉の爆発、イヤイヤ期、トイレトレーニング。1〜3歳の発達の特徴と親の関わり方をまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "幼児期の発達に関する専門情報",
+      references: [
+          {
+                "title": "乳幼児健康診査身体診察マニュアル",
+                "url": "https://www.ncchd.go.jp/center/activity/kokoro/manual.html",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児期の発達に関するガイドライン",
+                "url": "https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=27",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "幼児教育・保育の無償化について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/youchien/1422127.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の発達に関する研究",
+                "url": "https://www.nips.ac.jp/",
+                "org": "生理学研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "1〜3歳の発達は言語・運動・社会性すべての領域で大きな飛躍が見られる時期です。1歳半・3歳児健診を活用した定期的な確認が推奨されています。",
+          "neutral": "イヤイヤ期は子どもの自我の成長の証。親にとっては大変な時期ですが、成長を見守る姿勢が大切です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/toddler-development-1-3.jpg",
+    readingTime: 15,
+    tags: ["幼児発達","イヤイヤ期","言語発達","トイレトレーニング","自我の発達"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-090",
+    slug: "discipline-by-age",
+    title: "年齢別しつけガイド：叱り方・褒め方・生活習慣の教え方",
+    excerpt: "イヤイヤ期の対応から小学生の生活習慣まで、年齢別のしつけ方法を専門家の知見をもとに解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["education"],
+    source: {
+      name: "子どものしつけ・発達に関する研究",
+      references: [
+          {
+                "title": "保育所保育指針（養護と教育）",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "体罰等によらない子育てのために",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/taibatsu.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの発達と親のかかわり",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "Positive Discipline",
+                "url": "https://www.aap.org/en/patient-care/healthy-active-living-for-families/",
+                "org": "American Academy of Pediatrics",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "子どもの脳の発達段階に応じたしつけが重要であり、体罰は脳の発達に悪影響を与えることが研究で示されています。",
+          "neutral": "子どもの気持ちに寄り添いながらも一貫した態度でルールを示すことが、安心感のある親子関係の基盤になります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/discipline-by-age.jpg",
+    readingTime: 20,
+    tags: ["しつけ","叱り方","褒め方","生活習慣","イヤイヤ期"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-087",
+    slug: "nursery-kindergarten-choosing",
+    title: "保育園・幼稚園の選び方：見学ポイントと比較チェックリスト",
+    excerpt: "保育園・幼稚園・認定こども園の違いから、見学時のチェックポイント、保活のコツまで徹底解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["education"],
+    source: {
+      name: "保育・幼児教育制度に関する公的情報",
+      references: [
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "幼稚園教育要領",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "認定こども園概要",
+                "url": "https://www8.cao.go.jp/shoushi/kodomoen/gaiyou.html",
+                "org": "内閣府",
+                "stance": "neutral"
+          },
+          {
+                "title": "保育所等関連状況取りまとめ",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/index.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "子どもの発達段階に合った環境選びが重要であり、安全基準や衛生管理が整った施設を選ぶことが推奨されます。",
+          "neutral": "家庭の働き方やライフスタイルに合った園を選ぶことが、親子ともにストレスの少ない生活につながります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/nursery-kindergarten-choosing.jpg",
+    readingTime: 15,
+    tags: ["保育園","幼稚園","認定こども園","保活","園選び"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-091",
+    slug: "toilet-training-guide",
+    title: "トイレトレーニング完全ガイド：始め時・進め方・つまずき対策",
+    excerpt: "トイレトレーニングの始め時の見極めから、ステップ別の進め方、夜のおねしょ対策まで完全網羅します。",
+    content: '',
+    stage: "pre",
+    categories: ["education"],
+    source: {
+      name: "小児科・保育の専門情報",
+      references: [
+          {
+                "title": "乳幼児健診における発達チェック",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "排泄の自立に関する研究",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "Toilet Training Guidelines",
+                "url": "https://www.aap.org/en/patient-care/toilet-training/",
+                "org": "American Academy of Pediatrics",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "排泄の自立は膀胱機能の発達と密接に関係しており、身体的な準備が整う前に無理に進めることは推奨されません。",
+          "neutral": "子どものペースを尊重しながら、焦らず楽しい雰囲気で進めることが成功の鍵です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/toilet-training-guide.jpg",
+    readingTime: 15,
+    tags: ["トイレトレーニング","トイトレ","おむつはずれ","生活習慣","おねしょ"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-092",
+    slug: "baby-gear-essentials",
+    title: "ベビーグッズ本当に必要なもの：先輩ママが教える賢い選び方",
+    excerpt: "出産準備で本当に必要なベビーグッズをカテゴリ別に解説。必須アイテムと不要だったものを先輩ママの声とともに紹介します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "育児用品の安全基準・消費者情報",
+      references: [
+          {
+                "title": "乳幼児用品の安全基準",
+                "url": "https://www.caa.go.jp/policies/policy/consumer_safety/",
+                "org": "消費者庁",
+                "stance": "positive"
+          },
+          {
+                "title": "SG基準（製品安全協会）",
+                "url": "https://www.sg-mark.org/",
+                "org": "製品安全協会",
+                "stance": "positive"
+          },
+          {
+                "title": "赤ちゃんの安全な睡眠環境",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "チャイルドシートの使用状況",
+                "url": "https://www.npa.go.jp/",
+                "org": "警察庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "ベビーグッズ選びでは安全基準（SGマーク等）の確認が最優先です。特に寝具やチャイルドシートは命に関わります。",
+          "neutral": "必要最小限から始めて、実際の育児生活の中で必要なものを買い足すのが賢い方法です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/baby-gear-essentials.jpg",
+    readingTime: 18,
+    tags: ["ベビーグッズ","出産準備","赤ちゃん用品","安全基準","節約"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-097",
+    slug: "childhood-atopic-dermatitis",
+    title: "子どものアトピー性皮膚炎：スキンケアと治療の最新ガイド",
+    excerpt: "アトピー性皮膚炎の正しい知識とスキンケアの基本、ステロイド外用薬の正しい使い方をまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "アトピー性皮膚炎に関する診療ガイドライン等",
+      references: [
+          {
+                "title": "アトピー性皮膚炎診療ガイドライン2024",
+                "url": "https://www.dermatol.or.jp/modules/guideline/index.php?content_id=2",
+                "org": "日本皮膚科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "アレルギー疾患対策の推進に関する基本的な指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/allergy/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児アレルギー疾患に関する提言",
+                "url": "https://www.jspaci.jp/",
+                "org": "日本小児アレルギー学会",
+                "stance": "positive"
+          },
+          {
+                "title": "アレルギーマーチ・皮膚バリアに関する研究",
+                "url": "https://www.ncchd.go.jp/hospital/about/section/allergy/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校におけるアレルギー疾患対策ガイドライン",
+                "url": "https://www.gakkohoken.jp/books/archives/226",
+                "org": "日本学校保健会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切なスキンケアとステロイド外用薬を中心とした標準治療により、多くの患者で良好なコントロールが可能です。",
+          "neutral": "「ステロイドは怖い」というイメージに惑わされず、医師の指導のもと正しく使うことが子どもの生活の質を守ります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/childhood-atopic-dermatitis.jpg",
+    readingTime: 15,
+    tags: ["アトピー性皮膚炎","スキンケア","ステロイド外用薬","保湿","アレルギー"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-098",
+    slug: "fever-sick-child-care",
+    title: "子どもの発熱・体調不良時の対応マニュアル",
+    excerpt: "発熱時の判断基準、救急受診の目安、ホームケアの方法、熱性けいれんへの対処法をまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "子どもの急病対応に関する公的情報等",
+      references: [
+          {
+                "title": "こどもの救急（ONLINE-QQ）",
+                "url": "http://kodomo-qq.jp/",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "子ども医療電話相談（#8000）について",
+                "url": "https://www.mhlw.go.jp/topics/2006/10/tp1010-3.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "熱性けいれん診療ガイドライン2023",
+                "url": "https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=147",
+                "org": "日本小児神経学会",
+                "stance": "positive"
+          },
+          {
+                "title": "解熱鎮痛薬の適正使用",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "保育所における感染症対策ガイドライン",
+                "url": "https://www.mhlw.go.jp/file/06-Seisakujouhou-11900000-Koyoukintoujidoukateikyoku/0000201596.pdf",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "子どもの発熱は多くの場合ウイルス感染による自然な免疫反応です。重症化のサインを見逃さないことが重要です。",
+          "neutral": "子どもの急な発熱に慌てず対処できるよう、日頃から正しい知識を備えておくことが安心につながります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/fever-sick-child-care.jpg",
+    readingTime: 15,
+    tags: ["発熱","救急","ホームケア","熱性けいれん","解熱剤","病児保育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-101",
+    slug: "well-baby-checkup-guide",
+    title: "乳幼児健診完全ガイド：時期・内容・要チェック項目",
+    excerpt: "乳幼児健診のスケジュール、各健診で何をチェックするか、準備すべきこと、要経過観察になったときの対応をまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "乳幼児健康診査に関する公的情報",
+      references: [
+          {
+                "title": "乳幼児健康診査身体診察マニュアル",
+                "url": "https://www.ncchd.go.jp/center/activity/kokoro/manual.html",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "乳幼児に対する健康診査について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/kenkou-04.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "母子保健法",
+                "url": "https://www.mhlw.go.jp/web/t_doc?dataId=82048000",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児科医が行う乳幼児健診に関する提言",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "標準的な乳幼児健診のあり方に関する調査研究",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "乳幼児健診は疾病や発達の遅れを早期に発見し、適切な支援につなげるための重要な制度です。すべての健診を受けることが推奨されます。",
+          "neutral": "健診は「テスト」ではなく、子どもの成長を専門家と一緒に確認し、不安を相談できる貴重な機会です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/well-baby-checkup-guide.jpg",
+    readingTime: 15,
+    tags: ["乳幼児健診","健康診査","発達チェック","母子保健","予防接種"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-086",
+    slug: "childcare-costs-planning",
+    title: "子育てにかかるお金：0歳〜大学までの教育費シミュレーション",
+    excerpt: "子どもを一人育てるのにかかる費用を0歳から大学卒業まで徹底シミュレーション。公立・私立の違い、学資保険やNISA、児童手当の活用法、無理のない貯蓄戦略を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["social"],
+    source: {
+      name: "子育て費用に関する公的統計・調査",
+      references: [
+          {
+                "title": "子供の学習費調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/1268091.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "教育費負担の実態調査",
+                "url": "https://www.jfc.go.jp/n/findings/kyoiku_kekka.html",
+                "org": "日本政策金融公庫",
+                "stance": "neutral"
+          },
+          {
+                "title": "インターネットによる子育て費用に関する調査",
+                "url": "https://www8.cao.go.jp/shoushi/shoushika/research/cyousa21/net_hiyo/pdf/zentai/houkoku.pdf",
+                "org": "内閣府",
+                "stance": "neutral"
+          },
+          {
+                "title": "児童手当制度のご案内",
+                "url": "https://www.cfa.go.jp/policies/kokoseido/jidouteate/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "NISA特設ウェブサイト",
+                "url": "https://www.fsa.go.jp/policy/nisa2/",
+                "org": "金融庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "経済的なストレスは保護者のメンタルヘルスに影響し、子どもの養育環境にも間接的に影響を及ぼすことが研究で示されています。早めの資金計画が家族の安心につながります。",
+          "neutral": "教育費は「かけなければいけない」ものではなく、家庭の方針で調整できます。公立でも質の高い教育は受けられるため、無理のない範囲で計画を立てることが大切です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/childcare-costs-planning.jpg",
+    readingTime: 15,
+    tags: ["教育費","子育て費用","学資保険","NISA","児童手当","家計管理"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-084",
+    slug: "couple-relationship-after-baby",
+    title: "産後クライシスを防ぐ：夫婦関係を守る5つの習慣",
+    excerpt: "出産後に急激に悪化する夫婦関係「産後クライシス」の原因と予防法を解説。日常のコミュニケーション習慣から家事分担、二人の時間の作り方まで実践的にガイドします。",
+    content: '',
+    stage: "0stage",
+    categories: ["mental"],
+    source: {
+      name: "産後の夫婦関係に関する調査研究",
+      references: [
+          {
+                "title": "産後クライシスに関する調査",
+                "url": "https://www.nhk.or.jp/gendai/articles/3339/",
+                "org": "NHK",
+                "stance": "neutral"
+          },
+          {
+                "title": "配偶者への愛情の変化に関する調査",
+                "url": "https://www.benesse.co.jp/jisedai/",
+                "org": "ベネッセ教育総合研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "産後のメンタルヘルスについて",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "夫婦関係と子どもの発達に関する研究",
+                "url": "https://www.jstage.jst.go.jp/browse/jph",
+                "org": "日本公衆衛生学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "産後のホルモン変化は女性の情緒面に大きく影響し、パートナーからの適切なサポートの有無が産後うつの発症リスクを左右することが研究で明らかになっています。",
+          "neutral": "夫婦関係の質は子どもの情緒的安定に直結します。「子どものために我慢する」のではなく、「子どものために夫婦関係を大切にする」という視点が重要です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/couple-relationship-after-baby.jpg",
+    readingTime: 15,
+    tags: ["産後クライシス","夫婦関係","コミュニケーション","産後うつ","家事分担"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-093",
+    slug: "family-outing-guide",
+    title: "子連れおでかけ完全ガイド：年齢別おすすめスポットと持ち物",
+    excerpt: "赤ちゃんから小学生まで、年齢別のおでかけ先や持ち物リスト、外食のコツ、公共交通機関の乗り方を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["social"],
+    source: {
+      name: "子育て支援・安全に関する情報",
+      references: [
+          {
+                "title": "子どもの事故防止に関する情報",
+                "url": "https://www.caa.go.jp/policies/policy/consumer_safety/child/",
+                "org": "消費者庁",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援施設情報",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの体力・運動能力に関する調査",
+                "url": "https://www.mext.go.jp/sports/b_menu/toukei/kodomo/zencyo/",
+                "org": "スポーツ庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "外出は子どもの運動発達や免疫力向上に有益ですが、日差し・気温対策と安全管理が欠かせません。",
+          "neutral": "子連れおでかけは準備が大変ですが、家族の思い出づくりと子どもの経験値を高める貴重な機会です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/family-outing-guide.jpg",
+    readingTime: 18,
+    tags: ["おでかけ","子連れ","お出かけスポット","持ち物リスト","外食"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-085",
+    slug: "mama-friend-dynamics",
+    title: "ママ友との付き合い方：適度な距離感とトラブル予防",
+    excerpt: "ママ友との出会い方、健全な関係の築き方、よくあるトラブルとその予防法、SNSでのマナー、合わない相手との距離の取り方まで実践的に解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "子育て世代の人間関係に関する調査",
+      references: [
+          {
+                "title": "子育て世代の社会的孤立に関する調査",
+                "url": "https://www.cfa.go.jp/policies/kodomo-sodachi/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "地域子育て支援拠点事業",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/kosodate/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "母親の育児ストレスと社会的サポートに関する研究",
+                "url": "https://www.jstage.jst.go.jp/browse/jjdp",
+                "org": "日本発達心理学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "健やか親子21（第2次）",
+                "url": "https://sukoyaka21.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "育児中の社会的孤立はうつ病リスクを高めることが知られており、適度な対人関係は母親のメンタルヘルスにとって保護要因となります。ただし、対人ストレスが逆効果となるケースもあります。",
+          "neutral": "ママ友は「友だち」というより「同じ時期に同じ課題を持つ仲間」。無理に深い関係を築く必要はなく、適度な距離感で情報交換や共感ができる関係が最も健全です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/mama-friend-dynamics.jpg",
+    readingTime: 15,
+    tags: ["ママ友","人間関係","コミュニケーション","トラブル予防","距離感"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-081",
+    slug: "one-parent-operation",
+    title: "ワンオペ育児を乗り切る：実践的な時短術と心のケア",
+    excerpt: "ワンオペ育児の負担を軽減するための時短テクニック、食事・入浴・寝かしつけの工夫、そしてメンタルヘルスを守るための具体策を紹介します。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "育児と家事の両立に関する調査研究",
+      references: [
+          {
+                "title": "令和4年度 少子化社会対策白書",
+                "url": "https://www8.cao.go.jp/shoushi/shoushika/whitepaper/index.html",
+                "org": "内閣府",
+                "stance": "positive"
+          },
+          {
+                "title": "仕事と育児の両立に関する実態把握",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て世代包括支援センター",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "ワンオペ育児と母親のメンタルヘルスに関する研究",
+                "url": "https://www.jstage.jst.go.jp/browse/jph",
+                "org": "日本公衆衛生学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "ワンオペ育児による慢性的な睡眠不足やストレスは、産後うつや身体症状の悪化につながるリスクがあり、早期の支援介入が重要とされています。",
+          "neutral": "完璧を目指さず「今日生きていればOK」の精神で、使えるサービスやテクノロジーは積極的に活用し、一人で抱え込まない育児を目指しましょう。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/one-parent-operation.jpg",
+    readingTime: 15,
+    tags: ["ワンオペ育児","時短","セルフケア","家事効率化","メンタルヘルス"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-083",
+    slug: "paternity-leave-guide",
+    title: "パパの育休取得ガイド：制度・取得方法・過ごし方",
+    excerpt: "男性の育児休業制度の仕組み、産後パパ育休の活用法、職場への切り出し方、育休中の過ごし方、キャリアへの影響まで、パパの育休を徹底ガイドします。",
+    content: '',
+    stage: "0stage",
+    categories: ["social"],
+    source: {
+      name: "育児・介護休業法および男性育休に関する公的資料",
+      references: [
+          {
+                "title": "育児・介護休業法のあらまし",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000130583.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "産後パパ育休（出生時育児休業）について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/000103533.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "令和4年度雇用均等基本調査",
+                "url": "https://www.mhlw.go.jp/toukei/list/71-r04.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "男性の育児休業取得促進に関する研究",
+                "url": "https://www.jil.go.jp/institute/reports/",
+                "org": "労働政策研究・研修機構",
+                "stance": "neutral"
+          },
+          {
+                "title": "イクメンプロジェクト",
+                "url": "https://ikumen-project.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "産後の母体回復には6〜8週間を要し、この期間のパートナーのサポートは母親の産後うつ予防にも大きく寄与することが研究で示されています。",
+          "neutral": "生後すぐからの育児参加は、父子の愛着形成を深め、その後の育児参加の質と量を高める重要な機会です。「手伝い」ではなく「当事者」としての育児が始まります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/paternity-leave-guide.jpg",
+    readingTime: 15,
+    tags: ["育休","パパ育休","産後パパ育休","育児・介護休業法","男性育児参加"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-082",
+    slug: "work-life-balance-parents",
+    title: "共働き家庭の両立術：仕事と育児のバランスガイド",
+    excerpt: "共働き家庭が仕事と育児を無理なく両立するための時間管理術、家事分担の仕組み、子どもの急な病気への対応策、キャリアプランニングまで網羅的に解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["social"],
+    source: {
+      name: "共働き家庭の育児と仕事の両立に関する調査",
+      references: [
+          {
+                "title": "令和5年版 男女共同参画白書",
+                "url": "https://www.gender.go.jp/about_danjo/whitepaper/",
+                "org": "内閣府男女共同参画局",
+                "stance": "positive"
+          },
+          {
+                "title": "仕事と育児の両立支援制度",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "令和4年度雇用均等基本調査",
+                "url": "https://www.mhlw.go.jp/toukei/list/71-r04.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "ワーク・ライフ・バランスの推進",
+                "url": "https://wwwa.cao.go.jp/wlb/",
+                "org": "内閣府",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "長時間労働と育児の二重負担は、慢性的な睡眠不足やストレス蓄積を引き起こし、心身の健康リスクを高めることが報告されています。",
+          "neutral": "「仕事も育児も完璧に」ではなく、優先順位をつけて家族全体でチームとして回す仕組みづくりが、持続可能な両立の鍵となります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/work-life-balance-parents.jpg",
+    readingTime: 15,
+    tags: ["共働き","ワークライフバランス","時間管理","家事分担","キャリア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-099",
+    slug: "family-meal-planning",
+    title: "忙しい家庭の献立術：1週間まとめ買い＆時短レシピ",
+    excerpt: "1週間分の献立の立て方、まとめ買いのコツ、作り置きテクニック、赤ちゃんとの取り分けレシピを紹介します。",
+    content: '',
+    stage: "pre",
+    categories: ["nutrition"],
+    source: {
+      name: "家庭の食事・栄養管理に関する情報",
+      references: [
+          {
+                "title": "食事バランスガイド",
+                "url": "https://www.mhlw.go.jp/bunya/kenkou/eiyou-syokuji.html",
+                "org": "厚生労働省・農林水産省",
+                "stance": "positive"
+          },
+          {
+                "title": "日本人の食事摂取基準（2025年版）",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "授乳・離乳の支援ガイド（2019年改定版）",
+                "url": "https://www.mhlw.go.jp/stf/newpage_04250.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "幼児期の健やかな発育のための栄養・食生活支援ガイド",
+                "url": "https://www.niph.go.jp/soshiki/07shougai/youjishokuguide/",
+                "org": "国立保健医療科学院",
+                "stance": "neutral"
+          },
+          {
+                "title": "食育推進基本計画",
+                "url": "https://www.maff.go.jp/j/syokuiku/plan/",
+                "org": "農林水産省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "バランスの取れた食事は子どもの健やかな発育の土台です。食事摂取基準を参考に、無理のない範囲で栄養バランスを整えることが推奨されます。",
+          "neutral": "忙しい毎日のなかで完璧な食事を用意する必要はありません。手間を減らしながら栄養のポイントを押さえる工夫が大切です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/family-meal-planning.jpg",
+    readingTime: 15,
+    tags: ["献立","時短料理","まとめ買い","作り置き","取り分け","食費管理"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-100",
+    slug: "kids-snack-guide",
+    title: "子どものおやつガイド：補食としての正しい与え方",
+    excerpt: "おやつは「第4の食事」。年齢別の適量、タイミング、手作りと市販品の選び方をまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["nutrition"],
+    source: {
+      name: "子どもの間食・おやつに関する専門情報",
+      references: [
+          {
+                "title": "授乳・離乳の支援ガイド（2019年改定版）",
+                "url": "https://www.mhlw.go.jp/stf/newpage_04250.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "幼児期の健やかな発育のための栄養・食生活支援ガイド",
+                "url": "https://www.niph.go.jp/soshiki/07shougai/youjishokuguide/",
+                "org": "国立保健医療科学院",
+                "stance": "neutral"
+          },
+          {
+                "title": "日本人の食事摂取基準（2025年版）",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "食育推進基本計画",
+                "url": "https://www.maff.go.jp/j/syokuiku/plan/",
+                "org": "農林水産省",
+                "stance": "positive"
+          },
+          {
+                "title": "小児歯科学会：間食と虫歯の関係",
+                "url": "https://www.jspd.or.jp/",
+                "org": "日本小児歯科学会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "子どもの胃は小さいため、3回の食事だけでは必要な栄養を摂りきれません。おやつは栄養を補う「補食」として重要な役割を果たします。",
+          "neutral": "おやつの時間は子どもにとって楽しみの一つ。栄養面だけでなく、心の満足感やコミュニケーションの機会としても大切にしたいですね。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/kids-snack-guide.jpg",
+    readingTime: 15,
+    tags: ["おやつ","補食","間食","幼児食","虫歯予防","手作りおやつ"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-094",
+    slug: "weaning-food-recipes",
+    title: "離乳食レシピ集：初期・中期・後期・完了期の簡単メニュー",
+    excerpt: "離乳食の初期から完了期まで、ステージ別の簡単レシピを紹介。フリージングストックの作り方やよくある失敗も解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["nutrition"],
+    source: {
+      name: "離乳食・乳幼児栄養に関する公的ガイドライン",
+      references: [
+          {
+                "title": "授乳・離乳の支援ガイド（2019年改定版）",
+                "url": "https://www.mhlw.go.jp/stf/newpage_04250.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "食物アレルギー診療ガイドライン2021",
+                "url": "https://www.jspaci.jp/guide2021/",
+                "org": "日本小児アレルギー学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "幼児期の健やかな発育のための栄養・食生活支援ガイド",
+                "url": "https://www.niph.go.jp/soshiki/07shougai/youjishokuguide/",
+                "org": "国立保健医療科学院",
+                "stance": "neutral"
+          },
+          {
+                "title": "Complementary Feeding",
+                "url": "https://www.who.int/health-topics/complementary-feeding",
+                "org": "WHO",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "離乳食は栄養補給だけでなく、咀嚼機能の発達や食物アレルギー予防の観点からも段階的な進め方が重要です。",
+          "neutral": "毎日の離乳食作りは負担が大きいもの。フリージングや大人の取り分けを活用して、無理なく続けることが大切です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/weaning-food-recipes.jpg",
+    readingTime: 20,
+    tags: ["離乳食","レシピ","フリージング","月齢別","食育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-077",
+    slug: "birth-preparation-checklist",
+    title: "出産準備リスト完全版：本当に必要なものだけ厳選",
+    excerpt: "入院バッグ、ママ用アイテム、赤ちゃん用品を「必須」「あると便利」に分けて紹介。季節別の注意点、予算の目安、中古品のOK/NGリストまで、無駄なく賢く準備するためのガイドです。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "出産準備に関する公的情報等",
+      references: [
+          {
+                "title": "妊娠・出産をサポートする 女性にやさしい職場づくりナビ",
+                "url": "https://www.bosei-navi.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "出産育児一時金について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shussan/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "赤ちゃんの事故防止ガイド",
+                "url": "https://www.cfa.go.jp/policies/child-safety/injury-prevention/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "乳児の安全な睡眠環境の確保に関する見解（2024年改訂）",
+                "url": "https://www.jpeds.or.jp/modules/guidelines/index.php?content_id=160",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "チャイルドシートの正しい使い方",
+                "url": "https://www.npa.go.jp/bureau/traffic/anzen/childseat.html",
+                "org": "警察庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "日本小児科学会は、乳児の安全な睡眠環境として、仰向け寝・固めの敷布団・不要な寝具を置かないことを推奨しています。ベビー用品の選択は赤ちゃんの安全を最優先に考えましょう。",
+          "neutral": "出産準備品の情報はあふれていますが、実際に使うものは意外と限られます。まずは最低限をそろえて、生まれてから必要に応じて買い足すのが賢い方法です。先輩ママの「買ったけど使わなかった」リストも参考になります。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/birth-preparation-checklist.jpg",
+    readingTime: 15,
+    tags: ["出産準備","入院準備","ベビー用品","マタニティ","節約"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-080",
+    slug: "fertility-treatment-guide",
+    title: "不妊治療の基礎知識：種類・費用・保険適用を解説",
+    excerpt: "不妊治療の種類やステップ、2022年からの保険適用拡大、費用の目安、心理的サポートや職場での配慮について包括的に解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "不妊治療に関する公的ガイドライン・学会見解",
+      references: [
+          {
+                "title": "不妊治療の保険適用について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/funin-chiryou-hoken.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "生殖医療ガイドライン",
+                "url": "https://www.jsrm.or.jp/guideline/",
+                "org": "日本生殖医学会",
+                "stance": "positive"
+          },
+          {
+                "title": "ART（生殖補助医療）データブック",
+                "url": "https://www.jsog.or.jp/facility/art/",
+                "org": "日本産科婦人科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "不妊治療と仕事の両立サポートハンドブック",
+                "url": "https://www.mhlw.go.jp/bunya/koyoukintou/pamphlet/dl/30l.pdf",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "不妊治療連絡カードについて",
+                "url": "https://www.mhlw.go.jp/bunya/koyoukintou/pamphlet/30.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "不妊に悩む方への特定治療支援事業",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000047270.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "不妊治療は年齢が大きな因子であり、早期の受診と適切なステップアップが妊娠の可能性を高めます。2022年の保険適用拡大により、経済的なハードルは大きく下がりました。",
+          "neutral": "不妊治療は身体的・精神的・経済的に大きな負担を伴います。カップルで治療方針を話し合い、必要に応じてカウンセリングを受けることが治療の継続と心の健康に重要です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/fertility-treatment-guide.jpg",
+    readingTime: 22,
+    tags: ["不妊治療","体外受精","保険適用","人工授精","顕微授精","不妊治療連絡カード"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-078",
+    slug: "maternity-benefits-guide",
+    title: "妊娠・出産でもらえるお金：手当と助成制度まとめ",
+    excerpt: "出産育児一時金や出産手当金、育児休業給付金など、妊娠・出産・育児で利用できる公的な手当と助成制度を網羅的に解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["social"],
+    source: {
+      name: "妊娠・出産・育児に関する公的給付制度",
+      references: [
+          {
+                "title": "出産育児一時金の支給額・支払方法について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/iryouhoken01_00001.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "出産手当金について",
+                "url": "https://www.kyoukaikenpo.or.jp/g6/cat620/r311/",
+                "org": "全国健康保険協会",
+                "stance": "positive"
+          },
+          {
+                "title": "育児休業給付について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000158500.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "児童手当制度のご案内",
+                "url": "https://www.cfa.go.jp/policies/kokoseido/jidouteate/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "医療費控除の対象となる出産費用の具体例",
+                "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1124.htm",
+                "org": "国税庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "高額療養費制度を利用される皆さまへ",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "妊娠・出産は病気ではありませんが、合併症や帝王切開など医療介入が必要なケースでは保険適用となり、高額療養費制度の対象にもなります。",
+          "neutral": "制度を知っているかどうかで家計の負担が大きく変わります。申請には期限があるものも多いため、妊娠がわかった段階で早めに情報を集めておくことが大切です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/maternity-benefits-guide.jpg",
+    readingTime: 18,
+    tags: ["出産育児一時金","出産手当金","育児休業給付金","児童手当","医療費控除","助成制度"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-076",
+    slug: "morning-sickness-coping",
+    title: "つわり対策完全ガイド：症状の種類と乗り越え方",
+    excerpt: "吐きつわり、食べつわり、眠りつわり、よだれつわりなど、つわりの種類別対策から妊娠悪阻の見分け方、職場での対応まで、妊娠初期を乗り越えるための情報をまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "つわり・妊娠悪阻に関する公的ガイドライン等",
+      references: [
+          {
+                "title": "産婦人科診療ガイドライン 産科編 2023",
+                "url": "https://www.jsog.or.jp/activity/pdf/gl_sanka_2023.pdf",
+                "org": "日本産科婦人科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "妊娠・出産をサポートする 女性にやさしい職場づくりナビ",
+                "url": "https://www.bosei-navi.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "母性健康管理指導事項連絡カード",
+                "url": "https://www.mhlw.go.jp/www2/topics/seido/josei/hourei/20000401-25-1.htm",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "妊産婦のための食生活指針（令和3年改定）",
+                "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/ninpu-02.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "妊娠と薬情報センター",
+                "url": "https://www.ncchd.go.jp/kusuri/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "つわりは妊娠に伴う生理的な現象ですが、重症化すると妊娠悪阻として治療が必要になります。日本産科婦人科学会のガイドラインでは、体重減少が5%を超える場合や脱水症状がある場合に医療介入を推奨しています。",
+          "neutral": "つわりの辛さは個人差が非常に大きく、周囲の理解が得られにくいことがストレスになることも。「気持ちの問題」ではなく、ホルモン変化による身体的な症状であることを、本人も周囲も認識することが大切です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/morning-sickness-coping.jpg",
+    readingTime: 18,
+    tags: ["つわり","妊娠初期","妊娠悪阻","マタニティ","母性健康管理"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-079",
+    slug: "postpartum-recovery",
+    title: "産後の体と心のケア：回復の目安とセルフケア",
+    excerpt: "産後の身体的な回復過程と心の変化について、時期別の目安とセルフケアの方法、専門家への相談が必要なサインをまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "産後の母体回復に関する医学的知見",
+      references: [
+          {
+                "title": "産婦人科診療ガイドライン―産科編 2023",
+                "url": "https://www.jsog.or.jp/activity/pdf/gl_sanka_2023.pdf",
+                "org": "日本産科婦人科学会/日本産婦人科医会",
+                "stance": "positive"
+          },
+          {
+                "title": "産後ケア事業ガイドライン",
+                "url": "https://www.mhlw.go.jp/content/000658063.pdf",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "エジンバラ産後うつ病質問票（EPDS）について",
+                "url": "https://www.mhlw.go.jp/content/11920000/000512890.pdf",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "周産期メンタルヘルス コンセンサスガイド 2017",
+                "url": "https://www.jaog.or.jp/wp/wp-content/uploads/2017/11/jaogmental_L.pdf",
+                "org": "日本周産期メンタルヘルス学会",
+                "stance": "positive"
+          },
+          {
+                "title": "健やか親子21（第2次）",
+                "url": "https://sukoyaka21.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "女性アスリートのための月経対策ハンドブック",
+                "url": "https://www.jpnsport.go.jp/jiss/tabid/935/Default.aspx",
+                "org": "国立スポーツ科学センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "産後の回復には個人差が大きいものの、子宮復古や悪露の経過、傷の治癒にはおおよその目安があります。異常の早期発見のためにも、定期的な産後健診の受診が推奨されています。",
+          "neutral": "産後は赤ちゃんのお世話に追われがちですが、母体の回復なくして健全な育児はできません。パートナーや周囲のサポート、公的な産後ケア事業の活用が重要です。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/postpartum-recovery.jpg",
+    readingTime: 20,
+    tags: ["産後","産褥期","産後うつ","骨盤底筋","セルフケア","産後ケア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-075",
+    slug: "pregnancy-week-by-week",
+    title: "妊娠週数別ガイド：ママの体と赤ちゃんの成長",
+    excerpt: "妊娠初期から出産までの40週間を週数別に解説。ママの体の変化、赤ちゃんの発達、妊婦健診スケジュール、各時期にやっておくべき準備をまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "妊娠・出産に関する公的ガイドライン等",
+      references: [
+          {
+                "title": "妊娠・出産をサポートする 女性にやさしい職場づくりナビ",
+                "url": "https://www.bosei-navi.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "産婦人科診療ガイドライン 産科編 2023",
+                "url": "https://www.jsog.or.jp/activity/pdf/gl_sanka_2023.pdf",
+                "org": "日本産科婦人科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "妊産婦のための食生活指針（令和3年改定）",
+                "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/ninpu-02.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "母子健康手帳について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/kenkou-04.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "妊娠と薬情報センター",
+                "url": "https://www.ncchd.go.jp/kusuri/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "WHO recommendations on antenatal care for a positive pregnancy experience",
+                "url": "https://www.who.int/publications/i/item/9789241549912",
+                "org": "WHO",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "日本産科婦人科学会のガイドラインでは、定期的な妊婦健診の受診と各週数に応じた検査の実施を推奨しています。妊娠経過には個人差が大きいため、かかりつけ医との連携が重要です。",
+          "neutral": "妊娠週数の目安はあくまで一般的な指標です。体の変化のペースや赤ちゃんの成長速度は個人差があるため、他の妊婦さんとの比較に不安を感じすぎず、自分のペースを大切にしましょう。",
+          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+    },
+    },
+    score: {"reliability":20,"neutrality":18,"freshness":15,"ageRelevance":12,"readability":8,"total":73},
+    publishedAt: "2025-12-01",
+    updatedAt: "2026-03-09",
+    imageUrl: "/articles/pregnancy-week-by-week.jpg",
+    readingTime: 20,
+    tags: ["妊娠","妊娠週数","妊婦健診","マタニティ","出産準備"],
+    relatedArticleIds: [],
   }
 ];
 
@@ -3672,7 +5636,7 @@ export function getArticlesByCategory(category: string): Article[] {
 }
 
 export function getFeaturedArticles(): Article[] {
-  return [...ARTICLES].sort((a, b) => b.score.total - a.score.total).slice(0, 6);
+  return [...ARTICLES].sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0)).slice(0, 6);
 }
 
 export function getLatestArticles(count: number = 10): Article[] {

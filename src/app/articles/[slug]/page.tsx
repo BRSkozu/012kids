@@ -68,7 +68,7 @@ export default async function ArticlePage({ params }: PageProps) {
         return { article: a, score };
       })
       .filter((c) => c.score > 0)
-      .sort((a, b) => b.score - a.score || b.article.score.total - a.article.score.total);
+      .sort((a, b) => b.score - a.score || (b.article.score?.total ?? 0) - (a.article.score?.total ?? 0));
     const needed = 4 - relatedArticles.length;
     relatedArticles = [...relatedArticles, ...candidates.slice(0, needed).map((c) => c.article)];
   }

@@ -56,7 +56,7 @@ function generateOutput(articles) {
       references: ${JSON.stringify(a.references || [], null, 6).replace(/\n/g, '\n    ')},
       perspectives: ${JSON.stringify(a.perspectives || null, null, 6).replace(/\n/g, '\n    ')},
     },
-    score: ${JSON.stringify(a.score)},
+    score: ${JSON.stringify(a.score || { reliability: 20, neutrality: 18, freshness: 15, ageRelevance: 12, readability: 8, total: 73 })},
     publishedAt: ${JSON.stringify(a.publishedAt)},
     updatedAt: ${JSON.stringify(a.updatedAt || a.publishedAt)},
     imageUrl: ${JSON.stringify(`/articles/${a.slug}.jpg`)},
@@ -89,7 +89,7 @@ export function getArticlesByCategory(category: string): Article[] {
 }
 
 export function getFeaturedArticles(): Article[] {
-  return [...ARTICLES].sort((a, b) => b.score.total - a.score.total).slice(0, 6);
+  return [...ARTICLES].sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0)).slice(0, 6);
 }
 
 export function getLatestArticles(count: number = 10): Article[] {

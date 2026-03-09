@@ -9,7 +9,7 @@ export default function HomePage() {
   const featured = getFeaturedArticles();
   const latest = getLatestArticles(6);
   const ranking = [...getAllArticlesSync()]
-    .sort((a, b) => b.score.total - a.score.total)
+    .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
     .slice(0, 10);
 
   return (

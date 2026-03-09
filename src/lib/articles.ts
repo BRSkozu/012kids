@@ -130,7 +130,7 @@ export function getArticlesByCategory(category: string): Article[] {
 }
 
 export function getFeaturedArticles(): Article[] {
-  return [...getAllArticlesSync()].sort((a, b) => b.score.total - a.score.total).slice(0, 6);
+  return [...getAllArticlesSync()].sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0)).slice(0, 6);
 }
 
 export function getLatestArticles(count: number = 10): Article[] {
