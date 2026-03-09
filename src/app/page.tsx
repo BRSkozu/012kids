@@ -78,7 +78,7 @@ export default function HomePage() {
       {/* Ranking */}
       <section className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">人気記事ランキング</h2>
-        <p className="text-sm text-gray-500 mb-6">品質スコアの高い記事トップ10</p>
+        <p className="text-sm text-gray-500 mb-6">みんなに読まれている記事トップ10</p>
         <div className="space-y-3">
           {ranking.map((article, i) => (
             <Link
@@ -101,8 +101,10 @@ export default function HomePage() {
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5 truncate">{article.excerpt}</p>
               </div>
-              <span className="shrink-0 text-xs font-bold text-[var(--color-primary)] bg-orange-50 px-2 py-1 rounded-lg">
-                {article.score.total}点
+              <span className="shrink-0 text-gray-400 group-hover:text-[var(--color-primary)] transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </span>
             </Link>
           ))}
