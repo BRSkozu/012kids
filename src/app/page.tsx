@@ -6,9 +6,11 @@ import { getFeaturedArticles, getLatestArticles, getAllArticlesSync } from '@/li
 import { CATEGORIES } from '@/data/categories';
 
 export default function HomePage() {
+  const allArticles = getAllArticlesSync();
+  const totalCount = allArticles.length;
   const featured = getFeaturedArticles();
   const latest = getLatestArticles(6);
-  const ranking = [...getAllArticlesSync()]
+  const ranking = [...allArticles]
     .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
     .slice(0, 10);
 
@@ -17,10 +19,13 @@ export default function HomePage() {
       {/* Hero + Age Selector */}
       <AgeSelector />
 
-      {/* Matome Site Notice */}
+      {/* Matome Site Notice + Article Count */}
       <section className="max-w-7xl mx-auto px-4 -mt-2 mb-8">
         <div className="bg-[var(--color-warm-cream)] rounded-xl p-4 text-center text-sm text-gray-600 border border-orange-100">
-          012.kidsは、子育て・教育に関する公的機関や専門家の情報をわかりやすくまとめて紹介するサイトです。
+          <p>012.kidsは、子育て・教育に関する公的機関や専門家の情報をわかりやすくまとめて紹介するサイトです。</p>
+          <p className="mt-2 text-base font-bold text-[var(--color-primary)]">
+            現在 <span className="text-2xl">{totalCount.toLocaleString()}</span> 記事を掲載中
+          </p>
         </div>
       </section>
 

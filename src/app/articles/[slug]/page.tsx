@@ -8,8 +8,10 @@ import CategoryTag from '@/components/ui/CategoryTag';
 import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 import ShareButtons from '@/components/articles/ShareButtons';
+import RecommendedLinks from '@/components/articles/RecommendedLinks';
 import TableOfContents from '@/components/articles/TableOfContents';
 import ReadingProgress from '@/components/articles/ReadingProgress';
+import { getRecommendedLinks } from '@/data/recommended-links';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -275,6 +277,9 @@ export default async function ArticlePage({ params }: PageProps) {
           </p>
         </div>
       </div>
+
+      {/* Recommended Links */}
+      <RecommendedLinks links={getRecommendedLinks(article.categories, 10)} />
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-6">
