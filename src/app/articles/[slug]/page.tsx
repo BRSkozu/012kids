@@ -73,7 +73,36 @@ export default async function ArticlePage({ params }: PageProps) {
     relatedArticles = [...relatedArticles, ...candidates.slice(0, needed).map((c) => c.article)];
   }
 
-  const contentHtml = await getArticleContentHtml(article.content);
+  let contentHtml = await getArticleContentHtml(article.content);
+
+  // Post-process: style "012.kidsの本音" sections with editorial callout box
+  contentHtml = contentHtml.replace(
+    /<h2([^>]*)>(012\.kidsの本音)<\/h2>/g,
+    `<div class="honne-section"><h2$1><span class="honne-badge">忖度なし</span>$2</h2>`
+  );
+  // Close the honne-section div before the next h2
+  contentHtml = contentHtml.replace(
+    /(<div class="honne-section">[\s\S]*?)(<h2[^>]*>(?!<span class="honne-badge"))/g,
+    '$1</div>$2'
+  );
+  // If honne-section is the last section, close before end
+  if (contentHtml.includes('<div class="honne-section">') && !contentHtml.includes('</div><!--honne-->')) {
+    const lastHonneIdx = contentHtml.lastIndexOf('<div class="honne-section">');
+    const nextH2After = contentHtml.indexOf('<h2', lastHonneIdx + 30);
+    if (nextH2After === -1) {
+      // honne section goes to end - close before blockquote or end
+      const lastBlockquote = contentHtml.lastIndexOf('<blockquote>');
+      if (lastBlockquote > lastHonneIdx) {
+        contentHtml = contentHtml.slice(0, lastBlockquote) + '</div>' + contentHtml.slice(lastBlockquote);
+      }
+    }
+  }
+
+  // Post-process: make all external links open in new tab
+  contentHtml = contentHtml.replace(
+    /<a href="(https?:\/\/[^"]+)"(?![^>]*target)/g,
+    '<a href="$1" target="_blank" rel="noopener noreferrer"'
+  );
 
   const jsonLd = {
     '@context': 'https://schema.org',

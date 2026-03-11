@@ -104,6 +104,96 @@ body {
   font-weight: 700;
 }
 
+.article-content a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-content a:hover {
+  color: var(--color-primary-dark);
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid #e5d5c5;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.article-content th {
+  background-color: #fef7f0;
+  font-weight: 600;
+  color: #8b4c2a;
+}
+
+.article-content tr:nth-child(even) {
+  background-color: #fdfaf7;
+}
+
+/* "012.kidsの本音" editorial opinion callout */
+.article-content .honne-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e0e0e0;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-left: 4px solid #e07b4c;
+}
+
+.article-content .honne-section h2 {
+  color: #fff;
+  border-bottom-color: rgba(224, 123, 76, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.article-content .honne-section .honne-badge {
+  display: inline-block;
+  background: #e07b4c;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+.article-content .honne-section p,
+.article-content .honne-section li {
+  color: #d0d0d0;
+}
+
+.article-content .honne-section strong {
+  color: #f0a070;
+}
+
+.article-content .honne-section a {
+  color: #70b0f0;
+}
+
+.article-content .honne-section table {
+  border-color: rgba(224, 123, 76, 0.3);
+}
+
+.article-content .honne-section th {
+  background-color: rgba(224, 123, 76, 0.15);
+  color: #f0a070;
+}
+
+.article-content .honne-section td {
+  border-color: rgba(224, 123, 76, 0.2);
+  color: #d0d0d0;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

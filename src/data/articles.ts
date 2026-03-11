@@ -9044,40 +9044,58 @@ export const ARTICLES: Article[] = [
   {
     id: "art-531",
     slug: "social-education-loan",
-    title: "教育ローンと奨学金",
-    excerpt: "教育資金について、最新の制度と実践的な情報をまとめました。",
+    title: "教育ローン徹底比較：国の教育ローンvs銀行ローン、本当にお得なのはどっち？",
+    excerpt: "教育ローンの種類・金利・審査基準を徹底比較。国の教育ローン、メガバンク、ネット銀行、ろうきんの違いと、教育費で破綻しないための本音のアドバイス。",
     content: '',
     stage: "upper",
     categories: ["social"],
     source: {
-      name: "子育て支援制度に関する公的情報",
+      name: "教育ローン・奨学金に関する公的情報",
       references: [
           {
-                "title": "子ども・子育て支援",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
+                "title": "教育一般貸付（国の教育ローン）",
+                "url": "https://www.jfc.go.jp/n/finance/search/ippan.html",
+                "org": "日本政策金融公庫",
                 "stance": "positive"
           },
           {
-                "title": "少子化社会対策",
-                "url": "https://www.cao.go.jp/",
-                "org": "内閣府",
+                "title": "奨学金事業の概要",
+                "url": "https://www.jasso.go.jp/shogakukin/",
+                "org": "日本学生支援機構（JASSO）",
                 "stance": "neutral"
+          },
+          {
+                "title": "子供の学習費調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/1268091.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "家計の金融行動に関する世論調査",
+                "url": "https://www.shiruporuto.jp/public/document/container/yoron/",
+                "org": "金融広報中央委員会",
+                "stance": "neutral"
+          },
+          {
+                "title": "多重債務問題の相談窓口",
+                "url": "https://www.fsa.go.jp/soudan/",
+                "org": "金融庁",
+                "stance": "cautious"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "国の教育ローンは低金利で、ひとり親家庭や低所得世帯向けの優遇措置もあり、活用する価値が高い制度です。",
+          "neutral": "教育ローンは「借金」であることに変わりありません。返済計画を慎重に立てた上で利用すべきです。",
+          "cautious": "教育費のための借入が家計破綻の原因になるケースは実際に増えています。「子どものため」という大義名分で冷静な判断を失わないことが重要です。"
     },
     },
-    score: {"total":75,"reliability":24,"neutrality":20,"freshness":12,"ageRelevance":13,"readability":6},
+    score: {"total":90,"reliability":28,"neutrality":26,"freshness":18,"ageRelevance":12,"readability":6},
     publishedAt: "2025-08-28",
-    updatedAt: "2026-03-09",
+    updatedAt: "2026-03-11",
     imageUrl: "/articles/social-education-loan.jpg",
-    readingTime: 9,
-    tags: ["教育費","制度","子育て支援"],
-    relatedArticleIds: [],
+    readingTime: 18,
+    tags: ["教育ローン","奨学金","教育費","金利比較","国の教育ローン","家計"],
+    relatedArticleIds: ["art-086","art-408","art-524"],
   },
   {
     id: "art-530",
@@ -12766,44 +12784,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: [],
   },
   {
-    id: "art-433",
-    slug: "friendship-trouble-9to12",
-    title: "【9〜12歳】友達トラブルのポイントと家庭でできるサポート",
-    excerpt: "9〜12歳のお子さんの友達トラブルについて、発達段階に合わせた具体的なアドバイスをまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["mental"],
-    source: {
-      name: "友達トラブルに関する公的情報",
-      references: [
-          {
-                "title": "友達トラブルに関する情報",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "友達トラブルガイドライン",
-                "url": "https://www.ncnp.go.jp/",
-                "org": "国立精神・神経医療研究センター",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":78,"reliability":15,"neutrality":25,"freshness":17,"ageRelevance":12,"readability":9},
-    publishedAt: "2025-07-25",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/friendship-trouble-9to12.jpg",
-    readingTime: 8,
-    tags: ["友達トラブル","9〜12歳","年齢別"],
-    relatedArticleIds: [],
-  },
-  {
     id: "art-434",
     slug: "separation-anxiety-0to1",
     title: "【0〜1歳】分離不安のポイントと家庭でできるサポート",
@@ -13029,44 +13009,6 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/resilience-6to9.jpg",
     readingTime: 12,
     tags: ["レジリエンス（折れない心）","6〜9歳","年齢別"],
-    relatedArticleIds: [],
-  },
-  {
-    id: "art-426",
-    slug: "self-esteem-9to12",
-    title: "【9〜12歳】自己肯定感のポイントと家庭でできるサポート",
-    excerpt: "9〜12歳のお子さんの自己肯定感について、発達段階に合わせた具体的なアドバイスをまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["mental"],
-    source: {
-      name: "自己肯定感に関する公的情報",
-      references: [
-          {
-                "title": "自己肯定感に関する情報",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "自己肯定感ガイドライン",
-                "url": "https://www.ncnp.go.jp/",
-                "org": "国立精神・神経医療研究センター",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":75,"reliability":28,"neutrality":17,"freshness":14,"ageRelevance":11,"readability":5},
-    publishedAt: "2025-07-23",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/self-esteem-9to12.jpg",
-    readingTime: 13,
-    tags: ["自己肯定感","9〜12歳","年齢別"],
     relatedArticleIds: [],
   },
   {
@@ -13374,44 +13316,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: [],
   },
   {
-    id: "art-415",
-    slug: "junior-exam-exam-interview-prep",
-    title: "中学受験：面接対策",
-    excerpt: "中学受験面接のコツについて、最新の入試動向をふまえて解説します。",
-    content: '',
-    stage: "upper",
-    categories: ["education"],
-    source: {
-      name: "中学受験に関する教育情報",
-      references: [
-          {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":72,"reliability":15,"neutrality":20,"freshness":15,"ageRelevance":13,"readability":9},
-    publishedAt: "2025-07-19",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/junior-exam-exam-interview-prep.jpg",
-    readingTime: 10,
-    tags: ["中学受験","面接"],
-    relatedArticleIds: [],
-  },
-  {
     id: "art-416",
     slug: "anxiety-1to3",
     title: "【1〜3歳】不安への対処のポイントと家庭でできるサポート",
@@ -13488,346 +13392,438 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: [],
   },
   {
-    id: "art-412",
-    slug: "junior-exam-exam-daily-routine",
-    title: "中学受験期の生活リズム",
-    excerpt: "中学受験中の過ごし方について、最新の入試動向をふまえて解説します。",
+    id: "art-408",
+    slug: "junior-exam-exam-cost",
+    title: "中学受験にかかる費用：塾代・受験料・入学後まで総額シミュレーション",
+    excerpt: "中学受験の費用を塾代・季節講習・模試・受験料・入学金まで項目別に解説。費用を抑える方法も紹介します。",
     content: '',
     stage: "upper",
     categories: ["education"],
     source: {
-      name: "中学受験に関する教育情報",
+      name: "教育費に関する公的統計",
       references: [
           {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
+                "title": "子供の学習費調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/1268091.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "家計調査（教育費関連）",
+                "url": "https://www.stat.go.jp/data/kakei/",
+                "org": "総務省統計局",
+                "stance": "neutral"
+          },
+          {
+                "title": "高等学校等就学支援金制度",
+                "url": "https://www.mext.go.jp/a_menu/shotou/mushouka/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "教育への投資は子どもの将来の選択肢を広げる効果があり、長期的な視点で考える価値があります。",
+          "neutral": "費用対効果は家庭の経済状況によって評価が異なります。一概に高い・安いとは言えません。",
+          "cautious": "教育費の負担が家計を圧迫し、家族全体の生活の質を低下させるリスクもあります。"
+    },
+    },
+    score: {"total":87,"reliability":28,"neutrality":24,"freshness":17,"ageRelevance":12,"readability":6},
+    publishedAt: "2025-07-16",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/junior-exam-exam-cost.jpg",
+    readingTime: 12,
+    tags: ["中学受験","費用","塾代","教育費"],
+    relatedArticleIds: ["art-406","art-407","art-086"],
+  },
+  {
+    id: "art-412",
+    slug: "junior-exam-exam-daily-routine",
+    title: "中学受験期の生活リズム：睡眠・食事・運動を両立するタイムスケジュール",
+    excerpt: "中学受験中の理想的な生活リズムを学年別に提案。睡眠確保、食事の工夫、体力維持のための時間管理術を紹介します。",
+    content: '',
+    stage: "upper",
+    categories: ["education","health"],
+    source: {
+      name: "子どもの生活習慣に関する公的情報",
+      references: [
+          {
+                "title": "早寝早起き朝ごはん運動",
+                "url": "https://www.mext.go.jp/a_menu/shougai/asagohan/",
                 "org": "文部科学省",
                 "stance": "positive"
           },
           {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
+                "title": "子どもの睡眠に関する情報",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "日本人の食事摂取基準",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+                "org": "厚生労働省",
                 "stance": "neutral"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "規則正しい生活リズムは学力向上にも直結し、受験本番のコンディション管理にもつながります。",
+          "neutral": "理想的なスケジュールはあくまで目安であり、各家庭の事情に合わせた調整が必要です。",
+          "cautious": "勉強時間を増やすために睡眠や食事を犠牲にすることは、かえって学力低下を招くリスクがあります。"
     },
     },
-    score: {"total":82,"reliability":23,"neutrality":15,"freshness":19,"ageRelevance":15,"readability":10},
-    publishedAt: "2025-07-18",
-    updatedAt: "2026-03-09",
+    score: {"total":85,"reliability":26,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2025-07-16",
+    updatedAt: "2026-03-11",
     imageUrl: "/articles/junior-exam-exam-daily-routine.jpg",
-    readingTime: 16,
-    tags: ["中学受験","生活リズム"],
-    relatedArticleIds: [],
+    readingTime: 11,
+    tags: ["中学受験","生活リズム","睡眠","タイムスケジュール"],
+    relatedArticleIds: ["art-411","art-413","art-049"],
   },
   {
     id: "art-414",
     slug: "junior-exam-exam-failure-cope",
-    title: "中学受験：不合格への向き合い方",
-    excerpt: "中学受験後の立ち直りについて、最新の入試動向をふまえて解説します。",
+    title: "中学受験：不合格への向き合い方——親子で乗り越えるためのガイド",
+    excerpt: "中学受験で不合格だったとき、子どもの心をどう支えるか。声かけの方法、公立中学への切り替え、「この経験は無駄じゃない」と伝えるために。",
     content: '',
     stage: "upper",
-    categories: ["education"],
+    categories: ["education","mental"],
     source: {
-      name: "中学受験に関する教育情報",
+      name: "子どものメンタルヘルスに関する情報",
       references: [
           {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
+                "title": "こころの健康に関する情報",
+                "url": "https://www.mhlw.go.jp/kokoro/",
+                "org": "厚生労働省",
+                "stance": "neutral"
           },
           {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
+                "title": "子どものこころの健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "不登校に関する調査研究",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1302902.htm",
+                "org": "文部科学省",
                 "stance": "neutral"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "受験経験で得た学力・精神力・自己管理能力は、進学先に関わらず将来に活きる財産です。",
+          "neutral": "不合格の受け止め方は子どもによって大きく異なり、一律のアプローチでは対応しきれません。",
+          "cautious": "不合格後のメンタルケアを怠ると、不登校や自己否定につながるリスクがあります。"
     },
     },
-    score: {"total":70,"reliability":23,"neutrality":16,"freshness":14,"ageRelevance":11,"readability":6},
-    publishedAt: "2025-07-18",
-    updatedAt: "2026-03-09",
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":17,"ageRelevance":12,"readability":6},
+    publishedAt: "2025-07-16",
+    updatedAt: "2026-03-11",
     imageUrl: "/articles/junior-exam-exam-failure-cope.jpg",
-    readingTime: 16,
-    tags: ["中学受験","不合格"],
-    relatedArticleIds: [],
+    readingTime: 11,
+    tags: ["中学受験","不合格","メンタルケア","挫折"],
+    relatedArticleIds: ["art-411","art-413","art-063"],
   },
   {
-    id: "art-413",
-    slug: "junior-exam-exam-parent-role",
-    title: "中学受験における親の役割",
-    excerpt: "中学受験で親ができることについて、最新の入試動向をふまえて解説します。",
+    id: "art-415",
+    slug: "junior-exam-exam-interview-prep",
+    title: "中学受験：面接対策ガイド——よく聞かれる質問と練習法",
+    excerpt: "中学受験の面接でよく聞かれる質問と回答例、身だしなみ、マナー、親子面接の対策をまとめました。",
     content: '',
     stage: "upper",
     categories: ["education"],
     source: {
-      name: "中学受験に関する教育情報",
+      name: "中学受験の面接に関する教育情報",
       references: [
           {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
+                "title": "私立学校の入学者選抜について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/shigaku/",
                 "org": "文部科学省",
-                "stance": "positive"
+                "stance": "neutral"
           },
           {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
+                "title": "公立中高一貫教育校の選抜",
+                "url": "https://www.mext.go.jp/a_menu/shotou/ikkan/",
+                "org": "文部科学省",
                 "stance": "neutral"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "面接は学力だけでは測れない子どもの個性や意欲を伝えるチャンスです。",
+          "neutral": "面接の比重は学校によって大きく異なり、ほぼ参考程度の学校もあります。",
+          "cautious": "面接対策に時間をかけすぎて筆記試験の勉強がおろそかになるリスクに注意。"
     },
     },
-    score: {"total":69,"reliability":16,"neutrality":15,"freshness":15,"ageRelevance":13,"readability":10},
-    publishedAt: "2025-07-18",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/junior-exam-exam-parent-role.jpg",
-    readingTime: 17,
-    tags: ["中学受験","親の役割"],
-    relatedArticleIds: [],
+    score: {"total":82,"reliability":24,"neutrality":23,"freshness":17,"ageRelevance":12,"readability":6},
+    publishedAt: "2025-07-16",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/junior-exam-exam-interview-prep.jpg",
+    readingTime: 10,
+    tags: ["中学受験","面接","マナー","親子面接"],
+    relatedArticleIds: ["art-410","art-406"],
   },
   {
     id: "art-409",
     slug: "junior-exam-exam-motivation",
-    title: "中学受験のモチベーション維持",
-    excerpt: "中学受験のやる気維持法について、最新の入試動向をふまえて解説します。",
+    title: "中学受験のモチベーション維持：やる気が続かないときの対処法",
+    excerpt: "中学受験の長期戦でやる気を維持するコツ。スランプの乗り越え方、目標設定の方法、親の声かけ術を紹介します。",
     content: '',
     stage: "upper",
-    categories: ["education"],
+    categories: ["education","mental"],
     source: {
-      name: "中学受験に関する教育情報",
+      name: "子どもの学習意欲に関する教育情報",
       references: [
           {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
+                "title": "全国学力・学習状況調査（学習意欲と学力の関連）",
+                "url": "https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html",
                 "org": "国立教育政策研究所",
                 "stance": "neutral"
+          },
+          {
+                "title": "家庭教育の充実に向けて",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "自分で目標を設定し達成する経験は、受験後の人生でも大きな財産になります。",
+          "neutral": "モチベーションの波は自然なものであり、常にやる気が高い状態を求めるのは非現実的です。",
+          "cautious": "外発的な動機づけ（ご褒美や罰）に頼りすぎると、学ぶこと自体への興味を損なうリスクがあります。"
     },
     },
-    score: {"total":83,"reliability":18,"neutrality":20,"freshness":21,"ageRelevance":14,"readability":10},
-    publishedAt: "2025-07-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/junior-exam-exam-motivation.jpg",
-    readingTime: 19,
-    tags: ["中学受験","モチベーション"],
-    relatedArticleIds: [],
-  },
-  {
-    id: "art-410",
-    slug: "junior-exam-exam-school-select",
-    title: "中学受験：志望校の選び方",
-    excerpt: "中学受験校の選び方について、最新の入試動向をふまえて解説します。",
-    content: '',
-    stage: "upper",
-    categories: ["education"],
-    source: {
-      name: "中学受験に関する教育情報",
-      references: [
-          {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":80,"reliability":27,"neutrality":14,"freshness":20,"ageRelevance":10,"readability":9},
-    publishedAt: "2025-07-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/junior-exam-exam-school-select.jpg",
-    readingTime: 8,
-    tags: ["中学受験","志望校"],
-    relatedArticleIds: [],
-  },
-  {
-    id: "art-411",
-    slug: "junior-exam-exam-stress",
-    title: "中学受験のストレス対策",
-    excerpt: "中学受験時のメンタルケアについて、最新の入試動向をふまえて解説します。",
-    content: '',
-    stage: "upper",
-    categories: ["education"],
-    source: {
-      name: "中学受験に関する教育情報",
-      references: [
-          {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":71,"reliability":15,"neutrality":20,"freshness":21,"ageRelevance":10,"readability":5},
-    publishedAt: "2025-07-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/junior-exam-exam-stress.jpg",
-    readingTime: 9,
-    tags: ["中学受験","ストレス"],
-    relatedArticleIds: [],
-  },
-  {
-    id: "art-408",
-    slug: "junior-exam-exam-cost",
-    title: "中学受験にかかる費用",
-    excerpt: "中学受験の費用目安について、最新の入試動向をふまえて解説します。",
-    content: '',
-    stage: "upper",
-    categories: ["education"],
-    source: {
-      name: "中学受験に関する教育情報",
-      references: [
-          {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":90,"reliability":26,"neutrality":23,"freshness":18,"ageRelevance":15,"readability":8},
+    score: {"total":84,"reliability":25,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":6},
     publishedAt: "2025-07-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/junior-exam-exam-cost.jpg",
-    readingTime: 18,
-    tags: ["中学受験","費用"],
-    relatedArticleIds: [],
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/junior-exam-exam-motivation.jpg",
+    readingTime: 11,
+    tags: ["中学受験","モチベーション","やる気","スランプ"],
+    relatedArticleIds: ["art-413","art-411","art-412"],
   },
   {
     id: "art-406",
     slug: "junior-exam-exam-overview",
-    title: "中学受験の基礎知識",
-    excerpt: "中学受験の全体像について、最新の入試動向をふまえて解説します。",
+    title: "中学受験の基礎知識：受験率・入試の種類・準備の全体像【2025年最新】",
+    excerpt: "中学受験の全体像について、最新の入試動向・受験率データ・私立と公立中高一貫の違い・塾選びの考え方まで解説します。",
     content: '',
     stage: "upper",
     categories: ["education"],
     source: {
-      name: "中学受験に関する教育情報",
+      name: "中学受験に関する公的統計・教育機関情報",
       references: [
           {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
+                "title": "学校基本調査（私立中学進学率等）",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/1267995.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "公立中高一貫教育校について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/ikkan/",
                 "org": "文部科学省",
                 "stance": "positive"
           },
           {
                 "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
+                "url": "https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html",
                 "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子供の学習費調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa03/gakushuuhi/1268091.htm",
+                "org": "文部科学省",
                 "stance": "neutral"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "中高一貫教育は6年間の計画的なカリキュラムにより、深い学びや探究活動が可能になるメリットがあります。",
+          "neutral": "中学受験の是非は家庭の教育方針、経済状況、子どもの性格など複合的な要素で判断すべきテーマです。",
+          "cautious": "小学生の受験準備は心身への負担が大きく、過度な早期教育や長時間学習が子どもの発達に悪影響を及ぼす可能性を指摘する専門家もいます。"
     },
     },
-    score: {"total":75,"reliability":26,"neutrality":14,"freshness":15,"ageRelevance":15,"readability":5},
+    score: {"total":88,"reliability":28,"neutrality":24,"freshness":18,"ageRelevance":12,"readability":6},
     publishedAt: "2025-07-16",
-    updatedAt: "2026-03-09",
+    updatedAt: "2026-03-11",
     imageUrl: "/articles/junior-exam-exam-overview.jpg",
-    readingTime: 10,
-    tags: ["中学受験","基礎知識"],
-    relatedArticleIds: [],
+    readingTime: 15,
+    tags: ["中学受験","私立中学","公立中高一貫","塾","入試","小学4年生"],
+    relatedArticleIds: ["art-407","art-408","art-410","art-413"],
+  },
+  {
+    id: "art-413",
+    slug: "junior-exam-exam-parent-role",
+    title: "中学受験における親の役割：サポートと見守りのバランス",
+    excerpt: "中学受験で親ができること・やりすぎてはいけないこと。スケジュール管理、メンタルケア、塾との連携方法を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["education"],
+    source: {
+      name: "中学受験・子育てに関する教育情報",
+      references: [
+          {
+                "title": "家庭教育の充実に向けて",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援に関する情報",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "こころの健康に関する情報",
+                "url": "https://www.mhlw.go.jp/kokoro/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "保護者の適切なサポートは子どもの学力向上だけでなく、精神的な安定にも大きく寄与します。",
+          "neutral": "親の関わり方に正解はなく、子どもの性格や親子関係によって最適な距離感は異なります。",
+          "cautious": "過度な介入は子どもの自主性を損ない、親子関係の悪化につながるリスクがあります。"
+    },
+    },
+    score: {"total":85,"reliability":25,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2025-07-16",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/junior-exam-exam-parent-role.jpg",
+    readingTime: 12,
+    tags: ["中学受験","親の役割","メンタルケア","サポート"],
+    relatedArticleIds: ["art-406","art-411","art-409","art-070"],
   },
   {
     id: "art-407",
     slug: "junior-exam-exam-schedule",
-    title: "中学受験のスケジュール",
-    excerpt: "中学受験の年間計画について、最新の入試動向をふまえて解説します。",
+    title: "中学受験のスケジュール：小3〜小6の学年別ロードマップ",
+    excerpt: "中学受験準備の全体スケジュールを学年別に解説。塾のカリキュラム・模試・学校説明会・出願の時期まで網羅します。",
     content: '',
     stage: "upper",
     categories: ["education"],
     source: {
-      name: "中学受験に関する教育情報",
+      name: "中学受験・入試制度に関する教育情報",
       references: [
           {
-                "title": "学校教育に関する統計",
-                "url": "https://www.mext.go.jp/",
+                "title": "私立学校の概要（中学校）",
+                "url": "https://www.mext.go.jp/a_menu/shotou/shigaku/",
                 "org": "文部科学省",
-                "stance": "positive"
+                "stance": "neutral"
           },
           {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/",
-                "org": "国立教育政策研究所",
+                "title": "公立中高一貫教育校の入学者選抜について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/ikkan/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの読書活動の推進",
+                "url": "https://www.mext.go.jp/a_menu/sports/dokusyo/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "計画的な学習は基礎学力の定着に効果があり、受験を通じて自己管理能力が身につく面もあります。",
+          "neutral": "スケジュールはあくまで大手塾の標準的なモデルであり、子どもの状況に合わせた柔軟な対応が重要です。",
+          "cautious": "低学年からの通塾が一般化していますが、遊びや運動の時間を犠牲にしすぎることへの懸念もあります。"
+    },
+    },
+    score: {"total":86,"reliability":26,"neutrality":23,"freshness":18,"ageRelevance":13,"readability":6},
+    publishedAt: "2025-07-16",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/junior-exam-exam-schedule.jpg",
+    readingTime: 14,
+    tags: ["中学受験","スケジュール","塾","模試","出願"],
+    relatedArticleIds: ["art-406","art-408","art-412","art-413"],
+  },
+  {
+    id: "art-410",
+    slug: "junior-exam-exam-school-select",
+    title: "中学受験：志望校の選び方ガイド——偏差値だけで決めない7つの視点",
+    excerpt: "中学受験の志望校選びで重要な7つの視点を解説。偏差値、校風、通学時間、進学実績、部活など多角的に比較する方法をまとめました。",
+    content: '',
+    stage: "upper",
+    categories: ["education"],
+    source: {
+      name: "中学校選びに関する教育情報",
+      references: [
+          {
+                "title": "私立学校の概要",
+                "url": "https://www.mext.go.jp/a_menu/shotou/shigaku/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "公立中高一貫教育校について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/ikkan/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校基本調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/1267995.htm",
+                "org": "文部科学省",
                 "stance": "neutral"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "学校選びを通じて、家族で教育について深く話し合うきっかけになります。",
+          "neutral": "偏差値ランキングだけで学校の価値は測れません。子どもに合う環境こそが最善の選択です。",
+          "cautious": "第一志望に固執しすぎると、不合格時の精神的ダメージが大きくなるリスクがあります。"
     },
     },
-    score: {"total":73,"reliability":15,"neutrality":23,"freshness":14,"ageRelevance":11,"readability":10},
+    score: {"total":85,"reliability":26,"neutrality":24,"freshness":17,"ageRelevance":12,"readability":6},
     publishedAt: "2025-07-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/junior-exam-exam-schedule.jpg",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/junior-exam-exam-school-select.jpg",
+    readingTime: 13,
+    tags: ["中学受験","志望校選び","学校説明会","偏差値"],
+    relatedArticleIds: ["art-406","art-415","art-408"],
+  },
+  {
+    id: "art-411",
+    slug: "junior-exam-exam-stress",
+    title: "中学受験のストレス対策：子どもの心を守る親のケア",
+    excerpt: "中学受験期の子どものストレスサイン、心のケア方法、燃え尽きを防ぐための具体的な対策を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["education","mental"],
+    source: {
+      name: "子どものメンタルヘルスに関する情報",
+      references: [
+          {
+                "title": "こころの健康に関する情報",
+                "url": "https://www.mhlw.go.jp/kokoro/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どものこころの健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育の充実に向けて",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "適度なストレスは成長の糧になり、受験を通じてレジリエンス（回復力）が身につく側面もあります。",
+          "neutral": "ストレスの感じ方は子どもによって大きく異なり、同じ環境でも影響は一様ではありません。",
+          "cautious": "過度なストレスは不登校や心身症の原因になりうるため、早期の気づきと対応が不可欠です。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2025-07-16",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/junior-exam-exam-stress.jpg",
     readingTime: 12,
-    tags: ["中学受験","スケジュール"],
-    relatedArticleIds: [],
+    tags: ["中学受験","ストレス","メンタルケア","燃え尽き"],
+    relatedArticleIds: ["art-413","art-414","art-061","art-050"],
   },
   {
     id: "art-403",
@@ -25686,44 +25682,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: [],
   },
   {
-    id: "art-238",
-    slug: "child-development-age-12",
-    title: "12歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "12歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":71,"reliability":23,"neutrality":15,"freshness":13,"ageRelevance":14,"readability":6},
-    publishedAt: "2025-05-18",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-12.jpg",
-    readingTime: 18,
-    tags: ["年齢別","12歳","発達","成長"],
-    relatedArticleIds: [],
-  },
-  {
     id: "art-239",
     slug: "play-guide-block-play",
     title: "ブロック遊びで育む力：年齢別ガイド",
@@ -25911,82 +25869,6 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-stem.jpg",
     readingTime: 19,
     tags: ["STEM","知育","選び方"],
-    relatedArticleIds: [],
-  },
-  {
-    id: "art-236",
-    slug: "child-development-age-10",
-    title: "10歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "10歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":72,"reliability":23,"neutrality":18,"freshness":13,"ageRelevance":11,"readability":7},
-    publishedAt: "2025-05-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-10.jpg",
-    readingTime: 9,
-    tags: ["年齢別","10歳","発達","成長"],
-    relatedArticleIds: [],
-  },
-  {
-    id: "art-237",
-    slug: "child-development-age-11",
-    title: "11歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "11歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":69,"reliability":20,"neutrality":16,"freshness":13,"ageRelevance":10,"readability":10},
-    publishedAt: "2025-05-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-11.jpg",
-    readingTime: 12,
-    tags: ["年齢別","11歳","発達","成長"],
     relatedArticleIds: [],
   },
   {
@@ -39362,6 +39244,150 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: [],
   },
   {
+    id: "art-236",
+    slug: "child-development-age-10",
+    title: "10歳児の発達と成長：「10歳の壁」と思春期の入口を理解する",
+    excerpt: "10歳の子どもの身体・認知・社会性の発達特徴と、いわゆる「10歳の壁」の乗り越え方、思春期の始まりへの対応をまとめました。",
+    content: '',
+    stage: "upper",
+    categories: ["development"],
+    source: {
+      name: "子どもの発達に関する公的情報",
+      references: [
+          {
+                "title": "学校保健統計調査（発育・体力）",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa05/hoken/1268826.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の診療に関する情報",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "生徒指導提要",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1404008.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "全国学力・学習状況調査",
+                "url": "https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "10歳は抽象的思考が発達し始め、知的好奇心が大きく広がる時期です。",
+          "neutral": "「10歳の壁」は多くの子に見られますが、その表れ方や深刻度は個人差が大きいです。",
+          "cautious": "この時期の自己肯定感の低下は、その後の思春期・青年期のメンタルヘルスにも影響する可能性があります。"
+    },
+    },
+    score: {"total":88,"reliability":28,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2025-04-01",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/child-development-age-10.jpg",
+    readingTime: 14,
+    tags: ["10歳","10歳の壁","思春期","反抗期","発達","小学4年生"],
+    relatedArticleIds: ["art-237","art-235","art-056","art-426"],
+  },
+  {
+    id: "art-237",
+    slug: "child-development-age-11",
+    title: "11歳児の発達と成長：反抗期・友達関係・勉強への向き合い方",
+    excerpt: "11歳（小学5年生）の子どもの発達特徴と、反抗期の対応、複雑化する友人関係、学力格差への対処法をまとめました。",
+    content: '',
+    stage: "upper",
+    categories: ["development"],
+    source: {
+      name: "子どもの発達に関する公的情報",
+      references: [
+          {
+                "title": "学校保健統計調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa05/hoken/1268826.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の診療に関する情報",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1302902.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "11歳は知的能力が飛躍的に伸び、大人と対等な議論ができるようになる時期です。",
+          "neutral": "反抗期の表れ方は個人差が大きく、「反抗しない＝問題ない」とは限りません。",
+          "cautious": "この時期の不登校やいじめの増加は統計的にも示されており、注意深い見守りが必要です。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2025-04-01",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/child-development-age-11.jpg",
+    readingTime: 14,
+    tags: ["11歳","反抗期","思春期","小学5年生","友達関係"],
+    relatedArticleIds: ["art-236","art-238","art-056","art-433"],
+  },
+  {
+    id: "art-238",
+    slug: "child-development-age-12",
+    title: "12歳児の発達と成長：小学校最終学年、中学進学への準備と自立",
+    excerpt: "12歳（小学6年生）の発達特徴と、中学進学への心構え、思春期の深まり、親の関わり方の転換期について解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["development"],
+    source: {
+      name: "子どもの発達に関する公的情報",
+      references: [
+          {
+                "title": "学校保健統計調査",
+                "url": "https://www.mext.go.jp/b_menu/toukei/chousa05/hoken/1268826.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "児童生徒の問題行動・不登校等に関する調査",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1302902.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の診療に関する情報",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "思春期の健康に関する情報",
+                "url": "https://www.mhlw.go.jp/kokoro/youth/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "12歳は抽象的思考が成熟し始め、将来の可能性が大きく広がる時期です。",
+          "neutral": "中学進学への不安は多くの子にありますが、その程度や表れ方は一人ひとり異なります。",
+          "cautious": "中1ギャップは実在する課題であり、小学校卒業前からの準備とフォローが重要です。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2025-04-01",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/child-development-age-12.jpg",
+    readingTime: 14,
+    tags: ["12歳","小学6年生","中学進学","思春期","反抗期","中1ギャップ"],
+    relatedArticleIds: ["art-237","art-056","art-373","art-007"],
+  },
+  {
     id: "art-999",
     slug: "parent-teacher-communication",
     title: "保護者と先生のコミュニケーション術",
@@ -39816,6 +39842,100 @@ export const ARTICLES: Article[] = [
     readingTime: 14,
     tags: ["おむつ","対処法","受診目安"],
     relatedArticleIds: [],
+  },
+  {
+    id: "art-433",
+    slug: "friendship-trouble-9to12",
+    title: "【9〜12歳】友達トラブルの乗り越え方：仲間外れ・悪口・LINE問題への対応",
+    excerpt: "小学校高学年で急増する友達トラブル。仲間外れ、悪口、SNSトラブルへの具体的な対応法と、親の関わり方を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["mental"],
+    source: {
+      name: "いじめ・友人関係に関する公的情報",
+      references: [
+          {
+                "title": "児童生徒の問題行動・不登校等に関する調査",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1302902.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "生徒指導提要",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1404008.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "こころの健康に関する情報",
+                "url": "https://www.mhlw.go.jp/kokoro/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "いじめ対策に係る事例集",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1400142.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "友達トラブルを乗り越える経験は、社会性やコミュニケーション能力を育む機会にもなります。",
+          "neutral": "友人関係の問題は程度も原因も多様であり、一律の対応策では解決しないことが多いです。",
+          "cautious": "放置するとエスカレートし、不登校や心身症につながるリスクがあるため、早期対応が重要です。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2025-04-01",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/friendship-trouble-9to12.jpg",
+    readingTime: 13,
+    tags: ["友達トラブル","いじめ","仲間外れ","LINE","小学校高学年"],
+    relatedArticleIds: ["art-013","art-236","art-237","art-039"],
+  },
+  {
+    id: "art-426",
+    slug: "self-esteem-9to12",
+    title: "【9〜12歳】自己肯定感を育てる：「自分はダメだ」と言い始めた子への対応",
+    excerpt: "小学校高学年で下がりやすい自己肯定感。子どもが「自分はダメだ」と感じる原因と、親ができる具体的な対応策を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["mental"],
+    source: {
+      name: "子どもの自己肯定感に関する調査・研究",
+      references: [
+          {
+                "title": "我が国と諸外国の若者の意識に関する調査",
+                "url": "https://www.cao.go.jp/youth/kenkyu/ishiki/",
+                "org": "内閣府",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の診療に関する情報",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "全国学力・学習状況調査（質問紙調査）",
+                "url": "https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "自己肯定感は環境や関わり方によって回復・向上できるものです。",
+          "neutral": "日本の子どもの自己肯定感が諸外国より低いという調査結果がありますが、文化的な要因も大きいです。",
+          "cautious": "自己肯定感の低下が長期化すると、うつ症状や不登校につながるリスクがあります。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2025-04-01",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/self-esteem-9to12.jpg",
+    readingTime: 12,
+    tags: ["自己肯定感","小学校高学年","メンタルケア","自信"],
+    relatedArticleIds: ["art-014","art-236","art-237","art-440"],
   }
 ];
 
