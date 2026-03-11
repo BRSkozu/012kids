@@ -7,11 +7,39 @@ import { getCategoryIllustration } from '@/components/illustrations/CategoryIllu
 
 interface ArticleCardProps {
   article: Article | ArticleMeta;
-  variant?: 'default' | 'featured' | 'compact';
+  variant?: 'default' | 'featured' | 'compact' | 'list';
 }
 
 export default function ArticleCard({ article, variant = 'default' }: ArticleCardProps) {
   const Illustration = getCategoryIllustration(article.categories[0]);
+
+  if (variant === 'list') {
+    return (
+      <Link
+        href={`/articles/${article.slug}`}
+        className="group flex items-center gap-4 p-3 rounded-lg hover:bg-orange-50/60 transition-colors border-b border-gray-100 last:border-b-0"
+      >
+        <div className="min-w-0 flex-1">
+          <h3 className="text-sm font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-1">
+            {article.title}
+          </h3>
+          <p className="text-xs text-gray-500 line-clamp-1 mt-0.5">{article.excerpt}</p>
+        </div>
+        <div className="shrink-0 flex items-center gap-2">
+          <StageBadge stage={article.stage} size="sm" />
+          {article.categories.slice(0, 1).map((cat) => (
+            <CategoryTag key={cat} category={cat} />
+          ))}
+          <span className="text-xs text-gray-400 whitespace-nowrap">{article.readingTime}分</span>
+        </div>
+        <span className="shrink-0 text-gray-400 group-hover:text-[var(--color-primary)] transition-colors">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+      </Link>
+    );
+  }
 
   if (variant === 'compact') {
     return (

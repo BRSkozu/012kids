@@ -143,9 +143,9 @@ export default function ArticlesPageClient({ articles }: Props) {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-white rounded-xl border border-gray-200 divide-y divide-gray-100">
           {filteredArticles.map((article) => (
-            <ArticleCard key={article.id} article={article} />
+            <ArticleCard key={article.id} article={article} variant="list" />
           ))}
         </div>
       )}
