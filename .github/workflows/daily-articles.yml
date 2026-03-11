@@ -1,0 +1,56 @@
+name: Daily Article Generation
+
+on:
+  schedule:
+    # 毎日日本時間午前6時（UTC 21:00前日）に実行
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of articles to generate'
+        required: false
+        default: '100'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-articles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate new articles
+        run: node scripts/daily-article-generator.mjs
+
+      - name: Regenerate article index
+        run: npm run prebuild
+
+      - name: Count new articles
+        id: count
+        run: |
+          NEW_COUNT=$(git diff --name-only --diff-filter=A | grep '\.mdx$' | wc -l)
+          echo "new_articles=$NEW_COUNT" >> $GITHUB_OUTPUT
+          TOTAL=$(find content/articles -name '*.mdx' | wc -l)
+          echo "total_articles=$TOTAL" >> $GITHUB_OUTPUT
+
+      - name: Commit and push new articles
+        if: steps.count.outputs.new_articles > 0
+        run: |
+          git config user.name "012kids-bot"
+          git config user.email "bot@012.kids"
+          git add content/articles/ src/data/articles.ts public/
+          git commit -m "feat: 自動生成 ${{ steps.count.outputs.new_articles }}件の新規記事を追加（合計${{ steps.count.outputs.total_articles }}件）"
+          git push

@@ -43,6 +43,18 @@ export const CATEGORIES: CategoryInfo[] = [
     icon: '🌍',
     description: 'SDGs教育、多様性・インクルーシブ教育、地域資源の活用',
   },
+  {
+    id: 'lifestyle',
+    label: '暮らし・家計',
+    icon: '🏠',
+    description: '教育費、共働き、時短術、引越し、家族のライフスタイル',
+  },
+  {
+    id: 'pregnancy',
+    label: '妊娠・出産',
+    icon: '🤱',
+    description: '妊娠経過、出産準備、産後ケア、不妊治療、マタニティライフ',
+  },
 ];
 
 export function getCategoryById(id: string): CategoryInfo | undefined {

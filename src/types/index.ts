@@ -22,7 +22,9 @@ export type ContentCategory =
   | 'health'
   | 'mental'
   | 'digital'
-  | 'social';
+  | 'social'
+  | 'lifestyle'
+  | 'pregnancy';
 
 export interface CategoryInfo {
   id: ContentCategory;

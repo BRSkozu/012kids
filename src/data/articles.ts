@@ -6,6 +6,2954 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1003",
+    slug: "bedwetting-enuresis-guide",
+    title: "夜尿症（おねしょ）はいつまで？原因と治療・家庭でできる対策",
+    excerpt: "夜尿症（おねしょ）はいつまで？原因と治療・家庭でできる対策について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "日本小児科学会等の公的情報",
+      references: [
+          {
+                "title": "夜尿症診療ガイドライン",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの排泄機能の発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "夜尿症の対応について",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "日本小児科学会などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "日本小児科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":72,"reliability":23,"neutrality":24,"freshness":15,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/bedwetting-enuresis-guide.jpg",
+    readingTime: 11,
+    tags: ["夜尿症","おねしょ","小児泌尿器科"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1007",
+    slug: "bilingual-child-development",
+    title: "バイリンガル育児：二言語環境での子どもの言語発達",
+    excerpt: "バイリンガル育児：二言語環境での子どもの言語発達について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "幼児期の言語発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "外国語活動・英語教育",
+                "url": "https://www.mext.go.jp/a_menu/shotou/gaikokugo/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "多文化共生の推進",
+                "url": "https://www.soumu.go.jp/menu_seisaku/chiho/02gyosei05_03000060.html",
+                "org": "総務省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":79,"reliability":22,"neutrality":24,"freshness":18,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/bilingual-child-development.jpg",
+    readingTime: 12,
+    tags: ["バイリンガル","言語発達","多言語"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1006",
+    slug: "dcd-coordination-disorder",
+    title: "発達性協調運動障害（DCD）：不器用さの背景と支援方法",
+    excerpt: "発達性協調運動障害（DCD）：不器用さの背景と支援方法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["development"],
+    source: {
+      name: "発達障害情報・支援センター等の公的情報",
+      references: [
+          {
+                "title": "発達性協調運動障害について",
+                "url": "http://www.rehab.go.jp/ddis/",
+                "org": "発達障害情報・支援センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "作業療法による支援",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "特別支援教育の充実",
+                "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "発達障害情報・支援センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":22,"neutrality":20,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/dcd-coordination-disorder.jpg",
+    readingTime: 12,
+    tags: ["DCD","協調運動","作業療法"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1001",
+    slug: "handedness-development-kids",
+    title: "利き手はいつ決まる？子どもの利き手の発達と左利きへの対応",
+    excerpt: "利き手はいつ決まる？子どもの利き手の発達と左利きへの対応について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "乳幼児身体発育調査",
+                "url": "https://www.mhlw.go.jp/toukei/list/73-22.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児の運動機能発達について",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの発達と利き手",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":80,"reliability":22,"neutrality":23,"freshness":16,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/handedness-development-kids.jpg",
+    readingTime: 10,
+    tags: ["利き手","左利き","発達"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1008",
+    slug: "play-therapy-benefits",
+    title: "遊戯療法（プレイセラピー）とは：遊びを通じた子どもの心のケア",
+    excerpt: "遊戯療法（プレイセラピー）とは：遊びを通じた子どもの心のケアについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの心の問題への対応",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "児童・思春期精神保健",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の健康",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":70,"reliability":27,"neutrality":23,"freshness":15,"ageRelevance":10,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/play-therapy-benefits.jpg",
+    readingTime: 10,
+    tags: ["遊戯療法","心理療法","臨床心理"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1005",
+    slug: "selective-mutism-guide",
+    title: "場面緘黙（かんもく）：家では話すのに外で話せない子への理解と支援",
+    excerpt: "場面緘黙（かんもく）：家では話すのに外で話せない子への理解と支援について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "発達障害情報・支援センター等の公的情報",
+      references: [
+          {
+                "title": "場面緘黙の理解と対応",
+                "url": "http://www.rehab.go.jp/ddis/",
+                "org": "発達障害情報・支援センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "不安障害の子どもへの対応",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "特別支援教育について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "発達障害情報・支援センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":72,"reliability":28,"neutrality":22,"freshness":15,"ageRelevance":12,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/selective-mutism-guide.jpg",
+    readingTime: 13,
+    tags: ["場面緘黙","不安障害","特別支援"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1002",
+    slug: "stuttering-support-kids",
+    title: "子どもの吃音（きつおん）：原因・対応・専門機関への相談",
+    excerpt: "子どもの吃音（きつおん）：原因・対応・専門機関への相談について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "吃音に関する情報",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "発達障害情報・支援センター",
+                "url": "http://www.rehab.go.jp/ddis/",
+                "org": "国立障害者リハビリテーションセンター",
+                "stance": "positive"
+          },
+          {
+                "title": "吃音の基礎知識",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "国立障害者リハビリテーションセンターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":22,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/stuttering-support-kids.jpg",
+    readingTime: 12,
+    tags: ["吃音","ことばの発達","言語聴覚士"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1004",
+    slug: "tic-disorder-children",
+    title: "チック症とは：子どものチックの症状・原因・家庭での対応",
+    excerpt: "チック症とは：子どものチックの症状・原因・家庭での対応について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["development"],
+    source: {
+      name: "発達障害情報・支援センター等の公的情報",
+      references: [
+          {
+                "title": "チック障害について",
+                "url": "http://www.rehab.go.jp/ddis/",
+                "org": "発達障害情報・支援センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児神経疾患の診療",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "神経発達症の理解",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "発達障害情報・支援センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":89,"reliability":29,"neutrality":24,"freshness":16,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/tic-disorder-children.jpg",
+    readingTime: 11,
+    tags: ["チック","神経発達","トゥレット症候群"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1036",
+    slug: "ai-education-kids-guide",
+    title: "AI時代の子ども教育：ChatGPTとの付き合い方・リテラシーの育て方",
+    excerpt: "AI時代の子ども教育：ChatGPTとの付き合い方・リテラシーの育て方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["digital"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "初等中等教育段階における生成AIの利用に関する暫定的なガイドライン",
+                "url": "https://www.mext.go.jp/a_menu/other/mext_02412.html",
+                "org": "文部科学省",
+                "stance": "cautious"
+          },
+          {
+                "title": "AI利活用ガイドライン",
+                "url": "https://www.soumu.go.jp/",
+                "org": "総務省",
+                "stance": "neutral"
+          },
+          {
+                "title": "デジタル・シティズンシップ教育",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立教育政策研究所などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "文部科学省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":80,"reliability":23,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/ai-education-kids-guide.jpg",
+    readingTime: 14,
+    tags: ["AI教育","ChatGPT","リテラシー"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1041",
+    slug: "coding-basics-elementary",
+    title: "小学生のコーディング入門：Scratchから始めるプログラミング的思考",
+    excerpt: "小学生のコーディング入門：Scratchから始めるプログラミング的思考について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["digital"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "小学校プログラミング教育の手引",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1403162.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "プログラミング教育ポータル",
+                "url": "https://miraino-manabi.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "情報教育の推進",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":81,"reliability":22,"neutrality":21,"freshness":16,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/coding-basics-elementary.jpg",
+    readingTime: 11,
+    tags: ["コーディング","Scratch","プログラミング的思考"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1043",
+    slug: "digital-art-kids-guide",
+    title: "デジタルアートを子どもと楽しむ：おすすめアプリとはじめ方",
+    excerpt: "デジタルアートを子どもと楽しむ：おすすめアプリとはじめ方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["digital"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "文化芸術教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "ICT活用教育",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "STEAM教育の推進",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":28,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/digital-art-kids-guide.jpg",
+    readingTime: 9,
+    tags: ["デジタルアート","イラスト","アプリ"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1038",
+    slug: "digital-creative-activities-kids",
+    title: "デジタル創作活動：子どもの表現力を伸ばすアプリ・ツール",
+    excerpt: "デジタル創作活動：子どもの表現力を伸ばすアプリ・ツールについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["digital"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "プログラミング教育の推進",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1375607.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "情報活用能力",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "STEAM教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":29,"neutrality":22,"freshness":19,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/digital-creative-activities-kids.jpg",
+    readingTime: 11,
+    tags: ["デジタル創作","アプリ","クリエイティブ"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1040",
+    slug: "ebook-vs-paper-kids",
+    title: "電子書籍vs紙の本：子どもの読書に最適なのはどっち？",
+    excerpt: "電子書籍vs紙の本：子どもの読書に最適なのはどっち？について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["digital"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "子供の読書活動の推進",
+                "url": "https://www.mext.go.jp/a_menu/shotou/dokusho/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "国語力向上に関する研究",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校図書館の充実",
+                "url": "https://www.mext.go.jp/a_menu/shotou/dokusho/link/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":75,"reliability":24,"neutrality":24,"freshness":15,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/ebook-vs-paper-kids.jpg",
+    readingTime: 10,
+    tags: ["電子書籍","読書","紙の本"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1042",
+    slug: "kids-youtube-safety",
+    title: "子どもとYouTube：視聴ルール・危険コンテンツ・キッズモード設定",
+    excerpt: "子どもとYouTube：視聴ルール・危険コンテンツ・キッズモード設定について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["digital"],
+    source: {
+      name: "内閣府等の公的情報",
+      references: [
+          {
+                "title": "青少年のインターネット利用環境実態調査",
+                "url": "https://www8.cao.go.jp/youth/kankyou/internet_torikumi/",
+                "org": "内閣府",
+                "stance": "cautious"
+          },
+          {
+                "title": "子どものメディア利用",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "インターネットトラブル事例集",
+                "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/kyouiku_joho-ka/jireishu.html",
+                "org": "総務省",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "内閣府のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":89,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/kids-youtube-safety.jpg",
+    readingTime: 11,
+    tags: ["YouTube","動画視聴","ペアレンタルコントロール"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1039",
+    slug: "robotics-education-kids",
+    title: "ロボット教育・ロボットプログラミング：何歳から？教室の選び方",
+    excerpt: "ロボット教育・ロボットプログラミング：何歳から？教室の選び方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["digital"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "プログラミング教育",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1375607.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "ものづくり教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "STEM/STEAM教育の推進",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":78,"reliability":24,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/robotics-education-kids.jpg",
+    readingTime: 11,
+    tags: ["ロボット教育","プログラミング","STEM"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1037",
+    slug: "tablet-learning-effectiveness",
+    title: "タブレット学習は効果ある？研究データから見るメリット・デメリット",
+    excerpt: "タブレット学習は効果ある？研究データから見るメリット・デメリットについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["digital"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "GIGAスクール構想の実現",
+                "url": "https://www.mext.go.jp/a_menu/other/index_00001.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "ICT活用教育の効果検証",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校におけるICT環境整備",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":84,"reliability":22,"neutrality":24,"freshness":19,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/tablet-learning-effectiveness.jpg",
+    readingTime: 12,
+    tags: ["タブレット学習","GIGAスクール","ICT教育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1020",
+    slug: "active-learning-elementary",
+    title: "アクティブラーニングを家庭で：対話型・体験型の学びの工夫",
+    excerpt: "アクティブラーニングを家庭で：対話型・体験型の学びの工夫について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "主体的・対話的で深い学び",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "学習環境と学力の関係",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":23,"neutrality":20,"freshness":15,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/active-learning-elementary.jpg",
+    readingTime: 10,
+    tags: ["アクティブラーニング","対話型学習","体験学習"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1019",
+    slug: "correspondence-education-comparison",
+    title: "通信教育・タブレット学習の比較：子どもに合った教材の選び方",
+    excerpt: "通信教育・タブレット学習の比較：子どもに合った教材の選び方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "ICTを活用した教育の推進",
+                "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "学力と学習状況の関係",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "GIGAスクール構想",
+                "url": "https://www.mext.go.jp/a_menu/other/index_00001.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":25,"neutrality":25,"freshness":16,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/correspondence-education-comparison.jpg",
+    readingTime: 13,
+    tags: ["通信教育","タブレット学習","教材比較"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1017",
+    slug: "homeschooling-japan-guide",
+    title: "ホームスクーリングは日本で可能？法的位置づけと実践方法",
+    excerpt: "ホームスクーリングは日本で可能？法的位置づけと実践方法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "義務教育制度について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/gakko/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "教育機会確保法の概要",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "多様な学びの保障",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立教育政策研究所などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":71,"reliability":28,"neutrality":20,"freshness":15,"ageRelevance":14,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/homeschooling-japan-guide.jpg",
+    readingTime: 13,
+    tags: ["ホームスクーリング","家庭教育","義務教育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1018",
+    slug: "inquiry-based-learning-kids",
+    title: "探究学習とは：子どもの「なぜ？」を伸ばす学び方",
+    excerpt: "探究学習とは：子どもの「なぜ？」を伸ばす学び方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "新学習指導要領における探究的な学び",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "探究的な学習に関する調査研究",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          },
+          {
+                "title": "OECD Education 2030",
+                "url": "https://www.oecd.org/education/",
+                "org": "OECD",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":70,"reliability":24,"neutrality":25,"freshness":19,"ageRelevance":11,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/inquiry-based-learning-kids.jpg",
+    readingTime: 11,
+    tags: ["探究学習","アクティブラーニング","主体的な学び"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1016",
+    slug: "school-refusal-alternative-learning",
+    title: "不登校の子の学びの選択肢：フリースクール・オンライン学習・出席認定",
+    excerpt: "不登校の子の学びの選択肢：フリースクール・オンライン学習・出席認定について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "不登校への対応について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/futoukou/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "不登校児童生徒への支援",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          },
+          {
+                "title": "教育機会確保法",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立教育政策研究所などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":89,"reliability":27,"neutrality":20,"freshness":17,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/school-refusal-alternative-learning.jpg",
+    readingTime: 14,
+    tags: ["不登校","フリースクール","オンライン学習"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1027",
+    slug: "adhd-kids-understanding",
+    title: "ADHDの子どもへの理解と支援：家庭・学校でできること",
+    excerpt: "ADHDの子どもへの理解と支援：家庭・学校でできることについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["health"],
+    source: {
+      name: "発達障害情報・支援センター等の公的情報",
+      references: [
+          {
+                "title": "ADHD（注意欠如・多動症）について",
+                "url": "http://www.rehab.go.jp/ddis/",
+                "org": "発達障害情報・支援センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "特別支援教育",
+                "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "ADHDの診断と治療",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "発達障害情報・支援センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":81,"reliability":23,"neutrality":24,"freshness":17,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/adhd-kids-understanding.jpg",
+    readingTime: 14,
+    tags: ["ADHD","注意欠如多動症","特別支援"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1022",
+    slug: "ent-kids-common-issues",
+    title: "子どもの耳鼻科トラブル：中耳炎・副鼻腔炎・扁桃腺の対処法",
+    excerpt: "子どもの耳鼻科トラブル：中耳炎・副鼻腔炎・扁桃腺の対処法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "日本小児科学会等の公的情報",
+      references: [
+          {
+                "title": "小児急性中耳炎診療ガイドライン",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの耳・鼻・のどの病気",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児科疾患の手引き",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "日本小児科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":78,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/ent-kids-common-issues.jpg",
+    readingTime: 12,
+    tags: ["中耳炎","副鼻腔炎","耳鼻科"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1021",
+    slug: "hay-fever-children-guide",
+    title: "子どもの花粉症：症状の見分け方・治療・日常生活の工夫",
+    excerpt: "子どもの花粉症：症状の見分け方・治療・日常生活の工夫について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "環境省等の公的情報",
+      references: [
+          {
+                "title": "花粉症環境保健マニュアル",
+                "url": "https://www.env.go.jp/chemi/anzen/kafun/",
+                "org": "環境省",
+                "stance": "neutral"
+          },
+          {
+                "title": "アレルギー疾患対策",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/allergy/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児アレルギー疾患",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "環境省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":76,"reliability":22,"neutrality":20,"freshness":17,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/hay-fever-children-guide.jpg",
+    readingTime: 11,
+    tags: ["花粉症","アレルギー","耳鼻科"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1023",
+    slug: "head-lice-treatment-kids",
+    title: "アタマジラミの対処法：見つけ方・駆除・再感染防止",
+    excerpt: "アタマジラミの対処法：見つけ方・駆除・再感染防止について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["health"],
+    source: {
+      name: "国立感染症研究所等の公的情報",
+      references: [
+          {
+                "title": "感染症情報",
+                "url": "https://www.niid.go.jp/niid/ja/",
+                "org": "国立感染症研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校における感染症対策",
+                "url": "https://www.gakkohoken.jp/",
+                "org": "日本学校保健会",
+                "stance": "neutral"
+          },
+          {
+                "title": "生活衛生関連情報",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立感染症研究所のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":25,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/head-lice-treatment-kids.jpg",
+    readingTime: 9,
+    tags: ["アタマジラミ","感染症対策","学校保健"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1024",
+    slug: "impetigo-skin-infection-kids",
+    title: "とびひ（伝染性膿痂疹）：症状・治療・プールや登園の基準",
+    excerpt: "とびひ（伝染性膿痂疹）：症状・治療・プールや登園の基準について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育所における感染症対策ガイドライン",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児皮膚疾患",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "皮膚の感染症",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":77,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/impetigo-skin-infection-kids.jpg",
+    readingTime: 9,
+    tags: ["とびひ","皮膚感染症","登園基準"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1025",
+    slug: "norovirus-kids-prevention",
+    title: "ノロウイルスから子どもを守る：予防・消毒・家庭内感染対策",
+    excerpt: "ノロウイルスから子どもを守る：予防・消毒・家庭内感染対策について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "ノロウイルスに関するQ&A",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/kanren/yobou/040204-1.html",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "ノロウイルス感染症",
+                "url": "https://www.niid.go.jp/niid/ja/kansennohanashi/452-norovirus-intro.html",
+                "org": "国立感染症研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの急性胃腸炎",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":89,"reliability":26,"neutrality":20,"freshness":17,"ageRelevance":11,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/norovirus-kids-prevention.jpg",
+    readingTime: 10,
+    tags: ["ノロウイルス","胃腸炎","消毒"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1026",
+    slug: "rs-virus-infant-guide",
+    title: "RSウイルス感染症：赤ちゃんへの影響と重症化を防ぐポイント",
+    excerpt: "RSウイルス感染症：赤ちゃんへの影響と重症化を防ぐポイントについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "国立感染症研究所等の公的情報",
+      references: [
+          {
+                "title": "RSウイルス感染症",
+                "url": "https://www.niid.go.jp/niid/ja/kansennohanashi/317-rs-intro.html",
+                "org": "国立感染症研究所",
+                "stance": "cautious"
+          },
+          {
+                "title": "RSウイルス感染症の予防",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "新生児・乳児の感染症",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立感染症研究所のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立感染症研究所は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":88,"reliability":28,"neutrality":24,"freshness":18,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/rs-virus-infant-guide.jpg",
+    readingTime: 10,
+    tags: ["RSウイルス","細気管支炎","乳児"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1059",
+    slug: "family-photo-memories",
+    title: "家族写真の残し方：スマホ撮影のコツ・整理・フォトブック",
+    excerpt: "家族写真の残し方：スマホ撮影のコツ・整理・フォトブックについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "総務省等の公的情報",
+      references: [
+          {
+                "title": "デジタルアーカイブ",
+                "url": "https://www.soumu.go.jp/",
+                "org": "総務省",
+                "stance": "neutral"
+          },
+          {
+                "title": "個人情報保護",
+                "url": "https://www.ppc.go.jp/",
+                "org": "個人情報保護委員会",
+                "stance": "cautious"
+          },
+          {
+                "title": "SNSへの子どもの写真投稿",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "総務省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "個人情報保護委員会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":72,"reliability":23,"neutrality":20,"freshness":17,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/family-photo-memories.jpg",
+    readingTime: 8,
+    tags: ["家族写真","思い出","フォトブック"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1056",
+    slug: "family-travel-with-kids",
+    title: "子連れ旅行完全ガイド：年齢別の準備・持ち物・おすすめスポット",
+    excerpt: "子連れ旅行完全ガイド：年齢別の準備・持ち物・おすすめスポットについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["lifestyle"],
+    source: {
+      name: "消費者庁等の公的情報",
+      references: [
+          {
+                "title": "子どもの安全対策",
+                "url": "https://www.caa.go.jp/policies/policy/consumer_safety/child/",
+                "org": "消費者庁",
+                "stance": "cautious"
+          },
+          {
+                "title": "旅行者の安全",
+                "url": "https://www.mlit.go.jp/kankocho/",
+                "org": "観光庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの体調管理",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "消費者庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":72,"reliability":28,"neutrality":25,"freshness":18,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/family-travel-with-kids.jpg",
+    readingTime: 13,
+    tags: ["子連れ旅行","家族旅行","持ち物"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1058",
+    slug: "kids-room-design-guide",
+    title: "子ども部屋のつくり方：年齢別レイアウト・収納・学習環境",
+    excerpt: "子ども部屋のつくり方：年齢別レイアウト・収納・学習環境について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "消費者庁等の公的情報",
+      references: [
+          {
+                "title": "住宅における子どもの安全",
+                "url": "https://www.caa.go.jp/policies/policy/consumer_safety/child/",
+                "org": "消費者庁",
+                "stance": "cautious"
+          },
+          {
+                "title": "住環境と子どもの発達",
+                "url": "https://www.mlit.go.jp/",
+                "org": "国土交通省",
+                "stance": "neutral"
+          },
+          {
+                "title": "学習環境と学力",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "消費者庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":73,"reliability":28,"neutrality":20,"freshness":18,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/kids-room-design-guide.jpg",
+    readingTime: 10,
+    tags: ["子ども部屋","収納","学習環境"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1053",
+    slug: "military-family-parenting",
+    title: "転勤族の子育て：転校・友達関係・環境の変化をポジティブに",
+    excerpt: "転勤族の子育て：転校・友達関係・環境の変化をポジティブにについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どものストレスと適応",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の健康",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校教育の支援",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":29,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/military-family-parenting.jpg",
+    readingTime: 10,
+    tags: ["転勤族","転校","環境変化"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1054",
+    slug: "pets-and-kids-benefits",
+    title: "ペットと子育て：動物との暮らしが子どもに与える影響と注意点",
+    excerpt: "ペットと子育て：動物との暮らしが子どもに与える影響と注意点について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["lifestyle"],
+    source: {
+      name: "環境省等の公的情報",
+      references: [
+          {
+                "title": "ペットと子どもの発達",
+                "url": "https://www.env.go.jp/nature/dobutsu/aigo/",
+                "org": "環境省",
+                "stance": "positive"
+          },
+          {
+                "title": "動物由来感染症",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou18/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "子どもの情操と動物",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "環境省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "環境省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":70,"reliability":22,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/pets-and-kids-benefits.jpg",
+    readingTime: 10,
+    tags: ["ペット","動物","情操教育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1052",
+    slug: "relocation-kids-adjustment",
+    title: "引越し・転居と子どもの適応：転校のケアと新環境への馴染み方",
+    excerpt: "引越し・転居と子どもの適応：転校のケアと新環境への馴染み方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "転校生への配慮",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの環境変化とストレス",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":87,"reliability":25,"neutrality":23,"freshness":18,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/relocation-kids-adjustment.jpg",
+    readingTime: 10,
+    tags: ["引越し","転校","適応"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1055",
+    slug: "remote-work-childcare-balance",
+    title: "在宅勤務と育児の両立：タイムマネジメントと環境づくり",
+    excerpt: "在宅勤務と育児の両立：タイムマネジメントと環境づくりについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "テレワークの推進",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/shigoto/telework.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "仕事と育児の両立支援",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000130583.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て世代の働き方",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "厚生労働省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":24,"neutrality":22,"freshness":16,"ageRelevance":11,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/remote-work-childcare-balance.jpg",
+    readingTime: 10,
+    tags: ["在宅勤務","テレワーク","育児両立"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1057",
+    slug: "time-saving-housework-parents",
+    title: "育児中の時短家事テクニック：効率化のコツとおすすめ家電",
+    excerpt: "育児中の時短家事テクニック：効率化のコツとおすすめ家電について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "総務省等の公的情報",
+      references: [
+          {
+                "title": "生活時間の国際比較",
+                "url": "https://www.soumu.go.jp/toukei_toukatsu/index/seikatu/",
+                "org": "総務省",
+                "stance": "neutral"
+          },
+          {
+                "title": "男女共同参画と家事",
+                "url": "https://www.gender.go.jp/",
+                "org": "内閣府男女共同参画局",
+                "stance": "positive"
+          },
+          {
+                "title": "育児と家事の両立",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "内閣府男女共同参画局などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "総務省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":75,"reliability":27,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/time-saving-housework-parents.jpg",
+    readingTime: 9,
+    tags: ["時短家事","家事効率化","家電"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1030",
+    slug: "anger-management-kids",
+    title: "子どものアンガーマネジメント：怒りのコントロールを教える方法",
+    excerpt: "子どものアンガーマネジメント：怒りのコントロールを教える方法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "児童生徒の問題行動等への対応",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの感情発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "暴力行為の予防",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立教育政策研究所などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":73,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/anger-management-kids.jpg",
+    readingTime: 10,
+    tags: ["アンガーマネジメント","怒り","感情コントロール"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1029",
+    slug: "emotional-education-kids",
+    title: "感情教育とは：子どもが自分の気持ちを言葉にできるようになるまで",
+    excerpt: "感情教育とは：子どもが自分の気持ちを言葉にできるようになるまでについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "国立教育政策研究所等の公的情報",
+      references: [
+          {
+                "title": "社会性と情動の学習（SEL）",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの心の発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児教育における非認知能力",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立教育政策研究所などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立教育政策研究所のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":74,"reliability":24,"neutrality":25,"freshness":17,"ageRelevance":11,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/emotional-education-kids.jpg",
+    readingTime: 11,
+    tags: ["感情教育","SEL","感情リテラシー"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1028",
+    slug: "hsc-highly-sensitive-child",
+    title: "HSC（ひといちばい敏感な子）：特性の理解と子育てのコツ",
+    excerpt: "HSC（ひといちばい敏感な子）：特性の理解と子育てのコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの気質と養育",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の健康",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "個に応じた教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":26,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/hsc-highly-sensitive-child.jpg",
+    readingTime: 13,
+    tags: ["HSC","敏感","気質"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1032",
+    slug: "night-crying-coping-strategies",
+    title: "夜泣きに悩むパパ・ママへ：原因の理解と親の心のケア",
+    excerpt: "夜泣きに悩むパパ・ママへ：原因の理解と親の心のケアについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "乳幼児の睡眠に関する研究",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て世代の心の健康",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "乳児期の発達と養育",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":78,"reliability":24,"neutrality":25,"freshness":18,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/night-crying-coping-strategies.jpg",
+    readingTime: 10,
+    tags: ["夜泣き","睡眠","親のストレス"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1034",
+    slug: "puberty-rebellion-guide",
+    title: "思春期の反抗期：親子関係を壊さない向き合い方",
+    excerpt: "思春期の反抗期：親子関係を壊さない向き合い方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "思春期の心身の変化",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "青少年の健全育成",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":73,"reliability":26,"neutrality":25,"freshness":16,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/puberty-rebellion-guide.jpg",
+    readingTime: 12,
+    tags: ["反抗期","思春期","親子関係"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1033",
+    slug: "separation-anxiety-kids",
+    title: "分離不安：ママと離れられない子への対応と見守り方",
+    excerpt: "分離不安：ママと離れられない子への対応と見守り方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "愛着と子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの不安障害",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":78,"reliability":29,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/separation-anxiety-kids.jpg",
+    readingTime: 10,
+    tags: ["分離不安","登園しぶり","愛着"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1035",
+    slug: "sibling-mediation-techniques",
+    title: "兄弟ゲンカの仲裁法：公平な対応と兄弟関係を育むコツ",
+    excerpt: "兄弟ゲンカの仲裁法：公平な対応と兄弟関係を育むコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "きょうだい関係と子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育の手引き",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの社会性発達",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":75,"reliability":28,"neutrality":22,"freshness":18,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/sibling-mediation-techniques.jpg",
+    readingTime: 9,
+    tags: ["兄弟ゲンカ","きょうだい","仲裁"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1031",
+    slug: "trauma-care-children",
+    title: "子どものトラウマケア：つらい経験からの回復を支える",
+    excerpt: "子どものトラウマケア：つらい経験からの回復を支えるについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どものトラウマ対応",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "被災した子どもの心のケア",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "こどもの心のケアについて",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":88,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/trauma-care-children.jpg",
+    readingTime: 13,
+    tags: ["トラウマ","PTSD","心のケア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1013",
+    slug: "bento-making-guide-kids",
+    title: "お弁当作りの基本：栄養バランス・衛生管理・子どもが喜ぶ工夫",
+    excerpt: "お弁当作りの基本：栄養バランス・衛生管理・子どもが喜ぶ工夫について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["nutrition"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "食中毒予防のポイント",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "食育の推進",
+                "url": "https://www.maff.go.jp/j/syokuiku/",
+                "org": "農林水産省",
+                "stance": "positive"
+          },
+          {
+                "title": "学校給食の栄養管理",
+                "url": "https://www.mext.go.jp/a_menu/sports/syokuiku/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "農林水産省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":89,"reliability":24,"neutrality":20,"freshness":19,"ageRelevance":13,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/bento-making-guide-kids.jpg",
+    readingTime: 12,
+    tags: ["お弁当","栄養バランス","衛生管理"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1009",
+    slug: "dietary-fiber-kids-guide",
+    title: "子どもの食物繊維不足：便秘対策と腸内環境を整える食事",
+    excerpt: "子どもの食物繊維不足：便秘対策と腸内環境を整える食事について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["nutrition"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "日本人の食事摂取基準（2025年版）",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "国民健康・栄養調査",
+                "url": "https://www.mhlw.go.jp/bunya/kenkou/kenkou_eiyou_chousa.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの食と健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":25,"neutrality":21,"freshness":16,"ageRelevance":12,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/dietary-fiber-kids-guide.jpg",
+    readingTime: 10,
+    tags: ["食物繊維","便秘","腸内環境"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1014",
+    slug: "food-education-activities",
+    title: "家庭でできる食育活動：料理体験・農業体験・食べ物の学び",
+    excerpt: "家庭でできる食育活動：料理体験・農業体験・食べ物の学びについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["nutrition"],
+    source: {
+      name: "農林水産省等の公的情報",
+      references: [
+          {
+                "title": "第4次食育推進基本計画",
+                "url": "https://www.maff.go.jp/j/syokuiku/",
+                "org": "農林水産省",
+                "stance": "positive"
+          },
+          {
+                "title": "食育の現状と意識",
+                "url": "https://www.maff.go.jp/j/syokuiku/ishiki.html",
+                "org": "農林水産省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの食と健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "農林水産省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "農林水産省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":25,"neutrality":24,"freshness":18,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/food-education-activities.jpg",
+    readingTime: 11,
+    tags: ["食育","料理体験","農業体験"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1012",
+    slug: "homemade-snacks-kids",
+    title: "手作りおやつレシピ集：栄養もおいしさも叶える簡単レシピ20選",
+    excerpt: "手作りおやつレシピ集：栄養もおいしさも叶える簡単レシピ20選について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["nutrition"],
+    source: {
+      name: "農林水産省等の公的情報",
+      references: [
+          {
+                "title": "食育推進基本計画",
+                "url": "https://www.maff.go.jp/j/syokuiku/",
+                "org": "農林水産省",
+                "stance": "positive"
+          },
+          {
+                "title": "食事バランスガイド",
+                "url": "https://www.mhlw.go.jp/bunya/kenkou/eiyou-syokuji.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの間食の目安",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "農林水産省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "農林水産省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":70,"reliability":26,"neutrality":25,"freshness":18,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/homemade-snacks-kids.jpg",
+    readingTime: 14,
+    tags: ["手作りおやつ","レシピ","食育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1010",
+    slug: "iron-deficiency-kids",
+    title: "子どもの鉄分不足が深刻：貧血を防ぐ食事と摂取のコツ",
+    excerpt: "子どもの鉄分不足が深刻：貧血を防ぐ食事と摂取のコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["nutrition"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "乳幼児の栄養・食生活",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000134208.html",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "小児の貧血について",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "食事摂取基準",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":88,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/iron-deficiency-kids.jpg",
+    readingTime: 11,
+    tags: ["鉄分","貧血","栄養素"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1015",
+    slug: "picky-eating-advanced-strategies",
+    title: "偏食改善の実践法：無理なく食べられるものを増やすテクニック",
+    excerpt: "偏食改善の実践法：無理なく食べられるものを増やすテクニックについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["nutrition"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "乳幼児栄養調査",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000134208.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "食育白書",
+                "url": "https://www.maff.go.jp/j/syokuiku/",
+                "org": "農林水産省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの食行動と発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":78,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/picky-eating-advanced-strategies.jpg",
+    readingTime: 12,
+    tags: ["偏食","食嫌い","食行動"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1011",
+    slug: "vitamin-d-sunlight-kids",
+    title: "ビタミンD不足と子どもの骨：日光浴と食事のバランス",
+    excerpt: "ビタミンD不足と子どもの骨：日光浴と食事のバランスについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["nutrition"],
+    source: {
+      name: "日本小児科学会等の公的情報",
+      references: [
+          {
+                "title": "ビタミンD欠乏症の予防",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "食事摂取基準",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの成長と栄養",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "日本小児科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":71,"reliability":28,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/vitamin-d-sunlight-kids.jpg",
+    readingTime: 10,
+    tags: ["ビタミンD","骨","日光浴"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1064",
+    slug: "advanced-maternal-age",
+    title: "高齢出産のリスクと対策：35歳以上の妊娠・出産ガイド",
+    excerpt: "高齢出産のリスクと対策：35歳以上の妊娠・出産ガイドについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "日本産科婦人科学会等の公的情報",
+      references: [
+          {
+                "title": "高年齢での妊娠・出産",
+                "url": "https://www.jsog.or.jp/",
+                "org": "日本産科婦人科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "出生前検査について",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "母子保健",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "日本産科婦人科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":70,"reliability":27,"neutrality":24,"freshness":16,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/advanced-maternal-age.jpg",
+    readingTime: 13,
+    tags: ["高齢出産","妊娠リスク","出生前検査"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1060",
+    slug: "birth-method-comparison",
+    title: "出産方法の選び方：自然分娩・無痛分娩・帝王切開の比較",
+    excerpt: "出産方法の選び方：自然分娩・無痛分娩・帝王切開の比較について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "周産期医療の体制",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000186912.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "出産に関する情報",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "産婦人科診療ガイドライン",
+                "url": "https://www.jsog.or.jp/",
+                "org": "日本産科婦人科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":23,"neutrality":20,"freshness":15,"ageRelevance":12,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/birth-method-comparison.jpg",
+    readingTime: 13,
+    tags: ["出産方法","無痛分娩","帝王切開"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1066",
+    slug: "gestational-diabetes-guide",
+    title: "妊娠糖尿病：診断・食事療法・赤ちゃんへの影響と管理",
+    excerpt: "妊娠糖尿病：診断・食事療法・赤ちゃんへの影響と管理について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "日本産科婦人科学会等の公的情報",
+      references: [
+          {
+                "title": "妊娠糖尿病について",
+                "url": "https://www.jsog.or.jp/",
+                "org": "日本産科婦人科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "妊娠と糖代謝異常",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "糖尿病診療ガイドライン",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "日本産科婦人科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":76,"reliability":29,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/gestational-diabetes-guide.jpg",
+    readingTime: 12,
+    tags: ["妊娠糖尿病","血糖管理","食事療法"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1061",
+    slug: "maternity-yoga-guide",
+    title: "マタニティヨガの効果と注意点：安全に楽しむためのガイド",
+    excerpt: "マタニティヨガの効果と注意点：安全に楽しむためのガイドについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "日本産科婦人科学会等の公的情報",
+      references: [
+          {
+                "title": "妊娠中の運動について",
+                "url": "https://www.jsog.or.jp/",
+                "org": "日本産科婦人科学会",
+                "stance": "positive"
+          },
+          {
+                "title": "妊婦の健康管理",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "周産期の運動療法",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "日本産科婦人科学会などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "日本産科婦人科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":80,"reliability":26,"neutrality":21,"freshness":17,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/maternity-yoga-guide.jpg",
+    readingTime: 9,
+    tags: ["マタニティヨガ","妊娠中の運動","リラックス"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1063",
+    slug: "postpartum-depression-guide",
+    title: "産後うつの理解と対処：症状・チェックリスト・相談先",
+    excerpt: "産後うつの理解と対処：症状・チェックリスト・相談先について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "産後の心の健康",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "周産期メンタルヘルス",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "産後ケア事業",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":83,"reliability":28,"neutrality":21,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/postpartum-depression-guide.jpg",
+    readingTime: 12,
+    tags: ["産後うつ","メンタルヘルス","産後ケア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1067",
+    slug: "prenatal-testing-options",
+    title: "出生前診断の種類と考え方：NIPTからエコーまで最新情報",
+    excerpt: "出生前診断の種類と考え方：NIPTからエコーまで最新情報について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "NIPT等の出生前検査",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "出生前検査に関する見解",
+                "url": "https://www.jsog.or.jp/",
+                "org": "日本産科婦人科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "母体血を用いた出生前遺伝学的検査",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":80,"reliability":26,"neutrality":23,"freshness":16,"ageRelevance":13,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/prenatal-testing-options.jpg",
+    readingTime: 14,
+    tags: ["出生前診断","NIPT","遺伝カウンセリング"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1062",
+    slug: "travel-during-pregnancy",
+    title: "妊娠中の旅行：いつまでOK？注意点と安全な計画の立て方",
+    excerpt: "妊娠中の旅行：いつまでOK？注意点と安全な計画の立て方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "日本産科婦人科学会等の公的情報",
+      references: [
+          {
+                "title": "妊娠中の日常生活",
+                "url": "https://www.jsog.or.jp/",
+                "org": "日本産科婦人科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "妊婦の健康管理",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "妊娠中の注意事項",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "日本産科婦人科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":83,"reliability":26,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/travel-during-pregnancy.jpg",
+    readingTime: 9,
+    tags: ["妊娠中の旅行","マタニティ旅行","安全"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1065",
+    slug: "twin-pregnancy-guide",
+    title: "多胎妊娠（双子・三つ子）：妊娠経過と出産準備の完全ガイド",
+    excerpt: "多胎妊娠（双子・三つ子）：妊娠経過と出産準備の完全ガイドについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["pregnancy"],
+    source: {
+      name: "日本産科婦人科学会等の公的情報",
+      references: [
+          {
+                "title": "多胎妊娠の管理",
+                "url": "https://www.jsog.or.jp/",
+                "org": "日本産科婦人科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "多胎育児支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "多胎妊娠のリスク管理",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "日本産科婦人科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":83,"reliability":28,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/twin-pregnancy-guide.jpg",
+    readingTime: 13,
+    tags: ["多胎妊娠","双子","出産準備"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1049",
+    slug: "child-abuse-prevention-guide",
+    title: "児童虐待防止：兆候の見つけ方・通報の方法・相談窓口",
+    excerpt: "児童虐待防止：兆候の見つけ方・通報の方法・相談窓口について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["social"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "児童虐待防止対策",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/dv/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "児童相談所",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの権利条約",
+                "url": "https://www.mofa.go.jp/mofaj/gaiko/jido/",
+                "org": "外務省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":76,"reliability":27,"neutrality":25,"freshness":17,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/child-abuse-prevention-guide.jpg",
+    readingTime: 12,
+    tags: ["児童虐待","通報","189"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1046",
+    slug: "disability-support-children",
+    title: "障がいのある子どもへの支援制度：福祉サービス・療育・特別支援教育",
+    excerpt: "障がいのある子どもへの支援制度：福祉サービス・療育・特別支援教育について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["social"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "障害児支援施策",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "特別支援教育",
+                "url": "https://www.mext.go.jp/a_menu/shotou/tokubetu/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "障害児通所支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":79,"reliability":23,"neutrality":25,"freshness":15,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/disability-support-children.jpg",
+    readingTime: 14,
+    tags: ["障がい児支援","療育","福祉サービス"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1047",
+    slug: "foreign-roots-parenting",
+    title: "外国にルーツを持つ子どもの子育て：日本語支援・多文化教育・制度",
+    excerpt: "外国にルーツを持つ子どもの子育て：日本語支援・多文化教育・制度について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "外国人児童生徒等の教育の充実",
+                "url": "https://www.mext.go.jp/a_menu/shotou/clarinet/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "多文化共生の推進",
+                "url": "https://www.soumu.go.jp/menu_seisaku/chiho/02gyosei05_03000060.html",
+                "org": "総務省",
+                "stance": "positive"
+          },
+          {
+                "title": "外国人の子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":74,"reliability":22,"neutrality":20,"freshness":18,"ageRelevance":10,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/foreign-roots-parenting.jpg",
+    readingTime: 12,
+    tags: ["外国ルーツ","多文化共生","日本語支援"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1045",
+    slug: "foster-care-system-japan",
+    title: "里親制度の仕組み：種類・条件・手続きと里親支援",
+    excerpt: "里親制度の仕組み：種類・条件・手続きと里親支援について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["social"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "里親制度について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/syakaiteki_yougo/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "社会的養護の充実",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "里親の養育と支援",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "厚生労働省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/foster-care-system-japan.jpg",
+    readingTime: 13,
+    tags: ["里親","社会的養護","里親支援"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1044",
+    slug: "kodomo-shokudo-guide",
+    title: "子ども食堂とは：利用方法・ボランティア参加・地域での始め方",
+    excerpt: "子ども食堂とは：利用方法・ボランティア参加・地域での始め方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "こども家庭庁等の公的情報",
+      references: [
+          {
+                "title": "子どもの貧困対策",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "地域共生社会の実現",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子供の貧困に関する大綱",
+                "url": "https://www8.cao.go.jp/kodomonohinkon/",
+                "org": "内閣府",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "こども家庭庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":79,"reliability":25,"neutrality":22,"freshness":15,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/kodomo-shokudo-guide.jpg",
+    readingTime: 11,
+    tags: ["子ども食堂","地域福祉","子どもの貧困"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1050",
+    slug: "pta-participation-guide",
+    title: "PTA活動の実態：参加のメリット・負担軽減・改革事例",
+    excerpt: "PTA活動の実態：参加のメリット・負担軽減・改革事例について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "学校と地域の連携・協働",
+                "url": "https://www.mext.go.jp/a_menu/shotou/community/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "コミュニティ・スクール",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "PTA活動に関する調査",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":89,"reliability":29,"neutrality":23,"freshness":15,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/pta-participation-guide.jpg",
+    readingTime: 11,
+    tags: ["PTA","学校運営","保護者会"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1051",
+    slug: "school-route-safety",
+    title: "通学路の安全対策：見守り活動・交通安全・不審者対策",
+    excerpt: "通学路の安全対策：見守り活動・交通安全・不審者対策について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "通学路の安全確保",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの安全対策",
+                "url": "https://www.npa.go.jp/",
+                "org": "警察庁",
+                "stance": "positive"
+          },
+          {
+                "title": "交通安全対策",
+                "url": "https://www8.cao.go.jp/koutu/",
+                "org": "内閣府",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":27,"neutrality":23,"freshness":16,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/school-route-safety.jpg",
+    readingTime: 10,
+    tags: ["通学路","交通安全","見守り"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1048",
+    slug: "young-carer-support",
+    title: "ヤングケアラーとは：子どもが担うケアの実態と支援策",
+    excerpt: "ヤングケアラーとは：子どもが担うケアの実態と支援策について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["social"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "ヤングケアラーの実態に関する調査研究",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "ヤングケアラー支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの権利擁護",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":83,"reliability":28,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-03-11",
+    updatedAt: "2026-03-11",
+    imageUrl: "/articles/young-carer-support.jpg",
+    readingTime: 13,
+    tags: ["ヤングケアラー","家族のケア","支援制度"],
+    relatedArticleIds: [],
+  },
+  {
     id: "art-074",
     slug: "kids-first-smartphone",
     title: "子どもの初めてのスマホ：何歳から？機種選び・ルール作り・フィルタリング設定",
