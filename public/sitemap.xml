@@ -61,6 +61,30 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/baby-sign-language-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/baby-sleep-training</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/baby-teeth-growth-order</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/baby-visual-development</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/bedwetting-enuresis-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -73,7 +97,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/crawling-importance</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/dcd-coordination-disorder</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/early-childhood-reading</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/first-walking-timing</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/following-parent-phase</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -85,7 +133,49 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/imitation-play-development</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/jumping-motor-skill</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/left-hand-writing-support</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/mirror-interest-baby</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/nail-biting-children</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/play-therapy-benefits</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/pointing-meaning-baby</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/potty-training-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -97,7 +187,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/stranger-anxiety-baby</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/stuttering-support-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/thumb-sucking-habit</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -109,7 +211,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/tricycle-practice-tips</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/two-word-sentence-delay</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/ai-chatbot-children-safety</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/ai-education-kids-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/blue-light-measures-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -133,7 +259,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/digital-detox-family</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/ebook-vs-paper-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kids-email-address-setup</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kids-password-management</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kids-safe-sns-options</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -145,7 +295,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/location-tracking-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/minecraft-educational-value</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/online-bullying-prevention</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/roblox-safety-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/robotics-education-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/smartphone-addiction-check</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/switch-time-limit-settings</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -157,7 +343,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/tablet-posture-problems</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/tiktok-safety-settings</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/wifi-restriction-settings</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/active-learning-elementary</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/classroom-collapse-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -169,7 +379,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/cram-school-selection</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/essay-writing-help</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/free-research-themes</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/graduation-ceremony-prep</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/homeschooling-japan-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/homework-motivation-tips</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -181,7 +421,67 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/junior-high-exam-stress</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kanji-learning-tips</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/multiplication-table-memorize</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/pta-officer-duties</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/reading-aloud-benefits</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/resource-room-guidance</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/school-entrance-checklist</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/school-refusal-alternative-learning</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/special-needs-class-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/sports-day-practice</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/accidental-ingestion-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -193,7 +493,61 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/asthma-children-management</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/atopic-dermatitis-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/bee-sting-response</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/burn-first-aid-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/constipation-children</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/drowning-prevention-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/ent-kids-common-issues</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/febrile-seizure-response</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/fifth-disease-erythema</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/hand-foot-mouth-disease</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -205,7 +559,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/head-injury-children</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/head-lice-treatment-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/herpangina-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -217,13 +583,115 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/influenza-kids-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kawasaki-disease-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/motion-sickness-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/mumps-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/mycoplasma-pneumonia-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/norovirus-kids-prevention</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/nosebleed-treatment-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/nursemaid-elbow-dislocation</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/pool-fever-pharyngoconjunctival</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/rs-virus-infant-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/streptococcal-infection</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/summer-cold-treatment</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/tooth-decay-prevention-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/whooping-cough-pertussis</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/baby-carrier-selection</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/celebration-events-summary</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/child-seat-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/consecutive-age-parenting</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/dining-out-with-baby</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -241,6 +709,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/kids-clothing-selection</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/kids-room-design-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -248,6 +722,30 @@
   </url>
   <url>
     <loc>https://012.kids/articles/military-family-parenting</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/name-labeling-methods</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/nursery-school-goods</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/okuizome-ceremony-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/omiyamairi-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -271,7 +769,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/second-baby-timing</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/shichigosan-preparation</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/stroller-selection-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/third-child-parenting</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/time-saving-housework-parents</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/toy-storage-ideas</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -283,7 +811,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/baby-regression-behavior</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/emotional-education-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/fear-of-dark-children</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/friendship-trouble-support</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/game-losing-anger</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -295,13 +847,73 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/introverted-child-parenting</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kindergarten-reluctance</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/lying-child-response</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/monster-fear-imagination</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/nail-biting-psychology</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/night-crying-coping-strategies</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/night-terrors-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/pacifier-dependency</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/perfectionist-child</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/praise-vs-encouragement</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/puberty-rebellion-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/self-esteem-building-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -319,6 +931,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/sneaky-eating-response</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/sore-loser-child</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/temper-tantrum-toddler</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/thumb-sucking-graduation</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/tic-disorder-mental-support</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/trauma-care-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -331,13 +973,55 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/choking-prevention-food</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/convenience-food-balance</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/dietary-fiber-kids-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/egg-allergy-coping</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/fish-cooking-for-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/fluoride-cavity-prevention</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/food-additives-basics</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/food-education-activities</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/frozen-food-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -355,13 +1039,61 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/juice-amount-for-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kids-hydration-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/milk-allergy-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/picky-eating-advanced-strategies</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/quick-breakfast-for-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/sports-drink-for-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/sugar-intake-children</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/veggie-dislike-recipes</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/vitamin-d-sunlight-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/wheat-allergy-lifestyle</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -379,7 +1111,49 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/breech-baby-management</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/fetal-movement-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/gestational-diabetes-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/hospital-bag-checklist</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/labor-signs-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/low-breast-milk-solutions</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/mastitis-prevention</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/maternity-leave-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -391,13 +1165,67 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/morning-sickness-remedies</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/partner-birth-attendance</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/planned-birth-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/postpartum-body-recovery</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/postpartum-depression-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/postpartum-paperwork</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/postpartum-pelvic-care</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/prenatal-nutrition-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/prenatal-testing-options</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/satogaeri-birth-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/stretch-mark-prevention</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -415,13 +1243,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/water-birth-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/water-break-response</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/bicycle-safety-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/child-abuse-prevention-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/crime-prevention-education</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/disability-support-children</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/elections-explained-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -439,7 +1297,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/human-rights-education-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/kodomo-shokudo-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/library-utilization-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/local-sports-club-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/museum-art-gallery-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -452,6 +1334,24 @@
   </url>
   <url>
     <loc>https://012.kids/articles/school-route-safety</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/swimming-school-selection</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/teaching-taxes-to-kids</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/traffic-rules-education</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
