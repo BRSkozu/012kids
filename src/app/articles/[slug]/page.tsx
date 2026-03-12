@@ -206,6 +206,21 @@ export default async function ArticlePage({ params }: PageProps) {
       {faqLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       )}
+      {/* Reading Progress + Back to Top */}
+      <ReadingProgress />
+
+      {/* 2-column layout: sidebar TOC + main content */}
+      <div className="lg:flex lg:gap-8">
+        {/* Sticky sidebar TOC (desktop only) */}
+        <aside className="hidden lg:block lg:w-56 flex-shrink-0">
+          <div className="sticky top-24">
+            <TableOfContents />
+          </div>
+        </aside>
+
+        {/* Main content */}
+        <div className="flex-1 min-w-0">
+
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
         <Link href="/" className="hover:text-[var(--color-primary)]">TOP</Link>
@@ -220,7 +235,7 @@ export default async function ArticlePage({ params }: PageProps) {
       </nav>
 
       {/* Article Header */}
-      <header className="mb-8 max-w-3xl">
+      <header className="mb-8">
         <div className="flex items-center gap-2 mb-3 flex-wrap">
           <StageBadge stage={article.stage} size="md" />
           {article.categories.map((cat) => (
@@ -262,21 +277,6 @@ export default async function ArticlePage({ params }: PageProps) {
       <div className="lg:hidden">
         <TableOfContents />
       </div>
-
-      {/* Reading Progress + Back to Top */}
-      <ReadingProgress />
-
-      {/* 2-column layout: sidebar TOC + main content */}
-      <div className="lg:flex lg:gap-8">
-        {/* Sticky sidebar TOC (desktop only) */}
-        <aside className="hidden lg:block lg:w-56 flex-shrink-0">
-          <div className="sticky top-24">
-            <TableOfContents />
-          </div>
-        </aside>
-
-        {/* Main content */}
-        <div className="flex-1 min-w-0 max-w-3xl">
 
       {/* Article Content */}
       <article
