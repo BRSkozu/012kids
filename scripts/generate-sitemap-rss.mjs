@@ -13,6 +13,26 @@ const CONTENT_DIR = path.join(ROOT, 'content', 'articles');
 
 const SITE_URL = 'https://012.kids';
 
+const STAGE_LABELS = {
+  '0stage': '0歳（新生児〜1歳未満）',
+  'pre': '1〜3歳（未就学児前期）',
+  'early': '3〜6歳（未就学児後期）',
+  'mid': '6〜9歳（小学校低学年）',
+  'upper': '9〜12歳（小学校高学年）',
+};
+
+const CATEGORY_LABELS = {
+  development: '発達・成長',
+  nutrition: '食事・栄養',
+  education: '学び・教育',
+  health: '健康・医療',
+  mental: 'こころ・メンタル',
+  digital: 'デジタル・メディア',
+  social: '社会性・コミュニケーション',
+  lifestyle: '生活・暮らし',
+  pregnancy: '妊娠・出産',
+};
+
 // Collect all article slugs and dates from MDX frontmatter
 function getArticles() {
   const articles = [];
@@ -32,7 +52,12 @@ function getArticles() {
       const tags = tagsMatch
         ? tagsMatch[1].match(/['"]([^'"]+)['"]/g)?.map((t) => t.replace(/['"]/g, '')) || []
         : [];
-      articles.push({ slug, title, excerpt, publishedAt, updatedAt, tags });
+      const stage = content.match(/stage:\s*['"]?([^\s'"]+)/)?.[1] || '';
+      const catMatches = content.match(/categories:\s*\n((?:\s+-\s+.+\n?)*)/);
+      const articleCategories = catMatches
+        ? catMatches[1].match(/- (\S+)/g)?.map((m) => m.replace('- ', '')) || []
+        : [cat];
+      articles.push({ slug, title, excerpt, publishedAt, updatedAt, tags, stage, categories: articleCategories });
     }
   }
   articles.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
@@ -159,6 +184,32 @@ ${items.join('\n')}
 `;
 }
 
+function generateLlmsFull(articles) {
+  const lines = [
+    '# 012.kids - 全記事一覧',
+    '',
+    `> このファイルはAI検索エンジン向けに全記事の要約を提供するものです。最終更新: ${new Date().toISOString().split('T')[0]}`,
+    '',
+    `全${articles.length}記事`,
+    '',
+  ];
+
+  for (const a of articles) {
+    const stageLabel = STAGE_LABELS[a.stage] || a.stage;
+    const catLabels = a.categories.map((c) => CATEGORY_LABELS[c] || c).join('、');
+    lines.push(`## ${a.title}`);
+    lines.push('');
+    lines.push(`- URL: ${SITE_URL}/articles/${a.slug}`);
+    lines.push(`- 対象年齢: ${stageLabel}`);
+    lines.push(`- カテゴリ: ${catLabels}`);
+    lines.push(`- 公開日: ${a.publishedAt} / 更新日: ${a.updatedAt}`);
+    lines.push(`- 概要: ${a.excerpt}`);
+    lines.push('');
+  }
+
+  return lines.join('\n');
+}
+
 const articles = getArticles();
 const tagCount = getTagsWithCounts(articles).length;
 fs.writeFileSync(path.join(PUBLIC, 'sitemap.xml'), generateSitemap(articles));
@@ -166,3 +217,6 @@ console.log(`Generated sitemap.xml (${articles.length} articles + ${tagCount} ta
 
 fs.writeFileSync(path.join(PUBLIC, 'feed.xml'), generateRss(articles));
 console.log(`Generated feed.xml (${Math.min(articles.length, 30)} items)`);
+
+fs.writeFileSync(path.join(PUBLIC, 'llms-full.txt'), generateLlmsFull(articles));
+console.log(`Generated llms-full.txt (${articles.length} articles)`);
