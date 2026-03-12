@@ -5,19 +5,7 @@ import WorrySearchCompact from '@/components/search/WorrySearchCompact';
 import { getFeaturedArticles, getLatestArticles, getAllArticlesSync, getArticleCountByCategory, getArticleCountByStage } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 import { AGE_STAGES } from '@/data/stages';
-
-const RECOMMENDED_LINKS = [
-  { name: 'こども家庭庁', url: 'https://www.cfa.go.jp/', desc: '子ども政策の司令塔。児童手当・保育・虐待防止など', icon: '🏛️' },
-  { name: '厚生労働省（母子保健）', url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/', desc: '予防接種、乳幼児健診、母子手帳の情報', icon: '🏥' },
-  { name: '文部科学省（初等中等教育）', url: 'https://www.mext.go.jp/a_menu/shotou/index.htm', desc: '学習指導要領、学校教育、特別支援教育', icon: '📚' },
-  { name: '国立成育医療研究センター', url: 'https://www.ncchd.go.jp/', desc: '小児医療・成育医療の研究最前線', icon: '🔬' },
-  { name: '日本小児科学会', url: 'https://www.jpeds.or.jp/', desc: '子どもの病気、予防接種、こどもの救急', icon: '👨‍⚕️' },
-  { name: 'e-ヘルスネット（厚労省）', url: 'https://www.e-healthnet.mhlw.go.jp/', desc: '生活習慣病予防・健康情報サイト', icon: '💚' },
-  { name: '消費者庁（子どもの事故防止）', url: 'https://www.caa.go.jp/policies/policy/consumer_safety/child/', desc: '子どもの事故・製品安全情報', icon: '⚠️' },
-  { name: '国立教育政策研究所', url: 'https://www.nier.go.jp/', desc: '教育に関する調査研究・データ', icon: '📊' },
-  { name: '発達障害情報・支援センター', url: 'http://www.rehab.go.jp/ddis/', desc: '発達障害に関する情報提供と支援', icon: '🌱' },
-  { name: '日本学校保健会', url: 'https://www.gakkohoken.jp/', desc: '学校における健康管理・保健教育', icon: '🏫' },
-];
+import { RECOMMENDED_LINKS as ALL_RECOMMENDED_LINKS } from '@/data/recommended-links';
 
 const MATOME_SECTIONS = [
   {
@@ -221,30 +209,80 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Recommended External Links */}
+      {/* Recommended External Links with Related Articles */}
       <section className="bg-blue-50/50 py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">おすすめ公的サイト・専門機関リンク集</h2>
-          <p className="text-sm text-gray-500 mb-8">信頼できる子育て情報の一次ソースをまとめました</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {RECOMMENDED_LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-start gap-3 p-4 rounded-xl bg-white border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
-              >
-                <span className="text-2xl shrink-0">{link.icon}</span>
-                <div className="min-w-0">
-                  <h3 className="font-bold text-sm text-gray-900 group-hover:text-blue-600 transition-colors">
-                    {link.name}
-                    <span className="ml-1 text-xs text-gray-400">↗</span>
-                  </h3>
-                  <p className="text-xs text-gray-500 mt-0.5">{link.desc}</p>
-                </div>
-              </a>
-            ))}
+          <p className="text-sm text-gray-500 mb-8">
+            信頼できる子育て情報の一次ソースと、関連する012.kids記事をセットでご紹介
+          </p>
+          <div className="space-y-4">
+            {(() => {
+              // Pick representative links (one per main category + general top 3)
+              const seen = new Set<string>();
+              const picks = ALL_RECOMMENDED_LINKS.filter((link) => {
+                const key = link.categories.filter((c) => c !== 'general')[0] || 'general';
+                if (seen.has(key) && seen.size > 3) return false;
+                seen.add(key);
+                return true;
+              }).slice(0, 12);
+
+              return picks.map((link) => {
+                // Find up to 3 related articles by matching categories
+                const related = allArticles
+                  .filter((a) =>
+                    a.categories.some((c) => link.categories.includes(c))
+                  )
+                  .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
+                  .slice(0, 3);
+
+                return (
+                  <div key={link.title} className="rounded-xl bg-white border border-blue-100 overflow-hidden">
+                    <div className="p-4 flex items-start gap-3">
+                      <div className="min-w-0 flex-1">
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-bold text-sm text-gray-900 hover:text-blue-600 transition-colors"
+                        >
+                          {link.title}
+                          <span className="ml-1 text-xs text-gray-400">↗</span>
+                        </a>
+                        <p className="text-xs text-gray-400 mt-0.5">{link.org}</p>
+                        <p className="text-xs text-gray-500 mt-1">{link.description}</p>
+                      </div>
+                    </div>
+                    {related.length > 0 && (
+                      <div className="border-t border-blue-50 bg-blue-50/30 px-4 py-3">
+                        <p className="text-xs font-medium text-gray-500 mb-2">
+                          この情報源に関連する012.kids記事
+                        </p>
+                        <div className="flex flex-col gap-1.5">
+                          {related.map((a) => (
+                            <Link
+                              key={a.id}
+                              href={`/articles/${a.slug}`}
+                              className="text-xs text-[var(--color-primary)] hover:underline truncate"
+                            >
+                              {a.title}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              });
+            })()}
+          </div>
+          <div className="mt-6 text-center">
+            <Link
+              href="/experts"
+              className="text-sm text-blue-600 hover:underline"
+            >
+              すべての参考サイト・専門機関を見る →
+            </Link>
           </div>
         </div>
       </section>
