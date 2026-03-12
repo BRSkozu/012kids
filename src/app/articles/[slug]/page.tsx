@@ -41,8 +41,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
       authors: ['012.kids 編集部'],
+      section: article.categories[0],
+      tags: article.tags,
       url: articleUrl,
-      images: [{ url: `${siteUrl}/ogp/articles/${article.slug}.png`, width: 1200, height: 630 }],
+      images: [
+        {
+          url: `${siteUrl}/ogp/articles/${article.slug}.png`,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.excerpt,
+      images: [`${siteUrl}/ogp/articles/${article.slug}.png`],
     },
   };
 }
@@ -111,16 +126,41 @@ export default async function ArticlePage({ params }: PageProps) {
     '@type': 'Article',
     headline: article.title,
     description: article.excerpt,
+    image: `https://012.kids/ogp/articles/${article.slug}.png`,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt,
-    author: { '@type': 'Organization', name: '012.kids 編集部' },
+    author: { '@type': 'Organization', name: '012.kids 編集部', url: 'https://012.kids' },
     publisher: {
       '@type': 'Organization',
       name: '012.kids',
       logo: { '@type': 'ImageObject', url: 'https://012.kids/ogp.png' },
     },
-    mainEntityOfPage: `https://012.kids/articles/${article.slug}`,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://012.kids/articles/${article.slug}`,
+    },
+    keywords: article.tags.join(', '),
+    articleSection: article.categories[0],
+    wordCount: article.content.split(/\s+/).length,
+    inLanguage: 'ja',
   };
+
+  // Extract FAQ pairs from content headings for FAQPage schema
+  const faqMatches = [...article.content.matchAll(/##\s+(.+?\？)\s*\n([\s\S]*?)(?=\n##|\n---|\Z)/g)];
+  const faqLd = faqMatches.length >= 2
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqMatches.slice(0, 10).map((m) => ({
+          '@type': 'Question',
+          name: m[1].trim(),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: m[2].replace(/[#*\[\]]/g, '').trim().slice(0, 300),
+          },
+        })),
+      }
+    : null;
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',
@@ -137,6 +177,9 @@ export default async function ArticlePage({ params }: PageProps) {
     <div className="max-w-4xl mx-auto px-4 py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {faqLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      )}
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
         <Link href="/" className="hover:text-[var(--color-primary)]">TOP</Link>

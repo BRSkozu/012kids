@@ -44,11 +44,23 @@ function generateSitemap(articles) {
     { loc: '/', priority: '1.0', changefreq: 'daily' },
     { loc: '/articles', priority: '0.9', changefreq: 'daily' },
     { loc: '/search', priority: '0.7', changefreq: 'weekly' },
+    // Age guide pages
     { loc: '/age-guide/0stage', priority: '0.8', changefreq: 'weekly' },
     { loc: '/age-guide/pre', priority: '0.8', changefreq: 'weekly' },
     { loc: '/age-guide/early', priority: '0.8', changefreq: 'weekly' },
     { loc: '/age-guide/mid', priority: '0.8', changefreq: 'weekly' },
     { loc: '/age-guide/upper', priority: '0.8', changefreq: 'weekly' },
+    // Category pages
+    { loc: '/category/development', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/nutrition', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/education', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/health', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/mental', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/digital', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/social', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/lifestyle', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/category/pregnancy', priority: '0.8', changefreq: 'weekly' },
+    // Info pages
     { loc: '/experts', priority: '0.6', changefreq: 'monthly' },
     { loc: '/about', priority: '0.5', changefreq: 'monthly' },
     { loc: '/editorial-policy', priority: '0.5', changefreq: 'monthly' },

@@ -51,11 +51,11 @@ export default function NotFound() {
         <p className="text-sm font-semibold text-gray-700 mb-3">よく見られているカテゴリ</p>
         <div className="flex flex-wrap gap-2 justify-center">
           {[
-            { label: '発達・成長', href: '/articles?category=development' },
-            { label: '食育・栄養', href: '/articles?category=nutrition' },
-            { label: '教育・学習', href: '/articles?category=education' },
-            { label: '健康・医療', href: '/articles?category=health' },
-            { label: 'メンタル・心理', href: '/articles?category=mental' },
+            { label: '発達・成長', href: '/category/development' },
+            { label: '食育・栄養', href: '/category/nutrition' },
+            { label: '教育・学習', href: '/category/education' },
+            { label: '健康・医療', href: '/category/health' },
+            { label: 'メンタル・心理', href: '/category/mental' },
           ].map((cat) => (
             <Link
               key={cat.label}

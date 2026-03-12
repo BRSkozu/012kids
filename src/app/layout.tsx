@@ -85,23 +85,39 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebSite',
-              name: '012.kids',
-              url: 'https://012.kids',
-              description: '0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト',
-              publisher: {
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                name: '012.kids',
+                url: 'https://012.kids',
+                description: '0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト',
+                inLanguage: 'ja',
+                publisher: { '@id': 'https://012.kids/#organization' },
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: {
+                    '@type': 'EntryPoint',
+                    urlTemplate: 'https://012.kids/search?q={search_term_string}',
+                  },
+                  'query-input': 'required name=search_term_string',
+                },
+              },
+              {
+                '@context': 'https://schema.org',
                 '@type': 'Organization',
+                '@id': 'https://012.kids/#organization',
                 name: '012.kids 編集部',
-                logo: { '@type': 'ImageObject', url: 'https://012.kids/ogp.png' },
+                url: 'https://012.kids',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://012.kids/ogp.png',
+                  width: 1200,
+                  height: 630,
+                },
+                description: '0歳から12歳の子どもに関わるすべての方に向けて、公的機関や専門家の発信する子育て・教育情報をわかりやすくまとめて紹介するサイトです。',
               },
-              potentialAction: {
-                '@type': 'SearchAction',
-                target: 'https://012.kids/search?q={search_term_string}',
-                'query-input': 'required name=search_term_string',
-              },
-            }),
+            ]),
           }}
         />
       </head>

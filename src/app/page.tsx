@@ -33,12 +33,12 @@ const MATOME_SECTIONS = [
   {
     title: 'テーマ別まとめ',
     items: [
-      { label: '離乳食・幼児食の進め方', href: '/articles?category=nutrition', desc: '月齢別の進め方、アレルギー対策、レシピ' },
-      { label: '子どもの発達が気になるとき', href: '/articles?category=development', desc: '発達の目安、相談先、支援制度' },
-      { label: '不登校・いじめへの対応', href: '/articles?category=mental', desc: '兆候の見つけ方、家庭での対応、専門機関' },
-      { label: 'スクリーンタイムとデジタル教育', href: '/articles?category=digital', desc: 'ルール作り、安全設定、プログラミング' },
-      { label: '妊娠から出産まで', href: '/articles?category=pregnancy', desc: '妊娠経過、出産準備、産後ケア' },
-      { label: '共働き家庭の子育て術', href: '/articles?category=lifestyle', desc: '時短、学童、ワークライフバランス' },
+      { label: '離乳食・幼児食の進め方', href: '/category/nutrition', desc: '月齢別の進め方、アレルギー対策、レシピ' },
+      { label: '子どもの発達が気になるとき', href: '/category/development', desc: '発達の目安、相談先、支援制度' },
+      { label: '不登校・いじめへの対応', href: '/category/mental', desc: '兆候の見つけ方、家庭での対応、専門機関' },
+      { label: 'スクリーンタイムとデジタル教育', href: '/category/digital', desc: 'ルール作り、安全設定、プログラミング' },
+      { label: '妊娠から出産まで', href: '/category/pregnancy', desc: '妊娠経過、出産準備、産後ケア' },
+      { label: '共働き家庭の子育て術', href: '/category/lifestyle', desc: '時短、学童、ワークライフバランス' },
     ],
   },
 ];
@@ -205,7 +205,7 @@ export default function HomePage() {
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.id}
-              href={`/articles?category=${cat.id}`}
+              href={`/category/${cat.id}`}
               className="group block p-5 rounded-xl bg-white border border-orange-100 hover:shadow-md hover:shadow-orange-100/50 hover:border-orange-200 transition-all"
             >
               <span className="text-3xl mb-3 block">{cat.icon}</span>

@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /_next/
 
 Sitemap: https://012.kids/sitemap.xml
+
+# RSS Feed
+# https://012.kids/feed.xml

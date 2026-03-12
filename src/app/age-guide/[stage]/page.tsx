@@ -21,9 +21,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const stage = AGE_STAGES.find((s) => s.id === stageId);
   if (!stage) return { title: 'ページが見つかりません' };
 
+  const pageUrl = `https://012.kids/age-guide/${stage.id}`;
   return {
     title: `${stage.label}（${stage.ageRange}）年齢別ガイド`,
-    description: `${stage.ageRange}のお子さまに関する情報をまとめました。${stage.description}`,
+    description: `${stage.ageRange}のお子さまに関する子育て・教育情報をまとめました。${stage.description}`,
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title: `${stage.label}（${stage.ageRange}）年齢別ガイド`,
+      description: `${stage.ageRange}のお子さまに関する情報まとめ。${stage.description}`,
+      url: pageUrl,
+      type: 'website',
+      images: [
+        {
+          url: 'https://012.kids/ogp.png',
+          width: 1200,
+          height: 630,
+          alt: `${stage.label} - 012.kids`,
+        },
+      ],
+    },
   };
 }
 
@@ -187,7 +205,7 @@ export default async function AgeGuidePage({ params }: PageProps) {
                 {CATEGORIES.map((cat) => (
                   <Link
                     key={cat.id}
-                    href={`/articles?category=${cat.id}`}
+                    href={`/category/${cat.id}`}
                     className="flex items-center gap-2 px-2 py-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 transition-colors"
                   >
                     <span>{cat.icon}</span>
