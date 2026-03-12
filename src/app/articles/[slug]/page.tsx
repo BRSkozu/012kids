@@ -114,6 +114,18 @@ export default async function ArticlePage({ params }: PageProps) {
     }
   }
 
+  // Post-process: remove "おすすめサイト・参考リンク" section (duplicates the references component below)
+  contentHtml = contentHtml.replace(
+    /<h2[^>]*>おすすめサイト・参考リンク<\/h2>[\s\S]*?(?=<h2|<hr|$)/,
+    ''
+  );
+
+  // Post-process: remove the intro line mentioning おすすめサイト since that section is removed
+  contentHtml = contentHtml.replace(
+    /<blockquote>\s*<p>この記事では、まず[^<]*おすすめサイト[^<]*<\/p>\s*<\/blockquote>/g,
+    ''
+  );
+
   // Post-process: make all external links open in new tab
   contentHtml = contentHtml.replace(
     /<a href="(https?:\/\/[^"]+)"(?![^>]*target)/g,
