@@ -42,8 +42,24 @@ export default function HomePage() {
     .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
     .slice(0, 10);
 
+  // ItemList JSON-LD for ranking rich snippets
+  const rankingLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: '人気記事ランキング - 012.kids',
+    description: '0歳〜12歳の子育て・教育に関する人気記事トップ10',
+    numberOfItems: ranking.length,
+    itemListElement: ranking.map((a, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://012.kids/articles/${a.slug}`,
+      name: a.title,
+    })),
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(rankingLd) }} />
       {/* Hero + Age Selector */}
       <AgeSelector />
 

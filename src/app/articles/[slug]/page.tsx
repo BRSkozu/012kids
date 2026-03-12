@@ -153,6 +153,11 @@ export default async function ArticlePage({ params }: PageProps) {
     articleSection: article.categories[0],
     wordCount: article.content.split(/\s+/).length,
     inLanguage: 'ja',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.article-content h2', '.article-content > p:first-of-type'],
+    },
+    isAccessibleForFree: true,
   };
 
   // Extract FAQ pairs from content headings for FAQPage schema
@@ -339,7 +344,7 @@ export default async function ArticlePage({ params }: PageProps) {
         {article.tags.map((tag) => (
           <Link
             key={tag}
-            href={`/search?q=${encodeURIComponent(tag)}`}
+            href={`/tag/${encodeURIComponent(tag)}`}
             className="text-xs bg-orange-50 text-[var(--color-primary-dark)] px-3 py-1 rounded-full hover:bg-orange-100 transition-colors"
           >
             #{tag}

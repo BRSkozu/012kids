@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "node scripts/generate-articles.mjs && node scripts/generate-sitemap-rss.mjs && node scripts/generate-ogp-images.mjs",
+    "prebuild": "node scripts/generate-articles.mjs && node scripts/generate-sitemap-rss.mjs && node scripts/generate-ogp-images.mjs && node scripts/generate-llms-txt.mjs",
     "dev": "npm run prebuild && next dev",
     "build": "npm run prebuild && next build",
     "start": "next start",

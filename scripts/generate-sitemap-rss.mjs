@@ -28,11 +28,28 @@ function getArticles() {
       const excerpt = content.match(/excerpt:\s*['"](.+?)['"]/)?.[1] || '';
       const publishedAt = content.match(/publishedAt:\s*['"]?(\d{4}-\d{2}-\d{2})/)?.[1] || '2026-01-01';
       const updatedAt = content.match(/updatedAt:\s*['"]?(\d{4}-\d{2}-\d{2})/)?.[1] || publishedAt;
-      articles.push({ slug, title, excerpt, publishedAt, updatedAt });
+      const tagsMatch = content.match(/tags:\s*\[([^\]]+)\]/);
+      const tags = tagsMatch
+        ? tagsMatch[1].match(/['"]([^'"]+)['"]/g)?.map((t) => t.replace(/['"]/g, '')) || []
+        : [];
+      articles.push({ slug, title, excerpt, publishedAt, updatedAt, tags });
     }
   }
   articles.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
   return articles;
+}
+
+function getTagsWithCounts(articles) {
+  const counts = {};
+  for (const a of articles) {
+    for (const t of a.tags) {
+      counts[t] = (counts[t] || 0) + 1;
+    }
+  }
+  return Object.entries(counts)
+    .filter(([, count]) => count >= 2)
+    .sort((a, b) => b[1] - a[1])
+    .map(([tag]) => tag);
 }
 
 function escapeXml(str) {
@@ -77,16 +94,40 @@ function generateSitemap(articles) {
   );
 
   for (const a of articles) {
+    // Add news:news extension for articles published in the last 2 days
+    const isRecent = (Date.now() - new Date(a.publishedAt).getTime()) < 2 * 24 * 60 * 60 * 1000;
+    const newsExt = isRecent
+      ? `
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>${a.publishedAt}</news:publication_date>
+      <news:title>${escapeXml(a.title)}</news:title>
+    </news:news>`
+      : '';
     urls.push(`  <url>
     <loc>${SITE_URL}/articles/${a.slug}</loc>
     <lastmod>${a.updatedAt}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.7</priority>${newsExt}
+  </url>`);
+  }
+
+  // Tag pages (2+ articles)
+  const tags = getTagsWithCounts(articles);
+  for (const tag of tags) {
+    urls.push(`  <url>
+    <loc>${SITE_URL}/tag/${encodeURIComponent(tag)}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>`);
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 ${urls.join('\n')}
 </urlset>
 `;
@@ -119,8 +160,9 @@ ${items.join('\n')}
 }
 
 const articles = getArticles();
+const tagCount = getTagsWithCounts(articles).length;
 fs.writeFileSync(path.join(PUBLIC, 'sitemap.xml'), generateSitemap(articles));
-console.log(`Generated sitemap.xml (${articles.length} articles + static pages)`);
+console.log(`Generated sitemap.xml (${articles.length} articles + ${tagCount} tags + static pages)`);
 
 fs.writeFileSync(path.join(PUBLIC, 'feed.xml'), generateRss(articles));
 console.log(`Generated feed.xml (${Math.min(articles.length, 30)} items)`);

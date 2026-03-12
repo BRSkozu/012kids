@@ -174,3 +174,27 @@ export function getArticleCountByStage(): Record<string, number> {
   }
   return counts;
 }
+
+export function getArticlesByTag(tag: string): Article[] {
+  return getAllArticlesSync().filter((a) => a.tags.includes(tag));
+}
+
+/** Returns all unique tags with their article counts, sorted by count desc */
+export function getAllTagsWithCounts(): { tag: string; count: number }[] {
+  const counts: Record<string, number> = {};
+  for (const a of getAllArticlesSync()) {
+    for (const t of a.tags) {
+      counts[t] = (counts[t] || 0) + 1;
+    }
+  }
+  return Object.entries(counts)
+    .map(([tag, count]) => ({ tag, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+/** Returns tags that have at least minCount articles (for SSG) */
+export function getTagsForSSG(minCount: number = 2): string[] {
+  return getAllTagsWithCounts()
+    .filter((t) => t.count >= minCount)
+    .map((t) => t.tag);
+}

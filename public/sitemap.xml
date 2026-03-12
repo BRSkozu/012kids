@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://012.kids/</loc>
     <changefreq>daily</changefreq>
@@ -110,1302 +111,3038 @@
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ベビーサインの始め方：赤ちゃんとの手話コミュニケーション</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/baby-sleep-training</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ネントレ（ねんねトレーニング）：赤ちゃんの寝かしつけ方法と注意点</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/baby-teeth-growth-order</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>乳歯の生え方と順番：時期の目安とケアのポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/baby-visual-development</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>赤ちゃんの視覚発達：見え方の変化と目の健康チェック</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/bedwetting-enuresis-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>夜尿症（おねしょ）はいつまで？原因と治療・家庭でできる対策</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/bilingual-child-development</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>バイリンガル育児：二言語環境での子どもの言語発達</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/crawling-importance</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>はいはいの重要性：発達への効果と促し方のコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/dcd-coordination-disorder</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>発達性協調運動障害（DCD）：不器用さの背景と支援方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/early-childhood-reading</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>絵本の読み聞かせ効果：年齢別のおすすめ絵本と読み方のコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/first-walking-timing</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>一人歩きの時期はいつ？遅い場合の目安と見守り方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/following-parent-phase</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>後追いはなぜ起きる？時期と対処法・愛着形成との関係</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/handedness-development-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>利き手はいつ決まる？子どもの利き手の発達と左利きへの対応</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/imitation-play-development</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>模倣遊びと発達：まねっこ遊びが育てる社会性と想像力</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/jumping-motor-skill</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ジャンプができない子ども：運動発達の目安とサポート方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/left-hand-writing-support</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>左利きの子どもへのサポート：文字の書き方と道具の選び方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/mirror-interest-baby</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>赤ちゃんが鏡に興味を示す時期：自己認識の発達と遊び</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/nail-biting-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの爪噛み：原因と対処法・ストレスサインの見分け方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/play-therapy-benefits</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>遊戯療法（プレイセラピー）とは：遊びを通じた子どもの心のケア</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/pointing-meaning-baby</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>指差しの意味と発達：赤ちゃんのコミュニケーションの始まり</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/potty-training-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>おむつ卒業ガイド：トイレトレーニングの進め方と時期</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/selective-mutism-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>場面緘黙（かんもく）：家では話すのに外で話せない子への理解と支援</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/stranger-anxiety-baby</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>人見知りの時期と対応：赤ちゃんが泣く理由と接し方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/stuttering-support-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの吃音（きつおん）：原因・対応・専門機関への相談</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/thumb-sucking-habit</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>指しゃぶりはいつまで？歯並びへの影響とやめさせ方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/tic-disorder-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>チック症とは：子どものチックの症状・原因・家庭での対応</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/tricycle-practice-tips</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>三輪車の練習方法：何歳から？バランス感覚を育てるコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/two-word-sentence-delay</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>二語文が出ない：言葉の発達の目安と相談のタイミング</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/ai-chatbot-children-safety</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>AIチャットボットと子ども：安全な利用ルールの作り方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/ai-education-kids-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>AI時代の子ども教育：ChatGPTとの付き合い方・リテラシーの育て方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/blue-light-measures-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ブルーライト対策：子どもの目と睡眠を守る方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/coding-basics-elementary</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>小学生のコーディング入門：Scratchから始めるプログラミング的思考</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/digital-art-kids-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>デジタルアートを子どもと楽しむ：おすすめアプリとはじめ方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/digital-creative-activities-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>デジタル創作活動：子どもの表現力を伸ばすアプリ・ツール</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/digital-detox-family</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>デジタルデトックス：家族で取り組むスクリーンフリータイム</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/ebook-vs-paper-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>電子書籍vs紙の本：子どもの読書に最適なのはどっち？</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-email-address-setup</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どものメールアドレス：作成のタイミングと安全な設定方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-password-management</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どものパスワード管理：安全なパスワードの作り方と教え方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-safe-sns-options</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子ども向けSNS：安全に利用できるサービスと注意点</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-youtube-safety</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもとYouTube：視聴ルール・危険コンテンツ・キッズモード設定</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/location-tracking-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>位置情報の管理：子どものGPS見守りサービスの選び方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/minecraft-educational-value</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Minecraftの教育効果：創造性とプログラミング的思考の育成</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/online-bullying-prevention</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>オンラインいじめ：ネットいじめの実態と子どもを守る対策</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/roblox-safety-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Robloxの安全性：子どもが遊ぶ時の設定と見守りポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/robotics-education-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ロボット教育・ロボットプログラミング：何歳から？教室の選び方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/smartphone-addiction-check</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>スマホ依存チェック：子どもの依存度を見極めるポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/switch-time-limit-settings</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Nintendo Switchの時間制限：みまもり設定の使い方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/tablet-learning-effectiveness</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>タブレット学習は効果ある？研究データから見るメリット・デメリット</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/tablet-posture-problems</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>タブレット使用時の姿勢問題：猫背・ストレートネック予防法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/tiktok-safety-settings</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>TikTokの安全設定：子どもを守るペアレンタルコントロール</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/wifi-restriction-settings</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>Wi-Fi制限の設定方法：子どものネット利用時間を管理する</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/active-learning-elementary</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>アクティブラーニングを家庭で：対話型・体験型の学びの工夫</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/classroom-collapse-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>学級崩壊への対応：保護者ができることと学校との連携</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/correspondence-education-comparison</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>通信教育・タブレット学習の比較：子どもに合った教材の選び方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/cram-school-selection</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>塾選びのポイント：子どもに合った学習塾の見つけ方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/essay-writing-help</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>作文が書けない子への対応：書き方のコツと苦手克服法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/free-research-themes</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>自由研究のテーマ選び：学年別おすすめテーマとまとめ方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/graduation-ceremony-prep</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>卒業式の準備：服装・持ち物・マナーの基礎知識</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/homeschooling-japan-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ホームスクーリングは日本で可能？法的位置づけと実践方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/homework-motivation-tips</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>宿題のやる気を引き出す方法：親のサポートと環境づくり</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/inquiry-based-learning-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>探究学習とは：子どもの「なぜ？」を伸ばす学び方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/junior-high-exam-stress</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>中学受験のストレス：子どもの心のケアと親の関わり方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kanji-learning-tips</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>漢字学習のコツ：書き順・部首から覚える効果的な方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/multiplication-table-memorize</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>九九の覚え方：楽しく効果的に暗記するテクニック</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/pta-officer-duties</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>PTA役員の仕事内容：役割・負担・効率的な活動のコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/reading-aloud-benefits</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>音読の効果：脳科学から見た音読の力と家庭での実践法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/resource-room-guidance</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>通級指導教室とは：利用の流れと指導内容のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/school-entrance-checklist</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>入学式の持ち物リスト：準備万端で迎える小学校入学</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/school-refusal-alternative-learning</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>不登校の子の学びの選択肢：フリースクール・オンライン学習・出席認定</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/special-needs-class-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>特別支援学級とは：対象・教育内容・通常学級との違い</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sports-day-practice</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>運動会の練習：子どものやる気を高める応援と体づくり</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/accidental-ingestion-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの誤飲対処法：危険物の種類と応急処置・受診基準</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/adhd-kids-understanding</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ADHDの子どもへの理解と支援：家庭・学校でできること</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/asthma-children-management</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>小児ぜんそくの管理：発作予防と日常生活の注意点</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/atopic-dermatitis-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どものアトピー性皮膚炎：スキンケアと治療の基本</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/bee-sting-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>蜂に刺された時の対処法：アレルギー反応とアナフィラキシー</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/burn-first-aid-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>やけどの応急処置：正しい冷やし方と病院を受診する基準</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/constipation-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの便秘：原因・食事の工夫・受診のタイミング</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/drowning-prevention-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>溺水の予防：子どもの水の事故を防ぐための注意点</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/ent-kids-common-issues</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの耳鼻科トラブル：中耳炎・副鼻腔炎・扁桃腺の対処法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/febrile-seizure-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>熱性けいれん：発作時の対処法と受診の判断基準</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/fifth-disease-erythema</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>りんご病（伝染性紅斑）：頬の赤みと発疹の特徴・対処法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/hand-foot-mouth-disease</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>手足口病の症状と対処法：家庭でのケアと登園の目安</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/hay-fever-children-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの花粉症：症状の見分け方・治療・日常生活の工夫</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/head-injury-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>頭を打った時の対処法：受診すべき症状と経過観察のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/head-lice-treatment-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>アタマジラミの対処法：見つけ方・駆除・再感染防止</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/herpangina-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ヘルパンギーナの症状と治療：高熱と口内炎への対処</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/impetigo-skin-infection-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>とびひ（伝染性膿痂疹）：症状・治療・プールや登園の基準</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/influenza-kids-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>インフルエンザと子ども：予防接種・治療薬・家庭でのケア</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kawasaki-disease-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>川崎病：早期発見のための症状と治療の最新情報</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/motion-sickness-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの車酔い対策：原因と予防法・酔ってしまった時の対処</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/mumps-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>おたふくかぜ（流行性耳下腺炎）：症状と合併症・ワクチン接種</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/mycoplasma-pneumonia-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>マイコプラズマ肺炎：長引く咳の原因と治療・登校の目安</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/norovirus-kids-prevention</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ノロウイルスから子どもを守る：予防・消毒・家庭内感染対策</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/nosebleed-treatment-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの鼻血の対処法：正しい止め方と受診の目安</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/nursemaid-elbow-dislocation</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>肘内障（脱臼）：原因と応急対応・再発防止のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/pool-fever-pharyngoconjunctival</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>プール熱（咽頭結膜熱）：症状と予防・登園停止の基準</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/rs-virus-infant-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>RSウイルス感染症：赤ちゃんへの影響と重症化を防ぐポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/streptococcal-infection</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>溶連菌感染症：症状・検査・抗菌薬治療の基本</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/summer-cold-treatment</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>夏かぜの対処法：エンテロウイルスと夏の感染症の特徴</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/tooth-decay-prevention-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの虫歯予防：年齢別の歯磨き法と歯科検診</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/whooping-cough-pertussis</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>百日咳：特徴的な咳の見分け方と予防接種の重要性</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/baby-carrier-selection</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>抱っこ紐の選び方：タイプ別比較と安全な使用方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/celebration-events-summary</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>お祝い行事まとめ：お七夜からお食い初めまで赤ちゃんの行事</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/child-seat-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>チャイルドシートの選び方と正しい取り付け方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/consecutive-age-parenting</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>年子育児のコツ：大変な時期の乗り越え方とスケジュール管理</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/dining-out-with-baby</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>赤ちゃん連れ外食ガイド：お店選び・持ち物・マナー</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/family-photo-memories</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>家族写真の残し方：スマホ撮影のコツ・整理・フォトブック</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/family-travel-with-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子連れ旅行完全ガイド：年齢別の準備・持ち物・おすすめスポット</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-clothing-selection</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子ども服の選び方：サイズ・素材・季節別のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-room-design-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子ども部屋のつくり方：年齢別レイアウト・収納・学習環境</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/military-family-parenting</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>転勤族の子育て：転校・友達関係・環境の変化をポジティブに</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/name-labeling-methods</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>名前つけの方法：入園・入学に便利なグッズと時短テクニック</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/nursery-school-goods</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>入園入学グッズ準備リスト：手作り・購入のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/okuizome-ceremony-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>お食い初めの進め方：メニュー・食器・手順の基本</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/omiyamairi-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>お宮参りガイド：時期・服装・準備と当日の流れ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/pets-and-kids-benefits</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ペットと子育て：動物との暮らしが子どもに与える影響と注意点</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/relocation-kids-adjustment</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>引越し・転居と子どもの適応：転校のケアと新環境への馴染み方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/remote-work-childcare-balance</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>在宅勤務と育児の両立：タイムマネジメントと環境づくり</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/second-baby-timing</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>二人目の妊娠タイミング：年齢差のメリット・デメリット</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/shichigosan-preparation</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>七五三の準備ガイド：時期・衣装・写真撮影のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/stroller-selection-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ベビーカー選びのポイント：タイプ別比較と失敗しない選び方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/third-child-parenting</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>3人目の子育て：経済面・生活面の工夫と支援制度</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/time-saving-housework-parents</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>育児中の時短家事テクニック：効率化のコツとおすすめ家電</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/toy-storage-ideas</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>おもちゃの収納アイデア：片付け習慣を育てる工夫</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/anger-management-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どものアンガーマネジメント：怒りのコントロールを教える方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/baby-regression-behavior</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>赤ちゃん返りの原因と対応：下の子が生まれた時の心のケア</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/emotional-education-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>感情教育とは：子どもが自分の気持ちを言葉にできるようになるまで</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/fear-of-dark-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>暗闇恐怖：暗いところを怖がる子どもへの対応と安心感の育て方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/friendship-trouble-support</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの友達トラブル：仲間外れ・けんかへの親の対応</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/game-losing-anger</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ゲームで負けて怒る子：感情コントロールの教え方と寄り添い方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/hsc-highly-sensitive-child</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>HSC（ひといちばい敏感な子）：特性の理解と子育てのコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/introverted-child-parenting</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>内向的な子の育て方：個性を活かす関わり方と環境づくり</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kindergarten-reluctance</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>登園しぶりの対処法：原因の理解と無理なく通える工夫</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/lying-child-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>嘘をつく子への対応：年齢別の理由と信頼関係を壊さない声かけ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/monster-fear-imagination</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>モンスター恐怖：想像力豊かな子どもの怖がりへの対処法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/nail-biting-psychology</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>爪噛みの心理：ストレスサインとしての習癖への向き合い方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/night-crying-coping-strategies</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>夜泣きに悩むパパ・ママへ：原因の理解と親の心のケア</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/night-terrors-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>夜驚症とは：夜中に泣き叫ぶ子どもの原因と対処法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/pacifier-dependency</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>おしゃぶり依存の対処法：卒業のタイミングと方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/perfectionist-child</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>完璧主義な子どもの育て方：失敗を恐れない心の育み方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/praise-vs-encouragement</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>「ほめ方」の科学：効果的なほめ方と逆効果になるNG例</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/puberty-rebellion-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>思春期の反抗期：親子関係を壊さない向き合い方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/self-esteem-building-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの自己肯定感を高める：日常の声かけと親の関わり方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/separation-anxiety-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>分離不安：ママと離れられない子への対応と見守り方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sibling-mediation-techniques</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>兄弟ゲンカの仲裁法：公平な対応と兄弟関係を育むコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sneaky-eating-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>盗み食いへの対応：子どもの行動の理由と適切な声かけ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sore-loser-child</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>負けず嫌いな子への対応：競争心と感情コントロールの育て方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/temper-tantrum-toddler</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>イヤイヤ期の対処法：2歳児の癇癪を乗り越えるコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/thumb-sucking-graduation</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>指しゃぶり卒業の進め方：無理なくやめるためのステップ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/tic-disorder-mental-support</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>チック症の心理面：子どもの不安とストレスへの寄り添い方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/trauma-care-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どものトラウマケア：つらい経験からの回復を支える</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/bento-making-guide-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>お弁当作りの基本：栄養バランス・衛生管理・子どもが喜ぶ工夫</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/choking-prevention-food</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>食べ物の窒息事故防止：年齢別の危険食品と対処法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/convenience-food-balance</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>コンビニ食との付き合い方：子どもの食事で気をつけるポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/dietary-fiber-kids-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの食物繊維不足：便秘対策と腸内環境を整える食事</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/egg-allergy-coping</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>卵アレルギー対応：除去食の進め方と栄養バランス</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/fish-cooking-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもが喜ぶ魚料理の工夫：骨の処理から味付けまで</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/fluoride-cavity-prevention</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>フッ素と虫歯予防：効果的な使い方と安全性の基礎知識</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/food-additives-basics</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>食品添加物の基礎知識：子どもの食事で知っておきたいこと</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/food-education-activities</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>家庭でできる食育活動：料理体験・農業体験・食べ物の学び</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/frozen-food-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>冷凍食品活用術：子どもの食事に上手に取り入れるコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/homemade-snacks-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>手作りおやつレシピ集：栄養もおいしさも叶える簡単レシピ20選</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/iron-deficiency-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの鉄分不足が深刻：貧血を防ぐ食事と摂取のコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/juice-amount-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どものジュースの量：適切な摂取量と健康への影響</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-hydration-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの水分補給：必要量の目安と脱水予防のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/milk-allergy-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>牛乳アレルギーの子どもの食事：代替食品と栄養管理</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/picky-eating-advanced-strategies</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>偏食改善の実践法：無理なく食べられるものを増やすテクニック</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/quick-breakfast-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの朝ごはん時短術：簡単で栄養バランスの良い朝食</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sports-drink-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>スポーツドリンクは子どもに必要？糖分と電解質の注意点</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sugar-intake-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの糖質摂取：適切な量と砂糖の取りすぎリスク</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/veggie-dislike-recipes</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>野菜嫌い克服レシピ：楽しく食べられる調理テクニック</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/vitamin-d-sunlight-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ビタミンD不足と子どもの骨：日光浴と食事のバランス</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/wheat-allergy-lifestyle</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>小麦アレルギー生活：グルテンフリーの食事と注意点</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/advanced-maternal-age</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>高齢出産のリスクと対策：35歳以上の妊娠・出産ガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/birth-method-comparison</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>出産方法の選び方：自然分娩・無痛分娩・帝王切開の比較</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/breech-baby-management</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>逆子の対処法：逆子体操と帝王切開の判断基準</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/fetal-movement-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>胎動の感じ方：いつから？弱い・強い・減った時の対処法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/gestational-diabetes-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>妊娠糖尿病：診断・食事療法・赤ちゃんへの影響と管理</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/hospital-bag-checklist</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>入院準備リスト：出産入院に必要な持ち物完全ガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/labor-signs-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>陣痛の兆候：本陣痛と前駆陣痛の見分け方と対処法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/low-breast-milk-solutions</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>母乳が出ない時の対処法：原因と母乳を増やす工夫</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/mastitis-prevention</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>乳腺炎の予防と対処法：症状・セルフケア・受診の目安</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/maternity-leave-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>産休・育休の取り方：制度の仕組みと手続きガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/maternity-yoga-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>マタニティヨガの効果と注意点：安全に楽しむためのガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/morning-sickness-remedies</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>つわりの対処法：症状別の緩和方法と受診の目安</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/partner-birth-attendance</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>立ち合い出産のメリットと準備：パートナーの役割ガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/planned-birth-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>計画分娩とは：誘発分娩のメリット・リスクと選択のポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/postpartum-body-recovery</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>産後の体型戻し：無理のないダイエットと運動のタイミング</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/postpartum-depression-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>産後うつの理解と対処：症状・チェックリスト・相談先</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/postpartum-paperwork</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>出産後の手続きまとめ：届出・給付金・保険の完全ガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/postpartum-pelvic-care</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>産後の骨盤ケア：骨盤ベルトと体操で整える方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/prenatal-nutrition-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>妊娠中の栄養管理：葉酸・鉄分・カルシウムの摂取ポイント</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/prenatal-testing-options</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>出生前診断の種類と考え方：NIPTからエコーまで最新情報</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/satogaeri-birth-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>里帰り出産の準備：メリット・デメリットと手続き</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/stretch-mark-prevention</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>妊娠線の予防とケア：できる原因と効果的な対策</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/travel-during-pregnancy</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>妊娠中の旅行：いつまでOK？注意点と安全な計画の立て方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/twin-pregnancy-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>多胎妊娠（双子・三つ子）：妊娠経過と出産準備の完全ガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/water-birth-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>水中出産とは：メリット・リスクと実施できる施設</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/water-break-response</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>破水した時の対応：正しい行動と病院への連絡方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/bicycle-safety-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの自転車の安全：ヘルメット・ルール・練習のコツ</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/child-abuse-prevention-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>児童虐待防止：兆候の見つけ方・通報の方法・相談窓口</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/crime-prevention-education</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの防犯教育：「いかのおすし」と自分を守る力</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/disability-support-children</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>障がいのある子どもへの支援制度：福祉サービス・療育・特別支援教育</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/elections-explained-for-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>選挙と子ども：民主主義を身近に感じる教え方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/foreign-roots-parenting</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>外国にルーツを持つ子どもの子育て：日本語支援・多文化教育・制度</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/foster-care-system-japan</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>里親制度の仕組み：種類・条件・手続きと里親支援</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/human-rights-education-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子どもの人権教育：多様性を尊重する心の育て方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kodomo-shokudo-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>子ども食堂とは：利用方法・ボランティア参加・地域での始め方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/library-utilization-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>図書館を子どもと活用する方法：読書習慣と学びの場</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/local-sports-club-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>地域のスポーツ少年団：入団の流れと親の関わり方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/museum-art-gallery-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>博物館・美術館を子どもと楽しむ：年齢別の楽しみ方ガイド</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/pta-participation-guide</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>PTA活動の実態：参加のメリット・負担軽減・改革事例</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/school-route-safety</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>通学路の安全対策：見守り活動・交通安全・不審者対策</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/swimming-school-selection</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>水泳教室の選び方：子どもに合ったスイミングスクール</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/teaching-taxes-to-kids</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>税金の教え方：子どもにわかりやすく伝える方法</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/traffic-rules-education</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>交通ルール教育：年齢別に教える安全な道路の渡り方</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/young-carer-support</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-11</news:publication_date>
+      <news:title>ヤングケアラーとは：子どもが担うケアの実態と支援策</news:title>
+    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kids-first-smartphone</loc>
