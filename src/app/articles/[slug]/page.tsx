@@ -8,10 +8,8 @@ import CategoryTag from '@/components/ui/CategoryTag';
 import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 import ShareButtons from '@/components/articles/ShareButtons';
-import RecommendedLinks from '@/components/articles/RecommendedLinks';
 import TableOfContents from '@/components/articles/TableOfContents';
 import ReadingProgress from '@/components/articles/ReadingProgress';
-import { getRecommendedLinks } from '@/data/recommended-links';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -208,16 +206,6 @@ export default async function ArticlePage({ params }: PageProps) {
         <span className="text-gray-400 truncate">{article.title}</span>
       </nav>
 
-      {/* Matome disclaimer banner */}
-      <div className="mb-6 p-3 bg-[var(--color-warm-cream)] rounded-xl text-sm text-gray-600 border border-orange-100">
-        この記事は、公的機関や専門家の発信情報をもとに012.kids編集部が独自にまとめたものです。元の情報についてはページ下部の「参考にした情報」をご確認ください。
-      </div>
-
-      {/* Hero Illustration */}
-      <div className="mb-8 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center py-8">
-        {(() => { const Illustration = getArticleIllustration(article.slug); return <Illustration size={180} />; })()}
-      </div>
-
       {/* Article Header */}
       <header className="mb-8">
         <div className="flex items-center gap-2 mb-3 flex-wrap">
@@ -227,14 +215,24 @@ export default async function ArticlePage({ params }: PageProps) {
           ))}
         </div>
 
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-4">
-          {article.title}
-        </h1>
+        <div className="flex items-start gap-4">
+          <div className="flex-1">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-3">
+              {article.title}
+            </h1>
+            <p className="text-gray-600 mb-3">{article.excerpt}</p>
+          </div>
+          <div className="hidden md:flex flex-shrink-0 w-20 h-20 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 items-center justify-center">
+            {(() => { const Illustration = getArticleIllustration(article.slug); return <Illustration size={52} />; })()}
+          </div>
+        </div>
 
-        <p className="text-gray-600 text-lg mb-4">{article.excerpt}</p>
-
-        {/* Meta info */}
-        <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+        {/* Meta info + attribution */}
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 mb-3">
+          <span className="flex items-center gap-1.5">
+            <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center text-[10px] font-bold text-[var(--color-primary)]">編</span>
+            012.kids 編集部
+          </span>
           <span>公開: {article.publishedAt}</span>
           {article.updatedAt !== article.publishedAt && (
             <span>更新: {article.updatedAt}</span>
@@ -242,15 +240,8 @@ export default async function ArticlePage({ params }: PageProps) {
           <span>{article.readingTime}分で読めます</span>
         </div>
 
-        {/* Editorial attribution */}
-        <div className="mt-4 p-3 bg-[var(--color-warm-cream)] rounded-xl flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-xs font-bold text-[var(--color-primary)]">
-            編
-          </div>
-          <div>
-            <p className="text-sm font-medium text-gray-700">012.kids 編集部</p>
-            <p className="text-xs text-gray-500">公的機関・専門家の情報をもとにまとめています</p>
-          </div>
+        <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-gray-500 border border-orange-100">
+          この記事は、公的機関や専門家の発信情報をもとに編集部が独自にまとめたものです。元の情報は下部の「参考にした情報」をご確認ください。
         </div>
       </header>
 
@@ -335,9 +326,6 @@ export default async function ArticlePage({ params }: PageProps) {
           </p>
         </div>
       </div>
-
-      {/* Recommended Links */}
-      <RecommendedLinks links={getRecommendedLinks(article.categories, 10)} />
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-6">
