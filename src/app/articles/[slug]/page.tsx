@@ -71,8 +71,8 @@ export default async function ArticlePage({ params }: PageProps) {
     .map((id) => allArticles.find((a) => a.id === id || a.slug === id))
     .filter(Boolean) as typeof allArticles;
 
-  // If fewer than 4 explicit related articles, fill with same category/stage
-  if (relatedArticles.length < 4) {
+  // Fill related articles up to 10
+  if (relatedArticles.length < 10) {
     const existingIds = new Set([article.id, ...relatedArticles.map((a) => a.id)]);
     const candidates = allArticles
       .filter((a) => !existingIds.has(a.id))
@@ -80,11 +80,12 @@ export default async function ArticlePage({ params }: PageProps) {
         let score = 0;
         if (a.stage === article.stage) score += 2;
         if (a.categories.some((c) => article.categories.includes(c))) score += 3;
+        if (a.tags?.some((t) => article.tags?.includes(t))) score += 1;
         return { article: a, score };
       })
       .filter((c) => c.score > 0)
       .sort((a, b) => b.score - a.score || (b.article.score?.total ?? 0) - (a.article.score?.total ?? 0));
-    const needed = 4 - relatedArticles.length;
+    const needed = 10 - relatedArticles.length;
     relatedArticles = [...relatedArticles, ...candidates.slice(0, needed).map((c) => c.article)];
   }
 
@@ -187,7 +188,7 @@ export default async function ArticlePage({ params }: PageProps) {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-4 py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {faqLd && (
@@ -207,7 +208,7 @@ export default async function ArticlePage({ params }: PageProps) {
       </nav>
 
       {/* Article Header */}
-      <header className="mb-8">
+      <header className="mb-8 max-w-3xl">
         <div className="flex items-center gap-2 mb-3 flex-wrap">
           <StageBadge stage={article.stage} size="md" />
           {article.categories.map((cat) => (
@@ -241,15 +242,29 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
 
         <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-gray-500 border border-orange-100">
-          この記事は、公的機関や専門家の発信情報をもとに編集部が独自にまとめたものです。元の情報は下部の「参考にした情報」をご確認ください。
+          この記事は、公的機関・専門家・研究機関などの情報をもとに編集部が独自にまとめたものです。元の情報は下部の「参考にした情報源」をご確認ください。
         </div>
       </header>
 
-      {/* Table of Contents */}
-      <TableOfContents />
+      {/* Mobile: Table of Contents inline */}
+      <div className="lg:hidden">
+        <TableOfContents />
+      </div>
 
       {/* Reading Progress + Back to Top */}
       <ReadingProgress />
+
+      {/* 2-column layout: sidebar TOC + main content */}
+      <div className="lg:flex lg:gap-8">
+        {/* Sticky sidebar TOC (desktop only) */}
+        <aside className="hidden lg:block lg:w-56 flex-shrink-0">
+          <div className="sticky top-24">
+            <TableOfContents />
+          </div>
+        </aside>
+
+        {/* Main content */}
+        <div className="flex-1 min-w-0 max-w-3xl">
 
       {/* Article Content */}
       <article
@@ -291,7 +306,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* References */}
       <div className="border-t border-orange-100 pt-6 mb-8">
-        <h3 className="text-sm font-semibold text-gray-700 mb-3">参考にした情報（{article.source.references.length}件）</h3>
+        <h3 className="text-sm font-semibold text-gray-700 mb-3">参考にした情報源（{article.source.references.length}件）</h3>
         <div className="bg-[var(--color-warm-cream)] rounded-lg p-4">
           <p className="text-sm font-medium text-gray-700 mb-3">{article.source.name}</p>
           <ul className="space-y-2">
@@ -348,12 +363,15 @@ export default async function ArticlePage({ params }: PageProps) {
         />
       </div>
 
-      {/* Related Articles */}
+        </div>{/* end main content */}
+      </div>{/* end 2-column layout */}
+
+      {/* Related Articles - full width */}
       {relatedArticles.length > 0 && (
         <div className="border-t border-orange-100 pt-8">
           <h3 className="text-lg font-bold text-gray-900 mb-2">あわせて読みたい</h3>
           <p className="text-sm text-gray-500 mb-4">同じテーマの記事をチェック</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {relatedArticles.map((a) => (
               <ArticleCard key={a.id} article={a} variant="compact" />
             ))}
