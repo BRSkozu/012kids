@@ -121,6 +121,16 @@ export default async function ArticlePage({ params }: PageProps) {
     '<a href="$1" target="_blank" rel="noopener noreferrer"'
   );
 
+  // Post-process: wrap tables in scrollable container for mobile
+  contentHtml = contentHtml.replace(
+    /<table>/g,
+    '<div class="table-wrapper"><table>'
+  );
+  contentHtml = contentHtml.replace(
+    /<\/table>/g,
+    '</table></div>'
+  );
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',

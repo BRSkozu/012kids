@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
+import remarkGfm from 'remark-gfm';
 import html from 'remark-html';
 import { Article, ArticleMeta, ArticleReference, ContentCategory, AgeStage } from '@/types';
 
@@ -54,7 +55,7 @@ function getAllMdxFiles(): string[] {
 }
 
 async function processMarkdown(content: string): Promise<string> {
-  const result = await remark().use(html, { sanitize: false }).process(content);
+  const result = await remark().use(remarkGfm).use(html, { sanitize: false }).process(content);
   return result.toString();
 }
 
