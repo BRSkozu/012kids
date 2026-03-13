@@ -50,6 +50,7 @@ export interface Article {
   readingTime: number;
   tags: string[];
   relatedArticleIds: string[];
+  draft?: boolean;
 }
 
 export interface ArticleReference {

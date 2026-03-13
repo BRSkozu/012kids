@@ -35,6 +35,7 @@ interface ArticleFrontmatter {
   readingTime: number;
   tags: string[];
   relatedSlugs: string[];
+  draft?: boolean;
 }
 
 // Cache for all articles (populated once at build time)
@@ -84,6 +85,7 @@ function parseArticle(filePath: string): ArticleMeta & { rawContent: string } {
     readingTime: fm.readingTime,
     tags: fm.tags || [],
     relatedArticleIds: fm.relatedSlugs || [],
+    draft: fm.draft || false,
   };
 }
 
@@ -91,13 +93,18 @@ export function getAllArticlesSync(): Article[] {
   if (articlesCache) return articlesCache;
 
   const files = getAllMdxFiles();
-  const articles = files.map((file) => {
+  const allParsed = files.map((file) => {
     const parsed = parseArticle(file);
     return {
       ...parsed,
       content: parsed.rawContent, // raw markdown stored, rendered at page level
     } as Article;
   });
+
+  // Filter out draft articles unless SHOW_DRAFTS is set
+  const articles = process.env.SHOW_DRAFTS === 'true'
+    ? allParsed
+    : allParsed.filter((a) => !a.draft);
 
   // Resolve relatedSlugs to relatedArticleIds
   const slugToId = new Map(articles.map((a) => [a.slug, a.id]));
