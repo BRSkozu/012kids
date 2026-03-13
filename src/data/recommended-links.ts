@@ -177,6 +177,60 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     categories: ['lifestyle', 'health'],
     tags: ['睡眠', '生活リズム', '年齢別'],
   },
+  {
+    title: 'トイレトレーニングはいつから？時期・やり方・進め方のコツ',
+    url: 'https://shimajiro.benesse.ne.jp/contents/column/potty-training/',
+    org: 'こどもちゃれんじ（ベネッセ）',
+    description: '開始時期の目安サインからステップ別の進め方、うまくいかないときの対処法まで網羅',
+    categories: ['lifestyle', 'development'],
+    tags: ['トイレトレーニング', '1〜3歳', '生活習慣'],
+  },
+  {
+    title: '歯磨きを嫌がる子供への対処法【1歳～6歳】年齢別アドバイス',
+    url: 'https://mukae-dc.jp/brush-teeth/',
+    org: 'むかえ歯科・小児歯科',
+    description: '小児歯科医が年齢別の仕上げ磨きのコツ・嫌がる原因・歯ブラシの選び方を具体的に解説',
+    categories: ['health', 'lifestyle'],
+    tags: ['歯磨き', '仕上げ磨き', '虫歯予防', '対処法'],
+  },
+
+  // === 子どもの心・自己肯定感 ===
+  {
+    title: '子どもの自己肯定感がグンと高まる声かけと接し方のコツ',
+    url: 'https://benesse.jp/kosodate/202403/20240316-1.html',
+    org: 'ベネッセ教育情報サイト',
+    description: '結果でなく過程を褒める・選ばせる・存在を認めるなど、具体的な声かけ例を多数紹介',
+    categories: ['mental', 'development'],
+    tags: ['自己肯定感', '声かけ', '褒め方', '子育て'],
+  },
+  {
+    title: 'ひと言で子どものやる気を上げる「声かけ10選」',
+    url: 'https://toyokeizai.net/articles/-/743749',
+    org: '東洋経済オンライン',
+    description: '自己肯定感が高まるポジティブな言葉。NG声かけとの比較で実践しやすい具体例',
+    categories: ['mental', 'education'],
+    tags: ['自己肯定感', '声かけ', 'やる気', '褒め方'],
+  },
+
+  // === プログラミング教育 ===
+  {
+    title: '小学校で必修化されたプログラミング教育の目的や狙いは？',
+    url: 'https://kids.athuman.com/cecoe/articles/000261/',
+    org: 'こども教育総合研究所',
+    description: '何年生から？何を学ぶ？Scratchとは？学年別のアプローチ方法と家庭でできるサポート',
+    categories: ['education', 'digital'],
+    tags: ['プログラミング', '小学生', '必修化', 'Scratch'],
+  },
+
+  // === 予防接種 ===
+  {
+    title: '赤ちゃんの予防接種スケジュール',
+    url: 'https://www.wakuchin.net/schedule/baby.html',
+    org: 'ワクチン.net（MSD）',
+    description: '生後2ヶ月からのワクチン接種順序・同時接種の組み合わせ・スケジュール自動作成ツール付き',
+    categories: ['health'],
+    tags: ['予防接種', 'ワクチン', 'スケジュール', '赤ちゃん'],
+  },
 ];
 
 /**
