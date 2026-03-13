@@ -357,7 +357,7 @@ export default async function ArticlePage({ params }: PageProps) {
       </div>
 
       {/* Recommended Links */}
-      <RecommendedLinks links={getRecommendedLinks(article.categories, 10, article.tags)} />
+      <RecommendedLinks links={getRecommendedLinks(article.categories, 10, article.tags)} currentSlug={article.slug} />
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-6">

@@ -4,12 +4,15 @@ import { getAllArticlesSync } from '@/lib/articles';
 
 interface RecommendedLinksProps {
   links: RecommendedLink[];
+  currentSlug?: string;
 }
 
-export default function RecommendedLinks({ links }: RecommendedLinksProps) {
+export default function RecommendedLinks({ links, currentSlug }: RecommendedLinksProps) {
   if (links.length === 0) return null;
 
   const allArticles = getAllArticlesSync();
+  const usedSlugs = new Set<string>();
+  if (currentSlug) usedSlugs.add(currentSlug);
 
   return (
     <div className="border-t border-orange-100 pt-6 mb-8">
@@ -23,10 +26,12 @@ export default function RecommendedLinks({ links }: RecommendedLinksProps) {
         {links.map((link, i) => {
           const related = allArticles
             .filter((a) =>
+              !usedSlugs.has(a.slug) &&
               a.categories.some((c) => link.categories.includes(c))
             )
             .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
             .slice(0, 2);
+          related.forEach((a) => usedSlugs.add(a.slug));
 
           return (
             <div
