@@ -184,16 +184,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     tags: ['栄養', '偏食', '食育', '肥満', '痩せ'],
   },
 
-  // === メンタル・心理 ===
-  {
-    title: 'チャイルドライン',
-    url: 'https://childline.or.jp/tel',
-    org: 'チャイルドライン支援センター',
-    description: '18歳以下の子ども専用相談ダイヤル',
-    categories: ['mental'],
-    tags: ['いじめ', '相談', '不安', 'ストレス'],
-  },
-
   // === デジタル・メディア ===
   {
     title: '総務省「インターネットトラブル事例集」',
