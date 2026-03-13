@@ -11,28 +11,28 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   // === 総合・子育て全般 ===
   {
     title: 'こども家庭庁',
-    url: 'https://www.cfa.go.jp/',
+    url: 'https://www.cfa.go.jp/policies/childrights',
     org: '内閣府',
     description: '子どもの権利・福祉・支援に関する国の中心機関',
     categories: ['general', 'development', 'health', 'social', 'mental'],
   },
   {
     title: 'たまひよ',
-    url: 'https://st.benesse.ne.jp/',
+    url: 'https://st.benesse.ne.jp/ikuji/ranking/',
     org: 'ベネッセ',
     description: '妊娠・出産・育児の総合情報サイト。医師監修記事多数',
     categories: ['general', 'development', 'health', 'pregnancy'],
   },
   {
     title: 'ママリ',
-    url: 'https://mamari.jp/',
+    url: 'https://qa.mamari.jp/',
     org: 'コネヒト',
     description: '3人に1人のママが利用する子育てQ&Aコミュニティ',
     categories: ['general', 'mental', 'social'],
   },
   {
     title: 'HugKum（はぐくむ）',
-    url: 'https://hugkum.sho.jp/',
+    url: 'https://hugkum.sho.jp/series',
     org: '小学館',
     description: '乳幼児～小学生の子育て・学習情報メディア',
     categories: ['general', 'education', 'development'],
@@ -41,7 +41,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   // === 教育・学習 ===
   {
     title: 'NHK for School',
-    url: 'https://www.nhk.or.jp/school/',
+    url: 'https://www.nhk.or.jp/school/program/',
     org: 'NHK',
     description: '約8,000本の無料教育動画。全教科対応',
     categories: ['education'],
@@ -55,28 +55,28 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   },
   {
     title: '学研キッズネット',
-    url: 'https://kids.gakken.co.jp/',
+    url: 'https://kids.gakken.co.jp/jiyuu/',
     org: '学研',
     description: '自由研究500テーマ以上＋理科なぜなぜ110番',
     categories: ['education'],
   },
   {
     title: 'ちびむすドリル',
-    url: 'https://happylilac.net/',
+    url: 'https://happylilac.net/kisetsu-sozai.html',
     org: 'パディンハウス',
     description: '月間200万訪問の国内最大級・無料プリント教材サイト',
     categories: ['education'],
   },
   {
     title: 'eboard（イーボード）',
-    url: 'https://www.eboard.jp/',
+    url: 'https://www.eboard.jp/list/',
     org: 'NPO法人eboard',
     description: '2,000本の動画授業＋10,000問のドリル。完全無料',
     categories: ['education'],
   },
   {
     title: 'ぷりんときっず',
-    url: 'https://print-kids.net/',
+    url: 'https://print-kids.net/print/',
     org: 'ぷりんときっず',
     description: '幼児～小3向け無料プリント。ひらがな・計算ドリル充実',
     categories: ['education'],
@@ -102,7 +102,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   // === 健康・医療 ===
   {
     title: '日本小児科学会',
-    url: 'https://www.jpeds.or.jp/',
+    url: 'https://www.jpeds.or.jp/modules/activity/index.php?content_id=138',
     org: '日本小児科学会',
     description: '予防接種スケジュール・子どもの健康ガイドライン',
     categories: ['health'],
@@ -207,7 +207,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   },
   {
     title: '日本栄養士会「子どもの食と栄養」',
-    url: 'https://www.dietitian.or.jp/',
+    url: 'https://www.dietitian.or.jp/career/specialcertifications/pediatricnutrition/',
     org: '日本栄養士会',
     description: '管理栄養士による子どもの栄養相談・食事指導情報',
     categories: ['nutrition', 'health'],
@@ -217,7 +217,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   // === メンタル・心理 ===
   {
     title: 'チャイルドライン',
-    url: 'https://childline.or.jp/',
+    url: 'https://childline.or.jp/tel',
     org: 'チャイルドライン支援センター',
     description: '18歳以下の子ども専用相談ダイヤル',
     categories: ['mental'],
@@ -253,7 +253,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   // === 社会・環境 ===
   {
     title: 'いこーよ',
-    url: 'https://iko-yo.net/',
+    url: 'https://iko-yo.net/facilities?tags%5B%5D=%E7%84%A1%E6%96%99',
     org: 'アクトインディ',
     description: '親子おでかけ情報No.1サイト。無料スポット検索も',
     categories: ['social', 'general'],
