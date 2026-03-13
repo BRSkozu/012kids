@@ -85,7 +85,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   // === 発達・成長 ===
   {
     title: 'ベネッセ「体の発達・こころの発達」',
-    url: 'https://benesse.jp/kosodate/',
+    url: 'https://benesse.jp/contents/clinic/basic/',
     org: 'ベネッセ',
     description: '臨床心理士監修の年齢別発達ガイド',
     categories: ['development'],
