@@ -190,12 +190,12 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     tags: ['離乳食', 'レシピ', '食材', '月齢', '幼児食'],
   },
   {
-    title: 'クックパッド「赤ちゃんの離乳食」',
-    url: 'https://cookpad.com/baby',
-    org: 'クックパッド',
-    description: '月齢別・食材別の離乳食レシピが豊富',
+    title: 'ベビーカレンダー「離乳食レシピ」',
+    url: 'https://baby-calendar.jp/baby-food-recipe',
+    org: 'ベビーカレンダー',
+    description: '管理栄養士監修の月齢別・食材別の離乳食レシピが1,000件以上',
     categories: ['nutrition'],
-    tags: ['離乳食', 'レシピ', '食材', '献立'],
+    tags: ['離乳食', 'レシピ', '食材', '献立', '月齢'],
   },
   {
     title: '和光堂「離乳食の進め方」',
@@ -243,7 +243,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   },
   {
     title: 'e-ネットキャラバン',
-    url: 'https://www.e-netcaravan.jp/',
+    url: 'https://www.fmmc.or.jp/e-netcaravan/',
     org: '総務省・文科省',
     description: 'ネット安全教室の情報と教材',
     categories: ['digital'],
