@@ -76,14 +76,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '臨床心理士監修の年齢別発達ガイド',
     categories: ['development'],
   },
-  {
-    title: '発達障害情報・支援センター',
-    url: 'https://www.rehab.go.jp/ddis/',
-    org: '国立障害者リハビリテーションセンター',
-    description: '発達障害に関する信頼性の高い情報ハブ',
-    categories: ['development', 'mental'],
-    tags: ['発達障害', 'ADHD', '自閉症', 'ASD'],
-  },
 
   // === 健康・医療 ===
   {
@@ -92,14 +84,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '日本小児科学会',
     description: '予防接種スケジュール・子どもの健康ガイドライン',
     categories: ['health'],
-  },
-  {
-    title: 'こどもの救急（ONLINE-QQ）',
-    url: 'https://kodomo-qq.jp/',
-    org: '日本小児科学会',
-    description: '夜間休日の症状チェック。病院に行くべきか判断できる',
-    categories: ['health'],
-    tags: ['発熱', '嘔吐', '急病', '救急'],
   },
 
   // === 食育・栄養 ===
