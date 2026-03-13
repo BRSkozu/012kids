@@ -92,7 +92,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   },
   {
     title: '発達障害情報・支援センター',
-    url: 'http://www.rehab.go.jp/ddis/',
+    url: 'https://www.rehab.go.jp/ddis/',
     org: '国立障害者リハビリテーションセンター',
     description: '発達障害に関する信頼性の高い情報ハブ',
     categories: ['development', 'mental'],
@@ -109,7 +109,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   },
   {
     title: 'こどもの救急（ONLINE-QQ）',
-    url: 'http://kodomo-qq.jp/',
+    url: 'https://kodomo-qq.jp/',
     org: '日本小児科学会',
     description: '夜間休日の症状チェック。病院に行くべきか判断できる',
     categories: ['health'],
@@ -224,10 +224,10 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     tags: ['いじめ', '相談', '不安', 'ストレス'],
   },
   {
-    title: '不登校新聞',
-    url: 'https://futoko.publishers.fm/',
-    org: '全国不登校新聞社',
-    description: '不登校の子ども・保護者向け情報メディア',
+    title: '不登校オンライン',
+    url: 'https://futoko-online.jp/',
+    org: 'キズキ',
+    description: '不登校の子ども・保護者向け情報メディア。体験談・相談先・イベント情報',
     categories: ['mental'],
     tags: ['不登校', '登校しぶり', '学校'],
   },
@@ -260,10 +260,10 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     tags: ['おでかけ', '遊び場', '体験'],
   },
   {
-    title: '朝日新聞「放課後たのしーと」',
-    url: 'https://houkago.asahi.com/',
-    org: '朝日新聞×東京学芸大',
-    description: '低学年向け無料あそび＆まなびプリント',
+    title: '放課後たのしーと',
+    url: 'https://houkago.gakken.jp/',
+    org: '学研',
+    description: '学童向け無料あそび＆まなびプリント。1,200以上のコンテンツ',
     categories: ['education', 'social'],
   },
   {
