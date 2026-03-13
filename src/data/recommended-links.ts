@@ -243,7 +243,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   },
   {
     title: 'e-ネットキャラバン',
-    url: 'https://www.fmmc.or.jp/e-netcaravan/',
+    url: 'https://www3.fmmc.or.jp/e-netcaravan/',
     org: '総務省・文科省',
     description: 'ネット安全教室の情報と教材',
     categories: ['digital'],
