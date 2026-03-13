@@ -10,6 +10,8 @@ import { getArticleIllustration } from '@/components/illustrations/ArticleIllust
 import ShareButtons from '@/components/articles/ShareButtons';
 import TableOfContents from '@/components/articles/TableOfContents';
 import ReadingProgress from '@/components/articles/ReadingProgress';
+import RecommendedLinks from '@/components/articles/RecommendedLinks';
+import { getRecommendedLinks } from '@/data/recommended-links';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -114,15 +116,15 @@ export default async function ArticlePage({ params }: PageProps) {
     }
   }
 
-  // Post-process: remove "おすすめサイト・参考リンク" section (duplicates the references component below)
+  // Post-process: remove MDX "おすすめサイト・参考リンク" section (rendered by RecommendedLinks component instead)
   contentHtml = contentHtml.replace(
-    /<h2[^>]*>おすすめサイト・参考リンク<\/h2>[\s\S]*?(?=<h2|<hr|$)/,
+    /<h2[^>]*>おすすめサイト[^<]*<\/h2>[\s\S]*?(?=<h2|<hr|$)/,
     ''
   );
 
-  // Post-process: remove the intro line mentioning おすすめサイト since that section is removed
+  // Post-process: remove intro blockquote mentioning おすすめサイト
   contentHtml = contentHtml.replace(
-    /<blockquote>\s*<p>この記事では、まず[^<]*おすすめサイト[^<]*<\/p>\s*<\/blockquote>/g,
+    /<blockquote>\s*<p>[^<]*おすすめサイト[^<]*<\/p>\s*<\/blockquote>/,
     ''
   );
 
@@ -353,6 +355,9 @@ export default async function ArticlePage({ params }: PageProps) {
           </p>
         </div>
       </div>
+
+      {/* Recommended Links */}
+      <RecommendedLinks links={getRecommendedLinks(article.categories, 10, article.tags)} />
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-6">

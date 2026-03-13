@@ -4,6 +4,7 @@ export interface RecommendedLink {
   org: string;
   description: string;
   categories: string[]; // matching ContentCategory ids + 'general' + 'pregnancy'
+  tags?: string[]; // fine-grained topic tags for better article matching
 }
 
 export const RECOMMENDED_LINKS: RecommendedLink[] = [
@@ -95,6 +96,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '国立障害者リハビリテーションセンター',
     description: '発達障害に関する信頼性の高い情報ハブ',
     categories: ['development', 'mental'],
+    tags: ['発達障害', 'ADHD', '自閉症', 'ASD'],
   },
 
   // === 健康・医療 ===
@@ -111,6 +113,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '日本小児科学会',
     description: '夜間休日の症状チェック。病院に行くべきか判断できる',
     categories: ['health'],
+    tags: ['発熱', '嘔吐', '急病', '救急'],
   },
   {
     title: 'KNOW-VPD!',
@@ -118,6 +121,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '「VPDを知って、子どもを守ろう。」の会',
     description: '予防接種の最新スケジュール・ワクチン情報',
     categories: ['health'],
+    tags: ['予防接種', 'ワクチン'],
   },
 
   // === 食育・栄養 ===
@@ -127,6 +131,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '農林水産省',
     description: '栄養バランス・食の安全の公式ポータル',
     categories: ['nutrition'],
+    tags: ['食育', '栄養', '食材'],
   },
   {
     title: '文科省「たのしい食事つながる食育」',
@@ -134,6 +139,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '文部科学省',
     description: '小学生向け食育教材が無料ダウンロード可能',
     categories: ['nutrition'],
+    tags: ['食育', '給食'],
   },
   {
     title: 'ソラレピ 食育レシピ',
@@ -141,6 +147,71 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: 'シダックス',
     description: '管理栄養士が作った保育園給食レシピ（0〜9歳対象）',
     categories: ['nutrition'],
+    tags: ['レシピ', '給食', '食材', '献立'],
+  },
+  {
+    title: '厚生労働省「授乳・離乳の支援ガイド」',
+    url: 'https://www.mhlw.go.jp/stf/newpage_04250.html',
+    org: '厚生労働省',
+    description: '月齢別の離乳食進め方・食材一覧の公式ガイドライン',
+    categories: ['nutrition'],
+    tags: ['離乳食', '食材', '月齢', 'アレルギー', '母乳', 'ミルク'],
+  },
+  {
+    title: '食品安全委員会「お子さまの食事」',
+    url: 'https://www.fsc.go.jp/kids-box/',
+    org: '食品安全委員会',
+    description: '子どもの食品安全に関する情報をわかりやすく解説',
+    categories: ['nutrition'],
+    tags: ['食材', 'アレルギー', '食品安全', '添加物'],
+  },
+  {
+    title: '消費者庁「食物アレルギー」',
+    url: 'https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/',
+    org: '消費者庁',
+    description: '食物アレルギー表示制度と注意すべきアレルゲン情報',
+    categories: ['nutrition', 'health'],
+    tags: ['アレルギー', '食材', '卵', '乳', '小麦'],
+  },
+  {
+    title: '日本食品標準成分表',
+    url: 'https://www.mext.go.jp/a_menu/syokuhinseibun/',
+    org: '文部科学省',
+    description: '食品ごとの栄養成分データベース。離乳食・幼児食の栄養計算に',
+    categories: ['nutrition'],
+    tags: ['栄養', '鉄分', 'カルシウム', 'ビタミン', 'DHA'],
+  },
+  {
+    title: 'パルシステム「離乳食レシピ」',
+    url: 'https://kosodate.pal-system.co.jp/recipe/',
+    org: 'パルシステム',
+    description: '月齢別の離乳食・幼児食レシピ。管理栄養士監修',
+    categories: ['nutrition'],
+    tags: ['離乳食', 'レシピ', '食材', '月齢', '幼児食'],
+  },
+  {
+    title: 'クックパッド「赤ちゃんの離乳食」',
+    url: 'https://cookpad.com/baby',
+    org: 'クックパッド',
+    description: '月齢別・食材別の離乳食レシピが豊富',
+    categories: ['nutrition'],
+    tags: ['離乳食', 'レシピ', '食材', '献立'],
+  },
+  {
+    title: '和光堂「離乳食の進め方」',
+    url: 'https://community.wakodo.co.jp/community/babyfood/',
+    org: '和光堂（アサヒグループ食品）',
+    description: '離乳食の月齢別ガイド・食材チェックリスト付き',
+    categories: ['nutrition'],
+    tags: ['離乳食', '食材', '月齢'],
+  },
+  {
+    title: '日本栄養士会「子どもの食と栄養」',
+    url: 'https://www.dietitian.or.jp/',
+    org: '日本栄養士会',
+    description: '管理栄養士による子どもの栄養相談・食事指導情報',
+    categories: ['nutrition', 'health'],
+    tags: ['栄養', '偏食', '食育', '肥満', '痩せ'],
   },
 
   // === メンタル・心理 ===
@@ -150,6 +221,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: 'チャイルドライン支援センター',
     description: '18歳以下の子ども専用相談ダイヤル',
     categories: ['mental'],
+    tags: ['いじめ', '相談', '不安', 'ストレス'],
   },
   {
     title: '不登校新聞',
@@ -157,6 +229,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '全国不登校新聞社',
     description: '不登校の子ども・保護者向け情報メディア',
     categories: ['mental'],
+    tags: ['不登校', '登校しぶり', '学校'],
   },
 
   // === デジタル・メディア ===
@@ -166,6 +239,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '総務省',
     description: '子どものネットトラブル実例と対策集',
     categories: ['digital'],
+    tags: ['ネット', 'SNS', 'トラブル', 'スマホ'],
   },
   {
     title: 'e-ネットキャラバン',
@@ -173,6 +247,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: '総務省・文科省',
     description: 'ネット安全教室の情報と教材',
     categories: ['digital'],
+    tags: ['ネット', 'リテラシー', '安全'],
   },
 
   // === 社会・環境 ===
@@ -182,6 +257,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     org: 'アクトインディ',
     description: '親子おでかけ情報No.1サイト。無料スポット検索も',
     categories: ['social', 'general'],
+    tags: ['おでかけ', '遊び場', '体験'],
   },
   {
     title: '朝日新聞「放課後たのしーと」',
@@ -200,27 +276,36 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
 ];
 
 /**
- * Get recommended links for an article based on its categories.
- * Returns up to `count` links, prioritizing exact category matches.
+ * Get recommended links for an article based on its categories and tags.
+ * Prioritizes tag matches (specific relevance) over category matches (general relevance).
+ * Returns up to `count` links.
  */
 export function getRecommendedLinks(
   articleCategories: string[],
-  count: number = 10
+  count: number = 10,
+  articleTags: string[] = []
 ): RecommendedLink[] {
-  // Score each link by how many categories match
   const scored = RECOMMENDED_LINKS.map((link) => {
-    const matchCount = link.categories.filter(
-      (c) => articleCategories.includes(c) || c === 'general'
+    // Category match: +1 per matching category
+    const categoryScore = link.categories.filter(
+      (c) => articleCategories.includes(c)
     ).length;
-    return { link, matchCount };
+
+    // Tag match: +3 per matching tag (tags are more specific = higher weight)
+    const tagScore = (link.tags ?? []).filter(
+      (t) => articleTags.some((at) => at.includes(t) || t.includes(at))
+    ).length * 3;
+
+    // 'general' category gives a small boost
+    const generalBoost = link.categories.includes('general') ? 0.5 : 0;
+
+    return { link, score: categoryScore + tagScore + generalBoost };
   });
 
-  // Sort by match count desc, then stable order
-  scored.sort((a, b) => b.matchCount - a.matchCount);
+  scored.sort((a, b) => b.score - a.score);
 
-  // Filter to only those with at least one match
   return scored
-    .filter((s) => s.matchCount > 0)
+    .filter((s) => s.score > 0)
     .slice(0, count)
     .map((s) => s.link);
 }
