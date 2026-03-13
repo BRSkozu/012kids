@@ -24,13 +24,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     categories: ['general', 'development', 'health', 'pregnancy'],
   },
   {
-    title: 'ママリ',
-    url: 'https://qa.mamari.jp/',
-    org: 'コネヒト',
-    description: '3人に1人のママが利用する子育てQ&Aコミュニティ',
-    categories: ['general', 'mental', 'social'],
-  },
-  {
     title: 'HugKum（はぐくむ）',
     url: 'https://hugkum.sho.jp/series',
     org: '小学館',
@@ -44,13 +37,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     url: 'https://www.nhk.or.jp/school/program/',
     org: 'NHK',
     description: '約8,000本の無料教育動画。全教科対応',
-    categories: ['education'],
-  },
-  {
-    title: '文科省「たのしくまなび隊」',
-    url: 'https://tanoshikumanabitai.mext.go.jp/',
-    org: '文部科学省',
-    description: '小学生向け学習支援ポータル。無料教材を集約',
     categories: ['education'],
   },
   {
@@ -115,14 +101,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     categories: ['health'],
     tags: ['発熱', '嘔吐', '急病', '救急'],
   },
-  {
-    title: 'KNOW-VPD!',
-    url: 'https://www.know-vpd.jp/',
-    org: '「VPDを知って、子どもを守ろう。」の会',
-    description: '予防接種の最新スケジュール・ワクチン情報',
-    categories: ['health'],
-    tags: ['予防接種', 'ワクチン'],
-  },
 
   // === 食育・栄養 ===
   {
@@ -140,14 +118,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '小学生向け食育教材が無料ダウンロード可能',
     categories: ['nutrition'],
     tags: ['食育', '給食'],
-  },
-  {
-    title: 'ソラレピ 食育レシピ',
-    url: 'https://recipe.shidax.co.jp/',
-    org: 'シダックス',
-    description: '管理栄養士が作った保育園給食レシピ（0〜9歳対象）',
-    categories: ['nutrition'],
-    tags: ['レシピ', '給食', '食材', '献立'],
   },
   {
     title: '厚生労働省「授乳・離乳の支援ガイド」',
@@ -223,14 +193,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     categories: ['mental'],
     tags: ['いじめ', '相談', '不安', 'ストレス'],
   },
-  {
-    title: '不登校オンライン',
-    url: 'https://futoko-online.jp/',
-    org: 'キズキ',
-    description: '不登校の子ども・保護者向け情報メディア。体験談・相談先・イベント情報',
-    categories: ['mental'],
-    tags: ['不登校', '登校しぶり', '学校'],
-  },
 
   // === デジタル・メディア ===
   {
@@ -241,14 +203,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     categories: ['digital'],
     tags: ['ネット', 'SNS', 'トラブル', 'スマホ'],
   },
-  {
-    title: 'e-ネットキャラバン',
-    url: 'https://www3.fmmc.or.jp/e-netcaravan/',
-    org: '総務省・文科省',
-    description: 'ネット安全教室の情報と教材',
-    categories: ['digital'],
-    tags: ['ネット', 'リテラシー', '安全'],
-  },
 
   // === 社会・環境 ===
   {
@@ -258,20 +212,6 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '親子おでかけ情報No.1サイト。無料スポット検索も',
     categories: ['social', 'general'],
     tags: ['おでかけ', '遊び場', '体験'],
-  },
-  {
-    title: '放課後たのしーと',
-    url: 'https://houkago.gakken.jp/',
-    org: '学研',
-    description: '学童向け無料あそび＆まなびプリント。1,200以上のコンテンツ',
-    categories: ['education', 'social'],
-  },
-  {
-    title: '学研「家で勉強しよう」',
-    url: 'https://ieben.gakken.jp/',
-    org: '学研',
-    description: '全学年対応の無料ドリル・参考書ページ',
-    categories: ['education'],
   },
 ];
 
