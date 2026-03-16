@@ -260,11 +260,68 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     tags: ['予防接種', 'ワクチン', 'スケジュール', '赤ちゃん'],
     sentiment: 'neutral',
   },
+
+  // === 注意喚起・慎重な視点 ===
+  {
+    title: '早期教育は本当に必要？やりすぎが子どもに与える影響',
+    url: 'https://benesse.jp/kosodate/202303/20230310-1.html',
+    org: 'ベネッセ教育情報サイト',
+    description: '早期教育のメリットだけでなく、過度な先取りが自主性や自己肯定感に与えるリスクも専門家が指摘',
+    categories: ['education', 'development', 'mental'],
+    tags: ['早期教育', '習い事', '知育', 'やりすぎ'],
+    sentiment: 'cautious',
+  },
+  {
+    title: '子どもの「やる気スイッチ」を壊すNG声かけとは？',
+    url: 'https://toyokeizai.net/articles/-/674290',
+    org: '東洋経済オンライン',
+    description: '良かれと思った声かけが逆効果になるケース。比較・脅し・条件付き褒めの落とし穴',
+    categories: ['mental', 'education'],
+    tags: ['声かけ', 'やる気', '自己肯定感', 'NG'],
+    sentiment: 'cautious',
+  },
+  {
+    title: '子どもの睡眠不足が学力・メンタルに与える深刻な影響',
+    url: 'https://benesse.jp/kosodate/202206/20220601-1.html',
+    org: 'ベネッセ教育情報サイト',
+    description: '睡眠不足が記憶力・集中力・情緒安定に与える影響を研究データで解説。警告サインも紹介',
+    categories: ['health', 'lifestyle', 'mental'],
+    tags: ['睡眠', '睡眠不足', '学力', 'メンタルヘルス'],
+    sentiment: 'cautious',
+  },
+  {
+    title: 'ゲーム依存は「病気」WHO認定～子どもを守るために知っておくべきこと',
+    url: 'https://www.nhk.or.jp/gendai/articles/4684/',
+    org: 'NHK クローズアップ現代',
+    description: 'WHOが「ゲーム障害」を疾病認定。依存の兆候チェックリストと家庭でできる予防策',
+    categories: ['digital', 'health', 'mental'],
+    tags: ['ゲーム', '依存', 'スマホ', 'ネット'],
+    sentiment: 'cautious',
+  },
+  {
+    title: '子どもの食物アレルギー～誤った自己判断のリスクと正しい対処法',
+    url: 'https://www.meiji.co.jp/meiji-shokuiku/food-allergy/about/',
+    org: '明治（食育サイト）',
+    description: '自己判断での除去食の危険性。正しいアレルギー検査と専門医への相談が重要な理由',
+    categories: ['nutrition', 'health'],
+    tags: ['アレルギー', '離乳食', '食材', '受診目安'],
+    sentiment: 'cautious',
+  },
+  {
+    title: '「褒めて育てる」の落とし穴～結果ばかり褒めると逆効果に',
+    url: 'https://president.jp/articles/-/67842',
+    org: 'プレジデントオンライン',
+    description: 'スタンフォード大の研究に基づき、「すごいね」連発が固定マインドセットを生む仕組みを解説',
+    categories: ['mental', 'education', 'development'],
+    tags: ['褒め方', '声かけ', '自己肯定感', 'マインドセット'],
+    sentiment: 'cautious',
+  },
 ];
 
 /**
  * Get recommended links for an article based on its categories and tags.
  * Prioritizes tag matches (specific relevance) over category matches (general relevance).
+ * Ensures sentiment diversity: at least 1 of each available sentiment type is included.
  * Returns up to `count` links.
  */
 export function getRecommendedLinks(
@@ -289,10 +346,33 @@ export function getRecommendedLinks(
     return { link, score: categoryScore + tagScore + generalBoost };
   });
 
-  scored.sort((a, b) => b.score - a.score);
+  const relevant = scored.filter((s) => s.score > 0);
+  relevant.sort((a, b) => b.score - a.score);
 
-  return scored
-    .filter((s) => s.score > 0)
-    .slice(0, count)
-    .map((s) => s.link);
+  // Ensure sentiment diversity: reserve a slot for each sentiment type
+  const sentiments: LinkSentiment[] = ['positive', 'neutral', 'cautious'];
+  const reserved: typeof relevant = [];
+  const remaining = [...relevant];
+
+  for (const sentiment of sentiments) {
+    const idx = remaining.findIndex(
+      (s) => (s.link.sentiment ?? 'neutral') === sentiment
+    );
+    if (idx !== -1) {
+      reserved.push(remaining[idx]);
+      remaining.splice(idx, 1);
+    }
+  }
+
+  // Fill rest by score
+  const result = [...reserved];
+  for (const item of remaining) {
+    if (result.length >= count) break;
+    result.push(item);
+  }
+
+  // Re-sort final list by score for natural ordering
+  result.sort((a, b) => b.score - a.score);
+
+  return result.slice(0, count).map((s) => s.link);
 }

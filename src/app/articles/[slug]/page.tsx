@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { getAllArticlesSync, getArticleBySlug, getArticleContentHtml } from '@/lib/articles';
-import { getStageById } from '@/data/stages';
+import { getStageById, AGE_STAGES } from '@/data/stages';
 import StageBadge from '@/components/ui/StageBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import ArticleCard from '@/components/articles/ArticleCard';
@@ -382,6 +382,47 @@ export default async function ArticlePage({ params }: PageProps) {
 
         </div>{/* end main content */}
       </div>{/* end 2-column layout */}
+
+      {/* Growth Navigation - next stage preview */}
+      {(() => {
+        const stageIdx = AGE_STAGES.findIndex((s) => s.id === article.stage);
+        const nextStage = stageIdx >= 0 && stageIdx < AGE_STAGES.length - 1 ? AGE_STAGES[stageIdx + 1] : null;
+        if (!nextStage) return null;
+        const nextStageArticles = allArticles
+          .filter((a) => a.stage === nextStage.id && a.categories.some((c) => article.categories.includes(c)))
+          .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
+          .slice(0, 3);
+        if (nextStageArticles.length === 0) return null;
+        return (
+          <div className="border-t border-orange-100 pt-8 mb-8">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-lg">🌱</span>
+              <h3 className="text-lg font-bold text-gray-900">
+                次のステージへ：{nextStage.label}（{nextStage.ageRange}）
+              </h3>
+            </div>
+            <p className="text-sm text-gray-500 mb-4">
+              お子さんが成長したら、こちらの記事が役立ちます
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {nextStageArticles.map((a) => (
+                <Link
+                  key={a.id}
+                  href={`/articles/${a.slug}`}
+                  className="group rounded-xl border border-dashed p-4 hover:shadow-md transition-all"
+                  style={{ borderColor: nextStage.color, backgroundColor: nextStage.colorLight + '80' }}
+                >
+                  <StageBadge stage={a.stage} size="sm" />
+                  <p className="font-semibold text-sm text-gray-900 mt-2 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2">
+                    {a.title}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-1 line-clamp-2">{a.excerpt}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Related Articles - full width */}
       {relatedArticles.length > 0 && (
