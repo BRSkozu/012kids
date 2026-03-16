@@ -30977,7 +30977,7 @@ export const ARTICLES: Article[] = [
     id: "art-816",
     slug: "mental-social-story",
     title: "ソーシャルストーリーの活用",
-    excerpt: "ソーシャルストーリーについて、臨床心理の知見をもとに解説します。",
+    excerpt: "自閉スペクトラム症の子どもが社会のルールや場面を理解するための手法「ソーシャルストーリー」について、作り方・具体例・家庭での活用法を解説します。",
     content: '',
     stage: "pre",
     categories: ["mental"],
@@ -30985,27 +30985,27 @@ export const ARTICLES: Article[] = [
       name: "子どものメンタルヘルスに関する情報",
       references: [
           {
-                "title": "児童精神医学情報",
-                "url": "https://www.ncnp.go.jp/",
-                "org": "国立精神・神経医療研究センター",
+                "title": "ソーシャルストーリーとは？例や教材、支援方法を解説",
+                "url": "https://happy-funsite.com/archives/8390",
+                "org": "たかちゃん先生の特別支援学習プリント",
                 "stance": "positive"
           },
           {
-                "title": "臨床心理に関する情報",
-                "url": "https://www.jsccp.jp/",
-                "org": "日本臨床心理士会",
+                "title": "ソーシャルストーリーで解決！5つの事例",
+                "url": "https://dogadejyugyou.com/5-cases-solved-with-social-stories/",
+                "org": "教員コンパス",
                 "stance": "neutral"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "ソーシャルストーリーは1991年にキャロル・グレイが開発し、自閉スペクトラム症の子どもの社会適応を助ける有効な手法として世界中で活用されています。",
+          "neutral": "効果には個人差があり、ソーシャルストーリーだけで全ての困りごとが解決するわけではありません。他の支援方法と組み合わせることが推奨されます。",
+          "cautious": "お子さんの特性を十分理解した上で作成する必要があり、専門家（臨床心理士や特別支援教育の専門家）の助言を受けながら進めることが重要です。"
     },
     },
     score: {"total":81,"reliability":17,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":10},
     publishedAt: "2025-06-07",
-    updatedAt: "2026-03-09",
+    updatedAt: "2026-03-13",
     imageUrl: "/articles/mental-social-story.jpg",
     readingTime: 15,
     tags: ["ソーシャルストーリー","メンタルヘルス","対処法"],
@@ -32421,35 +32421,35 @@ export const ARTICLES: Article[] = [
     id: "art-795",
     slug: "mental-hair-pulling",
     title: "抜毛症のサインと支援",
-    excerpt: "抜毛症について、臨床心理の知見をもとに解説します。",
+    excerpt: "子どもの抜毛症（トリコチロマニア）について、原因・サイン・家庭での対応・治療法を専門的な知見をもとに解説します。",
     content: '',
     stage: "mid",
     categories: ["mental"],
     source: {
-      name: "子どものメンタルヘルスに関する情報",
+      name: "抜毛症に関する専門情報",
       references: [
           {
-                "title": "児童精神医学情報",
-                "url": "https://www.ncnp.go.jp/",
-                "org": "国立精神・神経医療研究センター",
+                "title": "抜毛症の原因、治療法",
+                "url": "https://h-navi.jp/column/article/35030031",
+                "org": "LITALICO発達ナビ",
                 "stance": "positive"
           },
           {
-                "title": "臨床心理に関する情報",
-                "url": "https://www.jsccp.jp/",
-                "org": "日本臨床心理士会",
+                "title": "抜毛症",
+                "url": "https://setagaya-yoga.clinic/alopecia.html",
+                "org": "世田谷用賀クリニック",
                 "stance": "neutral"
           }
     ],
       perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
+          "positive": "抜毛症は認知行動療法（ハビットリバーサル法）などの治療法が確立されており、早期の専門家相談で改善が期待できます。",
+          "neutral": "抜毛の程度や原因は個人差が大きく、ストレスや発達特性など複数の要因が絡むため、一概に対処法を決められません。",
+          "cautious": "抜毛症は精神疾患の一つであり、家庭だけでの対応には限界があります。必ず児童精神科や心療内科の専門家に相談してください。"
     },
     },
     score: {"total":81,"reliability":25,"neutrality":22,"freshness":14,"ageRelevance":14,"readability":6},
     publishedAt: "2025-05-31",
-    updatedAt: "2026-03-09",
+    updatedAt: "2026-03-13",
     imageUrl: "/articles/mental-hair-pulling.jpg",
     readingTime: 10,
     tags: ["抜毛症","メンタルヘルス","対処法"],
