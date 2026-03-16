@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import AgeSelector from '@/components/age-selector/AgeSelector';
 import ArticleCard from '@/components/articles/ArticleCard';
+import SeasonalPickup from '@/components/articles/SeasonalPickup';
 import WorrySearchCompact from '@/components/search/WorrySearchCompact';
 import { getFeaturedArticles, getLatestArticles, getAllArticlesSync, getArticleCountByCategory, getArticleCountByStage } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 import { AGE_STAGES } from '@/data/stages';
 import { RECOMMENDED_LINKS as ALL_RECOMMENDED_LINKS } from '@/data/recommended-links';
+import { getCurrentSeasonalTheme, getSeasonalScore } from '@/data/seasonal-content';
 
 const MATOME_SECTIONS = [
   {
@@ -41,6 +43,18 @@ export default function HomePage() {
   const ranking = [...allArticles]
     .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
     .slice(0, 10);
+
+  // Seasonal content
+  const seasonalTheme = getCurrentSeasonalTheme();
+  const seasonalArticles = allArticles
+    .map((a) => ({
+      article: a,
+      score: getSeasonalScore(a.tags ?? [], a.title, seasonalTheme),
+    }))
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score || (b.article.score?.total ?? 0) - (a.article.score?.total ?? 0))
+    .slice(0, 7)
+    .map((s) => s.article);
 
   // ItemList JSON-LD for ranking rich snippets
   const rankingLd = {
@@ -95,6 +109,13 @@ export default function HomePage() {
         <p className="text-sm text-gray-500 mb-6">同じ悩みを持つパパ・ママの「あるある」から、役立つ記事を見つけましょう</p>
         <WorrySearchCompact />
       </section>
+
+      {/* Seasonal Pickup */}
+      {seasonalArticles.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 py-8">
+          <SeasonalPickup theme={seasonalTheme} articles={seasonalArticles} />
+        </section>
+      )}
 
       {/* Matome Sections */}
       <section className="bg-[var(--color-warm-bg)] py-12">
