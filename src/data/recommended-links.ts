@@ -1,3 +1,6 @@
+/** リンク先記事のトーン・スタンス */
+export type LinkSentiment = 'positive' | 'neutral' | 'cautious';
+
 export interface RecommendedLink {
   title: string;
   url: string;
@@ -5,6 +8,7 @@ export interface RecommendedLink {
   description: string;
   categories: string[]; // matching ContentCategory ids + 'general' + 'pregnancy'
   tags?: string[]; // fine-grained topic tags for better article matching
+  sentiment?: LinkSentiment; // 記事のトーン: positive=支持的, neutral=中立, cautious=慎重・注意喚起
 }
 
 export const RECOMMENDED_LINKS: RecommendedLink[] = [
@@ -16,6 +20,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '365日診療の小児科医が解説。発熱時の家庭ケア・解熱剤のタイミング・受診すべきサイン',
     categories: ['health'],
     tags: ['発熱', '受診目安', '小児科', '対処法'],
+    sentiment: 'neutral',
   },
   {
     title: '小学生の理想的な睡眠時間はどのくらい？',
@@ -24,6 +29,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '睡眠専門医が年齢別の推奨睡眠時間・就寝リズムの作り方を具体的に解説',
     categories: ['health', 'lifestyle'],
     tags: ['睡眠', '生活リズム', '小学生'],
+    sentiment: 'neutral',
   },
   {
     title: '寝る子は育つ～子どもにとって睡眠が大切な科学的理由',
@@ -32,6 +38,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '成長ホルモンと睡眠の関係、寝かしつけの具体的な工夫を科学的に解説',
     categories: ['health', 'development'],
     tags: ['睡眠', '成長', '生活リズム'],
+    sentiment: 'positive',
   },
 
   // === 教育・学習 ===
@@ -42,6 +49,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '文科省調査にも基づく読み聞かせの学力効果。年齢別のおすすめ絵本と読み方のコツ',
     categories: ['education', 'development'],
     tags: ['読み聞かせ', '絵本', '知育', '学力'],
+    sentiment: 'positive',
   },
   {
     title: '【教育研究家に聞く】読み聞かせの効果&年齢別のコツ',
@@ -50,6 +58,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '教育研究家が0歳〜小学生まで年齢別の読み聞かせ方法と注意点を具体的にアドバイス',
     categories: ['education', 'development'],
     tags: ['読み聞かせ', '絵本', '年齢別'],
+    sentiment: 'positive',
   },
   {
     title: '小学生の友達トラブル～サインを見逃さず対処するには',
@@ -58,6 +67,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '友達関係のSOSサインの見分け方、親の介入タイミング、学校への相談方法を具体的に解説',
     categories: ['education', 'social', 'mental'],
     tags: ['友達', 'トラブル', '小学生', '対処法'],
+    sentiment: 'cautious',
   },
 
   // === 発達・成長 ===
@@ -68,6 +78,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '発達障害の専門家が回答。年齢別の特徴チェックリストと家庭・学校でのサポート方法',
     categories: ['development', 'mental'],
     tags: ['発達障害', 'ADHD', '自閉症', 'ASD', 'チェックリスト'],
+    sentiment: 'neutral',
   },
   {
     title: '子供の発達障害の特徴は？種類別チェックリスト',
@@ -76,6 +87,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '精神科医がASD・ADHD・SLDの種類別に特徴と年齢ごとの気づきポイントを解説',
     categories: ['development', 'mental'],
     tags: ['発達障害', 'ADHD', '自閉症', 'ASD'],
+    sentiment: 'neutral',
   },
 
   // === 食育・栄養 ===
@@ -86,6 +98,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '管理栄養士が月齢別に食材の固さ・量・進め方を具体的に解説。初期〜完了期まで網羅',
     categories: ['nutrition'],
     tags: ['離乳食', '食材', '月齢', 'アレルギー'],
+    sentiment: 'neutral',
   },
   {
     title: '子どもの偏食や好き嫌いはどうする？解決策を管理栄養士が解説',
@@ -94,6 +107,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '偏食の原因と年齢別の具体的な克服方法。調理の工夫・食体験・スモールステップ法',
     categories: ['nutrition'],
     tags: ['偏食', '好き嫌い', '食育', '食材'],
+    sentiment: 'positive',
   },
   {
     title: '親を悩ませる「子どもの偏食」改善のコツ',
@@ -102,6 +116,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '管理栄養士監修。味付け・見た目・食環境の工夫で偏食を改善する実践テクニック',
     categories: ['nutrition', 'health'],
     tags: ['偏食', '好き嫌い', '栄養', 'レシピ'],
+    sentiment: 'positive',
   },
 
   // === メンタル・心理 ===
@@ -112,6 +127,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '米国精神科医の知見に基づく、いじめ発覚時の対応手順と子どもへの声かけ方法',
     categories: ['mental', 'social'],
     tags: ['いじめ', '対処法', '学校', 'メンタルヘルス'],
+    sentiment: 'cautious',
   },
   {
     title: '子育てストレス解消・メンタルケアのコツ7選',
@@ -120,6 +136,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: 'メンタルヘルスケア専門家が解説。ストレスの3つの予兆と、自宅でできる具体的な解消法',
     categories: ['mental'],
     tags: ['ストレス', 'メンタルヘルス', 'セルフケア'],
+    sentiment: 'positive',
   },
 
   // === デジタル・メディア ===
@@ -130,6 +147,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: 'iPhone/Android別の具体的な設定手順と、年齢別のスマホルール作りのポイント',
     categories: ['digital'],
     tags: ['スマホ', '時間制限', 'ルール', 'ゲーム'],
+    sentiment: 'cautious',
   },
   {
     title: 'スマホやタブレットの「ルール」は？みんなの"我が家流"を紹介',
@@ -138,6 +156,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '実際の家庭のスマホルール事例集。使用時間・場所・アプリなど具体的な約束ごと',
     categories: ['digital'],
     tags: ['スマホ', 'タブレット', 'ルール', 'ゲーム'],
+    sentiment: 'neutral',
   },
   {
     title: '総務省「インターネットトラブル事例集」',
@@ -146,6 +165,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: 'SNSいじめ・課金トラブル・個人情報流出など、実際に起きた子どものネットトラブル事例と対策',
     categories: ['digital'],
     tags: ['ネット', 'SNS', 'トラブル', 'スマホ'],
+    sentiment: 'cautious',
   },
 
   // === 社会・友達関係 ===
@@ -156,6 +176,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '低学年〜高学年で変化する友達関係の特徴と、親がすべきサポートを年齢別に解説',
     categories: ['social', 'mental'],
     tags: ['友達', 'トラブル', '小学生', '対処法'],
+    sentiment: 'neutral',
   },
 
   // === 妊娠・出産 ===
@@ -166,6 +187,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '産婦人科医監修。妊娠時期別の葉酸推奨摂取量・多く含む食品・サプリの選び方',
     categories: ['pregnancy', 'health'],
     tags: ['妊娠', '葉酸', '栄養', 'サプリ'],
+    sentiment: 'neutral',
   },
 
   // === 生活・ライフスタイル ===
@@ -176,6 +198,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '文科省・厚労省・OECDのデータに基づく年齢別推奨睡眠時間と、日本の子どもの睡眠の実態',
     categories: ['lifestyle', 'health'],
     tags: ['睡眠', '生活リズム', '年齢別'],
+    sentiment: 'neutral',
   },
   {
     title: 'トイレトレーニングはいつから？時期・やり方・進め方のコツ',
@@ -184,6 +207,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '開始時期の目安サインからステップ別の進め方、うまくいかないときの対処法まで網羅',
     categories: ['lifestyle', 'development'],
     tags: ['トイレトレーニング', '1〜3歳', '生活習慣'],
+    sentiment: 'neutral',
   },
   {
     title: '歯磨きを嫌がる子供への対処法【1歳～6歳】年齢別アドバイス',
@@ -192,6 +216,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '小児歯科医が年齢別の仕上げ磨きのコツ・嫌がる原因・歯ブラシの選び方を具体的に解説',
     categories: ['health', 'lifestyle'],
     tags: ['歯磨き', '仕上げ磨き', '虫歯予防', '対処法'],
+    sentiment: 'neutral',
   },
 
   // === 子どもの心・自己肯定感 ===
@@ -202,6 +227,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '結果でなく過程を褒める・選ばせる・存在を認めるなど、具体的な声かけ例を多数紹介',
     categories: ['mental', 'development'],
     tags: ['自己肯定感', '声かけ', '褒め方', '子育て'],
+    sentiment: 'positive',
   },
   {
     title: 'ひと言で子どものやる気を上げる「声かけ10選」',
@@ -210,6 +236,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '自己肯定感が高まるポジティブな言葉。NG声かけとの比較で実践しやすい具体例',
     categories: ['mental', 'education'],
     tags: ['自己肯定感', '声かけ', 'やる気', '褒め方'],
+    sentiment: 'positive',
   },
 
   // === プログラミング教育 ===
@@ -220,6 +247,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '何年生から？何を学ぶ？Scratchとは？学年別のアプローチ方法と家庭でできるサポート',
     categories: ['education', 'digital'],
     tags: ['プログラミング', '小学生', '必修化', 'Scratch'],
+    sentiment: 'positive',
   },
 
   // === 予防接種 ===
@@ -230,6 +258,7 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
     description: '生後2ヶ月からのワクチン接種順序・同時接種の組み合わせ・スケジュール自動作成ツール付き',
     categories: ['health'],
     tags: ['予防接種', 'ワクチン', 'スケジュール', '赤ちゃん'],
+    sentiment: 'neutral',
   },
 ];
 

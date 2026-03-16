@@ -252,19 +252,27 @@ export default function HomePage() {
                   .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
                   .slice(0, 3);
 
+                const sentimentDot = link.sentiment === 'positive' ? 'bg-blue-400'
+                  : link.sentiment === 'cautious' ? 'bg-amber-400' : 'bg-gray-300';
+                const sentimentBorder = link.sentiment === 'positive' ? 'border-blue-100'
+                  : link.sentiment === 'cautious' ? 'border-amber-100' : 'border-gray-200';
+
                 return (
-                  <div key={link.title} className="rounded-xl bg-white border border-blue-100 overflow-hidden">
+                  <div key={link.title} className={`rounded-xl bg-white border ${sentimentBorder} overflow-hidden`}>
                     <div className="p-4 flex items-start gap-3">
                       <div className="min-w-0 flex-1">
-                        <a
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-bold text-sm text-gray-900 hover:text-blue-600 transition-colors"
-                        >
-                          {link.title}
-                          <span className="ml-1 text-xs text-gray-400">↗</span>
-                        </a>
+                        <div className="flex items-center gap-1.5">
+                          <span className={`shrink-0 w-2 h-2 rounded-full ${sentimentDot}`} />
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-bold text-sm text-gray-900 hover:text-blue-600 transition-colors"
+                          >
+                            {link.title}
+                            <span className="ml-1 text-xs text-gray-400">↗</span>
+                          </a>
+                        </div>
                         <p className="text-xs text-gray-400 mt-0.5">{link.org}</p>
                         <p className="text-xs text-gray-500 mt-1">{link.description}</p>
                       </div>
@@ -292,7 +300,12 @@ export default function HomePage() {
               });
             })()}
           </div>
-          <div className="mt-6 text-center">
+          <div className="mt-4 flex items-center justify-center gap-4 text-xs text-gray-400">
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-blue-400" /> 支持的</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-300" /> 中立</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-400" /> 慎重・注意喚起</span>
+          </div>
+          <div className="mt-4 text-center">
             <Link
               href="/experts"
               className="text-sm text-blue-600 hover:underline"
