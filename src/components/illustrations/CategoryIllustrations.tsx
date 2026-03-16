@@ -239,6 +239,77 @@ export function DigitalIllustration({ className = '', size = 80 }: IllustrationP
   );
 }
 
+export function SocialIllustration({ className = '', size = 80 }: IllustrationProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 80 80" fill="none" className={className}>
+      <circle cx="40" cy="40" r="38" fill="#F0F4FF" />
+      {/* Globe */}
+      <circle cx="40" cy="38" r="20" fill="#A0C4FF" opacity="0.3" stroke="#A0C4FF" strokeWidth="2" />
+      <ellipse cx="40" cy="38" rx="10" ry="20" stroke="#A0C4FF" strokeWidth="1.5" fill="none" />
+      <line x1="20" y1="38" x2="60" y2="38" stroke="#A0C4FF" strokeWidth="1.5" />
+      <path d="M24 28 Q40 32 56 28" stroke="#A0C4FF" strokeWidth="1" fill="none" />
+      <path d="M24 48 Q40 44 56 48" stroke="#A0C4FF" strokeWidth="1" fill="none" />
+      {/* People */}
+      <circle cx="22" cy="62" r="5" fill="#FFE4D6" />
+      <rect x="18" y="67" width="8" height="8" rx="4" fill="#A8E6CF" />
+      <circle cx="40" cy="62" r="5" fill="#FFE4D6" />
+      <rect x="36" y="67" width="8" height="8" rx="4" fill="#FFD9A0" />
+      <circle cx="58" cy="62" r="5" fill="#FFE4D6" />
+      <rect x="54" y="67" width="8" height="8" rx="4" fill="#FFB3B3" />
+      {/* Connection lines */}
+      <line x1="27" y1="64" x2="35" y2="64" stroke="#A0C4FF" strokeWidth="1" strokeDasharray="2 2" />
+      <line x1="45" y1="64" x2="53" y2="64" stroke="#A0C4FF" strokeWidth="1" strokeDasharray="2 2" />
+    </svg>
+  );
+}
+
+export function LifestyleIllustration({ className = '', size = 80 }: IllustrationProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 80 80" fill="none" className={className}>
+      <circle cx="40" cy="40" r="38" fill="#FFF8F0" />
+      {/* House */}
+      <path d="M20 42 L40 24 L60 42" stroke="#e07b4c" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <rect x="26" y="42" width="28" height="22" rx="2" fill="#FFE4D6" />
+      <rect x="34" y="50" width="12" height="14" rx="1" fill="#e07b4c" opacity="0.6" />
+      {/* Window */}
+      <rect x="28" y="46" width="8" height="8" rx="1" fill="#A0C4FF" opacity="0.5" />
+      <line x1="32" y1="46" x2="32" y2="54" stroke="white" strokeWidth="1" />
+      <line x1="28" y1="50" x2="36" y2="50" stroke="white" strokeWidth="1" />
+      {/* Coin/piggy */}
+      <circle cx="62" cy="60" r="8" fill="#FFD9A0" />
+      <text x="59" y="64" fontSize="10" fill="#c4623a" fontWeight="bold" fontFamily="sans-serif">¥</text>
+      {/* Leaf */}
+      <path d="M16 30 Q20 22 24 30 Q20 32 16 30" fill="#A8E6CF" />
+      {/* Stars */}
+      <circle cx="66" cy="22" r="2.5" fill="#FFB3B3" />
+      <circle cx="14" cy="50" r="2" fill="#A0C4FF" />
+    </svg>
+  );
+}
+
+export function PregnancyIllustration({ className = '', size = 80 }: IllustrationProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 80 80" fill="none" className={className}>
+      <circle cx="40" cy="40" r="38" fill="#FFF0F5" />
+      {/* Mother silhouette */}
+      <circle cx="38" cy="26" r="10" fill="#FFE4D6" />
+      <path d="M28 36 Q28 60 38 62 Q42 62 44 56 Q48 62 52 60 Q52 36 44 36 Z" fill="#FFB3B3" opacity="0.6" />
+      {/* Baby heart */}
+      <path d="M36 48 Q36 44 40 48 Q44 44 44 48 Q44 52 40 54 Q36 52 36 48" fill="#FF9E9E" />
+      {/* Stork */}
+      <circle cx="62" cy="24" r="6" fill="white" stroke="#A0C4FF" strokeWidth="1.5" />
+      <circle cx="64" cy="23" r="1" fill="#2d2a26" />
+      <path d="M66 25 L72 27" stroke="#FFD9A0" strokeWidth="2" strokeLinecap="round" />
+      {/* Bundle */}
+      <ellipse cx="72" cy="32" rx="6" ry="5" fill="#A8E6CF" opacity="0.6" />
+      {/* Stars */}
+      <circle cx="18" cy="18" r="2.5" fill="#FFD9A0" />
+      <circle cx="66" cy="62" r="2" fill="#A8E6CF" />
+      <circle cx="20" cy="58" r="2" fill="#A0C4FF" />
+    </svg>
+  );
+}
+
 // Map functions
 export function getCategoryIllustration(category: string) {
   switch (category) {
@@ -248,6 +319,9 @@ export function getCategoryIllustration(category: string) {
     case 'development': return DevelopmentIllustration;
     case 'mental': return MentalIllustration;
     case 'digital': return DigitalIllustration;
+    case 'social': return SocialIllustration;
+    case 'lifestyle': return LifestyleIllustration;
+    case 'pregnancy': return PregnancyIllustration;
     default: return EducationIllustration;
   }
 }
