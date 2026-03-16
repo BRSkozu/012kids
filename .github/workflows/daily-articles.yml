@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: 'Number of articles to generate'
+        description: '生成する記事数（デフォルト10件）'
         required: false
-        default: '100'
+        default: '10'
 
 permissions:
   contents: write
@@ -32,8 +32,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate new articles
-        run: node scripts/daily-article-generator.mjs
+      - name: Generate new articles (10件/日)
+        run: node scripts/daily-article-generator.mjs --count ${{ github.event.inputs.count || '10' }}
 
       - name: Regenerate article index
         run: npm run prebuild
@@ -51,6 +51,6 @@ jobs:
         run: |
           git config user.name "012kids-bot"
           git config user.email "bot@012.kids"
-          git add content/articles/ src/data/articles.ts public/
+          git add content/articles/ src/data/articles.ts public/ scripts/topic-db.json
           git commit -m "feat: 自動生成 ${{ steps.count.outputs.new_articles }}件の新規記事を追加（合計${{ steps.count.outputs.total_articles }}件）"
           git push
