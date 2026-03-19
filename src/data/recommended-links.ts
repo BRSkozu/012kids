@@ -318,10 +318,14 @@ export const RECOMMENDED_LINKS: RecommendedLink[] = [
   },
 ];
 
+/** 公開記事に表示するおすすめサイトの最低件数 */
+export const MIN_RECOMMENDED_LINKS = 5;
+
 /**
  * Get recommended links for an article based on its categories and tags.
  * Prioritizes tag matches (specific relevance) over category matches (general relevance).
  * Ensures sentiment diversity: at least 1 of each available sentiment type is included.
+ * Always returns at least MIN_RECOMMENDED_LINKS items (if enough links exist in the database).
  * Returns up to `count` links.
  */
 export function getRecommendedLinks(
@@ -369,6 +373,30 @@ export function getRecommendedLinks(
   for (const item of remaining) {
     if (result.length >= count) break;
     result.push(item);
+  }
+
+  // マッチ不足時: 最低件数に達するまでスコア0のリンクから補充
+  const minCount = Math.min(count, MIN_RECOMMENDED_LINKS);
+  if (result.length < minCount) {
+    const usedUrls = new Set(result.map((s) => s.link.url));
+    const unmatched = scored
+      .filter((s) => s.score === 0 && !usedUrls.has(s.link.url));
+    // センチメント多様性を保ちつつ補充
+    for (const sentiment of sentiments) {
+      if (result.length >= minCount) break;
+      const idx = unmatched.findIndex(
+        (s) => (s.link.sentiment ?? 'neutral') === sentiment
+      );
+      if (idx !== -1) {
+        result.push(unmatched[idx]);
+        unmatched.splice(idx, 1);
+      }
+    }
+    // それでも足りなければ残りから追加
+    for (const item of unmatched) {
+      if (result.length >= minCount) break;
+      result.push(item);
+    }
   }
 
   // Re-sort final list by score for natural ordering
