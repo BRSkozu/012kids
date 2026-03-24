@@ -12,6 +12,7 @@ import { getCurrentSeasonalTheme, getSeasonalScore } from '@/data/seasonal-conte
 const MATOME_SECTIONS = [
   {
     title: '年齢別おすすめ記事まとめ',
+    icon: '👶',
     items: [
       { label: '0〜2歳：赤ちゃんの育て方まとめ', href: '/articles?stage=0stage', desc: '授乳・離乳食・睡眠・発達の基本' },
       { label: '3〜5歳：幼児期の成長ガイド', href: '/articles?stage=pre', desc: '言葉・しつけ・幼稚園・遊びの工夫' },
@@ -22,6 +23,7 @@ const MATOME_SECTIONS = [
   },
   {
     title: 'テーマ別まとめ',
+    icon: '📖',
     items: [
       { label: '離乳食・幼児食の進め方', href: '/category/nutrition', desc: '月齢別の進め方、アレルギー対策、レシピ' },
       { label: '子どもの発達が気になるとき', href: '/category/development', desc: '発達の目安、相談先、支援制度' },
@@ -79,25 +81,33 @@ export default function HomePage() {
 
       {/* Article Count Banner */}
       <section className="max-w-7xl mx-auto px-4 -mt-2 mb-8">
-        <div className="bg-[var(--color-warm-cream)] rounded-xl p-5 border border-orange-100">
+        <div className="glass rounded-2xl p-6 border border-orange-100/60 shadow-sm">
           <p className="text-center text-sm text-gray-600">
             012.kidsは、子育て・教育に関する公的機関や専門家の情報をわかりやすくまとめて紹介するサイトです。
           </p>
           <p className="mt-3 text-center text-base font-bold text-[var(--color-primary)]">
-            現在 <span className="text-3xl">{totalCount.toLocaleString()}</span> 記事を掲載中
+            現在 <span className="text-3xl gradient-text">{totalCount.toLocaleString()}</span> 記事を掲載中
           </p>
           <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-gray-500">
             {CATEGORIES.map((cat) => (
-              <span key={cat.id}>
+              <Link
+                key={cat.id}
+                href={`/category/${cat.id}`}
+                className="hover:text-[var(--color-primary)] transition-colors"
+              >
                 {cat.icon} {cat.label}：{categoryCounts[cat.id] || 0}件
-              </span>
+              </Link>
             ))}
           </div>
           <div className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1 text-xs text-gray-400">
             {AGE_STAGES.map((stage) => (
-              <span key={stage.id}>
+              <Link
+                key={stage.id}
+                href={`/age-guide/${stage.id}`}
+                className="hover:text-[var(--color-primary)] transition-colors"
+              >
                 {stage.ageRange}：{stageCounts[stage.id] || 0}件
-              </span>
+              </Link>
             ))}
           </div>
         </div>
@@ -105,8 +115,11 @@ export default function HomePage() {
 
       {/* Worry Search */}
       <section className="max-w-7xl mx-auto px-4 py-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">お悩みから探す</h2>
-        <p className="text-sm text-gray-500 mb-6">同じ悩みを持つパパ・ママの「あるある」から、役立つ記事を見つけましょう</p>
+        <div className="flex items-center gap-3 mb-2">
+          <div className="w-1 h-6 bg-[var(--color-primary)] rounded-full" />
+          <h2 className="text-2xl font-bold text-gray-900">お悩みから探す</h2>
+        </div>
+        <p className="text-sm text-gray-500 mb-6 ml-5">同じ悩みを持つパパ・ママの「あるある」から、役立つ記事を見つけましょう</p>
         <WorrySearchCompact />
       </section>
 
@@ -122,18 +135,27 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4">
           {MATOME_SECTIONS.map((section) => (
             <div key={section.title} className="mb-10 last:mb-0">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">{section.icon}</span>
+                <h2 className="text-2xl font-bold text-gray-900">{section.title}</h2>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {section.items.map((item) => (
                   <Link
                     key={item.label}
                     href={item.href}
-                    className="group block p-4 rounded-xl bg-white border border-orange-100 hover:shadow-md hover:border-orange-200 transition-all"
+                    className="group block p-4 rounded-xl bg-white border border-orange-100 card-hover"
                   >
                     <h3 className="font-bold text-sm text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">
                       {item.label}
                     </h3>
                     <p className="text-xs text-gray-500 mt-1">{item.desc}</p>
+                    <span className="inline-flex items-center gap-1 mt-2 text-xs font-medium text-[var(--color-primary)] opacity-0 group-hover:opacity-100 transition-opacity">
+                      記事を見る
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -145,15 +167,21 @@ export default function HomePage() {
       {/* Featured Articles */}
       <section className="max-w-7xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900">注目の記事</h2>
-            <p className="text-sm text-gray-500 mt-1">よく読まれている記事をピックアップ</p>
+          <div className="flex items-center gap-3">
+            <div className="w-1 h-6 bg-[var(--color-primary)] rounded-full" />
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">注目の記事</h2>
+              <p className="text-sm text-gray-500 mt-1">よく読まれている記事をピックアップ</p>
+            </div>
           </div>
           <Link
             href="/articles"
-            className="text-sm font-medium text-[var(--color-primary)] hover:underline"
+            className="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary)] hover:underline"
           >
-            すべて見る →
+            すべて見る
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -167,15 +195,21 @@ export default function HomePage() {
       <section className="bg-[var(--color-warm-bg)] py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900">新着記事</h2>
-              <p className="text-sm text-gray-500 mt-1">最近公開・更新された記事</p>
+            <div className="flex items-center gap-3">
+              <div className="w-1 h-6 bg-green-400 rounded-full" />
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900">新着記事</h2>
+                <p className="text-sm text-gray-500 mt-1">最近公開・更新された記事</p>
+              </div>
             </div>
             <Link
               href="/articles?sort=newest"
-              className="text-sm font-medium text-[var(--color-primary)] hover:underline"
+              className="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary)] hover:underline"
             >
-              すべて見る →
+              すべて見る
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -188,19 +222,22 @@ export default function HomePage() {
 
       {/* Ranking */}
       <section className="max-w-7xl mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">人気記事ランキング</h2>
-        <p className="text-sm text-gray-500 mb-6">みんなに読まれている記事トップ10</p>
+        <div className="flex items-center gap-3 mb-2">
+          <div className="w-1 h-6 bg-amber-400 rounded-full" />
+          <h2 className="text-2xl font-bold text-gray-900">人気記事ランキング</h2>
+        </div>
+        <p className="text-sm text-gray-500 mb-6 ml-5">みんなに読まれている記事トップ10</p>
         <div className="space-y-3">
           {ranking.map((article, i) => (
             <Link
               key={article.id}
               href={`/articles/${article.slug}`}
-              className="group flex items-center gap-4 p-4 rounded-xl bg-white border border-orange-100 hover:shadow-md hover:border-orange-200 transition-all"
+              className="group flex items-center gap-4 p-4 rounded-xl bg-white border border-orange-100 card-hover"
             >
               <span
-                className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold shadow-sm ${
                   i < 3
-                    ? 'bg-[var(--color-primary)] text-white'
+                    ? 'bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] text-white'
                     : 'bg-orange-100 text-[var(--color-primary-dark)]'
                 }`}
               >
@@ -212,7 +249,7 @@ export default function HomePage() {
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5 truncate">{article.excerpt}</p>
               </div>
-              <span className="shrink-0 text-gray-400 group-hover:text-[var(--color-primary)] transition-colors">
+              <span className="shrink-0 text-gray-400 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all duration-200">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -223,34 +260,42 @@ export default function HomePage() {
       </section>
 
       {/* Categories with counts */}
-      <section className="max-w-7xl mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">カテゴリから探す</h2>
-        <p className="text-sm text-gray-500 mb-8">気になるテーマの記事を見つけましょう</p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {CATEGORIES.map((cat) => (
-            <Link
-              key={cat.id}
-              href={`/category/${cat.id}`}
-              className="group block p-5 rounded-xl bg-white border border-orange-100 hover:shadow-md hover:shadow-orange-100/50 hover:border-orange-200 transition-all"
-            >
-              <span className="text-3xl mb-3 block">{cat.icon}</span>
-              <h3 className="font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">
-                {cat.label}
-              </h3>
-              <p className="text-xs text-gray-500 mt-1 line-clamp-2">{cat.description}</p>
-              <p className="text-xs font-medium text-[var(--color-primary)] mt-2">
-                {categoryCounts[cat.id] || 0}件の記事
-              </p>
-            </Link>
-          ))}
+      <section className="bg-[var(--color-warm-bg)] py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-1 h-6 bg-blue-400 rounded-full" />
+            <h2 className="text-2xl font-bold text-gray-900">カテゴリから探す</h2>
+          </div>
+          <p className="text-sm text-gray-500 mb-8 ml-5">気になるテーマの記事を見つけましょう</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {CATEGORIES.map((cat) => (
+              <Link
+                key={cat.id}
+                href={`/category/${cat.id}`}
+                className="group block p-5 rounded-xl bg-white border border-orange-100 card-hover"
+              >
+                <span className="text-3xl mb-3 block group-hover:scale-110 transition-transform duration-300 inline-block">{cat.icon}</span>
+                <h3 className="font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">
+                  {cat.label}
+                </h3>
+                <p className="text-xs text-gray-500 mt-1 line-clamp-2">{cat.description}</p>
+                <p className="text-xs font-medium text-[var(--color-primary)] mt-2">
+                  {categoryCounts[cat.id] || 0}件の記事
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Recommended External Links with Related Articles */}
-      <section className="bg-blue-50/50 py-12">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">おすすめ公的サイト・専門機関リンク集</h2>
-          <p className="text-sm text-gray-500 mb-8">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-1 h-6 bg-indigo-400 rounded-full" />
+            <h2 className="text-2xl font-bold text-gray-900">おすすめ公的サイト・専門機関リンク集</h2>
+          </div>
+          <p className="text-sm text-gray-500 mb-8 ml-5">
             信頼できる子育て情報の一次ソースと、関連する012.kids記事をセットでご紹介
           </p>
           <div className="space-y-4">
@@ -279,7 +324,7 @@ export default function HomePage() {
                   : link.sentiment === 'cautious' ? 'border-amber-100' : 'border-gray-200';
 
                 return (
-                  <div key={link.title} className={`rounded-xl bg-white border ${sentimentBorder} overflow-hidden`}>
+                  <div key={link.title} className={`rounded-xl bg-white border ${sentimentBorder} overflow-hidden hover:shadow-sm transition-shadow duration-200`}>
                     <div className="p-4 flex items-start gap-3">
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-1.5">
@@ -329,9 +374,12 @@ export default function HomePage() {
           <div className="mt-4 text-center">
             <Link
               href="/experts"
-              className="text-sm text-blue-600 hover:underline"
+              className="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline"
             >
-              すべての参考サイト・専門機関を見る →
+              すべての参考サイト・専門機関を見る
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
           </div>
         </div>
@@ -339,33 +387,40 @@ export default function HomePage() {
 
       {/* About Banner */}
       <section className="max-w-7xl mx-auto px-4 py-12">
-        <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            012.kidsの約束
-          </h2>
-          <p className="text-sm text-gray-600 mb-6 max-w-2xl mx-auto">
-            公的機関や専門家の情報をもとに、子育てに役立つ情報をわかりやすくまとめてお届けします。
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-8 max-w-4xl mx-auto">
-            {[
-              { label: '参考元の明示', desc: '情報の出どころを明記' },
-              { label: '中立な立場', desc: '商業的偏りのない情報' },
-              { label: '最新の情報', desc: '常にアップデート' },
-              { label: '安心の設計', desc: '子どもを守るサイト設計' },
-              { label: 'すべての家族に', desc: '多様な家族に寄り添う' },
-            ].map((item) => (
-              <div key={item.label}>
-                <p className="font-bold text-[var(--color-primary)]">{item.label}</p>
-                <p className="text-xs text-gray-500 mt-1">{item.desc}</p>
-              </div>
-            ))}
+        <div className="relative overflow-hidden bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 md:p-12 text-center">
+          <div className="absolute inset-0 dot-pattern opacity-30 pointer-events-none" />
+          <div className="relative">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              012.kidsの約束
+            </h2>
+            <p className="text-sm text-gray-600 mb-6 max-w-2xl mx-auto">
+              公的機関や専門家の情報をもとに、子育てに役立つ情報をわかりやすくまとめてお届けします。
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-8 max-w-4xl mx-auto">
+              {[
+                { label: '参考元の明示', desc: '情報の出どころを明記', icon: '📋' },
+                { label: '中立な立場', desc: '商業的偏りのない情報', icon: '⚖️' },
+                { label: '最新の情報', desc: '常にアップデート', icon: '🔄' },
+                { label: '安心の設計', desc: '子どもを守るサイト設計', icon: '🛡️' },
+                { label: 'すべての家族に', desc: '多様な家族に寄り添う', icon: '🏠' },
+              ].map((item) => (
+                <div key={item.label} className="group">
+                  <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform duration-300 inline-block">{item.icon}</span>
+                  <p className="font-bold text-[var(--color-primary)]">{item.label}</p>
+                  <p className="text-xs text-gray-500 mt-1">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <Link
+              href="/editorial-policy"
+              className="inline-flex items-center gap-2 mt-8 bg-[var(--color-primary)] text-white text-sm font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-all hover:shadow-md hover:shadow-orange-200/50"
+            >
+              編集方針を見る
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </div>
-          <Link
-            href="/editorial-policy"
-            className="inline-block mt-8 bg-[var(--color-primary)] text-white text-sm font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
-          >
-            編集方針を見る
-          </Link>
         </div>
       </section>
     </>

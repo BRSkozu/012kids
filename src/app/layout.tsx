@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import BackToTop from '@/components/ui/BackToTop';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
 import './globals.css';
 
@@ -135,6 +136,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content" className="min-h-screen">{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

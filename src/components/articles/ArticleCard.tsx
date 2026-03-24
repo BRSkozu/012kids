@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
-
 import CategoryTag from '@/components/ui/CategoryTag';
 import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
 
@@ -17,7 +16,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
     return (
       <Link
         href={`/articles/${article.slug}`}
-        className="group flex items-center gap-4 p-3 rounded-lg hover:bg-orange-50/60 transition-colors border-b border-gray-100 last:border-b-0"
+        className="group flex items-center gap-4 p-3 rounded-lg hover:bg-orange-50/60 transition-all duration-200 border-b border-gray-100 last:border-b-0"
       >
         <div className="min-w-0 flex-1">
           <h3 className="text-sm font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-1">
@@ -32,7 +31,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           ))}
           <span className="text-xs text-gray-400 whitespace-nowrap">{article.readingTime}分</span>
         </div>
-        <span className="shrink-0 text-gray-400 group-hover:text-[var(--color-primary)] transition-colors">
+        <span className="shrink-0 text-gray-400 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all duration-200">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
@@ -43,12 +42,12 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'compact') {
     return (
-      <article className="rounded-xl hover:bg-orange-50/50 transition-colors group">
+      <article className="rounded-xl hover:bg-orange-50/50 transition-all duration-200 group">
         <Link
           href={`/articles/${article.slug}`}
           className="flex gap-4 p-4"
         >
-          <div className="w-20 h-20 rounded-lg bg-orange-50 shrink-0 flex items-center justify-center overflow-hidden">
+          <div className="w-20 h-20 rounded-lg bg-orange-50 shrink-0 flex items-center justify-center overflow-hidden group-hover:shadow-md transition-shadow duration-200">
             <Illustration size={64} />
           </div>
           <div className="min-w-0">
@@ -67,10 +66,13 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'featured') {
     return (
-      <article className="group rounded-2xl overflow-hidden bg-white border border-orange-100 hover:shadow-lg hover:shadow-orange-100/50 transition-shadow">
+      <article className="group rounded-2xl overflow-hidden bg-white border border-orange-100 card-hover">
         <Link href={`/articles/${article.slug}`} className="block">
-          <div className="aspect-[16/9] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center">
-            <Illustration size={120} />
+          <div className="aspect-[16/9] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
+            <div className="group-hover:scale-110 transition-transform duration-500">
+              <Illustration size={120} />
+            </div>
           </div>
           <div className="p-5">
             <div className="flex items-center gap-2 mb-3">
@@ -97,10 +99,12 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   // Default
   return (
-    <article className="group rounded-xl overflow-hidden bg-white border border-orange-100 hover:shadow-md hover:shadow-orange-100/50 transition-shadow">
+    <article className="group rounded-xl overflow-hidden bg-white border border-orange-100 card-hover">
       <Link href={`/articles/${article.slug}`} className="block">
-        <div className="aspect-[2/1] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center">
-          <Illustration size={96} />
+        <div className="aspect-[2/1] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center relative overflow-hidden">
+          <div className="group-hover:scale-110 transition-transform duration-500">
+            <Illustration size={96} />
+          </div>
         </div>
         <div className="p-4">
           <div className="flex items-center gap-2 mb-2">

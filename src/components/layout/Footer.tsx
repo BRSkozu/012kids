@@ -9,31 +9,42 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-1.5 mb-4">
-              <span className="text-3xl font-bold text-[var(--color-primary)]">012</span>
-              <span className="text-lg font-semibold text-gray-500">.kids</span>
+            <Link href="/" className="inline-flex items-baseline gap-0.5 mb-4 group">
+              <span className="text-3xl font-bold text-[var(--color-primary)] group-hover:opacity-80 transition-opacity">012</span>
+              <span className="text-lg font-semibold text-gray-400 group-hover:text-gray-500 transition-colors">.kids</span>
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed">
               0歳から12歳の子どもに関わるすべての方へ。
               公的機関や専門家の情報をもとに、子育てに役立つ情報をわかりやすくまとめています。
             </p>
+            {/* Color bar representing all stages */}
+            <div className="flex gap-1 mt-4">
+              {AGE_STAGES.map((stage) => (
+                <div
+                  key={stage.id}
+                  className="h-1 flex-1 rounded-full"
+                  style={{ backgroundColor: stage.color }}
+                />
+              ))}
+            </div>
           </div>
 
           {/* Age Stages */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">年齢別ガイド</h3>
-            <ul className="space-y-2">
+            <h3 className="font-semibold text-gray-900 mb-4 text-sm uppercase tracking-wider">年齢別ガイド</h3>
+            <ul className="space-y-2.5">
               {AGE_STAGES.map((stage) => (
                 <li key={stage.id}>
                   <Link
                     href={`/age-guide/${stage.id}`}
-                    className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-2"
+                    className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-2 group"
                   >
                     <span
-                      className="inline-block w-2 h-2 rounded-full"
+                      className="inline-block w-2.5 h-2.5 rounded-full group-hover:scale-125 transition-transform duration-200"
                       style={{ backgroundColor: stage.color }}
                     />
-                    {stage.label} ({stage.ageRange})
+                    <span>{stage.label}</span>
+                    <span className="text-xs text-gray-400">({stage.ageRange})</span>
                   </Link>
                 </li>
               ))}
@@ -42,14 +53,15 @@ export default function Footer() {
 
           {/* Categories */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">カテゴリ</h3>
-            <ul className="space-y-2">
+            <h3 className="font-semibold text-gray-900 mb-4 text-sm uppercase tracking-wider">カテゴリ</h3>
+            <ul className="space-y-2.5">
               {CATEGORIES.slice(0, 6).map((cat) => (
                 <li key={cat.id}>
                   <Link
                     href={`/category/${cat.id}`}
-                    className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors"
+                    className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors inline-flex items-center gap-1.5"
                   >
+                    <span className="text-xs">{cat.icon}</span>
                     {cat.label}
                   </Link>
                 </li>
@@ -59,38 +71,25 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">サイト情報</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/about" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
-                  このサイトについて
-                </Link>
-              </li>
-              <li>
-                <Link href="/editorial-policy" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
-                  編集方針
-                </Link>
-              </li>
-              <li>
-                <Link href="/experts" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
-                  編集部について
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
-                  お問い合わせ・訂正依頼
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
-                  プライバシーポリシー
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors">
-                  利用規約
-                </Link>
-              </li>
+            <h3 className="font-semibold text-gray-900 mb-4 text-sm uppercase tracking-wider">サイト情報</h3>
+            <ul className="space-y-2.5">
+              {[
+                { href: '/about', label: 'このサイトについて' },
+                { href: '/editorial-policy', label: '編集方針' },
+                { href: '/experts', label: '編集部について' },
+                { href: '/contact', label: 'お問い合わせ・訂正依頼' },
+                { href: '/privacy', label: 'プライバシーポリシー' },
+                { href: '/terms', label: '利用規約' },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-gray-600 hover:text-[var(--color-primary)] transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -100,7 +99,7 @@ export default function Footer() {
             <p className="text-xs text-gray-400">
               &copy; {new Date().getFullYear()} 012.kids All rights reserved.
             </p>
-            <p className="text-xs text-gray-400 text-center max-w-xl">
+            <p className="text-xs text-gray-400 text-center max-w-xl leading-relaxed">
               当サイトは情報まとめサイトです。掲載情報は各種公的機関や専門家の発信をもとに編集部が独自にまとめたものであり、
               医療行為の代替となるものではありません。心配なことがあれば専門家にご相談ください。
             </p>
