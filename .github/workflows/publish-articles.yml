@@ -13,6 +13,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
 
 jobs:
   publish-articles:
@@ -54,6 +60,23 @@ jobs:
 
           Published by publish-articles.mjs via GitHub Actions"
           git push
+
+      - name: Build site
+        if: steps.count.outputs.published != '0'
+        run: npx next build
+        env:
+          GITHUB_PAGES: 'true'
+          NEXT_PUBLIC_BASE_PATH: /012kids
+
+      - name: Upload Pages artifact
+        if: steps.count.outputs.published != '0'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+      - name: Deploy to GitHub Pages
+        if: steps.count.outputs.published != '0'
+        uses: actions/deploy-pages@v4
 
       - name: Summary
         if: always()
