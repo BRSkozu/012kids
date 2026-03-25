@@ -1,0 +1,66 @@
+name: Daily Article Publishing
+
+on:
+  schedule:
+    # 毎日日本時間午前7時（UTC 22:00前日）に実行
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: '公開する記事数（デフォルト10件）'
+        required: false
+        default: '10'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-articles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Publish draft articles
+        run: node scripts/publish-articles.mjs --count ${{ github.event.inputs.count || '10' }}
+
+      - name: Count published articles
+        id: count
+        run: |
+          PUBLISHED=$(git diff --name-only | grep '\.mdx$' | wc -l)
+          echo "published=$PUBLISHED" >> $GITHUB_OUTPUT
+          TOTAL=$(find content/articles -name '*.mdx' | wc -l)
+          echo "total_articles=$TOTAL" >> $GITHUB_OUTPUT
+          echo "Published: $PUBLISHED, Total: $TOTAL"
+
+      - name: Commit and push published articles
+        if: steps.count.outputs.published != '0'
+        run: |
+          git config user.name "012kids-bot"
+          git config user.email "bot@012.kids"
+          git add content/articles/ src/data/articles.ts public/
+          git commit -m "feat: ${{ steps.count.outputs.published }}件の下書き記事を公開（合計${{ steps.count.outputs.total_articles }}件）
+
+          Published by publish-articles.mjs via GitHub Actions"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Daily Article Publishing Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Published articles**: ${{ steps.count.outputs.published }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total articles**: ${{ steps.count.outputs.total_articles }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Date**: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
