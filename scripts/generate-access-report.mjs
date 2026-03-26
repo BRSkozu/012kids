@@ -12,6 +12,17 @@
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 // --- 設定 ---
+if (!process.env.GA_SERVICE_ACCOUNT_JSON) {
+  console.error('エラー: GA_SERVICE_ACCOUNT_JSON 環境変数が設定されていません。');
+  console.error('GitHub リポジトリの Settings > Secrets and variables > Actions で GA_SERVICE_ACCOUNT_JSON シークレットを追加してください。');
+  process.exit(1);
+}
+if (!process.env.GA_PROPERTY_ID) {
+  console.error('エラー: GA_PROPERTY_ID 環境変数が設定されていません。');
+  console.error('GitHub リポジトリの Settings > Secrets and variables > Actions で GA_PROPERTY_ID シークレットを追加してください。');
+  process.exit(1);
+}
+
 const credentials = JSON.parse(process.env.GA_SERVICE_ACCOUNT_JSON);
 const propertyId = process.env.GA_PROPERTY_ID;
 
