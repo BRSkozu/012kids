@@ -5,6 +5,22 @@ import Link from 'next/link';
 import { AGE_STAGES } from '@/data/stages';
 import { getStageByAge } from '@/data/stages';
 
+function getGradeLabel(age: number): string | null {
+  const grades: Record<number, string> = {
+    3: '年少',
+    4: '年中',
+    5: '年長',
+    6: '小1',
+    7: '小2',
+    8: '小3',
+    9: '小4',
+    10: '小5',
+    11: '小6',
+    12: '中1',
+  };
+  return grades[age] ?? null;
+}
+
 export default function AgeSelector() {
   const [age, setAge] = useState<number | null>(null);
   const [mounted, setMounted] = useState(false);
@@ -79,7 +95,7 @@ export default function AgeSelector() {
                     key={yr}
                     onClick={() => handleAgeSelect(yr)}
                     className={`
-                      relative h-12 rounded-xl font-bold text-sm transition-all duration-300
+                      relative h-14 rounded-xl font-bold text-sm transition-all duration-300 flex flex-col items-center justify-center
                       ${isSelected
                         ? 'ring-2 ring-offset-2 ring-[var(--color-primary)] scale-110 shadow-lg z-10'
                         : 'hover:scale-105 hover:shadow-md hover:z-10'}
@@ -88,10 +104,13 @@ export default function AgeSelector() {
                       backgroundColor: isSelected ? stage.color : `${stage.color}50`,
                       color: '#2d2a26',
                     }}
-                    aria-label={`${yr}歳`}
+                    aria-label={`${yr}歳${getGradeLabel(yr) ? `（${getGradeLabel(yr)}）` : ''}`}
                     aria-pressed={isSelected}
                   >
-                    {yr}歳
+                    <span>{yr}歳</span>
+                    {getGradeLabel(yr) && (
+                      <span className="text-[10px] font-normal leading-none text-gray-500">{getGradeLabel(yr)}</span>
+                    )}
                   </button>
                 );
               })}
