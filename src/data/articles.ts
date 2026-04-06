@@ -41,7 +41,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":89,"reliability":25,"neutrality":24,"freshness":18,"ageRelevance":11,"readability":5},
+    score: {"total":83,"reliability":25,"neutrality":24,"freshness":18,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/baby-sign-language-guide.jpg",
@@ -85,7 +85,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":12,"readability":7},
+    score: {"total":85,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/baby-sleep-training.jpg",
@@ -129,7 +129,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":27,"neutrality":23,"freshness":15,"ageRelevance":10,"readability":8},
+    score: {"total":83,"reliability":27,"neutrality":23,"freshness":15,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/baby-teeth-growth-order.jpg",
@@ -173,7 +173,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":77,"reliability":22,"neutrality":24,"freshness":15,"ageRelevance":11,"readability":7},
+    score: {"total":79,"reliability":22,"neutrality":24,"freshness":15,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/baby-visual-development.jpg",
@@ -217,7 +217,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":72,"reliability":23,"neutrality":24,"freshness":15,"ageRelevance":14,"readability":6},
+    score: {"total":82,"reliability":23,"neutrality":24,"freshness":15,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/bedwetting-enuresis-guide.jpg",
@@ -261,7 +261,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":79,"reliability":22,"neutrality":24,"freshness":18,"ageRelevance":14,"readability":6},
+    score: {"total":84,"reliability":22,"neutrality":24,"freshness":18,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/bilingual-child-development.jpg",
@@ -349,7 +349,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":22,"neutrality":20,"freshness":19,"ageRelevance":11,"readability":5},
+    score: {"total":77,"reliability":22,"neutrality":20,"freshness":19,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/dcd-coordination-disorder.jpg",
@@ -393,7 +393,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":72,"reliability":26,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":8},
+    score: {"total":89,"reliability":26,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/early-childhood-reading.jpg",
@@ -437,7 +437,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":28,"neutrality":25,"freshness":18,"ageRelevance":14,"readability":7},
+    score: {"total":92,"reliability":28,"neutrality":25,"freshness":18,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/first-walking-timing.jpg",
@@ -481,7 +481,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":84,"reliability":28,"neutrality":21,"freshness":16,"ageRelevance":11,"readability":6},
+    score: {"total":82,"reliability":28,"neutrality":21,"freshness":16,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/following-parent-phase.jpg",
@@ -525,7 +525,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":80,"reliability":22,"neutrality":23,"freshness":16,"ageRelevance":11,"readability":5},
+    score: {"total":77,"reliability":22,"neutrality":23,"freshness":16,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/handedness-development-kids.jpg",
@@ -569,7 +569,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":86,"reliability":23,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":8},
+    score: {"total":82,"reliability":23,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/imitation-play-development.jpg",
@@ -613,7 +613,7 @@ export const ARTICLES: Article[] = [
           "cautious": "発達障害情報・支援センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":80,"reliability":29,"neutrality":21,"freshness":17,"ageRelevance":11,"readability":6},
+    score: {"total":84,"reliability":29,"neutrality":21,"freshness":17,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/jumping-motor-skill.jpg",
@@ -657,7 +657,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":76,"reliability":24,"neutrality":20,"freshness":19,"ageRelevance":11,"readability":7},
+    score: {"total":81,"reliability":24,"neutrality":20,"freshness":19,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/left-hand-writing-support.jpg",
@@ -745,7 +745,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":71,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":13,"readability":6},
+    score: {"total":88,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/nail-biting-children.jpg",
@@ -789,7 +789,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":70,"reliability":27,"neutrality":23,"freshness":15,"ageRelevance":10,"readability":7},
+    score: {"total":82,"reliability":27,"neutrality":23,"freshness":15,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/play-therapy-benefits.jpg",
@@ -833,7 +833,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":77,"reliability":28,"neutrality":20,"freshness":19,"ageRelevance":10,"readability":7},
+    score: {"total":84,"reliability":28,"neutrality":20,"freshness":19,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/pointing-meaning-baby.jpg",
@@ -877,7 +877,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":28,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":6},
+    score: {"total":88,"reliability":28,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/potty-training-guide.jpg",
@@ -921,7 +921,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":28,"neutrality":22,"freshness":15,"ageRelevance":12,"readability":5},
+    score: {"total":82,"reliability":28,"neutrality":22,"freshness":15,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/selective-mutism-guide.jpg",
@@ -965,7 +965,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":76,"reliability":22,"neutrality":24,"freshness":17,"ageRelevance":12,"readability":7},
+    score: {"total":82,"reliability":22,"neutrality":24,"freshness":17,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/stranger-anxiety-baby.jpg",
@@ -1009,7 +1009,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":22,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":7},
+    score: {"total":81,"reliability":22,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/stuttering-support-kids.jpg",
@@ -1053,7 +1053,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":84,"reliability":22,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":7},
+    score: {"total":83,"reliability":22,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/thumb-sucking-habit.jpg",
@@ -1097,7 +1097,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":89,"reliability":29,"neutrality":24,"freshness":16,"ageRelevance":12,"readability":6},
+    score: {"total":87,"reliability":29,"neutrality":24,"freshness":16,"ageRelevance":12,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/tic-disorder-children.jpg",
@@ -1141,7 +1141,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":77,"reliability":27,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":8},
+    score: {"total":91,"reliability":27,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/tricycle-practice-tips.jpg",
@@ -1185,7 +1185,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":73,"reliability":26,"neutrality":24,"freshness":16,"ageRelevance":14,"readability":6},
+    score: {"total":86,"reliability":26,"neutrality":24,"freshness":16,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/two-word-sentence-delay.jpg",
@@ -1229,7 +1229,7 @@ export const ARTICLES: Article[] = [
           "cautious": "文部科学省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":79,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":5},
+    score: {"total":82,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/ai-chatbot-children-safety.jpg",
@@ -1273,7 +1273,7 @@ export const ARTICLES: Article[] = [
           "cautious": "文部科学省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":80,"reliability":23,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":6},
+    score: {"total":83,"reliability":23,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/ai-education-kids-guide.jpg",
@@ -1317,7 +1317,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":85,"reliability":27,"neutrality":20,"freshness":16,"ageRelevance":10,"readability":5},
+    score: {"total":78,"reliability":27,"neutrality":20,"freshness":16,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/blue-light-measures-kids.jpg",
@@ -1361,7 +1361,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":22,"neutrality":21,"freshness":16,"ageRelevance":14,"readability":7},
+    score: {"total":80,"reliability":22,"neutrality":21,"freshness":16,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/coding-basics-elementary.jpg",
@@ -1405,7 +1405,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":86,"reliability":28,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
+    score: {"total":85,"reliability":28,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/digital-art-kids-guide.jpg",
@@ -1449,7 +1449,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":82,"reliability":29,"neutrality":22,"freshness":19,"ageRelevance":10,"readability":8},
+    score: {"total":88,"reliability":29,"neutrality":22,"freshness":19,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/digital-creative-activities-kids.jpg",
@@ -1493,7 +1493,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":84,"reliability":29,"neutrality":25,"freshness":17,"ageRelevance":10,"readability":6},
+    score: {"total":87,"reliability":29,"neutrality":25,"freshness":17,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/digital-detox-family.jpg",
@@ -1537,7 +1537,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":75,"reliability":24,"neutrality":24,"freshness":15,"ageRelevance":11,"readability":8},
+    score: {"total":82,"reliability":24,"neutrality":24,"freshness":15,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/ebook-vs-paper-kids.jpg",
@@ -1581,7 +1581,7 @@ export const ARTICLES: Article[] = [
           "cautious": "個人情報保護委員会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":76,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":12,"readability":7},
+    score: {"total":86,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kids-email-address-setup.jpg",
@@ -1625,7 +1625,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":22,"neutrality":23,"freshness":17,"ageRelevance":14,"readability":7},
+    score: {"total":83,"reliability":22,"neutrality":23,"freshness":17,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kids-password-management.jpg",
@@ -1669,7 +1669,7 @@ export const ARTICLES: Article[] = [
           "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":86,"reliability":24,"neutrality":25,"freshness":18,"ageRelevance":14,"readability":6},
+    score: {"total":87,"reliability":24,"neutrality":25,"freshness":18,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kids-safe-sns-options.jpg",
@@ -1713,7 +1713,7 @@ export const ARTICLES: Article[] = [
           "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":89,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":13,"readability":7},
+    score: {"total":81,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kids-youtube-safety.jpg",
@@ -1757,7 +1757,7 @@ export const ARTICLES: Article[] = [
           "cautious": "個人情報保護委員会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":87,"reliability":23,"neutrality":25,"freshness":16,"ageRelevance":12,"readability":5},
+    score: {"total":81,"reliability":23,"neutrality":25,"freshness":16,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/location-tracking-kids.jpg",
@@ -1801,7 +1801,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":84,"reliability":29,"neutrality":23,"freshness":18,"ageRelevance":11,"readability":6},
+    score: {"total":87,"reliability":29,"neutrality":23,"freshness":18,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/minecraft-educational-value.jpg",
@@ -1845,7 +1845,7 @@ export const ARTICLES: Article[] = [
           "cautious": "文部科学省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":25,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":5},
+    score: {"total":84,"reliability":25,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/online-bullying-prevention.jpg",
@@ -1889,7 +1889,7 @@ export const ARTICLES: Article[] = [
           "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":85,"reliability":28,"neutrality":24,"freshness":19,"ageRelevance":12,"readability":8},
+    score: {"total":91,"reliability":28,"neutrality":24,"freshness":19,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/roblox-safety-guide.jpg",
@@ -1933,7 +1933,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":78,"reliability":24,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":6},
+    score: {"total":80,"reliability":24,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/robotics-education-kids.jpg",
@@ -1977,7 +1977,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":77,"reliability":27,"neutrality":25,"freshness":15,"ageRelevance":11,"readability":6},
+    score: {"total":84,"reliability":27,"neutrality":25,"freshness":15,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/smartphone-addiction-check.jpg",
@@ -2021,7 +2021,7 @@ export const ARTICLES: Article[] = [
           "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":82,"reliability":23,"neutrality":21,"freshness":15,"ageRelevance":12,"readability":8},
+    score: {"total":79,"reliability":23,"neutrality":21,"freshness":15,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/switch-time-limit-settings.jpg",
@@ -2065,7 +2065,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":84,"reliability":22,"neutrality":24,"freshness":19,"ageRelevance":10,"readability":8},
+    score: {"total":83,"reliability":22,"neutrality":24,"freshness":19,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/tablet-learning-effectiveness.jpg",
@@ -2109,7 +2109,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":80,"reliability":28,"neutrality":22,"freshness":17,"ageRelevance":11,"readability":6},
+    score: {"total":84,"reliability":28,"neutrality":22,"freshness":17,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/tablet-posture-problems.jpg",
@@ -2153,7 +2153,7 @@ export const ARTICLES: Article[] = [
           "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":27,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":6},
+    score: {"total":88,"reliability":27,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/tiktok-safety-settings.jpg",
@@ -2197,7 +2197,7 @@ export const ARTICLES: Article[] = [
           "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":75,"reliability":28,"neutrality":25,"freshness":17,"ageRelevance":10,"readability":5},
+    score: {"total":85,"reliability":28,"neutrality":25,"freshness":17,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/wifi-restriction-settings.jpg",
@@ -2241,7 +2241,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":23,"neutrality":20,"freshness":15,"ageRelevance":14,"readability":8},
+    score: {"total":80,"reliability":23,"neutrality":20,"freshness":15,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/active-learning-elementary.jpg",
@@ -2285,7 +2285,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":27,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":6},
+    score: {"total":83,"reliability":27,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/classroom-collapse-response.jpg",
@@ -2373,7 +2373,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":25,"neutrality":21,"freshness":15,"ageRelevance":11,"readability":7},
+    score: {"total":79,"reliability":25,"neutrality":21,"freshness":15,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/cram-school-selection.jpg",
@@ -2417,7 +2417,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":25,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":7},
+    score: {"total":82,"reliability":25,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/essay-writing-help.jpg",
@@ -2461,7 +2461,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":72,"reliability":23,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
+    score: {"total":83,"reliability":23,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/free-research-themes.jpg",
@@ -2505,7 +2505,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":22,"neutrality":20,"freshness":18,"ageRelevance":12,"readability":8},
+    score: {"total":80,"reliability":22,"neutrality":20,"freshness":18,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/graduation-ceremony-prep.jpg",
@@ -2549,7 +2549,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":28,"neutrality":20,"freshness":15,"ageRelevance":14,"readability":5},
+    score: {"total":82,"reliability":28,"neutrality":20,"freshness":15,"ageRelevance":14,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/homeschooling-japan-guide.jpg",
@@ -2593,7 +2593,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":25,"neutrality":23,"freshness":17,"ageRelevance":14,"readability":6},
+    score: {"total":85,"reliability":25,"neutrality":23,"freshness":17,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/homework-motivation-tips.jpg",
@@ -2637,7 +2637,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":70,"reliability":24,"neutrality":25,"freshness":19,"ageRelevance":11,"readability":7},
+    score: {"total":86,"reliability":24,"neutrality":25,"freshness":19,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/inquiry-based-learning-kids.jpg",
@@ -2681,7 +2681,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":88,"reliability":26,"neutrality":21,"freshness":18,"ageRelevance":12,"readability":5},
+    score: {"total":82,"reliability":26,"neutrality":21,"freshness":18,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/junior-high-exam-stress.jpg",
@@ -2725,7 +2725,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":7},
+    score: {"total":85,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kanji-learning-tips.jpg",
@@ -2769,7 +2769,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":85,"reliability":25,"neutrality":23,"freshness":17,"ageRelevance":14,"readability":5},
+    score: {"total":84,"reliability":25,"neutrality":23,"freshness":17,"ageRelevance":14,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/multiplication-table-memorize.jpg",
@@ -2857,7 +2857,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":85,"reliability":28,"neutrality":21,"freshness":19,"ageRelevance":11,"readability":8},
+    score: {"total":87,"reliability":28,"neutrality":21,"freshness":19,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/reading-aloud-benefits.jpg",
@@ -2901,7 +2901,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":23,"neutrality":21,"freshness":18,"ageRelevance":10,"readability":7},
+    score: {"total":79,"reliability":23,"neutrality":21,"freshness":18,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/resource-room-guidance.jpg",
@@ -2945,7 +2945,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":79,"reliability":25,"neutrality":25,"freshness":18,"ageRelevance":10,"readability":6},
+    score: {"total":84,"reliability":25,"neutrality":25,"freshness":18,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/school-entrance-checklist.jpg",
@@ -2989,7 +2989,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":89,"reliability":27,"neutrality":20,"freshness":17,"ageRelevance":12,"readability":7},
+    score: {"total":83,"reliability":27,"neutrality":20,"freshness":17,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/school-refusal-alternative-learning.jpg",
@@ -3033,7 +3033,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":26,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":6},
+    score: {"total":86,"reliability":26,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/special-needs-class-guide.jpg",
@@ -3121,7 +3121,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":84,"reliability":27,"neutrality":24,"freshness":18,"ageRelevance":13,"readability":8},
+    score: {"total":90,"reliability":27,"neutrality":24,"freshness":18,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/accidental-ingestion-response.jpg",
@@ -3165,7 +3165,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":23,"neutrality":24,"freshness":17,"ageRelevance":10,"readability":6},
+    score: {"total":80,"reliability":23,"neutrality":24,"freshness":17,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/adhd-kids-understanding.jpg",
@@ -3209,7 +3209,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":83,"reliability":23,"neutrality":25,"freshness":16,"ageRelevance":12,"readability":8},
+    score: {"total":84,"reliability":23,"neutrality":25,"freshness":16,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/asthma-children-management.jpg",
@@ -3253,7 +3253,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":79,"reliability":26,"neutrality":20,"freshness":18,"ageRelevance":13,"readability":5},
+    score: {"total":82,"reliability":26,"neutrality":20,"freshness":18,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/atopic-dermatitis-kids.jpg",
@@ -3297,7 +3297,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":85,"reliability":23,"neutrality":22,"freshness":17,"ageRelevance":10,"readability":6},
+    score: {"total":78,"reliability":23,"neutrality":22,"freshness":17,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/bee-sting-response.jpg",
@@ -3341,7 +3341,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":87,"reliability":26,"neutrality":20,"freshness":16,"ageRelevance":11,"readability":7},
+    score: {"total":80,"reliability":26,"neutrality":20,"freshness":16,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/burn-first-aid-kids.jpg",
@@ -3385,7 +3385,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":83,"reliability":26,"neutrality":21,"freshness":18,"ageRelevance":12,"readability":7},
+    score: {"total":84,"reliability":26,"neutrality":21,"freshness":18,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/constipation-children.jpg",
@@ -3429,7 +3429,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":79,"reliability":26,"neutrality":24,"freshness":16,"ageRelevance":10,"readability":8},
+    score: {"total":84,"reliability":26,"neutrality":24,"freshness":16,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/drowning-prevention-kids.jpg",
@@ -3473,7 +3473,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":78,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":6},
+    score: {"total":84,"reliability":27,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/ent-kids-common-issues.jpg",
@@ -3561,7 +3561,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":81,"reliability":27,"neutrality":23,"freshness":18,"ageRelevance":14,"readability":5},
+    score: {"total":87,"reliability":27,"neutrality":23,"freshness":18,"ageRelevance":14,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/fifth-disease-erythema.jpg",
@@ -3605,7 +3605,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":84,"reliability":29,"neutrality":24,"freshness":17,"ageRelevance":12,"readability":7},
+    score: {"total":89,"reliability":29,"neutrality":24,"freshness":17,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/hand-foot-mouth-disease.jpg",
@@ -3649,7 +3649,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":76,"reliability":22,"neutrality":20,"freshness":17,"ageRelevance":11,"readability":5},
+    score: {"total":75,"reliability":22,"neutrality":20,"freshness":17,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/hay-fever-children-guide.jpg",
@@ -3693,7 +3693,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":86,"reliability":24,"neutrality":21,"freshness":15,"ageRelevance":11,"readability":8},
+    score: {"total":79,"reliability":24,"neutrality":21,"freshness":15,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/head-injury-children.jpg",
@@ -3737,7 +3737,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":25,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":6},
+    score: {"total":84,"reliability":25,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/head-lice-treatment-kids.jpg",
@@ -3781,7 +3781,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":82,"reliability":22,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":7},
+    score: {"total":84,"reliability":22,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/herpangina-guide.jpg",
@@ -3825,7 +3825,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":77,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":14,"readability":6},
+    score: {"total":89,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/impetigo-skin-infection-kids.jpg",
@@ -3869,7 +3869,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":77,"reliability":22,"neutrality":20,"freshness":16,"ageRelevance":12,"readability":8},
+    score: {"total":78,"reliability":22,"neutrality":20,"freshness":16,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/influenza-kids-guide.jpg",
@@ -3913,7 +3913,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":76,"reliability":26,"neutrality":22,"freshness":18,"ageRelevance":14,"readability":6},
+    score: {"total":86,"reliability":26,"neutrality":22,"freshness":18,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kawasaki-disease-guide.jpg",
@@ -3957,7 +3957,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":86,"reliability":27,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":8},
+    score: {"total":87,"reliability":27,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/motion-sickness-kids.jpg",
@@ -4001,7 +4001,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立感染症研究所は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":13,"readability":7},
+    score: {"total":85,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/mumps-guide.jpg",
@@ -4045,7 +4045,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":25,"neutrality":23,"freshness":19,"ageRelevance":12,"readability":5},
+    score: {"total":84,"reliability":25,"neutrality":23,"freshness":19,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/mycoplasma-pneumonia-kids.jpg",
@@ -4089,7 +4089,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":89,"reliability":26,"neutrality":20,"freshness":17,"ageRelevance":11,"readability":7},
+    score: {"total":81,"reliability":26,"neutrality":20,"freshness":17,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/norovirus-kids-prevention.jpg",
@@ -4133,7 +4133,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":76,"reliability":22,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":6},
+    score: {"total":81,"reliability":22,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/nosebleed-treatment-kids.jpg",
@@ -4177,7 +4177,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":74,"reliability":24,"neutrality":21,"freshness":17,"ageRelevance":13,"readability":8},
+    score: {"total":83,"reliability":24,"neutrality":21,"freshness":17,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/nursemaid-elbow-dislocation.jpg",
@@ -4221,7 +4221,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":71,"reliability":27,"neutrality":24,"freshness":17,"ageRelevance":14,"readability":8},
+    score: {"total":90,"reliability":27,"neutrality":24,"freshness":17,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/pool-fever-pharyngoconjunctival.jpg",
@@ -4265,7 +4265,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立感染症研究所は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":88,"reliability":28,"neutrality":24,"freshness":18,"ageRelevance":10,"readability":6},
+    score: {"total":86,"reliability":28,"neutrality":24,"freshness":18,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/rs-virus-infant-guide.jpg",
@@ -4309,7 +4309,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":27,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":5},
+    score: {"total":83,"reliability":27,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/streptococcal-infection.jpg",
@@ -4353,7 +4353,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":70,"reliability":29,"neutrality":20,"freshness":18,"ageRelevance":12,"readability":7},
+    score: {"total":86,"reliability":29,"neutrality":20,"freshness":18,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/summer-cold-treatment.jpg",
@@ -4397,7 +4397,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":85,"reliability":27,"neutrality":25,"freshness":15,"ageRelevance":11,"readability":8},
+    score: {"total":86,"reliability":27,"neutrality":25,"freshness":15,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/tooth-decay-prevention-kids.jpg",
@@ -4441,7 +4441,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立感染症研究所は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":78,"reliability":27,"neutrality":22,"freshness":19,"ageRelevance":11,"readability":8},
+    score: {"total":87,"reliability":27,"neutrality":22,"freshness":19,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/whooping-cough-pertussis.jpg",
@@ -4485,7 +4485,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":81,"reliability":26,"neutrality":25,"freshness":18,"ageRelevance":13,"readability":7},
+    score: {"total":89,"reliability":26,"neutrality":25,"freshness":18,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/baby-carrier-selection.jpg",
@@ -4529,7 +4529,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":78,"reliability":26,"neutrality":23,"freshness":18,"ageRelevance":10,"readability":5},
+    score: {"total":82,"reliability":26,"neutrality":23,"freshness":18,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/celebration-events-summary.jpg",
@@ -4573,7 +4573,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":80,"reliability":23,"neutrality":23,"freshness":18,"ageRelevance":14,"readability":6},
+    score: {"total":84,"reliability":23,"neutrality":23,"freshness":18,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/child-seat-guide.jpg",
@@ -4617,7 +4617,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":80,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":13,"readability":8},
+    score: {"total":86,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/consecutive-age-parenting.jpg",
@@ -4661,7 +4661,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":23,"neutrality":25,"freshness":17,"ageRelevance":12,"readability":8},
+    score: {"total":85,"reliability":23,"neutrality":25,"freshness":17,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/dining-out-with-baby.jpg",
@@ -4705,7 +4705,7 @@ export const ARTICLES: Article[] = [
           "cautious": "個人情報保護委員会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":23,"neutrality":20,"freshness":17,"ageRelevance":10,"readability":5},
+    score: {"total":75,"reliability":23,"neutrality":20,"freshness":17,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/family-photo-memories.jpg",
@@ -4749,7 +4749,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":28,"neutrality":25,"freshness":18,"ageRelevance":12,"readability":6},
+    score: {"total":89,"reliability":28,"neutrality":25,"freshness":18,"ageRelevance":12,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/family-travel-with-kids.jpg",
@@ -4793,7 +4793,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":78,"reliability":24,"neutrality":25,"freshness":18,"ageRelevance":10,"readability":8},
+    score: {"total":85,"reliability":24,"neutrality":25,"freshness":18,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kids-clothing-selection.jpg",
@@ -4837,7 +4837,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":73,"reliability":28,"neutrality":20,"freshness":18,"ageRelevance":14,"readability":6},
+    score: {"total":86,"reliability":28,"neutrality":20,"freshness":18,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kids-room-design-guide.jpg",
@@ -4881,7 +4881,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":83,"reliability":29,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":7},
+    score: {"total":89,"reliability":29,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/military-family-parenting.jpg",
@@ -4969,7 +4969,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":23,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":6},
+    score: {"total":77,"reliability":23,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/nursery-school-goods.jpg",
@@ -5013,7 +5013,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":79,"reliability":25,"neutrality":25,"freshness":17,"ageRelevance":14,"readability":5},
+    score: {"total":86,"reliability":25,"neutrality":25,"freshness":17,"ageRelevance":14,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/okuizome-ceremony-guide.jpg",
@@ -5101,7 +5101,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":22,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":5},
+    score: {"total":80,"reliability":22,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/pets-and-kids-benefits.jpg",
@@ -5189,7 +5189,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":24,"neutrality":22,"freshness":16,"ageRelevance":11,"readability":7},
+    score: {"total":80,"reliability":24,"neutrality":22,"freshness":16,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/remote-work-childcare-balance.jpg",
@@ -5233,7 +5233,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":70,"reliability":24,"neutrality":23,"freshness":16,"ageRelevance":14,"readability":7},
+    score: {"total":84,"reliability":24,"neutrality":23,"freshness":16,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/second-baby-timing.jpg",
@@ -5277,7 +5277,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":73,"reliability":24,"neutrality":24,"freshness":16,"ageRelevance":11,"readability":6},
+    score: {"total":81,"reliability":24,"neutrality":24,"freshness":16,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/shichigosan-preparation.jpg",
@@ -5321,7 +5321,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":75,"reliability":29,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":6},
+    score: {"total":87,"reliability":29,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/stroller-selection-guide.jpg",
@@ -5365,7 +5365,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":70,"reliability":26,"neutrality":22,"freshness":16,"ageRelevance":14,"readability":7},
+    score: {"total":85,"reliability":26,"neutrality":22,"freshness":16,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/third-child-parenting.jpg",
@@ -5409,7 +5409,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":75,"reliability":27,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":7},
+    score: {"total":86,"reliability":27,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/time-saving-housework-parents.jpg",
@@ -5453,7 +5453,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":89,"reliability":24,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":7},
+    score: {"total":79,"reliability":24,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/toy-storage-ideas.jpg",
@@ -5497,7 +5497,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":73,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":7},
+    score: {"total":87,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/anger-management-kids.jpg",
@@ -5541,7 +5541,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":72,"reliability":28,"neutrality":25,"freshness":15,"ageRelevance":10,"readability":7},
+    score: {"total":85,"reliability":28,"neutrality":25,"freshness":15,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/baby-regression-behavior.jpg",
@@ -5585,7 +5585,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":74,"reliability":24,"neutrality":25,"freshness":17,"ageRelevance":11,"readability":6},
+    score: {"total":83,"reliability":24,"neutrality":25,"freshness":17,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/emotional-education-kids.jpg",
@@ -5629,7 +5629,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":84,"reliability":24,"neutrality":21,"freshness":16,"ageRelevance":11,"readability":6},
+    score: {"total":78,"reliability":24,"neutrality":21,"freshness":16,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/fear-of-dark-children.jpg",
@@ -5673,7 +5673,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":86,"reliability":22,"neutrality":24,"freshness":15,"ageRelevance":14,"readability":7},
+    score: {"total":82,"reliability":22,"neutrality":24,"freshness":15,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/friendship-trouble-support.jpg",
@@ -5717,7 +5717,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":80,"reliability":22,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":8},
+    score: {"total":83,"reliability":22,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/game-losing-anger.jpg",
@@ -5805,7 +5805,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":78,"reliability":23,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":8},
+    score: {"total":82,"reliability":23,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/introverted-child-parenting.jpg",
@@ -5849,7 +5849,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":77,"reliability":22,"neutrality":21,"freshness":17,"ageRelevance":12,"readability":6},
+    score: {"total":78,"reliability":22,"neutrality":21,"freshness":17,"ageRelevance":12,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kindergarten-reluctance.jpg",
@@ -5893,7 +5893,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":29,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
+    score: {"total":86,"reliability":29,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/lying-child-response.jpg",
@@ -5937,7 +5937,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":77,"reliability":25,"neutrality":20,"freshness":19,"ageRelevance":12,"readability":7},
+    score: {"total":83,"reliability":25,"neutrality":20,"freshness":19,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/monster-fear-imagination.jpg",
@@ -5981,7 +5981,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":25,"neutrality":24,"freshness":15,"ageRelevance":10,"readability":8},
+    score: {"total":82,"reliability":25,"neutrality":24,"freshness":15,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/nail-biting-psychology.jpg",
@@ -6025,7 +6025,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":78,"reliability":24,"neutrality":25,"freshness":18,"ageRelevance":13,"readability":7},
+    score: {"total":87,"reliability":24,"neutrality":25,"freshness":18,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/night-crying-coping-strategies.jpg",
@@ -6069,7 +6069,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":70,"reliability":26,"neutrality":22,"freshness":19,"ageRelevance":11,"readability":8},
+    score: {"total":86,"reliability":26,"neutrality":22,"freshness":19,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/night-terrors-guide.jpg",
@@ -6113,7 +6113,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":78,"reliability":27,"neutrality":23,"freshness":19,"ageRelevance":14,"readability":6},
+    score: {"total":89,"reliability":27,"neutrality":23,"freshness":19,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/pacifier-dependency.jpg",
@@ -6157,7 +6157,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":76,"reliability":26,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":8},
+    score: {"total":82,"reliability":26,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/perfectionist-child.jpg",
@@ -6201,7 +6201,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":76,"reliability":23,"neutrality":22,"freshness":15,"ageRelevance":13,"readability":7},
+    score: {"total":80,"reliability":23,"neutrality":22,"freshness":15,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/praise-vs-encouragement.jpg",
@@ -6245,7 +6245,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":73,"reliability":26,"neutrality":25,"freshness":16,"ageRelevance":10,"readability":6},
+    score: {"total":83,"reliability":26,"neutrality":25,"freshness":16,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/puberty-rebellion-guide.jpg",
@@ -6289,7 +6289,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":77,"reliability":23,"neutrality":25,"freshness":15,"ageRelevance":12,"readability":6},
+    score: {"total":81,"reliability":23,"neutrality":25,"freshness":15,"ageRelevance":12,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/self-esteem-building-kids.jpg",
@@ -6333,7 +6333,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":78,"reliability":29,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":8},
+    score: {"total":93,"reliability":29,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/separation-anxiety-kids.jpg",
@@ -6377,7 +6377,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":75,"reliability":28,"neutrality":22,"freshness":18,"ageRelevance":11,"readability":8},
+    score: {"total":87,"reliability":28,"neutrality":22,"freshness":18,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/sibling-mediation-techniques.jpg",
@@ -6421,7 +6421,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":26,"neutrality":20,"freshness":19,"ageRelevance":11,"readability":5},
+    score: {"total":81,"reliability":26,"neutrality":20,"freshness":19,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/sneaky-eating-response.jpg",
@@ -6465,7 +6465,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":23,"neutrality":22,"freshness":17,"ageRelevance":14,"readability":6},
+    score: {"total":82,"reliability":23,"neutrality":22,"freshness":17,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/sore-loser-child.jpg",
@@ -6509,7 +6509,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":75,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":10,"readability":8},
+    score: {"total":79,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/temper-tantrum-toddler.jpg",
@@ -6553,7 +6553,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":76,"reliability":28,"neutrality":23,"freshness":19,"ageRelevance":14,"readability":8},
+    score: {"total":92,"reliability":28,"neutrality":23,"freshness":19,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/thumb-sucking-graduation.jpg",
@@ -6597,7 +6597,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":88,"reliability":25,"neutrality":21,"freshness":17,"ageRelevance":10,"readability":5},
+    score: {"total":78,"reliability":25,"neutrality":21,"freshness":17,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/tic-disorder-mental-support.jpg",
@@ -6641,7 +6641,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":88,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":5},
+    score: {"total":85,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/trauma-care-children.jpg",
@@ -6685,7 +6685,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":89,"reliability":24,"neutrality":20,"freshness":19,"ageRelevance":13,"readability":8},
+    score: {"total":84,"reliability":24,"neutrality":20,"freshness":19,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/bento-making-guide-kids.jpg",
@@ -6729,7 +6729,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":25,"neutrality":25,"freshness":17,"ageRelevance":12,"readability":5},
+    score: {"total":84,"reliability":25,"neutrality":25,"freshness":17,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/choking-prevention-food.jpg",
@@ -6773,7 +6773,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":74,"reliability":22,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":5},
+    score: {"total":79,"reliability":22,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/convenience-food-balance.jpg",
@@ -6817,7 +6817,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":86,"reliability":25,"neutrality":21,"freshness":16,"ageRelevance":12,"readability":5},
+    score: {"total":79,"reliability":25,"neutrality":21,"freshness":16,"ageRelevance":12,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/dietary-fiber-kids-guide.jpg",
@@ -6861,7 +6861,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":71,"reliability":25,"neutrality":23,"freshness":15,"ageRelevance":13,"readability":8},
+    score: {"total":84,"reliability":25,"neutrality":23,"freshness":15,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/egg-allergy-coping.jpg",
@@ -6905,7 +6905,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":77,"reliability":23,"neutrality":21,"freshness":19,"ageRelevance":14,"readability":5},
+    score: {"total":82,"reliability":23,"neutrality":21,"freshness":19,"ageRelevance":14,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/fish-cooking-for-kids.jpg",
@@ -6949,7 +6949,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":28,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":7},
+    score: {"total":85,"reliability":28,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/fluoride-cavity-prevention.jpg",
@@ -6993,7 +6993,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":24,"neutrality":21,"freshness":18,"ageRelevance":13,"readability":5},
+    score: {"total":81,"reliability":24,"neutrality":21,"freshness":18,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/food-additives-basics.jpg",
@@ -7037,7 +7037,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":85,"reliability":25,"neutrality":24,"freshness":18,"ageRelevance":10,"readability":5},
+    score: {"total":82,"reliability":25,"neutrality":24,"freshness":18,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/food-education-activities.jpg",
@@ -7081,7 +7081,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":75,"reliability":23,"neutrality":20,"freshness":19,"ageRelevance":13,"readability":5},
+    score: {"total":80,"reliability":23,"neutrality":20,"freshness":19,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/frozen-food-for-kids.jpg",
@@ -7125,7 +7125,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":70,"reliability":26,"neutrality":25,"freshness":18,"ageRelevance":11,"readability":8},
+    score: {"total":88,"reliability":26,"neutrality":25,"freshness":18,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/homemade-snacks-kids.jpg",
@@ -7169,7 +7169,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":88,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":6},
+    score: {"total":87,"reliability":25,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/iron-deficiency-kids.jpg",
@@ -7213,7 +7213,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":25,"neutrality":20,"freshness":15,"ageRelevance":13,"readability":8},
+    score: {"total":81,"reliability":25,"neutrality":20,"freshness":15,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/juice-amount-for-kids.jpg",
@@ -7257,7 +7257,7 @@ export const ARTICLES: Article[] = [
           "cautious": "環境省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":27,"neutrality":21,"freshness":17,"ageRelevance":11,"readability":5},
+    score: {"total":81,"reliability":27,"neutrality":21,"freshness":17,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kids-hydration-guide.jpg",
@@ -7301,7 +7301,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":78,"reliability":24,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
+    score: {"total":81,"reliability":24,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/milk-allergy-guide.jpg",
@@ -7345,7 +7345,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":78,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":14,"readability":8},
+    score: {"total":90,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/picky-eating-advanced-strategies.jpg",
@@ -7389,7 +7389,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":25,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":5},
+    score: {"total":84,"reliability":25,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/quick-breakfast-for-kids.jpg",
@@ -7433,7 +7433,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":87,"reliability":23,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":8},
+    score: {"total":86,"reliability":23,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/sports-drink-for-kids.jpg",
@@ -7477,7 +7477,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":27,"neutrality":25,"freshness":19,"ageRelevance":13,"readability":8},
+    score: {"total":92,"reliability":27,"neutrality":25,"freshness":19,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/sugar-intake-children.jpg",
@@ -7521,7 +7521,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":75,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":10,"readability":7},
+    score: {"total":78,"reliability":22,"neutrality":21,"freshness":18,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/veggie-dislike-recipes.jpg",
@@ -7565,7 +7565,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":71,"reliability":28,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":6},
+    score: {"total":85,"reliability":28,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/vitamin-d-sunlight-kids.jpg",
@@ -7609,7 +7609,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":86,"reliability":25,"neutrality":21,"freshness":19,"ageRelevance":14,"readability":8},
+    score: {"total":87,"reliability":25,"neutrality":21,"freshness":19,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/wheat-allergy-lifestyle.jpg",
@@ -7653,7 +7653,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":70,"reliability":27,"neutrality":24,"freshness":16,"ageRelevance":14,"readability":8},
+    score: {"total":89,"reliability":27,"neutrality":24,"freshness":16,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/advanced-maternal-age.jpg",
@@ -7697,7 +7697,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":82,"reliability":23,"neutrality":20,"freshness":15,"ageRelevance":12,"readability":8},
+    score: {"total":78,"reliability":23,"neutrality":20,"freshness":15,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/birth-method-comparison.jpg",
@@ -7741,7 +7741,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":84,"reliability":25,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":7},
+    score: {"total":86,"reliability":25,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/breech-baby-management.jpg",
@@ -7785,7 +7785,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":89,"reliability":23,"neutrality":21,"freshness":17,"ageRelevance":13,"readability":7},
+    score: {"total":81,"reliability":23,"neutrality":21,"freshness":17,"ageRelevance":13,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/fetal-movement-guide.jpg",
@@ -7829,7 +7829,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":76,"reliability":29,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":7},
+    score: {"total":89,"reliability":29,"neutrality":23,"freshness":18,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/gestational-diabetes-guide.jpg",
@@ -7873,7 +7873,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":24,"neutrality":20,"freshness":18,"ageRelevance":13,"readability":5},
+    score: {"total":80,"reliability":24,"neutrality":20,"freshness":18,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/hospital-bag-checklist.jpg",
@@ -7917,7 +7917,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":78,"reliability":23,"neutrality":20,"freshness":18,"ageRelevance":10,"readability":8},
+    score: {"total":79,"reliability":23,"neutrality":20,"freshness":18,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/labor-signs-guide.jpg",
@@ -7961,7 +7961,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":25,"neutrality":23,"freshness":15,"ageRelevance":10,"readability":5},
+    score: {"total":78,"reliability":25,"neutrality":23,"freshness":15,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/low-breast-milk-solutions.jpg",
@@ -8005,7 +8005,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":77,"reliability":24,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":8},
+    score: {"total":83,"reliability":24,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/mastitis-prevention.jpg",
@@ -8049,7 +8049,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":29,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
+    score: {"total":86,"reliability":29,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/maternity-leave-guide.jpg",
@@ -8093,7 +8093,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":80,"reliability":26,"neutrality":21,"freshness":17,"ageRelevance":10,"readability":5},
+    score: {"total":79,"reliability":26,"neutrality":21,"freshness":17,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/maternity-yoga-guide.jpg",
@@ -8137,7 +8137,7 @@ export const ARTICLES: Article[] = [
           "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":71,"reliability":28,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":7},
+    score: {"total":86,"reliability":28,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/morning-sickness-remedies.jpg",
@@ -8181,7 +8181,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":83,"reliability":28,"neutrality":25,"freshness":16,"ageRelevance":10,"readability":5},
+    score: {"total":84,"reliability":28,"neutrality":25,"freshness":16,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/partner-birth-attendance.jpg",
@@ -8225,7 +8225,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":72,"reliability":29,"neutrality":23,"freshness":16,"ageRelevance":13,"readability":8},
+    score: {"total":89,"reliability":29,"neutrality":23,"freshness":16,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/planned-birth-guide.jpg",
@@ -8269,7 +8269,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":75,"reliability":24,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
+    score: {"total":81,"reliability":24,"neutrality":23,"freshness":19,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/postpartum-body-recovery.jpg",
@@ -8313,7 +8313,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":83,"reliability":28,"neutrality":21,"freshness":19,"ageRelevance":11,"readability":5},
+    score: {"total":84,"reliability":28,"neutrality":21,"freshness":19,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/postpartum-depression-guide.jpg",
@@ -8357,7 +8357,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":81,"reliability":28,"neutrality":21,"freshness":17,"ageRelevance":13,"readability":6},
+    score: {"total":85,"reliability":28,"neutrality":21,"freshness":17,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/postpartum-paperwork.jpg",
@@ -8401,7 +8401,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":73,"reliability":27,"neutrality":22,"freshness":18,"ageRelevance":11,"readability":6},
+    score: {"total":84,"reliability":27,"neutrality":22,"freshness":18,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/postpartum-pelvic-care.jpg",
@@ -8445,7 +8445,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":85,"reliability":23,"neutrality":21,"freshness":17,"ageRelevance":12,"readability":8},
+    score: {"total":81,"reliability":23,"neutrality":21,"freshness":17,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/prenatal-nutrition-guide.jpg",
@@ -8489,7 +8489,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":80,"reliability":26,"neutrality":23,"freshness":16,"ageRelevance":13,"readability":8},
+    score: {"total":86,"reliability":26,"neutrality":23,"freshness":16,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/prenatal-testing-options.jpg",
@@ -8533,7 +8533,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":77,"reliability":22,"neutrality":25,"freshness":15,"ageRelevance":13,"readability":6},
+    score: {"total":81,"reliability":22,"neutrality":25,"freshness":15,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/satogaeri-birth-guide.jpg",
@@ -8577,7 +8577,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":74,"reliability":22,"neutrality":22,"freshness":19,"ageRelevance":12,"readability":8},
+    score: {"total":83,"reliability":22,"neutrality":22,"freshness":19,"ageRelevance":12,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/stretch-mark-prevention.jpg",
@@ -8621,7 +8621,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":83,"reliability":26,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":8},
+    score: {"total":84,"reliability":26,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/travel-during-pregnancy.jpg",
@@ -8665,7 +8665,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":83,"reliability":28,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":7},
+    score: {"total":88,"reliability":28,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/twin-pregnancy-guide.jpg",
@@ -8709,7 +8709,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":86,"reliability":29,"neutrality":25,"freshness":15,"ageRelevance":10,"readability":5},
+    score: {"total":84,"reliability":29,"neutrality":25,"freshness":15,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/water-birth-guide.jpg",
@@ -8753,7 +8753,7 @@ export const ARTICLES: Article[] = [
           "cautious": "日本産科婦人科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":79,"reliability":27,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":7},
+    score: {"total":88,"reliability":27,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/water-break-response.jpg",
@@ -8797,7 +8797,7 @@ export const ARTICLES: Article[] = [
           "cautious": "消費者庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":77,"reliability":29,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":6},
+    score: {"total":86,"reliability":29,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/bicycle-safety-kids.jpg",
@@ -8841,7 +8841,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":76,"reliability":27,"neutrality":25,"freshness":17,"ageRelevance":11,"readability":8},
+    score: {"total":88,"reliability":27,"neutrality":25,"freshness":17,"ageRelevance":11,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/child-abuse-prevention-guide.jpg",
@@ -8885,7 +8885,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":80,"reliability":26,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":7},
+    score: {"total":86,"reliability":26,"neutrality":21,"freshness":18,"ageRelevance":14,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/crime-prevention-education.jpg",
@@ -8929,7 +8929,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":79,"reliability":23,"neutrality":25,"freshness":15,"ageRelevance":10,"readability":8},
+    score: {"total":81,"reliability":23,"neutrality":25,"freshness":15,"ageRelevance":10,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/disability-support-children.jpg",
@@ -8973,7 +8973,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":88,"reliability":26,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":8},
+    score: {"total":87,"reliability":26,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/elections-explained-for-kids.jpg",
@@ -9017,7 +9017,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":74,"reliability":22,"neutrality":20,"freshness":18,"ageRelevance":10,"readability":7},
+    score: {"total":77,"reliability":22,"neutrality":20,"freshness":18,"ageRelevance":10,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/foreign-roots-parenting.jpg",
@@ -9061,7 +9061,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":82,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":10,"readability":5},
+    score: {"total":81,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":10,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/foster-care-system-japan.jpg",
@@ -9105,7 +9105,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":89,"reliability":23,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":6},
+    score: {"total":83,"reliability":23,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/human-rights-education-kids.jpg",
@@ -9149,7 +9149,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":79,"reliability":25,"neutrality":22,"freshness":15,"ageRelevance":11,"readability":5},
+    score: {"total":78,"reliability":25,"neutrality":22,"freshness":15,"ageRelevance":11,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/kodomo-shokudo-guide.jpg",
@@ -9193,7 +9193,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":74,"reliability":27,"neutrality":22,"freshness":17,"ageRelevance":11,"readability":7},
+    score: {"total":84,"reliability":27,"neutrality":22,"freshness":17,"ageRelevance":11,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/library-utilization-kids.jpg",
@@ -9237,7 +9237,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":82,"reliability":24,"neutrality":24,"freshness":17,"ageRelevance":10,"readability":6},
+    score: {"total":81,"reliability":24,"neutrality":24,"freshness":17,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/local-sports-club-guide.jpg",
@@ -9281,7 +9281,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":85,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":6},
+    score: {"total":81,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/museum-art-gallery-kids.jpg",
@@ -9325,7 +9325,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":89,"reliability":29,"neutrality":23,"freshness":15,"ageRelevance":13,"readability":6},
+    score: {"total":86,"reliability":29,"neutrality":23,"freshness":15,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/pta-participation-guide.jpg",
@@ -9369,7 +9369,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":83,"reliability":27,"neutrality":23,"freshness":16,"ageRelevance":12,"readability":7},
+    score: {"total":85,"reliability":27,"neutrality":23,"freshness":16,"ageRelevance":12,"readability":7},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/school-route-safety.jpg",
@@ -9413,7 +9413,7 @@ export const ARTICLES: Article[] = [
           "cautious": "文部科学省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":83,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":13,"readability":6},
+    score: {"total":84,"reliability":27,"neutrality":22,"freshness":16,"ageRelevance":13,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/swimming-school-selection.jpg",
@@ -9457,7 +9457,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":87,"reliability":24,"neutrality":22,"freshness":15,"ageRelevance":14,"readability":8},
+    score: {"total":83,"reliability":24,"neutrality":22,"freshness":15,"ageRelevance":14,"readability":8},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/teaching-taxes-to-kids.jpg",
@@ -9501,7 +9501,7 @@ export const ARTICLES: Article[] = [
           "cautious": "専門家への相談を適宜行うことが推奨されています。"
     },
     },
-    score: {"total":71,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":10,"readability":6},
+    score: {"total":82,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":10,"readability":6},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/traffic-rules-education.jpg",
@@ -9545,7 +9545,7 @@ export const ARTICLES: Article[] = [
           "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
     },
     },
-    score: {"total":83,"reliability":28,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":5},
+    score: {"total":87,"reliability":28,"neutrality":25,"freshness":16,"ageRelevance":13,"readability":5},
     publishedAt: "2026-03-11",
     updatedAt: "2026-03-11",
     imageUrl: "/articles/young-carer-support.jpg",
