@@ -7,7 +7,9 @@
     "dev": "npm run prebuild && next dev",
     "build": "npm run prebuild && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate": "node scripts/validate-articles.mjs",
+    "validate:strict": "node scripts/validate-articles.mjs --strict"
   },
   "dependencies": {
     "fuse.js": "^7.1.0",

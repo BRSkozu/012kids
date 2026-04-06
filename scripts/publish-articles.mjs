@@ -9,6 +9,7 @@
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
+import { validateAllArticles } from './validate-articles.mjs';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content', 'articles');
 const CATEGORIES = [
@@ -140,6 +141,24 @@ function main() {
     process.exit(0);
   }
 
+  // 公開前バリデーション: 全記事の論理矛盾チェック
+  console.log('🔍 公開前バリデーション実行中...');
+  const preValidation = validateAllArticles();
+  if (preValidation.totalErrors > 0) {
+    console.log('');
+    for (const { relPath, errors } of preValidation.results) {
+      if (errors.length > 0) {
+        console.log(`  📄 ${relPath}`);
+        for (const err of errors) {
+          console.log(`    ❌ ${err}`);
+        }
+      }
+    }
+    console.error(`\n🚨 ${preValidation.totalErrors}件のエラーが見つかりました。公開前に修正してください。`);
+    process.exit(1);
+  }
+  console.log(`  ✅ ${preValidation.fileCount}件チェック完了 - エラーなし\n`);
+
   // Select balanced set
   const selected = selectBalanced(draftsByCategory, Math.min(count, totalDrafts));
   console.log(`Selected ${selected.length} articles to publish:\n`);
@@ -159,8 +178,26 @@ function main() {
     console.log(`  ${cat}: ${n}`);
   }
 
+  // 公開後バリデーション: draft解除後の整合性確認
+  console.log('\n🔍 公開後バリデーション実行中...');
+  const postValidation = validateAllArticles();
+  if (postValidation.totalErrors > 0) {
+    console.log('');
+    for (const { relPath, errors } of postValidation.results) {
+      if (errors.length > 0) {
+        console.log(`  📄 ${relPath}`);
+        for (const err of errors) {
+          console.log(`    ❌ ${err}`);
+        }
+      }
+    }
+    console.error(`\n🚨 公開後に${postValidation.totalErrors}件のエラーが検出されました。確認してください。`);
+    process.exit(1);
+  }
+  console.log(`  ✅ エラーなし\n`);
+
   // Run build scripts
-  console.log(`\nRunning build scripts...`);
+  console.log(`Running build scripts...`);
   runBuildScripts();
 
   console.log(`\nDone! Published ${selected.length} articles.\n`);

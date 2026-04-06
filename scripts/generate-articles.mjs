@@ -6,6 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { validateAllArticles } from './validate-articles.mjs';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content', 'articles');
 const OUTPUT_FILE = path.join(process.cwd(), 'src', 'data', 'articles.ts');
@@ -111,6 +112,27 @@ export function searchArticles(query: string): Article[] {
 // Main
 const files = getAllMdxFiles();
 console.log(`Found ${files.length} MDX files`);
+
+// prebuild時バリデーション: 論理矛盾チェック
+console.log('🔍 記事バリデーション実行中...');
+const { results: valResults, totalErrors, totalWarnings } = validateAllArticles();
+
+if (totalErrors > 0) {
+  for (const { relPath, errors } of valResults) {
+    if (errors.length > 0) {
+      console.log(`  📄 ${relPath}`);
+      for (const err of errors) {
+        console.log(`    ❌ ${err}`);
+      }
+    }
+  }
+  console.error(`\n🚨 ${totalErrors}件のエラーがあります。ビルド前に修正してください。`);
+  process.exit(1);
+}
+if (totalWarnings > 0) {
+  console.log(`  ⚠️  ${totalWarnings}件の警告があります（ビルドは続行）`);
+}
+console.log(`  ✅ ${files.length}件チェック完了 - エラーなし`);
 
 const articles = files.map(parseArticle);
 const output = generateOutput(articles);

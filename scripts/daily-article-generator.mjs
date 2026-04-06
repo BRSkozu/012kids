@@ -18,6 +18,8 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import matter from 'gray-matter';
+import { validateAllArticles } from './validate-articles.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.join(__dirname, '..', 'content', 'articles');
@@ -188,6 +190,14 @@ function generateMdx(topic, id, today) {
 
   const tagsYaml = topic.tags.map(t => `  - ${t}`).join('\n');
 
+  // スコアを事前計算して合計値の整合性を保証
+  const scoreReliability = 22 + Math.floor(Math.random() * 8);
+  const scoreNeutrality = 20 + Math.floor(Math.random() * 6);
+  const scoreFreshness = 15 + Math.floor(Math.random() * 5);
+  const scoreAgeRelevance = 10 + Math.floor(Math.random() * 5);
+  const scoreReadability = 5 + Math.floor(Math.random() * 4);
+  const scoreTotal = scoreReliability + scoreNeutrality + scoreFreshness + scoreAgeRelevance + scoreReadability;
+
   return `---
 id: "art-${String(id).padStart(4, '0')}"
 slug: "${topic.slug}"
@@ -204,12 +214,12 @@ perspectives:
   neutral: "${perspectives.neutral}"
   cautious: "${perspectives.cautious}"
 score:
-  total: ${70 + Math.floor(Math.random() * 20)}
-  reliability: ${22 + Math.floor(Math.random() * 8)}
-  neutrality: ${20 + Math.floor(Math.random() * 6)}
-  freshness: ${15 + Math.floor(Math.random() * 5)}
-  ageRelevance: ${10 + Math.floor(Math.random() * 5)}
-  readability: ${5 + Math.floor(Math.random() * 4)}
+  total: ${scoreTotal}
+  reliability: ${scoreReliability}
+  neutrality: ${scoreNeutrality}
+  freshness: ${scoreFreshness}
+  ageRelevance: ${scoreAgeRelevance}
+  readability: ${scoreReadability}
 publishedAt: "${today}"
 updatedAt: "${today}"
 readingTime: ${topic.readingTime}
@@ -310,3 +320,37 @@ if (!DRY_RUN) {
 console.log(`\n✨ 完了: ${generated}件の記事を${DRY_RUN ? '生成予定（dry-run）' : '生成しました'}`);
 console.log(`📈 累計生成数: ${db.meta.totalGenerated}件`);
 console.log(`🔢 次のID: art-${String(nextId).padStart(4, '0')}\n`);
+
+// ---------------------------------------------------------------------------
+// 生成後バリデーション: 論理矛盾チェック
+// ---------------------------------------------------------------------------
+if (!DRY_RUN && generated > 0) {
+  console.log('🔍 生成記事のバリデーション実行中...\n');
+
+  // 生成した記事ファイルのみチェック（全体の重複チェックも含む）
+  const { results, totalErrors, totalWarnings, fileCount } = validateAllArticles();
+
+  for (const { relPath, errors, warnings } of results) {
+    if (errors.length > 0) {
+      console.log(`📄 ${relPath}`);
+      for (const err of errors) {
+        console.log(`  ❌ ERROR: ${err}`);
+      }
+    }
+    if (warnings.length > 0) {
+      console.log(`📄 ${relPath}`);
+      for (const warn of warnings) {
+        console.log(`  ⚠️  WARN: ${warn}`);
+      }
+    }
+  }
+
+  console.log(`\n📊 バリデーション結果: ${fileCount}件チェック / エラー: ${totalErrors}件 / 警告: ${totalWarnings}件`);
+
+  if (totalErrors > 0) {
+    console.error(`\n🚨 ${totalErrors}件のエラーがあります。生成記事を確認してください。`);
+    process.exit(1);
+  } else {
+    console.log('✅ 論理矛盾なし。\n');
+  }
+}
