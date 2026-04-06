@@ -2,7 +2,12 @@ import Link from 'next/link';
 import AgeSelector from '@/components/age-selector/AgeSelector';
 import ArticleCard from '@/components/articles/ArticleCard';
 import SeasonalPickup from '@/components/articles/SeasonalPickup';
-import WorrySearchCompact from '@/components/search/WorrySearchCompact';
+import FirstTimeSection from '@/components/home/FirstTimeSection';
+import AgePillNav from '@/components/home/AgePillNav';
+import WorryCardSection from '@/components/home/WorryCardSection';
+import TrustBlock from '@/components/home/TrustBlock';
+import PopularArticles from '@/components/home/PopularArticles';
+import ScrollTracker from '@/components/home/ScrollTracker';
 import { getFeaturedArticles, getLatestArticles, getAllArticlesSync, getArticleCountByCategory, getArticleCountByStage } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 import { AGE_STAGES } from '@/data/stages';
@@ -46,6 +51,18 @@ export default function HomePage() {
     .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
     .slice(0, 10);
 
+  // Popular articles for P2 section (top 6)
+  const popular = [...allArticles]
+    .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
+    .slice(0, 6)
+    .map((a) => ({
+      id: a.id,
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      stage: a.stage,
+    }));
+
   // Seasonal content
   const seasonalTheme = getCurrentSeasonalTheme();
   const seasonalArticles = allArticles
@@ -76,11 +93,19 @@ export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(rankingLd) }} />
+      <ScrollTracker />
+
       {/* Hero + Age Selector */}
       <AgeSelector />
 
+      {/* P0: Age Pill Navigation */}
+      <AgePillNav />
+
+      {/* P0: はじめての方へ - First Time User Section */}
+      <FirstTimeSection />
+
       {/* Article Count Banner */}
-      <section className="max-w-7xl mx-auto px-4 -mt-2 mb-8">
+      <section className="max-w-7xl mx-auto px-4 -mt-2 mb-4">
         <div className="glass rounded-2xl p-6 border border-orange-100/60 shadow-sm">
           <p className="text-center text-sm text-gray-600">
             012.kidsは、子育て・教育に関する公的機関や専門家の情報をわかりやすくまとめて紹介するサイトです。
@@ -113,15 +138,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Worry Search */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="w-1 h-6 bg-[var(--color-primary)] rounded-full" />
-          <h2 className="text-2xl font-bold text-gray-900">お悩みから探す</h2>
-        </div>
-        <p className="text-sm text-gray-500 mb-6 ml-5">同じ悩みを持つパパ・ママの「あるある」から、役立つ記事を見つけましょう</p>
-        <WorrySearchCompact />
-      </section>
+      {/* P1: お悩みから探す (icon cards, moved up) */}
+      <WorryCardSection />
+
+      {/* P1: 信頼性訴求ブロック */}
+      <TrustBlock />
 
       {/* Seasonal Pickup */}
       {seasonalArticles.length > 0 && (
@@ -191,8 +212,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* P2: よく読まれている記事 (top 6 with age badges) */}
+      <section className="bg-[var(--color-warm-bg)] py-2">
+        <PopularArticles articles={popular} />
+      </section>
+
       {/* Latest Articles */}
-      <section className="bg-[var(--color-warm-bg)] py-12">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-3">
@@ -300,7 +326,6 @@ export default function HomePage() {
           </p>
           <div className="space-y-4">
             {(() => {
-              // Pick representative links (one per main category + general top 3)
               const seen = new Set<string>();
               const picks = ALL_RECOMMENDED_LINKS.filter((link) => {
                 const key = link.categories.filter((c) => c !== 'general')[0] || 'general';
@@ -310,7 +335,6 @@ export default function HomePage() {
               }).slice(0, 12);
 
               return picks.map((link) => {
-                // Find up to 3 related articles by matching categories
                 const related = allArticles
                   .filter((a) =>
                     a.categories.some((c) => link.categories.includes(c))
