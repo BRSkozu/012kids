@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -36,6 +37,7 @@ export default function ContactPage() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-12">
+      <Breadcrumb items={[{ label: 'お問い合わせ' }]} />
       <h1 className="text-3xl font-bold text-gray-900 mb-2">お問い合わせ・訂正依頼</h1>
       <p className="text-gray-500 mb-8">
         記事の誤り、改善提案、その他お問い合わせはこちらからお送りください。

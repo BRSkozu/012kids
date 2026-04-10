@@ -5,6 +5,7 @@ import { CATEGORIES, getCategoryById } from '@/data/categories';
 import { getArticlesByCategory } from '@/lib/articles';
 import { AGE_STAGES } from '@/data/stages';
 import ArticleCard from '@/components/articles/ArticleCard';
+import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -40,15 +41,11 @@ export default async function CategoryPage({ params }: PageProps) {
 
   const articles = getArticlesByCategory(id);
 
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TOP', item: 'https://012.kids' },
-      { '@type': 'ListItem', position: 2, name: 'カテゴリ' },
-      { '@type': 'ListItem', position: 3, name: cat.label, item: `https://012.kids/category/${cat.id}` },
-    ],
-  };
+  const breadcrumbItems = [
+    { label: 'カテゴリ' },
+    { label: cat.label, href: `/category/${cat.id}` },
+  ];
+  const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
 
   const collectionLd = {
     '@context': 'https://schema.org',
@@ -68,13 +65,7 @@ export default async function CategoryPage({ params }: PageProps) {
       {/* Hero */}
       <section className="bg-gradient-to-b from-orange-50 to-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <nav className="text-sm text-gray-500 mb-6">
-            <Link href="/" className="hover:text-gray-700">TOP</Link>
-            <span className="mx-2">/</span>
-            <span>カテゴリ</span>
-            <span className="mx-2">/</span>
-            <span className="font-medium text-gray-700">{cat.label}</span>
-          </nav>
+          <Breadcrumb items={breadcrumbItems} />
 
           <div className="flex items-center gap-4">
             <span className="text-5xl">{cat.icon}</span>

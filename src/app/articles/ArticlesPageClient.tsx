@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import ArticleCard from '@/components/articles/ArticleCard';
+import Breadcrumb from '@/components/ui/Breadcrumb';
 import { AGE_STAGES } from '@/data/stages';
 import { CATEGORIES } from '@/data/categories';
 import { AgeStage, ContentCategory, ArticleMeta } from '@/types';
@@ -43,6 +44,7 @@ export default function ArticlesPageClient({ articles }: Props) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <Breadcrumb items={[{ label: '記事一覧' }]} />
       <h1 className="text-3xl font-bold text-gray-900 mb-2">記事一覧</h1>
       <p className="text-gray-500 mb-8">
         {filteredArticles.length}件の記事が見つかりました

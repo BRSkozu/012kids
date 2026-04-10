@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export const metadata: Metadata = {
   title: '編集部について',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 export default function EditorialTeamPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <Breadcrumb items={[{ label: '編集部について' }]} />
       <h1 className="text-3xl font-bold text-gray-900 mb-2">編集部について</h1>
       <p className="text-gray-500 mb-8">
         012.kidsの記事は、編集部が公的機関や専門家の発信情報をもとに独自にまとめています。

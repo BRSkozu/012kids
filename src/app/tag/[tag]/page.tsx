@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticlesByTag, getTagsForSSG, getAllTagsWithCounts } from '@/lib/articles';
 import ArticleCard from '@/components/articles/ArticleCard';
+import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
 
 interface PageProps {
   params: Promise<{ tag: string }>;
@@ -41,15 +42,11 @@ export default async function TagPage({ params }: PageProps) {
 
   const allTags = getAllTagsWithCounts().filter((t) => t.count >= 2).slice(0, 50);
 
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TOP', item: 'https://012.kids' },
-      { '@type': 'ListItem', position: 2, name: 'タグ' },
-      { '@type': 'ListItem', position: 3, name: tag },
-    ],
-  };
+  const breadcrumbItems = [
+    { label: 'タグ' },
+    { label: `#${tag}` },
+  ];
+  const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
 
   const collectionLd = {
     '@context': 'https://schema.org',
@@ -68,13 +65,7 @@ export default async function TagPage({ params }: PageProps) {
 
       <section className="bg-gradient-to-b from-orange-50 to-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <nav className="text-sm text-gray-500 mb-6">
-            <Link href="/" className="hover:text-gray-700">TOP</Link>
-            <span className="mx-2">/</span>
-            <span>タグ</span>
-            <span className="mx-2">/</span>
-            <span className="font-medium text-gray-700">#{tag}</span>
-          </nav>
+          <Breadcrumb items={breadcrumbItems} />
 
           <h1 className="text-3xl font-bold text-gray-900">
             <span className="text-[var(--color-primary)]">#</span>{tag}

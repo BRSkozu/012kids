@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export const metadata: Metadata = {
   title: '編集方針',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 export default function EditorialPolicyPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <Breadcrumb items={[{ label: '編集方針' }]} />
       <h1 className="text-3xl font-bold text-gray-900 mb-2">編集方針</h1>
       <p className="text-gray-500 mb-8">
         012.kidsが情報まとめサイトとして、透明性と信頼性を確保するために定めた編集ポリシーです。

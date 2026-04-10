@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
+import ReadingTime from '@/components/ui/ReadingTime';
 import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
 import { getStageById } from '@/data/stages';
 
@@ -31,7 +32,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           {article.categories.slice(0, 1).map((cat) => (
             <CategoryTag key={cat} category={cat} />
           ))}
-          <span className="text-xs text-gray-400 whitespace-nowrap">{article.readingTime}分</span>
+          <ReadingTime minutes={article.readingTime} variant="short" />
         </div>
         <span className="shrink-0 text-gray-400 group-hover:text-[var(--color-primary)] group-hover:translate-x-0.5 transition-all duration-200">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +72,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
               {article.title}
             </h3>
             <p className="text-sm text-gray-500 line-clamp-2">{article.excerpt}</p>
-            <div className="mt-3 text-xs text-gray-400">{article.readingTime}分で読めます</div>
+            <div className="mt-3"><ReadingTime minutes={article.readingTime} /></div>
           </div>
         </Link>
       </article>
@@ -100,7 +101,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             <h3 className="text-sm font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2">
               {article.title}
             </h3>
-            <div className="mt-1.5 text-xs text-gray-400">{article.readingTime}分で読めます</div>
+            <div className="mt-1.5"><ReadingTime minutes={article.readingTime} /></div>
           </div>
         </Link>
       </article>
@@ -126,7 +127,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             </h3>
             <div className="mt-1 flex items-center gap-2">
               <StageBadge stage={article.stage} size="sm" />
-              <time className="text-xs text-gray-400" dateTime={article.publishedAt}>{article.readingTime}分で読めます</time>
+              <ReadingTime minutes={article.readingTime} />
             </div>
           </div>
         </Link>
@@ -158,7 +159,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
               ))}
             </div>
             <footer className="mt-3 flex items-center justify-between text-xs text-gray-400">
-              <span>{article.readingTime}分で読めます</span>
+              <ReadingTime minutes={article.readingTime} />
               <time dateTime={article.publishedAt}>{article.publishedAt}</time>
             </footer>
           </div>
@@ -189,8 +190,8 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
               <CategoryTag key={cat} category={cat} />
             ))}
           </div>
-          <footer className="mt-2 text-xs text-gray-400">
-            <span>{article.readingTime}分</span>
+          <footer className="mt-2">
+            <ReadingTime minutes={article.readingTime} variant="short" />
           </footer>
         </div>
       </Link>

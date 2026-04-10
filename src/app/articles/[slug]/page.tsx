@@ -5,6 +5,8 @@ import { getAllArticlesSync, getArticleBySlug, getArticleContentHtml } from '@/l
 import { getStageById, AGE_STAGES } from '@/data/stages';
 import StageBadge from '@/components/ui/StageBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
+import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
+import ReadingTime from '@/components/ui/ReadingTime';
 import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 import ShareButtons from '@/components/articles/ShareButtons';
@@ -190,16 +192,12 @@ export default async function ArticlePage({ params }: PageProps) {
       }
     : null;
 
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TOP', item: 'https://012.kids' },
-      { '@type': 'ListItem', position: 2, name: '記事一覧', item: 'https://012.kids/articles' },
-      { '@type': 'ListItem', position: 3, name: stage.label, item: `https://012.kids/age-guide/${article.stage}` },
-      { '@type': 'ListItem', position: 4, name: article.title },
-    ],
-  };
+  const breadcrumbItems = [
+    { label: '記事一覧', href: '/articles' },
+    { label: stage.label, href: `/age-guide/${article.stage}` },
+    { label: article.title },
+  ];
+  const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -224,17 +222,7 @@ export default async function ArticlePage({ params }: PageProps) {
         <div className="flex-1 min-w-0">
 
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
-        <Link href="/" className="hover:text-[var(--color-primary)]">TOP</Link>
-        <span>/</span>
-        <Link href="/articles" className="hover:text-[var(--color-primary)]">記事一覧</Link>
-        <span>/</span>
-        <Link href={`/age-guide/${article.stage}`} className="hover:text-[var(--color-primary)]">
-          {stage.label}
-        </Link>
-        <span>/</span>
-        <span className="text-gray-400 truncate">{article.title}</span>
-      </nav>
+      <Breadcrumb items={breadcrumbItems} />
 
       {/* Article Header */}
       <header className="mb-8">
@@ -267,7 +255,7 @@ export default async function ArticlePage({ params }: PageProps) {
           {article.updatedAt !== article.publishedAt && (
             <span>更新: {article.updatedAt}</span>
           )}
-          <span>{article.readingTime}分で読めます</span>
+          <ReadingTime minutes={article.readingTime} />
         </div>
 
         <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-gray-500 border border-orange-100">

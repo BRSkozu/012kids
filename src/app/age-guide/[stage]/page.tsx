@@ -7,6 +7,7 @@ import { CATEGORIES } from '@/data/categories';
 import { AgeStage } from '@/types';
 import ArticleCard from '@/components/articles/ArticleCard';
 import StageBadge from '@/components/ui/StageBadge';
+import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
 
 interface PageProps {
   params: Promise<{ stage: string }>;
@@ -53,15 +54,11 @@ export default async function AgeGuidePage({ params }: PageProps) {
   const articles = getArticlesByStage(stageId);
   const stageInfo = getStageById(stageId as AgeStage);
 
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'TOP', item: 'https://012.kids' },
-      { '@type': 'ListItem', position: 2, name: '年齢別ガイド' },
-      { '@type': 'ListItem', position: 3, name: stage.label, item: `https://012.kids/age-guide/${stage.id}` },
-    ],
-  };
+  const breadcrumbItems = [
+    { label: '年齢別ガイド' },
+    { label: stage.label, href: `/age-guide/${stage.id}` },
+  ];
+  const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
 
   return (
     <div>
@@ -72,13 +69,7 @@ export default async function AgeGuidePage({ params }: PageProps) {
         style={{ backgroundColor: stage.colorLight }}
       >
         <div className="max-w-7xl mx-auto px-4">
-          <nav className="text-sm text-gray-500 mb-6">
-            <Link href="/" className="hover:text-gray-700">TOP</Link>
-            <span className="mx-2">/</span>
-            <span>年齢別ガイド</span>
-            <span className="mx-2">/</span>
-            <span className="font-medium text-gray-700">{stage.label}</span>
-          </nav>
+          <Breadcrumb items={breadcrumbItems} />
 
           <div className="flex items-start gap-4">
             <div

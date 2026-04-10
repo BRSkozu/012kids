@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 import Fuse from 'fuse.js';
 import ArticleCard from '@/components/articles/ArticleCard';
+import Breadcrumb from '@/components/ui/Breadcrumb';
 import WorrySearch from '@/components/search/WorrySearch';
 import { AGE_STAGES } from '@/data/stages';
 import { CATEGORIES } from '@/data/categories';
@@ -57,6 +58,7 @@ function SearchContent() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <Breadcrumb items={[{ label: '検索' }]} />
       <h1 className="text-3xl font-bold text-gray-900 mb-6">記事を検索</h1>
 
       {/* Tab switcher */}
