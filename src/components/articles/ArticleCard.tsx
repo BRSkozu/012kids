@@ -3,14 +3,16 @@ import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
+import { getStageById } from '@/data/stages';
 
 interface ArticleCardProps {
   article: Article | ArticleMeta;
-  variant?: 'default' | 'featured' | 'compact' | 'list';
+  variant?: 'default' | 'featured' | 'compact' | 'list' | 'related-hero' | 'related-card';
 }
 
 export default function ArticleCard({ article, variant = 'default' }: ArticleCardProps) {
   const Illustration = getCategoryIllustration(article.categories[0]);
+  const stageInfo = getStageById(article.stage);
 
   if (variant === 'list') {
     return (
@@ -40,6 +42,71 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
     );
   }
 
+  if (variant === 'related-hero') {
+    return (
+      <article className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <Link href={`/articles/${article.slug}`} className="block">
+          <div
+            className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
+            style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}
+          >
+            <div className="absolute inset-0 opacity-10" style={{
+              backgroundImage: `radial-gradient(circle at 20% 50%, ${stageInfo.color} 1px, transparent 1px), radial-gradient(circle at 80% 20%, ${stageInfo.color} 1px, transparent 1px)`,
+              backgroundSize: '40px 40px, 60px 60px',
+            }} />
+            <div className="group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
+              <Illustration size={100} />
+            </div>
+            <div className="absolute top-3 left-3">
+              <StageBadge stage={article.stage} size="md" />
+            </div>
+          </div>
+          <div className="p-5">
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
+              {article.categories.slice(0, 2).map((cat) => (
+                <CategoryTag key={cat} category={cat} />
+              ))}
+            </div>
+            <h3 className="text-base font-bold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2 mb-2">
+              {article.title}
+            </h3>
+            <p className="text-sm text-gray-500 line-clamp-2">{article.excerpt}</p>
+            <div className="mt-3 text-xs text-gray-400">{article.readingTime}分で読めます</div>
+          </div>
+        </Link>
+      </article>
+    );
+  }
+
+  if (variant === 'related-card') {
+    return (
+      <article className="group rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100">
+        <Link href={`/articles/${article.slug}`} className="flex gap-0">
+          <div
+            className="w-24 sm:w-28 shrink-0 flex items-center justify-center relative overflow-hidden"
+            style={{ background: `linear-gradient(160deg, ${stageInfo.colorLight}, ${stageInfo.color}40)` }}
+          >
+            <div className="group-hover:scale-110 transition-transform duration-400">
+              <Illustration size={56} />
+            </div>
+          </div>
+          <div className="p-3 sm:p-4 min-w-0 flex-1">
+            <div className="flex items-center gap-1.5 mb-1.5">
+              <StageBadge stage={article.stage} size="sm" />
+              {article.categories.slice(0, 1).map((cat) => (
+                <CategoryTag key={cat} category={cat} />
+              ))}
+            </div>
+            <h3 className="text-sm font-semibold text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2">
+              {article.title}
+            </h3>
+            <div className="mt-1.5 text-xs text-gray-400">{article.readingTime}分で読めます</div>
+          </div>
+        </Link>
+      </article>
+    );
+  }
+
   if (variant === 'compact') {
     return (
       <article className="rounded-xl hover:bg-orange-50/50 transition-all duration-200 group">
@@ -47,7 +114,10 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           href={`/articles/${article.slug}`}
           className="flex gap-4 p-4"
         >
-          <div className="w-20 h-20 rounded-lg bg-orange-50 shrink-0 flex items-center justify-center overflow-hidden group-hover:shadow-md transition-shadow duration-200">
+          <div
+            className="w-20 h-20 rounded-lg shrink-0 flex items-center justify-center overflow-hidden group-hover:shadow-md transition-shadow duration-200"
+            style={{ backgroundColor: stageInfo.colorLight }}
+          >
             <Illustration size={64} />
           </div>
           <div className="min-w-0">

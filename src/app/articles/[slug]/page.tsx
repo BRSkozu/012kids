@@ -424,16 +424,25 @@ export default async function ArticlePage({ params }: PageProps) {
         );
       })()}
 
-      {/* Related Articles - full width */}
+      {/* Related Articles - magazine layout */}
       {relatedArticles.length > 0 && (
         <div className="border-t border-orange-100 pt-8">
           <h3 className="text-lg font-bold text-gray-900 mb-2">あわせて読みたい</h3>
-          <p className="text-sm text-gray-500 mb-4">同じテーマの記事をチェック</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {relatedArticles.map((a) => (
-              <ArticleCard key={a.id} article={a} variant="compact" />
+          <p className="text-sm text-gray-500 mb-6">同じテーマの記事をチェック</p>
+          {/* Hero row: first 2 articles get large cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            {relatedArticles.slice(0, 2).map((a) => (
+              <ArticleCard key={a.id} article={a} variant="related-hero" />
             ))}
           </div>
+          {/* Remaining articles: horizontal compact cards */}
+          {relatedArticles.length > 2 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {relatedArticles.slice(2).map((a) => (
+                <ArticleCard key={a.id} article={a} variant="related-card" />
+              ))}
+            </div>
+          )}
         </div>
       )}
 
