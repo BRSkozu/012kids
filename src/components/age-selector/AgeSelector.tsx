@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AGE_STAGES } from '@/data/stages';
 import { getStageByAge } from '@/data/stages';
+import EmotionalHero from '@/components/home/EmotionalHero';
 
 function getGradeLabel(age: number): string | null {
   const grades: Record<number, string> = {
@@ -67,14 +68,12 @@ export default function AgeSelector() {
               <span className="text-[#E8943D]">2</span>
               <span className="text-gray-400">.kids</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-md leading-relaxed">
-              0歳から12歳の子育てに役立つ情報を
+            <p className="text-lg md:text-xl text-gray-700 max-w-md leading-relaxed font-medium">
+              検索した夜、
               <br className="hidden md:block" />
-              わかりやすくまとめてお届けします
+              あなたに必要な答えが、ここに。
             </p>
-            <p className="mt-3 text-sm text-gray-400">
-              公的機関・専門家の情報をもとに、信頼度スコア付きでお届け
-            </p>
+            <EmotionalHero />
           </div>
         </div>
 

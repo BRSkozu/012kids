@@ -10,6 +10,7 @@ import ReadingTime from '@/components/ui/ReadingTime';
 import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 import ShareButtons from '@/components/articles/ShareButtons';
+import ArticleViewTracker from '@/components/articles/ArticleViewTracker';
 import TableOfContents from '@/components/articles/TableOfContents';
 import ReadingProgress from '@/components/articles/ReadingProgress';
 import RecommendedLinks from '@/components/articles/RecommendedLinks';
@@ -208,6 +209,7 @@ export default async function ArticlePage({ params }: PageProps) {
       )}
       {/* Reading Progress + Back to Top */}
       <ReadingProgress />
+      <ArticleViewTracker slug={article.slug} title={article.title} />
 
       {/* 2-column layout: sidebar TOC + main content */}
       <div className="lg:flex lg:gap-8">

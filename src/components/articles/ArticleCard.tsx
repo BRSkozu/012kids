@@ -4,6 +4,7 @@ import StageBadge from '@/components/ui/StageBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import ReadingTime from '@/components/ui/ReadingTime';
 import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
+import StageCategoryIllustration from '@/components/illustrations/StageCategoryIllustration';
 import { getStageById } from '@/data/stages';
 
 interface ArticleCardProps {
@@ -139,10 +140,13 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
     return (
       <article className="group rounded-2xl overflow-hidden bg-white border border-orange-100 card-hover">
         <Link href={`/articles/${article.slug}`} className="block">
-          <div className="aspect-[16/9] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center relative overflow-hidden">
+          <div
+            className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
+            style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}
+          >
             <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
             <div className="group-hover:scale-110 transition-transform duration-500">
-              <Illustration size={120} />
+              <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={168} />
             </div>
           </div>
           <div className="p-5">
@@ -172,9 +176,12 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
   return (
     <article className="group rounded-xl overflow-hidden bg-white border border-orange-100 card-hover">
       <Link href={`/articles/${article.slug}`} className="block">
-        <div className="aspect-[2/1] bg-gradient-to-br from-orange-50 to-amber-50 flex items-center justify-center relative overflow-hidden">
+        <div
+          className="aspect-[2/1] flex items-center justify-center relative overflow-hidden"
+          style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}25)` }}
+        >
           <div className="group-hover:scale-110 transition-transform duration-500">
-            <Illustration size={96} />
+            <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={132} />
           </div>
         </div>
         <div className="p-4">

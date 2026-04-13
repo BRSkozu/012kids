@@ -7,6 +7,7 @@ import Fuse from 'fuse.js';
 import ArticleCard from '@/components/articles/ArticleCard';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import WorrySearch from '@/components/search/WorrySearch';
+import SearchAutocomplete from '@/components/search/SearchAutocomplete';
 import { AGE_STAGES } from '@/data/stages';
 import { CATEGORIES } from '@/data/categories';
 import { ARTICLES } from '@/data/articles';
@@ -89,29 +90,9 @@ function SearchContent() {
         <WorrySearch />
       ) : (
         <>
-          {/* Search Input */}
-          <div className="relative mb-6">
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="キーワードで検索（例：離乳食、発達、習い事）"
-              className="w-full px-5 py-4 rounded-xl border border-orange-200 text-lg focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent outline-none"
-              autoFocus
-            />
-            <svg
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+          {/* Search Input with autocomplete */}
+          <div className="mb-6">
+            <SearchAutocomplete value={query} onChange={setQuery} autoFocus />
           </div>
 
           {/* Filters */}
