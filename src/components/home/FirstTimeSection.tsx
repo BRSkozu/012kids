@@ -48,35 +48,53 @@ const FIRST_TIME_CARDS = [
 export default function FirstTimeSection() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
-      <div className="flex items-center gap-3 mb-2">
-        <div className="w-1 h-6 bg-[var(--color-primary)] rounded-full" />
-        <h2 className="text-2xl font-bold text-gray-900">まずはこの3つから</h2>
+      <div className="mb-6">
+        <p
+          className="text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-2 inline-flex items-center gap-2"
+          style={{ fontFamily: 'var(--font-gothic)' }}
+        >
+          <span className="inline-block w-5 h-px bg-[var(--color-primary)]" />
+          First 3
+        </p>
+        <h2
+          className="text-[26px] md:text-[32px] leading-[1.25] text-[var(--color-foreground)]"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, letterSpacing: '0.005em' }}
+        >
+          まずはこの3つから
+        </h2>
+        <p className="mt-2 text-sm md:text-[15px] text-[var(--color-foreground-soft)] leading-[1.85]">
+          0〜12歳の子育てで、最初に読むと役立つ記事を厳選しました。
+        </p>
       </div>
-      <p className="text-sm text-gray-500 mb-6 ml-5">
-        0〜12歳の子育てで、最初に読むと役立つ記事を厳選しました。
-      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {FIRST_TIME_CARDS.map((card) => (
           <Link
             key={card.ageGroup}
             href={card.href}
             onClick={() => trackFirst3Click(card.ageGroup)}
-            className="group block rounded-2xl p-6 border-2 border-transparent hover:border-orange-200 card-hover"
+            className="group relative block rounded-2xl p-6 border border-[var(--color-paper-edge)] card-hover overflow-hidden"
             style={{ backgroundColor: card.colorLight }}
           >
             <div
-              className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300"
+              className="lamp-glow top-[-4rem] right-[-3rem] w-[12rem] h-[12rem] opacity-40 pointer-events-none"
+              style={{ backgroundColor: card.color }}
+            />
+            <div
+              className="relative w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-[0_8px_18px_-10px_rgba(31,36,57,0.25)]"
               style={{ backgroundColor: card.color }}
             >
-              <span className="text-white">{card.icon}</span>
+              <span className="text-[var(--color-foreground)]">{card.icon}</span>
             </div>
-            <h3 className="font-bold text-base text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">
+            <h3
+              className="relative text-base text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+            >
               {card.title}
             </h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+            <p className="relative text-sm text-[var(--color-foreground-soft)] mt-2 leading-[1.85]">
               {card.description}
             </p>
-            <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-medium text-[var(--color-primary)]">
+            <span className="relative inline-flex items-center gap-1.5 mt-4 text-sm font-medium text-[var(--color-primary-dark)]">
               記事を見る
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />

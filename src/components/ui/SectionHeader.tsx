@@ -39,36 +39,41 @@ export default function SectionHeader({
 
   return (
     <div
-      className={`flex ${isCenter ? 'flex-col items-center text-center' : 'items-end justify-between flex-wrap gap-3'} mb-6 ${className}`}
+      className={`flex ${isCenter ? 'flex-col items-center text-center' : 'items-end justify-between flex-wrap gap-3'} mb-7 ${className}`}
     >
-      <div className={isCenter ? 'flex flex-col items-center' : 'flex items-start gap-3 min-w-0'}>
-        {!isCenter && <div className={`w-1 h-8 rounded-full mt-1.5 shrink-0 ${accentColor}`} />}
-        <div className="min-w-0">
-          {kicker && (
-            <p
-              className={`text-xs font-semibold tracking-[0.12em] uppercase text-[var(--color-primary)] mb-1.5 inline-flex items-center gap-1.5 ${isCenter ? 'justify-center' : ''}`}
-            >
-              {icon && <span aria-hidden="true">{icon}</span>}
-              <span>{kicker}</span>
-            </p>
-          )}
-          <h2 className="text-2xl md:text-[26px] font-bold text-gray-900 leading-tight">
-            {title}
-          </h2>
-          {description && (
-            <p className={`mt-1.5 text-sm text-gray-500 ${isCenter ? 'max-w-xl' : ''}`}>
-              {description}
-            </p>
-          )}
-        </div>
+      <div className={isCenter ? 'flex flex-col items-center' : 'min-w-0 flex-1'}>
+        {kicker && (
+          <p
+            className={`text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-2 inline-flex items-center gap-2 ${isCenter ? 'justify-center' : ''}`}
+            style={{ fontFamily: 'var(--font-gothic)' }}
+          >
+            <span className={`inline-block w-5 h-px ${accentColor}`} aria-hidden="true" />
+            {icon && <span aria-hidden="true">{icon}</span>}
+            <span>{kicker}</span>
+          </p>
+        )}
+        <h2
+          className="text-[26px] md:text-[32px] leading-[1.25] text-[var(--color-foreground)]"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, letterSpacing: '0.005em' }}
+        >
+          {title}
+        </h2>
+        {description && (
+          <p
+            className={`mt-2 text-sm md:text-[15px] text-[var(--color-foreground-soft)] leading-[1.85] ${isCenter ? 'max-w-xl' : ''}`}
+            style={{ fontFamily: 'var(--font-sans)' }}
+          >
+            {description}
+          </p>
+        )}
       </div>
       {seeAllHref && !isCenter && (
         <Link
           href={seeAllHref}
-          className="shrink-0 inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary)] hover:underline"
+          className="shrink-0 inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary-dark)] hover:text-[var(--color-primary)] transition-colors group"
         >
-          {seeAllLabel}
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span className="border-b border-transparent group-hover:border-current">{seeAllLabel}</span>
+          <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </Link>

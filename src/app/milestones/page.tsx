@@ -14,8 +14,13 @@ export default function MilestonesPage() {
     <div className="max-w-5xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: '発達マイルストーン' }]} />
       <div className="mb-6">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">発達マイルストーン</h1>
-        <p className="text-sm text-gray-500 leading-relaxed">
+        <h1
+          className="text-3xl text-[var(--color-foreground)] mb-2"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+        >
+          発達マイルストーン
+        </h1>
+        <p className="text-sm text-[var(--color-foreground-soft)] leading-relaxed">
           お子さまの「できるようになったこと」を記録しましょう。
           データはこの端末にのみ保存されます。
         </p>

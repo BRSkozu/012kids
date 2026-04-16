@@ -63,14 +63,14 @@ export default async function TagPage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }} />
 
-      <section className="bg-gradient-to-b from-orange-50 to-white py-12">
+      <section className="bg-gradient-to-b from-[var(--color-warm-cream)] to-[var(--color-surface)] py-12">
         <div className="max-w-7xl mx-auto px-4">
           <Breadcrumb items={breadcrumbItems} />
 
-          <h1 className="text-3xl font-bold text-gray-900">
-            <span className="text-[var(--color-primary)]">#</span>{tag}
+          <h1 className="text-3xl text-[var(--color-foreground)]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>
+            <span className="text-[var(--color-primary-dark)]">#</span>{tag}
           </h1>
-          <p className="text-gray-500 mt-2">{articles.length}件の記事</p>
+          <p className="text-[var(--color-foreground-muted)] mt-2">{articles.length}件の記事</p>
         </div>
       </section>
 
@@ -85,8 +85,8 @@ export default async function TagPage({ params }: PageProps) {
           </div>
 
           <aside>
-            <div className="bg-white rounded-xl border border-gray-200 p-6 sticky top-4">
-              <h3 className="font-bold text-gray-900 mb-4">人気のタグ</h3>
+            <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] p-6 sticky top-4">
+              <h3 className="text-[var(--color-foreground)] mb-4" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>人気のタグ</h3>
               <div className="flex flex-wrap gap-2">
                 {allTags.map((t) => (
                   <Link
@@ -95,7 +95,7 @@ export default async function TagPage({ params }: PageProps) {
                     className={`text-xs px-3 py-1.5 rounded-full transition-colors ${
                       t.tag === tag
                         ? 'bg-[var(--color-primary)] text-white'
-                        : 'bg-orange-50 text-gray-600 hover:bg-orange-100'
+                        : 'bg-[var(--color-warm-cream)] text-[var(--color-foreground-soft)] hover:bg-[var(--color-surface)]'
                     }`}
                   >
                     #{t.tag}

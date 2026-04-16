@@ -14,8 +14,13 @@ export default function FavoritesPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: 'お気に入り' }]} />
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">お気に入りの記事</h1>
-      <p className="text-sm text-gray-500 mb-6">
+      <h1
+        className="text-3xl text-[var(--color-foreground)] mb-2"
+        style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+      >
+        お気に入りの記事
+      </h1>
+      <p className="text-sm text-[var(--color-foreground-soft)] mb-6 leading-relaxed">
         ♡ をタップして保存した記事の一覧です。データはこの端末にのみ保存されています。
       </p>
       <FavoritesClient articles={all} />

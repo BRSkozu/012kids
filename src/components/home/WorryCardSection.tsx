@@ -75,39 +75,56 @@ const WORRY_CARDS = [
 export default function WorryCardSection() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
-      <div className="flex items-center gap-3 mb-2">
-        <div className="w-1 h-6 bg-[var(--color-primary)] rounded-full" />
-        <h2 className="text-2xl font-bold text-gray-900">お悩みから探す</h2>
+      <div className="mb-6">
+        <p
+          className="text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-2 inline-flex items-center gap-2"
+          style={{ fontFamily: 'var(--font-gothic)' }}
+        >
+          <span className="inline-block w-5 h-px bg-[var(--color-primary)]" />
+          Worries
+        </p>
+        <h2
+          className="text-[26px] md:text-[32px] leading-[1.25] text-[var(--color-foreground)]"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, letterSpacing: '0.005em' }}
+        >
+          お悩みから探す
+        </h2>
+        <p className="mt-2 text-sm md:text-[15px] text-[var(--color-foreground-soft)] leading-[1.85]">
+          今困っているテーマから、すぐに情報を見つけられます。
+        </p>
       </div>
-      <p className="text-sm text-gray-500 mb-6 ml-5">
-        今困っているテーマから、すぐに情報を見つけられます。
-      </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
         {WORRY_CARDS.map((card) => (
           <Link
             key={card.id}
             href={card.href}
             onClick={() => trackTroubleClick(card.id)}
-            className="group flex flex-col items-center gap-2 p-4 rounded-xl bg-white border border-orange-100 card-hover text-center"
+            className="group flex flex-col items-center gap-2 p-4 rounded-xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] card-hover text-center"
           >
             <div
-              className="w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              className="w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[0_6px_14px_-8px_rgba(31,36,57,0.25)]"
               style={{ backgroundColor: card.color }}
             >
-              <span className="text-gray-700">{card.icon}</span>
+              <span className="text-[var(--color-foreground)]">{card.icon}</span>
             </div>
-            <span className="text-sm font-bold text-gray-800 group-hover:text-[var(--color-primary)] transition-colors">
+            <span
+              className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+            >
               {card.label}
             </span>
           </Link>
         ))}
       </div>
-      <div className="mt-4 text-center">
+      <div className="mt-5 text-center">
         <Link
           href="/search?tab=worry"
-          className="text-sm text-[var(--color-primary)] hover:underline"
+          className="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary-dark)] hover:text-[var(--color-primary)] group"
         >
-          もっとお悩みから探す →
+          <span className="border-b border-transparent group-hover:border-current">もっとお悩みから探す</span>
+          <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
         </Link>
       </div>
     </section>

@@ -66,30 +66,48 @@ export default function EmotionalHero() {
   const msg = EMPATHETIC_MESSAGES[index];
 
   return (
-    <div className="mt-6 max-w-xl mx-auto">
+    <div className="mt-8 max-w-xl mx-auto">
       <div
         key={index}
-        className="relative rounded-2xl bg-white/70 backdrop-blur-sm border border-white/80 shadow-sm px-5 py-4 md:px-6 md:py-5 animate-fade-in text-left"
-        style={{ borderLeft: `4px solid ${msg.tone}` }}
+        className="relative rounded-2xl bg-[rgba(255,253,247,0.8)] backdrop-blur-md px-5 py-5 md:px-7 md:py-6 animate-fade-in text-left shadow-[0_20px_50px_-30px_rgba(31,36,57,0.25)]"
+        style={{
+          borderTop: `1px solid ${msg.tone}`,
+          borderLeft: `3px solid ${msg.tone}`,
+          borderRight: '1px solid var(--color-paper-edge)',
+          borderBottom: '1px solid var(--color-paper-edge)',
+        }}
       >
-        <p className="text-[15px] md:text-base leading-relaxed text-gray-700">
-          <span className="font-medium text-gray-900">{msg.moment}</span>
+        {/* Quote mark */}
+        <span
+          aria-hidden="true"
+          className="absolute -top-3 left-5 text-4xl leading-none text-[var(--color-primary)] opacity-70"
+          style={{ fontFamily: 'var(--font-serif)' }}
+        >
+          &ldquo;
+        </span>
+        <p
+          className="text-[15px] md:text-base leading-[1.9]"
+          style={{ fontFamily: 'var(--font-serif)' }}
+        >
+          <span className="text-[var(--color-foreground)]">{msg.moment}</span>
           <br />
-          <span className="text-[var(--color-primary)] font-bold">{msg.promise}</span>
+          <span className="text-[var(--color-primary-dark)] font-bold">{msg.promise}</span>
         </p>
-        <div className="mt-3 flex items-center gap-1.5" aria-hidden="true">
+        <div className="mt-4 flex items-center gap-1.5" aria-hidden="true">
           {EMPATHETIC_MESSAGES.map((_, i) => (
             <span
               key={i}
-              className={`h-1 rounded-full transition-all duration-300 ${
-                i === index ? 'w-6 bg-[var(--color-primary)]' : 'w-1.5 bg-gray-300'
+              className={`h-[3px] rounded-full transition-all duration-500 ${
+                i === index
+                  ? 'w-6 bg-[var(--color-primary)]'
+                  : 'w-1.5 bg-[var(--color-paper-edge)]'
               }`}
             />
           ))}
         </div>
       </div>
-      <p className="mt-3 text-xs text-gray-500 text-center">
-        公的機関と専門家のソースを明記。広告・商業誘導なしで、あなたの「検索した夜」に寄り添います。
+      <p className="mt-4 text-[11px] text-[var(--color-foreground-muted)] text-center tracking-wider">
+        公的機関と専門家のソースを明記 ｜ 広告・商業誘導なし ｜ 「検索した夜」に灯りを
       </p>
     </div>
   );

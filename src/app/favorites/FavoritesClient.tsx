@@ -24,7 +24,7 @@ export default function FavoritesClient({ articles }: Props) {
   }, []);
 
   if (!mounted) {
-    return <div className="h-32 rounded-xl bg-orange-50/40 animate-pulse-soft" />;
+    return <div className="h-32 rounded-xl bg-[var(--color-warm-cream)] animate-pulse-soft" />;
   }
 
   const saved = slugs
@@ -33,16 +33,18 @@ export default function FavoritesClient({ articles }: Props) {
 
   if (saved.length === 0) {
     return (
-      <div className="text-center py-16 bg-orange-50/40 rounded-2xl">
+      <div className="text-center py-16 bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-2xl">
         <div className="text-5xl mb-3">♡</div>
-        <p className="text-gray-500 mb-2">お気に入りに追加した記事はまだありません</p>
-        <p className="text-xs text-gray-400 mb-6">
+        <p
+          className="text-[var(--color-foreground)] mb-2"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+        >
+          お気に入りに追加した記事はまだありません
+        </p>
+        <p className="text-xs text-[var(--color-foreground-muted)] mb-6">
           記事カードのハートマーク ♡ をタップすると、ここに保存されます
         </p>
-        <Link
-          href="/articles"
-          className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity"
-        >
+        <Link href="/articles" className="btn-lamp inline-flex">
           記事を探しに行く
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -55,7 +57,7 @@ export default function FavoritesClient({ articles }: Props) {
   return (
     <>
       <div className="flex items-center justify-between mb-4">
-        <p className="text-sm text-gray-500">{saved.length}件の記事を保存中</p>
+        <p className="text-sm text-[var(--color-foreground-soft)]">{saved.length}件の記事を保存中</p>
         <button
           type="button"
           onClick={() => {
@@ -64,7 +66,7 @@ export default function FavoritesClient({ articles }: Props) {
               setSlugs([]);
             }
           }}
-          className="text-xs text-gray-400 hover:text-red-500 transition-colors underline"
+          className="text-xs text-[var(--color-foreground-muted)] hover:text-[#c04444] transition-colors underline"
         >
           すべてクリア
         </button>

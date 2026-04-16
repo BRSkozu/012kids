@@ -17,8 +17,12 @@ export default function StageBadge({ stage, size = 'sm' }: StageBadgeProps) {
 
   return (
     <span
-      className={`inline-flex items-center font-medium rounded-full ${sizeClasses[size]}`}
-      style={{ backgroundColor: info.color, color: '#1a1a2e' }}
+      className={`inline-flex items-center font-medium rounded-full ${sizeClasses[size]} border border-[var(--color-paper-edge)]`}
+      style={{
+        backgroundColor: info.color,
+        color: 'var(--color-foreground)',
+        fontFamily: 'var(--font-sans)',
+      }}
     >
       {info.ageRange}
     </span>

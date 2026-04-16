@@ -16,39 +16,49 @@ export default function NotFound() {
         </svg>
       </div>
 
-      <h1 className="text-5xl font-bold text-[var(--color-primary)] mb-2">404</h1>
-      <h2 className="text-xl font-bold text-gray-900 mb-3">
+      <h1
+        className="text-5xl text-[var(--color-primary-dark)] mb-2"
+        style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+      >
+        404
+      </h1>
+      <h2
+        className="text-xl text-[var(--color-foreground)] mb-3"
+        style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+      >
         ページが見つかりません
       </h2>
-      <p className="text-gray-500 mb-8 leading-relaxed">
+      <p className="text-[var(--color-foreground-soft)] mb-8 leading-relaxed">
         お探しのページは存在しないか、移動した可能性があります。<br />
         下のリンクからお探しの情報を見つけてみてください。
       </p>
 
       <div className="flex flex-col sm:flex-row gap-3 justify-center mb-12">
-        <Link
-          href="/"
-          className="bg-[var(--color-primary)] text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
-        >
+        <Link href="/" className="btn-lamp">
           トップページへ
         </Link>
         <Link
           href="/search"
-          className="bg-orange-50 text-[var(--color-primary-dark)] font-medium px-6 py-3 rounded-lg hover:bg-orange-100 transition-colors"
+          className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-primary-dark)] font-medium px-6 py-3 rounded-lg hover:bg-[var(--color-surface)] hover:border-[var(--color-primary-light)] transition-colors"
         >
           記事を検索
         </Link>
         <Link
           href="/articles"
-          className="bg-gray-100 text-gray-700 font-medium px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors"
+          className="bg-[var(--color-surface)] border border-[var(--color-paper-edge)] text-[var(--color-foreground-soft)] font-medium px-6 py-3 rounded-lg hover:bg-[var(--color-warm-cream)] transition-colors"
         >
           記事一覧
         </Link>
       </div>
 
       {/* Popular categories quick links */}
-      <div className="bg-[var(--color-warm-cream)] rounded-xl p-6">
-        <p className="text-sm font-semibold text-gray-700 mb-3">よく見られているカテゴリ</p>
+      <div className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-xl p-6">
+        <p
+          className="text-sm text-[var(--color-foreground)] mb-3"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+        >
+          よく見られているカテゴリ
+        </p>
         <div className="flex flex-wrap gap-2 justify-center">
           {[
             { label: '発達・成長', href: '/category/development' },
@@ -60,7 +70,7 @@ export default function NotFound() {
             <Link
               key={cat.label}
               href={cat.href}
-              className="px-3 py-1.5 text-sm bg-white rounded-full text-gray-600 hover:text-[var(--color-primary)] hover:bg-orange-50 transition-colors border border-orange-100"
+              className="px-3 py-1.5 text-sm bg-[var(--color-surface)] rounded-full text-[var(--color-foreground-soft)] hover:text-[var(--color-primary-dark)] hover:border-[var(--color-primary-light)] transition-colors border border-[var(--color-paper-edge)]"
             >
               {cat.label}
             </Link>

@@ -45,23 +45,33 @@ export default function ArticlesPageClient({ articles }: Props) {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: '記事一覧' }]} />
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">記事一覧</h1>
-      <p className="text-gray-500 mb-8">
+      <h1
+        className="text-3xl text-[var(--color-foreground)] mb-2"
+        style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+      >
+        記事一覧
+      </h1>
+      <p className="text-[var(--color-foreground-soft)] mb-8">
         {filteredArticles.length}件の記事が見つかりました
       </p>
 
       {/* Filters */}
-      <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 mb-8 space-y-4">
+      <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] p-4 md:p-6 mb-8 space-y-4">
         {/* Age Filter */}
         <div>
-          <label className="text-sm font-medium text-gray-700 mb-2 block">年齢帯</label>
+          <label
+            className="text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-2 block"
+            style={{ fontFamily: 'var(--font-gothic)' }}
+          >
+            年齢帯
+          </label>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setSelectedStage('all')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 selectedStage === 'all'
                   ? 'bg-[var(--color-primary)] text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  : 'bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-foreground-soft)] hover:bg-[var(--color-surface)]'
               }`}
             >
               すべて
@@ -72,7 +82,7 @@ export default function ArticlesPageClient({ articles }: Props) {
                 onClick={() => setSelectedStage(stage.id)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                   selectedStage === stage.id
-                    ? 'ring-2 ring-offset-1 ring-gray-400 scale-105'
+                    ? 'ring-2 ring-offset-1 ring-[var(--color-primary)] scale-105'
                     : 'hover:scale-105'
                 }`}
                 style={{
@@ -87,14 +97,19 @@ export default function ArticlesPageClient({ articles }: Props) {
 
         {/* Category Filter */}
         <div>
-          <label className="text-sm font-medium text-gray-700 mb-2 block">カテゴリ</label>
+          <label
+            className="text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-2 block"
+            style={{ fontFamily: 'var(--font-gothic)' }}
+          >
+            カテゴリ
+          </label>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setSelectedCategory('all')}
               className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
                 selectedCategory === 'all'
                   ? 'bg-[var(--color-primary)] text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  : 'bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-foreground-soft)] hover:bg-[var(--color-surface)]'
               }`}
             >
               すべて
@@ -106,7 +121,7 @@ export default function ArticlesPageClient({ articles }: Props) {
                 className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
                   selectedCategory === cat.id
                     ? 'bg-[var(--color-primary)] text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    : 'bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-foreground-soft)] hover:bg-[var(--color-surface)]'
                 }`}
               >
                 {cat.icon} {cat.label}
@@ -117,11 +132,16 @@ export default function ArticlesPageClient({ articles }: Props) {
 
         {/* Sort */}
         <div className="flex items-center gap-4">
-          <label className="text-sm font-medium text-gray-700">並び替え</label>
+          <label
+            className="text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)]"
+            style={{ fontFamily: 'var(--font-gothic)' }}
+          >
+            並び替え
+          </label>
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-            className="px-3 py-2 rounded-lg border border-gray-300 text-sm bg-white"
+            className="px-3 py-2 rounded-lg border border-[var(--color-paper-edge)] text-sm bg-[var(--color-surface)] text-[var(--color-foreground)]"
           >
             <option value="newest">新着順</option>
             <option value="score">信頼度順</option>
@@ -133,19 +153,19 @@ export default function ArticlesPageClient({ articles }: Props) {
       {/* Results */}
       {filteredArticles.length === 0 ? (
         <div className="text-center py-16">
-          <p className="text-gray-400 text-lg">条件に一致する記事が見つかりませんでした</p>
+          <p className="text-[var(--color-foreground-muted)] text-lg">条件に一致する記事が見つかりませんでした</p>
           <button
             onClick={() => {
               setSelectedStage('all');
               setSelectedCategory('all');
             }}
-            className="mt-4 text-[var(--color-primary)] hover:underline text-sm"
+            className="mt-4 text-[var(--color-primary-dark)] hover:underline text-sm"
           >
             フィルタをリセット
           </button>
         </div>
       ) : (
-        <div className="bg-white rounded-xl border border-gray-200 divide-y divide-gray-100">
+        <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] divide-y divide-[var(--color-paper-edge)]">
           {filteredArticles.map((article) => (
             <ArticleCard key={article.id} article={article} variant="list" />
           ))}

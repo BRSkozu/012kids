@@ -70,7 +70,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
 
   return (
     <div className="flex items-center gap-2 flex-wrap">
-      <span className="text-xs text-gray-500 mr-1">共有</span>
+      <span className="text-xs text-[var(--color-foreground-muted)] mr-1 tracking-wider">共有</span>
       {shares.map((s) => (
         <a
           key={s.label}
@@ -86,7 +86,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
       ))}
       <button
         onClick={handleCopy}
-        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-gray-600 text-xs font-medium border border-gray-300 hover:bg-gray-100 transition-colors"
+        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[var(--color-foreground-soft)] text-xs font-medium border border-[var(--color-paper-edge)] bg-[var(--color-surface)] hover:bg-[var(--color-warm-cream)] transition-colors"
         aria-label="URLをコピー"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

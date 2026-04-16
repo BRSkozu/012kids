@@ -79,11 +79,11 @@ export default async function AgeGuidePage({ params }: PageProps) {
               {stage.ageRange.split('〜')[0]}
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+              <h1 className="text-3xl md:text-4xl text-[var(--color-foreground)]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>
                 {stage.label}
               </h1>
-              <p className="text-lg text-gray-600 mt-1">{stage.ageRange}</p>
-              <p className="text-gray-500 mt-2 max-w-2xl">{stage.description}</p>
+              <p className="text-lg text-[var(--color-foreground-soft)] mt-1">{stage.ageRange}</p>
+              <p className="text-[var(--color-foreground-muted)] mt-2 max-w-2xl">{stage.description}</p>
             </div>
           </div>
 
@@ -107,17 +107,17 @@ export default async function AgeGuidePage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">
+            <h2 className="text-xl text-[var(--color-foreground)] mb-6" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>
               {stage.ageRange}の記事
-              <span className="text-sm font-normal text-gray-500 ml-2">
+              <span className="text-sm font-normal text-[var(--color-foreground-muted)] ml-2">
                 ({articles.length}件)
               </span>
             </h2>
 
             {articles.length === 0 ? (
-              <div className="text-center py-12 bg-gray-50 rounded-xl">
-                <p className="text-gray-400">この年齢帯の記事はまだありません</p>
-                <Link href="/articles" className="text-sm text-[var(--color-primary)] hover:underline mt-2 inline-block">
+              <div className="text-center py-12 bg-[var(--color-warm-cream)] rounded-xl">
+                <p className="text-[var(--color-foreground-muted)]">この年齢帯の記事はまだありません</p>
+                <Link href="/articles" className="text-sm text-[var(--color-primary-dark)] hover:underline mt-2 inline-block">
                   すべての記事を見る
                 </Link>
               </div>
@@ -137,10 +137,10 @@ export default async function AgeGuidePage({ params }: PageProps) {
               className="rounded-xl p-6 mb-6"
               style={{ backgroundColor: stageInfo.colorLight }}
             >
-              <h3 className="font-bold text-gray-900 mb-3">
+              <h3 className="text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>
                 {stage.ageRange}のこの時期に知っておきたいこと
               </h3>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-2 text-sm text-[var(--color-foreground-soft)]">
                 {stage.id === '0stage' && (
                   <>
                     <li>- 月齢ごとの発達の目安と個人差</li>
@@ -190,14 +190,14 @@ export default async function AgeGuidePage({ params }: PageProps) {
             </div>
 
             {/* Category Links */}
-            <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-              <h3 className="font-bold text-gray-900 mb-3">カテゴリから探す</h3>
+            <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] p-6 mb-6">
+              <h3 className="text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>カテゴリから探す</h3>
               <div className="space-y-1">
                 {CATEGORIES.map((cat) => (
                   <Link
                     key={cat.id}
                     href={`/category/${cat.id}`}
-                    className="flex items-center gap-2 px-2 py-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 transition-colors"
+                    className="flex items-center gap-2 px-2 py-2 rounded-lg text-sm text-[var(--color-foreground-soft)] hover:bg-[var(--color-warm-cream)] transition-colors"
                   >
                     <span>{cat.icon}</span>
                     <span>{cat.label}</span>
@@ -207,14 +207,14 @@ export default async function AgeGuidePage({ params }: PageProps) {
             </div>
 
             {/* Other Stages */}
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h3 className="font-bold text-gray-900 mb-3">他の年齢帯</h3>
+            <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] p-6">
+              <h3 className="text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>他の年齢帯</h3>
               <div className="space-y-2">
                 {AGE_STAGES.filter((s) => s.id !== stageId).map((s) => (
                   <Link
                     key={s.id}
                     href={`/age-guide/${s.id}`}
-                    className="flex items-center gap-3 px-2 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                    className="flex items-center gap-3 px-2 py-2 rounded-lg hover:bg-[var(--color-warm-cream)] transition-colors"
                   >
                     <span
                       className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold shrink-0"
@@ -223,8 +223,8 @@ export default async function AgeGuidePage({ params }: PageProps) {
                       {s.ageRange.split('〜')[0]}
                     </span>
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{s.label}</p>
-                      <p className="text-xs text-gray-500">{s.ageRange}</p>
+                      <p className="text-sm font-medium text-[var(--color-foreground)]">{s.label}</p>
+                      <p className="text-xs text-[var(--color-foreground-muted)]">{s.ageRange}</p>
                     </div>
                   </Link>
                 ))}

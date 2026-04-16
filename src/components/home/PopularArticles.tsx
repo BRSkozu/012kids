@@ -22,20 +22,29 @@ const STAGE_LABELS: Record<string, { label: string; color: string }> = {
 export default function PopularArticles({ articles }: { articles: PopularArticle[] }) {
   return (
     <section className="max-w-7xl mx-auto px-4 py-12">
-      <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center gap-3">
-          <div className="w-1 h-6 bg-rose-400 rounded-full" />
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900">よく読まれている記事</h2>
-            <p className="text-sm text-gray-500 mt-1">みんなが気になっている人気の記事</p>
-          </div>
+      <div className="flex items-center justify-between mb-8 flex-wrap gap-3">
+        <div>
+          <p
+            className="text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-2 inline-flex items-center gap-2"
+            style={{ fontFamily: 'var(--font-gothic)' }}
+          >
+            <span className="inline-block w-5 h-px bg-[var(--color-primary)]" />
+            Popular
+          </p>
+          <h2
+            className="text-[26px] md:text-[32px] leading-[1.25] text-[var(--color-foreground)]"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+          >
+            よく読まれている記事
+          </h2>
+          <p className="mt-2 text-sm md:text-[15px] text-[var(--color-foreground-soft)] leading-[1.85]">みんなが気になっている人気の記事</p>
         </div>
         <Link
           href="/articles?sort=popular"
-          className="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary)] hover:underline"
+          className="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary-dark)] hover:text-[var(--color-primary)] group"
         >
-          すべて見る
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span className="border-b border-transparent group-hover:border-current">すべて見る</span>
+          <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </Link>
@@ -48,20 +57,23 @@ export default function PopularArticles({ articles }: { articles: PopularArticle
               key={article.id}
               href={`/articles/${article.slug}`}
               onClick={() => trackPopularClick(article.id, stageInfo?.label)}
-              className="group block rounded-xl p-5 bg-white border border-orange-100 card-hover"
+              className="group block rounded-xl p-5 bg-[var(--color-surface)] border border-[var(--color-paper-edge)] card-hover"
             >
               {stageInfo && (
                 <span
-                  className="inline-block text-xs font-bold px-2.5 py-0.5 rounded-full mb-3"
-                  style={{ backgroundColor: stageInfo.color, color: '#2d2a26' }}
+                  className="inline-block text-xs font-medium px-2.5 py-0.5 rounded-full mb-3 border border-[var(--color-paper-edge)]"
+                  style={{ backgroundColor: stageInfo.color, color: 'var(--color-foreground)' }}
                 >
                   {stageInfo.label}
                 </span>
               )}
-              <h3 className="font-bold text-sm text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2">
+              <h3
+                className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2"
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+              >
                 {article.title}
               </h3>
-              <p className="text-xs text-gray-500 mt-2 line-clamp-2">{article.excerpt}</p>
+              <p className="text-xs text-[var(--color-foreground-soft)] mt-2 line-clamp-2 leading-relaxed">{article.excerpt}</p>
             </Link>
           );
         })}

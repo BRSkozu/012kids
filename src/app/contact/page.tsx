@@ -27,8 +27,8 @@ export default function ContactPage() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">送信完了</h1>
-        <p className="text-gray-500">
+        <h1 className="text-2xl text-[var(--color-foreground)] mb-2" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>送信完了</h1>
+        <p className="text-[var(--color-foreground-muted)]">
           お問い合わせありがとうございます。内容を確認の上、必要に応じてご連絡いたします。
         </p>
       </div>
@@ -38,21 +38,21 @@ export default function ContactPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-12">
       <Breadcrumb items={[{ label: 'お問い合わせ' }]} />
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">お問い合わせ・訂正依頼</h1>
-      <p className="text-gray-500 mb-8">
+      <h1 className="text-3xl text-[var(--color-foreground)] mb-2" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>お問い合わせ・訂正依頼</h1>
+      <p className="text-[var(--color-foreground-muted)] mb-8">
         記事の誤り、改善提案、その他お問い合わせはこちらからお送りください。
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Type */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-medium text-[var(--color-foreground)] mb-2">
             お問い合わせ種別
           </label>
           <select
             value={formData.type}
             onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-[var(--color-paper-edge)] bg-[var(--color-surface)] text-sm"
           >
             <option value="general">一般的なお問い合わせ</option>
             <option value="correction">記事の訂正依頼</option>
@@ -64,7 +64,7 @@ export default function ContactPage() {
 
         {/* Name */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-medium text-[var(--color-foreground)] mb-2">
             お名前 <span className="text-red-500">*</span>
           </label>
           <input
@@ -72,14 +72,14 @@ export default function ContactPage() {
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-[var(--color-paper-edge)] text-sm"
             placeholder="田中 太郎"
           />
         </div>
 
         {/* Email */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-medium text-[var(--color-foreground)] mb-2">
             メールアドレス <span className="text-red-500">*</span>
           </label>
           <input
@@ -87,7 +87,7 @@ export default function ContactPage() {
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-[var(--color-paper-edge)] text-sm"
             placeholder="example@email.com"
           />
         </div>
@@ -95,14 +95,14 @@ export default function ContactPage() {
         {/* Article URL */}
         {(formData.type === 'correction' || formData.type === 'error') && (
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label className="block text-sm font-medium text-[var(--color-foreground)] mb-2">
               該当記事のURL
             </label>
             <input
               type="url"
               value={formData.articleUrl}
               onChange={(e) => setFormData({ ...formData, articleUrl: e.target.value })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm"
+              className="w-full px-4 py-3 rounded-xl border border-[var(--color-paper-edge)] text-sm"
               placeholder="https://012.kids/articles/..."
             />
           </div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
         {/* Message */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-medium text-[var(--color-foreground)] mb-2">
             内容 <span className="text-red-500">*</span>
           </label>
           <textarea
@@ -118,7 +118,7 @@ export default function ContactPage() {
             rows={6}
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm resize-vertical"
+            className="w-full px-4 py-3 rounded-xl border border-[var(--color-paper-edge)] text-sm resize-vertical"
             placeholder="お問い合わせ内容をご記入ください"
           />
         </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
         </button>
       </form>
 
-      <div className="mt-8 p-4 bg-gray-50 rounded-xl text-xs text-gray-500">
+      <div className="mt-8 p-4 bg-[var(--color-warm-cream)] rounded-xl text-xs text-[var(--color-foreground-muted)]">
         <p className="font-medium mb-1">個人情報の取り扱いについて</p>
         <p>
           お預かりした個人情報は、お問い合わせへの回答にのみ使用し、第三者への提供は行いません。

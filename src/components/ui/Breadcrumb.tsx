@@ -11,12 +11,12 @@ interface BreadcrumbProps {
 
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
-    <nav aria-label="パンくずリスト" className="text-sm text-gray-500 mb-6">
+    <nav aria-label="パンくずリスト" className="text-sm text-[var(--color-foreground-muted)] mb-6">
       <ol className="flex items-center flex-wrap gap-y-1">
         <li className="flex items-center">
           <Link
             href="/"
-            className="hover:text-[var(--color-primary)] transition-colors flex items-center gap-1"
+            className="hover:text-[var(--color-primary-dark)] transition-colors flex items-center gap-1"
           >
             <svg
               className="w-3.5 h-3.5"
@@ -37,7 +37,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
         {items.map((item, i) => (
           <li key={i} className="flex items-center">
             <svg
-              className="w-3.5 h-3.5 mx-2 text-gray-300"
+              className="w-3.5 h-3.5 mx-2 text-[var(--color-paper-edge)]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -52,12 +52,12 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
             {item.href ? (
               <Link
                 href={item.href}
-                className="hover:text-[var(--color-primary)] transition-colors"
+                className="hover:text-[var(--color-primary-dark)] transition-colors"
               >
                 {item.label}
               </Link>
             ) : (
-              <span className="text-gray-400 truncate max-w-[200px] sm:max-w-xs">
+              <span className="text-[var(--color-foreground-soft)] truncate max-w-[200px] sm:max-w-xs">
                 {item.label}
               </span>
             )}

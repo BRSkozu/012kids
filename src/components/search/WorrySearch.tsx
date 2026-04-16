@@ -37,7 +37,7 @@ export default function WorrySearch() {
     <div>
       {/* Search input */}
       <div className="relative mb-4">
-        <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--color-foreground-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
         <input
@@ -45,7 +45,7 @@ export default function WorrySearch() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="お悩みを入力してみてください（例：夜泣き、離乳食、いじめ）"
-          className="w-full pl-12 pr-4 py-3 rounded-xl border border-orange-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
+          className="w-full pl-12 pr-4 py-3 rounded-xl border border-[var(--color-paper-edge)] bg-[var(--color-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
         />
       </div>
 
@@ -56,7 +56,7 @@ export default function WorrySearch() {
           className={`text-xs px-3 py-1.5 rounded-full transition-colors ${
             selectedStage === null
               ? 'bg-[var(--color-primary)] text-white'
-              : 'bg-orange-50 text-gray-600 hover:bg-orange-100'
+              : 'bg-[var(--color-warm-cream)] text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)] hover:bg-[var(--color-surface)]'
           }`}
         >
           すべて
@@ -82,9 +82,12 @@ export default function WorrySearch() {
         {filteredWorries.map((worry) => (
           <div
             key={worry.id}
-            className="bg-white rounded-xl border border-orange-100 p-4 hover:shadow-sm transition-shadow"
+            className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] p-4 hover:shadow-[0_8px_22px_-14px_rgba(31,36,57,0.25)] hover:border-[var(--color-primary-light)] transition-all"
           >
-            <p className="font-medium text-gray-900 text-sm mb-2">
+            <p
+              className="text-[var(--color-foreground)] text-sm mb-2"
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+            >
               「{worry.text}」
             </p>
             <div className="flex flex-wrap gap-1.5 mb-3">
@@ -110,7 +113,7 @@ export default function WorrySearch() {
                   <Link
                     key={articleId}
                     href={`/articles/${slug}`}
-                    className="flex items-center gap-2 text-sm text-[var(--color-primary)] hover:underline"
+                    className="flex items-center gap-2 text-sm text-[var(--color-primary-dark)] hover:underline"
                   >
                     <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -124,7 +127,7 @@ export default function WorrySearch() {
         ))}
 
         {filteredWorries.length === 0 && (
-          <div className="text-center py-8 text-gray-400 text-sm">
+          <div className="text-center py-8 text-[var(--color-foreground-muted)] text-sm">
             <p>該当するお悩みが見つかりませんでした。</p>
             <p className="mt-1">別のキーワードで検索してみてください。</p>
           </div>

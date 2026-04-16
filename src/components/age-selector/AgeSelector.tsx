@@ -42,35 +42,50 @@ export default function AgeSelector() {
   const currentStage = age !== null ? getStageByAge(age) : null;
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-amber-50 py-16 md:py-24 wave-divider">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 dot-pattern opacity-40 pointer-events-none" />
-      <div className="absolute top-10 left-10 w-64 h-64 bg-[var(--color-stage-0)]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-72 h-72 bg-[var(--color-stage-upper)]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[var(--color-primary)]/5 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative overflow-hidden py-20 md:py-28">
+      {/* Ambient lamp glows + starry pattern */}
+      <div className="absolute inset-0 starry-pattern opacity-70 pointer-events-none" />
+      <div className="lamp-glow top-[-6rem] left-[8%] w-[22rem] h-[22rem] bg-[#F5D9B1] animate-lamp" />
+      <div className="lamp-glow bottom-[-8rem] right-[6%] w-[26rem] h-[26rem] bg-[#C8D1E8] opacity-40" />
+      <div className="lamp-glow top-[20%] right-[30%] w-[14rem] h-[14rem] bg-[#F3B2B2] opacity-30" />
 
       <div className="relative max-w-7xl mx-auto px-4">
         {/* Hero */}
-        <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl font-bold mb-3 tracking-tight">
-            <span className="text-[#A0C4FF]">0</span>
-            <span className="text-[#7BC67E]">1</span>
-            <span className="text-[#E8943D]">2</span>
-            <span className="text-gray-400">.kids</span>
+        <div className="max-w-3xl mx-auto text-center mb-14 animate-fade-in-up">
+          {/* Kicker — night journal feel */}
+          <p className="inline-flex items-center gap-2 mb-5 text-xs font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)]">
+            <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
+            A Bedtime Storybook for Parents
+            <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
+          </p>
+          <h1
+            className="text-[2.4rem] md:text-[3.8rem] leading-[1.15] mb-5"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, letterSpacing: '0.01em' }}
+          >
+            <span className="block text-[var(--color-foreground)]">
+              検索した夜、
+            </span>
+            <span className="block">
+              <span className="sketched-underline text-[var(--color-primary-dark)]">必要な答え</span>
+              <span className="text-[var(--color-foreground)]">が、ここに。</span>
+            </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 max-w-md mx-auto leading-relaxed font-medium">
-            検索した夜、
+          <p className="text-[15px] md:text-base text-[var(--color-foreground-soft)] max-w-xl mx-auto leading-[1.9]">
+            0歳から12歳。眠れない夜の不安も、朝の焦りも。
             <br className="hidden md:block" />
-            あなたに必要な答えが、ここに。
+            公的機関・専門家の情報を、そっと灯りのように差し出します。
           </p>
           <EmotionalHero />
         </div>
 
         {/* Age Selector */}
         <div className="max-w-3xl mx-auto animate-fade-in-up delay-200">
-          <div className="glass rounded-2xl shadow-lg shadow-orange-100/50 p-6 md:p-8 border border-white/60">
-            <p className="text-center text-sm font-medium text-gray-500 mb-4">
-              お子さまの年齢を選んでみてください
+          <div className="paper-card p-6 md:p-8 relative">
+            <p
+              className="text-center text-xs font-medium tracking-[0.2em] uppercase text-[var(--color-primary-dark)] mb-5"
+              style={{ fontFamily: 'var(--font-gothic)' }}
+            >
+              ― お子さまの年齢を選んでください ―
             </p>
 
             {/* Age Buttons Grid */}
@@ -83,21 +98,23 @@ export default function AgeSelector() {
                     key={yr}
                     onClick={() => handleAgeSelect(yr)}
                     className={`
-                      relative h-14 rounded-xl font-bold text-sm transition-all duration-300 flex flex-col items-center justify-center
+                      relative h-14 rounded-xl text-sm transition-all duration-300 flex flex-col items-center justify-center
                       ${isSelected
-                        ? 'ring-2 ring-offset-2 ring-[var(--color-primary)] scale-110 shadow-lg z-10'
-                        : 'hover:scale-105 hover:shadow-md hover:z-10'}
+                        ? 'scale-110 z-10 shadow-[0_12px_24px_-10px_rgba(198,107,31,0.4)] ring-2 ring-[var(--color-primary)]'
+                        : 'hover:scale-105 hover:z-10 hover:shadow-[0_8px_18px_-10px_rgba(31,36,57,0.15)]'}
                     `}
                     style={{
-                      backgroundColor: isSelected ? stage.color : `${stage.color}50`,
-                      color: '#2d2a26',
+                      backgroundColor: isSelected ? stage.color : `${stage.color}4d`,
+                      color: 'var(--color-foreground)',
+                      fontFamily: 'var(--font-sans)',
+                      fontWeight: 700,
                     }}
                     aria-label={`${yr}歳${getGradeLabel(yr) ? `（${getGradeLabel(yr)}）` : ''}`}
                     aria-pressed={isSelected}
                   >
                     <span>{yr}歳</span>
                     {getGradeLabel(yr) && (
-                      <span className="text-[10px] font-normal leading-none text-gray-500">{getGradeLabel(yr)}</span>
+                      <span className="text-[10px] font-normal leading-none text-[var(--color-foreground-muted)]">{getGradeLabel(yr)}</span>
                     )}
                   </button>
                 );
@@ -107,22 +124,25 @@ export default function AgeSelector() {
             {/* Stage Display */}
             {mounted && currentStage && age !== null && (
               <div
-                className="rounded-xl p-5 text-center animate-scale-in"
+                className="rounded-2xl p-5 text-center animate-scale-in border border-[var(--color-paper-edge)]"
                 style={{ backgroundColor: currentStage.colorLight }}
               >
-                <p className="text-sm text-gray-500 mb-1">
+                <p className="text-xs tracking-widest uppercase text-[var(--color-foreground-muted)] mb-1">
                   {age}歳は
                 </p>
-                <p className="text-xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>
+                <p
+                  className="text-2xl mb-2"
+                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, color: 'var(--color-primary-dark)' }}
+                >
                   {currentStage.label}
-                  <span className="text-sm font-normal text-gray-500 ml-2">
+                  <span className="text-sm font-normal text-[var(--color-foreground-muted)] ml-2">
                     ({currentStage.ageRange})
                   </span>
                 </p>
-                <p className="text-sm text-gray-600 mb-4">{currentStage.description}</p>
+                <p className="text-sm text-[var(--color-foreground-soft)] mb-4 leading-relaxed">{currentStage.description}</p>
                 <Link
                   href={`/age-guide/${currentStage.id}`}
-                  className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm font-medium px-6 py-2.5 rounded-lg hover:opacity-90 transition-all hover:shadow-md hover:shadow-orange-200/50"
+                  className="btn-lamp inline-flex"
                 >
                   {currentStage.ageRange}の記事を見る
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,36 +153,43 @@ export default function AgeSelector() {
             )}
 
             {mounted && age === null && (
-              <p className="text-center text-sm text-gray-400 animate-pulse-soft">
-                年齢を選ぶと、お子さまの年齢に合った記事が見つかりますよ
+              <p className="text-center text-sm text-[var(--color-foreground-muted)] animate-pulse-soft">
+                年齢を選ぶと、お子さまに合った記事をお見せします。
               </p>
             )}
           </div>
         </div>
 
         {/* Stage Cards */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="mt-14 grid grid-cols-2 md:grid-cols-5 gap-4">
           {AGE_STAGES.map((stage, i) => (
             <Link
               key={stage.id}
               href={`/age-guide/${stage.id}`}
-              className={`group block rounded-2xl p-4 text-center card-hover border-2 border-transparent hover:border-orange-200 animate-fade-in-up`}
+              className="group block rounded-2xl p-5 text-center card-hover border border-[var(--color-paper-edge)] hover:border-[var(--color-primary-light)] animate-fade-in-up bg-[var(--color-surface)]"
               style={{
-                backgroundColor: stage.colorLight,
                 animationDelay: `${300 + i * 100}ms`,
               }}
             >
               <div
-                className="w-14 h-14 rounded-full mx-auto mb-3 flex items-center justify-center text-lg font-bold shadow-sm group-hover:shadow-md transition-shadow"
-                style={{ backgroundColor: stage.color }}
+                className="w-14 h-14 rounded-full mx-auto mb-3 flex items-center justify-center text-lg shadow-[0_6px_16px_-8px_rgba(31,36,57,0.2)] group-hover:scale-105 transition-transform"
+                style={{ backgroundColor: stage.color, fontFamily: 'var(--font-serif)', fontWeight: 700 }}
               >
                 {stage.ageRange.split('〜')[0]}
               </div>
-              <h3 className="font-bold text-sm text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">{stage.label}</h3>
-              <p className="text-xs text-gray-500 mt-1">{stage.ageRange}</p>
-              <div className="mt-2 flex flex-wrap justify-center gap-1">
+              <h3
+                className="text-base text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+              >
+                {stage.label}
+              </h3>
+              <p className="text-[11px] text-[var(--color-foreground-muted)] mt-1 tracking-wider">{stage.ageRange}</p>
+              <div className="mt-2.5 flex flex-wrap justify-center gap-1">
                 {stage.themes.slice(0, 3).map((theme) => (
-                  <span key={theme} className="text-xs bg-white/80 rounded-full px-2 py-0.5 text-gray-600 shadow-sm">
+                  <span
+                    key={theme}
+                    className="text-[10px] bg-[var(--color-warm-cream)] rounded-full px-2 py-0.5 text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)]"
+                  >
                     {theme}
                   </span>
                 ))}

@@ -28,7 +28,7 @@ export default function ReadingProgress() {
   return (
     <>
       {/* Progress bar */}
-      <div className="fixed top-16 left-0 right-0 z-40 h-1 bg-orange-100">
+      <div className="fixed top-16 left-0 right-0 z-40 h-1 bg-[var(--color-paper-edge)]">
         <div
           className="h-full bg-[var(--color-primary)] transition-[width] duration-150"
           style={{ width: `${progress}%` }}

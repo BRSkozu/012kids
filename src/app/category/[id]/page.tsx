@@ -63,16 +63,16 @@ export default async function CategoryPage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-orange-50 to-white py-12">
+      <section className="bg-gradient-to-b from-[var(--color-warm-cream)] to-[var(--color-surface)] py-12">
         <div className="max-w-7xl mx-auto px-4">
           <Breadcrumb items={breadcrumbItems} />
 
           <div className="flex items-center gap-4">
             <span className="text-5xl">{cat.icon}</span>
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">{cat.label}</h1>
-              <p className="text-gray-600 mt-1">{cat.description}</p>
-              <p className="text-sm text-gray-400 mt-1">{articles.length}件の記事</p>
+              <h1 className="text-3xl text-[var(--color-foreground)]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>{cat.label}</h1>
+              <p className="text-[var(--color-foreground-soft)] mt-1">{cat.description}</p>
+              <p className="text-sm text-[var(--color-foreground-muted)] mt-1">{articles.length}件の記事</p>
             </div>
           </div>
         </div>
@@ -83,8 +83,8 @@ export default async function CategoryPage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             {articles.length === 0 ? (
-              <div className="text-center py-12 bg-gray-50 rounded-xl">
-                <p className="text-gray-400">このカテゴリの記事はまだありません</p>
+              <div className="text-center py-12 bg-[var(--color-warm-cream)] rounded-xl">
+                <p className="text-[var(--color-foreground-muted)]">このカテゴリの記事はまだありません</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -97,14 +97,14 @@ export default async function CategoryPage({ params }: PageProps) {
 
           {/* Sidebar */}
           <aside>
-            <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-              <h3 className="font-bold text-gray-900 mb-3">他のカテゴリ</h3>
+            <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] p-6 mb-6">
+              <h3 className="text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>他のカテゴリ</h3>
               <div className="space-y-1">
                 {CATEGORIES.filter((c) => c.id !== id).map((c) => (
                   <Link
                     key={c.id}
                     href={`/category/${c.id}`}
-                    className="flex items-center gap-2 px-2 py-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 transition-colors"
+                    className="flex items-center gap-2 px-2 py-2 rounded-lg text-sm text-[var(--color-foreground-soft)] hover:bg-[var(--color-warm-cream)] transition-colors"
                   >
                     <span>{c.icon}</span>
                     <span>{c.label}</span>
@@ -113,14 +113,14 @@ export default async function CategoryPage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h3 className="font-bold text-gray-900 mb-3">年齢別ガイド</h3>
+            <div className="bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] p-6">
+              <h3 className="text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>年齢別ガイド</h3>
               <div className="space-y-2">
                 {AGE_STAGES.map((s) => (
                   <Link
                     key={s.id}
                     href={`/age-guide/${s.id}`}
-                    className="flex items-center gap-3 px-2 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                    className="flex items-center gap-3 px-2 py-2 rounded-lg hover:bg-[var(--color-warm-cream)] transition-colors"
                   >
                     <span
                       className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold shrink-0"
@@ -129,8 +129,8 @@ export default async function CategoryPage({ params }: PageProps) {
                       {s.ageRange.split('〜')[0]}
                     </span>
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{s.label}</p>
-                      <p className="text-xs text-gray-500">{s.ageRange}</p>
+                      <p className="text-sm font-medium text-[var(--color-foreground)]">{s.label}</p>
+                      <p className="text-xs text-[var(--color-foreground-muted)]">{s.ageRange}</p>
                     </div>
                   </Link>
                 ))}

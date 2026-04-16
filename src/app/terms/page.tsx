@@ -9,24 +9,24 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
-        <Link href="/" className="hover:text-[var(--color-primary)]">TOP</Link>
+      <nav className="text-sm text-[var(--color-foreground-muted)] mb-6 flex items-center gap-2">
+        <Link href="/" className="hover:text-[var(--color-primary-dark)]">TOP</Link>
         <span>/</span>
-        <span className="text-gray-400">利用規約</span>
+        <span className="text-[var(--color-foreground-muted)]">利用規約</span>
       </nav>
 
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">利用規約</h1>
+      <h1 className="text-3xl text-[var(--color-foreground)] mb-8" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>利用規約</h1>
 
-      <div className="prose-like space-y-8 text-gray-700 text-sm leading-relaxed">
+      <div className="prose-like space-y-8 text-[var(--color-foreground)] text-sm leading-relaxed">
         <p>
           この利用規約（以下「本規約」）は、012.kids（以下「当サイト」）のご利用に関する条件を定めるものです。
           当サイトをご利用いただく場合、本規約に同意したものとみなします。
         </p>
 
         <section>
-          <h2 className="text-lg font-bold text-gray-900 mb-3">1. サイトの性質</h2>
-          <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 mb-3">
-            <p className="font-semibold text-orange-800 mb-1">重要</p>
+          <h2 className="text-lg text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>1. サイトの性質</h2>
+          <div className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-xl p-4 mb-3">
+            <p className="font-semibold text-[var(--color-primary-dark)] mb-1">重要</p>
             <p>
               当サイトは、子育て・教育に関する公的機関や専門家の情報をわかりやすくまとめて紹介する
               「情報まとめサイト」です。当サイトの記事は、各情報源の機関が監修・承認したものではありません。
@@ -35,7 +35,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-gray-900 mb-3">2. 免責事項</h2>
+          <h2 className="text-lg text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>2. 免責事項</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>
               当サイトに掲載された情報の正確性、完全性、有用性について、いかなる保証もいたしません。
@@ -55,7 +55,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-gray-900 mb-3">3. 著作権</h2>
+          <h2 className="text-lg text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>3. 著作権</h2>
           <p>
             当サイトに掲載されている文章、画像、デザイン等のコンテンツの著作権は、
             当サイトまたは正当な権利を有する第三者に帰属します。
@@ -67,7 +67,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-gray-900 mb-3">4. 禁止事項</h2>
+          <h2 className="text-lg text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>4. 禁止事項</h2>
           <p>当サイトのご利用にあたり、以下の行為を禁止します。</p>
           <ul className="list-disc pl-6 mt-2 space-y-1">
             <li>当サイトのコンテンツを無断で営利目的に使用する行為</li>
@@ -78,16 +78,16 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-gray-900 mb-3">5. 情報の訂正・更新</h2>
+          <h2 className="text-lg text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>5. 情報の訂正・更新</h2>
           <p>
             当サイトは、掲載情報の正確性の維持に努めていますが、万が一誤りを発見された場合は、
-            <Link href="/contact" className="text-[var(--color-primary)] hover:underline">お問い合わせページ</Link>
+            <Link href="/contact" className="text-[var(--color-primary-dark)] hover:underline">お問い合わせページ</Link>
             よりご連絡ください。速やかに確認・対応いたします。
           </p>
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-gray-900 mb-3">6. 規約の変更</h2>
+          <h2 className="text-lg text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>6. 規約の変更</h2>
           <p>
             当サイトは、必要に応じて本規約を変更することがあります。
             変更後の規約は、当ページに掲載した時点から効力を生じるものとします。
@@ -95,13 +95,13 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-gray-900 mb-3">7. 準拠法</h2>
+          <h2 className="text-lg text-[var(--color-foreground)] mb-3" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>7. 準拠法</h2>
           <p>
             本規約の解釈は日本法に準拠するものとします。
           </p>
         </section>
 
-        <p className="text-xs text-gray-400 mt-8">制定日: 2026年3月6日</p>
+        <p className="text-xs text-[var(--color-foreground-muted)] mt-8">制定日: 2026年3月6日</p>
       </div>
     </div>
   );

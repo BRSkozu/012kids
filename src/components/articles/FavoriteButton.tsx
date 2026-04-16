@@ -52,10 +52,10 @@ export default function FavoriteButton({ slug, variant = 'icon', className = '' 
         onClick={handleClick}
         aria-pressed={active}
         aria-label={active ? 'お気に入りから外す' : 'お気に入りに追加'}
-        className={`inline-flex items-center gap-2 px-4 h-10 rounded-lg text-sm font-medium transition-all duration-200 ${
+        className={`inline-flex items-center gap-2 px-4 h-10 rounded-full text-sm font-medium transition-all duration-200 ${
           active
-            ? 'bg-pink-50 text-pink-600 border border-pink-200 hover:bg-pink-100'
-            : 'bg-white text-gray-600 border border-gray-200 hover:border-pink-200 hover:text-pink-600'
+            ? 'bg-[#F6E1E1] text-[#C04E6A] border border-[#E8C5C5] hover:bg-[#F2D4D4]'
+            : 'bg-[var(--color-surface)] text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)] hover:border-[#E8C5C5] hover:text-[#C04E6A]'
         } ${className}`}
       >
         <HeartSvg filled={active} />
@@ -70,10 +70,10 @@ export default function FavoriteButton({ slug, variant = 'icon', className = '' 
       onClick={handleClick}
       aria-pressed={active}
       aria-label={active ? 'お気に入りから外す' : 'お気に入りに追加'}
-      className={`inline-flex items-center justify-center w-9 h-9 rounded-full transition-all duration-200 ${
+      className={`inline-flex items-center justify-center w-9 h-9 rounded-full transition-all duration-200 border ${
         active
-          ? 'bg-pink-50 text-pink-500 shadow-sm'
-          : 'bg-white/90 text-gray-400 hover:text-pink-500 hover:bg-pink-50 shadow-sm'
+          ? 'bg-[#F6E1E1] text-[#C04E6A] border-[#E8C5C5] shadow-[0_4px_10px_-4px_rgba(192,78,106,0.3)]'
+          : 'bg-[rgba(255,253,247,0.92)] text-[var(--color-foreground-muted)] hover:text-[#C04E6A] hover:bg-[#F6E1E1] border-[var(--color-paper-edge)] shadow-[0_4px_10px_-4px_rgba(31,36,57,0.15)]'
       } ${className}`}
     >
       <HeartSvg filled={active} />

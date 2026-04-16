@@ -44,18 +44,21 @@ export default function RecentlyViewed() {
             <Link
               key={entry.slug}
               href={`/articles/${entry.slug}`}
-              className="group flex items-center gap-3 p-3 rounded-xl bg-white border border-purple-100 card-hover"
+              className="group flex items-center gap-3 p-3 rounded-xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] card-hover"
             >
-              <span className="shrink-0 w-9 h-9 rounded-lg bg-purple-50 flex items-center justify-center">
-                <svg className="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span className="shrink-0 w-9 h-9 rounded-lg bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] flex items-center justify-center">
+                <svg className="w-4 h-4 text-[var(--color-primary-dark)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </span>
               <div className="min-w-0 flex-1">
-                <p className="text-sm font-medium text-gray-900 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2 leading-snug">
+                <p
+                  className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
+                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+                >
                   {entry.title}
                 </p>
-                <p className="text-[11px] text-gray-400 mt-0.5">{rel}</p>
+                <p className="text-[11px] text-[var(--color-foreground-muted)] mt-0.5 tracking-wider">{rel}</p>
               </div>
             </Link>
           );
@@ -65,7 +68,7 @@ export default function RecentlyViewed() {
         <button
           type="button"
           onClick={handleClear}
-          className="text-xs text-gray-400 hover:text-[var(--color-primary)] transition-colors underline"
+          className="text-xs text-[var(--color-foreground-muted)] hover:text-[var(--color-primary-dark)] transition-colors underline"
         >
           履歴をクリア
         </button>

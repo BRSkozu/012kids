@@ -50,8 +50,13 @@ export default function TableOfContents() {
   if (items.length < 2) return null;
 
   return (
-    <nav className="bg-[var(--color-warm-cream)] rounded-xl p-5 mb-8" aria-label="目次">
-      <p className="text-sm font-bold text-gray-700 mb-3">この記事の目次</p>
+    <nav className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-xl p-5 mb-8" aria-label="目次">
+      <p
+        className="text-sm text-[var(--color-foreground)] mb-3"
+        style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+      >
+        この記事の目次
+      </p>
       <ol className="space-y-1">
         {items.map((item) => (
           <li key={item.id} className={item.level === 3 ? 'ml-4' : ''}>
@@ -59,8 +64,8 @@ export default function TableOfContents() {
               href={`#${item.id}`}
               className={`block text-sm py-1 border-l-2 pl-3 transition-colors ${
                 activeId === item.id
-                  ? 'border-[var(--color-primary)] text-[var(--color-primary)] font-medium'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  ? 'border-[var(--color-primary)] text-[var(--color-primary-dark)] font-medium'
+                  : 'border-transparent text-[var(--color-foreground-soft)] hover:text-[var(--color-foreground)] hover:border-[var(--color-paper-edge)]'
               }`}
             >
               {item.text}

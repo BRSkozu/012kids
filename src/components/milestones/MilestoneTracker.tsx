@@ -69,25 +69,25 @@ export default function MilestoneTracker() {
   );
 
   if (!mounted) {
-    return <div className="h-40 rounded-2xl bg-orange-50/40 animate-pulse-soft" />;
+    return <div className="h-40 rounded-2xl bg-[var(--color-warm-cream)] animate-pulse-soft" />;
   }
 
   // ----- No profile yet -----
   if (!activeChild) {
     return (
-      <div className="rounded-2xl border border-orange-200 bg-gradient-to-r from-[#fff4e8] to-[#fff] p-6 md:p-8 text-center">
+      <div className="rounded-2xl border border-[var(--color-paper-edge)] bg-[var(--color-warm-cream)] p-6 md:p-8 text-center">
         <div className="text-4xl mb-3">👶</div>
-        <h3 className="text-lg font-bold text-gray-900 mb-2">
+        <h3
+          className="text-lg text-[var(--color-foreground)] mb-2"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+        >
           お子さまのプロフィールを設定してから使おう
         </h3>
-        <p className="text-sm text-gray-500 mb-5 max-w-md mx-auto">
+        <p className="text-sm text-[var(--color-foreground-soft)] mb-5 max-w-md mx-auto leading-relaxed">
           マイルストーントラッカーは、お子さまの発達の記録をつける機能です。
           トップページからプロフィールを作成してください。
         </p>
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity"
-        >
+        <Link href="/" className="btn-lamp inline-flex">
           プロフィールを設定する
         </Link>
       </div>
@@ -117,17 +117,17 @@ export default function MilestoneTracker() {
   return (
     <div className="space-y-6">
       {/* Child + stage switcher */}
-      <div className="rounded-2xl bg-white border border-orange-100 p-5">
+      <div className="rounded-2xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] p-5">
         <div className="flex flex-wrap items-center gap-3 justify-between">
           <div className="flex items-center gap-3 min-w-0">
             <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm shrink-0"
-              style={{ backgroundColor: AGE_STAGES.find((s) => s.id === (autoStage ?? '0stage'))?.colorLight ?? '#FFF0F0' }}
+              className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-[0_6px_16px_-8px_rgba(31,36,57,0.25)] border border-[var(--color-paper-edge)] shrink-0"
+              style={{ backgroundColor: AGE_STAGES.find((s) => s.id === (autoStage ?? '0stage'))?.colorLight ?? 'var(--color-warm-cream)' }}
             >
               👶
             </div>
             <div className="min-w-0">
-              <p className="text-xs text-gray-400">記録中の子</p>
+              <p className="text-xs text-[var(--color-foreground-muted)] tracking-wider">記録中の子</p>
               {children.length > 1 ? (
                 <select
                   value={activeChildId ?? ''}
@@ -135,7 +135,8 @@ export default function MilestoneTracker() {
                     setActiveChildId(e.target.value);
                     setOverrideStage(null);
                   }}
-                  className="font-bold text-base text-gray-900 bg-transparent border-0 focus:outline-none focus:ring-0 pr-6 -ml-0.5"
+                  className="text-base text-[var(--color-foreground)] bg-transparent border-0 focus:outline-none focus:ring-0 pr-6 -ml-0.5"
+                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
                 >
                   {children.map((c) => {
                     const age = computeAgeYears(c);
@@ -147,10 +148,13 @@ export default function MilestoneTracker() {
                   })}
                 </select>
               ) : (
-                <p className="font-bold text-base text-gray-900">
+                <p
+                  className="text-base text-[var(--color-foreground)]"
+                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+                >
                   {activeChild.nickname}
                   {childAge !== null && (
-                    <span className="text-sm text-gray-500 ml-1 font-normal">（{childAge}歳）</span>
+                    <span className="text-sm text-[var(--color-foreground-soft)] ml-1 font-normal">（{childAge}歳）</span>
                   )}
                 </p>
               )}
@@ -161,7 +165,7 @@ export default function MilestoneTracker() {
 
         {/* Stage pills */}
         <div className="mt-4 flex items-center gap-1.5 flex-wrap">
-          <span className="text-xs text-gray-400 mr-1">表示中の年齢帯:</span>
+          <span className="text-xs text-[var(--color-foreground-muted)] mr-1 tracking-wider">表示中の年齢帯:</span>
           {AGE_STAGES.map((s) => {
             const active = currentStage === s.id;
             const isAuto = autoStage === s.id && !overrideStage;
@@ -193,7 +197,7 @@ export default function MilestoneTracker() {
           className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
             filter === 'all'
               ? 'bg-[var(--color-primary)] text-white'
-              : 'bg-orange-50 text-gray-600 hover:bg-orange-100'
+              : 'bg-[var(--color-warm-cream)] text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)] hover:bg-[var(--color-surface)]'
           }`}
         >
           すべて ({milestones.length})
@@ -226,8 +230,13 @@ export default function MilestoneTracker() {
         {group ? (
           <>
             <div className="mb-4">
-              <h2 className="text-xl font-bold text-gray-900">{group.headline}</h2>
-              <p className="text-sm text-gray-500 mt-1">{group.description}</p>
+              <h2
+                className="text-xl text-[var(--color-foreground)]"
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+              >
+                {group.headline}
+              </h2>
+              <p className="text-sm text-[var(--color-foreground-soft)] mt-1 leading-relaxed">{group.description}</p>
             </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {visibleMilestones.map((m) => {
@@ -242,15 +251,15 @@ export default function MilestoneTracker() {
                       aria-pressed={achieved}
                       className={`w-full flex items-start gap-3 p-4 rounded-xl border-2 text-left transition-all ${
                         achieved
-                          ? 'border-[var(--color-primary)] bg-orange-50/60 shadow-sm'
-                          : 'border-orange-100 bg-white hover:border-orange-200'
+                          ? 'border-[var(--color-primary)] bg-[var(--color-warm-cream)] shadow-[0_6px_18px_-10px_rgba(198,107,31,0.35)]'
+                          : 'border-[var(--color-paper-edge)] bg-[var(--color-surface)] hover:border-[var(--color-primary-light)]'
                       }`}
                     >
                       <span
                         className={`shrink-0 w-6 h-6 rounded-md flex items-center justify-center transition-all ${
                           achieved
                             ? 'bg-[var(--color-primary)] text-white'
-                            : 'bg-white border-2 border-orange-200'
+                            : 'bg-[var(--color-surface)] border-2 border-[var(--color-paper-edge)]'
                         }`}
                         aria-hidden="true"
                       >
@@ -263,18 +272,18 @@ export default function MilestoneTracker() {
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-2 flex-wrap">
                           <span
-                            className="inline-flex items-center gap-1 text-[10px] font-semibold px-1.5 py-0.5 rounded"
-                            style={{ backgroundColor: meta.color, color: '#2d2a26' }}
+                            className="inline-flex items-center gap-1 text-[10px] font-semibold px-1.5 py-0.5 rounded border border-[var(--color-paper-edge)]"
+                            style={{ backgroundColor: meta.color, color: 'var(--color-foreground)' }}
                           >
                             {meta.icon} {meta.label}
                           </span>
-                          <span className="text-[11px] text-gray-400">{m.note}</span>
+                          <span className="text-[11px] text-[var(--color-foreground-muted)]">{m.note}</span>
                         </div>
-                        <p className={`mt-1 text-sm font-medium ${achieved ? 'text-[var(--color-primary-dark)]' : 'text-gray-900'}`}>
+                        <p className={`mt-1 text-sm font-medium ${achieved ? 'text-[var(--color-primary-dark)]' : 'text-[var(--color-foreground)]'}`}>
                           {m.title}
                         </p>
                         {achieved && achievedAt && (
-                          <p className="text-[10px] text-gray-400 mt-1">
+                          <p className="text-[10px] text-[var(--color-foreground-muted)] mt-1">
                             ✓ {new Date(achievedAt).toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' })} に達成
                           </p>
                         )}
@@ -286,20 +295,20 @@ export default function MilestoneTracker() {
             </ul>
           </>
         ) : (
-          <p className="text-sm text-gray-500">この年齢帯のマイルストーンは準備中です。</p>
+          <p className="text-sm text-[var(--color-foreground-soft)]">この年齢帯のマイルストーンは準備中です。</p>
         )}
       </div>
 
       {/* Footer actions */}
-      <div className="flex items-center justify-between border-t border-orange-100 pt-4">
-        <p className="text-xs text-gray-400 max-w-lg leading-relaxed">
+      <div className="flex items-center justify-between border-t border-[var(--color-paper-edge)] pt-4">
+        <p className="text-xs text-[var(--color-foreground-muted)] max-w-lg leading-relaxed">
           💡 発達には大きな個人差があります。これらはあくまで目安で、医学的診断ではありません。
           気になる点があれば小児科や地域の保健センターにご相談ください。
         </p>
         <button
           type="button"
           onClick={handleReset}
-          className="shrink-0 ml-4 text-xs text-gray-400 hover:text-red-500 transition-colors underline"
+          className="shrink-0 ml-4 text-xs text-[var(--color-foreground-muted)] hover:text-[#c04444] transition-colors underline"
         >
           記録をリセット
         </button>
@@ -317,7 +326,7 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
   return (
     <div className="relative shrink-0" style={{ width: size, height: size }}>
       <svg width={size} height={size} className="-rotate-90">
-        <circle cx={size / 2} cy={size / 2} r={r} stroke="#FFE4CC" strokeWidth={stroke} fill="none" />
+        <circle cx={size / 2} cy={size / 2} r={r} stroke="var(--color-paper-edge)" strokeWidth={stroke} fill="none" />
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -333,7 +342,7 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <span className="text-[10px] font-bold text-[var(--color-primary-dark)]">{label}</span>
-        <span className="text-[9px] text-gray-400">{pct}%</span>
+        <span className="text-[9px] text-[var(--color-foreground-muted)]">{pct}%</span>
       </div>
     </div>
   );

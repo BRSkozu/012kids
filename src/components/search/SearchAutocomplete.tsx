@@ -137,7 +137,7 @@ export default function SearchAutocomplete({
     <div ref={rootRef} className="relative">
       <div className="relative">
         <svg
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none"
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--color-foreground-muted)] pointer-events-none"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -160,7 +160,7 @@ export default function SearchAutocomplete({
           aria-autocomplete="list"
           aria-expanded={open}
           aria-controls="autocomplete-listbox"
-          className="w-full pl-12 pr-10 py-4 rounded-xl border border-orange-200 text-base focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent outline-none bg-white"
+          className="w-full pl-12 pr-10 py-4 rounded-xl border border-[var(--color-paper-edge)] text-base focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent outline-none bg-[var(--color-surface)]"
         />
         {value && (
           <button
@@ -170,7 +170,7 @@ export default function SearchAutocomplete({
               setActiveIdx(-1);
             }}
             aria-label="クリア"
-            className="absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full flex items-center justify-center text-gray-400 hover:bg-orange-50 hover:text-[var(--color-primary)]"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full flex items-center justify-center text-[var(--color-foreground-muted)] hover:bg-[var(--color-warm-cream)] hover:text-[var(--color-primary-dark)]"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -183,10 +183,13 @@ export default function SearchAutocomplete({
         <ul
           id="autocomplete-listbox"
           role="listbox"
-          className="absolute left-0 right-0 top-full mt-2 z-50 rounded-xl bg-white shadow-xl shadow-orange-100/50 border border-orange-100 overflow-hidden max-h-[420px] overflow-y-auto"
+          className="absolute left-0 right-0 top-full mt-2 z-50 rounded-xl bg-[var(--color-surface)] shadow-[0_24px_60px_-20px_rgba(31,36,57,0.35)] border border-[var(--color-paper-edge)] overflow-hidden max-h-[420px] overflow-y-auto"
         >
           {!value.trim() && (
-            <li className="px-4 pt-3 pb-1 text-[11px] font-semibold tracking-wider uppercase text-gray-400">
+            <li
+              className="px-4 pt-3 pb-1 text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)]"
+              style={{ fontFamily: 'var(--font-gothic)' }}
+            >
               人気のキーワード
             </li>
           )}
@@ -198,14 +201,19 @@ export default function SearchAutocomplete({
                   <Link
                     href={s.href}
                     className={`flex items-start gap-3 px-4 py-3 transition-colors ${
-                      active ? 'bg-orange-50' : 'hover:bg-orange-50/70'
+                      active ? 'bg-[var(--color-warm-cream)]' : 'hover:bg-[var(--color-warm-cream)]'
                     }`}
                     onMouseEnter={() => setActiveIdx(i)}
                   >
                     <SuggestionIcon kind={s.kind} />
                     <div className="min-w-0 flex-1">
-                      <p className="text-sm font-medium text-gray-900 line-clamp-1">{s.label}</p>
-                      {s.sub && <p className="text-xs text-gray-500 line-clamp-1 mt-0.5">{s.sub}</p>}
+                      <p
+                        className="text-sm text-[var(--color-foreground)] line-clamp-1"
+                        style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+                      >
+                        {s.label}
+                      </p>
+                      {s.sub && <p className="text-xs text-[var(--color-foreground-soft)] line-clamp-1 mt-0.5">{s.sub}</p>}
                     </div>
                   </Link>
                 ) : (
@@ -214,13 +222,18 @@ export default function SearchAutocomplete({
                     onClick={() => handlePick(s)}
                     onMouseEnter={() => setActiveIdx(i)}
                     className={`w-full text-left flex items-start gap-3 px-4 py-3 transition-colors ${
-                      active ? 'bg-orange-50' : 'hover:bg-orange-50/70'
+                      active ? 'bg-[var(--color-warm-cream)]' : 'hover:bg-[var(--color-warm-cream)]'
                     }`}
                   >
                     <SuggestionIcon kind={s.kind} />
                     <div className="min-w-0 flex-1">
-                      <p className="text-sm font-medium text-gray-900 line-clamp-1">{s.label}</p>
-                      {s.sub && <p className="text-xs text-gray-500 line-clamp-1 mt-0.5">{s.sub}</p>}
+                      <p
+                        className="text-sm text-[var(--color-foreground)] line-clamp-1"
+                        style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+                      >
+                        {s.label}
+                      </p>
+                      {s.sub && <p className="text-xs text-[var(--color-foreground-soft)] line-clamp-1 mt-0.5">{s.sub}</p>}
                     </div>
                   </button>
                 )}
@@ -236,8 +249,8 @@ export default function SearchAutocomplete({
 function SuggestionIcon({ kind }: { kind: Suggestion['kind'] }) {
   if (kind === 'article') {
     return (
-      <span className="shrink-0 w-8 h-8 rounded-lg bg-orange-50 flex items-center justify-center">
-        <svg className="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <span className="shrink-0 w-8 h-8 rounded-lg bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] flex items-center justify-center">
+        <svg className="w-4 h-4 text-[var(--color-primary-dark)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       </span>
@@ -245,16 +258,16 @@ function SuggestionIcon({ kind }: { kind: Suggestion['kind'] }) {
   }
   if (kind === 'worry') {
     return (
-      <span className="shrink-0 w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center">
-        <svg className="w-4 h-4 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <span className="shrink-0 w-8 h-8 rounded-lg bg-[#F6E1E1] border border-[#E8C5C5] flex items-center justify-center">
+        <svg className="w-4 h-4 text-[#C04E6A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093M12 17h.01" />
         </svg>
       </span>
     );
   }
   return (
-    <span className="shrink-0 w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
-      <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <span className="shrink-0 w-8 h-8 rounded-lg bg-[#E3EAF7] border border-[#C8D1E8] flex items-center justify-center">
+      <svg className="w-4 h-4 text-[#4A6FB5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
       </svg>
     </span>

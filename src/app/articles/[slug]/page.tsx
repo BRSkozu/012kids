@@ -238,20 +238,23 @@ export default async function ArticlePage({ params }: PageProps) {
 
         <div className="flex items-start gap-4">
           <div className="flex-1">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-3">
+            <h1
+              className="text-2xl md:text-3xl text-[var(--color-foreground)] leading-tight mb-3"
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+            >
               {article.title}
             </h1>
-            <p className="text-gray-600 mb-3">{article.excerpt}</p>
+            <p className="text-[var(--color-foreground-soft)] mb-3 leading-relaxed">{article.excerpt}</p>
           </div>
-          <div className="hidden md:flex flex-shrink-0 w-20 h-20 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 items-center justify-center">
+          <div className="hidden md:flex flex-shrink-0 w-20 h-20 rounded-2xl bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] items-center justify-center shadow-[0_8px_20px_-14px_rgba(198,107,31,0.35)]">
             {(() => { const Illustration = getArticleIllustration(article.slug); return <Illustration size={52} />; })()}
           </div>
         </div>
 
         {/* Meta info + attribution */}
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 mb-3">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[var(--color-foreground-muted)] mb-3">
           <span className="flex items-center gap-1.5">
-            <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center text-[10px] font-bold text-[var(--color-primary)]">編</span>
+            <span className="w-5 h-5 rounded-full bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] flex items-center justify-center text-[10px] font-bold text-[var(--color-primary-dark)]">編</span>
             012.kids 編集部
           </span>
           <span>公開: {article.publishedAt}</span>
@@ -261,7 +264,7 @@ export default async function ArticlePage({ params }: PageProps) {
           <ReadingTime minutes={article.readingTime} />
         </div>
 
-        <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-gray-500 border border-orange-100">
+        <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)] leading-relaxed">
           この記事は、公的機関・専門家・研究機関などの情報をもとに編集部が独自にまとめたものです。元の情報は下部の「参考にした情報源」をご確認ください。
         </div>
 
@@ -283,30 +286,35 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Perspectives (opinion patterns) */}
       {article.source.perspectives && (
-        <div className="border-t border-orange-100 pt-6 mb-8">
-          <h3 className="text-sm font-semibold text-gray-700 mb-3">さまざまな見方・意見</h3>
+        <div className="border-t border-[var(--color-paper-edge)] pt-6 mb-8">
+          <h3
+            className="text-sm text-[var(--color-foreground)] mb-3"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+          >
+            さまざまな見方・意見
+          </h3>
           <div className="space-y-3">
-            <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
+            <div className="bg-[#EEF3FA] border border-[#D8E2F0] rounded-lg p-4">
               <div className="flex items-center gap-2 mb-2">
-                <span className="w-5 h-5 rounded-full bg-blue-200 flex items-center justify-center text-blue-700 text-xs font-bold">+</span>
-                <p className="text-sm font-medium text-blue-800">多くの機関が支持する見方</p>
+                <span className="w-5 h-5 rounded-full bg-[#C6D6EC] flex items-center justify-center text-[#3A5A88] text-xs font-bold">+</span>
+                <p className="text-sm font-semibold text-[#3A5A88]">多くの機関が支持する見方</p>
               </div>
-              <p className="text-sm text-blue-700">{article.source.perspectives.positive}</p>
+              <p className="text-sm text-[#3A5A88] leading-relaxed">{article.source.perspectives.positive}</p>
             </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-lg p-4">
               <div className="flex items-center gap-2 mb-2">
-                <span className="w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center text-gray-700 text-xs font-bold">=</span>
-                <p className="text-sm font-medium text-gray-700">中立的な見方</p>
+                <span className="w-5 h-5 rounded-full bg-[var(--color-paper-edge)] flex items-center justify-center text-[var(--color-foreground-soft)] text-xs font-bold">=</span>
+                <p className="text-sm font-semibold text-[var(--color-foreground)]">中立的な見方</p>
               </div>
-              <p className="text-sm text-gray-600">{article.source.perspectives.neutral}</p>
+              <p className="text-sm text-[var(--color-foreground-soft)] leading-relaxed">{article.source.perspectives.neutral}</p>
             </div>
             {article.source.perspectives.cautious && (
-              <div className="bg-amber-50 border border-amber-100 rounded-lg p-4">
+              <div className="bg-[#F7EED2] border border-[#E5D9B0] rounded-lg p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="w-5 h-5 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 text-xs font-bold">!</span>
-                  <p className="text-sm font-medium text-amber-800">一方でこんな意見も</p>
+                  <span className="w-5 h-5 rounded-full bg-[#E5D9B0] flex items-center justify-center text-[#7A6315] text-xs font-bold">!</span>
+                  <p className="text-sm font-semibold text-[#7A6315]">一方でこんな意見も</p>
                 </div>
-                <p className="text-sm text-amber-700">{article.source.perspectives.cautious}</p>
+                <p className="text-sm text-[#7A6315] leading-relaxed">{article.source.perspectives.cautious}</p>
               </div>
             )}
           </div>
@@ -314,38 +322,48 @@ export default async function ArticlePage({ params }: PageProps) {
       )}
 
       {/* References */}
-      <div className="border-t border-orange-100 pt-6 mb-8">
-        <h3 className="text-sm font-semibold text-gray-700 mb-3">参考にした情報源（{article.source.references.length}件）</h3>
-        <div className="bg-[var(--color-warm-cream)] rounded-lg p-4">
-          <p className="text-sm font-medium text-gray-700 mb-3">{article.source.name}</p>
+      <div className="border-t border-[var(--color-paper-edge)] pt-6 mb-8">
+        <h3
+          className="text-sm text-[var(--color-foreground)] mb-3"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+        >
+          参考にした情報源（{article.source.references.length}件）
+        </h3>
+        <div className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-lg p-4">
+          <p
+            className="text-sm text-[var(--color-foreground)] mb-3"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+          >
+            {article.source.name}
+          </p>
           <ul className="space-y-2">
             {article.source.references.map((ref, i) => (
               <li key={i} className="text-sm flex items-start gap-2">
                 <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${
-                  ref.stance === 'positive' ? 'bg-blue-400' :
-                  ref.stance === 'cautious' ? 'bg-amber-400' :
-                  'bg-gray-400'
+                  ref.stance === 'positive' ? 'bg-[#6B8BC4]' :
+                  ref.stance === 'cautious' ? 'bg-[#D4AF37]' :
+                  'bg-[var(--color-foreground-muted)]'
                 }`} />
                 <div>
                   <a
                     href={ref.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[var(--color-primary)] hover:underline font-medium"
+                    className="text-[var(--color-primary-dark)] hover:underline font-medium"
                   >
                     {ref.title}
                   </a>
-                  <span className="text-xs text-gray-500 ml-2">{ref.org}</span>
+                  <span className="text-xs text-[var(--color-foreground-muted)] ml-2">{ref.org}</span>
                 </div>
               </li>
             ))}
           </ul>
-          <div className="mt-4 pt-3 border-t border-orange-100 flex items-center gap-4 text-xs text-gray-400">
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-blue-400" /> 支持的</span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-300" /> 中立</span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-400" /> 慎重</span>
+          <div className="mt-4 pt-3 border-t border-[var(--color-paper-edge)] flex items-center gap-4 text-xs text-[var(--color-foreground-muted)]">
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[#6B8BC4]" /> 支持的</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[var(--color-foreground-muted)]" /> 中立</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[#D4AF37]" /> 慎重</span>
           </div>
-          <p className="text-xs text-gray-400 mt-3">
+          <p className="text-xs text-[var(--color-foreground-muted)] mt-3 leading-relaxed">
             ※ 上記は参考にした情報源です。記事の内容は012.kids編集部が独自にまとめたものであり、各機関が本記事を監修・承認したものではありません。
           </p>
         </div>
@@ -360,7 +378,7 @@ export default async function ArticlePage({ params }: PageProps) {
           <Link
             key={tag}
             href={`/tag/${encodeURIComponent(tag)}`}
-            className="text-xs bg-orange-50 text-[var(--color-primary-dark)] px-3 py-1 rounded-full hover:bg-orange-100 transition-colors"
+            className="text-xs bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-primary-dark)] px-3 py-1 rounded-full hover:bg-[var(--color-surface)] hover:border-[var(--color-primary-light)] transition-colors"
           >
             #{tag}
           </Link>
@@ -368,7 +386,7 @@ export default async function ArticlePage({ params }: PageProps) {
       </div>
 
       {/* Share Buttons */}
-      <div className="mb-8 py-4 border-t border-b border-orange-100">
+      <div className="mb-8 py-4 border-t border-b border-[var(--color-paper-edge)]">
         <ShareButtons
           url={`https://012.kids/articles/${article.slug}`}
           title={article.title}
@@ -389,14 +407,17 @@ export default async function ArticlePage({ params }: PageProps) {
           .slice(0, 3);
         if (nextStageArticles.length === 0) return null;
         return (
-          <div className="border-t border-orange-100 pt-8 mb-8">
+          <div className="border-t border-[var(--color-paper-edge)] pt-8 mb-8">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌱</span>
-              <h3 className="text-lg font-bold text-gray-900">
+              <h3
+                className="text-lg text-[var(--color-foreground)]"
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+              >
                 次のステージへ：{nextStage.label}（{nextStage.ageRange}）
               </h3>
             </div>
-            <p className="text-sm text-gray-500 mb-4">
+            <p className="text-sm text-[var(--color-foreground-soft)] mb-4 leading-relaxed">
               お子さんが成長したら、こちらの記事が役立ちます
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -404,14 +425,17 @@ export default async function ArticlePage({ params }: PageProps) {
                 <Link
                   key={a.id}
                   href={`/articles/${a.slug}`}
-                  className="group rounded-xl border border-dashed p-4 hover:shadow-md transition-all"
+                  className="group rounded-xl border border-dashed p-4 hover:shadow-[0_12px_28px_-16px_rgba(31,36,57,0.3)] transition-all"
                   style={{ borderColor: nextStage.color, backgroundColor: nextStage.colorLight + '80' }}
                 >
                   <StageBadge stage={a.stage} size="sm" />
-                  <p className="font-semibold text-sm text-gray-900 mt-2 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2">
+                  <p
+                    className="text-sm text-[var(--color-foreground)] mt-2 group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2"
+                    style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+                  >
                     {a.title}
                   </p>
-                  <p className="text-xs text-gray-500 mt-1 line-clamp-2">{a.excerpt}</p>
+                  <p className="text-xs text-[var(--color-foreground-soft)] mt-1 line-clamp-2 leading-relaxed">{a.excerpt}</p>
                 </Link>
               ))}
             </div>
@@ -421,9 +445,14 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Related Articles - magazine layout */}
       {relatedArticles.length > 0 && (
-        <div className="border-t border-orange-100 pt-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-2">あわせて読みたい</h3>
-          <p className="text-sm text-gray-500 mb-6">同じテーマの記事をチェック</p>
+        <div className="border-t border-[var(--color-paper-edge)] pt-8">
+          <h3
+            className="text-lg text-[var(--color-foreground)] mb-2"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+          >
+            あわせて読みたい
+          </h3>
+          <p className="text-sm text-[var(--color-foreground-soft)] mb-6 leading-relaxed">同じテーマの記事をチェック</p>
           {/* Hero row: first 2 articles get large cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             {relatedArticles.slice(0, 2).map((a) => (
@@ -442,8 +471,13 @@ export default async function ArticlePage({ params }: PageProps) {
       )}
 
       {/* Disclaimer */}
-      <div className="mt-8 p-4 bg-orange-50 border border-orange-200 rounded-xl text-sm text-orange-800">
-        <p className="font-semibold mb-1">ご利用にあたって</p>
+      <div className="mt-8 p-4 bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-xl text-sm text-[var(--color-foreground-soft)] leading-relaxed">
+        <p
+          className="text-[var(--color-foreground)] mb-1"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+        >
+          ご利用にあたって
+        </p>
         <p>
           当サイトは子育て・教育に関する情報をまとめて紹介する「情報まとめサイト」です。
           掲載情報は公的機関や専門家の発信をもとに編集部が独自にまとめたものであり、

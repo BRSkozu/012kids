@@ -70,13 +70,13 @@ export default function HomePage() {
 
       {/* Compact site-meta line (was a full banner) */}
       <section className="max-w-5xl mx-auto px-4 -mt-2 mb-6">
-        <p className="text-center text-xs text-gray-500">
+        <p className="text-center text-xs text-[var(--color-foreground-muted)] tracking-wider">
           公的機関・専門家の情報を編集してお届け ·{' '}
-          <span className="font-semibold text-[var(--color-primary)]">
+          <span className="font-semibold text-[var(--color-primary-dark)]">
             {totalCount.toLocaleString()}記事掲載中
           </span>{' '}
           ·{' '}
-          <Link href="/articles" className="underline hover:text-[var(--color-primary)]">
+          <Link href="/articles" className="underline hover:text-[var(--color-primary-dark)]">
             記事一覧を見る
           </Link>
         </p>
@@ -109,14 +109,18 @@ export default function HomePage() {
               <ArticleCard key={article.id} article={article} variant="featured" />
             ))}
           </div>
-          <aside className="rounded-2xl bg-white border border-orange-100 p-5">
-            <h3 className="flex items-center gap-2 font-bold text-gray-900 mb-4">
-              <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-gradient-to-br from-amber-400 to-orange-400 text-white text-xs font-bold">
+          <aside className="rounded-2xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] p-5 relative overflow-hidden">
+            <div className="lamp-glow top-[-4rem] right-[-4rem] w-[12rem] h-[12rem] bg-[#F5D9B1] opacity-40 pointer-events-none" />
+            <h3
+              className="relative flex items-center gap-2 text-[var(--color-foreground)] mb-4"
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+            >
+              <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[var(--color-primary)] text-white text-xs font-bold shadow-[0_4px_10px_-4px_rgba(198,107,31,0.6)]">
                 #
               </span>
               人気ランキング
             </h3>
-            <ol className="space-y-3">
+            <ol className="relative space-y-3">
               {ranking.map((article, i) => (
                 <li key={article.id}>
                   <Link
@@ -126,13 +130,16 @@ export default function HomePage() {
                     <span
                       className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
                         i < 3
-                          ? 'bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] text-white'
-                          : 'bg-orange-100 text-[var(--color-primary-dark)]'
+                          ? 'bg-[var(--color-primary)] text-white'
+                          : 'bg-[var(--color-warm-cream)] text-[var(--color-primary-dark)] border border-[var(--color-paper-edge)]'
                       }`}
                     >
                       {i + 1}
                     </span>
-                    <span className="text-sm text-gray-700 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2 leading-snug">
+                    <span
+                      className="text-sm text-[var(--color-foreground-soft)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
+                      style={{ fontFamily: 'var(--font-serif)' }}
+                    >
                       {article.title}
                     </span>
                   </Link>
@@ -141,7 +148,7 @@ export default function HomePage() {
             </ol>
             <Link
               href="/articles?sort=popular"
-              className="mt-5 block text-center text-xs font-medium text-[var(--color-primary)] hover:underline"
+              className="relative mt-5 block text-center text-xs font-medium text-[var(--color-primary-dark)] hover:text-[var(--color-primary)]"
             >
               ランキングをすべて見る →
             </Link>
@@ -184,13 +191,16 @@ export default function HomePage() {
               <Link
                 key={cat.id}
                 href={`/category/${cat.id}`}
-                className="group block p-4 rounded-xl bg-white border border-orange-100 card-hover text-center"
+                className="group block p-4 rounded-xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] card-hover text-center"
               >
                 <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform duration-300 inline-block">{cat.icon}</span>
-                <h3 className="font-bold text-sm text-gray-900 group-hover:text-[var(--color-primary)] transition-colors">
+                <h3
+                  className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
+                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+                >
                   {cat.label}
                 </h3>
-                <p className="text-xs text-[var(--color-primary)] mt-1 font-medium">
+                <p className="text-xs text-[var(--color-primary-dark)] mt-1 font-medium tracking-wider">
                   {categoryCounts[cat.id] || 0}件
                 </p>
               </Link>
@@ -204,22 +214,32 @@ export default function HomePage() {
 
       {/* Closing About Banner */}
       <section className="max-w-7xl mx-auto px-4 py-12">
-        <div className="relative overflow-hidden bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 md:p-10 text-center">
-          <div className="absolute inset-0 dot-pattern opacity-30 pointer-events-none" />
-          <div className="absolute -top-8 -right-6 opacity-70 pointer-events-none">
+        <div className="relative overflow-hidden rounded-2xl p-8 md:p-10 text-center border border-[var(--color-paper-edge)] bg-[var(--color-warm-cream)]">
+          <div className="absolute inset-0 starry-pattern opacity-60 pointer-events-none" />
+          <div className="lamp-glow top-[-6rem] right-[-4rem] w-[18rem] h-[18rem] bg-[#F5D9B1] opacity-40 pointer-events-none" />
+          <div className="lamp-glow bottom-[-6rem] left-[-4rem] w-[16rem] h-[16rem] bg-[#C8D1E8] opacity-30 pointer-events-none" />
+          <div className="absolute -top-8 -right-6 opacity-60 pointer-events-none">
             <StageCategoryIllustration stage="pre" category="education" size={140} />
           </div>
-          <div className="absolute -bottom-8 -left-6 opacity-70 pointer-events-none">
+          <div className="absolute -bottom-8 -left-6 opacity-60 pointer-events-none">
             <StageCategoryIllustration stage="mid" category="mental" size={140} />
           </div>
           <div className="relative">
-            <p className="text-xs font-semibold tracking-[0.14em] uppercase text-[var(--color-primary)] mb-2">
+            <p
+              className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-3"
+              style={{ fontFamily: 'var(--font-gothic)' }}
+            >
+              <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
               Our Promise
+              <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
             </p>
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            <h2
+              className="text-[26px] md:text-[32px] text-[var(--color-foreground)] mb-3 leading-[1.25]"
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+            >
               012.kidsの約束
             </h2>
-            <p className="text-sm text-gray-600 mb-6 max-w-2xl mx-auto">
+            <p className="text-sm text-[var(--color-foreground-soft)] mb-6 max-w-2xl mx-auto leading-[1.9]">
               公的機関や専門家の情報をもとに、子育てに役立つ情報をわかりやすくまとめてお届けします。
             </p>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-6 max-w-4xl mx-auto">
@@ -232,14 +252,19 @@ export default function HomePage() {
               ].map((item) => (
                 <div key={item.label} className="group">
                   <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform duration-300 inline-block">{item.icon}</span>
-                  <p className="font-bold text-[var(--color-primary)] text-sm">{item.label}</p>
-                  <p className="text-xs text-gray-500 mt-1">{item.desc}</p>
+                  <p
+                    className="text-[var(--color-primary-dark)] text-sm"
+                    style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+                  >
+                    {item.label}
+                  </p>
+                  <p className="text-xs text-[var(--color-foreground-muted)] mt-1 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
             <Link
               href="/editorial-policy"
-              className="inline-flex items-center gap-2 mt-8 bg-[var(--color-primary)] text-white text-sm font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-all hover:shadow-md hover:shadow-orange-200/50"
+              className="btn-lamp mt-8 inline-flex"
             >
               編集方針を見る
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
