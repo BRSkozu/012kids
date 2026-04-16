@@ -5,6 +5,7 @@ import CategoryTag from '@/components/ui/CategoryTag';
 import ReadingTime from '@/components/ui/ReadingTime';
 import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
 import StageCategoryIllustration from '@/components/illustrations/StageCategoryIllustration';
+import FavoriteButton from '@/components/articles/FavoriteButton';
 import { getStageById } from '@/data/stages';
 
 interface ArticleCardProps {
@@ -138,7 +139,10 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'featured') {
     return (
-      <article className="group rounded-2xl overflow-hidden bg-white border border-orange-100 card-hover">
+      <article className="relative group rounded-2xl overflow-hidden bg-white border border-orange-100 card-hover">
+        <div className="absolute top-3 right-3 z-10">
+          <FavoriteButton slug={article.slug} />
+        </div>
         <Link href={`/articles/${article.slug}`} className="block">
           <div
             className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
@@ -174,7 +178,10 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   // Default
   return (
-    <article className="group rounded-xl overflow-hidden bg-white border border-orange-100 card-hover">
+    <article className="relative group rounded-xl overflow-hidden bg-white border border-orange-100 card-hover">
+      <div className="absolute top-2.5 right-2.5 z-10">
+        <FavoriteButton slug={article.slug} />
+      </div>
       <Link href={`/articles/${article.slug}`} className="block">
         <div
           className="aspect-[2/1] flex items-center justify-center relative overflow-hidden"

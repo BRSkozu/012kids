@@ -11,6 +11,7 @@ import ArticleCard from '@/components/articles/ArticleCard';
 import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 import ShareButtons from '@/components/articles/ShareButtons';
 import ArticleViewTracker from '@/components/articles/ArticleViewTracker';
+import FavoriteButton from '@/components/articles/FavoriteButton';
 import TableOfContents from '@/components/articles/TableOfContents';
 import ReadingProgress from '@/components/articles/ReadingProgress';
 import RecommendedLinks from '@/components/articles/RecommendedLinks';
@@ -262,6 +263,10 @@ export default async function ArticlePage({ params }: PageProps) {
 
         <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-gray-500 border border-orange-100">
           この記事は、公的機関・専門家・研究機関などの情報をもとに編集部が独自にまとめたものです。元の情報は下部の「参考にした情報源」をご確認ください。
+        </div>
+
+        <div className="mt-4 flex items-center gap-2">
+          <FavoriteButton slug={article.slug} variant="button" />
         </div>
       </header>
 

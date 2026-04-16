@@ -51,30 +51,19 @@ export default function AgeSelector() {
 
       <div className="relative max-w-7xl mx-auto px-4">
         {/* Hero */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-12 animate-fade-in-up">
-          <div className="relative animate-float">
-            <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-badge.png`}
-              alt="012.kids"
-              width={180}
-              height={180}
-              className="shrink-0 drop-shadow-lg"
-            />
-          </div>
-          <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-3">
-              <span className="text-[#A0C4FF]">0</span>
-              <span className="text-[#7BC67E]">1</span>
-              <span className="text-[#E8943D]">2</span>
-              <span className="text-gray-400">.kids</span>
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700 max-w-md leading-relaxed font-medium">
-              検索した夜、
-              <br className="hidden md:block" />
-              あなたに必要な答えが、ここに。
-            </p>
-            <EmotionalHero />
-          </div>
+        <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in-up">
+          <h1 className="text-4xl md:text-6xl font-bold mb-3 tracking-tight">
+            <span className="text-[#A0C4FF]">0</span>
+            <span className="text-[#7BC67E]">1</span>
+            <span className="text-[#E8943D]">2</span>
+            <span className="text-gray-400">.kids</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-700 max-w-md mx-auto leading-relaxed font-medium">
+            検索した夜、
+            <br className="hidden md:block" />
+            あなたに必要な答えが、ここに。
+          </p>
+          <EmotionalHero />
         </div>
 
         {/* Age Selector */}

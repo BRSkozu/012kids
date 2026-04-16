@@ -8,6 +8,7 @@ import WorryCardSection from '@/components/home/WorryCardSection';
 import TrustBlock from '@/components/home/TrustBlock';
 import ScrollTracker from '@/components/home/ScrollTracker';
 import RecentlyViewed from '@/components/home/RecentlyViewed';
+import ProfileOnboarding from '@/components/home/ProfileOnboarding';
 import NewsletterSignup from '@/components/home/NewsletterSignup';
 import SectionHeader from '@/components/ui/SectionHeader';
 import StageCategoryIllustration from '@/components/illustrations/StageCategoryIllustration';
@@ -63,6 +64,9 @@ export default function HomePage() {
 
       {/* First Time User Section */}
       <FirstTimeSection />
+
+      {/* Personalization: profile onboarding or welcome back */}
+      <ProfileOnboarding />
 
       {/* Compact site-meta line (was a full banner) */}
       <section className="max-w-5xl mx-auto px-4 -mt-2 mb-6">

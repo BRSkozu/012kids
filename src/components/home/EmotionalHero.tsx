@@ -66,10 +66,10 @@ export default function EmotionalHero() {
   const msg = EMPATHETIC_MESSAGES[index];
 
   return (
-    <div className="mt-5 md:mt-6 max-w-xl mx-auto md:mx-0">
+    <div className="mt-6 max-w-xl mx-auto">
       <div
         key={index}
-        className="relative rounded-2xl bg-white/70 backdrop-blur-sm border border-white/80 shadow-sm px-5 py-4 md:px-6 md:py-5 animate-fade-in"
+        className="relative rounded-2xl bg-white/70 backdrop-blur-sm border border-white/80 shadow-sm px-5 py-4 md:px-6 md:py-5 animate-fade-in text-left"
         style={{ borderLeft: `4px solid ${msg.tone}` }}
       >
         <p className="text-[15px] md:text-base leading-relaxed text-gray-700">
@@ -88,7 +88,7 @@ export default function EmotionalHero() {
           ))}
         </div>
       </div>
-      <p className="mt-3 text-xs text-gray-500 md:text-left text-center">
+      <p className="mt-3 text-xs text-gray-500 text-center">
         公的機関と専門家のソースを明記。広告・商業誘導なしで、あなたの「検索した夜」に寄り添います。
       </p>
     </div>
