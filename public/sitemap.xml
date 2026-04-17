@@ -121,6 +121,48 @@
     </news:news>
   </url>
   <url>
+    <loc>https://012.kids/articles/latest-research-play-and-brain</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>最新研究でわかった：遊びが子どもの脳を育てる科学的メカニズム</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/puberty-early-signs-boys</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>男の子の思春期の兆候：声変わり・体の成長と親のサポート</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/puberty-early-signs-girls</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>女の子の思春期の兆候：体の変化への向き合い方と親の伝え方</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://012.kids/articles/toilet-training-for-toddler-age</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -149,6 +191,20 @@
     </news:news>
   </url>
   <url>
+    <loc>https://012.kids/articles/reading-aloud-methods-comparison</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>読み聞かせの効果を高める：対話型・定番型・年齢別のやり方比較</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://012.kids/articles/how-to-choose-pediatrician</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -160,6 +216,34 @@
       </news:publication>
       <news:publication_date>2026-04-17</news:publication_date>
       <news:title>かかりつけ小児科の選び方：チェックポイントと上手な受診のコツ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kids-dental-care-basics</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>子どもの歯みがき完全ガイド：仕上げ磨きはいつまで？虫歯予防のコツ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/sleep-problems-upper-elementary</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>高学年の睡眠問題：夜更かし・朝起きられない子への対処法</news:title>
     </news:news>
   </url>
   <url>
@@ -188,6 +272,48 @@
       </news:publication>
       <news:publication_date>2026-04-17</news:publication_date>
       <news:title>パパの育児参加ガイド：できることから始める関わり方</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/dual-income-morning-routine</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>共働き家庭の朝の時短術：バタバタしない朝を作る10の工夫</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/dual-income-summer-childcare</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>共働き家庭の夏休み対策：学童・習い事・祖父母との連携</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/morning-routine-independent-kids</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>自分で準備できる子になる：朝の支度を自立させるステップ</news:title>
     </news:news>
   </url>
   <url>
@@ -230,6 +356,20 @@
       </news:publication>
       <news:publication_date>2026-04-17</news:publication_date>
       <news:title>入学前の不安を和らげる：親子でできる心の準備5つのステップ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/family-communication-tips</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>親子の会話が増える！家庭内コミュニケーションを良くする工夫</news:title>
     </news:news>
   </url>
   <url>

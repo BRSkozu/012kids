@@ -50,6 +50,138 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: [],
   },
   {
+    id: "art-1228",
+    slug: "latest-research-play-and-brain",
+    title: "最新研究でわかった：遊びが子どもの脳を育てる科学的メカニズム",
+    excerpt: "最新研究でわかった：遊びが子どもの脳を育てる科学的メカニズムについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "脳科学と子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "幼児期の遊びと発達",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの発達科学",
+                "url": "https://www.jst.go.jp/",
+                "org": "科学技術振興機構",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":24,"neutrality":21,"freshness":17,"ageRelevance":13,"readability":8},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/latest-research-play-and-brain.jpg",
+    readingTime: 12,
+    tags: ["脳科学","遊び","最新研究"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1235",
+    slug: "puberty-early-signs-boys",
+    title: "男の子の思春期の兆候：声変わり・体の成長と親のサポート",
+    excerpt: "男の子の思春期の兆候：声変わり・体の成長と親のサポートについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "思春期の体の変化",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校保健における性教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児内分泌疾患",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":26,"neutrality":22,"freshness":16,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/puberty-early-signs-boys.jpg",
+    readingTime: 11,
+    tags: ["思春期","第二次性徴","男の子"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1234",
+    slug: "puberty-early-signs-girls",
+    title: "女の子の思春期の兆候：体の変化への向き合い方と親の伝え方",
+    excerpt: "女の子の思春期の兆候：体の変化への向き合い方と親の伝え方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "思春期の体の変化",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校保健における性教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児内分泌疾患",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":27,"neutrality":20,"freshness":16,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/puberty-early-signs-girls.jpg",
+    readingTime: 11,
+    tags: ["思春期","第二次性徴","女の子"],
+    relatedArticleIds: [],
+  },
+  {
     id: "art-1223",
     slug: "toilet-training-for-toddler-age",
     title: "2歳からのトイレトレーニング：発達に合わせた無理のない進め方",
@@ -138,6 +270,50 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: [],
   },
   {
+    id: "art-1233",
+    slug: "reading-aloud-methods-comparison",
+    title: "読み聞かせの効果を高める：対話型・定番型・年齢別のやり方比較",
+    excerpt: "読み聞かせの効果を高める：対話型・定番型・年齢別のやり方比較について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "読書活動の推進",
+                "url": "https://www.mext.go.jp/a_menu/shotou/dokusho/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "乳幼児の言語発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの読書環境",
+                "url": "https://www.ndl.go.jp/",
+                "org": "国立国会図書館",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":28,"neutrality":22,"freshness":15,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/reading-aloud-methods-comparison.jpg",
+    readingTime: 10,
+    tags: ["読み聞かせ","対話型","絵本"],
+    relatedArticleIds: [],
+  },
+  {
     id: "art-1226",
     slug: "how-to-choose-pediatrician",
     title: "かかりつけ小児科の選び方：チェックポイントと上手な受診のコツ",
@@ -179,6 +355,94 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/how-to-choose-pediatrician.jpg",
     readingTime: 9,
     tags: ["小児科","かかりつけ医","受診"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1232",
+    slug: "kids-dental-care-basics",
+    title: "子どもの歯みがき完全ガイド：仕上げ磨きはいつまで？虫歯予防のコツ",
+    excerpt: "子どもの歯みがき完全ガイド：仕上げ磨きはいつまで？虫歯予防のコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "歯科口腔保健",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/shika/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの歯の健康",
+                "url": "https://www.jda.or.jp/",
+                "org": "日本歯科医師会",
+                "stance": "positive"
+          },
+          {
+                "title": "乳幼児の歯科保健",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "日本歯科医師会などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/kids-dental-care-basics.jpg",
+    readingTime: 9,
+    tags: ["歯みがき","虫歯予防","歯科"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1230",
+    slug: "sleep-problems-upper-elementary",
+    title: "高学年の睡眠問題：夜更かし・朝起きられない子への対処法",
+    excerpt: "高学年の睡眠問題：夜更かし・朝起きられない子への対処法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "子どもの睡眠指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "思春期の睡眠",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "児童の生活時間調査",
+                "url": "https://www.nhk.or.jp/bunken/",
+                "org": "NHK放送文化研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":81,"reliability":23,"neutrality":23,"freshness":17,"ageRelevance":11,"readability":7},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/sleep-problems-upper-elementary.jpg",
+    readingTime: 10,
+    tags: ["睡眠","夜更かし","高学年"],
     relatedArticleIds: [],
   },
   {
@@ -267,6 +531,138 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dad-childcare-involvement.jpg",
     readingTime: 10,
     tags: ["父親育児","パパ","育児参加"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1229",
+    slug: "dual-income-morning-routine",
+    title: "共働き家庭の朝の時短術：バタバタしない朝を作る10の工夫",
+    excerpt: "共働き家庭の朝の時短術：バタバタしない朝を作る10の工夫について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["lifestyle"],
+    source: {
+      name: "内閣府等の公的情報",
+      references: [
+          {
+                "title": "仕事と生活の調和",
+                "url": "https://wwwa.cao.go.jp/wlb/",
+                "org": "内閣府",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援制度",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの生活習慣",
+                "url": "https://www.mext.go.jp/a_menu/shougai/asagohan/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "内閣府などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "内閣府のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":89,"reliability":29,"neutrality":22,"freshness":19,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/dual-income-morning-routine.jpg",
+    readingTime: 9,
+    tags: ["共働き","時短","朝の支度"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1236",
+    slug: "dual-income-summer-childcare",
+    title: "共働き家庭の夏休み対策：学童・習い事・祖父母との連携",
+    excerpt: "共働き家庭の夏休み対策：学童・習い事・祖父母との連携について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブ",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "仕事と生活の調和",
+                "url": "https://wwwa.cao.go.jp/wlb/",
+                "org": "内閣府",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "内閣府などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":28,"neutrality":22,"freshness":19,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/dual-income-summer-childcare.jpg",
+    readingTime: 10,
+    tags: ["共働き","夏休み","学童保育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1237",
+    slug: "morning-routine-independent-kids",
+    title: "自分で準備できる子になる：朝の支度を自立させるステップ",
+    excerpt: "自分で準備できる子になる：朝の支度を自立させるステップについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["lifestyle"],
+    source: {
+      name: "こども家庭庁等の公的情報",
+      references: [
+          {
+                "title": "幼児の基本的生活習慣",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの自律性を育てる",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "生活リズムと発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "こども家庭庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":23,"neutrality":24,"freshness":19,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/morning-routine-independent-kids.jpg",
+    readingTime: 8,
+    tags: ["朝の支度","自立","生活習慣"],
     relatedArticleIds: [],
   },
   {
@@ -399,6 +795,50 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-entry-anxiety-tips.jpg",
     readingTime: 10,
     tags: ["入学準備","不安","心のケア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1231",
+    slug: "family-communication-tips",
+    title: "親子の会話が増える！家庭内コミュニケーションを良くする工夫",
+    excerpt: "親子の会話が増える！家庭内コミュニケーションを良くする工夫について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭教育",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもとの対話",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":77,"reliability":23,"neutrality":23,"freshness":16,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/family-communication-tips.jpg",
+    readingTime: 9,
+    tags: ["親子関係","コミュニケーション","会話"],
     relatedArticleIds: [],
   },
   {

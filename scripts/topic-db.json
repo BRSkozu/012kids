@@ -3,7 +3,7 @@
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
     "lastGeneratedAt": "2026-04-17",
-    "totalGenerated": 10
+    "totalGenerated": 20
   },
   "pools": {
     "seasonal": {
@@ -1668,6 +1668,16 @@
     "homework-habits-lower-elementary",
     "dad-childcare-involvement",
     "how-to-choose-pediatrician",
-    "child-anger-management-guide"
+    "child-anger-management-guide",
+    "latest-research-play-and-brain",
+    "dual-income-morning-routine",
+    "sleep-problems-upper-elementary",
+    "family-communication-tips",
+    "kids-dental-care-basics",
+    "reading-aloud-methods-comparison",
+    "puberty-early-signs-girls",
+    "puberty-early-signs-boys",
+    "dual-income-summer-childcare",
+    "morning-routine-independent-kids"
   ]
 }
