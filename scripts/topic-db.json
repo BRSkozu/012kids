@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": null,
-    "totalGenerated": 0
+    "lastGeneratedAt": "2026-04-17",
+    "totalGenerated": 10
   },
   "pools": {
     "seasonal": {
@@ -1658,5 +1658,16 @@
       ]
     }
   },
-  "generated": []
+  "generated": [
+    "school-entry-anxiety-tips",
+    "spring-allergy-kids-checklist",
+    "new-school-friends-making",
+    "spring-sleep-rhythm-reset",
+    "kindergarten-adaptation-guide",
+    "toilet-training-for-toddler-age",
+    "homework-habits-lower-elementary",
+    "dad-childcare-involvement",
+    "how-to-choose-pediatrician",
+    "child-anger-management-guide"
+  ]
 }

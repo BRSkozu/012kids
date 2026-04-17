@@ -6,6 +6,446 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1222",
+    slug: "kindergarten-adaptation-guide",
+    title: "保育園・幼稚園の慣らし保育：泣く子への対応と適応のサイン",
+    excerpt: "保育園・幼稚園の慣らし保育：泣く子への対応と適応のサインについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "乳幼児の愛着と分離不安",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児期の集団適応",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":79,"reliability":23,"neutrality":20,"freshness":18,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/kindergarten-adaptation-guide.jpg",
+    readingTime: 10,
+    tags: ["慣らし保育","適応","分離不安"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1223",
+    slug: "toilet-training-for-toddler-age",
+    title: "2歳からのトイレトレーニング：発達に合わせた無理のない進め方",
+    excerpt: "2歳からのトイレトレーニング：発達に合わせた無理のない進め方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "乳幼児の排泄機能の発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児の基本的生活習慣",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":76,"reliability":24,"neutrality":21,"freshness":15,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/toilet-training-for-toddler-age.jpg",
+    readingTime: 10,
+    tags: ["トイレトレーニング","2歳","発達段階"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1224",
+    slug: "homework-habits-lower-elementary",
+    title: "小学1年生の宿題習慣づくり：最初の3ヶ月が勝負",
+    excerpt: "小学1年生の宿題習慣づくり：最初の3ヶ月が勝負について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭学習の手引き",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "学力と学習状況調査",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの学習意欲",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":29,"neutrality":22,"freshness":15,"ageRelevance":10,"readability":7},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/homework-habits-lower-elementary.jpg",
+    readingTime: 9,
+    tags: ["宿題","学習習慣","小学1年生"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1226",
+    slug: "how-to-choose-pediatrician",
+    title: "かかりつけ小児科の選び方：チェックポイントと上手な受診のコツ",
+    excerpt: "かかりつけ小児科の選び方：チェックポイントと上手な受診のコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "小児医療体制",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの病気と受診",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児救急医療",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":22,"neutrality":25,"freshness":19,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/how-to-choose-pediatrician.jpg",
+    readingTime: 9,
+    tags: ["小児科","かかりつけ医","受診"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1219",
+    slug: "spring-allergy-kids-checklist",
+    title: "春の花粉症対策チェックリスト：子どもの症状を見逃さないために",
+    excerpt: "春の花粉症対策チェックリスト：子どもの症状を見逃さないためにについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "環境省等の公的情報",
+      references: [
+          {
+                "title": "花粉症環境保健マニュアル",
+                "url": "https://www.env.go.jp/chemi/anzen/kafun/",
+                "org": "環境省",
+                "stance": "neutral"
+          },
+          {
+                "title": "アレルギー疾患対策",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/allergy/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児アレルギー疾患",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "環境省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":86,"reliability":24,"neutrality":25,"freshness":16,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/spring-allergy-kids-checklist.jpg",
+    readingTime: 9,
+    tags: ["花粉症","アレルギー","春"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1225",
+    slug: "dad-childcare-involvement",
+    title: "パパの育児参加ガイド：できることから始める関わり方",
+    excerpt: "パパの育児参加ガイド：できることから始める関わり方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "男性の育児参加",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て家庭の実態",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "厚生労働省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":22,"neutrality":25,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/dad-childcare-involvement.jpg",
+    readingTime: 10,
+    tags: ["父親育児","パパ","育児参加"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1221",
+    slug: "spring-sleep-rhythm-reset",
+    title: "春休みに乱れた生活リズムをリセットする7つの方法",
+    excerpt: "春休みに乱れた生活リズムをリセットする7つの方法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "子どもの睡眠指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児の睡眠と発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "早寝早起き朝ごはん",
+                "url": "https://www.mext.go.jp/a_menu/shougai/asagohan/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":82,"reliability":22,"neutrality":25,"freshness":19,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/spring-sleep-rhythm-reset.jpg",
+    readingTime: 8,
+    tags: ["生活リズム","睡眠","春休み"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1227",
+    slug: "child-anger-management-guide",
+    title: "子どものかんしゃく・怒りへの対応：アンガーマネジメントの基本",
+    excerpt: "子どものかんしゃく・怒りへの対応：アンガーマネジメントの基本について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "幼児期の情緒発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の健康",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":27,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/child-anger-management-guide.jpg",
+    readingTime: 10,
+    tags: ["かんしゃく","アンガーマネジメント","感情コントロール"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1218",
+    slug: "school-entry-anxiety-tips",
+    title: "入学前の不安を和らげる：親子でできる心の準備5つのステップ",
+    excerpt: "入学前の不安を和らげる：親子でできる心の準備5つのステップについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "小学校入学に向けた支援",
+                "url": "https://www.mext.go.jp/a_menu/shotou/gakko/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの不安への対応",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児期の心の発達",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":80,"reliability":22,"neutrality":22,"freshness":19,"ageRelevance":12,"readability":5},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/school-entry-anxiety-tips.jpg",
+    readingTime: 10,
+    tags: ["入学準備","不安","心のケア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1220",
+    slug: "new-school-friends-making",
+    title: "新しい環境で友達ができない？子どもの交友関係を見守るコツ",
+    excerpt: "新しい環境で友達ができない？子どもの交友関係を見守るコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "国立教育政策研究所等の公的情報",
+      references: [
+          {
+                "title": "児童期の社会性発達",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの対人関係",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校教育相談",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立教育政策研究所のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":79,"reliability":22,"neutrality":25,"freshness":16,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    imageUrl: "/articles/new-school-friends-making.jpg",
+    readingTime: 10,
+    tags: ["友達づくり","新生活","社会性"],
+    relatedArticleIds: [],
+  },
+  {
     id: "art-1211",
     slug: "baby-sign-language-guide",
     title: "ベビーサインの始め方：赤ちゃんとの手話コミュニケーション",
@@ -14816,7 +15256,7 @@ export const ARTICLES: Article[] = [
     excerpt: "入院バッグ、ママ用アイテム、赤ちゃん用品を「必須」「あると便利」に分けて紹介。季節別の注意点、予算の目安、中古品のOK/NGリストまで、無駄なく賢く準備するためのガイドです。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "出産準備に関する公的情報等",
       references: [
@@ -14872,7 +15312,7 @@ export const ARTICLES: Article[] = [
     excerpt: "不妊治療の種類やステップ、2022年からの保険適用拡大、費用の目安、心理的サポートや職場での配慮について包括的に解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "不妊治療に関する公的ガイドライン・学会見解",
       references: [
@@ -14996,7 +15436,7 @@ export const ARTICLES: Article[] = [
     excerpt: "吐きつわり、食べつわり、眠りつわり、よだれつわりなど、つわりの種類別対策から妊娠悪阻の見分け方、職場での対応まで、妊娠初期を乗り越えるための情報をまとめました。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "つわり・妊娠悪阻に関する公的ガイドライン等",
       references: [
@@ -15052,7 +15492,7 @@ export const ARTICLES: Article[] = [
     excerpt: "産後の身体的な回復過程と心の変化について、時期別の目安とセルフケアの方法、専門家への相談が必要なサインをまとめました。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "産後の母体回復に関する医学的知見",
       references: [
@@ -15114,7 +15554,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠初期から出産までの40週間を週数別に解説。ママの体の変化、赤ちゃんの発達、妊婦健診スケジュール、各時期にやっておくべき準備をまとめました。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン等",
       references: [
@@ -16316,7 +16756,7 @@ export const ARTICLES: Article[] = [
     excerpt: "マタニティヨガについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16354,7 +16794,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠中スキンケアについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16392,7 +16832,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠中の旅行について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16430,7 +16870,7 @@ export const ARTICLES: Article[] = [
     excerpt: "名付けについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16468,7 +16908,7 @@ export const ARTICLES: Article[] = [
     excerpt: "入院バッグについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16506,7 +16946,7 @@ export const ARTICLES: Article[] = [
     excerpt: "部屋づくりについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16544,7 +16984,7 @@ export const ARTICLES: Article[] = [
     excerpt: "マタニティウェアについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16582,7 +17022,7 @@ export const ARTICLES: Article[] = [
     excerpt: "新生児黄疸について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16620,7 +17060,7 @@ export const ARTICLES: Article[] = [
     excerpt: "両親学級について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16658,7 +17098,7 @@ export const ARTICLES: Article[] = [
     excerpt: "沐浴について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16696,7 +17136,7 @@ export const ARTICLES: Article[] = [
     excerpt: "へその緒について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16734,7 +17174,7 @@ export const ARTICLES: Article[] = [
     excerpt: "ミルク育児について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16772,7 +17212,7 @@ export const ARTICLES: Article[] = [
     excerpt: "混合栄養について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16810,7 +17250,7 @@ export const ARTICLES: Article[] = [
     excerpt: "新生児ケアについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16848,7 +17288,7 @@ export const ARTICLES: Article[] = [
     excerpt: "母乳育児について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16886,7 +17326,7 @@ export const ARTICLES: Article[] = [
     excerpt: "母乳トラブルについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16924,7 +17364,7 @@ export const ARTICLES: Article[] = [
     excerpt: "産後健診について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -16962,7 +17402,7 @@ export const ARTICLES: Article[] = [
     excerpt: "帝王切開について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17000,7 +17440,7 @@ export const ARTICLES: Article[] = [
     excerpt: "自然分娩について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17038,7 +17478,7 @@ export const ARTICLES: Article[] = [
     excerpt: "無痛分娩について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17076,7 +17516,7 @@ export const ARTICLES: Article[] = [
     excerpt: "バースプランについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17114,7 +17554,7 @@ export const ARTICLES: Article[] = [
     excerpt: "ハイリスク妊娠について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17152,7 +17592,7 @@ export const ARTICLES: Article[] = [
     excerpt: "マタニティブルーについて、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17190,7 +17630,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠糖尿病について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17228,7 +17668,7 @@ export const ARTICLES: Article[] = [
     excerpt: "多胎妊娠について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17266,7 +17706,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠高血圧について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17304,7 +17744,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊婦健診について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17342,7 +17782,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠中期の運動について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17380,7 +17820,7 @@ export const ARTICLES: Article[] = [
     excerpt: "出産準備について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -17418,7 +17858,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠初期の栄養について、最新のガイドラインをもとに解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26458,7 +26898,7 @@ export const ARTICLES: Article[] = [
     excerpt: "自宅出産について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26496,7 +26936,7 @@ export const ARTICLES: Article[] = [
     excerpt: "助産師について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26534,7 +26974,7 @@ export const ARTICLES: Article[] = [
     excerpt: "水中出産について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26686,7 +27126,7 @@ export const ARTICLES: Article[] = [
     excerpt: "さい帯血について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26724,7 +27164,7 @@ export const ARTICLES: Article[] = [
     excerpt: "ドゥーラについて、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26762,7 +27202,7 @@ export const ARTICLES: Article[] = [
     excerpt: "NSTについて、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26914,7 +27354,7 @@ export const ARTICLES: Article[] = [
     excerpt: "胎動について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26952,7 +27392,7 @@ export const ARTICLES: Article[] = [
     excerpt: "キックカウントについて、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -26990,7 +27430,7 @@ export const ARTICLES: Article[] = [
     excerpt: "貧血について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27142,7 +27582,7 @@ export const ARTICLES: Article[] = [
     excerpt: "糖尿病食事について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27180,7 +27620,7 @@ export const ARTICLES: Article[] = [
     excerpt: "むくみについて、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27218,7 +27658,7 @@ export const ARTICLES: Article[] = [
     excerpt: "静脈瘤について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27370,7 +27810,7 @@ export const ARTICLES: Article[] = [
     excerpt: "腰痛について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27408,7 +27848,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠悪阻について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27446,7 +27886,7 @@ export const ARTICLES: Article[] = [
     excerpt: "前置胎盤について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27560,7 +28000,7 @@ export const ARTICLES: Article[] = [
     excerpt: "合併症について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27598,7 +28038,7 @@ export const ARTICLES: Article[] = [
     excerpt: "早産予防について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27750,7 +28190,7 @@ export const ARTICLES: Article[] = [
     excerpt: "高齢妊娠について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27788,7 +28228,7 @@ export const ARTICLES: Article[] = [
     excerpt: "体外受精後について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27826,7 +28266,7 @@ export const ARTICLES: Article[] = [
     excerpt: "双子について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -27978,7 +28418,7 @@ export const ARTICLES: Article[] = [
     excerpt: "ペットについて、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28016,7 +28456,7 @@ export const ARTICLES: Article[] = [
     excerpt: "ストレスについて、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28054,7 +28494,7 @@ export const ARTICLES: Article[] = [
     excerpt: "労働権利について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28206,7 +28646,7 @@ export const ARTICLES: Article[] = [
     excerpt: "運動について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28244,7 +28684,7 @@ export const ARTICLES: Article[] = [
     excerpt: "夫婦関係について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28282,7 +28722,7 @@ export const ARTICLES: Article[] = [
     excerpt: "寝姿勢について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28434,7 +28874,7 @@ export const ARTICLES: Article[] = [
     excerpt: "歯科について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28472,7 +28912,7 @@ export const ARTICLES: Article[] = [
     excerpt: "食品安全について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28510,7 +28950,7 @@ export const ARTICLES: Article[] = [
     excerpt: "薬について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [
@@ -28662,7 +29102,7 @@ export const ARTICLES: Article[] = [
     excerpt: "妊娠初期症状について、最新のガイドラインに基づき解説します。",
     content: '',
     stage: "0stage",
-    categories: ["health"],
+    categories: ["health","pregnancy"],
     source: {
       name: "妊娠・出産に関する公的ガイドライン",
       references: [

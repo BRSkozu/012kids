@@ -1,27 +1,16 @@
-name: Daily Article Publishing
+name: Weekly Link & Quality Check
 
 on:
   schedule:
-    # 毎日日本時間午前7時（UTC 22:00前日）に実行
-    - cron: '0 22 * * *'
+    # 毎週月曜 日本時間午前3時（UTC 日曜 18:00）
+    - cron: '0 18 * * 0'
   workflow_dispatch:
-    inputs:
-      count:
-        description: '公開する記事数（デフォルト10件）'
-        required: false
-        default: '10'
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: 'pages'
-  cancel-in-progress: false
+  contents: read
 
 jobs:
-  publish-articles:
+  quality-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -38,52 +27,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Publish draft articles
-        run: node scripts/publish-articles.mjs --count ${{ github.event.inputs.count || '10' }}
+      - name: Validate articles (logic check)
+        run: node scripts/validate-articles.mjs
 
-      - name: Count published articles
-        id: count
-        run: |
-          PUBLISHED=$(git diff --name-only | grep '\.mdx$' | wc -l)
-          echo "published=$PUBLISHED" >> $GITHUB_OUTPUT
-          TOTAL=$(find content/articles -name '*.mdx' | wc -l)
-          echo "total_articles=$TOTAL" >> $GITHUB_OUTPUT
-          echo "Published: $PUBLISHED, Total: $TOTAL"
-
-      - name: Commit and push published articles
-        if: steps.count.outputs.published != '0'
-        run: |
-          git config user.name "012kids-bot"
-          git config user.email "bot@012.kids"
-          git add content/articles/ src/data/articles.ts public/
-          git commit -m "feat: ${{ steps.count.outputs.published }}件の下書き記事を公開（合計${{ steps.count.outputs.total_articles }}件）
-
-          Published by publish-articles.mjs via GitHub Actions"
-          git push
-
-      - name: Build site
-        if: steps.count.outputs.published != '0'
-        run: npx next build
-        env:
-          GITHUB_PAGES: 'true'
-          NEXT_PUBLIC_BASE_PATH: /012kids
-          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
-
-      - name: Upload Pages artifact
-        if: steps.count.outputs.published != '0'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-
-      - name: Deploy to GitHub Pages
-        if: steps.count.outputs.published != '0'
-        uses: actions/deploy-pages@v4
+      - name: Check links (internal + external)
+        run: node scripts/check-links.mjs --concurrency 5
 
       - name: Summary
         if: always()
         run: |
-          echo "## Daily Article Publishing Report" >> $GITHUB_STEP_SUMMARY
+          TOTAL=$(find content/articles -name '*.mdx' | wc -l)
+          echo "## 🔗 Weekly Quality Check" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Published articles**: ${{ steps.count.outputs.published }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Total articles**: ${{ steps.count.outputs.total_articles }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total articles**: $TOTAL" >> $GITHUB_STEP_SUMMARY
           echo "- **Date**: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "See job logs for validation details and link check results." >> $GITHUB_STEP_SUMMARY
