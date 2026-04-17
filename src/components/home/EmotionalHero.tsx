@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 
 /**
  * Rotating empathetic hero messages.
- * Cycles through "夜泣きで検索した夜…" style parent-worry scenarios to show
- * visitors that the site understands real moments of parenting anxiety.
+ * Cycles through everyday parenting moments — night, morning, noon, and evening —
+ * to show visitors that the site understands real moments of parenting anxiety.
  */
 const EMPATHETIC_MESSAGES = [
   {
@@ -19,7 +19,7 @@ const EMPATHETIC_MESSAGES = [
     tone: '#FFD9A0',
   },
   {
-    moment: '初めての発熱で不安な夜も、',
+    moment: '初めての発熱で不安な時も、',
     promise: '専門家の根拠ある答えを。',
     tone: '#FFB3B3',
   },
@@ -47,6 +47,16 @@ const EMPATHETIC_MESSAGES = [
     moment: '友達関係に悩む子どもの横で、',
     promise: '親ができることを静かに。',
     tone: '#A8E6CF',
+  },
+  {
+    moment: '習い事を迷うお昼下がりも、',
+    promise: '家庭ごとのペースに合う選択を。',
+    tone: '#FFD9A0',
+  },
+  {
+    moment: 'ごはんを食べてくれない日も、',
+    promise: '栄養と心の両方に、やさしく。',
+    tone: '#FFFAA0',
   },
 ];
 
@@ -107,7 +117,7 @@ export default function EmotionalHero() {
         </div>
       </div>
       <p className="mt-4 text-[11px] text-[var(--color-foreground-muted)] text-center tracking-wider">
-        公的機関と専門家のソースを明記 ｜ 広告・商業誘導なし ｜ 「検索した夜」に灯りを
+        公的機関と専門家のソースを明記 ｜ 広告・商業誘導なし ｜ 検索したその時に、そっと灯りを
       </p>
     </div>
   );

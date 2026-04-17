@@ -52,10 +52,10 @@ export default function AgeSelector() {
       <div className="relative max-w-7xl mx-auto px-4">
         {/* Hero */}
         <div className="max-w-3xl mx-auto text-center mb-14 animate-fade-in-up">
-          {/* Kicker — night journal feel */}
+          {/* Kicker — gentle bedside-library feel */}
           <p className="inline-flex items-center gap-2 mb-5 text-xs font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)]">
             <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
-            A Bedtime Storybook for Parents
+            A Gentle Library for Parents
             <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
           </p>
           <h1
@@ -63,7 +63,7 @@ export default function AgeSelector() {
             style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, letterSpacing: '0.01em' }}
           >
             <span className="block text-[var(--color-foreground)]">
-              検索した夜、
+              検索したその時に、
             </span>
             <span className="block">
               <span className="sketched-underline text-[var(--color-primary-dark)]">必要な答え</span>
@@ -71,7 +71,7 @@ export default function AgeSelector() {
             </span>
           </h1>
           <p className="text-[15px] md:text-base text-[var(--color-foreground-soft)] max-w-xl mx-auto leading-[1.9]">
-            0歳から12歳。眠れない夜の不安も、朝の焦りも。
+            0歳から12歳。眠れない夜の不安も、朝の焦りも、昼の迷いも。
             <br className="hidden md:block" />
             公的機関・専門家の情報を、そっと灯りのように差し出します。
           </p>

@@ -25,7 +25,7 @@ export default function Footer() {
               <span className="text-lg font-semibold text-[var(--color-foreground-muted)] group-hover:text-[var(--color-foreground-soft)] transition-colors">.kids</span>
             </Link>
             <p className="text-sm text-[var(--color-foreground-soft)] leading-[1.9]">
-              検索した夜、あなたに必要な答えが、ここに。
+              検索したその時に、必要な答えが、ここに。
               <br />
               0歳から12歳の子育てに、そっと灯りを。
             </p>
