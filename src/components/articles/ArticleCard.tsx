@@ -151,7 +151,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
     );
   }
 
-  const cardPhoto = getCategoryPhoto(article.categories[0]) || getStagePhoto(article.stage);
+  const cardPhoto = getStagePhoto(article.stage) || getCategoryPhoto(article.categories[0]);
 
   if (variant === 'featured') {
     return (
