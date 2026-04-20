@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { AGE_STAGES } from '@/data/stages';
+import { ABOUT_PHOTO } from '@/data/photos';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -109,9 +111,17 @@ export default function AboutPage() {
         >
           やりたいこと
         </h2>
-        <div className="bg-[var(--color-night)] text-white rounded-xl p-8 text-center relative overflow-hidden">
+        <div className="relative bg-[var(--color-night)] text-white rounded-xl p-8 text-center overflow-hidden min-h-[240px] flex items-center justify-center">
+          <Image
+            src={ABOUT_PHOTO}
+            alt=""
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 896px) 100vw, 896px"
+          />
+          <div className="absolute inset-0 bg-[var(--color-night)]/70" />
           <div className="lamp-glow top-[-4rem] left-[-4rem] w-[16rem] h-[16rem] bg-[var(--color-primary-light)] opacity-30 pointer-events-none" />
-          <div className="starry-pattern absolute inset-0 opacity-20 pointer-events-none" />
+          <div className="starry-pattern absolute inset-0 opacity-15 pointer-events-none" />
           <p
             className="relative text-xl leading-relaxed"
             style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}

@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { AGE_STAGES, getStageById } from '@/data/stages';
 import { getArticlesByStage } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 import { AgeStage } from '@/types';
+import { getStagePhoto } from '@/data/photos';
 import ArticleCard from '@/components/articles/ArticleCard';
 import StageBadge from '@/components/ui/StageBadge';
 import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
@@ -65,15 +67,32 @@ export default async function AgeGuidePage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {/* Hero Banner */}
       <section
-        className="py-12 md:py-20"
+        className="relative py-12 md:py-20 overflow-hidden"
         style={{ backgroundColor: stage.colorLight }}
       >
-        <div className="max-w-7xl mx-auto px-4">
+        {getStagePhoto(stageId) && (
+          <div className="absolute inset-0">
+            <Image
+              src={getStagePhoto(stageId)!}
+              alt=""
+              fill
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background: `linear-gradient(to right, ${stage.colorLight}ee, ${stage.colorLight}d8, ${stage.colorLight}88)`,
+              }}
+            />
+          </div>
+        )}
+        <div className="relative max-w-7xl mx-auto px-4">
           <Breadcrumb items={breadcrumbItems} />
 
           <div className="flex items-start gap-4">
             <div
-              className="w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center text-2xl md:text-3xl font-bold shrink-0"
+              className="w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center text-2xl md:text-3xl font-bold shrink-0 shadow-lg"
               style={{ backgroundColor: stage.color }}
             >
               {stage.ageRange.split('〜')[0]}
@@ -92,7 +111,7 @@ export default async function AgeGuidePage({ params }: PageProps) {
             {stage.themes.map((theme) => (
               <span
                 key={theme}
-                className="px-3 py-1 rounded-full text-sm font-medium"
+                className="px-3 py-1 rounded-full text-sm font-medium shadow-sm"
                 style={{ backgroundColor: stage.color, color: '#1a1a2e' }}
               >
                 {theme}

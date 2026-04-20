@@ -1,9 +1,11 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { CATEGORIES, getCategoryById } from '@/data/categories';
 import { getArticlesByCategory } from '@/lib/articles';
 import { AGE_STAGES } from '@/data/stages';
+import { getCategoryPhoto } from '@/data/photos';
 import ArticleCard from '@/components/articles/ArticleCard';
 import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
 
@@ -63,12 +65,24 @@ export default async function CategoryPage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[var(--color-warm-cream)] to-[var(--color-surface)] py-12">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="relative bg-gradient-to-b from-[var(--color-warm-cream)] to-[var(--color-surface)] py-12 overflow-hidden">
+        {getCategoryPhoto(id) && (
+          <div className="absolute inset-0">
+            <Image
+              src={getCategoryPhoto(id)!}
+              alt=""
+              fill
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[rgba(255,253,247,0.92)] via-[rgba(255,253,247,0.85)] to-[rgba(255,253,247,0.6)]" />
+          </div>
+        )}
+        <div className="relative max-w-7xl mx-auto px-4">
           <Breadcrumb items={breadcrumbItems} />
 
           <div className="flex items-center gap-4">
-            <span className="text-5xl">{cat.icon}</span>
+            <span className="text-5xl drop-shadow-sm">{cat.icon}</span>
             <div>
               <h1 className="text-3xl text-[var(--color-foreground)]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>{cat.label}</h1>
               <p className="text-[var(--color-foreground-soft)] mt-1">{cat.description}</p>

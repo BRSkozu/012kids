@@ -1,9 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { AGE_STAGES } from '@/data/stages';
 import { getStageByAge } from '@/data/stages';
+import { HERO_PHOTO } from '@/data/photos';
 import EmotionalHero from '@/components/home/EmotionalHero';
 
 function getGradeLabel(age: number): string | null {
@@ -43,11 +45,23 @@ export default function AgeSelector() {
 
   return (
     <section className="relative overflow-hidden py-20 md:py-28">
+      {/* Hero photograph — warm parent-child reading scene */}
+      <div className="absolute inset-0">
+        <Image
+          src={HERO_PHOTO}
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,253,247,0.88)] via-[rgba(255,253,247,0.82)] to-[rgba(255,253,247,0.92)]" />
+      </div>
       {/* Ambient lamp glows + starry pattern */}
-      <div className="absolute inset-0 starry-pattern opacity-70 pointer-events-none" />
+      <div className="absolute inset-0 starry-pattern opacity-50 pointer-events-none" />
       <div className="lamp-glow top-[-6rem] left-[8%] w-[22rem] h-[22rem] bg-[#F5D9B1] animate-lamp" />
-      <div className="lamp-glow bottom-[-8rem] right-[6%] w-[26rem] h-[26rem] bg-[#C8D1E8] opacity-40" />
-      <div className="lamp-glow top-[20%] right-[30%] w-[14rem] h-[14rem] bg-[#F3B2B2] opacity-30" />
+      <div className="lamp-glow bottom-[-8rem] right-[6%] w-[26rem] h-[26rem] bg-[#C8D1E8] opacity-30" />
+      <div className="lamp-glow top-[20%] right-[30%] w-[14rem] h-[14rem] bg-[#F3B2B2] opacity-20" />
 
       <div className="relative max-w-7xl mx-auto px-4">
         {/* Hero */}
