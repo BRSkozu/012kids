@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import AgeSelector from '@/components/age-selector/AgeSelector';
 import ArticleCard from '@/components/articles/ArticleCard';
@@ -12,6 +13,7 @@ import ProfileOnboarding from '@/components/home/ProfileOnboarding';
 import NewsletterSignup from '@/components/home/NewsletterSignup';
 import SectionHeader from '@/components/ui/SectionHeader';
 import StageCategoryIllustration from '@/components/illustrations/StageCategoryIllustration';
+import { getCategoryPhoto } from '@/data/photos';
 import { getFeaturedArticles, getLatestArticles, getAllArticlesSync, getArticleCountByCategory } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 import { getCurrentSeasonalTheme, getSeasonalScore } from '@/data/seasonal-content';
@@ -187,24 +189,35 @@ export default function HomePage() {
             description="気になるテーマの記事を見つけましょう"
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-            {CATEGORIES.map((cat) => (
-              <Link
-                key={cat.id}
-                href={`/category/${cat.id}`}
-                className="group block p-4 rounded-xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] card-hover text-center"
-              >
-                <span className="text-2xl mb-2 block group-hover:scale-110 transition-transform duration-300 inline-block">{cat.icon}</span>
-                <h3
-                  className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
-                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+            {CATEGORIES.map((cat) => {
+              const photo = getCategoryPhoto(cat.id);
+              return (
+                <Link
+                  key={cat.id}
+                  href={`/category/${cat.id}`}
+                  className="group block rounded-xl overflow-hidden border border-[var(--color-paper-edge)] card-hover relative"
                 >
-                  {cat.label}
-                </h3>
-                <p className="text-xs text-[var(--color-primary-dark)] mt-1 font-medium tracking-wider">
-                  {categoryCounts[cat.id] || 0}件
-                </p>
-              </Link>
-            ))}
+                  {photo ? (
+                    <div className="aspect-[4/3] relative">
+                      <Image src={photo} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 20vw" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
+                        <h3 className="text-sm font-bold drop-shadow-sm" style={{ fontFamily: 'var(--font-serif)' }}>
+                          {cat.icon} {cat.label}
+                        </h3>
+                        <p className="text-xs opacity-90 mt-0.5 tracking-wider">{categoryCounts[cat.id] || 0}件</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="p-4 bg-[var(--color-surface)] text-center">
+                      <span className="text-2xl mb-2 block">{cat.icon}</span>
+                      <h3 className="text-sm text-[var(--color-foreground)]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>{cat.label}</h3>
+                      <p className="text-xs text-[var(--color-primary-dark)] mt-1">{categoryCounts[cat.id] || 0}件</p>
+                    </div>
+                  )}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
