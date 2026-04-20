@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
@@ -8,7 +7,6 @@ import { getCategoryIllustration } from '@/components/illustrations/CategoryIllu
 import StageCategoryIllustration from '@/components/illustrations/StageCategoryIllustration';
 import FavoriteButton from '@/components/articles/FavoriteButton';
 import { getStageById } from '@/data/stages';
-import { getCategoryPhoto, getStagePhoto } from '@/data/photos';
 
 interface ArticleCardProps {
   article: Article | ArticleMeta;
@@ -18,7 +16,6 @@ interface ArticleCardProps {
 export default function ArticleCard({ article, variant = 'default' }: ArticleCardProps) {
   const Illustration = getCategoryIllustration(article.categories[0]);
   const stageInfo = getStageById(article.stage);
-  const cardPhoto = getStagePhoto(article.stage) || getCategoryPhoto(article.categories[0]);
 
   if (variant === 'list') {
     return (
@@ -140,19 +137,9 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
             style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}
           >
-            {cardPhoto ? (
-              <>
-                <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 50vw" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
-              </>
-            ) : (
-              <>
-                <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
-                <div className="group-hover:scale-110 transition-transform duration-500">
-                  <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={168} />
-                </div>
-              </>
-            )}
+            <div className="group-hover:scale-110 transition-transform duration-500">
+              <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={168} />
+            </div>
           </div>
           <div className="p-5">
             <div className="flex items-center gap-2 mb-3">
@@ -191,16 +178,9 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           className="aspect-[2/1] flex items-center justify-center relative overflow-hidden"
           style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}25)` }}
         >
-          {cardPhoto ? (
-            <>
-              <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
-            </>
-          ) : (
-            <div className="group-hover:scale-110 transition-transform duration-500">
-              <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={132} />
-            </div>
-          )}
+          <div className="group-hover:scale-110 transition-transform duration-500">
+            <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={132} />
+          </div>
         </div>
         <div className="p-4">
           <div className="flex items-center gap-2 mb-2">
