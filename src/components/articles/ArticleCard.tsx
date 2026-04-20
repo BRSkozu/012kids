@@ -53,36 +53,22 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'related-hero') {
     return (
-      <article className="group rounded-2xl overflow-hidden border border-[var(--color-paper-edge)] bg-[var(--color-surface)] hover:shadow-[0_16px_36px_-16px_rgba(31,36,57,0.25)] transition-all duration-300">
-        <Link href={`/articles/${article.slug}`} className="block">
-          <div className="aspect-[2/1] relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}>
-            {cardPhoto ? (
-              <>
-                <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 50vw" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              </>
-            ) : (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Illustration size={80} />
-              </div>
-            )}
-            <div className="absolute bottom-3 left-3 flex items-center gap-2">
-              <StageBadge stage={article.stage} size="sm" />
-              {article.categories.slice(0, 1).map((cat) => (
-                <CategoryTag key={cat} category={cat} />
-              ))}
-            </div>
+      <article className="group rounded-xl border border-[var(--color-paper-edge)] bg-[var(--color-surface)] hover:shadow-[0_12px_28px_-12px_rgba(31,36,57,0.18)] transition-all duration-200">
+        <Link href={`/articles/${article.slug}`} className="block p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <StageBadge stage={article.stage} size="sm" />
+            {article.categories.slice(0, 1).map((cat) => (
+              <CategoryTag key={cat} category={cat} />
+            ))}
+            <span className="ml-auto"><ReadingTime minutes={article.readingTime} variant="short" /></span>
           </div>
-          <div className="p-4">
-            <h3
-              className="text-[15px] text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
-              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-            >
-              {article.title}
-            </h3>
-            <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 leading-relaxed mt-1.5">{article.excerpt}</p>
-            <div className="mt-2"><ReadingTime minutes={article.readingTime} variant="short" /></div>
-          </div>
+          <h3
+            className="text-[15px] text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+          >
+            {article.title}
+          </h3>
+          <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 leading-relaxed mt-1.5">{article.excerpt}</p>
         </Link>
       </article>
     );
@@ -90,31 +76,23 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'related-card') {
     return (
-      <article className="group rounded-xl overflow-hidden hover:shadow-[0_12px_28px_-16px_rgba(31,36,57,0.2)] transition-all duration-300 border border-[var(--color-paper-edge)] bg-[var(--color-surface)]">
-        <Link href={`/articles/${article.slug}`} className="flex gap-0">
-          <div className="w-24 sm:w-28 shrink-0 relative overflow-hidden" style={{ background: `linear-gradient(160deg, ${stageInfo.colorLight}, ${stageInfo.color}40)` }}>
-            {cardPhoto ? (
-              <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="120px" />
-            ) : (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Illustration size={48} />
-              </div>
-            )}
-          </div>
-          <div className="p-3 sm:p-4 min-w-0 flex-1">
-            <div className="flex items-center gap-1.5 mb-1.5">
+      <article className="group rounded-xl hover:bg-[var(--color-warm-cream)] transition-all duration-200 border border-[var(--color-paper-edge)] bg-[var(--color-surface)]">
+        <Link href={`/articles/${article.slug}`} className="flex items-start gap-3 p-3">
+          <div
+            className="shrink-0 w-1 self-stretch rounded-full"
+            style={{ backgroundColor: stageInfo.color }}
+          />
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-1.5 mb-1">
               <StageBadge stage={article.stage} size="sm" />
-              {article.categories.slice(0, 1).map((cat) => (
-                <CategoryTag key={cat} category={cat} />
-              ))}
+              <ReadingTime minutes={article.readingTime} variant="short" />
             </div>
             <h3
-              className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2"
+              className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
               style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
             >
               {article.title}
             </h3>
-            <div className="mt-1.5"><ReadingTime minutes={article.readingTime} variant="short" /></div>
           </div>
         </Link>
       </article>
