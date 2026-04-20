@@ -10,7 +10,6 @@ import TrustBlock from '@/components/home/TrustBlock';
 import ScrollTracker from '@/components/home/ScrollTracker';
 import RecentlyViewed from '@/components/home/RecentlyViewed';
 import ProfileOnboarding from '@/components/home/ProfileOnboarding';
-import NewsletterSignup from '@/components/home/NewsletterSignup';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { getCategoryPhoto } from '@/data/photos';
 import { getFeaturedArticles, getLatestArticles, getAllArticlesSync, getArticleCountByCategory } from '@/lib/articles';
@@ -220,9 +219,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Newsletter */}
-      <NewsletterSignup />
 
       {/* Closing About Banner */}
       <section className="py-14">
