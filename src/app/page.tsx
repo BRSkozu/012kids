@@ -199,12 +199,12 @@ export default function HomePage() {
                   {photo ? (
                     <div className="aspect-[4/3] relative">
                       <Image src={photo} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 20vw" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/5" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/5" />
                       <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
-                        <h3 className="text-sm font-bold" style={{ fontFamily: 'var(--font-serif)', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
+                        <h3 className="text-sm font-bold" style={{ fontFamily: 'var(--font-serif)', textShadow: '0 1px 6px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.5)' }}>
                           {cat.icon} {cat.label}
                         </h3>
-                        <p className="text-xs opacity-95 mt-0.5 tracking-wider font-medium" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.4)' }}>{categoryCounts[cat.id] || 0}件</p>
+                        <p className="text-xs mt-0.5 tracking-wider font-medium" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.7)' }}>{categoryCounts[cat.id] || 0}件</p>
                       </div>
                     </div>
                   ) : (
