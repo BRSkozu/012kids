@@ -175,17 +175,16 @@ export default function HomePage() {
                   {photo ? (
                     <div className="aspect-[4/3] relative">
                       <Image src={photo} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 20vw" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/5" />
-                      <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
-                        <h3 className="text-sm font-bold" style={{ fontFamily: 'var(--font-serif)', textShadow: '0 1px 6px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.5)' }}>
-                          {cat.icon} {cat.label}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-3">
+                        <h3 className="text-sm font-bold text-white drop-shadow-lg" style={{ fontFamily: 'var(--font-serif)' }}>
+                          {cat.label}
                         </h3>
-                        <p className="text-xs mt-0.5 tracking-wider font-medium" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.7)' }}>{categoryCounts[cat.id] || 0}件</p>
+                        <p className="text-xs mt-0.5 tracking-wider font-medium text-white/90 drop-shadow-md">{categoryCounts[cat.id] || 0}件</p>
                       </div>
                     </div>
                   ) : (
                     <div className="p-4 bg-[var(--color-surface)] text-center">
-                      <span className="text-2xl mb-2 block">{cat.icon}</span>
                       <h3 className="text-sm text-[var(--color-foreground)]" style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}>{cat.label}</h3>
                       <p className="text-xs text-[var(--color-primary-dark)] mt-1">{categoryCounts[cat.id] || 0}件</p>
                     </div>
