@@ -6,7 +6,7 @@
    - Warm paper ivory base
    - Lamp-amber accent (deep, restrained)
    - Indigo-ink typography
-   - Serif headlines (Noto Serif JP) × round gothic body (Zen Maru Gothic)
+   - Round gothic headlines & body (Zen Maru Gothic)
    - Storybook grain + lamp glow decorations
 ================================================================ */
 
@@ -51,7 +51,7 @@
   --color-stage-upper-light:#E5EBF5;
 
   /* -- Type -- */
-  --font-serif: 'Noto Serif JP', 'Shippori Mincho', 'Georgia', serif;
+  --font-serif: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
   --font-sans:  'Zen Maru Gothic', 'Noto Sans JP', 'Inter', sans-serif;
   --font-gothic:'Noto Sans JP', 'Inter', system-ui, sans-serif;
 }
