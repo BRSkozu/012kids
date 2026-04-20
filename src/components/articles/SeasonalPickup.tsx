@@ -4,7 +4,7 @@ import { Article, ArticleMeta } from '@/types';
 import { SeasonalTheme } from '@/data/seasonal-content';
 import StageBadge from '@/components/ui/StageBadge';
 import ReadingTime from '@/components/ui/ReadingTime';
-import { getStagePhoto, getCategoryPhoto } from '@/data/photos';
+import { getStagePhoto, getCategoryPhoto, getSeasonalBannerPhoto } from '@/data/photos';
 
 interface SeasonalPickupProps {
   theme: SeasonalTheme;
@@ -17,6 +17,7 @@ export default function SeasonalPickup({ theme, articles }: SeasonalPickupProps)
   const hero = articles[0];
   const rest = articles.slice(1, 7);
   const heroPhoto = getStagePhoto(hero.stage) || getCategoryPhoto(hero.categories[0]);
+  const bannerPhoto = getSeasonalBannerPhoto(theme.months);
 
   return (
     <div>
@@ -30,6 +31,17 @@ export default function SeasonalPickup({ theme, articles }: SeasonalPickupProps)
         </h2>
       </div>
       <p className="text-sm text-[var(--color-foreground-soft)] mb-5 ml-7 leading-relaxed">{theme.subtitle}</p>
+
+      <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden mb-5">
+        <Image
+          src={bannerPhoto}
+          alt={theme.title}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          priority
+        />
+      </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         {/* メイン記事 */}

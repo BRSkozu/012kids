@@ -5,15 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { AGE_STAGES } from '@/data/stages';
-import { HERO_PHOTO } from '@/data/photos';
-
-const STAGE_ICONS: Record<string, string> = {
-  '0stage': '0-2',
-  pre: '3-5',
-  early: '6-8',
-  mid: '9-10',
-  upper: '11-12',
-};
+import { HERO_PHOTO, STAGE_ICON_PHOTOS } from '@/data/photos';
 
 export default function AgeSelector() {
   const router = useRouter();
@@ -91,11 +83,14 @@ export default function AgeSelector() {
                 href={`/age-guide/${stage.id}`}
                 className="group flex flex-col items-center gap-2 py-4 px-2 rounded-2xl border border-[var(--color-paper-edge)] bg-white/80 backdrop-blur hover:shadow-[0_12px_28px_-10px_rgba(31,36,57,0.2)] hover:scale-[1.04] transition-all duration-200"
               >
-                <div
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-base md:text-lg shadow-[0_4px_12px_-4px_rgba(31,36,57,0.15)] group-hover:scale-110 transition-transform"
-                  style={{ backgroundColor: stage.color, fontFamily: 'var(--font-serif)', fontWeight: 800 }}
-                >
-                  {STAGE_ICONS[stage.id]}
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden shadow-[0_4px_12px_-4px_rgba(31,36,57,0.15)] group-hover:scale-110 transition-transform">
+                  <Image
+                    src={STAGE_ICON_PHOTOS[stage.id]}
+                    alt={stage.ageRange}
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <span
                   className="text-xs md:text-sm text-[var(--color-foreground)] text-center leading-tight"
