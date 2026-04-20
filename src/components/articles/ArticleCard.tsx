@@ -8,7 +8,7 @@ import { getCategoryIllustration } from '@/components/illustrations/CategoryIllu
 import StageCategoryIllustration from '@/components/illustrations/StageCategoryIllustration';
 import FavoriteButton from '@/components/articles/FavoriteButton';
 import { getStageById } from '@/data/stages';
-import { getCategoryPhoto } from '@/data/photos';
+import { getCategoryPhoto, getStagePhoto } from '@/data/photos';
 
 interface ArticleCardProps {
   article: Article | ArticleMeta;
@@ -151,7 +151,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
     );
   }
 
-  const categoryPhoto = getCategoryPhoto(article.categories[0]);
+  const cardPhoto = getStagePhoto(article.stage) || getCategoryPhoto(article.categories[0]);
 
   if (variant === 'featured') {
     return (
@@ -164,9 +164,9 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
             style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}
           >
-            {categoryPhoto ? (
+            {cardPhoto ? (
               <>
-                <Image src={categoryPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 50vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
               </>
             ) : (
@@ -215,9 +215,9 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           className="aspect-[2/1] flex items-center justify-center relative overflow-hidden"
           style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}25)` }}
         >
-          {categoryPhoto ? (
+          {cardPhoto ? (
             <>
-              <Image src={categoryPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
             </>
           ) : (
