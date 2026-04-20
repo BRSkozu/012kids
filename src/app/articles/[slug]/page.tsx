@@ -1,14 +1,15 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { getAllArticlesSync, getArticleBySlug, getArticleContentHtml } from '@/lib/articles';
 import { getStageById, AGE_STAGES } from '@/data/stages';
+import { getStagePhoto, getCategoryPhoto } from '@/data/photos';
 import StageBadge from '@/components/ui/StageBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
 import ReadingTime from '@/components/ui/ReadingTime';
 import ArticleCard from '@/components/articles/ArticleCard';
-import { getArticleIllustration } from '@/components/illustrations/ArticleIllustrations';
 import ShareButtons from '@/components/articles/ShareButtons';
 import ArticleViewTracker from '@/components/articles/ArticleViewTracker';
 import FavoriteButton from '@/components/articles/FavoriteButton';
@@ -201,17 +202,63 @@ export default async function ArticlePage({ params }: PageProps) {
   ];
   const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
 
+  const heroPhoto = getStagePhoto(article.stage) || getCategoryPhoto(article.categories[0]);
+
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {faqLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       )}
-      {/* Reading Progress + Back to Top */}
       <ReadingProgress />
       <ArticleViewTracker slug={article.slug} title={article.title} />
 
+      {/* Article Hero */}
+      <div className="relative overflow-hidden" style={{ backgroundColor: stage.colorLight }}>
+        {heroPhoto && (
+          <div className="absolute inset-0">
+            <Image src={heroPhoto} alt="" fill className="object-cover object-center" priority sizes="100vw" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/65" />
+          </div>
+        )}
+        {!heroPhoto && (
+          <div className="absolute inset-0 bg-gradient-to-br" style={{ background: `linear-gradient(135deg, ${stage.colorLight}, ${stage.color}40)` }} />
+        )}
+        <div className="relative max-w-4xl mx-auto px-4 pt-6 pb-10 md:pt-8 md:pb-14">
+          <div className={heroPhoto ? '[&_nav]:text-white/70 [&_a:hover]:text-white [&_svg]:text-white/40' : ''}>
+            <Breadcrumb items={breadcrumbItems} />
+          </div>
+          <div className="mt-4 flex items-center gap-2 flex-wrap">
+            <StageBadge stage={article.stage} size="md" />
+            {article.categories.map((cat) => (
+              <CategoryTag key={cat} category={cat} />
+            ))}
+          </div>
+          <h1
+            className={`mt-4 text-2xl md:text-[2.2rem] leading-[1.25] ${heroPhoto ? 'text-white' : 'text-[var(--color-foreground)]'}`}
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, textShadow: heroPhoto ? '0 2px 12px rgba(0,0,0,0.3)' : 'none' }}
+          >
+            {article.title}
+          </h1>
+          <p className={`mt-3 text-[15px] leading-relaxed max-w-2xl ${heroPhoto ? 'text-white/90' : 'text-[var(--color-foreground-soft)]'}`} style={{ textShadow: heroPhoto ? '0 1px 6px rgba(0,0,0,0.3)' : 'none' }}>
+            {article.excerpt}
+          </p>
+          <div className={`mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm ${heroPhoto ? 'text-white/75' : 'text-[var(--color-foreground-muted)]'}`}>
+            <span className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold">編</span>
+              012.kids 編集部
+            </span>
+            <span>公開: {article.publishedAt}</span>
+            {article.updatedAt !== article.publishedAt && (
+              <span>更新: {article.updatedAt}</span>
+            )}
+            <ReadingTime minutes={article.readingTime} />
+          </div>
+        </div>
+      </div>
+
+    <div className="max-w-6xl mx-auto px-4 py-8">
       {/* 2-column layout: sidebar TOC + main content */}
       <div className="lg:flex lg:gap-8">
         {/* Sticky sidebar TOC (desktop only) */}
@@ -224,54 +271,12 @@ export default async function ArticlePage({ params }: PageProps) {
         {/* Main content */}
         <div className="flex-1 min-w-0">
 
-      {/* Breadcrumb */}
-      <Breadcrumb items={breadcrumbItems} />
-
-      {/* Article Header */}
-      <header className="mb-8">
-        <div className="flex items-center gap-2 mb-3 flex-wrap">
-          <StageBadge stage={article.stage} size="md" />
-          {article.categories.map((cat) => (
-            <CategoryTag key={cat} category={cat} />
-          ))}
+      <div className="flex items-center gap-3 mb-6 mt-2">
+        <FavoriteButton slug={article.slug} variant="button" />
+        <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)] leading-relaxed flex-1">
+          この記事は、公的機関・専門家・研究機関などの情報をもとに編集部が独自にまとめたものです。
         </div>
-
-        <div className="flex items-start gap-4">
-          <div className="flex-1">
-            <h1
-              className="text-2xl md:text-3xl text-[var(--color-foreground)] leading-tight mb-3"
-              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-            >
-              {article.title}
-            </h1>
-            <p className="text-[var(--color-foreground-soft)] mb-3 leading-relaxed">{article.excerpt}</p>
-          </div>
-          <div className="hidden md:flex flex-shrink-0 w-20 h-20 rounded-2xl bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] items-center justify-center shadow-[0_8px_20px_-14px_rgba(198,107,31,0.35)]">
-            {(() => { const Illustration = getArticleIllustration(article.slug); return <Illustration size={52} />; })()}
-          </div>
-        </div>
-
-        {/* Meta info + attribution */}
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[var(--color-foreground-muted)] mb-3">
-          <span className="flex items-center gap-1.5">
-            <span className="w-5 h-5 rounded-full bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] flex items-center justify-center text-[10px] font-bold text-[var(--color-primary-dark)]">編</span>
-            012.kids 編集部
-          </span>
-          <span>公開: {article.publishedAt}</span>
-          {article.updatedAt !== article.publishedAt && (
-            <span>更新: {article.updatedAt}</span>
-          )}
-          <ReadingTime minutes={article.readingTime} />
-        </div>
-
-        <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)] leading-relaxed">
-          この記事は、公的機関・専門家・研究機関などの情報をもとに編集部が独自にまとめたものです。元の情報は下部の「参考にした情報源」をご確認ください。
-        </div>
-
-        <div className="mt-4 flex items-center gap-2">
-          <FavoriteButton slug={article.slug} variant="button" />
-        </div>
-      </header>
+      </div>
 
       {/* Mobile: Table of Contents inline */}
       <div className="lg:hidden">
@@ -486,5 +491,6 @@ export default async function ArticlePage({ params }: PageProps) {
         </p>
       </div>
     </div>
+    </>
   );
 }
