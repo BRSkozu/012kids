@@ -32,16 +32,15 @@ export default function AgeSelector() {
             className="text-[2rem] md:text-[3.2rem] leading-[1.2] mb-4"
             style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, textShadow: '0 1px 8px rgba(255,253,247,0.8)' }}
           >
-            <span className="text-[var(--color-foreground)]">検索したその時に、</span>
+            <span className="text-[var(--color-foreground)]">0歳から12歳の</span>
             <br />
-            <span className="text-[var(--color-primary-dark)]" style={{ fontWeight: 900 }}>必要な答え</span>
-            <span className="text-[var(--color-foreground)]">が、ここに。</span>
+            <span className="text-[var(--color-foreground)]">子育て情報</span>
           </h1>
           <p
             className="text-sm md:text-[15px] text-[var(--color-foreground-soft)] max-w-lg mx-auto leading-[1.9]"
             style={{ textShadow: '0 0 12px rgba(255,253,247,0.9)' }}
           >
-            0歳から12歳。公的機関・専門家の情報を、わかりやすくまとめてお届けします。
+            専門家の知見をもとに、わかりやすくまとめました。
           </p>
         </div>
 

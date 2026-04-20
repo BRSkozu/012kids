@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
@@ -5,6 +6,7 @@ import CategoryTag from '@/components/ui/CategoryTag';
 import ReadingTime from '@/components/ui/ReadingTime';
 import FavoriteButton from '@/components/articles/FavoriteButton';
 import { getStageById } from '@/data/stages';
+import { STAGE_ICON_PHOTOS } from '@/data/photos';
 
 interface ArticleCardProps {
   article: Article | ArticleMeta;
@@ -130,18 +132,34 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             style={{ background: `linear-gradient(90deg, ${stageInfo.color}, ${stageInfo.colorLight})` }}
           />
           <div className="p-5">
-            <div className="flex items-center gap-2 mb-3">
-              <StageBadge stage={article.stage} />
-              {article.categories.slice(0, 2).map((cat) => (
-                <CategoryTag key={cat} category={cat} />
-              ))}
+            <div className="flex items-start gap-4">
+              <div
+                className="shrink-0 w-14 h-14 rounded-full overflow-hidden shadow-[0_4px_10px_-4px_rgba(31,36,57,0.15)]"
+                style={{ backgroundColor: stageInfo.colorLight }}
+              >
+                <Image
+                  src={STAGE_ICON_PHOTOS[article.stage]}
+                  alt=""
+                  width={56}
+                  height={56}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2 mb-2">
+                  <StageBadge stage={article.stage} />
+                  {article.categories.slice(0, 2).map((cat) => (
+                    <CategoryTag key={cat} category={cat} />
+                  ))}
+                </div>
+                <h3
+                  className="text-lg text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 mb-2 leading-snug"
+                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+                >
+                  {article.title}
+                </h3>
+              </div>
             </div>
-            <h3
-              className="text-lg text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 mb-2 leading-snug"
-              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-            >
-              {article.title}
-            </h3>
             <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-3 mb-3 leading-relaxed">{article.excerpt}</p>
             <footer className="flex items-center justify-between text-xs text-[var(--color-foreground-muted)]">
               <ReadingTime minutes={article.readingTime} />
@@ -165,19 +183,35 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           style={{ background: `linear-gradient(90deg, ${stageInfo.color}, ${stageInfo.colorLight})` }}
         />
         <div className="p-4">
-          <div className="flex items-center gap-2 mb-2">
-            <StageBadge stage={article.stage} size="sm" />
-            {article.categories.slice(0, 2).map((cat) => (
-              <CategoryTag key={cat} category={cat} />
-            ))}
+          <div className="flex items-start gap-3">
+            <div
+              className="shrink-0 w-11 h-11 rounded-full overflow-hidden shadow-[0_3px_8px_-3px_rgba(31,36,57,0.12)]"
+              style={{ backgroundColor: stageInfo.colorLight }}
+            >
+              <Image
+                src={STAGE_ICON_PHOTOS[article.stage]}
+                alt=""
+                width={44}
+                height={44}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2 mb-1.5">
+                <StageBadge stage={article.stage} size="sm" />
+                {article.categories.slice(0, 2).map((cat) => (
+                  <CategoryTag key={cat} category={cat} />
+                ))}
+              </div>
+              <h3
+                className="text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, fontSize: '1rem' }}
+              >
+                {article.title}
+              </h3>
+            </div>
           </div>
-          <h3
-            className="text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 mb-1.5 leading-snug"
-            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, fontSize: '1rem' }}
-          >
-            {article.title}
-          </h3>
-          <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 mb-2 leading-relaxed">{article.excerpt}</p>
+          <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 mt-2 mb-2 leading-relaxed">{article.excerpt}</p>
           <footer>
             <ReadingTime minutes={article.readingTime} variant="short" />
           </footer>
