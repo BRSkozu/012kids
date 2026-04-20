@@ -18,6 +18,7 @@ interface ArticleCardProps {
 export default function ArticleCard({ article, variant = 'default' }: ArticleCardProps) {
   const Illustration = getCategoryIllustration(article.categories[0]);
   const stageInfo = getStageById(article.stage);
+  const cardPhoto = getStagePhoto(article.stage) || getCategoryPhoto(article.categories[0]);
 
   if (variant === 'list') {
     return (
@@ -52,37 +53,35 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'related-hero') {
     return (
-      <article className="group rounded-2xl overflow-hidden border border-[var(--color-paper-edge)] bg-[var(--color-surface)] hover:shadow-[0_20px_40px_-20px_rgba(31,36,57,0.25)] transition-all duration-300">
+      <article className="group rounded-2xl overflow-hidden border border-[var(--color-paper-edge)] bg-[var(--color-surface)] hover:shadow-[0_16px_36px_-16px_rgba(31,36,57,0.25)] transition-all duration-300">
         <Link href={`/articles/${article.slug}`} className="block">
-          <div
-            className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
-            style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}
-          >
-            <div className="absolute inset-0 opacity-10" style={{
-              backgroundImage: `radial-gradient(circle at 20% 50%, ${stageInfo.color} 1px, transparent 1px), radial-gradient(circle at 80% 20%, ${stageInfo.color} 1px, transparent 1px)`,
-              backgroundSize: '40px 40px, 60px 60px',
-            }} />
-            <div className="group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-              <Illustration size={100} />
-            </div>
-            <div className="absolute top-3 left-3">
-              <StageBadge stage={article.stage} size="md" />
-            </div>
-          </div>
-          <div className="p-5">
-            <div className="flex items-center gap-2 mb-2 flex-wrap">
-              {article.categories.slice(0, 2).map((cat) => (
+          <div className="aspect-[2/1] relative overflow-hidden" style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}>
+            {cardPhoto ? (
+              <>
+                <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 50vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              </>
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Illustration size={80} />
+              </div>
+            )}
+            <div className="absolute bottom-3 left-3 flex items-center gap-2">
+              <StageBadge stage={article.stage} size="sm" />
+              {article.categories.slice(0, 1).map((cat) => (
                 <CategoryTag key={cat} category={cat} />
               ))}
             </div>
+          </div>
+          <div className="p-4">
             <h3
-              className="text-base text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 mb-2"
+              className="text-[15px] text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
               style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
             >
               {article.title}
             </h3>
-            <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 leading-relaxed">{article.excerpt}</p>
-            <div className="mt-3"><ReadingTime minutes={article.readingTime} /></div>
+            <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 leading-relaxed mt-1.5">{article.excerpt}</p>
+            <div className="mt-2"><ReadingTime minutes={article.readingTime} variant="short" /></div>
           </div>
         </Link>
       </article>
@@ -91,15 +90,16 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'related-card') {
     return (
-      <article className="group rounded-xl overflow-hidden hover:shadow-[0_16px_36px_-20px_rgba(31,36,57,0.25)] transition-all duration-300 border border-[var(--color-paper-edge)] bg-[var(--color-surface)]">
+      <article className="group rounded-xl overflow-hidden hover:shadow-[0_12px_28px_-16px_rgba(31,36,57,0.2)] transition-all duration-300 border border-[var(--color-paper-edge)] bg-[var(--color-surface)]">
         <Link href={`/articles/${article.slug}`} className="flex gap-0">
-          <div
-            className="w-24 sm:w-28 shrink-0 flex items-center justify-center relative overflow-hidden"
-            style={{ background: `linear-gradient(160deg, ${stageInfo.colorLight}, ${stageInfo.color}40)` }}
-          >
-            <div className="group-hover:scale-110 transition-transform duration-400">
-              <Illustration size={56} />
-            </div>
+          <div className="w-24 sm:w-28 shrink-0 relative overflow-hidden" style={{ background: `linear-gradient(160deg, ${stageInfo.colorLight}, ${stageInfo.color}40)` }}>
+            {cardPhoto ? (
+              <Image src={cardPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="120px" />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Illustration size={48} />
+              </div>
+            )}
           </div>
           <div className="p-3 sm:p-4 min-w-0 flex-1">
             <div className="flex items-center gap-1.5 mb-1.5">
@@ -114,7 +114,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             >
               {article.title}
             </h3>
-            <div className="mt-1.5"><ReadingTime minutes={article.readingTime} /></div>
+            <div className="mt-1.5"><ReadingTime minutes={article.readingTime} variant="short" /></div>
           </div>
         </Link>
       </article>
@@ -150,8 +150,6 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
       </article>
     );
   }
-
-  const cardPhoto = getStagePhoto(article.stage) || getCategoryPhoto(article.categories[0]);
 
   if (variant === 'featured') {
     return (
