@@ -4,7 +4,6 @@ import AgeSelector from '@/components/age-selector/AgeSelector';
 import ArticleCard from '@/components/articles/ArticleCard';
 import SeasonalPickup from '@/components/articles/SeasonalPickup';
 import FirstTimeSection from '@/components/home/FirstTimeSection';
-import AgePillNav from '@/components/home/AgePillNav';
 import WorryCardSection from '@/components/home/WorryCardSection';
 import TrustBlock from '@/components/home/TrustBlock';
 import ScrollTracker from '@/components/home/ScrollTracker';
@@ -18,7 +17,6 @@ import { getCurrentSeasonalTheme, getSeasonalScore } from '@/data/seasonal-conte
 
 export default function HomePage() {
   const allArticles = getAllArticlesSync();
-  const totalCount = allArticles.length;
   const featured = getFeaturedArticles().slice(0, 3);
   const latest = getLatestArticles(6);
   const categoryCounts = getArticleCountByCategory();
@@ -56,31 +54,14 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(rankingLd) }} />
       <ScrollTracker />
 
-      {/* Hero + Age Selector (with rotating empathetic copy) */}
+      {/* Hero: catchcopy + search + age buttons + trust badges */}
       <AgeSelector />
-
-      {/* Age Pill Navigation */}
-      <AgePillNav />
 
       {/* First Time User Section */}
       <FirstTimeSection />
 
       {/* Personalization: profile onboarding or welcome back */}
       <ProfileOnboarding />
-
-      {/* Compact site-meta line (was a full banner) */}
-      <section className="max-w-5xl mx-auto px-4 -mt-2 mb-6">
-        <p className="text-center text-xs text-[var(--color-foreground-muted)] tracking-wider">
-          公的機関・専門家の情報を編集してお届け ·{' '}
-          <span className="font-semibold text-[var(--color-primary-dark)]">
-            {totalCount.toLocaleString()}記事掲載中
-          </span>{' '}
-          ·{' '}
-          <Link href="/articles" className="underline hover:text-[var(--color-primary-dark)]">
-            記事一覧を見る
-          </Link>
-        </p>
-      </section>
 
       {/* お悩みから探す */}
       <WorryCardSection />

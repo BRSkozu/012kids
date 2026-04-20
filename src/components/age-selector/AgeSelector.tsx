@@ -1,214 +1,136 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import { AGE_STAGES } from '@/data/stages';
-import { getStageByAge } from '@/data/stages';
 import { HERO_PHOTO } from '@/data/photos';
-import EmotionalHero from '@/components/home/EmotionalHero';
 
-function getGradeLabel(age: number): string | null {
-  const grades: Record<number, string> = {
-    3: '年少',
-    4: '年中',
-    5: '年長',
-    6: '小1',
-    7: '小2',
-    8: '小3',
-    9: '小4',
-    10: '小5',
-    11: '小6',
-    12: '中1',
-  };
-  return grades[age] ?? null;
-}
+const STAGE_ICONS: Record<string, string> = {
+  '0stage': '0-2',
+  pre: '3-5',
+  early: '6-8',
+  mid: '9-10',
+  upper: '11-12',
+};
 
 export default function AgeSelector() {
-  const [age, setAge] = useState<number | null>(null);
-  const [mounted, setMounted] = useState(false);
+  const router = useRouter();
+  const [query, setQuery] = useState('');
 
-  useEffect(() => {
-    setMounted(true);
-    const saved = localStorage.getItem('012kids_age');
-    if (saved) {
-      setAge(parseInt(saved, 10));
-    }
-  }, []);
-
-  const handleAgeSelect = (years: number) => {
-    setAge(years);
-    localStorage.setItem('012kids_age', years.toString());
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = query.trim();
+    if (q) router.push(`/search?q=${encodeURIComponent(q)}`);
   };
 
-  const currentStage = age !== null ? getStageByAge(age) : null;
-
   return (
-    <section className="relative overflow-hidden py-20 md:py-28">
-      {/* Hero photograph — warm parent-child reading scene */}
+    <section className="relative overflow-hidden pt-10 pb-14 md:pt-14 md:pb-20">
+      {/* Background photo */}
       <div className="absolute inset-0">
-        <Image
-          src={HERO_PHOTO}
-          alt=""
-          fill
-          className="object-cover object-center"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,253,247,0.88)] via-[rgba(255,253,247,0.82)] to-[rgba(255,253,247,0.92)]" />
+        <Image src={HERO_PHOTO} alt="" fill className="object-cover object-center" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,253,247,0.92)] via-[rgba(255,253,247,0.86)] to-[rgba(255,253,247,0.95)]" />
       </div>
-      {/* Ambient lamp glows + starry pattern */}
-      <div className="absolute inset-0 starry-pattern opacity-50 pointer-events-none" />
-      <div className="lamp-glow top-[-6rem] left-[8%] w-[22rem] h-[22rem] bg-[#F5D9B1] animate-lamp" />
-      <div className="lamp-glow bottom-[-8rem] right-[6%] w-[26rem] h-[26rem] bg-[#C8D1E8] opacity-30" />
-      <div className="lamp-glow top-[20%] right-[30%] w-[14rem] h-[14rem] bg-[#F3B2B2] opacity-20" />
 
-      <div className="relative max-w-7xl mx-auto px-4">
-        {/* Hero */}
-        <div className="max-w-3xl mx-auto text-center mb-14 animate-fade-in-up">
-          {/* Kicker — gentle bedside-library feel */}
-          <p className="inline-flex items-center gap-2 mb-5 text-xs font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)]">
-            <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
-            A Gentle Library for Parents
-            <span className="inline-block w-6 h-px bg-[var(--color-primary)]" />
-          </p>
+      <div className="relative max-w-4xl mx-auto px-4">
+        {/* Catchcopy */}
+        <div className="text-center mb-8 md:mb-10">
           <h1
-            className="text-[2.4rem] md:text-[3.8rem] leading-[1.15] mb-5"
-            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, letterSpacing: '0.01em' }}
+            className="text-[2rem] md:text-[3.2rem] leading-[1.2] mb-4"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, textShadow: '0 1px 8px rgba(255,253,247,0.8)' }}
           >
-            <span className="block text-[var(--color-foreground)]">
-              検索したその時に、
-            </span>
-            <span className="block">
-              <span className="sketched-underline text-[var(--color-primary-dark)]">必要な答え</span>
-              <span className="text-[var(--color-foreground)]">が、ここに。</span>
-            </span>
+            <span className="text-[var(--color-foreground)]">検索したその時に、</span>
+            <br />
+            <span className="text-[var(--color-primary-dark)]" style={{ fontWeight: 900 }}>必要な答え</span>
+            <span className="text-[var(--color-foreground)]">が、ここに。</span>
           </h1>
-          <p className="text-[15px] md:text-base text-[var(--color-foreground-soft)] max-w-xl mx-auto leading-[1.9]">
-            0歳から12歳。眠れない夜の不安も、朝の焦りも、昼の迷いも。
-            <br className="hidden md:block" />
-            公的機関・専門家の情報を、そっと灯りのように差し出します。
+          <p
+            className="text-sm md:text-[15px] text-[var(--color-foreground-soft)] max-w-lg mx-auto leading-[1.9]"
+            style={{ textShadow: '0 0 12px rgba(255,253,247,0.9)' }}
+          >
+            0歳から12歳。公的機関・専門家の情報を、わかりやすくまとめてお届けします。
           </p>
-          <EmotionalHero />
         </div>
 
-        {/* Age Selector */}
-        <div className="max-w-3xl mx-auto animate-fade-in-up delay-200">
-          <div className="paper-card p-6 md:p-8 relative">
-            <p
-              className="text-center text-xs font-medium tracking-[0.2em] uppercase text-[var(--color-primary-dark)] mb-5"
-              style={{ fontFamily: 'var(--font-gothic)' }}
+        {/* Search bar */}
+        <form onSubmit={handleSearch} className="max-w-xl mx-auto mb-10 md:mb-12">
+          <div className="relative">
+            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--color-foreground-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="気になるキーワードで検索…（例：夜泣き、離乳食、入学準備）"
+              className="w-full pl-12 pr-28 py-4 rounded-2xl border border-[var(--color-paper-edge)] bg-white/90 backdrop-blur text-sm shadow-[0_8px_30px_-12px_rgba(31,36,57,0.15)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent"
+            />
+            <button
+              type="submit"
+              className="absolute right-2 top-1/2 -translate-y-1/2 px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white text-sm font-medium hover:bg-[var(--color-primary-dark)] transition-colors"
+              style={{ fontFamily: 'var(--font-serif)' }}
             >
-              ― お子さまの年齢を選んでください ―
-            </p>
+              検索
+            </button>
+          </div>
+        </form>
 
-            {/* Age Buttons Grid */}
-            <div className="grid grid-cols-5 md:grid-cols-13 gap-2 mb-6">
-              {Array.from({ length: 13 }, (_, i) => i).map((yr) => {
-                const stage = getStageByAge(yr);
-                const isSelected = age === yr;
-                return (
-                  <button
-                    key={yr}
-                    onClick={() => handleAgeSelect(yr)}
-                    className={`
-                      relative h-14 rounded-xl text-sm transition-all duration-300 flex flex-col items-center justify-center
-                      ${isSelected
-                        ? 'scale-110 z-10 shadow-[0_12px_24px_-10px_rgba(198,107,31,0.4)] ring-2 ring-[var(--color-primary)]'
-                        : 'hover:scale-105 hover:z-10 hover:shadow-[0_8px_18px_-10px_rgba(31,36,57,0.15)]'}
-                    `}
-                    style={{
-                      backgroundColor: isSelected ? stage.color : `${stage.color}4d`,
-                      color: 'var(--color-foreground)',
-                      fontFamily: 'var(--font-sans)',
-                      fontWeight: 700,
-                    }}
-                    aria-label={`${yr}歳${getGradeLabel(yr) ? `（${getGradeLabel(yr)}）` : ''}`}
-                    aria-pressed={isSelected}
-                  >
-                    <span>{yr}歳</span>
-                    {getGradeLabel(yr) && (
-                      <span className="text-[10px] font-normal leading-none text-[var(--color-foreground-muted)]">{getGradeLabel(yr)}</span>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Stage Display */}
-            {mounted && currentStage && age !== null && (
-              <div
-                className="rounded-2xl p-5 text-center animate-scale-in border border-[var(--color-paper-edge)]"
-                style={{ backgroundColor: currentStage.colorLight }}
+        {/* Age stage buttons */}
+        <div className="mb-8">
+          <p
+            className="text-center text-sm text-[var(--color-foreground-soft)] mb-4"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+          >
+            お子さまの年齢から探す
+          </p>
+          <div className="grid grid-cols-5 gap-3 max-w-2xl mx-auto">
+            {AGE_STAGES.map((stage) => (
+              <Link
+                key={stage.id}
+                href={`/age-guide/${stage.id}`}
+                className="group flex flex-col items-center gap-2 py-4 px-2 rounded-2xl border border-[var(--color-paper-edge)] bg-white/80 backdrop-blur hover:shadow-[0_12px_28px_-10px_rgba(31,36,57,0.2)] hover:scale-[1.04] transition-all duration-200"
               >
-                <p className="text-xs tracking-widest uppercase text-[var(--color-foreground-muted)] mb-1">
-                  {age}歳は
-                </p>
-                <p
-                  className="text-2xl mb-2"
-                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, color: 'var(--color-primary-dark)' }}
+                <div
+                  className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-base md:text-lg shadow-[0_4px_12px_-4px_rgba(31,36,57,0.15)] group-hover:scale-110 transition-transform"
+                  style={{ backgroundColor: stage.color, fontFamily: 'var(--font-serif)', fontWeight: 800 }}
                 >
-                  {currentStage.label}
-                  <span className="text-sm font-normal text-[var(--color-foreground-muted)] ml-2">
-                    ({currentStage.ageRange})
-                  </span>
-                </p>
-                <p className="text-sm text-[var(--color-foreground-soft)] mb-4 leading-relaxed">{currentStage.description}</p>
-                <Link
-                  href={`/age-guide/${currentStage.id}`}
-                  className="btn-lamp inline-flex"
+                  {STAGE_ICONS[stage.id]}
+                </div>
+                <span
+                  className="text-xs md:text-sm text-[var(--color-foreground)] text-center leading-tight"
+                  style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
                 >
-                  {currentStage.ageRange}の記事を見る
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </Link>
-              </div>
-            )}
-
-            {mounted && age === null && (
-              <p className="text-center text-sm text-[var(--color-foreground-muted)] animate-pulse-soft">
-                年齢を選ぶと、お子さまに合った記事をお見せします。
-              </p>
-            )}
+                  {stage.ageRange}
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
 
-        {/* Stage Cards */}
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-5 gap-4">
-          {AGE_STAGES.map((stage, i) => (
-            <Link
-              key={stage.id}
-              href={`/age-guide/${stage.id}`}
-              className="group block rounded-2xl p-5 text-center card-hover border border-[var(--color-paper-edge)] hover:border-[var(--color-primary-light)] animate-fade-in-up bg-[var(--color-surface)]"
-              style={{
-                animationDelay: `${300 + i * 100}ms`,
-              }}
-            >
-              <div
-                className="w-14 h-14 rounded-full mx-auto mb-3 flex items-center justify-center text-lg shadow-[0_6px_16px_-8px_rgba(31,36,57,0.2)] group-hover:scale-105 transition-transform"
-                style={{ backgroundColor: stage.color, fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-              >
-                {stage.ageRange.split('〜')[0]}
-              </div>
-              <h3
-                className="text-base text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
-                style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-              >
-                {stage.label}
-              </h3>
-              <p className="text-[11px] text-[var(--color-foreground-muted)] mt-1 tracking-wider">{stage.ageRange}</p>
-              <div className="mt-2.5 flex flex-wrap justify-center gap-1">
-                {stage.themes.slice(0, 3).map((theme) => (
-                  <span
-                    key={theme}
-                    className="text-[10px] bg-[var(--color-warm-cream)] rounded-full px-2 py-0.5 text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)]"
-                  >
-                    {theme}
-                  </span>
-                ))}
-              </div>
-            </Link>
+        {/* Trust indicators */}
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          {[
+            { icon: (
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+            ), label: '公的データに基づく' },
+            { icon: (
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+              </svg>
+            ), label: '出典を明記' },
+            { icon: (
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
+            ), label: '広告なし' },
+          ].map((item) => (
+            <span key={item.label} className="inline-flex items-center gap-1.5 text-xs text-[var(--color-foreground-muted)]">
+              <span className="text-[var(--color-primary)]">{item.icon}</span>
+              {item.label}
+            </span>
           ))}
         </div>
       </div>
