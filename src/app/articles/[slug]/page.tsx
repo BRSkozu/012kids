@@ -289,43 +289,6 @@ export default async function ArticlePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 
-      {/* Perspectives (opinion patterns) */}
-      {article.source.perspectives && (
-        <div className="border-t border-[var(--color-paper-edge)] pt-6 mb-8">
-          <h3
-            className="text-sm text-[var(--color-foreground)] mb-3"
-            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-          >
-            さまざまな見方・意見
-          </h3>
-          <div className="space-y-3">
-            <div className="bg-[#EEF3FA] border border-[#D8E2F0] rounded-lg p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="w-5 h-5 rounded-full bg-[#C6D6EC] flex items-center justify-center text-[#3A5A88] text-xs font-bold">+</span>
-                <p className="text-sm font-semibold text-[#3A5A88]">多くの機関が支持する見方</p>
-              </div>
-              <p className="text-sm text-[#3A5A88] leading-relaxed">{article.source.perspectives.positive}</p>
-            </div>
-            <div className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-lg p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="w-5 h-5 rounded-full bg-[var(--color-paper-edge)] flex items-center justify-center text-[var(--color-foreground-soft)] text-xs font-bold">=</span>
-                <p className="text-sm font-semibold text-[var(--color-foreground)]">中立的な見方</p>
-              </div>
-              <p className="text-sm text-[var(--color-foreground-soft)] leading-relaxed">{article.source.perspectives.neutral}</p>
-            </div>
-            {article.source.perspectives.cautious && (
-              <div className="bg-[#F7EED2] border border-[#E5D9B0] rounded-lg p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="w-5 h-5 rounded-full bg-[#E5D9B0] flex items-center justify-center text-[#7A6315] text-xs font-bold">!</span>
-                  <p className="text-sm font-semibold text-[#7A6315]">一方でこんな意見も</p>
-                </div>
-                <p className="text-sm text-[#7A6315] leading-relaxed">{article.source.perspectives.cautious}</p>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-
       {/* References */}
       <div className="border-t border-[var(--color-paper-edge)] pt-6 mb-8">
         <h3
