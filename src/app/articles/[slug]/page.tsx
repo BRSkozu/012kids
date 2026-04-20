@@ -289,53 +289,6 @@ export default async function ArticlePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 
-      {/* References */}
-      <div className="border-t border-[var(--color-paper-edge)] pt-6 mb-8">
-        <h3
-          className="text-sm text-[var(--color-foreground)] mb-3"
-          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-        >
-          参考にした情報源（{article.source.references.length}件）
-        </h3>
-        <div className="bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-lg p-4">
-          <p
-            className="text-sm text-[var(--color-foreground)] mb-3"
-            style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
-          >
-            {article.source.name}
-          </p>
-          <ul className="space-y-2">
-            {article.source.references.map((ref, i) => (
-              <li key={i} className="text-sm flex items-start gap-2">
-                <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${
-                  ref.stance === 'positive' ? 'bg-[#6B8BC4]' :
-                  ref.stance === 'cautious' ? 'bg-[#D4AF37]' :
-                  'bg-[var(--color-foreground-muted)]'
-                }`} />
-                <div>
-                  <a
-                    href={ref.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--color-primary-dark)] hover:underline font-medium"
-                  >
-                    {ref.title}
-                  </a>
-                  <span className="text-xs text-[var(--color-foreground-muted)] ml-2">{ref.org}</span>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-4 pt-3 border-t border-[var(--color-paper-edge)] flex items-center gap-4 text-xs text-[var(--color-foreground-muted)]">
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[#6B8BC4]" /> 支持的</span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[var(--color-foreground-muted)]" /> 中立</span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-[#D4AF37]" /> 慎重</span>
-          </div>
-          <p className="text-xs text-[var(--color-foreground-muted)] mt-3 leading-relaxed">
-            ※ 上記は参考にした情報源です。記事の内容は012.kids編集部が独自にまとめたものであり、各機関が本記事を監修・承認したものではありません。
-          </p>
-        </div>
-      </div>
 
       {/* Recommended Links */}
       <RecommendedLinks links={getRecommendedLinks(article.categories, 10, article.tags)} currentSlug={article.slug} />
