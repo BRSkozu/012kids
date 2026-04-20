@@ -3,8 +3,6 @@ import { Article, ArticleMeta } from '@/types';
 import StageBadge from '@/components/ui/StageBadge';
 import CategoryTag from '@/components/ui/CategoryTag';
 import ReadingTime from '@/components/ui/ReadingTime';
-import { getCategoryIllustration } from '@/components/illustrations/CategoryIllustrations';
-import StageCategoryIllustration from '@/components/illustrations/StageCategoryIllustration';
 import FavoriteButton from '@/components/articles/FavoriteButton';
 import { getStageById } from '@/data/stages';
 
@@ -14,7 +12,6 @@ interface ArticleCardProps {
 }
 
 export default function ArticleCard({ article, variant = 'default' }: ArticleCardProps) {
-  const Illustration = getCategoryIllustration(article.categories[0]);
   const stageInfo = getStageById(article.stage);
 
   if (variant === 'list') {
@@ -99,16 +96,11 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
   if (variant === 'compact') {
     return (
       <article className="rounded-xl hover:bg-[var(--color-warm-cream)] transition-all duration-200 group">
-        <Link
-          href={`/articles/${article.slug}`}
-          className="flex gap-4 p-4"
-        >
+        <Link href={`/articles/${article.slug}`} className="flex gap-3 p-4">
           <div
-            className="w-20 h-20 rounded-xl shrink-0 flex items-center justify-center overflow-hidden group-hover:shadow-md transition-shadow duration-200 border border-[var(--color-paper-edge)]"
-            style={{ backgroundColor: stageInfo.colorLight }}
-          >
-            <Illustration size={64} />
-          </div>
+            className="shrink-0 w-1 self-stretch rounded-full"
+            style={{ backgroundColor: stageInfo.color }}
+          />
           <div className="min-w-0">
             <h3
               className="text-[15px] text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
@@ -128,22 +120,21 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
 
   if (variant === 'featured') {
     return (
-      <article className="relative group rounded-2xl overflow-hidden bg-white border border-[var(--color-paper-edge)] card-hover bg-[var(--color-surface)]">
+      <article className="relative group rounded-2xl overflow-hidden border border-[var(--color-paper-edge)] card-hover bg-[var(--color-surface)]">
         <div className="absolute top-3 right-3 z-10">
           <FavoriteButton slug={article.slug} />
         </div>
         <Link href={`/articles/${article.slug}`} className="block">
           <div
-            className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
-            style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}
-          >
-            <div className="group-hover:scale-110 transition-transform duration-500">
-              <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={168} />
-            </div>
-          </div>
+            className="h-3 w-full"
+            style={{ background: `linear-gradient(90deg, ${stageInfo.color}, ${stageInfo.colorLight})` }}
+          />
           <div className="p-5">
             <div className="flex items-center gap-2 mb-3">
               <StageBadge stage={article.stage} />
+              {article.categories.slice(0, 2).map((cat) => (
+                <CategoryTag key={cat} category={cat} />
+              ))}
             </div>
             <h3
               className="text-lg text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 mb-2 leading-snug"
@@ -151,13 +142,8 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             >
               {article.title}
             </h3>
-            <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 mb-3 leading-relaxed">{article.excerpt}</p>
-            <div className="flex items-center gap-2 flex-wrap">
-              {article.categories.map((cat) => (
-                <CategoryTag key={cat} category={cat} />
-              ))}
-            </div>
-            <footer className="mt-3 flex items-center justify-between text-xs text-[var(--color-foreground-muted)]">
+            <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-3 mb-3 leading-relaxed">{article.excerpt}</p>
+            <footer className="flex items-center justify-between text-xs text-[var(--color-foreground-muted)]">
               <ReadingTime minutes={article.readingTime} />
               <time dateTime={article.publishedAt}>{article.publishedAt}</time>
             </footer>
@@ -175,16 +161,15 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
       </div>
       <Link href={`/articles/${article.slug}`} className="block">
         <div
-          className="aspect-[2/1] flex items-center justify-center relative overflow-hidden"
-          style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}25)` }}
-        >
-          <div className="group-hover:scale-110 transition-transform duration-500">
-            <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={132} />
-          </div>
-        </div>
+          className="h-2 w-full"
+          style={{ background: `linear-gradient(90deg, ${stageInfo.color}, ${stageInfo.colorLight})` }}
+        />
         <div className="p-4">
           <div className="flex items-center gap-2 mb-2">
-            <StageBadge stage={article.stage} />
+            <StageBadge stage={article.stage} size="sm" />
+            {article.categories.slice(0, 2).map((cat) => (
+              <CategoryTag key={cat} category={cat} />
+            ))}
           </div>
           <h3
             className="text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 mb-1.5 leading-snug"
@@ -193,12 +178,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             {article.title}
           </h3>
           <p className="text-sm text-[var(--color-foreground-soft)] line-clamp-2 mb-2 leading-relaxed">{article.excerpt}</p>
-          <div className="flex items-center gap-2 flex-wrap">
-            {article.categories.slice(0, 2).map((cat) => (
-              <CategoryTag key={cat} category={cat} />
-            ))}
-          </div>
-          <footer className="mt-2">
+          <footer>
             <ReadingTime minutes={article.readingTime} variant="short" />
           </footer>
         </div>

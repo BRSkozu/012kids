@@ -8,7 +8,6 @@ import WorryCardSection from '@/components/home/WorryCardSection';
 import TrustBlock from '@/components/home/TrustBlock';
 import ScrollTracker from '@/components/home/ScrollTracker';
 import RecentlyViewed from '@/components/home/RecentlyViewed';
-import ProfileOnboarding from '@/components/home/ProfileOnboarding';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { getCategoryPhoto } from '@/data/photos';
 import { getFeaturedArticles, getLatestArticles, getAllArticlesSync, getArticleCountByCategory } from '@/lib/articles';
@@ -59,9 +58,6 @@ export default function HomePage() {
 
       {/* First Time User Section */}
       <FirstTimeSection />
-
-      {/* Personalization: profile onboarding or welcome back */}
-      <ProfileOnboarding />
 
       {/* お悩みから探す */}
       <WorryCardSection />
