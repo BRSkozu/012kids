@@ -164,16 +164,19 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
             className="aspect-[16/9] flex items-center justify-center relative overflow-hidden"
             style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}30)` }}
           >
-            {categoryPhoto && (
+            {categoryPhoto ? (
               <>
-                <Image src={categoryPhoto} alt="" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
-                <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}cc, ${stageInfo.color}60)` }} />
+                <Image src={categoryPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 50vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
+              </>
+            ) : (
+              <>
+                <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
+                <div className="group-hover:scale-110 transition-transform duration-500">
+                  <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={168} />
+                </div>
               </>
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
-            <div className="relative group-hover:scale-110 transition-transform duration-500">
-              <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={168} />
-            </div>
           </div>
           <div className="p-5">
             <div className="flex items-center gap-2 mb-3">
@@ -212,15 +215,16 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           className="aspect-[2/1] flex items-center justify-center relative overflow-hidden"
           style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}, ${stageInfo.color}25)` }}
         >
-          {categoryPhoto && (
+          {categoryPhoto ? (
             <>
-              <Image src={categoryPhoto} alt="" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
-              <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${stageInfo.colorLight}cc, ${stageInfo.color}55)` }} />
+              <Image src={categoryPhoto} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
             </>
+          ) : (
+            <div className="group-hover:scale-110 transition-transform duration-500">
+              <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={132} />
+            </div>
           )}
-          <div className="relative group-hover:scale-110 transition-transform duration-500">
-            <StageCategoryIllustration stage={article.stage} category={article.categories[0]} size={132} />
-          </div>
         </div>
         <div className="p-4">
           <div className="flex items-center gap-2 mb-2">
