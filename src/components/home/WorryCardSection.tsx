@@ -4,42 +4,44 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { trackTroubleClick } from '@/lib/analytics';
 
+const bp = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const WORRY_CARDS = [
   {
     id: 'sleep',
     label: '夜泣き・睡眠',
     href: '/articles/baby-sleep-training',
-    image: '/photos/worry-sleep.webp',
+    image: `${bp}/photos/worry-sleep.webp`,
   },
   {
     id: 'food',
     label: '偏食・食事',
     href: '/category/nutrition',
-    image: '/photos/worry-food.webp',
+    image: `${bp}/photos/worry-food.webp`,
   },
   {
     id: 'language',
     label: 'ことばの発達',
     href: '/articles/two-word-sentence-delay',
-    image: '/photos/worry-language.webp',
+    image: `${bp}/photos/worry-language.webp`,
   },
   {
     id: 'friends',
     label: '友だち・学校',
     href: '/category/mental',
-    image: '/photos/worry-friends.webp',
+    image: `${bp}/photos/worry-friends.webp`,
   },
   {
     id: 'screen',
     label: 'ゲーム・スマホ',
     href: '/category/digital',
-    image: '/photos/worry-screen.webp',
+    image: `${bp}/photos/worry-screen.webp`,
   },
   {
     id: 'development',
     label: '発達の遅れ',
     href: '/category/development',
-    image: '/photos/worry-development.webp',
+    image: `${bp}/photos/worry-development.webp`,
   },
 ];
 

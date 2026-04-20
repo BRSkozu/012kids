@@ -4,13 +4,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { trackFirst3Click } from '@/lib/analytics';
 
+const bp = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const FIRST_TIME_CARDS = [
   {
     ageGroup: '0-2',
     title: '0〜2歳：生活リズム・睡眠',
     description: '夜泣き対策や睡眠習慣づくりなど、赤ちゃん期の基本をまとめています。',
     href: '/articles/baby-sleep-training',
-    image: '/photos/stage-icon-0.webp',
+    image: `${bp}/photos/stage-icon-0.webp`,
     color: '#FFB3B3',
   },
   {
@@ -18,7 +20,7 @@ const FIRST_TIME_CARDS = [
     title: '3〜6歳：園生活・しつけ',
     description: 'トイレトレーニングや園選びなど、幼児期のよくある疑問に答えます。',
     href: '/articles/potty-training-guide',
-    image: '/photos/stage-icon-pre.webp',
+    image: `${bp}/photos/stage-icon-pre.webp`,
     color: '#FFD9A0',
   },
   {
@@ -26,7 +28,7 @@ const FIRST_TIME_CARDS = [
     title: '7〜12歳：学校・学習習慣',
     description: '宿題のやる気や学習環境づくりなど、小学生の親が知りたい情報です。',
     href: '/articles/homework-motivation-tips',
-    image: '/photos/stage-icon-early.webp',
+    image: `${bp}/photos/stage-icon-early.webp`,
     color: '#A0C4FF',
   },
 ];

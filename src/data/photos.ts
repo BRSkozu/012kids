@@ -1,41 +1,43 @@
-export const HERO_PHOTO = '/photos/hero-main.webp';
+const bp = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+export const HERO_PHOTO = `${bp}/photos/hero-main.webp`;
 
 export const CATEGORY_PHOTOS: Record<string, string> = {
-  development: '/photos/cat-development.webp',
-  nutrition: '/photos/cat-nutrition.webp',
-  education: '/photos/cat-education.webp',
-  health: '/photos/cat-health.webp',
-  mental: '/photos/cat-mental.webp',
-  digital: '/photos/cat-digital.webp',
-  social: '/photos/cat-social.webp',
-  lifestyle: '/photos/cat-lifestyle.webp',
-  pregnancy: '/photos/cat-pregnancy.webp',
+  development: `${bp}/photos/cat-development.webp`,
+  nutrition: `${bp}/photos/cat-nutrition.webp`,
+  education: `${bp}/photos/cat-education.webp`,
+  health: `${bp}/photos/cat-health.webp`,
+  mental: `${bp}/photos/cat-mental.webp`,
+  digital: `${bp}/photos/cat-digital.webp`,
+  social: `${bp}/photos/cat-social.webp`,
+  lifestyle: `${bp}/photos/cat-lifestyle.webp`,
+  pregnancy: `${bp}/photos/cat-pregnancy.webp`,
 };
 
 export const STAGE_PHOTOS: Record<string, string> = {
-  '0stage': '/photos/stage-0.webp',
-  pre: '/photos/stage-pre.webp',
-  early: '/photos/stage-early.webp',
-  mid: '/photos/stage-mid.webp',
-  upper: '/photos/stage-upper.webp',
+  '0stage': `${bp}/photos/stage-0.webp`,
+  pre: `${bp}/photos/stage-pre.webp`,
+  early: `${bp}/photos/stage-early.webp`,
+  mid: `${bp}/photos/stage-mid.webp`,
+  upper: `${bp}/photos/stage-upper.webp`,
 };
 
 export const STAGE_ICON_PHOTOS: Record<string, string> = {
-  '0stage': '/photos/stage-icon-0.webp',
-  pre: '/photos/stage-icon-pre.webp',
-  early: '/photos/stage-icon-early.webp',
-  mid: '/photos/stage-icon-mid.webp',
-  upper: '/photos/stage-icon-upper.webp',
+  '0stage': `${bp}/photos/stage-icon-0.webp`,
+  pre: `${bp}/photos/stage-icon-pre.webp`,
+  early: `${bp}/photos/stage-icon-early.webp`,
+  mid: `${bp}/photos/stage-icon-mid.webp`,
+  upper: `${bp}/photos/stage-icon-upper.webp`,
 };
 
-export const ABOUT_PHOTO = '/photos/about-mission.webp';
-export const BOKEH_TEXTURE = '/photos/texture-warm-bokeh.webp';
+export const ABOUT_PHOTO = `${bp}/photos/about-mission.webp`;
+export const BOKEH_TEXTURE = `${bp}/photos/texture-warm-bokeh.webp`;
 
 export const SEASONAL_BANNER_PHOTOS: Record<string, string> = {
-  spring: '/photos/seasonal-spring.webp',
-  summer: '/photos/seasonal-summer.webp',
-  autumn: '/photos/seasonal-autumn.webp',
-  winter: '/photos/seasonal-winter.webp',
+  spring: `${bp}/photos/seasonal-spring.webp`,
+  summer: `${bp}/photos/seasonal-summer.webp`,
+  autumn: `${bp}/photos/seasonal-autumn.webp`,
+  winter: `${bp}/photos/seasonal-winter.webp`,
 };
 
 /**
