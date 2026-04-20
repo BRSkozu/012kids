@@ -175,12 +175,11 @@ export default function HomePage() {
                   {photo ? (
                     <div className="aspect-[4/3] relative">
                       <Image src={photo} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 20vw" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
-                      <div className="absolute bottom-0 left-0 right-0 p-3">
-                        <h3 className="text-sm font-bold text-white drop-shadow-lg" style={{ fontFamily: 'var(--font-serif)' }}>
+                      <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm px-3 py-2.5">
+                        <h3 className="text-sm font-bold text-white" style={{ fontFamily: 'var(--font-serif)' }}>
                           {cat.label}
                         </h3>
-                        <p className="text-xs mt-0.5 tracking-wider font-medium text-white/90 drop-shadow-md">{categoryCounts[cat.id] || 0}件</p>
+                        <p className="text-xs mt-0.5 tracking-wider font-medium text-white/80">{categoryCounts[cat.id] || 0}件</p>
                       </div>
                     </div>
                   ) : (
