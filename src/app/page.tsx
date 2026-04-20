@@ -195,81 +195,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Closing About Banner */}
-      <section className="py-14">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2
-              className="text-[22px] md:text-[26px] text-[var(--color-foreground)] leading-[1.3]"
-              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-            >
-              012.kidsが大切にしていること
-            </h2>
-            <p className="mt-2 text-sm text-[var(--color-foreground-soft)] leading-[1.85]">
-              公的機関や専門家の情報をもとに、子育てに役立つ情報をわかりやすくお届けします。
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-0 md:gap-0 rounded-2xl overflow-hidden border border-[var(--color-paper-edge)]">
-            {[
-              { label: '参考元の明示', desc: '情報の出どころを明記', color: '#C66B1F', icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                </svg>
-              )},
-              { label: '中立な立場', desc: '商業的偏りなし', color: '#5B7FA5', icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
-                </svg>
-              )},
-              { label: '最新の情報', desc: '常にアップデート', color: '#4A9B6E', icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182" />
-                </svg>
-              )},
-              { label: '安心の設計', desc: '子どもを守るサイト', color: '#8B6BAE', icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                </svg>
-              )},
-              { label: 'すべての家族に', desc: '多様な家族に寄り添う', color: '#D4856A', icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                </svg>
-              )},
-            ].map((item, i) => (
-              <div
-                key={item.label}
-                className="flex md:flex-col items-center md:items-center gap-3 md:gap-0 px-5 py-4 md:py-6 bg-[var(--color-surface)] md:border-r last:border-r-0 border-b md:border-b-0 last:border-b-0 border-[var(--color-paper-edge)] text-left md:text-center"
-              >
-                <div
-                  className="shrink-0 w-10 h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center md:mb-3 text-white"
-                  style={{ backgroundColor: item.color }}
-                >
-                  {item.icon}
-                </div>
-                <div className="min-w-0">
-                  <p
-                    className="text-sm text-[var(--color-foreground)]"
-                    style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-                  >
-                    {item.label}
-                  </p>
-                  <p className="text-xs text-[var(--color-foreground-muted)] mt-0.5 leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-6">
-            <Link
-              href="/editorial-policy"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-primary-dark)] hover:text-[var(--color-primary)] transition-colors"
-            >
-              編集方針を詳しく見る
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-          </div>
+      {/* About */}
+      <section className="py-12">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <p
+            className="text-sm text-[var(--color-foreground-soft)] leading-[2]"
+          >
+            012.kidsは、公的機関や専門家の情報をもとに編集しています。
+            <br className="hidden md:inline" />
+            出典の明記・広告なし・定期的な更新を基本方針としています。
+          </p>
+          <Link
+            href="/editorial-policy"
+            className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-[var(--color-primary-dark)] hover:text-[var(--color-primary)] transition-colors"
+          >
+            編集方針について
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
         </div>
       </section>
     </>
