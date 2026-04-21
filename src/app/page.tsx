@@ -110,7 +110,7 @@ export default function HomePage() {
                     <div className="aspect-[4/3] relative">
                       <Image src={photo} alt="" fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 20vw" />
                       <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm px-3 py-2.5">
-                        <h3 className="text-sm font-bold" style={{ fontFamily: 'var(--font-serif)', color: '#fff' }}>
+                        <h3 className="text-sm font-bold text-white" style={{ fontFamily: 'var(--font-serif)' }}>
                           {cat.label}
                         </h3>
                         <p className="text-xs mt-0.5 tracking-wider font-medium text-white/80">{categoryCounts[cat.id] || 0}件</p>
