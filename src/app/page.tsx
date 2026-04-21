@@ -19,8 +19,10 @@ export default function HomePage() {
   const featured = getFeaturedArticles().slice(0, 3);
   const latest = getLatestArticles(6);
   const categoryCounts = getArticleCountByCategory();
+  const featuredSlugs = new Set(featured.map((a) => a.slug));
   const ranking = [...allArticles]
     .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
+    .filter((a) => !featuredSlugs.has(a.slug))
     .slice(0, 5);
 
   const seasonalTheme = getCurrentSeasonalTheme();
