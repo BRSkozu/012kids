@@ -27,13 +27,13 @@ function getArticles() {
       const excerpt = raw.match(/excerpt:\s*['"](.+?)['"]/)?.[1] || '';
       const stage = raw.match(/stage:\s*['"]?([^\s'"]+)/)?.[1] || '';
       const publishedAt = raw.match(/publishedAt:\s*['"]?(\d{4}-\d{2}-\d{2})/)?.[1] || '';
-      const tagsMatch = raw.match(/tags:\s*\[([^\]]+)\]/);
-      const tags = tagsMatch
-        ? tagsMatch[1].match(/['"]([^'"]+)['"]/g)?.map((t) => t.replace(/['"]/g, '')) || []
+      const tagsSection = raw.match(/tags:\s*\n((?:\s+-\s*"[^"]+"\n?)+)/);
+      const tags = tagsSection
+        ? tagsSection[1].match(/"([^"]+)"/g)?.map((t) => t.replace(/"/g, '')) || []
         : [];
-      const catMatch = raw.match(/categories:\s*\[([^\]]+)\]/);
+      const catMatch = raw.match(/categories:\s*\n((?:\s+-\s*\w+\n?)+)/);
       const articleCategories = catMatch
-        ? catMatch[1].match(/['"]([^'"]+)['"]/g)?.map((t) => t.replace(/['"]/g, '')) || []
+        ? catMatch[1].match(/- (\w+)/g)?.map((t) => t.replace('- ', '')) || []
         : [];
 
       // Extract markdown content (after frontmatter)
