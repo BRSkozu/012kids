@@ -278,6 +278,14 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </div>
 
+      {/* Share Buttons (top) */}
+      <div className="mb-6">
+        <ShareButtons
+          url={`https://012.kids/articles/${article.slug}`}
+          title={article.title}
+        />
+      </div>
+
       {/* Mobile: Table of Contents inline */}
       <div className="lg:hidden">
         <TableOfContents />
