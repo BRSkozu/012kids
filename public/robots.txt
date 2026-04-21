@@ -50,6 +50,12 @@ Sitemap: https://012.kids/sitemap.xml
 # AI / LLM向けコンテンツ
 # https://012.kids/llms.txt
 # https://012.kids/llms-full.txt
+# https://012.kids/.well-known/ai-plugin.json
+# https://012.kids/api/v1/site-info.json
+# https://012.kids/api/v1/articles.json
+# https://012.kids/api/v1/categories.json
+# https://012.kids/api/v1/stages.json
+# https://012.kids/api/v1/tags.json
 
 # RSS Feed
 # https://012.kids/feed.xml

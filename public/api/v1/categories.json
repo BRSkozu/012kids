@@ -1,0 +1,78 @@
+{
+  "total": 9,
+  "updated_at": "2026-04-21T08:57:09.949Z",
+  "categories": [
+    {
+      "id": "development",
+      "label": "発達・成長",
+      "icon": "🌱",
+      "description": "運動発達、認知発達、言語発達、社会性発達、発達障害・グレーゾーン",
+      "article_count": 195,
+      "url": "https://012.kids/category/development"
+    },
+    {
+      "id": "nutrition",
+      "label": "食育・栄養",
+      "icon": "🍎",
+      "description": "離乳食、アレルギー対応、好き嫌い克服、学童期の食事、給食",
+      "article_count": 149,
+      "url": "https://012.kids/category/nutrition"
+    },
+    {
+      "id": "education",
+      "label": "教育・学習",
+      "icon": "📚",
+      "description": "早期教育、公教育、家庭学習法、習い事選び、受験情報",
+      "article_count": 209,
+      "url": "https://012.kids/category/education"
+    },
+    {
+      "id": "health",
+      "label": "健康・医療",
+      "icon": "🏥",
+      "description": "予防接種、かかりやすい病気、歯科・眼科情報、応急処置",
+      "article_count": 271,
+      "url": "https://012.kids/category/health"
+    },
+    {
+      "id": "mental",
+      "label": "メンタル・心理",
+      "icon": "💚",
+      "description": "不登校・いじめ対応、自己肯定感、親の関わり方、メンタルケア",
+      "article_count": 132,
+      "url": "https://012.kids/category/mental"
+    },
+    {
+      "id": "digital",
+      "label": "デジタル・メディア",
+      "icon": "💻",
+      "description": "スクリーンタイム管理、安全なアプリ、プログラミング教育、SNSリテラシー",
+      "article_count": 88,
+      "url": "https://012.kids/category/digital"
+    },
+    {
+      "id": "social",
+      "label": "社会・環境",
+      "icon": "🌍",
+      "description": "SDGs教育、多様性・インクルーシブ教育、地域資源の活用",
+      "article_count": 191,
+      "url": "https://012.kids/category/social"
+    },
+    {
+      "id": "lifestyle",
+      "label": "暮らし・家計",
+      "icon": "🏠",
+      "description": "教育費、共働き、時短術、引越し、家族のライフスタイル",
+      "article_count": 28,
+      "url": "https://012.kids/category/lifestyle"
+    },
+    {
+      "id": "pregnancy",
+      "label": "妊娠・出産",
+      "icon": "🤱",
+      "description": "妊娠経過、出産準備、産後ケア、不妊治療、マタニティライフ",
+      "article_count": 91,
+      "url": "https://012.kids/category/pregnancy"
+    }
+  ]
+}

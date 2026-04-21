@@ -1,0 +1,46 @@
+{
+  "total": 5,
+  "updated_at": "2026-04-21T08:57:09.949Z",
+  "stages": [
+    {
+      "id": "0stage",
+      "label": "0 Stage",
+      "age_range": "0〜2歳",
+      "description": "授乳・離乳食・発達発育・睡眠・保育に関する情報",
+      "article_count": 292,
+      "url": "https://012.kids/age-guide/0stage"
+    },
+    {
+      "id": "pre",
+      "label": "Pre Stage",
+      "age_range": "3〜5歳",
+      "description": "幼児教育・遊び・ことば・しつけ・幼稚園に関する情報",
+      "article_count": 418,
+      "url": "https://012.kids/age-guide/pre"
+    },
+    {
+      "id": "early",
+      "label": "Early Stage",
+      "age_range": "6〜8歳",
+      "description": "小学校入学・読み書き・算数・生活習慣に関する情報",
+      "article_count": 267,
+      "url": "https://012.kids/age-guide/early"
+    },
+    {
+      "id": "mid",
+      "label": "Mid Stage",
+      "age_range": "9〜10歳",
+      "description": "理科・社会・英語・習い事・友達関係に関する情報",
+      "article_count": 167,
+      "url": "https://012.kids/age-guide/mid"
+    },
+    {
+      "id": "upper",
+      "label": "Upper Stage",
+      "age_range": "11〜12歳",
+      "description": "受験・自主学習・メンタル・デジタルリテラシーに関する情報",
+      "article_count": 93,
+      "url": "https://012.kids/age-guide/upper"
+    }
+  ]
+}

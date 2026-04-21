@@ -1,0 +1,49 @@
+{
+  "schema_version": "v1",
+  "name": "012.kids",
+  "description": "0歳から12歳の子どもに関わるすべての方に向けた子育て・教育情報サイト。公的機関や専門家の発信する情報をわかりやすくまとめています。",
+  "url": "https://012.kids",
+  "logo_url": "https://012.kids/icon-512.png",
+  "contact_email": "info@012.kids",
+  "legal_info_url": "https://012.kids/terms",
+  "api": {
+    "type": "static_json",
+    "endpoints": {
+      "site_info": "https://012.kids/api/v1/site-info.json",
+      "articles": "https://012.kids/api/v1/articles.json",
+      "categories": "https://012.kids/api/v1/categories.json",
+      "stages": "https://012.kids/api/v1/stages.json",
+      "tags": "https://012.kids/api/v1/tags.json"
+    }
+  },
+  "ai_content": {
+    "llms_txt": "https://012.kids/llms.txt",
+    "llms_full_txt": "https://012.kids/llms-full.txt",
+    "rss_feed": "https://012.kids/feed.xml",
+    "sitemap": "https://012.kids/sitemap.xml"
+  },
+  "capabilities": {
+    "content_types": [
+      "articles",
+      "guides",
+      "references"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "topics": [
+      "子育て",
+      "教育",
+      "発達",
+      "健康",
+      "栄養",
+      "メンタルヘルス"
+    ],
+    "age_range": {
+      "min": 0,
+      "max": 12,
+      "unit": "years"
+    }
+  },
+  "updated_at": "2026-04-21T08:57:09.949Z"
+}
