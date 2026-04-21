@@ -19,12 +19,6 @@ export default function HomePage() {
   const featured = getFeaturedArticles().slice(0, 3);
   const latest = getLatestArticles(6);
   const categoryCounts = getArticleCountByCategory();
-  const featuredSlugs = new Set(featured.map((a) => a.slug));
-  const ranking = [...allArticles]
-    .sort((a, b) => (b.score?.total ?? 0) - (a.score?.total ?? 0))
-    .filter((a) => !featuredSlugs.has(a.slug))
-    .slice(0, 5);
-
   const seasonalTheme = getCurrentSeasonalTheme();
   const seasonalArticles = allArticles
     .map((a) => ({
@@ -36,23 +30,8 @@ export default function HomePage() {
     .slice(0, 7)
     .map((s) => s.article);
 
-  const rankingLd = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: '人気記事ランキング - 012.kids',
-    description: '0歳〜12歳の子育て・教育に関する人気記事トップ5',
-    numberOfItems: ranking.length,
-    itemListElement: ranking.map((a, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      url: `https://012.kids/articles/${a.slug}`,
-      name: a.title,
-    })),
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(rankingLd) }} />
       <ScrollTracker />
 
       {/* Hero: catchcopy + search + age buttons + trust badges */}
@@ -74,64 +53,17 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Featured + Ranking unified strip (replaces 3 separate sections) */}
+      {/* Featured articles */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <SectionHeader
-          kicker="Editor's Pick"
+          kicker="Pick Up"
           title="今、読まれている記事"
-          description="編集部セレクト × みんなに支持されているトップ記事"
           seeAllHref="/articles?sort=popular"
         />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {featured.map((article) => (
-              <ArticleCard key={article.id} article={article} variant="featured" />
-            ))}
-          </div>
-          <aside className="rounded-2xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] p-5 relative overflow-hidden">
-            <div className="lamp-glow top-[-4rem] right-[-4rem] w-[12rem] h-[12rem] bg-[#F5D9B1] opacity-40 pointer-events-none" />
-            <h3
-              className="relative flex items-center gap-2 text-[var(--color-foreground)] mb-4"
-              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-            >
-              <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[var(--color-primary)] text-white text-xs font-bold shadow-[0_4px_10px_-4px_rgba(198,107,31,0.6)]">
-                #
-              </span>
-              人気ランキング
-            </h3>
-            <ol className="relative space-y-3">
-              {ranking.map((article, i) => (
-                <li key={article.id}>
-                  <Link
-                    href={`/articles/${article.slug}`}
-                    className="group flex items-start gap-3"
-                  >
-                    <span
-                      className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                        i < 3
-                          ? 'bg-[var(--color-primary)] text-white'
-                          : 'bg-[var(--color-warm-cream)] text-[var(--color-primary-dark)] border border-[var(--color-paper-edge)]'
-                      }`}
-                    >
-                      {i + 1}
-                    </span>
-                    <span
-                      className="text-sm text-[var(--color-foreground-soft)] group-hover:text-[var(--color-primary-dark)] transition-colors line-clamp-2 leading-snug"
-                      style={{ fontFamily: 'var(--font-serif)' }}
-                    >
-                      {article.title}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ol>
-            <Link
-              href="/articles?sort=popular"
-              className="relative mt-5 block text-center text-xs font-medium text-[var(--color-primary-dark)] hover:text-[var(--color-primary)]"
-            >
-              ランキングをすべて見る →
-            </Link>
-          </aside>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featured.map((article) => (
+            <ArticleCard key={article.id} article={article} variant="featured" />
+          ))}
         </div>
       </section>
 
