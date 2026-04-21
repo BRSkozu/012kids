@@ -48,9 +48,9 @@ function getArticles() {
       const excerpt = content.match(/excerpt:\s*['"](.+?)['"]/)?.[1] || '';
       const publishedAt = content.match(/publishedAt:\s*['"]?(\d{4}-\d{2}-\d{2})/)?.[1] || '2026-01-01';
       const updatedAt = content.match(/updatedAt:\s*['"]?(\d{4}-\d{2}-\d{2})/)?.[1] || publishedAt;
-      const tagsMatch = content.match(/tags:\s*\[([^\]]+)\]/);
-      const tags = tagsMatch
-        ? tagsMatch[1].match(/['"]([^'"]+)['"]/g)?.map((t) => t.replace(/['"]/g, '')) || []
+      const tagsSection = content.match(/tags:\s*\n((?:\s+-\s*"[^"]+"\n?)+)/);
+      const tags = tagsSection
+        ? tagsSection[1].match(/"([^"]+)"/g)?.map((t) => t.replace(/"/g, '')) || []
         : [];
       const stage = content.match(/stage:\s*['"]?([^\s'"]+)/)?.[1] || '';
       const catMatches = content.match(/categories:\s*\n((?:\s+-\s+.+\n?)*)/);
