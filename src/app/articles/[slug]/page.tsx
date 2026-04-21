@@ -236,15 +236,15 @@ export default async function ArticlePage({ params }: PageProps) {
             ))}
           </div>
           <h1
-            className={`mt-4 text-2xl md:text-[2.2rem] leading-[1.25] ${heroPhoto ? 'text-white' : 'text-[var(--color-foreground)]'}`}
-            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, textShadow: heroPhoto ? '0 2px 12px rgba(0,0,0,0.3)' : 'none' }}
+            className="mt-4 text-2xl md:text-[2.2rem] leading-[1.25]"
+            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, color: heroPhoto ? '#fff' : undefined, textShadow: heroPhoto ? '0 2px 12px rgba(0,0,0,0.3)' : 'none' }}
           >
             {article.title}
           </h1>
-          <p className={`mt-3 text-[15px] leading-relaxed max-w-2xl ${heroPhoto ? 'text-white/90' : 'text-[var(--color-foreground-soft)]'}`} style={{ textShadow: heroPhoto ? '0 1px 6px rgba(0,0,0,0.3)' : 'none' }}>
+          <p className="mt-3 text-[15px] leading-relaxed max-w-2xl" style={{ color: heroPhoto ? 'rgba(255,255,255,0.9)' : undefined, textShadow: heroPhoto ? '0 1px 6px rgba(0,0,0,0.3)' : 'none' }}>
             {article.excerpt}
           </p>
-          <div className={`mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm ${heroPhoto ? 'text-white/75' : 'text-[var(--color-foreground-muted)]'}`}>
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm" style={{ color: heroPhoto ? 'rgba(255,255,255,0.75)' : undefined }}>
             <span className="flex items-center gap-1.5">
               <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px] font-bold">編</span>
               012.kids 編集部
