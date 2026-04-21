@@ -4,6 +4,13 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: '利用規約',
   description: '012.kidsの利用規約。サイトのご利用にあたっての注意事項と免責事項について。',
+  alternates: { canonical: 'https://012.kids/terms' },
+  openGraph: {
+    title: '利用規約 | 012.kids',
+    description: '012.kidsの利用規約。サイトのご利用にあたっての注意事項と免責事項について。',
+    url: 'https://012.kids/terms',
+  },
+  robots: { index: false, follow: true },
 };
 
 export default function TermsPage() {

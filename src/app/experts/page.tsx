@@ -5,6 +5,12 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 export const metadata: Metadata = {
   title: '編集部について',
   description: '012.kids編集部についてのご紹介。公的機関や専門家の発信情報をもとに、子育てに役立つ情報をわかりやすくまとめています。',
+  alternates: { canonical: 'https://012.kids/experts' },
+  openGraph: {
+    title: '編集部について | 012.kids',
+    description: '012.kids編集部についてのご紹介。公的機関や専門家の発信情報をもとに、子育てに役立つ情報をわかりやすくまとめています。',
+    url: 'https://012.kids/experts',
+  },
 };
 
 export default function EditorialTeamPage() {

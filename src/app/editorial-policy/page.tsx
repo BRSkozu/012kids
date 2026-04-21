@@ -5,6 +5,12 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 export const metadata: Metadata = {
   title: '編集方針',
   description: '012.kidsの編集方針。情報まとめサイトとしての透明性と信頼性を確保するための編集ポリシーです。',
+  alternates: { canonical: 'https://012.kids/editorial-policy' },
+  openGraph: {
+    title: '編集方針 | 012.kids',
+    description: '012.kidsの編集方針。情報まとめサイトとしての透明性と信頼性を確保するための編集ポリシーです。',
+    url: 'https://012.kids/editorial-policy',
+  },
 };
 
 export default function EditorialPolicyPage() {

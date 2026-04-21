@@ -6,6 +6,7 @@ import FavoritesClient from './FavoritesClient';
 export const metadata: Metadata = {
   title: 'お気に入りの記事',
   description: 'あなたがこの端末で保存した記事の一覧です。',
+  alternates: { canonical: 'https://012.kids/favorites' },
   robots: { index: false, follow: false },
 };
 

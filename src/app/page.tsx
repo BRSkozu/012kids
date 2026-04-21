@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import AgeSelector from '@/components/age-selector/AgeSelector';
@@ -13,6 +14,27 @@ import { getCategoryPhoto } from '@/data/photos';
 import { getFeaturedArticles, getLatestArticles, getAllArticlesSync, getArticleCountByCategory } from '@/lib/articles';
 import { CATEGORIES } from '@/data/categories';
 import { getCurrentSeasonalTheme, getSeasonalScore } from '@/data/seasonal-content';
+
+const SITE_URL = 'https://012.kids';
+
+export const metadata: Metadata = {
+  title: '012.kids – 0歳から12歳の子育て・教育情報',
+  description: '公的機関や専門家の発信する0歳〜12歳の子育て・教育情報をわかりやすくまとめて紹介。発達・栄養・教育・健康・メンタルなど9カテゴリ、1,200記事以上を掲載。',
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    title: '012.kids – 0歳から12歳の子育て・教育情報',
+    description: '公的機関や専門家の発信する子育て・教育情報をわかりやすくまとめて紹介するサイトです。',
+    url: SITE_URL,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '012.kids – 0歳から12歳の子育て・教育情報',
+    description: '公的機関や専門家の発信する子育て・教育情報をわかりやすくまとめて紹介するサイトです。',
+  },
+};
 
 export default function HomePage() {
   const allArticles = getAllArticlesSync();

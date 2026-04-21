@@ -4,6 +4,13 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'プライバシーポリシー',
   description: '012.kidsのプライバシーポリシー。個人情報の取り扱い、Cookieの利用、アクセス解析について。',
+  alternates: { canonical: 'https://012.kids/privacy' },
+  openGraph: {
+    title: 'プライバシーポリシー | 012.kids',
+    description: '012.kidsのプライバシーポリシー。個人情報の取り扱い、Cookieの利用、アクセス解析について。',
+    url: 'https://012.kids/privacy',
+  },
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPage() {

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: '発達マイルストーン・トラッカー',
   description:
     '0〜12歳までの代表的な発達の目安をチェックリスト形式で記録できます。お子さまひとりひとりの歩みを、そっと見守るツールです。',
+  alternates: { canonical: 'https://012.kids/milestones' },
   robots: { index: false, follow: false },
 };
 

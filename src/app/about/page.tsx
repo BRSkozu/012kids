@@ -8,6 +8,12 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 export const metadata: Metadata = {
   title: 'このサイトについて',
   description: '012.kidsは0歳から12歳の子どもに関わるすべての方に向けて、公的機関や専門家の情報をわかりやすくまとめて紹介する情報サイトです。',
+  alternates: { canonical: 'https://012.kids/about' },
+  openGraph: {
+    title: 'このサイトについて | 012.kids',
+    description: '012.kidsは0歳から12歳の子どもに関わるすべての方に向けて、公的機関や専門家の情報をわかりやすくまとめて紹介する情報サイトです。',
+    url: 'https://012.kids/about',
+  },
 };
 
 export default function AboutPage() {
