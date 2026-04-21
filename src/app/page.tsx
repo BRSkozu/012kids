@@ -37,6 +37,13 @@ export default function HomePage() {
       {/* Hero: catchcopy + search + age buttons + trust badges */}
       <AgeSelector />
 
+      {/* Seasonal Pickup — 季節コンテンツはファーストビュー近くに */}
+      {seasonalArticles.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 pt-8 pb-4">
+          <SeasonalPickup theme={seasonalTheme} articles={seasonalArticles} />
+        </section>
+      )}
+
       {/* First Time User Section */}
       <FirstTimeSection />
 
@@ -45,13 +52,6 @@ export default function HomePage() {
 
       {/* 直近の閲覧履歴 (localStorage) */}
       <RecentlyViewed />
-
-      {/* Seasonal Pickup */}
-      {seasonalArticles.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 py-8">
-          <SeasonalPickup theme={seasonalTheme} articles={seasonalArticles} />
-        </section>
-      )}
 
       {/* Featured articles */}
       <section className="max-w-7xl mx-auto px-4 py-10">
