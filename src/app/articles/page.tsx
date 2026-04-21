@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: '0歳〜12歳の子育て・教育に関する記事一覧。年齢別・カテゴリ別に探せます。',
     url: 'https://012.kids/articles',
     type: 'website',
+    images: [{ url: 'https://012.kids/ogp.png', width: 1200, height: 630 }],
   },
 };
 

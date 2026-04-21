@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'キーワードやお悩みから子育て・教育の記事を検索',
     url: 'https://012.kids/search',
     type: 'website',
+    images: [{ url: 'https://012.kids/ogp.png', width: 1200, height: 630 }],
   },
   robots: {
     index: true,

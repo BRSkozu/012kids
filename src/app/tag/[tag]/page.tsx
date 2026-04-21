@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: `「${tag}」に関する子育て・教育記事${articles.length}件`,
       url: pageUrl,
       type: 'website',
+      images: [{ url: 'https://012.kids/ogp.png', width: 1200, height: 630 }],
     },
     robots: articles.length >= 2 ? { index: true, follow: true } : { index: false, follow: true },
   };
