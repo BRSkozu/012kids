@@ -78,8 +78,8 @@ export default async function ArticlePage({ params }: PageProps) {
     .map((id) => allArticles.find((a) => a.id === id || a.slug === id))
     .filter(Boolean) as typeof allArticles;
 
-  // Fill related articles up to 10
-  if (relatedArticles.length < 10) {
+  // Fill related articles up to 6
+  if (relatedArticles.length < 6) {
     const existingIds = new Set([article.id, ...relatedArticles.map((a) => a.id)]);
     const candidates = allArticles
       .filter((a) => !existingIds.has(a.id))
@@ -92,7 +92,7 @@ export default async function ArticlePage({ params }: PageProps) {
       })
       .filter((c) => c.score > 0)
       .sort((a, b) => b.score - a.score || (b.article.score?.total ?? 0) - (a.article.score?.total ?? 0));
-    const needed = 10 - relatedArticles.length;
+    const needed = 6 - relatedArticles.length;
     relatedArticles = [...relatedArticles, ...candidates.slice(0, needed).map((c) => c.article)];
   }
 
@@ -299,23 +299,21 @@ export default async function ArticlePage({ params }: PageProps) {
 
 
       {/* Recommended Links */}
-      <RecommendedLinks links={getRecommendedLinks(article.categories, 10, article.tags)} currentSlug={article.slug} />
+      <RecommendedLinks links={getRecommendedLinks(article.categories, 8, article.tags)} currentSlug={article.slug} />
 
-      {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {article.tags.map((tag) => (
-          <Link
-            key={tag}
-            href={`/tag/${encodeURIComponent(tag)}`}
-            className="text-xs bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-primary-dark)] px-3 py-1 rounded-full hover:bg-[var(--color-surface)] hover:border-[var(--color-primary-light)] transition-colors"
-          >
-            #{tag}
-          </Link>
-        ))}
-      </div>
-
-      {/* Share Buttons */}
-      <div className="mb-8 py-4 border-t border-b border-[var(--color-paper-edge)]">
+      {/* Tags + Share (unified footer) */}
+      <div className="mb-6 space-y-4">
+        <div className="flex flex-wrap gap-1.5">
+          {article.tags.map((tag) => (
+            <Link
+              key={tag}
+              href={`/tag/${encodeURIComponent(tag)}`}
+              className="text-xs bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-primary-dark)] px-2.5 py-1 rounded-full hover:bg-[var(--color-surface)] hover:border-[var(--color-primary-light)] transition-colors"
+            >
+              #{tag}
+            </Link>
+          ))}
+        </div>
         <ShareButtons
           url={`https://012.kids/articles/${article.slug}`}
           title={article.title}
@@ -336,26 +334,25 @@ export default async function ArticlePage({ params }: PageProps) {
           .slice(0, 3);
         if (nextStageArticles.length === 0) return null;
         return (
-          <div className="border-t border-[var(--color-paper-edge)] pt-8 mb-8">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🌱</span>
+          <section className="bg-gradient-to-b from-[var(--color-warm-bg)] to-transparent pt-8 pb-4 -mx-4 px-4 md:-mx-0 md:px-0 md:rounded-2xl mb-6">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-base">🌱</span>
               <h3
-                className="text-lg text-[var(--color-foreground)]"
+                className="text-base text-[var(--color-foreground)]"
                 style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
               >
-                次のステージへ：{nextStage.label}（{nextStage.ageRange}）
+                次のステージ：{nextStage.label}（{nextStage.ageRange}）
               </h3>
             </div>
-            <p className="text-sm text-[var(--color-foreground-soft)] mb-4 leading-relaxed">
-              お子さんが成長したら、こちらの記事が役立ちます
+            <p className="text-xs text-[var(--color-foreground-muted)] mb-4">
+              お子さんが成長したら、こちらもどうぞ
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {nextStageArticles.map((a) => (
                 <Link
                   key={a.id}
                   href={`/articles/${a.slug}`}
-                  className="group rounded-xl border border-dashed p-4 hover:shadow-[0_12px_28px_-16px_rgba(31,36,57,0.3)] transition-all"
-                  style={{ borderColor: nextStage.color, backgroundColor: nextStage.colorLight + '80' }}
+                  className="group rounded-xl border border-[var(--color-paper-edge)] bg-[var(--color-surface)] p-4 hover:shadow-md transition-all"
                 >
                   <StageBadge stage={a.stage} size="sm" />
                   <p
@@ -364,56 +361,34 @@ export default async function ArticlePage({ params }: PageProps) {
                   >
                     {a.title}
                   </p>
-                  <p className="text-xs text-[var(--color-foreground-soft)] mt-1 line-clamp-2 leading-relaxed">{a.excerpt}</p>
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
         );
       })()}
 
-      {/* Related Articles - magazine layout */}
+      {/* Related Articles */}
       {relatedArticles.length > 0 && (
-        <div className="border-t border-[var(--color-paper-edge)] pt-8">
+        <section className="pt-6 mb-6">
           <h3
-            className="text-lg text-[var(--color-foreground)] mb-2"
+            className="text-base text-[var(--color-foreground)] mb-4"
             style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
           >
             あわせて読みたい
           </h3>
-          <p className="text-sm text-[var(--color-foreground-soft)] mb-6 leading-relaxed">同じテーマの記事をチェック</p>
-          {/* Hero row: first 2 articles get large cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-            {relatedArticles.slice(0, 2).map((a) => (
-              <ArticleCard key={a.id} article={a} variant="related-hero" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {relatedArticles.slice(0, 6).map((a) => (
+              <ArticleCard key={a.id} article={a} variant="related-card" />
             ))}
           </div>
-          {/* Remaining articles: horizontal compact cards */}
-          {relatedArticles.length > 2 && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {relatedArticles.slice(2).map((a) => (
-                <ArticleCard key={a.id} article={a} variant="related-card" />
-              ))}
-            </div>
-          )}
-        </div>
+        </section>
       )}
 
       {/* Disclaimer */}
-      <div className="mt-8 p-4 bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-xl text-sm text-[var(--color-foreground-soft)] leading-relaxed">
-        <p
-          className="text-[var(--color-foreground)] mb-1"
-          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-        >
-          ご利用にあたって
-        </p>
-        <p>
-          当サイトは子育て・教育に関する情報をまとめて紹介する「情報まとめサイト」です。
-          掲載情報は公的機関や専門家の発信をもとに編集部が独自にまとめたものであり、
-          各情報源の機関が本サイトを監修・承認したものではありません。
-          お子さまの健康や発達について心配がある場合は、必ず医師や専門家にご相談ください。
-        </p>
-      </div>
+      <p className="mt-6 mb-4 text-xs text-[var(--color-foreground-muted)] leading-relaxed">
+        当サイトの情報は公的機関や専門家の発信をもとに編集部が独自にまとめたものです。各情報源の機関が監修・承認したものではありません。健康や発達について心配がある場合は医師や専門家にご相談ください。
+      </p>
     </div>
     </>
   );

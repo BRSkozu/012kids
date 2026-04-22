@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import { RecommendedLink, LinkSentiment } from '@/data/recommended-links';
 
 interface RecommendedLinksProps {
@@ -6,91 +9,88 @@ interface RecommendedLinksProps {
 }
 
 const SENTIMENT_CONFIG: Record<LinkSentiment, {
-  border: string;
-  hoverBorder: string;
   dot: string;
   label: string;
-  symbol: string;
 }> = {
-  positive: {
-    border: 'border-blue-100',
-    hoverBorder: 'hover:border-blue-200',
-    dot: 'bg-blue-400',
-    label: '支持的',
-    symbol: '+',
-  },
-  neutral: {
-    border: 'border-gray-200',
-    hoverBorder: 'hover:border-gray-300',
-    dot: 'bg-gray-300',
-    label: '中立',
-    symbol: '=',
-  },
-  cautious: {
-    border: 'border-amber-100',
-    hoverBorder: 'hover:border-amber-200',
-    dot: 'bg-amber-400',
-    label: '慎重・注意喚起',
-    symbol: '!',
-  },
+  positive: { dot: 'bg-blue-400', label: '支持的' },
+  neutral: { dot: 'bg-gray-300', label: '中立' },
+  cautious: { dot: 'bg-amber-400', label: '慎重・注意喚起' },
 };
 
+const INITIAL_SHOW = 4;
+
 export default function RecommendedLinks({ links }: RecommendedLinksProps) {
+  const [expanded, setExpanded] = useState(false);
   if (links.length === 0) return null;
 
+  const visibleLinks = expanded ? links : links.slice(0, INITIAL_SHOW);
+  const hasMore = links.length > INITIAL_SHOW;
+
   return (
-    <div className="border-t border-[var(--color-paper-edge)] pt-6 mb-8">
-      <h3
-        className="text-lg text-[var(--color-foreground)] mb-2"
-        style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-      >
-        おすすめサイトまとめ（{links.length}選）
-      </h3>
-      <p className="text-sm text-[var(--color-foreground-soft)] mb-4 leading-relaxed">
-        この記事のテーマに関連する、信頼性の高い外部サイトをまとめました
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {links.map((link, i) => {
-          const sentiment = link.sentiment ?? 'neutral';
-          const config = SENTIMENT_CONFIG[sentiment];
-          return (
-            <a
-              key={i}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`group rounded-xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] hover:border-[var(--color-primary-light)] hover:shadow-[0_12px_28px_-16px_rgba(31,36,57,0.25)] transition-all flex items-start gap-3 p-4`}
-            >
-              <span className="shrink-0 w-7 h-7 rounded-full bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] flex items-center justify-center text-xs font-bold text-[var(--color-primary-dark)]">
-                {i + 1}
-              </span>
-              <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-1.5">
-                  <span className={`shrink-0 w-2 h-2 rounded-full ${config.dot}`} />
+    <section className="mb-10">
+      <div className="bg-[var(--color-warm-bg)] rounded-2xl p-5 md:p-6">
+        <h3
+          className="text-base text-[var(--color-foreground)] mb-1"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+        >
+          参考になる外部サイト
+        </h3>
+        <p className="text-xs text-[var(--color-foreground-muted)] mb-4">
+          信頼性の高い外部サイトをまとめました
+        </p>
+
+        <div className="space-y-2">
+          {visibleLinks.map((link, i) => {
+            const sentiment = link.sentiment ?? 'neutral';
+            const config = SENTIMENT_CONFIG[sentiment];
+            return (
+              <a
+                key={i}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-3 bg-[var(--color-surface)] rounded-xl p-3.5 border border-transparent hover:border-[var(--color-primary-light)] hover:shadow-sm transition-all"
+              >
+                <span className="shrink-0 w-6 h-6 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center text-[11px] font-bold text-[var(--color-primary-dark)] mt-0.5">
+                  {i + 1}
+                </span>
+                <div className="min-w-0 flex-1">
                   <p
-                    className="text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors text-sm"
+                    className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors leading-snug"
                     style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
                   >
                     {link.title}
-                    <span className="ml-1 text-xs text-[var(--color-foreground-muted)]">↗</span>
+                    <span className="ml-1 opacity-40 text-xs">↗</span>
                   </p>
+                  <p className="text-xs text-[var(--color-foreground-soft)] mt-0.5 leading-relaxed line-clamp-1">{link.description}</p>
+                  <div className="flex items-center gap-2 mt-1">
+                    <span className="text-[11px] text-[var(--color-foreground-muted)]">{link.org}</span>
+                    <span className={`w-1.5 h-1.5 rounded-full ${config.dot}`} />
+                  </div>
                 </div>
-                <p className="text-xs text-[var(--color-foreground-soft)] mt-0.5 leading-relaxed">{link.description}</p>
-                <p className="text-xs text-[var(--color-foreground-muted)] mt-1">{link.org}</p>
-              </div>
-            </a>
-          );
-        })}
+              </a>
+            );
+          })}
+        </div>
+
+        {hasMore && !expanded && (
+          <button
+            onClick={() => setExpanded(true)}
+            className="mt-3 w-full py-2.5 text-sm font-medium text-[var(--color-primary-dark)] bg-[var(--color-surface)] rounded-xl border border-[var(--color-paper-edge)] hover:border-[var(--color-primary-light)] transition-colors"
+          >
+            残り{links.length - INITIAL_SHOW}件を表示
+          </button>
+        )}
+
+        <div className="mt-3 flex items-center gap-4 text-[11px] text-[var(--color-foreground-muted)]">
+          {Object.entries(SENTIMENT_CONFIG).map(([key, cfg]) => (
+            <span key={key} className="flex items-center gap-1">
+              <span className={`w-1.5 h-1.5 rounded-full ${cfg.dot}`} />
+              {cfg.label}
+            </span>
+          ))}
+        </div>
       </div>
-      {/* センチメント凡例 */}
-      <div className="mt-3 pt-2 border-t border-[var(--color-paper-edge)] flex items-center gap-4 text-xs text-[var(--color-foreground-muted)]">
-        {Object.entries(SENTIMENT_CONFIG).map(([key, cfg]) => (
-          <span key={key} className="flex items-center gap-1">
-            <span className={`w-2 h-2 rounded-full ${cfg.dot}`} />
-            {cfg.label}
-          </span>
-        ))}
-      </div>
-    </div>
+    </section>
   );
 }
