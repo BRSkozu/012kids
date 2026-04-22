@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: 'website',
       images: [
         {
-          url: 'https://012.kids/ogp.png',
+          url: `https://012.kids/ogp/stages/${stage.id}.png`,
           width: 1200,
           height: 630,
           alt: `${stage.label} - 012.kids`,
