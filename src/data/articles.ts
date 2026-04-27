@@ -6,6 +6,446 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1240",
+    slug: "toilet-training-before-school",
+    title: "入園・入学前のトイレトレーニング：焦らず進める成功のコツ",
+    excerpt: "入園・入学前のトイレトレーニング：焦らず進める成功のコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "乳幼児の排泄機能の発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/hoiku/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児の基本的生活習慣",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":28,"neutrality":25,"freshness":16,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/toilet-training-before-school.jpg",
+    readingTime: 10,
+    tags: ["トイレトレーニング","入園準備","発達"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1241",
+    slug: "year-end-growth-review",
+    title: "1年間の成長をふりかえる：子どもの発達記録のつけ方",
+    excerpt: "1年間の成長をふりかえる：子どもの発達記録のつけ方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "母子健康手帳の活用",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "乳幼児健康診査",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの発達の見通し",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "厚生労働省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":25,"neutrality":21,"freshness":15,"ageRelevance":13,"readability":8},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/year-end-growth-review.jpg",
+    readingTime: 9,
+    tags: ["成長記録","発達","ふりかえり"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1239",
+    slug: "early-sleep-routine-spring",
+    title: "新年度に向けて「早寝早起き」を習慣化するステップ",
+    excerpt: "新年度に向けて「早寝早起き」を習慣化するステップについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "早寝早起き朝ごはん",
+                "url": "https://www.mext.go.jp/a_menu/shougai/asagohan/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの睡眠指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "睡眠と発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":25,"freshness":18,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/early-sleep-routine-spring.jpg",
+    readingTime: 8,
+    tags: ["早寝早起き","生活習慣","新年度"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1238",
+    slug: "school-supply-preparation-guide",
+    title: "入学準備リスト完全版：ランドセルから文房具まで揃えるタイミング",
+    excerpt: "入学準備リスト完全版：ランドセルから文房具まで揃えるタイミングについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "小学校入学に向けた準備",
+                "url": "https://www.mext.go.jp/a_menu/shotou/gakko/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "就学前の準備",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":84,"reliability":28,"neutrality":20,"freshness":15,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/school-supply-preparation-guide.jpg",
+    readingTime: 10,
+    tags: ["入学準備","ランドセル","文房具"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1243",
+    slug: "bullying-signs-parent-guide",
+    title: "いじめのサインを見逃さない：親が気づくべき子どもの変化15",
+    excerpt: "いじめのサインを見逃さない：親が気づくべき子どもの変化15について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "いじめの防止等のための基本的な方針",
+                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1302904.htm",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "いじめ問題への対応",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どものメンタルヘルス",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":89,"reliability":29,"neutrality":22,"freshness":18,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/bullying-signs-parent-guide.jpg",
+    readingTime: 12,
+    tags: ["いじめ","サイン","親の気づき"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1246",
+    slug: "parent-stress-management-autumn",
+    title: "育児ストレスのセルフケア：親自身のメンタルを守る方法",
+    excerpt: "育児ストレスのセルフケア：親自身のメンタルを守る方法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["mental"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "子育て世代のメンタルヘルス",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "親支援プログラム",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/a_menu/shougai/katei/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":27,"neutrality":21,"freshness":18,"ageRelevance":11,"readability":6},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/parent-stress-management-autumn.jpg",
+    readingTime: 10,
+    tags: ["育児ストレス","セルフケア","メンタルヘルス"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1244",
+    slug: "school-refusal-winter-signs",
+    title: "冬前に増える不登校の兆候：早期発見と家庭でのサポート",
+    excerpt: "冬前に増える不登校の兆候：早期発見と家庭でのサポートについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "不登校への対応",
+                "url": "https://www.mext.go.jp/a_menu/shotou/futoukou/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "不登校児童生徒への支援",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          },
+          {
+                "title": "教育機会確保法",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立教育政策研究所などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":25,"neutrality":25,"freshness":17,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/school-refusal-winter-signs.jpg",
+    readingTime: 11,
+    tags: ["不登校","兆候","サポート"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1245",
+    slug: "self-esteem-building-activities",
+    title: "自己肯定感を育む日常の声かけ：「すごいね」以外の褒め方10選",
+    excerpt: "自己肯定感を育む日常の声かけ：「すごいね」以外の褒め方10選について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "こども家庭庁等の公的情報",
+      references: [
+          {
+                "title": "子どもの自己肯定感に関する調査",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心の育ち",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          },
+          {
+                "title": "生徒指導提要",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "こども家庭庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":27,"neutrality":20,"freshness":18,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/self-esteem-building-activities.jpg",
+    readingTime: 10,
+    tags: ["自己肯定感","声かけ","褒め方"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1242",
+    slug: "sibling-preparation-new-baby",
+    title: "きょうだいが増えるとき：上の子のケアと赤ちゃん返りへの対応",
+    excerpt: "きょうだいが増えるとき：上の子のケアと赤ちゃん返りへの対応について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "きょうだいの関係と発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "乳幼児の心の発達",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":84,"reliability":25,"neutrality":22,"freshness":17,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/sibling-preparation-new-baby.jpg",
+    readingTime: 10,
+    tags: ["きょうだい","赤ちゃん返り","上の子ケア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1247",
+    slug: "friendship-trouble-resolution",
+    title: "友達トラブルの対処法：親はどこまで介入すべき？年齢別ガイド",
+    excerpt: "友達トラブルの対処法：親はどこまで介入すべき？年齢別ガイドについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "国立教育政策研究所等の公的情報",
+      references: [
+          {
+                "title": "児童期の社会性発達",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの対人関係の支援",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校教育相談",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立教育政策研究所のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":22,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-04-27",
+    updatedAt: "2026-04-27",
+    imageUrl: "/articles/friendship-trouble-resolution.jpg",
+    readingTime: 11,
+    tags: ["友達トラブル","対人関係","介入"],
+    relatedArticleIds: [],
+  },
+  {
     id: "art-1222",
     slug: "kindergarten-adaptation-guide",
     title: "保育園・幼稚園の慣らし保育：泣く子への対応と適応のサイン",

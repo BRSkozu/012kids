@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-04-17",
-    "totalGenerated": 20
+    "lastGeneratedAt": "2026-04-27",
+    "totalGenerated": 30
   },
   "pools": {
     "seasonal": {
@@ -1678,6 +1678,16 @@
     "puberty-early-signs-girls",
     "puberty-early-signs-boys",
     "dual-income-summer-childcare",
-    "morning-routine-independent-kids"
+    "morning-routine-independent-kids",
+    "school-supply-preparation-guide",
+    "early-sleep-routine-spring",
+    "toilet-training-before-school",
+    "year-end-growth-review",
+    "sibling-preparation-new-baby",
+    "bullying-signs-parent-guide",
+    "school-refusal-winter-signs",
+    "self-esteem-building-activities",
+    "parent-stress-management-autumn",
+    "friendship-trouble-resolution"
   ]
 }

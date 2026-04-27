@@ -5,26 +5,26 @@
 ## サイト概要
 
 012.kidsは、子育て・教育に関する公的機関や専門家の情報を中立的な立場でまとめた情報サイトです。
-現在1237記事を掲載しています。
+現在1247記事を掲載しています。
 
 ## 対象年齢
 
-- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 292記事
-- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 418記事
-- [6〜8歳（低学年）](https://012.kids/age-guide/early): 267記事
-- [9〜10歳（中学年）](https://012.kids/age-guide/mid): 167記事
+- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 296記事
+- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 420記事
+- [6〜8歳（低学年）](https://012.kids/age-guide/early): 269記事
+- [9〜10歳（中学年）](https://012.kids/age-guide/mid): 169記事
 - [11〜12歳（高学年）](https://012.kids/age-guide/upper): 93記事
 
 ## カテゴリ
 
-- [発達・成長](https://012.kids/category/development): 195記事
+- [発達・成長](https://012.kids/category/development): 197記事
 - [食育・栄養](https://012.kids/category/nutrition): 149記事
 - [教育・学習](https://012.kids/category/education): 209記事
 - [健康・医療](https://012.kids/category/health): 271記事
-- [メンタル・心理](https://012.kids/category/mental): 132記事
+- [メンタル・心理](https://012.kids/category/mental): 137記事
 - [デジタル・メディア](https://012.kids/category/digital): 88記事
-- [社会・環境](https://012.kids/category/social): 191記事
-- [暮らし・家計](https://012.kids/category/lifestyle): 28記事
+- [社会・環境](https://012.kids/category/social): 192記事
+- [暮らし・家計](https://012.kids/category/lifestyle): 30記事
 - [妊娠・出産](https://012.kids/category/pregnancy): 91記事
 
 ## 主要ページ
@@ -38,6 +38,16 @@
 
 ## 記事一覧
 
+- [入園・入学前のトイレトレーニング：焦らず進める成功のコツ](https://012.kids/articles/toilet-training-before-school): 入園・入学前のトイレトレーニング：焦らず進める成功のコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でで...  (0〜2歳（乳児期）)
+- [1年間の成長をふりかえる：子どもの発達記録のつけ方](https://012.kids/articles/year-end-growth-review): 1年間の成長をふりかえる：子どもの発達記録のつけ方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対...  (0〜2歳（乳児期）)
+- [新年度に向けて「早寝早起き」を習慣化するステップ](https://012.kids/articles/early-sleep-routine-spring): 新年度に向けて「早寝早起き」を習慣化するステップについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応...  (3〜5歳（幼児期）)
+- [入学準備リスト完全版：ランドセルから文房具まで揃えるタイミング](https://012.kids/articles/school-supply-preparation-guide): 入学準備リスト完全版：ランドセルから文房具まで揃えるタイミングについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家...  (6〜8歳（低学年）)
+- [いじめのサインを見逃さない：親が気づくべき子どもの変化15](https://012.kids/articles/bullying-signs-parent-guide): いじめのサインを見逃さない：親が気づくべき子どもの変化15について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭で...  (9〜10歳（中学年）)
+- [育児ストレスのセルフケア：親自身のメンタルを守る方法](https://012.kids/articles/parent-stress-management-autumn): 育児ストレスのセルフケア：親自身のメンタルを守る方法について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる...  (0〜2歳（乳児期）)
+- [冬前に増える不登校の兆候：早期発見と家庭でのサポート](https://012.kids/articles/school-refusal-winter-signs): 冬前に増える不登校の兆候：早期発見と家庭でのサポートについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる...  (9〜10歳（中学年）)
+- [自己肯定感を育む日常の声かけ：「すごいね」以外の褒め方10選](https://012.kids/articles/self-esteem-building-activities): 自己肯定感を育む日常の声かけ：「すごいね」以外の褒め方10選について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭...  (3〜5歳（幼児期）)
+- [きょうだいが増えるとき：上の子のケアと赤ちゃん返りへの対応](https://012.kids/articles/sibling-preparation-new-baby): きょうだいが増えるとき：上の子のケアと赤ちゃん返りへの対応について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭で...  (0〜2歳（乳児期）)
+- [友達トラブルの対処法：親はどこまで介入すべき？年齢別ガイド](https://012.kids/articles/friendship-trouble-resolution): 友達トラブルの対処法：親はどこまで介入すべき？年齢別ガイドについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭で...  (6〜8歳（低学年）)
 - [保育園・幼稚園の慣らし保育：泣く子への対応と適応のサイン](https://012.kids/articles/kindergarten-adaptation-guide): よくある疑問に答えつつ、年齢に合った対応の目安を解説します。...  (0〜2歳（乳児期）)
 - [最新研究でわかった：遊びが子どもの脳を育てる科学的メカニズム](https://012.kids/articles/latest-research-play-and-brain): 3〜5歳のお子さんの子どもの発達・成長について、押さえておきたい基本と実践的なアドバイス。...  (3〜5歳（幼児期）)
 - [男の子の思春期の兆候：声変わり・体の成長と親のサポート](https://012.kids/articles/puberty-early-signs-boys): よくある疑問に答えつつ、年齢に合った対応の目安を解説します。...  (9〜10歳（中学年）)
