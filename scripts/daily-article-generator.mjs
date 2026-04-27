@@ -85,7 +85,96 @@ function getAvailableTopics(pool, limit) {
 }
 
 // ---------------------------------------------------------------------------
-// Article body template (same quality as existing articles)
+// Content variation data
+// ---------------------------------------------------------------------------
+const STAGE_INTROS = {
+  '0stage': '0〜2歳は心身の発達が最も著しい時期です。日々の成長に驚きながらも、初めての育児で不安を感じる保護者も少なくありません。この時期の関わり方が、その後の発達の土台となります。',
+  'pre': '3〜5歳の幼児期は、集団生活を通じて社会性を身につけ、言葉や運動能力が飛躍的に伸びる時期です。園生活と家庭のバランスを取りながら、子どもの「やりたい」という気持ちを大切にすることが重要です。',
+  'early': '小学校低学年（6〜8歳）は、学校という新しい環境で学びと友だち関係の基礎を築く時期です。学習習慣の定着や放課後の過ごし方など、保護者のサポートが子どもの自信につながります。',
+  'mid': '9〜10歳は「ギャングエイジ」とも呼ばれ、仲間関係が深まり自立心が芽生える時期です。学力の個人差も出始め、親子のコミュニケーションの取り方に工夫が必要になります。',
+  'upper': '11〜12歳は思春期の入り口であり、中学進学を見据えた準備期間です。心身の変化が大きく、プライバシーへの配慮やデジタルリテラシーの教育も重要なテーマとなります。',
+};
+
+const CATEGORY_RESOURCES = {
+  health: [
+    { name: 'かかりつけ小児科', desc: '日頃の健康相談から急な体調変化まで、最初に相談する窓口' },
+    { name: '子ども医療電話相談（#8000）', desc: '夜間・休日の急な症状について看護師に電話相談できる' },
+    { name: '保健センター', desc: '乳幼児健診や予防接種、発育相談を実施' },
+    { name: '小児専門病院', desc: '専門的な検査や治療が必要な場合の紹介先' },
+    { name: '学校保健室', desc: '学校生活での体調管理や健康教育の拠点' },
+  ],
+  mental: [
+    { name: 'スクールカウンセラー', desc: '学校に配置された心理の専門家。子どもも保護者も相談可能' },
+    { name: '児童相談所（189番）', desc: '子どもに関するあらゆる相談に対応する公的機関' },
+    { name: 'よりそいホットライン（0120-279-338）', desc: '24時間無料の電話相談。子育ての悩みにも対応' },
+    { name: '子どもの人権110番（0120-007-110）', desc: '法務局による子どもの人権に関する相談窓口' },
+    { name: '精神保健福祉センター', desc: '心の健康に関する専門的な相談・支援を行う機関' },
+  ],
+  education: [
+    { name: '教育相談センター', desc: '学習や進路、学校生活の悩みについて専門スタッフが対応' },
+    { name: '学校の担任・教頭', desc: '日常の学校生活に関する最も身近な相談先' },
+    { name: '教育委員会', desc: '学区・転校・特別支援など制度に関する問い合わせ先' },
+    { name: '家庭教育支援チーム', desc: '文科省事業として地域で活動する子育て支援の専門チーム' },
+    { name: '学習支援NPO', desc: '無料学習塾や放課後学習支援を提供する団体' },
+  ],
+  development: [
+    { name: '発達支援センター', desc: '発達に心配のある子どもの相談・療育を行う専門機関' },
+    { name: '乳幼児健診（保健センター）', desc: '定期健診で発達の経過を確認できる' },
+    { name: '療育施設', desc: '個別の発達課題に応じた専門的な支援プログラムを提供' },
+    { name: '児童発達支援事業所', desc: '未就学児向けの通所型発達支援サービス' },
+    { name: '小児神経科', desc: '発達障害や神経系の専門的な診療を行う医療機関' },
+  ],
+  nutrition: [
+    { name: 'かかりつけ小児科', desc: '食事量や栄養状態、アレルギーについて相談できる' },
+    { name: '管理栄養士（保健センター）', desc: '離乳食や偏食、食事バランスの個別アドバイス' },
+    { name: '食物アレルギー相談窓口', desc: 'アレルギー対応の食事指導や生活管理の専門相談' },
+    { name: '学校栄養士', desc: '給食のアレルギー対応や食育について相談できる' },
+    { name: '子育て支援センター', desc: '離乳食講座や食育イベントを定期的に開催' },
+  ],
+  digital: [
+    { name: 'こどもの安全ネット（総務省）', desc: 'インターネットの安全利用に関する情報と相談' },
+    { name: 'e-ネットキャラバン', desc: 'ネットリテラシー教育の出前講座を学校や地域で実施' },
+    { name: '警察サイバー相談窓口', desc: 'ネット犯罪やトラブルに関する専門相談' },
+    { name: 'フィルタリング相談', desc: '携帯キャリアや専門機関で設定方法を案内' },
+    { name: '学校ICT担当', desc: 'GIGAスクール端末の使い方やルールについて' },
+  ],
+  social: [
+    { name: '民生委員・児童委員', desc: '地域の身近な相談役。子育て支援の情報提供も' },
+    { name: '子育て支援センター', desc: '親子の交流や育児相談、情報提供の拠点' },
+    { name: 'ファミリーサポートセンター', desc: '送迎や一時預かりなど地域の相互援助活動' },
+    { name: '地域包括支援センター', desc: '多世代の暮らしの相談に対応する総合窓口' },
+    { name: '社会福祉協議会', desc: '生活支援や福祉サービスの総合相談窓口' },
+  ],
+  lifestyle: [
+    { name: 'かかりつけ小児科', desc: '生活習慣に起因する体調の変化を相談できる' },
+    { name: '保健センター', desc: '生活リズムや運動習慣に関する保健指導' },
+    { name: '子育て支援センター', desc: '日常の育児の悩みを気軽に相談できる場所' },
+    { name: '学校保健室', desc: '睡眠や食事など生活習慣の相談に対応' },
+    { name: '栄養士相談（自治体）', desc: '食事と生活リズムの改善アドバイス' },
+  ],
+  pregnancy: [
+    { name: '産婦人科', desc: '妊娠・出産に関する医学的な相談の最優先窓口' },
+    { name: '助産師外来', desc: '妊娠中の体調管理や出産準備の相談' },
+    { name: '母子保健窓口（市区町村）', desc: '母子手帳の交付や妊婦健診の案内' },
+    { name: '妊婦相談ダイヤル', desc: '自治体が運営する妊娠・出産の電話相談' },
+    { name: '産後ケアセンター', desc: '産後の体調回復と育児スタートをサポート' },
+  ],
+};
+
+const CATEGORY_COMPARISONS = {
+  health: { dim1: '予防と対策', dim2: '受診の目安', dim3: '家庭での経過観察' },
+  mental: { dim1: '心の発達への影響', dim2: '家庭での関わり方', dim3: '専門家介入のタイミング' },
+  education: { dim1: '学習効果', dim2: '家庭学習との連携', dim3: '費用対効果' },
+  development: { dim1: '発達の個人差', dim2: '支援の必要性', dim3: '将来的な見通し' },
+  nutrition: { dim1: '栄養バランス', dim2: '食習慣の形成', dim3: 'アレルギーへの配慮' },
+  digital: { dim1: 'デジタル活用の効果', dim2: '利用時間の管理', dim3: 'リスクへの対策' },
+  social: { dim1: '社会性の発達', dim2: '地域との関わり', dim3: '安全面の配慮' },
+  lifestyle: { dim1: '生活リズムへの影響', dim2: '家族全体の取り組み', dim3: '継続のしやすさ' },
+  pregnancy: { dim1: '母体への影響', dim2: '胎児の発育', dim3: '産後の準備' },
+};
+
+// ---------------------------------------------------------------------------
+// Article body generator (varied by stage + category + topic)
 // ---------------------------------------------------------------------------
 function generateArticleBody(topic) {
   const refsFormatted = topic.refs.map(r => `- [${r.title}](${r.url})（${r.org}）`).join('\n');
@@ -240,28 +329,31 @@ const today = new Date().toISOString().split('T')[0];
 console.log(`\n📅 ${today} | 月: ${month}月 | 季節キー: ${seasonalKey}`);
 console.log(`📝 生成予定: ${DAILY_COUNT}件${DRY_RUN ? ' (dry-run)' : ''}\n`);
 
-// Collect topics from 3 pools with priority allocation
+// Collect topics from all pools with priority allocation
 const seasonalPool = db.pools.seasonal.topics[seasonalKey] ?? [];
+const featuresPool = db.pools.features?.topics ?? [];
 const variationPool = db.pools.variations.topics;
 const evergreenPool = db.pools.evergreen.topics;
 
-// Allocation: seasonal 50%, variation 30%, evergreen 20%
-const seasonalCount = Math.ceil(DAILY_COUNT * 0.5);
-const variationCount = Math.ceil(DAILY_COUNT * 0.3);
-const evergreenCount = DAILY_COUNT - seasonalCount - variationCount;
+// Allocation: seasonal 40%, features 30%, variation 20%, evergreen 10%
+const seasonalCount = Math.ceil(DAILY_COUNT * 0.4);
+const featuresCount = Math.ceil(DAILY_COUNT * 0.3);
+const variationCount = Math.ceil(DAILY_COUNT * 0.2);
+const evergreenCount = DAILY_COUNT - seasonalCount - featuresCount - variationCount;
 
 const selectedSeasonal = getAvailableTopics(seasonalPool, seasonalCount);
+const selectedFeatures = getAvailableTopics(featuresPool, featuresCount);
 const selectedVariation = getAvailableTopics(variationPool, variationCount);
 const selectedEvergreen = getAvailableTopics(evergreenPool, evergreenCount);
 
-// If any pool is short, fill from others
-let allSelected = [...selectedSeasonal, ...selectedVariation, ...selectedEvergreen];
-const remaining = DAILY_COUNT - allSelected.length;
+let allSelected = [...selectedSeasonal, ...selectedFeatures, ...selectedVariation, ...selectedEvergreen];
+let remaining = DAILY_COUNT - allSelected.length;
 
 if (remaining > 0) {
-  // Fill from any available pool
-  const allPools = [...seasonalPool, ...variationPool, ...evergreenPool];
-  const extras = allPools
+  // Fallback: pull from ALL seasonal pools (not just current month)
+  const allSeasonalTopics = Object.values(db.pools.seasonal.topics).flat();
+  const allPoolTopics = [...allSeasonalTopics, ...featuresPool, ...variationPool, ...evergreenPool];
+  const extras = allPoolTopics
     .filter(t => !isAlreadyGenerated(t.slug) && !articleFileExists(t.slug, t.category))
     .filter(t => !allSelected.some(s => s.slug === t.slug))
     .slice(0, remaining);
