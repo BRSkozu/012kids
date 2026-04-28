@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-04-27",
-    "totalGenerated": 30
+    "lastGeneratedAt": "2026-04-28",
+    "totalGenerated": 40
   },
   "pools": {
     "seasonal": {
@@ -1688,6 +1688,16 @@
     "school-refusal-winter-signs",
     "self-esteem-building-activities",
     "parent-stress-management-autumn",
-    "friendship-trouble-resolution"
+    "friendship-trouble-resolution",
+    "outdoor-play-physical-development",
+    "rainy-season-indoor-activities",
+    "food-poisoning-prevention-lunch",
+    "sunscreen-kids-safe-choice",
+    "picky-eating-summer-appetite",
+    "summer-vacation-schedule-kids",
+    "water-safety-kids-guide",
+    "free-research-ideas-elementary",
+    "heatstroke-prevention-kids",
+    "screen-time-summer-rules"
   ]
 }

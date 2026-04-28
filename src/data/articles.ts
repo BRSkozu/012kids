@@ -6,6 +6,446 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1257",
+    slug: "screen-time-summer-rules",
+    title: "夏休みのゲーム・動画ルール作り：子どもと一緒に決める時間管理",
+    excerpt: "夏休みのゲーム・動画ルール作り：子どもと一緒に決める時間管理について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "mid",
+    categories: ["digital"],
+    source: {
+      name: "こども家庭庁等の公的情報",
+      references: [
+          {
+                "title": "インターネット利用環境整備",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "cautious"
+          },
+          {
+                "title": "子供のICT利活用",
+                "url": "https://www.soumu.go.jp/",
+                "org": "総務省",
+                "stance": "neutral"
+          },
+          {
+                "title": "メディアと子ども",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "こども家庭庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "こども家庭庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":79,"reliability":22,"neutrality":23,"freshness":15,"ageRelevance":14,"readability":5},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/screen-time-summer-rules.jpg",
+    readingTime: 10,
+    tags: ["スクリーンタイム","ゲーム","夏休み"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1255",
+    slug: "free-research-ideas-elementary",
+    title: "小学生の自由研究テーマ30選：1日でできる〜じっくり型まで",
+    excerpt: "小学生の自由研究テーマ30選：1日でできる〜じっくり型までについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "探究的な学習について",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "理科教育の充実",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          },
+          {
+                "title": "科学技術と子ども",
+                "url": "https://www.jst.go.jp/",
+                "org": "科学技術振興機構",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":26,"neutrality":25,"freshness":15,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/free-research-ideas-elementary.jpg",
+    readingTime: 12,
+    tags: ["自由研究","夏休み","探究学習"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1249",
+    slug: "rainy-season-indoor-activities",
+    title: "梅雨の室内遊びアイデア15選：体を動かす知育遊びで退屈知らず",
+    excerpt: "梅雨の室内遊びアイデア15選：体を動かす知育遊びで退屈知らずについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "幼児期の遊びと学び",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの創造性と遊び",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "運動遊びの重要性",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":28,"neutrality":23,"freshness":18,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/rainy-season-indoor-activities.jpg",
+    readingTime: 9,
+    tags: ["室内遊び","梅雨","知育"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1256",
+    slug: "heatstroke-prevention-kids",
+    title: "子どもの熱中症を防ぐ：症状の見分け方と応急処置",
+    excerpt: "子どもの熱中症を防ぐ：症状の見分け方と応急処置について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "環境省等の公的情報",
+      references: [
+          {
+                "title": "熱中症予防情報サイト",
+                "url": "https://www.wbgt.env.go.jp/",
+                "org": "環境省",
+                "stance": "cautious"
+          },
+          {
+                "title": "熱中症の対応",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/nettyuu/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "小児の熱中症",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "環境省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "環境省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":86,"reliability":28,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/heatstroke-prevention-kids.jpg",
+    readingTime: 9,
+    tags: ["熱中症","水分補給","応急処置"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1248",
+    slug: "outdoor-play-physical-development",
+    title: "外遊びが育てる体と心：幼児期に必要な運動量と遊びの工夫",
+    excerpt: "外遊びが育てる体と心：幼児期に必要な運動量と遊びの工夫について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "幼児期運動指針",
+                "url": "https://www.mext.go.jp/a_menu/sports/undousisin/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの体力向上",
+                "url": "https://www.mext.go.jp/a_menu/sports/kodomo/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "小児の運動と発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":80,"reliability":26,"neutrality":20,"freshness":17,"ageRelevance":11,"readability":6},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/outdoor-play-physical-development.jpg",
+    readingTime: 10,
+    tags: ["外遊び","運動発達","体力"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1251",
+    slug: "sunscreen-kids-safe-choice",
+    title: "子どもの日焼け止め選び：肌に優しい成分と正しい塗り方",
+    excerpt: "子どもの日焼け止め選び：肌に優しい成分と正しい塗り方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "環境省等の公的情報",
+      references: [
+          {
+                "title": "紫外線環境保健マニュアル",
+                "url": "https://www.env.go.jp/chemi/uv/uv_manual.html",
+                "org": "環境省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの皮膚と紫外線",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "皮膚科Q&A",
+                "url": "https://www.dermatol.or.jp/",
+                "org": "日本皮膚科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "環境省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":88,"reliability":27,"neutrality":25,"freshness":15,"ageRelevance":13,"readability":8},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/sunscreen-kids-safe-choice.jpg",
+    readingTime: 8,
+    tags: ["日焼け止め","紫外線","肌ケア"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1254",
+    slug: "water-safety-kids-guide",
+    title: "子どもの水の事故を防ぐ：プール・海・川での安全ルール",
+    excerpt: "子どもの水の事故を防ぐ：プール・海・川での安全ルールについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "こども家庭庁等の公的情報",
+      references: [
+          {
+                "title": "子どもの事故防止",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "cautious"
+          },
+          {
+                "title": "水難事故の予防",
+                "url": "https://www.fdma.go.jp/",
+                "org": "消防庁",
+                "stance": "cautious"
+          },
+          {
+                "title": "学校水泳指導の安全",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "こども家庭庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "こども家庭庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":84,"reliability":23,"neutrality":22,"freshness":19,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/water-safety-kids-guide.jpg",
+    readingTime: 10,
+    tags: ["水の事故","安全","プール"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1253",
+    slug: "summer-vacation-schedule-kids",
+    title: "夏休みのスケジュール管理：ダラダラしない計画の立て方",
+    excerpt: "夏休みのスケジュール管理：ダラダラしない計画の立て方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "子どもの生活習慣",
+                "url": "https://www.mext.go.jp/a_menu/shougai/asagohan/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "睡眠と生活リズム",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/suimin/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの自律性を育てる",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/summer-vacation-schedule-kids.jpg",
+    readingTime: 9,
+    tags: ["夏休み","スケジュール","生活リズム"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1250",
+    slug: "food-poisoning-prevention-lunch",
+    title: "気温上昇期のお弁当食中毒対策：安全な作り方と保存のコツ",
+    excerpt: "気温上昇期のお弁当食中毒対策：安全な作り方と保存のコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["nutrition"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "食中毒予防のポイント",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/",
+                "org": "厚生労働省",
+                "stance": "cautious"
+          },
+          {
+                "title": "食品の安全に関する情報",
+                "url": "https://www.fsc.go.jp/",
+                "org": "食品安全委員会",
+                "stance": "cautious"
+          },
+          {
+                "title": "学校給食の衛生管理",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "厚生労働省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":89,"reliability":28,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/food-poisoning-prevention-lunch.jpg",
+    readingTime: 8,
+    tags: ["食中毒","お弁当","衛生管理"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1252",
+    slug: "picky-eating-summer-appetite",
+    title: "夏バテで食欲がない子への対応：栄養を確保する工夫と声かけ",
+    excerpt: "夏バテで食欲がない子への対応：栄養を確保する工夫と声かけについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["nutrition"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "乳幼児栄養調査",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000134208.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの食と健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "食育推進",
+                "url": "https://www.maff.go.jp/j/syokuiku/",
+                "org": "農林水産省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "農林水産省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":79,"reliability":24,"neutrality":21,"freshness":16,"ageRelevance":11,"readability":7},
+    publishedAt: "2026-04-28",
+    updatedAt: "2026-04-28",
+    imageUrl: "/articles/picky-eating-summer-appetite.jpg",
+    readingTime: 9,
+    tags: ["食欲不振","夏バテ","栄養"],
+    relatedArticleIds: [],
+  },
+  {
     id: "art-1240",
     slug: "toilet-training-before-school",
     title: "入園・入学前のトイレトレーニング：焦らず進める成功のコツ",
