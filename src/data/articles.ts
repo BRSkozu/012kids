@@ -6,6 +6,446 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1262",
+    slug: "art-creativity-kids-autumn",
+    title: "芸術の秋：子どもの創造力を引き出すアート活動と関わり方",
+    excerpt: "芸術の秋：子どもの創造力を引き出すアート活動と関わり方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "幼児期の造形活動",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの表現と発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "文化芸術による子育て支援",
+                "url": "https://www.bunka.go.jp/",
+                "org": "文化庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":26,"neutrality":20,"freshness":16,"ageRelevance":12,"readability":8},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/art-creativity-kids-autumn.jpg",
+    readingTime: 9,
+    tags: ["創造力","アート","表現活動"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1260",
+    slug: "autumn-study-habits-upper",
+    title: "秋からの学習習慣づくり：中学受験・高学年の勉強計画",
+    excerpt: "秋からの学習習慣づくり：中学受験・高学年の勉強計画について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["education"],
+    source: {
+      name: "国立教育政策研究所等の公的情報",
+      references: [
+          {
+                "title": "学力と学習状況調査",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭学習の手引き",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの学習意欲",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立教育政策研究所のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":12,"readability":5},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/autumn-study-habits-upper.jpg",
+    readingTime: 11,
+    tags: ["学習習慣","受験","勉強計画"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1258",
+    slug: "reading-habit-autumn-guide",
+    title: "読書の秋：子どもが本好きになる環境づくりと声かけ",
+    excerpt: "読書の秋：子どもが本好きになる環境づくりと声かけについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "子どもの読書活動の推進",
+                "url": "https://www.mext.go.jp/a_menu/shotou/dokusho/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "読書と学力の関係",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの言語発達と読書",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":29,"neutrality":22,"freshness":17,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/reading-habit-autumn-guide.jpg",
+    readingTime: 10,
+    tags: ["読書","読み聞かせ","読書習慣"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1266",
+    slug: "dry-skin-kids-winter-care",
+    title: "冬の子どもの乾燥肌対策：保湿の基本とスキンケア",
+    excerpt: "冬の子どもの乾燥肌対策：保湿の基本とスキンケアについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "日本皮膚科学会等の公的情報",
+      references: [
+          {
+                "title": "アトピー性皮膚炎診療ガイドライン",
+                "url": "https://www.dermatol.or.jp/",
+                "org": "日本皮膚科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの皮膚トラブル",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児皮膚疾患",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "日本皮膚科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":29,"neutrality":21,"freshness":19,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/dry-skin-kids-winter-care.jpg",
+    readingTime: 8,
+    tags: ["乾燥肌","スキンケア","保湿"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1261",
+    slug: "seasonal-flu-preparation-kids",
+    title: "インフルエンザの季節到来：予防接種のタイミングと家庭でできる対策",
+    excerpt: "インフルエンザの季節到来：予防接種のタイミングと家庭でできる対策について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "インフルエンザ対策",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/influenza/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "インフルエンザ情報",
+                "url": "https://www.niid.go.jp/niid/ja/flu-map.html",
+                "org": "国立感染症研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児の予防接種",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "日本小児科学会などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/seasonal-flu-preparation-kids.jpg",
+    readingTime: 10,
+    tags: ["インフルエンザ","予防接種","感染症"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1259",
+    slug: "sports-day-preparation-kids",
+    title: "運動会で活躍したい！子どもの走り方・体力づくりのコツ",
+    excerpt: "運動会で活躍したい！子どもの走り方・体力づくりのコツについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["health"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "体力向上の推進",
+                "url": "https://www.mext.go.jp/a_menu/sports/kodomo/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "全国体力・運動能力調査",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの運動器の健康",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":28,"neutrality":22,"freshness":16,"ageRelevance":14,"readability":5},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/sports-day-preparation-kids.jpg",
+    readingTime: 9,
+    tags: ["運動会","体力づくり","走り方"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1263",
+    slug: "winter-cold-prevention-family",
+    title: "家族で風邪予防：手洗い・うがい・免疫力アップの食事術",
+    excerpt: "家族で風邪予防：手洗い・うがい・免疫力アップの食事術について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "感染症予防の基本",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/influenza/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "感染症情報",
+                "url": "https://www.niid.go.jp/niid/ja/",
+                "org": "国立感染症研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの免疫と栄養",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":84,"reliability":27,"neutrality":22,"freshness":18,"ageRelevance":11,"readability":6},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/winter-cold-prevention-family.jpg",
+    readingTime: 9,
+    tags: ["風邪予防","免疫力","手洗い"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1267",
+    slug: "winter-exercise-indoor-kids",
+    title: "冬の運動不足を解消：家の中でできる体力づくりメニュー",
+    excerpt: "冬の運動不足を解消：家の中でできる体力づくりメニューについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["health"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "子どもの体力向上",
+                "url": "https://www.mext.go.jp/a_menu/sports/kodomo/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "幼児期運動指針",
+                "url": "https://www.mext.go.jp/a_menu/sports/undousisin/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "運動器の健康",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":27,"neutrality":24,"freshness":17,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/winter-exercise-indoor-kids.jpg",
+    readingTime: 9,
+    tags: ["運動不足","室内運動","冬"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1265",
+    slug: "new-year-money-education",
+    title: "お年玉で学ぶお金の教育：年齢別の管理と使い方ガイド",
+    excerpt: "お年玉で学ぶお金の教育：年齢別の管理と使い方ガイドについて、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "金融広報中央委員会等の公的情報",
+      references: [
+          {
+                "title": "金融リテラシー教育",
+                "url": "https://www.shiruporuto.jp/",
+                "org": "金融広報中央委員会",
+                "stance": "positive"
+          },
+          {
+                "title": "消費者教育の推進",
+                "url": "https://www.caa.go.jp/policies/policy/consumer_education/",
+                "org": "消費者庁",
+                "stance": "positive"
+          },
+          {
+                "title": "学校における金融教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "金融広報中央委員会などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "金融広報中央委員会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":27,"neutrality":20,"freshness":18,"ageRelevance":12,"readability":8},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/new-year-money-education.jpg",
+    readingTime: 9,
+    tags: ["お年玉","金銭教育","お金の管理"],
+    relatedArticleIds: [],
+  },
+  {
+    id: "art-1264",
+    slug: "exam-stress-support-parents",
+    title: "受験期の子どもを支える：プレッシャーを和らげる親の関わり方",
+    excerpt: "受験期の子どもを支える：プレッシャーを和らげる親の関わり方について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。",
+    content: '',
+    stage: "upper",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "中学校入学者選抜",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どものストレス対処",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "受験期の心身の健康",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":81,"reliability":24,"neutrality":21,"freshness":17,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-04-29",
+    updatedAt: "2026-04-29",
+    imageUrl: "/articles/exam-stress-support-parents.jpg",
+    readingTime: 11,
+    tags: ["受験","ストレス","親のサポート"],
+    relatedArticleIds: [],
+  },
+  {
     id: "art-1257",
     slug: "screen-time-summer-rules",
     title: "夏休みのゲーム・動画ルール作り：子どもと一緒に決める時間管理",

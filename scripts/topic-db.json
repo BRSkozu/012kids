@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-04-28",
-    "totalGenerated": 40
+    "lastGeneratedAt": "2026-04-29",
+    "totalGenerated": 50
   },
   "pools": {
     "seasonal": {
@@ -1698,6 +1698,16 @@
     "water-safety-kids-guide",
     "free-research-ideas-elementary",
     "heatstroke-prevention-kids",
-    "screen-time-summer-rules"
+    "screen-time-summer-rules",
+    "reading-habit-autumn-guide",
+    "sports-day-preparation-kids",
+    "autumn-study-habits-upper",
+    "seasonal-flu-preparation-kids",
+    "art-creativity-kids-autumn",
+    "winter-cold-prevention-family",
+    "exam-stress-support-parents",
+    "new-year-money-education",
+    "dry-skin-kids-winter-care",
+    "winter-exercise-indoor-kids"
   ]
 }

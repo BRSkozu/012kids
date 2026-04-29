@@ -107,6 +107,146 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/art-creativity-kids-autumn</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>芸術の秋：子どもの創造力を引き出すアート活動と関わり方</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/autumn-study-habits-upper</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>秋からの学習習慣づくり：中学受験・高学年の勉強計画</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/reading-habit-autumn-guide</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>読書の秋：子どもが本好きになる環境づくりと声かけ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/dry-skin-kids-winter-care</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>冬の子どもの乾燥肌対策：保湿の基本とスキンケア</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/seasonal-flu-preparation-kids</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>インフルエンザの季節到来：予防接種のタイミングと家庭でできる対策</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/sports-day-preparation-kids</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>運動会で活躍したい！子どもの走り方・体力づくりのコツ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/winter-cold-prevention-family</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>家族で風邪予防：手洗い・うがい・免疫力アップの食事術</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/winter-exercise-indoor-kids</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>冬の運動不足を解消：家の中でできる体力づくりメニュー</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/new-year-money-education</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>お年玉で学ぶお金の教育：年齢別の管理と使い方ガイド</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/exam-stress-support-parents</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-29</news:publication_date>
+      <news:title>受験期の子どもを支える：プレッシャーを和らげる親の関わり方</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://012.kids/articles/screen-time-summer-rules</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -251,140 +391,60 @@
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>入園・入学前のトイレトレーニング：焦らず進める成功のコツ</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/year-end-growth-review</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>1年間の成長をふりかえる：子どもの発達記録のつけ方</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/early-sleep-routine-spring</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>新年度に向けて「早寝早起き」を習慣化するステップ</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/school-supply-preparation-guide</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>入学準備リスト完全版：ランドセルから文房具まで揃えるタイミング</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/bullying-signs-parent-guide</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>いじめのサインを見逃さない：親が気づくべき子どもの変化15</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/parent-stress-management-autumn</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>育児ストレスのセルフケア：親自身のメンタルを守る方法</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/school-refusal-winter-signs</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>冬前に増える不登校の兆候：早期発見と家庭でのサポート</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/self-esteem-building-activities</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>自己肯定感を育む日常の声かけ：「すごいね」以外の褒め方10選</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sibling-preparation-new-baby</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>きょうだいが増えるとき：上の子のケアと赤ちゃん返りへの対応</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/friendship-trouble-resolution</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-27</news:publication_date>
-      <news:title>友達トラブルの対処法：親はどこまで介入すべき？年齢別ガイド</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/kindergarten-adaptation-guide</loc>
