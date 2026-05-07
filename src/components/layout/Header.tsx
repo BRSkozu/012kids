@@ -167,7 +167,7 @@ export default function Header() {
             <div className="mt-4 pt-4 border-t border-[var(--color-paper-edge)] space-y-1">
               {[
                 { href: '/articles', label: '記事一覧' },
-                { href: '/experts', label: '編集部について' },
+                { href: '/editorial-team', label: '編集部について' },
                 { href: '/about', label: 'このサイトについて' },
                 { href: '/editorial-policy', label: '編集方針' },
                 { href: '/contact', label: 'お問い合わせ' },

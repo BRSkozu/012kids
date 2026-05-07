@@ -271,12 +271,49 @@ export default async function ArticlePage({ params }: PageProps) {
         {/* Main content */}
         <div className="flex-1 min-w-0">
 
-      <div className="flex items-center gap-3 mb-6 mt-2">
-        <FavoriteButton slug={article.slug} variant="button" />
-        <div className="p-2.5 bg-[var(--color-warm-cream)] rounded-lg text-xs text-[var(--color-foreground-soft)] border border-[var(--color-paper-edge)] leading-relaxed flex-1">
-          この記事は、公的機関・専門家・研究機関などの情報をもとに編集部が独自にまとめたものです。
+      {/* Trust & Source Box */}
+      <div className="mb-6 mt-2 bg-[var(--color-warm-cream)] rounded-xl border border-[var(--color-paper-edge)] p-4">
+        <div className="flex items-start gap-3">
+          <FavoriteButton slug={article.slug} variant="button" />
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="inline-flex items-center gap-1 text-xs font-medium text-[var(--color-primary-dark)] bg-[var(--color-primary)]/10 px-2 py-0.5 rounded-full">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                情報の信頼性
+              </span>
+            </div>
+            <p className="text-xs text-[var(--color-foreground)] leading-relaxed mb-2">
+              <strong>情報源：</strong>{article.source?.name || '公的機関の発信情報'}
+            </p>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-[var(--color-foreground-muted)]">
+              <span>作成：012.kids 編集部</span>
+              <span>公開日：{article.publishedAt}</span>
+              {article.updatedAt !== article.publishedAt && <span>最終確認：{article.updatedAt}</span>}
+              {article.source?.references && article.source.references.length > 0 && (
+                <span>参考文献：{article.source.references.length}件</span>
+              )}
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Medical Alert Box for health/development articles */}
+      {(article.categories.includes('health') || article.categories.includes('development')) && (
+        <div className="mb-6 rounded-xl border-l-4 border-red-400 bg-red-50 p-4">
+          <div className="flex items-start gap-2">
+            <span className="text-red-500 text-lg leading-none mt-0.5">&#9888;</span>
+            <div>
+              <p className="text-sm font-bold text-red-800 mb-1">受診の目安</p>
+              <ul className="text-xs text-red-700 leading-relaxed space-y-0.5">
+                <li>高熱が続く・ぐったりしている・水分が取れない場合は<strong>すぐに受診</strong></li>
+                <li>症状が3日以上改善しない場合は<strong>かかりつけ医に相談</strong></li>
+                <li>夜間・休日の急な症状は<strong>#8000（子ども医療電話相談）</strong>へ</li>
+              </ul>
+              <p className="text-[11px] text-red-600 mt-2">この記事は情報提供を目的としたものであり、医療上の助言ではありません。</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Share Buttons (top) */}
       <div className="mb-6">

@@ -12,36 +12,56 @@ const WORRY_CARDS = [
     label: '夜泣き・睡眠',
     href: '/articles/baby-sleep-training',
     image: `${bp}/photos/worry-sleep.webp`,
+    emoji: '🌙',
   },
   {
     id: 'food',
     label: '偏食・食事',
     href: '/category/nutrition',
     image: `${bp}/photos/worry-food.webp`,
+    emoji: '🍽️',
   },
   {
     id: 'language',
     label: 'ことばの発達',
     href: '/articles/two-word-sentence-delay',
     image: `${bp}/photos/worry-language.webp`,
+    emoji: '💬',
   },
   {
     id: 'friends',
     label: '友だち・学校',
     href: '/category/mental',
     image: `${bp}/photos/worry-friends.webp`,
+    emoji: '👫',
   },
   {
     id: 'screen',
     label: 'ゲーム・スマホ',
     href: '/category/digital',
     image: `${bp}/photos/worry-screen.webp`,
+    emoji: '📱',
   },
   {
     id: 'development',
     label: '発達の遅れ',
     href: '/category/development',
     image: `${bp}/photos/worry-development.webp`,
+    emoji: '🌱',
+  },
+  {
+    id: 'sho1wall',
+    label: '小1の壁',
+    href: '/search?q=%E5%B0%8F1%E3%81%AE%E5%A3%81',
+    image: `${bp}/photos/worry-friends.webp`,
+    emoji: '🏫',
+  },
+  {
+    id: 'gakudo',
+    label: '学童・放課後',
+    href: '/search?q=%E5%AD%A6%E7%AB%A5',
+    image: `${bp}/photos/worry-screen.webp`,
+    emoji: '🎒',
   },
 ];
 
@@ -66,7 +86,7 @@ export default function WorryCardSection() {
           今困っているテーマから、すぐに情報を見つけられます。
         </p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {WORRY_CARDS.map((card) => (
           <Link
             key={card.id}

@@ -66,11 +66,11 @@ export default function HomePage() {
         </section>
       )}
 
+      {/* お悩みから探す — 悩みベースの導線を最優先に */}
+      <WorryCardSection />
+
       {/* First Time User Section */}
       <FirstTimeSection />
-
-      {/* お悩みから探す */}
-      <WorryCardSection />
 
       {/* 直近の閲覧履歴 (localStorage) */}
       <RecentlyViewed />

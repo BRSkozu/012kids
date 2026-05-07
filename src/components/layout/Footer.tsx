@@ -103,7 +103,7 @@ export default function Footer() {
               {[
                 { href: '/about', label: 'このサイトについて' },
                 { href: '/editorial-policy', label: '編集方針' },
-                { href: '/experts', label: '編集部について' },
+                { href: '/editorial-team', label: '編集部について' },
                 { href: '/contact', label: 'お問い合わせ・訂正依頼' },
                 { href: '/privacy', label: 'プライバシーポリシー' },
                 { href: '/terms', label: '利用規約' },

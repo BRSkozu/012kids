@@ -390,7 +390,7 @@ function generateMdx(topic, id, today) {
 id: "art-${String(id).padStart(4, '0')}"
 slug: "${topic.slug}"
 title: "${topic.title}"
-excerpt: "${topic.title}について、公的機関や専門家の情報をもとにわかりやすくまとめました。さまざまな見方を比較しながら、家庭でできる対応を解説します。"
+excerpt: "${topic.title}を${topic.refs[0].org}等の公的情報をもとに解説。${topic.tags[0]}の基礎知識から家庭でできる対応、相談先まで${{ '0stage': '0〜2歳', 'pre': '3〜5歳', 'early': '6〜8歳', 'mid': '9〜10歳', 'upper': '11〜12歳' }[topic.stage]}の保護者向けにまとめました。"
 stage: "${topic.stage}"
 categories:
   - ${topic.category}
