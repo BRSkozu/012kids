@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 import Fuse from 'fuse.js';
@@ -32,6 +32,12 @@ function SearchContent() {
   const [selectedStage, setSelectedStage] = useState<AgeStage | 'all'>('all');
   const [selectedCategory, setSelectedCategory] = useState<ContentCategory | 'all'>('all');
   const [tab, setTab] = useState<'keyword' | 'worry'>(initialTab);
+
+  useEffect(() => {
+    document.title = tab === 'worry'
+      ? 'お悩みから探す | 012キッズ'
+      : '記事を検索 | 012キッズ';
+  }, [tab]);
 
   const results = useMemo(() => {
     if (!query.trim() && selectedStage === 'all' && selectedCategory === 'all') {
