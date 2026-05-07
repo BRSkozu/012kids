@@ -53,14 +53,14 @@ const WORRY_CARDS = [
     id: 'sho1wall',
     label: '小1の壁',
     href: '/search?q=%E5%B0%8F1%E3%81%AE%E5%A3%81',
-    image: `${bp}/photos/worry-friends.webp`,
+    image: `${bp}/photos/worry-sho1wall.webp`,
     emoji: '🏫',
   },
   {
     id: 'gakudo',
     label: '学童・放課後',
     href: '/search?q=%E5%AD%A6%E7%AB%A5',
-    image: `${bp}/photos/worry-screen.webp`,
+    image: `${bp}/photos/worry-gakudo.webp`,
     emoji: '🎒',
   },
 ];
