@@ -33,8 +33,39 @@ export default function WorrySearch() {
     return ARTICLES.find((a) => a.id === id)?.slug ?? '';
   };
 
+  const FEATURE_CLUSTERS = [
+    { label: '学童・放課後', query: '学童', emoji: '🎒' },
+    { label: '小1の壁', query: '小1', emoji: '🏫' },
+    { label: '保育園', query: '保育園', emoji: '🧸' },
+    { label: '幼稚園', query: '幼稚園', emoji: '🌷' },
+    { label: '受験', query: '受験', emoji: '📝' },
+    { label: '塾選び', query: '塾', emoji: '📚' },
+    { label: '習い事', query: '習い事', emoji: '🎹' },
+  ];
+
   return (
     <div>
+      {/* Feature clusters */}
+      <div className="mb-6">
+        <p className="text-xs font-medium text-[var(--color-foreground-muted)] mb-2">特集テーマから探す</p>
+        <div className="flex flex-wrap gap-2">
+          {FEATURE_CLUSTERS.map((cluster) => (
+            <button
+              key={cluster.label}
+              onClick={() => setQuery(cluster.query)}
+              className={`inline-flex items-center gap-1.5 text-sm px-3.5 py-2 rounded-xl transition-colors ${
+                query === cluster.query
+                  ? 'bg-[var(--color-primary)] text-white'
+                  : 'bg-[var(--color-surface)] border border-[var(--color-paper-edge)] text-[var(--color-foreground)] hover:border-[var(--color-primary-light)] hover:shadow-sm'
+              }`}
+            >
+              <span>{cluster.emoji}</span>
+              <span style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}>{cluster.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Search input */}
       <div className="relative mb-4">
         <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--color-foreground-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
