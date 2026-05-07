@@ -263,7 +263,7 @@ async function generateOgpImage(article, logoBuffer) {
 
   await base
     .composite(composites)
-    .png({ quality: 85 })
+    .png({ palette: true, quality: 80, compressionLevel: 9, effort: 7 })
     .toFile(path.join(OGP_DIR, `${article.slug}.png`));
 }
 

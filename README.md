@@ -28,7 +28,7 @@
 - 記事詳細 (出典表示・品質スコア・関連記事)
 - 年齢別ガイドページ
 - 全文検索 (年齢・カテゴリフィルタ)
-- 専門家紹介ページ
+- 編集部紹介ページ（`/editorial-team`、`/experts` からリダイレクト）
 - 編集方針ページ
 - お問い合わせ・訂正依頼フォーム
 - SEO最適化 (sitemap.xml, robots.txt, 構造化データ, OGP)
@@ -55,7 +55,8 @@ src/
 │   ├── search/            # Search page
 │   ├── about/             # About page
 │   ├── editorial-policy/  # Editorial policy
-│   ├── experts/           # Expert profiles
+│   ├── editorial-team/    # Editorial team profiles
+│   ├── experts/           # Redirect to /editorial-team (legacy URL)
 │   ├── contact/           # Contact form
 │   ├── sitemap.ts         # Auto-generated sitemap
 │   └── robots.ts          # robots.txt
