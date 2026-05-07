@@ -31,6 +31,25 @@ function parseArticle(filePath) {
   return data;
 }
 
+function computeRelatedIds(target, allArticles, max = 6) {
+  const targetCategories = new Set(target.categories || []);
+  const targetTags = new Set(target.tags || []);
+
+  const scored = [];
+  for (const a of allArticles) {
+    if (a.id === target.id) continue;
+    let score = 0;
+    if (a.stage === target.stage) score += 2;
+    const sharedCats = (a.categories || []).filter((c) => targetCategories.has(c)).length;
+    score += sharedCats * 3;
+    const sharedTags = (a.tags || []).filter((t) => targetTags.has(t)).length;
+    score += sharedTags * 1;
+    if (score > 0) scored.push({ id: a.id, score, total: a.score?.total ?? 0 });
+  }
+  scored.sort((x, y) => y.score - x.score || y.total - x.total);
+  return scored.slice(0, max).map((s) => s.id);
+}
+
 function generateOutput(articles) {
   const sortedArticles = articles.sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -40,9 +59,18 @@ function generateOutput(articles) {
   const slugToId = new Map(sortedArticles.map((a) => [a.slug, a.id]));
 
   const articleEntries = sortedArticles.map((a) => {
-    const relatedIds = (a.relatedSlugs || [])
+    const explicitIds = (a.relatedSlugs || [])
       .map((s) => slugToId.get(s) || s)
       .filter((id) => sortedArticles.some((art) => art.id === id || art.slug === id));
+
+    let relatedIds = explicitIds;
+    if (relatedIds.length < 6) {
+      const seen = new Set([a.id, ...relatedIds]);
+      const auto = computeRelatedIds(a, sortedArticles, 6 - relatedIds.length + 3)
+        .filter((id) => !seen.has(id))
+        .slice(0, 6 - relatedIds.length);
+      relatedIds = [...relatedIds, ...auto];
+    }
 
     return `  {
     id: ${JSON.stringify(a.id)},
@@ -70,6 +98,10 @@ function generateOutput(articles) {
   return `// AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from content/articles/**/*.mdx by scripts/generate-articles.mjs
 // Run: npm run prebuild
+//
+// NOTE: content is intentionally empty here to keep the client-side bundle small.
+// Article detail pages render the full body via src/lib/articles.ts, which reads
+// MDX directly on the server. This file is for client-side search/autocomplete only.
 
 import { Article } from '@/types';
 

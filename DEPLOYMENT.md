@@ -8,6 +8,25 @@
 
 ---
 
+## 環境変数
+
+`.env.example` にすべての環境変数のサンプルを記載しています。ローカル開発では `.env.local` にコピーしてください。Vercel では Project Settings → Environment Variables から設定します。
+
+| 変数 | 必須 | 用途 |
+|---|---|---|
+| `NEXT_PUBLIC_GA_ID` | 推奨 | Google Analytics 4 測定 ID |
+| `NEXT_PUBLIC_CONTACT_ENDPOINT` | 任意 | お問い合わせ送信先のオーバーライド（GitHub Pages 用） |
+| `RESEND_API_KEY` | 任意 | Resend で問い合わせメールを送信する場合 |
+| `CONTACT_TO_EMAIL` | `RESEND_API_KEY` 設定時必須 | 問い合わせの宛先 |
+| `CONTACT_FROM_EMAIL` | 任意 | 送信元（既定: `noreply@012.kids`） |
+| `GITHUB_PAGES` | GH Pages のみ | 静的書き出しモードを有効化 |
+| `NEXT_PUBLIC_BASE_PATH` | GH Pages のみ | サブパス配信用（例: `/012kids`） |
+| `SHOW_DRAFTS` | ローカルのみ | 下書き記事を表示 |
+
+> 注: GitHub Pages デプロイでは `/api/contact` が使えないため、`NEXT_PUBLIC_CONTACT_ENDPOINT` に Formspree 等の外部フォームサービス URL を設定してください。
+
+---
+
 ## ステップ1: Vercel にプロジェクトを接続
 
 1. [vercel.com](https://vercel.com) にアクセスし、GitHub アカウントでログイン

@@ -10,13 +10,38 @@ export default function ContactPage() {
     email: '',
     articleUrl: '',
     message: '',
+    hp: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send to an API
-    setSubmitted(true);
+    if (submitting) return;
+    setError(null);
+    setSubmitting(true);
+    try {
+      const endpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '/api/contact';
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) {
+        let msg = '送信に失敗しました。時間をおいて再度お試しください。';
+        try {
+          const data = await res.json();
+          if (data?.error) msg = data.error;
+        } catch {}
+        throw new Error(msg);
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '送信に失敗しました');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -123,11 +148,32 @@ export default function ContactPage() {
           />
         </div>
 
+        {/* Honeypot (hidden, anti-spam) */}
+        <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}>
+          <label>
+            Website
+            <input
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+              value={formData.hp}
+              onChange={(e) => setFormData({ ...formData, hp: e.target.value })}
+            />
+          </label>
+        </div>
+
+        {error && (
+          <div role="alert" className="p-3 rounded-xl bg-red-50 border border-red-200 text-sm text-red-700">
+            {error}
+          </div>
+        )}
+
         <button
           type="submit"
-          className="w-full bg-[var(--color-primary)] text-white font-medium py-3 rounded-xl hover:opacity-90 transition-opacity"
+          disabled={submitting}
+          className="w-full bg-[var(--color-primary)] text-white font-medium py-3 rounded-xl hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          送信する
+          {submitting ? '送信中…' : '送信する'}
         </button>
       </form>
 

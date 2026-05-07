@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 # GitHub Pages is a fallback/preview. Production uses Vercel + 012.kids domain.
 on:
   push:
-    branches: ['claude/design-012-kids-platform-Ha8U4', 'main']
+    branches: ['main']
   workflow_dispatch:
 
 permissions:

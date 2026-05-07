@@ -114,6 +114,28 @@ export function getAllArticlesSync(): Article[] {
       .filter((id) => articles.some((a) => a.id === id || a.slug === id));
   }
 
+  // Auto-fill related articles up to 6 by category/stage/tag overlap
+  for (const article of articles) {
+    if (article.relatedArticleIds.length >= 6) continue;
+    const cats = new Set(article.categories);
+    const tags = new Set(article.tags || []);
+    const seen = new Set([article.id, ...article.relatedArticleIds]);
+    const candidates: { id: string; score: number; total: number }[] = [];
+    for (const a of articles) {
+      if (seen.has(a.id)) continue;
+      let score = 0;
+      if (a.stage === article.stage) score += 2;
+      const sharedCats = a.categories.filter((c) => cats.has(c)).length;
+      score += sharedCats * 3;
+      const sharedTags = (a.tags || []).filter((t) => tags.has(t)).length;
+      score += sharedTags;
+      if (score > 0) candidates.push({ id: a.id, score, total: a.score?.total ?? 0 });
+    }
+    candidates.sort((x, y) => y.score - x.score || y.total - x.total);
+    const need = 6 - article.relatedArticleIds.length;
+    article.relatedArticleIds.push(...candidates.slice(0, need).map((c) => c.id));
+  }
+
   // Sort by publishedAt desc
   articles.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
