@@ -50,7 +50,7 @@ function getNextId() {
     const files = fs.readdirSync(path.join(CONTENT_DIR, dir)).filter(f => f.endsWith('.mdx'));
     for (const file of files) {
       const content = fs.readFileSync(path.join(CONTENT_DIR, dir, file), 'utf-8');
-      const match = content.match(/id:\s*"art-(\d+)"/);
+      const match = content.match(/^id:\s*"?art-(\d+)"?/m);
       if (match) {
         const num = parseInt(match[1], 10);
         if (num > maxId) maxId = num;
