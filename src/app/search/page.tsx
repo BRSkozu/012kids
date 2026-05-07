@@ -64,7 +64,7 @@ function SearchContent() {
         className="text-3xl text-[var(--color-foreground)] mb-6"
         style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
       >
-        記事を検索
+        {tab === 'worry' ? 'お悩みから探す' : '記事を検索'}
       </h1>
 
       {/* Tab switcher */}
