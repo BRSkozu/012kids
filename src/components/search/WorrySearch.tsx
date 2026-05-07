@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { WORRIES, searchWorries } from '@/data/worries';
 import { ARTICLES } from '@/data/articles';
@@ -33,34 +34,62 @@ export default function WorrySearch() {
     return ARTICLES.find((a) => a.id === id)?.slug ?? '';
   };
 
+  const bp = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const FEATURE_CLUSTERS = [
-    { label: '学童・放課後', query: '学童', emoji: '🎒' },
-    { label: '小1の壁', query: '小1', emoji: '🏫' },
-    { label: '保育園', query: '保育園', emoji: '🧸' },
-    { label: '幼稚園', query: '幼稚園', emoji: '🌷' },
-    { label: '受験', query: '受験', emoji: '📝' },
-    { label: '塾選び', query: '塾', emoji: '📚' },
-    { label: '習い事', query: '習い事', emoji: '🎹' },
+    { label: '学童・放課後', query: '学童', image: `${bp}/photos/worry-gakudo.webp` },
+    { label: '小1の壁', query: '小1', image: `${bp}/photos/worry-sho1wall.webp` },
+    { label: '保育園', query: '保育園', image: `${bp}/photos/worry-sleep.webp` },
+    { label: '幼稚園', query: '幼稚園', image: `${bp}/photos/worry-friends.webp` },
+    { label: '受験', query: '受験', image: `${bp}/photos/worry-language.webp` },
+    { label: '塾選び', query: '塾', image: `${bp}/photos/worry-screen.webp` },
+    { label: '習い事', query: '習い事', image: `${bp}/photos/worry-development.webp` },
   ];
 
   return (
     <div>
       {/* Feature clusters */}
-      <div className="mb-6">
-        <p className="text-xs font-medium text-[var(--color-foreground-muted)] mb-2">特集テーマから探す</p>
-        <div className="flex flex-wrap gap-2">
+      <div className="mb-8">
+        <p
+          className="text-[11px] font-medium tracking-[0.22em] uppercase text-[var(--color-primary-dark)] mb-3 inline-flex items-center gap-2"
+          style={{ fontFamily: 'var(--font-gothic)' }}
+        >
+          <span className="inline-block w-5 h-px bg-[var(--color-primary)]" />
+          Topics
+        </p>
+        <h3
+          className="text-lg text-[var(--color-foreground)] mb-4"
+          style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+        >
+          特集テーマから探す
+        </h3>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3">
           {FEATURE_CLUSTERS.map((cluster) => (
             <button
               key={cluster.label}
-              onClick={() => setQuery(cluster.query)}
-              className={`inline-flex items-center gap-1.5 text-sm px-3.5 py-2 rounded-xl transition-colors ${
+              onClick={() => setQuery(query === cluster.query ? '' : cluster.query)}
+              className={`group flex flex-col items-center gap-2 p-3 rounded-xl transition-all ${
                 query === cluster.query
-                  ? 'bg-[var(--color-primary)] text-white'
-                  : 'bg-[var(--color-surface)] border border-[var(--color-paper-edge)] text-[var(--color-foreground)] hover:border-[var(--color-primary-light)] hover:shadow-sm'
+                  ? 'bg-[var(--color-primary)]/10 border-2 border-[var(--color-primary)] shadow-sm'
+                  : 'bg-[var(--color-surface)] border border-[var(--color-paper-edge)] hover:border-[var(--color-primary-light)] hover:shadow-sm'
               }`}
             >
-              <span>{cluster.emoji}</span>
-              <span style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}>{cluster.label}</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300 shadow-[0_4px_10px_-6px_rgba(31,36,57,0.25)]">
+                <Image
+                  src={cluster.image}
+                  alt={cluster.label}
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <span
+                className={`text-xs text-center leading-tight ${
+                  query === cluster.query ? 'text-[var(--color-primary-dark)]' : 'text-[var(--color-foreground)]'
+                }`}
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}
+              >
+                {cluster.label}
+              </span>
             </button>
           ))}
         </div>
