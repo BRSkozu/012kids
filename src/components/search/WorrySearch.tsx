@@ -38,11 +38,11 @@ export default function WorrySearch() {
   const FEATURE_CLUSTERS = [
     { label: '学童・放課後', query: '学童', image: `${bp}/photos/worry-gakudo.webp` },
     { label: '小1の壁', query: '小1', image: `${bp}/photos/worry-sho1wall.webp` },
-    { label: '保育園', query: '保育園', image: `${bp}/photos/worry-sleep.webp` },
-    { label: '幼稚園', query: '幼稚園', image: `${bp}/photos/worry-friends.webp` },
-    { label: '受験', query: '受験', image: `${bp}/photos/worry-language.webp` },
-    { label: '塾選び', query: '塾', image: `${bp}/photos/worry-screen.webp` },
-    { label: '習い事', query: '習い事', image: `${bp}/photos/worry-development.webp` },
+    { label: '保育園', query: '保育園', image: `${bp}/photos/worry-hoikuen.webp` },
+    { label: '幼稚園', query: '幼稚園', image: `${bp}/photos/worry-youchien.webp` },
+    { label: '受験', query: '受験', image: `${bp}/photos/worry-juken.webp` },
+    { label: '塾選び', query: '塾', image: `${bp}/photos/worry-juku.webp` },
+    { label: '習い事', query: '習い事', image: `${bp}/photos/worry-naraigoto.webp` },
   ];
 
   return (
