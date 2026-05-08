@@ -115,6 +115,8 @@ function generateSitemap(articles) {
     { loc: '/age-guide', priority: '0.8', changefreq: 'weekly', lastmod: latestUpdate },
     { loc: '/category', priority: '0.8', changefreq: 'weekly', lastmod: latestUpdate },
     { loc: '/tag', priority: '0.6', changefreq: 'weekly', lastmod: latestUpdate },
+    { loc: '/features', priority: '0.9', changefreq: 'weekly', lastmod: latestUpdate },
+    { loc: '/features/tokyo-23ku-gakudo', priority: '0.85', changefreq: 'monthly', lastmod: latestUpdate },
     // Age guide pages
     ...['0stage', 'pre', 'early', 'mid', 'upper'].map((s) => ({
       loc: `/age-guide/${s}`,

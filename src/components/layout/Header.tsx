@@ -88,6 +88,12 @@ export default function Header() {
               記事一覧
             </Link>
             <Link
+              href="/features"
+              className="text-sm font-medium text-[var(--color-foreground-soft)] hover:text-[var(--color-primary)] transition-colors px-2 py-1"
+            >
+              特集
+            </Link>
+            <Link
               href="/about"
               className="text-sm font-medium text-[var(--color-foreground-soft)] hover:text-[var(--color-primary)] transition-colors px-2 py-1"
             >
@@ -167,6 +173,7 @@ export default function Header() {
             <div className="mt-4 pt-4 border-t border-[var(--color-paper-edge)] space-y-1">
               {[
                 { href: '/articles', label: '記事一覧' },
+                { href: '/features', label: '特集' },
                 { href: '/editorial-team', label: '編集部について' },
                 { href: '/about', label: 'このサイトについて' },
                 { href: '/editorial-policy', label: '編集方針' },
