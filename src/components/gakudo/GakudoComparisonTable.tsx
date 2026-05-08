@@ -21,6 +21,12 @@ const MODEL_TYPE_BADGE_CLASS: Record<GakudoModelType, string> = {
 
 type ModelFilter = 'all' | GakudoModelType;
 type SortKey = 'default' | 'ward' | 'model' | 'hasArticle';
+type ColumnKey = 'ward' | 'program' | 'fee' | 'end' | 'grade' | 'article';
+type SortDirection = 'asc' | 'desc';
+interface ColumnSort {
+  column: ColumnKey;
+  direction: SortDirection;
+}
 
 function ModelBadge({ type }: { type: GakudoModelType }) {
   return (
@@ -107,11 +113,58 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: 'model', label: '制度モデル順' },
 ];
 
+const MODEL_ORDER: Record<GakudoModelType, number> = {
+  hybrid: 0,
+  unified: 1,
+  standard: 2,
+  unknown: 3,
+};
+
+function getCellSortValue(w: GakudoWardData, column: ColumnKey): string | number {
+  switch (column) {
+    case 'ward':
+      return w.ward;
+    case 'program':
+      return MODEL_ORDER[w.modelType];
+    case 'fee':
+      return w.monthlyFee || '';
+    case 'end':
+      return w.weekdayEnd || '';
+    case 'grade':
+      return w.gradeRange || '';
+    case 'article':
+      return w.articleSlug ? 0 : 1;
+  }
+}
+
+function compareWards(a: GakudoWardData, b: GakudoWardData, sort: ColumnSort): number {
+  const av = getCellSortValue(a, sort.column);
+  const bv = getCellSortValue(b, sort.column);
+
+  // Empty/missing values sink to the bottom regardless of direction
+  const aEmpty = av === '' || av === undefined;
+  const bEmpty = bv === '' || bv === undefined;
+  if (aEmpty && !bEmpty) return 1;
+  if (!aEmpty && bEmpty) return -1;
+
+  let cmp = 0;
+  if (typeof av === 'number' && typeof bv === 'number') {
+    cmp = av - bv;
+  } else {
+    cmp = String(av).localeCompare(String(bv), 'ja');
+  }
+  if (cmp === 0) {
+    cmp = a.ward.localeCompare(b.ward, 'ja');
+  }
+  return sort.direction === 'asc' ? cmp : -cmp;
+}
+
 export default function GakudoComparisonTable() {
   const [query, setQuery] = useState('');
   const [modelFilter, setModelFilter] = useState<ModelFilter>('all');
   const [articleOnly, setArticleOnly] = useState(false);
   const [sortKey, setSortKey] = useState<SortKey>('default');
+  const [columnSort, setColumnSort] = useState<ColumnSort | null>(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -125,19 +178,14 @@ export default function GakudoComparisonTable() {
       return true;
     });
 
-    const modelOrder: Record<GakudoModelType, number> = {
-      hybrid: 0,
-      unified: 1,
-      standard: 2,
-      unknown: 3,
-    };
-
-    if (sortKey === 'ward') {
+    if (columnSort) {
+      result = [...result].sort((a, b) => compareWards(a, b, columnSort));
+    } else if (sortKey === 'ward') {
       result = [...result].sort((a, b) => a.ward.localeCompare(b.ward, 'ja'));
     } else if (sortKey === 'model') {
       result = [...result].sort(
         (a, b) =>
-          modelOrder[a.modelType] - modelOrder[b.modelType] ||
+          MODEL_ORDER[a.modelType] - MODEL_ORDER[b.modelType] ||
           a.ward.localeCompare(b.ward, 'ja'),
       );
     } else if (sortKey === 'hasArticle') {
@@ -149,7 +197,22 @@ export default function GakudoComparisonTable() {
     }
 
     return result;
-  }, [query, modelFilter, articleOnly, sortKey]);
+  }, [query, modelFilter, articleOnly, sortKey, columnSort]);
+
+  const toggleColumnSort = (column: ColumnKey) => {
+    setColumnSort((prev) => {
+      if (!prev || prev.column !== column) return { column, direction: 'asc' };
+      if (prev.direction === 'asc') return { column, direction: 'desc' };
+      return null; // third click clears
+    });
+  };
+
+  const sortIndicator = (column: ColumnKey) => {
+    if (!columnSort || columnSort.column !== column) {
+      return <span className="text-[var(--color-foreground-muted)] opacity-40">↕</span>;
+    }
+    return columnSort.direction === 'asc' ? '▲' : '▼';
+  };
 
   const articleCount = GAKUDO_DATA.filter((w) => w.articleSlug).length;
 
@@ -248,7 +311,11 @@ export default function GakudoComparisonTable() {
 
         <div className="text-xs text-[var(--color-foreground-muted)]">
           {filtered.length}件 / {GAKUDO_DATA.length}件 を表示中
-          {(query || modelFilter !== 'all' || articleOnly || sortKey !== 'default') && (
+          {(query ||
+            modelFilter !== 'all' ||
+            articleOnly ||
+            sortKey !== 'default' ||
+            columnSort) && (
             <button
               type="button"
               onClick={() => {
@@ -256,12 +323,16 @@ export default function GakudoComparisonTable() {
                 setModelFilter('all');
                 setArticleOnly(false);
                 setSortKey('default');
+                setColumnSort(null);
               }}
               className="ml-3 text-[var(--color-primary)] hover:underline"
             >
               フィルターをクリア
             </button>
           )}
+          <span className="ml-3 hidden md:inline opacity-70">
+            ヒント: 表ヘッダをクリックでカラム並び替え（↑/↓/解除の3段階）
+          </span>
         </div>
       </div>
 
@@ -270,24 +341,47 @@ export default function GakudoComparisonTable() {
         <table className="w-full min-w-[840px]">
           <thead className="bg-[var(--color-warm-cream)]">
             <tr>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-[var(--color-foreground-soft)] whitespace-nowrap">
-                区
-              </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-[var(--color-foreground-soft)]">
-                制度・モデル
-              </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-[var(--color-foreground-soft)] whitespace-nowrap">
-                利用料目安
-              </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-[var(--color-foreground-soft)] whitespace-nowrap">
-                平日終了
-              </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-[var(--color-foreground-soft)] whitespace-nowrap">
-                対象学年
-              </th>
-              <th className="px-3 py-2 text-left text-xs font-semibold text-[var(--color-foreground-soft)] whitespace-nowrap">
-                リンク
-              </th>
+              {(
+                [
+                  { key: 'ward', label: '区', whitespace: true },
+                  { key: 'program', label: '制度・モデル', whitespace: false },
+                  { key: 'fee', label: '利用料目安', whitespace: true },
+                  { key: 'end', label: '平日終了', whitespace: true },
+                  { key: 'grade', label: '対象学年', whitespace: true },
+                  { key: 'article', label: 'リンク', whitespace: true },
+                ] as { key: ColumnKey; label: string; whitespace: boolean }[]
+              ).map((col) => {
+                const isActive = columnSort?.column === col.key;
+                return (
+                  <th
+                    key={col.key}
+                    className={`px-3 py-2 text-left text-xs font-semibold ${
+                      col.whitespace ? 'whitespace-nowrap' : ''
+                    } ${
+                      isActive
+                        ? 'text-[var(--color-primary)]'
+                        : 'text-[var(--color-foreground-soft)]'
+                    }`}
+                  >
+                    <button
+                      type="button"
+                      onClick={() => toggleColumnSort(col.key)}
+                      className="inline-flex items-center gap-1.5 hover:text-[var(--color-primary)] transition-colors"
+                      aria-label={`${col.label}で並び替え`}
+                      aria-sort={
+                        isActive
+                          ? columnSort.direction === 'asc'
+                            ? 'ascending'
+                            : 'descending'
+                          : 'none'
+                      }
+                    >
+                      <span>{col.label}</span>
+                      <span className="text-[10px]">{sortIndicator(col.key)}</span>
+                    </button>
+                  </th>
+                );
+              })}
             </tr>
           </thead>
           <tbody className="bg-white">

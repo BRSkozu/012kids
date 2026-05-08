@@ -50,6 +50,9 @@ export const FEATURES: Feature[] = [
       'koto-gakudo-guide',
       'shinjuku-gakudo-guide',
       'bunkyo-gakudo-guide',
+      'sumida-gakudo-guide',
+      'suginami-gakudo-guide',
+      'katsushika-gakudo-guide',
     ],
     tags: ['学童', '東京', '小1の壁', '共働き'],
     updatedAt: '2026-05-08',
@@ -69,6 +72,23 @@ export const FEATURES: Feature[] = [
       'rainy-season-commute-safety',
     ],
     tags: ['梅雨', '季節', '子育て'],
+    updatedAt: '2026-05-08',
+  },
+  {
+    id: 'feat-summer-break-survival',
+    slug: 'summer-break-survival',
+    type: 'seasonal',
+    title: '共働き家庭の夏休み運用ガイド',
+    description:
+      '小学生の夏休み40日超を共働き家庭がどう運用するか。学童・お弁当・宿題・熱中症対策を一通り押さえられる特集です。',
+    image: '/photos/seasonal-summer.webp',
+    articleSlugs: [
+      'summer-break-survival-overview',
+      'summer-break-bento-strategy',
+      'summer-break-homework-coaching',
+      'summer-break-heat-safety',
+    ],
+    tags: ['夏休み', '季節', '共働き', '熱中症'],
     updatedAt: '2026-05-08',
   },
   {
