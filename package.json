@@ -8,6 +8,8 @@
     "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "validate": "node scripts/validate-articles.mjs",
     "validate:strict": "node scripts/validate-articles.mjs --strict"
   },

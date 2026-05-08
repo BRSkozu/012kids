@@ -28,6 +28,8 @@ jobs:
 
       - run: npm ci
 
+      - run: npm test
+
       - run: npx next build
         env:
           GITHUB_PAGES: 'true'
