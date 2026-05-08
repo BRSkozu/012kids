@@ -52,8 +52,40 @@ export default function HomePage() {
     .slice(0, 7)
     .map((s) => s.article);
 
+  const websiteLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: '012.kids',
+    alternateName: '0-12.kids',
+    url: SITE_URL,
+    description:
+      '公的機関や専門家の発信する0歳〜12歳の子育て・教育情報をわかりやすくまとめて紹介するサイトです。',
+    inLanguage: 'ja-JP',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: '012.kids 編集部',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/ogp.png`,
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
+      />
       <ScrollTracker />
 
       {/* Hero: catchcopy + search + age buttons + trust badges */}

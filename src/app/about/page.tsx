@@ -16,9 +16,36 @@ export const metadata: Metadata = {
   },
 };
 
+const aboutLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'このサイトについて | 012.kids',
+  url: 'https://012.kids/about',
+  description:
+    '012.kidsは0歳から12歳の子どもに関わるすべての方に向けて、公的機関や専門家の情報をわかりやすくまとめて紹介する情報サイトです。',
+  inLanguage: 'ja-JP',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: '012.kids',
+    url: 'https://012.kids',
+  },
+  about: {
+    '@type': 'Organization',
+    name: '012.kids 編集部',
+    url: 'https://012.kids',
+    logo: 'https://012.kids/ogp.png',
+    description:
+      '公的機関や専門家の発信する子育て・教育情報をまとめて紹介する編集部。',
+  },
+};
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutLd) }}
+      />
       <Breadcrumb items={[{ label: 'このサイトについて' }]} />
       <h1
         className="text-3xl text-[var(--color-foreground)] mb-8"
