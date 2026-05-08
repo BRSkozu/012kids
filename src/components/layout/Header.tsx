@@ -94,6 +94,12 @@ export default function Header() {
               特集
             </Link>
             <Link
+              href="/gakudo"
+              className="text-sm font-medium text-[var(--color-foreground-soft)] hover:text-[var(--color-primary)] transition-colors px-2 py-1"
+            >
+              23区学童
+            </Link>
+            <Link
               href="/about"
               className="text-sm font-medium text-[var(--color-foreground-soft)] hover:text-[var(--color-primary)] transition-colors px-2 py-1"
             >
@@ -174,6 +180,7 @@ export default function Header() {
               {[
                 { href: '/articles', label: '記事一覧' },
                 { href: '/features', label: '特集' },
+                { href: '/gakudo', label: '23区学童' },
                 { href: '/editorial-team', label: '編集部について' },
                 { href: '/about', label: 'このサイトについて' },
                 { href: '/editorial-policy', label: '編集方針' },

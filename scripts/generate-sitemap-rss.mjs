@@ -116,6 +116,7 @@ function generateSitemap(articles) {
     { loc: '/category', priority: '0.8', changefreq: 'weekly', lastmod: latestUpdate },
     { loc: '/tag', priority: '0.6', changefreq: 'weekly', lastmod: latestUpdate },
     { loc: '/features', priority: '0.9', changefreq: 'weekly', lastmod: latestUpdate },
+    { loc: '/gakudo', priority: '0.9', changefreq: 'monthly', lastmod: latestUpdate },
     { loc: '/features/tokyo-23ku-gakudo', priority: '0.85', changefreq: 'monthly', lastmod: latestUpdate },
     { loc: '/features/rainy-season-survival', priority: '0.85', changefreq: 'monthly', lastmod: latestUpdate },
     { loc: '/features/sho1wall-deep-dive', priority: '0.85', changefreq: 'monthly', lastmod: latestUpdate },

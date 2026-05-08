@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FEATURES, FEATURE_TYPE_LABELS, getFeatureBySlug } from '@/data/features';
 import { getArticleBySlug } from '@/lib/articles';
 import ArticleCard from '@/components/articles/ArticleCard';
 import Breadcrumb, { generateBreadcrumbLd } from '@/components/ui/Breadcrumb';
+import GakudoComparisonTable from '@/components/gakudo/GakudoComparisonTable';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -124,6 +126,31 @@ export default async function FeaturePage({ params }: PageProps) {
           </div>
         )}
       </section>
+
+      {feature.slug === 'tokyo-23ku-gakudo' && (
+        <section className="bg-[var(--color-warm-cream)] py-12">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2
+              className="text-2xl md:text-3xl text-[var(--color-foreground)] mb-2"
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
+            >
+              23区 学童保育 比較表
+            </h2>
+            <p className="text-sm text-[var(--color-foreground-muted)] mb-6 max-w-3xl">
+              制度モデル・利用料・終了時刻・対象学年を一覧で比較できます。詳細記事のある区はリンクから解説に進めます。
+            </p>
+            <GakudoComparisonTable />
+            <div className="mt-6">
+              <Link
+                href={`${bp}/gakudo`}
+                className="inline-block text-sm text-[var(--color-primary)] hover:underline"
+              >
+                23区学童 一覧ページを見る →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 }
