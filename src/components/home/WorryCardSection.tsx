@@ -86,25 +86,25 @@ export default function WorryCardSection() {
           今困っているテーマから、すぐに情報を見つけられます。
         </p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {WORRY_CARDS.map((card) => (
           <Link
             key={card.id}
             href={card.href}
             onClick={() => trackTroubleClick(card.id)}
-            className="group flex flex-col items-center gap-2 p-4 rounded-xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] card-hover text-center"
+            className="group flex flex-col rounded-2xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] overflow-hidden card-hover"
           >
-            <div className="w-14 h-14 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300 shadow-[0_6px_14px_-8px_rgba(31,36,57,0.25)]">
+            <div className="relative aspect-square w-full overflow-hidden bg-[var(--color-warm-cream)]">
               <Image
                 src={card.image}
                 alt={card.label}
-                width={56}
-                height={56}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover group-hover:scale-[1.04] transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
             <span
-              className="text-sm text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
+              className="block text-center text-[15px] md:text-base py-3 px-2 text-[var(--color-foreground)] group-hover:text-[var(--color-primary-dark)] transition-colors"
               style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
             >
               {card.label}
