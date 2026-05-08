@@ -29,12 +29,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
           cache: 'npm'
@@ -98,13 +98,13 @@ jobs:
 
       - name: Upload Pages artifact
         if: steps.count.outputs.has_changes == 'true' && github.event.inputs.skip_deploy != 'true'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
 
       - name: Deploy to GitHub Pages
         if: steps.count.outputs.has_changes == 'true' && github.event.inputs.skip_deploy != 'true'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       # Summary
       - name: Summary

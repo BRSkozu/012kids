@@ -42,26 +42,54 @@ function SearchContent() {
       : '記事を検索 | 012キッズ';
   }, [tab]);
 
-  const results = useMemo(() => {
+  // Tokenize Japanese query into meaningful words by stripping particles/punctuation
+  function extractTokens(q: string): string[] {
+    const cleaned = q.replace(/[、。！？「」『』（）()\[\]\s,.!?]+/g, ' ');
+    const stopwords = new Set([
+      'と', 'や', 'の', 'は', 'が', 'を', 'に', 'で', 'から', 'まで', 'へ', 'も', 'か', 'よ', 'ね',
+      'どっち', 'どちら', 'どう', 'どの', 'いい', 'よい', 'なに', '何', 'なん',
+    ]);
+    const tokens = cleaned
+      .split(/\s+|と|や/)
+      .map((s) => s.trim())
+      .filter((s) => s.length >= 2 && !stopwords.has(s));
+    return [...new Set(tokens)];
+  }
+
+  const { results, isFallback, fallbackTokens } = useMemo(() => {
     if (!query.trim() && selectedStage === 'all' && selectedCategory === 'all') {
-      return [];
+      return { results: [] as typeof ARTICLES, isFallback: false, fallbackTokens: [] as string[] };
     }
 
-    let filtered = query.trim()
-      ? fuse.search(query.trim()).map((r) => r.item)
-      : [...ARTICLES];
+    const applyFilters = (items: typeof ARTICLES) => {
+      let filtered = items;
+      if (selectedStage !== 'all') filtered = filtered.filter((a) => a.stage === selectedStage);
+      if (selectedCategory !== 'all') filtered = filtered.filter((a) => a.categories.includes(selectedCategory as ContentCategory));
+      return filtered;
+    };
 
-    if (selectedStage !== 'all') {
-      filtered = filtered.filter((a) => a.stage === selectedStage);
+    const trimmed = query.trim();
+    if (!trimmed) return { results: applyFilters([...ARTICLES]), isFallback: false, fallbackTokens: [] };
+
+    // Primary: full-query fuzzy search
+    const primary = applyFilters(fuse.search(trimmed).map((r) => r.item));
+    if (primary.length > 0) return { results: primary, isFallback: false, fallbackTokens: [] };
+
+    // Fallback: tokenize query and merge per-token searches
+    const tokens = extractTokens(trimmed);
+    if (tokens.length === 0) return { results: [], isFallback: false, fallbackTokens: [] };
+
+    const seen = new Set<string>();
+    const merged: typeof ARTICLES = [];
+    for (const token of tokens) {
+      for (const r of fuse.search(token)) {
+        if (!seen.has(r.item.id)) {
+          seen.add(r.item.id);
+          merged.push(r.item);
+        }
+      }
     }
-
-    if (selectedCategory !== 'all') {
-      filtered = filtered.filter((a) =>
-        a.categories.includes(selectedCategory as ContentCategory)
-      );
-    }
-
-    return filtered;
+    return { results: applyFilters(merged), isFallback: true, fallbackTokens: tokens };
   }, [query, selectedStage, selectedCategory]);
 
   const showResults = query.trim() || selectedStage !== 'all' || selectedCategory !== 'all';
@@ -184,9 +212,29 @@ function SearchContent() {
           {/* Results */}
           {showResults ? (
             <>
-              <p className="text-sm text-[var(--color-foreground-soft)] mb-4">
-                {results.length}件の記事が見つかりました
-              </p>
+              {isFallback ? (
+                <div className="mb-4 p-3 rounded-lg bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-sm text-[var(--color-foreground-soft)]">
+                  <p>
+                    「<span className="font-medium text-[var(--color-foreground)]">{query}</span>」に完全一致する記事はありませんでしたが、
+                    {fallbackTokens.map((t, i) => (
+                      <span key={t}>
+                        {i > 0 && '・'}
+                        <button
+                          onClick={() => setQuery(t)}
+                          className="font-medium text-[var(--color-primary-dark)] hover:underline"
+                        >
+                          {t}
+                        </button>
+                      </span>
+                    ))}
+                    {' '}に関連する {results.length} 件を表示しています
+                  </p>
+                </div>
+              ) : (
+                <p className="text-sm text-[var(--color-foreground-soft)] mb-4">
+                  {results.length}件の記事が見つかりました
+                </p>
+              )}
               {results.length === 0 ? (
                 <div className="text-center py-16 bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] rounded-xl">
                   <p
