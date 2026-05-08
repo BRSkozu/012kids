@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-04-29",
-    "totalGenerated": 50
+    "lastGeneratedAt": "2026-05-08",
+    "totalGenerated": 60
   },
   "pools": {
     "seasonal": {
@@ -5041,6 +5041,16 @@
     "exam-stress-support-parents",
     "new-year-money-education",
     "dry-skin-kids-winter-care",
-    "winter-exercise-indoor-kids"
+    "winter-exercise-indoor-kids",
+    "afterschool-care-choosing-guide",
+    "afterschool-care-cost",
+    "afterschool-activities-options",
+    "screen-time-age-guide",
+    "child-food-allergy-basics",
+    "first-aid-kids-guide",
+    "spring-school-supplies-list",
+    "spring-class-change-anxiety",
+    "spring-new-teacher",
+    "spring-commute-safety"
   ]
 }

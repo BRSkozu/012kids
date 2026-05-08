@@ -10,6 +10,1660 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1318",
+    slug: "screen-time-age-guide",
+    title: "年齢別スクリーンタイムの目安：WHOガイドラインと実践的なルール",
+    excerpt: "年齢別スクリーンタイムの目安：WHOガイドラインと実践的なルールを国立成育医療研究センター等の公的情報をもとに解説。スクリーンタイムの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["digital"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもとメディア",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "ICTリテラシー",
+                "url": "https://www.soumu.go.jp/",
+                "org": "総務省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの生活",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "こども家庭庁は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":83,"reliability":25,"neutrality":20,"freshness":18,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/screen-time-age-guide.jpg",
+    readingTime: 12,
+    tags: ["スクリーンタイム","年齢別","ルール"],
+    relatedArticleIds: ["art-473","art-040","art-064","art-474","art-490","art-957"],
+  },
+  {
+    id: "art-1315",
+    slug: "afterschool-care-choosing-guide",
+    title: "学童保育の選び方完全ガイド：公立・民間の違いと比較ポイント",
+    excerpt: "学童保育の選び方完全ガイド：公立・民間の違いと比較ポイントを厚生労働省等の公的情報をもとに解説。学童保育の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブ",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供教室",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの居場所づくり",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":76,"reliability":22,"neutrality":22,"freshness":16,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/afterschool-care-choosing-guide.jpg",
+    readingTime: 9,
+    tags: ["学童保育","選び方","比較"],
+    relatedArticleIds: ["art-1287","art-1307","art-1304","art-1305","art-1302","art-1292"],
+  },
+  {
+    id: "art-1307",
+    slug: "bunkyo-gakudo-guide",
+    title: "文京区の学童保育「育成室」ガイド：教育意識の高い区の保活事情",
+    excerpt: "文京区の育成室（学童保育）の仕組み、対象学年、利用料、申込スケジュールを整理。教育意識の高い区ならではの保活・小1の壁対策のポイントも解説。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "文京区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "文京区の育成室",
+                "url": "https://www.city.bunkyo.lg.jp/",
+                "org": "文京区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文京区は教育環境への関心が高く、区立小学校の評価も安定。育成室の運用も丁寧と評価されています。",
+          "neutral": "教育意識の高い世帯が多く、私立小受験・公立中高一貫志望と学童併用の家庭も少なくありません。",
+          "cautious": "人気学区（誠之・千駄木・湯島など）への入学・転入希望者が多く、家賃・住居費は高水準です。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/bunkyo-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","文京区","育成室","東京","23区","共働き","教育"],
+    relatedArticleIds: ["art-1287","art-069","art-1304","art-1305","art-1302","art-1292"],
+  },
+  {
+    id: "art-1291",
+    slug: "chiyoda-gakudo-guide",
+    title: "千代田区の学童保育（学童クラブ・放課後子ども教室）ガイド",
+    excerpt: "千代田区の学童クラブと放課後子ども教室の仕組み、対象学年、利用料、申込スケジュール、独自の子育て支援を整理しました。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "千代田区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "千代田区の学童クラブ",
+                "url": "https://www.city.chiyoda.lg.jp/",
+                "org": "千代田区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "千代田区は人口規模が小さく行政の目が届きやすい区で、子育て施策の独自性も高い。",
+          "neutral": "区民の通学圏が他区と重なるケースが多く、就労区と居住区を分けた家庭設計が必要。",
+          "cautious": "オフィス街中心で住居選択肢が限られ、学童ニーズも特殊な傾向（共働き比率が高い等）。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/chiyoda-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","千代田区","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1290",
+    slug: "edogawa-gakudo-guide",
+    title: "江戸川区の学童保育（すくすくスクール）ガイド：制度の特徴と独自支援",
+    excerpt: "江戸川区の放課後児童施策「すくすくスクール」の仕組みと、独自の子育て支援制度を整理。共働き家庭の保活・引越し検討に役立つ情報をまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "江戸川区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "すくすくスクール（江戸川区）",
+                "url": "https://www.city.edogawa.tokyo.jp/",
+                "org": "江戸川区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "すくすくスクールは全児童対策と学童機能を統合し、ほぼすべての小学生が放課後の居場所として利用できます。",
+          "neutral": "江戸川区は独自の子育て支援（保育ママ等）が手厚く、家庭ごとに最適な制度の組み合わせを検討する必要があります。",
+          "cautious": "全児童型のためサービス内容（おやつ・延長・夕食等）は別途有料オプションが多く、コスト面の比較が重要。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/edogawa-gakudo-guide.jpg",
+    readingTime: 12,
+    tags: ["学童保育","江戸川区","すくすくスクール","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-007","art-1307","art-1304","art-1305"],
+  },
+  {
+    id: "art-1304",
+    slug: "itabashi-gakudo-guide",
+    title: "板橋区の学童保育「あいキッズ」ガイド：全児童型統合運営の実情",
+    excerpt: "板橋区の「あいキッズ」（全児童型放課後事業）の仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "板橋区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "板橋区のあいキッズ（放課後対策事業）",
+                "url": "https://www.city.itabashi.tokyo.jp/",
+                "org": "板橋区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "あいキッズは学童機能を含めた全児童型統合運営で、全区立小学校で実施されている運用の安定した制度です。",
+          "neutral": "全児童型のため一般利用は安価ですが、共働き家庭の長時間預かり利用は別途登録・料金が必要。",
+          "cautious": "全児童型統合のため学童特化型と比べた預かりの「手厚さ」では学校・運営事業者によって差が出る場合があります。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/itabashi-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","板橋区","あいキッズ","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1305","art-1302","art-1292"],
+  },
+  {
+    id: "art-1314",
+    slug: "katsushika-gakudo-guide",
+    title: "葛飾区の学童保育「わくわくチャレンジ広場」ガイド",
+    excerpt: "葛飾区の学童保育クラブと「わくわくチャレンジ広場」の仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "葛飾区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "葛飾区の学童保育クラブ・わくわくチャレンジ広場",
+                "url": "https://www.city.katsushika.lg.jp/",
+                "org": "葛飾区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "葛飾区は家賃水準が23区平均より抑えめで、ファミリー世帯にやさしい区です。",
+          "neutral": "金町・新小岩・亀有など主要駅周辺で再開発が進み、子育て世帯の流入が増えています。",
+          "cautious": "区が広く、学童施設の場所と通学経路の確認は事前に必要です。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/katsushika-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","葛飾区","わくわくチャレンジ広場","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1305",
+    slug: "koto-gakudo-guide",
+    title: "江東区の学童保育「江東きっずクラブ」ガイド：湾岸エリア急増の実情",
+    excerpt: "江東区の学童クラブと「江東きっずクラブ」（A・B登録制）の仕組み、対象学年、利用料、申込スケジュールを整理。湾岸エリアの保活事情も解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "江東区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "江東区の学童クラブ・江東きっずクラブ",
+                "url": "https://www.city.koto.lg.jp/",
+                "org": "江東区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "江東区は江東きっずクラブの全校展開でA登録（一般）・B登録（学童相当）を整備、共働き家庭の選択肢が安定。",
+          "neutral": "湾岸エリア（豊洲・東雲・有明）と下町エリアで子育て事情は大きく異なります。",
+          "cautious": "豊洲・有明など湾岸エリアの新興マンション地区では、児童数急増で学童施設の混雑が課題になっています。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/koto-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","江東区","江東きっずクラブ","豊洲","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1302","art-1292"],
+  },
+  {
+    id: "art-1289",
+    slug: "minato-gakudo-guide",
+    title: "港区の学童保育（学童クラブ）ガイド：制度・利用料・小1の壁対策",
+    excerpt: "港区の放課後児童クラブの仕組み、対象学年、利用料、申込スケジュールを整理。子育て予算が23区トップクラスの港区での「小1の壁」対策に役立つ情報をまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "港区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "港区の学童クラブ",
+                "url": "https://www.city.minato.tokyo.jp/",
+                "org": "港区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "港区は子供1人あたりの予算が23区トップクラスで、子育て施策全般が手厚い。",
+          "neutral": "都心区かつ人口流入が続いており、エリアによっては学童ニーズが急増しています。",
+          "cautious": "高所得層の流入で需要が読みにくく、希望施設に入れないケースも想定して代替策の確保を。"
+    },
+    },
+    score: {"total":85,"reliability":27,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/minato-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","港区","東京","23区","共働き","小1の壁"],
+    relatedArticleIds: ["art-1287","art-069","art-007","art-1307","art-1304","art-1305"],
+  },
+  {
+    id: "art-1293",
+    slug: "nakano-gakudo-guide",
+    title: "中野区の学童保育（学童クラブ・キッズ・プラザ）ガイド",
+    excerpt: "中野区の学童クラブとキッズ・プラザの仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "中野区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "中野区の学童クラブ",
+                "url": "https://www.city.tokyo-nakano.lg.jp/",
+                "org": "中野区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "中野区はキッズ・プラザ（全児童対象）と学童クラブ（要件あり）のハイブリッド運営で柔軟性が高い。",
+          "neutral": "区内の人口構成と再開発の影響で、学童ニーズはエリアによって差があります。",
+          "cautious": "中野駅周辺の再開発で子育て世帯の流入が進み、人気学区では待機リスク増加の可能性。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/nakano-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","中野区","キッズプラザ","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1302",
+    slug: "nerima-gakudo-guide",
+    title: "練馬区の学童保育「ねりっこクラブ」ガイド：23区最大級の児童数で何が起きる？",
+    excerpt: "練馬区の学童クラブと「ねりっこクラブ」の仕組み、対象学年、利用料、申込スケジュールを整理。23区最大級の児童数を抱える区の実情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "練馬区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "練馬区の学童クラブ・ねりっこクラブ",
+                "url": "https://www.city.nerima.tokyo.jp/",
+                "org": "練馬区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "練馬区はファミリー世帯比率が高く、子育てインフラの厚みがあります。ねりっこクラブの整備で全児童型の受け皿も整っています。",
+          "neutral": "23区最大級の児童数を抱えるため、エリアによって学童の混雑度に差があります。",
+          "cautious": "人気学区（光が丘・大泉学園・石神井公園周辺）では学童クラブの待機リスクに注意が必要です。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/nerima-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","練馬区","ねりっこクラブ","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1292"],
+  },
+  {
+    id: "art-1303",
+    slug: "ota-gakudo-guide",
+    title: "大田区の学童保育「おおたっ子ひろば」ガイド：広い区を理解した保活を",
+    excerpt: "大田区の学童保育と「おおたっ子ひろば」の仕組みを整理。空港・湾岸エリアから田園調布まで、広い区域を理解した上での保活ポイントをまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "大田区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "大田区の学童保育・おおたっ子ひろば",
+                "url": "https://www.city.ota.tokyo.jp/",
+                "org": "大田区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "大田区は地域コミュニティが厚く、地元の子育てサポート資源が豊富です。",
+          "neutral": "区域が広く、エリアによって生活環境・通勤利便性・学童事情が大きく異なります。",
+          "cautious": "蒲田・大森・大井町など人気エリアは需要逼迫、田園調布・雪谷など住宅地は別の事情。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/ota-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","大田区","おおたっ子ひろば","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1288",
+    slug: "setagaya-gakudo-guide",
+    title: "世田谷区の学童保育・新BOPガイド：制度の特徴と利用のコツ",
+    excerpt: "世田谷区の放課後児童施策「新BOP（新放課後子ども教室）」の仕組み、対象学年、利用料、延長時間、申込スケジュールを保護者目線で整理しました。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "世田谷区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "新BOP事業（世田谷区）",
+                "url": "https://www.city.setagaya.lg.jp/",
+                "org": "世田谷区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "世田谷区の新BOPは全児童対策と学童機能を統合し、要件のない子も放課後の居場所として利用できます。",
+          "neutral": "区内人口が23区最多で局所的に需要が逼迫する地域もあるため、入学予定校エリアでの確認が重要です。",
+          "cautious": "新BOPの BOP（全児童）と BOP学童（要件あり）は使える時間や利用料が異なるため、混同しないよう注意。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/setagaya-gakudo-guide.jpg",
+    readingTime: 12,
+    tags: ["学童保育","世田谷区","新BOP","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-007","art-1307","art-1304","art-1305"],
+  },
+  {
+    id: "art-1292",
+    slug: "shinagawa-gakudo-guide",
+    title: "品川区の学童保育「すまいるスクール」ガイド：制度の特徴と利用のコツ",
+    excerpt: "品川区独自の放課後事業「すまいるスクール」の仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "品川区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "すまいるスクール（品川区）",
+                "url": "https://www.city.shinagawa.tokyo.jp/",
+                "org": "品川区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "品川区のすまいるスクールは、全児童対策と学童機能を統合した先進事例として全国的に注目されてきました。",
+          "neutral": "学校内併設のため通学経路が安全で、親の安心感が高い反面、施設の混雑状況は学校差があります。",
+          "cautious": "全児童型のため預かり時間や夕食提供は別途有料オプションが必要なケースが多く、コスト試算を。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/shinagawa-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","品川区","すまいるスクール","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1306",
+    slug: "shinjuku-gakudo-guide",
+    title: "新宿区の学童保育「学童クラブ・放課後子どもひろば」ガイド",
+    excerpt: "新宿区の学童クラブと放課後子どもひろばの仕組み、対象学年、利用料、申込スケジュールを整理。都心型生活者の保活・小1の壁対策に。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "新宿区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "新宿区の学童クラブ",
+                "url": "https://www.city.shinjuku.lg.jp/",
+                "org": "新宿区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "新宿区は都心通勤の利便性と多様な住宅地が混在し、子育て家庭の支援メニューも厚い区です。",
+          "neutral": "都心区ながら住宅街エリア（落合・四谷・牛込）も多く、エリアごとに学童事情が異なります。",
+          "cautious": "オフィス街と住宅地の混在で、共働き家庭の通勤利便性と通学安全のバランスを意識する必要があります。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/shinjuku-gakudo-guide.jpg",
+    readingTime: 11,
+    tags: ["学童保育","新宿区","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1299",
+    slug: "sho1wall-academic-prep",
+    title: "小1の壁・学習面：入学前の準備と最初の3カ月の伴走",
+    excerpt: "小学校入学で子どもがぶつかる学習面の「壁」を整理。入学前にやっておきたい準備と、入学後最初の3カ月で親が伴走するポイントをまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education","development"],
+    source: {
+      name: "文部科学省・国立教育政策研究所 公的情報",
+      references: [
+          {
+                "title": "小学校学習指導要領",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "保育所から小学校への接続",
+                "url": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "国立教育政策研究所",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "学習面の小1の壁は事前準備＋入学後の伴走で大半が乗り越えられます。",
+          "neutral": "学校・先生・地域によって学習進度や指導方針に差があり、最初は様子見が現実的。",
+          "cautious": "「先取り学習」を急ぎすぎると学校での集中力低下を招くケースもあるため、バランスが大切。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":20,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/sho1wall-academic-prep.jpg",
+    readingTime: 12,
+    tags: ["小1の壁","学習","入学準備","国語","算数","自学自習"],
+    relatedArticleIds: ["art-1298","art-1300","art-1301","art-1310","art-680","art-1287"],
+  },
+  {
+    id: "art-1298",
+    slug: "sho1wall-complete-guide",
+    title: "「小1の壁」完全ガイド：子・親・働き方の変化に備える",
+    excerpt: "保育園から小学校への移行で起きる「小1の壁」を、子どもの生活・親の働き方・サポート体制の3軸で深掘り。共働き家庭が事前に準備すべきポイントをまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle","mental"],
+    source: {
+      name: "厚生労働省・文部科学省・各自治体 公的情報",
+      references: [
+          {
+                "title": "放課後児童健全育成事業について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小1プロブレム対策",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "保育所から小学校への接続",
+                "url": "https://www.mext.go.jp/a_menu/shotou/youchien/1258019.htm",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "「小1の壁」は事前準備と家族の役割分担で大きく緩和できます。家族の対話を増やす好機にも。",
+          "neutral": "保育園から小学校への変化は子・親・働き方すべてに同時に起こり、最初の3カ月は試行錯誤期。",
+          "cautious": "壁を低く見積もって対策を後回しにすると、入学後に親の働き方変更を迫られるケースもあります。"
+    },
+    },
+    score: {"total":90,"reliability":28,"neutrality":25,"freshness":21,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/sho1wall-complete-guide.jpg",
+    readingTime: 17,
+    tags: ["小1の壁","共働き","入学準備","学童","子育て","働き方"],
+    relatedArticleIds: ["art-1299","art-1300","art-1301","art-007","art-1287","art-1308"],
+  },
+  {
+    id: "art-1313",
+    slug: "suginami-gakudo-guide",
+    title: "杉並区の学童保育ガイド：子育て世帯人気区の保活事情",
+    excerpt: "杉並区の学童クラブと放課後等居場所事業の仕組み、対象学年、利用料、申込スケジュールを整理。子育て世帯に人気の住宅区の保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "杉並区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "杉並区の学童クラブ",
+                "url": "https://www.city.suginami.tokyo.jp/",
+                "org": "杉並区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "杉並区は子育て世帯に人気の住宅区で、図書館・公園・地域活動など子育て環境が厚く整備されています。",
+          "neutral": "区内の人口構成と再開発の影響で、学童ニーズはエリアによって差があります。",
+          "cautious": "中央線沿線（高円寺・荻窪・西荻窪・阿佐ヶ谷）の人気エリアは家賃水準が高く、学童需要も多めです。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/suginami-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","杉並区","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1312",
+    slug: "sumida-gakudo-guide",
+    title: "墨田区の学童保育ガイド：下町と再開発エリアが混在する区の保活",
+    excerpt: "墨田区の学童クラブと放課後子ども教室の仕組み、対象学年、利用料、申込スケジュールを整理。下町コミュニティと再開発（押上・錦糸町）が混在する区の保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "墨田区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "墨田区の学童クラブ",
+                "url": "https://www.city.sumida.lg.jp/",
+                "org": "墨田区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "墨田区は下町ならではの地域コミュニティの厚みと、押上・錦糸町・両国などの再開発で利便性も両立。",
+          "neutral": "再開発エリアと従来の下町エリアで子育て事情が異なります。",
+          "cautious": "錦糸町・押上駅周辺の再開発エリアは新規ファミリー流入が多く、学童ニーズが高まりつつあります。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/sumida-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","墨田区","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1310",
+    slug: "summer-break-homework-coaching",
+    title: "夏休みの宿題伴走ガイド：計画・自由研究・読書感想文の進め方",
+    excerpt: "夏休みの宿題を計画的に進めるための親の伴走スタンスを整理。自由研究・読書感想文・絵日記の取り組み方を年齢別にまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education","development"],
+    source: {
+      name: "文部科学省・国立教育政策研究所 公的情報",
+      references: [
+          {
+                "title": "学校教育法施行規則・小学校学習指導要領",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "夏休みの過ごし方",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "夏休みの宿題は計画力・自主学習力を伸ばす絶好の機会。親の伴走で達成感を育てられます。",
+          "neutral": "学校・地域・学年で宿題の量や種類は異なります。学校の指示を最優先に。",
+          "cautious": "親が代わりにやってしまうと学びの機会を奪うため、伴走と代行の境界線を意識する必要があります。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/summer-break-homework-coaching.jpg",
+    readingTime: 12,
+    tags: ["夏休み","宿題","自由研究","読書感想文","学習","子育て"],
+    relatedArticleIds: ["art-1308","art-1299","art-008","art-1255","art-1298","art-1098"],
+  },
+  {
+    id: "art-1287",
+    slug: "tokyo-23ku-gakudo-overview",
+    title: "東京都23区 学童保育徹底比較：制度・待機・利用料の違いを一覧で",
+    excerpt: "東京都23区それぞれの放課後児童クラブ（学童保育）制度・定員・待機状況・利用料を整理。共働き家庭の保活、入学準備、引越し検討の比較に役立ちます。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "厚生労働省・東京都・各区公式統計",
+      references: [
+          {
+                "title": "放課後児童健全育成事業（放課後児童クラブ）の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "東京都の放課後児童クラブ",
+                "url": "https://www.fukushi.metro.tokyo.lg.jp/kodomo/kosodate/houkago/",
+                "org": "東京都福祉保健局",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "23区の放課後児童クラブはほぼすべての区で公設運営があり、共働き家庭にとって重要なセーフティネットになっています。",
+          "neutral": "区によって制度名（学童クラブ・新BOP・KIDS）・対象学年・利用料・延長時間が異なり、引越し検討時は事前確認が必須です。",
+          "cautious": "都心部・人口流入区では待機が出やすく、申込時期や民間学童の併用検討が必要なケースがあります。"
+    },
+    },
+    score: {"total":88,"reliability":28,"neutrality":24,"freshness":20,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/tokyo-23ku-gakudo-overview.jpg",
+    readingTime: 18,
+    tags: ["学童保育","東京","23区","小1の壁","共働き","放課後"],
+    relatedArticleIds: ["art-069","art-007","art-1288","art-1289","art-1290","art-1307"],
+  },
+  {
+    id: "art-1319",
+    slug: "child-food-allergy-basics",
+    title: "子どもの食物アレルギー入門：症状・検査・日常管理のポイント",
+    excerpt: "子どもの食物アレルギー入門：症状・検査・日常管理のポイントを厚生労働省等の公的情報をもとに解説。食物アレルギーの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "アレルギー疾患対策",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "食物アレルギー",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "子どもの健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":87,"reliability":29,"neutrality":23,"freshness":15,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/child-food-allergy-basics.jpg",
+    readingTime: 9,
+    tags: ["食物アレルギー","症状","検査"],
+    relatedArticleIds: ["art-006","art-623","art-026","art-913","art-649","art-1129"],
+  },
+  {
+    id: "art-1320",
+    slug: "first-aid-kids-guide",
+    title: "子どもの応急処置マニュアル：ケガ・やけど・誤飲の対応法",
+    excerpt: "子どもの応急処置マニュアル：ケガ・やけど・誤飲の対応法を厚生労働省等の公的情報をもとに解説。応急処置の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "救急医療",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児救急",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "子どもの安全",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":82,"reliability":24,"neutrality":20,"freshness":17,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/first-aid-kids-guide.jpg",
+    readingTime: 9,
+    tags: ["応急処置","ケガ","誤飲"],
+    relatedArticleIds: ["art-1129","art-029","art-1256","art-1126","art-623","art-026"],
+  },
+  {
+    id: "art-1311",
+    slug: "summer-break-heat-safety",
+    title: "夏休みの熱中症・暑さ対策ガイド：WBGT・水分補給・冷房運用の実践",
+    excerpt: "気候変動で年々厳しくなる夏。学童・通学・外遊びでの熱中症リスクをWBGT（暑さ指数）に基づき判断。家庭での冷房運用・水分補給のコツも整理しました。",
+    content: '',
+    stage: "early",
+    categories: ["health","lifestyle"],
+    source: {
+      name: "環境省・厚生労働省・気象庁 公的情報",
+      references: [
+          {
+                "title": "熱中症予防情報サイト（WBGT）",
+                "url": "https://www.wbgt.env.go.jp/",
+                "org": "環境省",
+                "stance": "positive"
+          },
+          {
+                "title": "熱中症対策",
+                "url": "https://www.mhlw.go.jp/seisaku/2009/12/02.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "気象庁 高温注意情報",
+                "url": "https://www.jma.go.jp/jma/index.html",
+                "org": "気象庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "WBGT に基づく行動判断と適切な水分・冷房管理で熱中症のほとんどは予防できます。",
+          "neutral": "気候変動で夏の暑さは年々厳しくなっており、過去の経験則だけでは対応できません。",
+          "cautious": "子どもは大人より体温調節機能が未熟で、自覚症状を訴えるのが遅いため、大人の観察が重要です。"
+    },
+    },
+    score: {"total":88,"reliability":28,"neutrality":24,"freshness":21,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/summer-break-heat-safety.jpg",
+    readingTime: 12,
+    tags: ["夏休み","熱中症","WBGT","暑さ対策","水分補給","健康"],
+    relatedArticleIds: ["art-1308","art-1309","art-1296","art-1294","art-1297","art-053"],
+  },
+  {
+    id: "art-1316",
+    slug: "afterschool-care-cost",
+    title: "学童保育の費用はいくら？公立・民間・習い事型の料金比較",
+    excerpt: "学童保育の費用はいくら？公立・民間・習い事型の料金比較を厚生労働省等の公的情報をもとに解説。学童保育の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブの現状",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "家計と教育費",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":24,"neutrality":23,"freshness":17,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/afterschool-care-cost.jpg",
+    readingTime: 9,
+    tags: ["学童保育","費用","料金"],
+    relatedArticleIds: ["art-1287","art-1307","art-1304","art-1305","art-1302","art-1292"],
+  },
+  {
+    id: "art-1297",
+    slug: "rainy-season-commute-safety",
+    title: "雨の日の通学・送迎の安全対策：年齢別チェックリスト",
+    excerpt: "梅雨時の通学・送迎で気をつけたい安全ポイントを年齢別に整理。レインコート・傘・自転車・冠水箇所などのリスクと対策をまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["health","lifestyle"],
+    source: {
+      name: "警察庁・各自治体 交通安全情報",
+      references: [
+          {
+                "title": "歩行中の交通事故防止",
+                "url": "https://www.npa.go.jp/",
+                "org": "警察庁",
+                "stance": "positive"
+          },
+          {
+                "title": "自転車安全利用5則",
+                "url": "https://www.npa.go.jp/koutsuu/kikaku/",
+                "org": "警察庁",
+                "stance": "positive"
+          },
+          {
+                "title": "通学路の安全確保",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "雨具の準備と通学路の事前確認で、雨の日の事故リスクは大きく下げられます。",
+          "neutral": "視界・路面状況の悪化で大人にも子にも判断時間が少なくなる季節です。",
+          "cautious": "雨の日の交通事故は晴天時より発生率が高い傾向があり、特に夕方の視認性低下に注意。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":23,"freshness":21,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/rainy-season-commute-safety.jpg",
+    readingTime: 10,
+    tags: ["梅雨","通学","安全","雨具","自転車","子育て"],
+    relatedArticleIds: ["art-1294","art-1295","art-1296","art-1311","art-1309","art-1298"],
+  },
+  {
+    id: "art-1295",
+    slug: "rainy-season-indoor-play",
+    title: "梅雨の室内遊びアイデア集：年齢別・体力消耗系から集中系まで",
+    excerpt: "梅雨の長期化で外遊びが難しい時期の室内遊びアイデアを年齢別に整理。体力消耗・創作・知育・親子協力など目的別にまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle","development"],
+    source: {
+      name: "教育委員会・子ども家庭支援センター 公的情報",
+      references: [
+          {
+                "title": "幼児期の運動指針",
+                "url": "https://www.mext.go.jp/a_menu/sports/undousisin/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの遊びと学び",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "梅雨の室内遊びは子どもの集中力・創造性・親子のコミュニケーションを深める好機です。",
+          "neutral": "天気と気分で活動の組み合わせを柔軟に変えると効果的。",
+          "cautious": "完全室内が続く時は意識的に体を動かす時間を確保しないと、夜の寝つきが悪くなります。"
+    },
+    },
+    score: {"total":82,"reliability":24,"neutrality":23,"freshness":20,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/rainy-season-indoor-play.jpg",
+    readingTime: 10,
+    tags: ["梅雨","室内遊び","年齢別","子育て","季節"],
+    relatedArticleIds: ["art-1294","art-1296","art-1308","art-1297","art-231","art-198"],
+  },
+  {
+    id: "art-1296",
+    slug: "rainy-season-mold-prevention",
+    title: "梅雨のカビ・湿気・ダニ対策：子育て家庭の衛生管理ガイド",
+    excerpt: "梅雨時の家のカビ・ダニ・湿気対策を子どもの健康面から整理。アレルギー・喘息・食中毒予防のポイントをまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["health","lifestyle"],
+    source: {
+      name: "厚生労働省・国立感染症研究所 公的情報",
+      references: [
+          {
+                "title": "カビ・ダニ対策",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "食中毒予防の3原則",
+                "url": "https://www.mhlw.go.jp/topics/syokuchu/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "室内環境とアレルギー",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な湿度管理と日常的な換気・清掃でカビ・ダニのほとんどは予防可能です。",
+          "neutral": "アレルギー体質の子どもは梅雨に症状が悪化しやすいので、生活環境の見直しを。",
+          "cautious": "カビ・ダニ・食中毒のリスクは見えにくく、症状が出てからでは対応が遅くなります。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":23,"freshness":21,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/rainy-season-mold-prevention.jpg",
+    readingTime: 11,
+    tags: ["梅雨","カビ","ダニ","湿気","食中毒","アレルギー","健康"],
+    relatedArticleIds: ["art-1294","art-1295","art-1311","art-1297","art-1309","art-919"],
+  },
+  {
+    id: "art-1294",
+    slug: "rainy-season-survival-overview",
+    title: "子育て家庭の梅雨対策まとめ：室内遊び・湿気・通学・健康管理",
+    excerpt: "6月の梅雨を子育て家庭がどう乗り切るか。室内での過ごし方、カビ・湿気対策、雨の日の通学・送迎、体調管理のポイントをまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle","health"],
+    source: {
+      name: "気象庁・厚生労働省・各教育委員会 公的情報",
+      references: [
+          {
+                "title": "梅雨入り・梅雨明けについて",
+                "url": "https://www.data.jma.go.jp/cpd/baiu/",
+                "org": "気象庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "カビ・ダニ対策の基本",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "学校保健安全法に基づく学校の対応",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "梅雨の時期は屋内で集中して取り組める活動の絶好の機会で、季節の変化を楽しむ子育てが可能です。",
+          "neutral": "湿度・低気圧で子どもの体調が崩れやすい時期。生活リズムの維持と早めの対応が大切。",
+          "cautious": "雨の日の送迎・通学は事故リスクが高まるため、ルートと時間帯の見直しが必要です。"
+    },
+    },
+    score: {"total":86,"reliability":26,"neutrality":24,"freshness":21,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/rainy-season-survival-overview.jpg",
+    readingTime: 14,
+    tags: ["梅雨","季節","室内遊び","健康","通学","子育て"],
+    relatedArticleIds: ["art-1295","art-1296","art-1297","art-1311","art-1309","art-1308"],
+  },
+  {
+    id: "art-1301",
+    slug: "sho1wall-parent-work-prep",
+    title: "小1の壁・親の働き方：時短・在宅・転職を検討するときの判断軸",
+    excerpt: "小1の壁で親が直面する働き方の見直し。時短勤務、フレックス・在宅勤務、転職、副業など各選択肢のメリット・デメリットを整理しました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle","mental"],
+    source: {
+      name: "厚生労働省・各種公的支援機関",
+      references: [
+          {
+                "title": "育児・介護休業法",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000130583.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "短時間勤務制度",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "両立支援等助成金",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu01/index.html",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "働き方の選択肢は近年大きく広がっており、家族の状況に合わせた最適化が可能になっています。",
+          "neutral": "会社の制度・職種・地域によって選べる範囲が異なるため、自社の制度確認から始めると効率的。",
+          "cautious": "感情的に転職・退職を決めると後悔するケースが多く、複数の選択肢を冷静に比較する時間を取ることが大切。"
+    },
+    },
+    score: {"total":89,"reliability":27,"neutrality":25,"freshness":21,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/sho1wall-parent-work-prep.jpg",
+    readingTime: 13,
+    tags: ["小1の壁","共働き","時短勤務","在宅勤務","転職","働き方","育児休業"],
+    relatedArticleIds: ["art-1298","art-1299","art-1300","art-1287","art-1289","art-1308"],
+  },
+  {
+    id: "art-1300",
+    slug: "sho1wall-routine-prep",
+    title: "小1の壁・生活リズム：朝・夕方・長期休暇の運用設計",
+    excerpt: "保育園と違う小学校の時間割で、家庭の生活リズムをどう設計するか。朝の身支度、放課後の流れ、夏休みの過ごし方を具体的に整理しました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle","education"],
+    source: {
+      name: "文部科学省・各教育委員会 公的情報",
+      references: [
+          {
+                "title": "学校教育法施行規則",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "生活リズムは入学前から段階的に小学校時間に近づけるのが効果的です。",
+          "neutral": "完璧なスケジュールを目指すより、家族でゆとりのある運用を作るのが現実的。",
+          "cautious": "夏休みの過ごし方は学童の有無と勤務形態で大きく左右されるため、入学前に試算を。"
+    },
+    },
+    score: {"total":84,"reliability":25,"neutrality":24,"freshness":20,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/sho1wall-routine-prep.jpg",
+    readingTime: 11,
+    tags: ["小1の壁","生活リズム","朝のルーティン","夏休み","学童","共働き"],
+    relatedArticleIds: ["art-1298","art-1299","art-1301","art-1308","art-1287","art-1289"],
+  },
+  {
+    id: "art-1321",
+    slug: "spring-school-supplies-list",
+    title: "新学期の持ち物チェックリスト：学年別に必要なものを完全網羅",
+    excerpt: "新学期の持ち物チェックリスト：学年別に必要なものを完全網羅を文部科学省等の公的情報をもとに解説。新学期の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "小学校入学準備",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":16,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/spring-school-supplies-list.jpg",
+    readingTime: 12,
+    tags: ["新学期","持ち物","チェックリスト"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
+  },
+  {
+    id: "art-1309",
+    slug: "summer-break-bento-strategy",
+    title: "夏休みのお弁当戦略：作り置き・冷凍食品・食中毒対策の実践ガイド",
+    excerpt: "学童で40日超続く夏休みのお弁当作りを、作り置き・冷凍食品・保冷の活用で時短かつ安全に。食中毒リスクの高い時期の対策をまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle","health"],
+    source: {
+      name: "厚生労働省・各自治体 公的情報",
+      references: [
+          {
+                "title": "食中毒予防の3原則",
+                "url": "https://www.mhlw.go.jp/topics/syokuchu/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "家庭でできる食中毒予防の6つのポイント",
+                "url": "https://www.mhlw.go.jp/topics/syokuchu/kanren/yobou/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "作り置き・冷凍食品・保冷の組み合わせで、夏休みのお弁当作りは大幅に楽になります。",
+          "neutral": "お弁当の中身より「作る人の負担を減らす」を優先する考え方が定着しつつあります。",
+          "cautious": "夏は食中毒のピーク。常温放置や水分の多いおかずは特にリスクが高いことを忘れずに。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":24,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/summer-break-bento-strategy.jpg",
+    readingTime: 11,
+    tags: ["夏休み","お弁当","食中毒","作り置き","共働き"],
+    relatedArticleIds: ["art-1308","art-1311","art-1296","art-1297","art-1294","art-1236"],
+  },
+  {
+    id: "art-1308",
+    slug: "summer-break-survival-overview",
+    title: "共働き家庭の夏休み運用ガイド：40日超を乗り切る全体設計",
+    excerpt: "小学生の長い夏休みを共働き家庭がどう運用するか。学童・お弁当・宿題・体調管理・親の働き方を一通りまとめた全体ガイドです。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle","education"],
+    source: {
+      name: "厚生労働省・文部科学省・各教育委員会 公的情報",
+      references: [
+          {
+                "title": "放課後児童健全育成事業について",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "夏休みの過ごし方・学習指導",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "熱中症予防情報",
+                "url": "https://www.wbgt.env.go.jp/",
+                "org": "環境省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "夏休みは子どもの成長機会が詰まっている期間。事前計画で家族の充実度を大きく上げられます。",
+          "neutral": "学童・働き方・お弁当・宿題・体調管理など同時多発の課題があり、家族全員での運用が前提。",
+          "cautious": "気候変動で夏の暑さが強まり、熱中症・体調管理のリスクが年々高まっています。"
+    },
+    },
+    score: {"total":88,"reliability":27,"neutrality":24,"freshness":21,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/summer-break-survival-overview.jpg",
+    readingTime: 14,
+    tags: ["夏休み","季節","共働き","学童","子育て"],
+    relatedArticleIds: ["art-1309","art-1310","art-1311","art-1300","art-1287","art-1298"],
+  },
+  {
+    id: "art-1322",
+    slug: "spring-class-change-anxiety",
+    title: "クラス替えの不安を和らげる：子どもの気持ちに寄り添う声かけ",
+    excerpt: "クラス替えの不安を和らげる：子どもの気持ちに寄り添う声かけを文部科学省等の公的情報をもとに解説。クラス替えの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "生徒指導",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "子育て相談",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":78,"reliability":24,"neutrality":22,"freshness":17,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/spring-class-change-anxiety.jpg",
+    readingTime: 8,
+    tags: ["クラス替え","不安","声かけ"],
+    relatedArticleIds: ["art-1218","art-1141","art-812","art-417","art-1298","art-1301"],
+  },
+  {
+    id: "art-1317",
+    slug: "afterschool-activities-options",
+    title: "放課後の過ごし方：学童・自宅・習い事の選択肢と安全対策",
+    excerpt: "放課後の過ごし方：学童・自宅・習い事の選択肢と安全対策を文部科学省等の公的情報をもとに解説。放課後の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "放課後対策",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの安全",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "地域の見守り",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "厚生労働省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":89,"reliability":27,"neutrality":25,"freshness":18,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/afterschool-activities-options.jpg",
+    readingTime: 11,
+    tags: ["放課後","過ごし方","安全"],
+    relatedArticleIds: ["art-1324","art-1167","art-1050","art-1051","art-1169","art-614"],
+  },
+  {
+    id: "art-1324",
+    slug: "spring-commute-safety",
+    title: "通学路の安全確認ガイド：入学前にチェックすべき防犯ポイント",
+    excerpt: "通学路の安全確認ガイド：入学前にチェックすべき防犯ポイントを文部科学省等の公的情報をもとに解説。通学路の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "学校安全",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "cautious"
+          },
+          {
+                "title": "子どもの安全",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "交通安全",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "文部科学省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":88,"reliability":29,"neutrality":22,"freshness":18,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/spring-commute-safety.jpg",
+    readingTime: 12,
+    tags: ["通学路","安全","防犯"],
+    relatedArticleIds: ["art-1317","art-1051","art-543","art-1167","art-1050","art-1169"],
+  },
+  {
+    id: "art-1323",
+    slug: "spring-new-teacher",
+    title: "新しい担任との関係づくり：保護者の挨拶と連携のポイント",
+    excerpt: "新しい担任との関係づくり：保護者の挨拶と連携のポイントを文部科学省等の公的情報をもとに解説。担任の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭と学校の連携",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "教育相談",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "保護者支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":78,"reliability":23,"neutrality":21,"freshness":15,"ageRelevance":14,"readability":5},
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    imageUrl: "/articles/spring-new-teacher.jpg",
+    readingTime: 10,
+    tags: ["担任","新学期","保護者"],
+    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
+  },
+  {
     id: "art-1262",
     slug: "art-creativity-kids-autumn",
     title: "芸術の秋：子どもの創造力を引き出すアート活動と関わり方",
@@ -271,7 +1925,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sports-day-preparation-kids.jpg",
     readingTime: 9,
     tags: ["運動会","体力づくり","走り方"],
-    relatedArticleIds: ["art-919","art-1267","art-148","art-115","art-053","art-023"],
+    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
   },
   {
     id: "art-1263",
@@ -359,7 +2013,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/winter-exercise-indoor-kids.jpg",
     readingTime: 9,
     tags: ["運動不足","室内運動","冬"],
-    relatedArticleIds: ["art-919","art-148","art-115","art-053","art-023","art-1259"],
+    relatedArticleIds: ["art-919","art-1311","art-148","art-115","art-1297","art-1296"],
   },
   {
     id: "art-1265",
@@ -403,7 +2057,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/new-year-money-education.jpg",
     readingTime: 9,
     tags: ["お年玉","金銭教育","お金の管理"],
-    relatedArticleIds: ["art-1053","art-1253","art-1052","art-1058","art-1236","art-1238"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
   },
   {
     id: "art-1264",
@@ -535,7 +2189,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/free-research-ideas-elementary.jpg",
     readingTime: 12,
     tags: ["自由研究","夏休み","探究学習"],
-    relatedArticleIds: ["art-1103","art-695","art-707","art-403","art-692","art-943"],
+    relatedArticleIds: ["art-1310","art-1308","art-1300","art-1103","art-695","art-707"],
   },
   {
     id: "art-1249",
@@ -623,7 +2277,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/heatstroke-prevention-kids.jpg",
     readingTime: 9,
     tags: ["熱中症","水分補給","応急処置"],
-    relatedArticleIds: ["art-1129","art-1126","art-623","art-026","art-913","art-649"],
+    relatedArticleIds: ["art-1129","art-1320","art-1126","art-623","art-026","art-913"],
   },
   {
     id: "art-1248",
@@ -799,7 +2453,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/summer-vacation-schedule-kids.jpg",
     readingTime: 9,
     tags: ["夏休み","スケジュール","生活リズム"],
-    relatedArticleIds: ["art-1236","art-1053","art-1052","art-1058","art-1265","art-1238"],
+    relatedArticleIds: ["art-1300","art-1311","art-1308","art-1309","art-1236","art-1298"],
   },
   {
     id: "art-1250",
@@ -1063,7 +2717,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-supply-preparation-guide.jpg",
     readingTime: 10,
     tags: ["入学準備","ランドセル","文房具"],
-    relatedArticleIds: ["art-1053","art-1253","art-1052","art-1058","art-1265","art-1236"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
   },
   {
     id: "art-1243",
@@ -1327,7 +2981,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/friendship-trouble-resolution.jpg",
     readingTime: 11,
     tags: ["友達トラブル","対人関係","介入"],
-    relatedArticleIds: ["art-1167","art-1050","art-1051","art-1169","art-614","art-543"],
+    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
   },
   {
     id: "art-1222",
@@ -1591,7 +3245,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/homework-habits-lower-elementary.jpg",
     readingTime: 9,
     tags: ["宿題","学習習慣","小学1年生"],
-    relatedArticleIds: ["art-1098","art-048","art-332","art-008","art-403","art-692"],
+    relatedArticleIds: ["art-1098","art-1310","art-048","art-332","art-008","art-403"],
   },
   {
     id: "art-1233",
@@ -1943,7 +3597,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dual-income-summer-childcare.jpg",
     readingTime: 10,
     tags: ["共働き","夏休み","学童保育"],
-    relatedArticleIds: ["art-1253","art-1053","art-1052","art-1058","art-1265","art-1238"],
+    relatedArticleIds: ["art-1287","art-1308","art-1307","art-1304","art-1305","art-1302"],
   },
   {
     id: "art-1237",
@@ -2119,7 +3773,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-entry-anxiety-tips.jpg",
     readingTime: 10,
     tags: ["入学準備","不安","心のケア"],
-    relatedArticleIds: ["art-1141","art-812","art-417","art-1030","art-1145","art-808"],
+    relatedArticleIds: ["art-1298","art-1322","art-1141","art-812","art-417","art-1301"],
   },
   {
     id: "art-1231",
@@ -2163,7 +3817,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/family-communication-tips.jpg",
     readingTime: 9,
     tags: ["親子関係","コミュニケーション","会話"],
-    relatedArticleIds: ["art-1167","art-1050","art-1051","art-1169","art-614","art-543"],
+    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
   },
   {
     id: "art-1220",
@@ -2207,7 +3861,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/new-school-friends-making.jpg",
     readingTime: 10,
     tags: ["友達づくり","新生活","社会性"],
-    relatedArticleIds: ["art-018","art-1167","art-1050","art-1051","art-1169","art-614"],
+    relatedArticleIds: ["art-018","art-1317","art-1324","art-1167","art-1050","art-1051"],
   },
   {
     id: "art-1211",
@@ -2559,7 +4213,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dcd-coordination-disorder.jpg",
     readingTime: 12,
     tags: ["DCD","協調運動","作業療法"],
-    relatedArticleIds: ["art-231","art-198","art-722","art-1004","art-251","art-761"],
+    relatedArticleIds: ["art-231","art-198","art-722","art-1299","art-1004","art-251"],
   },
   {
     id: "art-1213",
@@ -2867,7 +4521,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/left-hand-writing-support.jpg",
     readingTime: 9,
     tags: ["左利き","書字","利き手"],
-    relatedArticleIds: ["art-730","art-231","art-198","art-722","art-1004","art-251"],
+    relatedArticleIds: ["art-730","art-231","art-198","art-722","art-1299","art-1004"],
   },
   {
     id: "art-1080",
@@ -3307,7 +4961,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/tic-disorder-children.jpg",
     readingTime: 11,
     tags: ["チック","神経発達","トゥレット症候群"],
-    relatedArticleIds: ["art-231","art-198","art-722","art-251","art-761","art-977"],
+    relatedArticleIds: ["art-231","art-198","art-722","art-1299","art-251","art-761"],
   },
   {
     id: "art-1078",
@@ -3923,7 +5577,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kids-youtube-safety.jpg",
     readingTime: 11,
     tags: ["YouTube","動画視聴","ペアレンタルコントロール"],
-    relatedArticleIds: ["art-490","art-957","art-040","art-496","art-473","art-498"],
+    relatedArticleIds: ["art-490","art-957","art-1318","art-040","art-496","art-473"],
   },
   {
     id: "art-1161",
@@ -4451,7 +6105,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/active-learning-elementary.jpg",
     readingTime: 10,
     tags: ["アクティブラーニング","対話型学習","体験学習"],
-    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-386","art-694"],
+    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-1298","art-386"],
   },
   {
     id: "art-1108",
@@ -4539,7 +6193,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/correspondence-education-comparison.jpg",
     readingTime: 13,
     tags: ["通信教育","タブレット学習","教材比較"],
-    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-386","art-694"],
+    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-1298","art-386"],
   },
   {
     id: "art-1112",
@@ -4803,7 +6457,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/homework-motivation-tips.jpg",
     readingTime: 10,
     tags: ["宿題","やる気","学習習慣"],
-    relatedArticleIds: ["art-1224","art-048","art-332","art-008","art-403","art-692"],
+    relatedArticleIds: ["art-1224","art-1310","art-048","art-332","art-008","art-403"],
   },
   {
     id: "art-1018",
@@ -4935,7 +6589,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kanji-learning-tips.jpg",
     readingTime: 10,
     tags: ["漢字","国語","書き順"],
-    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-386","art-694"],
+    relatedArticleIds: ["art-1299","art-403","art-692","art-943","art-701","art-1298"],
   },
   {
     id: "art-1099",
@@ -4979,7 +6633,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/multiplication-table-memorize.jpg",
     readingTime: 9,
     tags: ["九九","算数","暗記法"],
-    relatedArticleIds: ["art-680","art-042","art-403","art-692","art-943","art-701"],
+    relatedArticleIds: ["art-680","art-1299","art-042","art-403","art-692","art-943"],
   },
   {
     id: "art-1107",
@@ -5023,7 +6677,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/pta-officer-duties.jpg",
     readingTime: 10,
     tags: ["PTA役員","学校運営","保護者活動"],
-    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-386","art-694"],
+    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-1298","art-386"],
   },
   {
     id: "art-1102",
@@ -5067,7 +6721,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/reading-aloud-benefits.jpg",
     readingTime: 9,
     tags: ["音読","読解力","脳科学"],
-    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-386","art-694"],
+    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-1298","art-386"],
   },
   {
     id: "art-1110",
@@ -5111,7 +6765,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/resource-room-guidance.jpg",
     readingTime: 11,
     tags: ["通級指導","特別支援","個別指導"],
-    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-386","art-694"],
+    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-1298","art-386"],
   },
   {
     id: "art-1106",
@@ -5243,7 +6897,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/special-needs-class-guide.jpg",
     readingTime: 12,
     tags: ["特別支援学級","特別支援教育","インクルーシブ"],
-    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-386","art-694"],
+    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-1298","art-386"],
   },
   {
     id: "art-1104",
@@ -5287,7 +6941,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sports-day-practice.jpg",
     readingTime: 8,
     tags: ["運動会","かけっこ","体力づくり"],
-    relatedArticleIds: ["art-689","art-403","art-692","art-943","art-701","art-386"],
+    relatedArticleIds: ["art-689","art-403","art-692","art-943","art-701","art-1298"],
   },
   {
     id: "art-1129",
@@ -5331,7 +6985,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/accidental-ingestion-response.jpg",
     readingTime: 11,
     tags: ["誤飲","中毒","応急処置"],
-    relatedArticleIds: ["art-649","art-1256","art-1126","art-623","art-026","art-913"],
+    relatedArticleIds: ["art-1320","art-649","art-1256","art-1126","art-623","art-026"],
   },
   {
     id: "art-1027",
@@ -5375,7 +7029,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/adhd-kids-understanding.jpg",
     readingTime: 14,
     tags: ["ADHD","注意欠如多動症","特別支援"],
-    relatedArticleIds: ["art-919","art-1267","art-148","art-115","art-053","art-023"],
+    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
   },
   {
     id: "art-1208",
@@ -5419,7 +7073,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/asthma-children-management.jpg",
     readingTime: 12,
     tags: ["ぜんそく","喘息","吸入薬"],
-    relatedArticleIds: ["art-919","art-1267","art-148","art-115","art-053","art-023"],
+    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
   },
   {
     id: "art-1207",
@@ -5551,7 +7205,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/burn-first-aid-kids.jpg",
     readingTime: 9,
     tags: ["やけど","応急処置","熱傷"],
-    relatedArticleIds: ["art-1129","art-1256","art-623","art-026","art-913","art-649"],
+    relatedArticleIds: ["art-1129","art-1256","art-1320","art-623","art-026","art-913"],
   },
   {
     id: "art-1131",
@@ -5947,7 +7601,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/head-lice-treatment-kids.jpg",
     readingTime: 9,
     tags: ["アタマジラミ","感染症対策","学校保健"],
-    relatedArticleIds: ["art-919","art-1267","art-148","art-115","art-053","art-023"],
+    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
   },
   {
     id: "art-1114",
@@ -6255,7 +7909,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/mycoplasma-pneumonia-kids.jpg",
     readingTime: 11,
     tags: ["マイコプラズマ","肺炎","長引く咳"],
-    relatedArticleIds: ["art-174","art-919","art-1267","art-148","art-115","art-053"],
+    relatedArticleIds: ["art-174","art-919","art-1311","art-1267","art-148","art-115"],
   },
   {
     id: "art-1025",
@@ -6519,7 +8173,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/streptococcal-infection.jpg",
     readingTime: 10,
     tags: ["溶連菌","咽頭炎","抗菌薬"],
-    relatedArticleIds: ["art-175","art-919","art-1267","art-148","art-115","art-053"],
+    relatedArticleIds: ["art-175","art-919","art-1311","art-1267","art-148","art-115"],
   },
   {
     id: "art-1132",
@@ -7047,7 +8701,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kids-room-design-guide.jpg",
     readingTime: 10,
     tags: ["子ども部屋","収納","学習環境"],
-    relatedArticleIds: ["art-1053","art-1253","art-1052","art-1265","art-1236","art-1238"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
   },
   {
     id: "art-1053",
@@ -7091,7 +8745,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/military-family-parenting.jpg",
     readingTime: 10,
     tags: ["転勤族","転校","環境変化"],
-    relatedArticleIds: ["art-1052","art-1253","art-1058","art-1265","art-1236","art-1238"],
+    relatedArticleIds: ["art-1052","art-1298","art-1301","art-1287","art-1311","art-1308"],
   },
   {
     id: "art-1182",
@@ -7355,7 +9009,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/relocation-kids-adjustment.jpg",
     readingTime: 10,
     tags: ["引越し","転校","適応"],
-    relatedArticleIds: ["art-1053","art-1253","art-1058","art-1265","art-1236","art-1238"],
+    relatedArticleIds: ["art-1053","art-1298","art-1301","art-1287","art-1311","art-1308"],
   },
   {
     id: "art-1055",
@@ -7707,7 +9361,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/anger-management-kids.jpg",
     readingTime: 10,
     tags: ["アンガーマネジメント","怒り","感情コントロール"],
-    relatedArticleIds: ["art-1147","art-1144","art-812","art-417","art-1145","art-1227"],
+    relatedArticleIds: ["art-1147","art-1144","art-812","art-417","art-1298","art-1301"],
   },
   {
     id: "art-1134",
@@ -7883,7 +9537,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/friendship-trouble-support.jpg",
     readingTime: 10,
     tags: ["友達トラブル","仲間外れ","社会性"],
-    relatedArticleIds: ["art-431","art-812","art-417","art-1030","art-433","art-1145"],
+    relatedArticleIds: ["art-431","art-812","art-417","art-1298","art-1301","art-1030"],
   },
   {
     id: "art-1147",
@@ -7927,7 +9581,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/game-losing-anger.jpg",
     readingTime: 9,
     tags: ["ゲーム","怒り","感情コントロール"],
-    relatedArticleIds: ["art-1030","art-1144","art-812","art-417","art-1145","art-808"],
+    relatedArticleIds: ["art-1030","art-1144","art-812","art-417","art-1298","art-1301"],
   },
   {
     id: "art-1028",
@@ -8015,7 +9669,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/introverted-child-parenting.jpg",
     readingTime: 10,
     tags: ["内向的","気質","個性"],
-    relatedArticleIds: ["art-812","art-417","art-1030","art-1145","art-808","art-1147"],
+    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-1145"],
   },
   {
     id: "art-1133",
@@ -8103,7 +9757,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lying-child-response.jpg",
     readingTime: 10,
     tags: ["嘘","道徳性","親子関係"],
-    relatedArticleIds: ["art-812","art-417","art-1030","art-808","art-1147","art-1215"],
+    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-808"],
   },
   {
     id: "art-1138",
@@ -8191,7 +9845,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nail-biting-psychology.jpg",
     readingTime: 9,
     tags: ["爪噛み心理","ストレス","心理的習癖"],
-    relatedArticleIds: ["art-812","art-417","art-1030","art-1145","art-808","art-1147"],
+    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-1145"],
   },
   {
     id: "art-1032",
@@ -8631,7 +10285,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sneaky-eating-response.jpg",
     readingTime: 9,
     tags: ["盗み食い","食行動","心理"],
-    relatedArticleIds: ["art-812","art-417","art-1030","art-1145","art-808","art-1147"],
+    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-1145"],
   },
   {
     id: "art-1144",
@@ -8675,7 +10329,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sore-loser-child.jpg",
     readingTime: 9,
     tags: ["負けず嫌い","競争心","感情コントロール"],
-    relatedArticleIds: ["art-1030","art-1147","art-812","art-417","art-1145","art-808"],
+    relatedArticleIds: ["art-1030","art-1147","art-812","art-417","art-1298","art-1301"],
   },
   {
     id: "art-1217",
@@ -8807,7 +10461,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/tic-disorder-mental-support.jpg",
     readingTime: 11,
     tags: ["チック症","心理的支援","不安"],
-    relatedArticleIds: ["art-1218","art-812","art-417","art-1030","art-1145","art-808"],
+    relatedArticleIds: ["art-1218","art-1322","art-812","art-417","art-1298","art-1301"],
   },
   {
     id: "art-1031",
@@ -11007,7 +12661,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/bicycle-safety-kids.jpg",
     readingTime: 10,
     tags: ["自転車","ヘルメット","交通安全"],
-    relatedArticleIds: ["art-1051","art-539","art-896","art-895","art-1050","art-1169"],
+    relatedArticleIds: ["art-1051","art-539","art-896","art-895","art-1317","art-1324"],
   },
   {
     id: "art-1049",
@@ -11227,7 +12881,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/foreign-roots-parenting.jpg",
     readingTime: 12,
     tags: ["外国ルーツ","多文化共生","日本語支援"],
-    relatedArticleIds: ["art-058","art-1167","art-1050","art-1051","art-1169","art-614"],
+    relatedArticleIds: ["art-058","art-1317","art-1324","art-1167","art-1050","art-1051"],
   },
   {
     id: "art-1045",
@@ -11359,7 +13013,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kodomo-shokudo-guide.jpg",
     readingTime: 11,
     tags: ["子ども食堂","地域福祉","子どもの貧困"],
-    relatedArticleIds: ["art-1167","art-1050","art-1051","art-1169","art-614","art-543"],
+    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
   },
   {
     id: "art-1169",
@@ -11403,7 +13057,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/library-utilization-kids.jpg",
     readingTime: 8,
     tags: ["図書館","読書習慣","学び"],
-    relatedArticleIds: ["art-1167","art-1050","art-1051","art-614","art-543","art-539"],
+    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-614"],
   },
   {
     id: "art-1172",
@@ -11447,7 +13101,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/local-sports-club-guide.jpg",
     readingTime: 9,
     tags: ["スポーツ少年団","スポ少","地域スポーツ"],
-    relatedArticleIds: ["art-1167","art-1050","art-1051","art-1169","art-614","art-543"],
+    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
   },
   {
     id: "art-1170",
@@ -11491,7 +13145,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/museum-art-gallery-kids.jpg",
     readingTime: 9,
     tags: ["博物館","美術館","文化体験"],
-    relatedArticleIds: ["art-1167","art-1050","art-1051","art-1169","art-614","art-543"],
+    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
   },
   {
     id: "art-1050",
@@ -11535,7 +13189,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/pta-participation-guide.jpg",
     readingTime: 11,
     tags: ["PTA","学校運営","保護者会"],
-    relatedArticleIds: ["art-607","art-1167","art-1051","art-1169","art-614","art-543"],
+    relatedArticleIds: ["art-607","art-1317","art-1324","art-1167","art-1051","art-1169"],
   },
   {
     id: "art-1051",
@@ -11579,7 +13233,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-route-safety.jpg",
     readingTime: 10,
     tags: ["通学路","交通安全","見守り"],
-    relatedArticleIds: ["art-1167","art-539","art-1050","art-1169","art-614","art-543"],
+    relatedArticleIds: ["art-1324","art-1167","art-539","art-1317","art-1050","art-1169"],
   },
   {
     id: "art-1168",
@@ -11855,7 +13509,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/after-school-childcare-guide.jpg",
     readingTime: 16,
     tags: ["学童保育","小1の壁","共働き","放課後","民間学童"],
-    relatedArticleIds: ["art-007","art-009","art-038","art-403","art-692","art-943"],
+    relatedArticleIds: ["art-007","art-009","art-038","art-1287","art-1289","art-1298"],
   },
   {
     id: "art-067",
@@ -11899,7 +13553,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/elementary-school-transfer.jpg",
     readingTime: 14,
     tags: ["転校","引っ越し","手続き","適応","転勤"],
-    relatedArticleIds: ["art-007","art-062","art-036","art-411","art-414","art-409"],
+    relatedArticleIds: ["art-007","art-062","art-036","art-1298","art-411","art-414"],
   },
   {
     id: "art-066",
@@ -12317,7 +13971,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/gifted-twice-exceptional.jpg",
     readingTime: 7,
     tags: ["ギフテッド","2E","才能教育","発達特性"],
-    relatedArticleIds: ["art-032","art-036","art-008","art-057","art-033","art-004"],
+    relatedArticleIds: ["art-032","art-036","art-008","art-057","art-1299","art-1310"],
   },
   {
     id: "art-039",
@@ -12783,7 +14437,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/multicultural-education-home.jpg",
     readingTime: 7,
     tags: ["多文化共生","異文化理解","人権教育","友達関係"],
-    relatedArticleIds: ["art-060","art-013","art-1047","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-060","art-013","art-1047","art-1317","art-1324","art-1167"],
   },
   {
     id: "art-009",
@@ -12895,7 +14549,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/heat-stroke-prevention-kids.jpg",
     readingTime: 7,
     tags: ["熱中症","夏","予防","水分補給"],
-    relatedArticleIds: ["art-052","art-059","art-919","art-1267","art-148","art-115"],
+    relatedArticleIds: ["art-052","art-059","art-1311","art-919","art-1267","art-148"],
   },
   {
     id: "art-029",
@@ -12951,7 +14605,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kids-first-aid-guide.jpg",
     readingTime: 7,
     tags: ["応急処置","ケガ","やけど","誤飲"],
-    relatedArticleIds: ["art-028","art-026","art-027","art-997","art-1123","art-1125"],
+    relatedArticleIds: ["art-028","art-026","art-027","art-997","art-1123","art-1320"],
   },
   {
     id: "art-057",
@@ -13007,7 +14661,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/executive-function-kids.jpg",
     readingTime: 7,
     tags: ["実行機能","非認知能力","集中力","自制心"],
-    relatedArticleIds: ["art-008","art-012","art-055","art-035","art-072","art-033"],
+    relatedArticleIds: ["art-008","art-012","art-055","art-035","art-1299","art-1310"],
   },
   {
     id: "art-014",
@@ -13517,7 +15171,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/first-grade-preparation.jpg",
     readingTime: 8,
     tags: ["入学準備","小学校","年長","チェックリスト"],
-    relatedArticleIds: ["art-008","art-367","art-368","art-403","art-692","art-943"],
+    relatedArticleIds: ["art-008","art-1298","art-1299","art-367","art-368","art-403"],
   },
   {
     id: "art-046",
@@ -13853,7 +15507,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/educational-apps-guide.jpg",
     readingTime: 6,
     tags: ["知育アプリ","デジタル教育","スクリーンタイム","幼児教育"],
-    relatedArticleIds: ["art-010","art-015","art-030","art-046","art-004","art-473"],
+    relatedArticleIds: ["art-010","art-015","art-030","art-1318","art-046","art-004"],
   },
   {
     id: "art-044",
@@ -13971,7 +15625,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/food-allergy-children.jpg",
     readingTime: 22,
     tags: ["食物アレルギー","アレルギー検査","給食対応","アナフィラキシー"],
-    relatedArticleIds: ["art-002","art-025","art-022","art-309","art-023","art-071"],
+    relatedArticleIds: ["art-002","art-025","art-022","art-309","art-1319","art-023"],
   },
   {
     id: "art-018",
@@ -14021,7 +15675,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/community-activities-kids.jpg",
     readingTime: 5,
     tags: ["地域活動","社会性","体験活動","子ども会"],
-    relatedArticleIds: ["art-020","art-016","art-009","art-1220","art-1167","art-1050"],
+    relatedArticleIds: ["art-020","art-016","art-009","art-1220","art-1317","art-1324"],
   },
   {
     id: "art-055",
@@ -14351,7 +16005,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/homework-support-parents.jpg",
     readingTime: 7,
     tags: ["宿題","家庭学習","親の関わり方","小学生"],
-    relatedArticleIds: ["art-008","art-042","art-041","art-1098","art-1224","art-403"],
+    relatedArticleIds: ["art-008","art-042","art-041","art-1310","art-1098","art-1224"],
   },
   {
     id: "art-024",
@@ -14519,7 +16173,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/montessori-at-home.jpg",
     readingTime: 8,
     tags: ["モンテッソーリ","幼児教育","おうち遊び","自主性"],
-    relatedArticleIds: ["art-004","art-054","art-003","art-033","art-057","art-035"],
+    relatedArticleIds: ["art-004","art-054","art-003","art-033","art-1299","art-1310"],
   },
   {
     id: "art-017",
@@ -14743,7 +16397,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/posture-backpack-health.jpg",
     readingTime: 7,
     tags: ["姿勢","ランドセル","腰痛予防","小学生"],
-    relatedArticleIds: ["art-007","art-052","art-919","art-1267","art-148","art-115"],
+    relatedArticleIds: ["art-007","art-052","art-919","art-1311","art-1267","art-148"],
   },
   {
     id: "art-042",
@@ -14799,7 +16453,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/math-anxiety-prevention.jpg",
     readingTime: 7,
     tags: ["算数","学習支援","つまずき","小学生"],
-    relatedArticleIds: ["art-008","art-048","art-680","art-1099","art-403","art-692"],
+    relatedArticleIds: ["art-008","art-048","art-680","art-1299","art-1099","art-403"],
   },
   {
     id: "art-021",
@@ -15353,7 +17007,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sensory-play-benefits.jpg",
     readingTime: 6,
     tags: ["感覚遊び","五感","乳幼児","遊び"],
-    relatedArticleIds: ["art-003","art-031","art-004","art-045","art-057","art-974"],
+    relatedArticleIds: ["art-003","art-031","art-004","art-045","art-1299","art-1310"],
   },
   {
     id: "art-059",
@@ -15689,7 +17343,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sibling-rivalry-management.jpg",
     readingTime: 6,
     tags: ["きょうだい","ケンカ","子育て","公平性"],
-    relatedArticleIds: ["art-014","art-034","art-038","art-812","art-417","art-1030"],
+    relatedArticleIds: ["art-014","art-034","art-038","art-1298","art-812","art-417"],
   },
   {
     id: "art-003",
@@ -17675,7 +19329,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-camping-family.jpg",
     readingTime: 12,
     tags: ["生活","キャンプ"],
-    relatedArticleIds: ["art-608","art-595","art-613","art-607","art-1167","art-1050"],
+    relatedArticleIds: ["art-608","art-595","art-613","art-607","art-1317","art-1324"],
   },
   {
     id: "art-612",
@@ -17751,7 +19405,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-travel-international.jpg",
     readingTime: 18,
     tags: ["生活","海外旅行"],
-    relatedArticleIds: ["art-614","art-608","art-595","art-607","art-1167","art-1050"],
+    relatedArticleIds: ["art-614","art-608","art-595","art-607","art-1317","art-1324"],
   },
   {
     id: "art-609",
@@ -17941,7 +19595,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-pta-guide.jpg",
     readingTime: 11,
     tags: ["生活","PTA"],
-    relatedArticleIds: ["art-1050","art-614","art-608","art-595","art-613","art-1167"],
+    relatedArticleIds: ["art-1050","art-614","art-608","art-595","art-613","art-1317"],
   },
   {
     id: "art-608",
@@ -17979,7 +19633,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-school-volunteer.jpg",
     readingTime: 8,
     tags: ["生活","ボランティア"],
-    relatedArticleIds: ["art-614","art-595","art-613","art-607","art-1167","art-1050"],
+    relatedArticleIds: ["art-614","art-595","art-613","art-607","art-1317","art-1324"],
   },
   {
     id: "art-605",
@@ -18321,7 +19975,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-family-meeting.jpg",
     readingTime: 12,
     tags: ["生活","家族会議"],
-    relatedArticleIds: ["art-614","art-608","art-613","art-607","art-1167","art-1050"],
+    relatedArticleIds: ["art-614","art-608","art-613","art-607","art-1317","art-1324"],
   },
   {
     id: "art-596",
@@ -20373,7 +22027,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/social-stranger-danger.jpg",
     readingTime: 8,
     tags: ["防犯","制度","子育て支援"],
-    relatedArticleIds: ["art-539","art-532","art-535","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-539","art-532","art-1324","art-1317","art-535","art-1167"],
   },
   {
     id: "art-541",
@@ -20525,7 +22179,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/social-traffic-safety.jpg",
     readingTime: 18,
     tags: ["交通安全","制度","子育て支援"],
-    relatedArticleIds: ["art-543","art-532","art-1167","art-1051","art-535","art-1050"],
+    relatedArticleIds: ["art-543","art-532","art-1167","art-1051","art-1317","art-535"],
   },
   {
     id: "art-540",
@@ -20715,7 +22369,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/social-after-school-club.jpg",
     readingTime: 13,
     tags: ["学童","制度","子育て支援"],
-    relatedArticleIds: ["art-543","art-539","art-535","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-543","art-539","art-1317","art-535","art-1324","art-1167"],
   },
   {
     id: "art-533",
@@ -21227,7 +22881,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/cooperation-3to6.jpg",
     readingTime: 18,
     tags: ["協調性","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-518","art-515","art-510","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-518","art-515","art-510","art-1317","art-1324","art-1167"],
   },
   {
     id: "art-518",
@@ -21265,7 +22919,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/environment-3to6.jpg",
     readingTime: 17,
     tags: ["環境教育","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-515","art-510","art-522","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-515","art-510","art-522","art-1317","art-1324","art-1167"],
   },
   {
     id: "art-519",
@@ -21379,7 +23033,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/diversity-3to6.jpg",
     readingTime: 11,
     tags: ["多様性の理解","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-518","art-510","art-522","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-518","art-510","art-522","art-1317","art-1324","art-1167"],
   },
   {
     id: "art-516",
@@ -21645,7 +23299,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/community-3to6.jpg",
     readingTime: 14,
     tags: ["地域のつながり","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-518","art-515","art-522","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-518","art-515","art-522","art-1317","art-1324","art-1167"],
   },
   {
     id: "art-511",
@@ -22025,7 +23679,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/digital-app-review-kids.jpg",
     readingTime: 17,
     tags: ["デジタル","アプリ"],
-    relatedArticleIds: ["art-490","art-957","art-496","art-955","art-1042","art-040"],
+    relatedArticleIds: ["art-490","art-957","art-496","art-955","art-1318","art-1042"],
   },
   {
     id: "art-500",
@@ -22177,7 +23831,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/digital-photo-privacy.jpg",
     readingTime: 18,
     tags: ["デジタル","プライバシー"],
-    relatedArticleIds: ["art-490","art-957","art-498","art-955","art-1042","art-040"],
+    relatedArticleIds: ["art-490","art-957","art-498","art-955","art-1318","art-1042"],
   },
   {
     id: "art-495",
@@ -22443,7 +24097,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/digital-youtube-kids-guide.jpg",
     readingTime: 11,
     tags: ["デジタル","YouTube"],
-    relatedArticleIds: ["art-957","art-1042","art-496","art-498","art-955","art-040"],
+    relatedArticleIds: ["art-957","art-1042","art-496","art-498","art-955","art-1318"],
   },
   {
     id: "art-486",
@@ -23013,7 +24667,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/screen-time-0to1.jpg",
     readingTime: 19,
     tags: ["スクリーンタイム","0〜1歳","年齢別"],
-    relatedArticleIds: ["art-474","art-476","art-473","art-475","art-482","art-480"],
+    relatedArticleIds: ["art-474","art-1318","art-476","art-473","art-475","art-482"],
   },
   {
     id: "art-473",
@@ -23051,7 +24705,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/screen-time-1to3.jpg",
     readingTime: 17,
     tags: ["スクリーンタイム","1〜3歳","年齢別"],
-    relatedArticleIds: ["art-040","art-474","art-490","art-957","art-1042","art-476"],
+    relatedArticleIds: ["art-1318","art-040","art-474","art-490","art-957","art-1042"],
   },
   {
     id: "art-474",
@@ -41649,7 +43303,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/vacation-summer-plan.jpg",
     readingTime: 9,
     tags: ["夏休み","長期休み","計画"],
-    relatedArticleIds: ["art-708","art-709","art-713","art-1255","art-695","art-403"],
+    relatedArticleIds: ["art-708","art-709","art-713","art-1308","art-1310","art-1300"],
   },
   {
     id: "art-990",
@@ -43017,7 +44671,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-illness-strep-throat.jpg",
     readingTime: 13,
     tags: ["病気","感染症","溶連菌"],
-    relatedArticleIds: ["art-174","art-167","art-1116","art-169","art-919","art-1267"],
+    relatedArticleIds: ["art-174","art-167","art-1116","art-169","art-919","art-1311"],
   },
   {
     id: "art-978",
@@ -43321,7 +44975,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-illness-mycoplasma.jpg",
     readingTime: 13,
     tags: ["病気","感染症","マイコプラズマ"],
-    relatedArticleIds: ["art-175","art-167","art-1120","art-169","art-919","art-1267"],
+    relatedArticleIds: ["art-175","art-167","art-1120","art-169","art-919","art-1311"],
   },
   {
     id: "art-172",
@@ -44043,7 +45697,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-illness-summer-skin-trouble.jpg",
     readingTime: 14,
     tags: ["病気","感染症","皮膚"],
-    relatedArticleIds: ["art-175","art-174","art-169","art-919","art-1267","art-171"],
+    relatedArticleIds: ["art-175","art-174","art-169","art-919","art-1311","art-1267"],
   },
   {
     id: "art-969",
@@ -44555,7 +46209,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-math-book.jpg",
     readingTime: 19,
     tags: ["絵本","算数","読み聞かせ"],
-    relatedArticleIds: ["art-672","art-685","art-679","art-671","art-673","art-1258"],
+    relatedArticleIds: ["art-672","art-685","art-679","art-671","art-673","art-1299"],
   },
   {
     id: "art-162",
@@ -45439,7 +47093,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/digital-extra-educational-game-review.jpg",
     readingTime: 9,
     tags: ["ゲーム","デジタル"],
-    relatedArticleIds: ["art-490","art-496","art-498","art-955","art-1042","art-040"],
+    relatedArticleIds: ["art-490","art-496","art-498","art-955","art-1318","art-1042"],
   },
   {
     id: "art-958",
@@ -45749,7 +47403,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/digital-extra-art-app-review.jpg",
     readingTime: 18,
     tags: ["お絵かき","デジタル"],
-    relatedArticleIds: ["art-490","art-957","art-496","art-498","art-1042","art-040"],
+    relatedArticleIds: ["art-490","art-957","art-496","art-498","art-1318","art-1042"],
   },
   {
     id: "art-954",
@@ -46281,7 +47935,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/checkup-blood-test-child.jpg",
     readingTime: 15,
     tags: ["健診","血液検査","子どもの健康"],
-    relatedArticleIds: ["art-659","art-660","art-919","art-662","art-1267","art-148"],
+    relatedArticleIds: ["art-659","art-660","art-919","art-662","art-1311","art-1267"],
   },
   {
     id: "art-148",
@@ -46889,7 +48543,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/checkup-school-health-check.jpg",
     readingTime: 12,
     tags: ["健診","学校","子どもの健康"],
-    relatedArticleIds: ["art-666","art-659","art-919","art-662","art-1267","art-148"],
+    relatedArticleIds: ["art-666","art-659","art-919","art-662","art-1311","art-1267"],
   },
   {
     id: "art-141",
@@ -47193,7 +48847,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/checkup-5year-checkup.jpg",
     readingTime: 16,
     tags: ["健診","5歳","子どもの健康"],
-    relatedArticleIds: ["art-666","art-660","art-919","art-662","art-1267","art-148"],
+    relatedArticleIds: ["art-666","art-660","art-919","art-662","art-1311","art-1267"],
   },
   {
     id: "art-138",
@@ -49131,7 +50785,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/health-detail-amblyopia-child.jpg",
     readingTime: 8,
     tags: ["弱視","小児科","基礎知識"],
-    relatedArticleIds: ["art-919","art-926","art-913","art-1267","art-148","art-115"],
+    relatedArticleIds: ["art-919","art-926","art-913","art-1311","art-1267","art-148"],
   },
   {
     id: "art-926",
@@ -49169,7 +50823,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/health-detail-color-blindness-child.jpg",
     readingTime: 19,
     tags: ["色覚","小児科","基礎知識"],
-    relatedArticleIds: ["art-919","art-925","art-913","art-1267","art-148","art-115"],
+    relatedArticleIds: ["art-919","art-925","art-913","art-1311","art-1267","art-148"],
   },
   {
     id: "art-641",
@@ -49853,7 +51507,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/health-detail-tonsillitis-child.jpg",
     readingTime: 8,
     tags: ["扁桃","小児科","基礎知識"],
-    relatedArticleIds: ["art-925","art-926","art-913","art-1267","art-148","art-115"],
+    relatedArticleIds: ["art-925","art-926","art-913","art-1311","art-1267","art-148"],
   },
   {
     id: "art-634",

@@ -6,7 +6,21 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 08 May 2026 07:32:41 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 22:00:31 GMT</lastBuildDate>
+    <item>
+      <title>年齢別スクリーンタイムの目安：WHOガイドラインと実践的なルール</title>
+      <link>https://012.kids/articles/screen-time-age-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/screen-time-age-guide</guid>
+      <description>年齢別スクリーンタイムの目安：WHOガイドラインと実践的なルールを国立成育医療研究センター等の公的情報をもとに解説。スクリーンタイムの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>学童保育の選び方完全ガイド：公立・民間の違いと比較ポイント</title>
+      <link>https://012.kids/articles/afterschool-care-choosing-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-choosing-guide</guid>
+      <description>学童保育の選び方完全ガイド：公立・民間の違いと比較ポイントを厚生労働省等の公的情報をもとに解説。学童保育の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>文京区の学童保育「育成室」ガイド：教育意識の高い区の保活事情</title>
       <link>https://012.kids/articles/bunkyo-gakudo-guide</link>
@@ -33,6 +47,13 @@
       <link>https://012.kids/articles/itabashi-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/itabashi-gakudo-guide</guid>
       <description>板橋区の「あいキッズ」（全児童型放課後事業）の仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>葛飾区の学童保育「わくわくチャレンジ広場」ガイド</title>
+      <link>https://012.kids/articles/katsushika-gakudo-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/katsushika-gakudo-guide</guid>
+      <description>葛飾区の学童保育クラブと「わくわくチャレンジ広場」の仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。</description>
       <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -106,10 +127,59 @@
       <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>杉並区の学童保育ガイド：子育て世帯人気区の保活事情</title>
+      <link>https://012.kids/articles/suginami-gakudo-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/suginami-gakudo-guide</guid>
+      <description>杉並区の学童クラブと放課後等居場所事業の仕組み、対象学年、利用料、申込スケジュールを整理。子育て世帯に人気の住宅区の保活事情を解説します。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>墨田区の学童保育ガイド：下町と再開発エリアが混在する区の保活</title>
+      <link>https://012.kids/articles/sumida-gakudo-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/sumida-gakudo-guide</guid>
+      <description>墨田区の学童クラブと放課後子ども教室の仕組み、対象学年、利用料、申込スケジュールを整理。下町コミュニティと再開発（押上・錦糸町）が混在する区の保活事情を解説します。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>夏休みの宿題伴走ガイド：計画・自由研究・読書感想文の進め方</title>
+      <link>https://012.kids/articles/summer-break-homework-coaching</link>
+      <guid isPermaLink="true">https://012.kids/articles/summer-break-homework-coaching</guid>
+      <description>夏休みの宿題を計画的に進めるための親の伴走スタンスを整理。自由研究・読書感想文・絵日記の取り組み方を年齢別にまとめました。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>東京都23区 学童保育徹底比較：制度・待機・利用料の違いを一覧で</title>
       <link>https://012.kids/articles/tokyo-23ku-gakudo-overview</link>
       <guid isPermaLink="true">https://012.kids/articles/tokyo-23ku-gakudo-overview</guid>
       <description>東京都23区それぞれの放課後児童クラブ（学童保育）制度・定員・待機状況・利用料を整理。共働き家庭の保活、入学準備、引越し検討の比較に役立ちます。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>子どもの食物アレルギー入門：症状・検査・日常管理のポイント</title>
+      <link>https://012.kids/articles/child-food-allergy-basics</link>
+      <guid isPermaLink="true">https://012.kids/articles/child-food-allergy-basics</guid>
+      <description>子どもの食物アレルギー入門：症状・検査・日常管理のポイントを厚生労働省等の公的情報をもとに解説。食物アレルギーの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>子どもの応急処置マニュアル：ケガ・やけど・誤飲の対応法</title>
+      <link>https://012.kids/articles/first-aid-kids-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/first-aid-kids-guide</guid>
+      <description>子どもの応急処置マニュアル：ケガ・やけど・誤飲の対応法を厚生労働省等の公的情報をもとに解説。応急処置の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>夏休みの熱中症・暑さ対策ガイド：WBGT・水分補給・冷房運用の実践</title>
+      <link>https://012.kids/articles/summer-break-heat-safety</link>
+      <guid isPermaLink="true">https://012.kids/articles/summer-break-heat-safety</guid>
+      <description>気候変動で年々厳しくなる夏。学童・通学・外遊びでの熱中症リスクをWBGT（暑さ指数）に基づき判断。家庭での冷房運用・水分補給のコツも整理しました。</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>学童保育の費用はいくら？公立・民間・習い事型の料金比較</title>
+      <link>https://012.kids/articles/afterschool-care-cost</link>
+      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-cost</guid>
+      <description>学童保育の費用はいくら？公立・民間・習い事型の料金比較を厚生労働省等の公的情報をもとに解説。学童保育の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
       <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -146,76 +216,6 @@
       <guid isPermaLink="true">https://012.kids/articles/sho1wall-parent-work-prep</guid>
       <description>小1の壁で親が直面する働き方の見直し。時短勤務、フレックス・在宅勤務、転職、副業など各選択肢のメリット・デメリットを整理しました。</description>
       <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>小1の壁・生活リズム：朝・夕方・長期休暇の運用設計</title>
-      <link>https://012.kids/articles/sho1wall-routine-prep</link>
-      <guid isPermaLink="true">https://012.kids/articles/sho1wall-routine-prep</guid>
-      <description>保育園と違う小学校の時間割で、家庭の生活リズムをどう設計するか。朝の身支度、放課後の流れ、夏休みの過ごし方を具体的に整理しました。</description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>art-creativity-kids-autumn</title>
-      <link>https://012.kids/articles/art-creativity-kids-autumn</link>
-      <guid isPermaLink="true">https://012.kids/articles/art-creativity-kids-autumn</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>autumn-study-habits-upper</title>
-      <link>https://012.kids/articles/autumn-study-habits-upper</link>
-      <guid isPermaLink="true">https://012.kids/articles/autumn-study-habits-upper</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>reading-habit-autumn-guide</title>
-      <link>https://012.kids/articles/reading-habit-autumn-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/reading-habit-autumn-guide</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>dry-skin-kids-winter-care</title>
-      <link>https://012.kids/articles/dry-skin-kids-winter-care</link>
-      <guid isPermaLink="true">https://012.kids/articles/dry-skin-kids-winter-care</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>seasonal-flu-preparation-kids</title>
-      <link>https://012.kids/articles/seasonal-flu-preparation-kids</link>
-      <guid isPermaLink="true">https://012.kids/articles/seasonal-flu-preparation-kids</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>sports-day-preparation-kids</title>
-      <link>https://012.kids/articles/sports-day-preparation-kids</link>
-      <guid isPermaLink="true">https://012.kids/articles/sports-day-preparation-kids</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>winter-cold-prevention-family</title>
-      <link>https://012.kids/articles/winter-cold-prevention-family</link>
-      <guid isPermaLink="true">https://012.kids/articles/winter-cold-prevention-family</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>winter-exercise-indoor-kids</title>
-      <link>https://012.kids/articles/winter-exercise-indoor-kids</link>
-      <guid isPermaLink="true">https://012.kids/articles/winter-exercise-indoor-kids</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>new-year-money-education</title>
-      <link>https://012.kids/articles/new-year-money-education</link>
-      <guid isPermaLink="true">https://012.kids/articles/new-year-money-education</guid>
-      <description></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
