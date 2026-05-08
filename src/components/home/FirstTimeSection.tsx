@@ -1,8 +1,5 @@
-'use client';
-
 import Image from 'next/image';
-import Link from 'next/link';
-import { trackFirst3Click } from '@/lib/analytics';
+import TrackingLink from '@/components/ui/TrackingLink';
 
 const bp = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -49,10 +46,11 @@ export default function FirstTimeSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {FIRST_TIME_CARDS.map((card) => (
-          <Link
+          <TrackingLink
             key={card.ageGroup}
             href={card.href}
-            onClick={() => trackFirst3Click(card.ageGroup)}
+            trackingType="first3"
+            trackingId={card.ageGroup}
             className="group flex items-start gap-4 rounded-xl p-5 border border-[var(--color-paper-edge)] bg-[var(--color-surface)] hover:shadow-[0_12px_28px_-12px_rgba(31,36,57,0.18)] transition-all"
           >
             <div
@@ -84,7 +82,7 @@ export default function FirstTimeSection() {
                 </svg>
               </span>
             </div>
-          </Link>
+          </TrackingLink>
         ))}
       </div>
     </section>

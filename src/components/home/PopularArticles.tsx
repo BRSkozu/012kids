@@ -1,7 +1,5 @@
-'use client';
-
 import Link from 'next/link';
-import { trackPopularClick } from '@/lib/analytics';
+import TrackingLink from '@/components/ui/TrackingLink';
 
 interface PopularArticle {
   id: string;
@@ -53,10 +51,12 @@ export default function PopularArticles({ articles }: { articles: PopularArticle
         {articles.map((article) => {
           const stageInfo = STAGE_LABELS[article.stage];
           return (
-            <Link
+            <TrackingLink
               key={article.id}
               href={`/articles/${article.slug}`}
-              onClick={() => trackPopularClick(article.id, stageInfo?.label)}
+              trackingType="popular"
+              trackingId={article.id}
+              trackingExtra={stageInfo?.label}
               className="group block rounded-xl p-5 bg-[var(--color-surface)] border border-[var(--color-paper-edge)] card-hover"
             >
               {stageInfo && (
@@ -74,7 +74,7 @@ export default function PopularArticles({ articles }: { articles: PopularArticle
                 {article.title}
               </h3>
               <p className="text-xs text-[var(--color-foreground-soft)] mt-2 line-clamp-2 leading-relaxed">{article.excerpt}</p>
-            </Link>
+            </TrackingLink>
           );
         })}
       </div>

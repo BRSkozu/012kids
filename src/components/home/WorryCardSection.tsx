@@ -1,8 +1,6 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { trackTroubleClick } from '@/lib/analytics';
+import TrackingLink from '@/components/ui/TrackingLink';
 
 const bp = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -88,10 +86,11 @@ export default function WorryCardSection() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {WORRY_CARDS.map((card) => (
-          <Link
+          <TrackingLink
             key={card.id}
             href={card.href}
-            onClick={() => trackTroubleClick(card.id)}
+            trackingType="trouble"
+            trackingId={card.id}
             className="group flex flex-col rounded-2xl bg-[var(--color-surface)] border border-[var(--color-paper-edge)] overflow-hidden card-hover"
           >
             <div className="relative aspect-square w-full overflow-hidden bg-[var(--color-warm-cream)]">
@@ -109,7 +108,7 @@ export default function WorryCardSection() {
             >
               {card.label}
             </span>
-          </Link>
+          </TrackingLink>
         ))}
       </div>
       <div className="mt-5 text-center">

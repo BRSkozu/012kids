@@ -1,7 +1,4 @@
-'use client';
-
-import Link from 'next/link';
-import { trackAgeClick } from '@/lib/analytics';
+import TrackingLink from '@/components/ui/TrackingLink';
 
 const AGE_PILLS = [
   { label: '0〜2歳', href: '/age-guide/0stage', color: '#FFB3B3', colorLight: '#FFF0F0' },
@@ -16,10 +13,11 @@ export default function AgePillNav() {
     <nav className="max-w-7xl mx-auto px-4 py-4" aria-label="年齢別ナビゲーション">
       <div className="flex flex-wrap justify-center gap-3">
         {AGE_PILLS.map((pill) => (
-          <Link
+          <TrackingLink
             key={pill.label}
             href={pill.href}
-            onClick={() => trackAgeClick(pill.label)}
+            trackingType="age"
+            trackingId={pill.label}
             className="group relative inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm border transition-all duration-200 hover:shadow-[0_10px_22px_-14px_rgba(31,36,57,0.35)] active:scale-95"
             style={{
               backgroundColor: pill.colorLight,
@@ -38,7 +36,7 @@ export default function AgePillNav() {
             <svg className="w-3.5 h-3.5 text-[var(--color-foreground-muted)] group-hover:text-[var(--color-primary-dark)] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
             </svg>
-          </Link>
+          </TrackingLink>
         ))}
       </div>
     </nav>

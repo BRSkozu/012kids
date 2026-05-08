@@ -94,7 +94,7 @@ jobs:
       # Step 6: Build & Deploy
       - name: Build site
         if: steps.count.outputs.has_changes == 'true' && github.event.inputs.skip_deploy != 'true'
-        run: npx next build
+        run: npm run build
         env:
           GITHUB_PAGES: 'true'
           NEXT_PUBLIC_BASE_PATH: /012kids
