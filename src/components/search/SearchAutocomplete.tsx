@@ -46,7 +46,9 @@ export default function SearchAutocomplete({
           { name: 'excerpt', weight: 2 },
           { name: 'tags', weight: 2 },
         ],
-        threshold: 0.4,
+        threshold: 0.3,
+        ignoreLocation: true,
+        minMatchCharLength: 2,
         includeScore: true,
       }),
     []

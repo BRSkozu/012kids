@@ -8,6 +8,7 @@ import ArticleCard from '@/components/articles/ArticleCard';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import WorrySearch from '@/components/search/WorrySearch';
 import SearchAutocomplete from '@/components/search/SearchAutocomplete';
+import SearchEmptyState from '@/components/search/SearchEmptyState';
 import { AGE_STAGES } from '@/data/stages';
 import { CATEGORIES } from '@/data/categories';
 import { ARTICLES } from '@/data/articles';
@@ -20,7 +21,9 @@ const fuse = new Fuse(ARTICLES, {
     { name: 'tags', weight: 2 },
     { name: 'categories', weight: 1 },
   ],
-  threshold: 0.4,
+  threshold: 0.3,
+  ignoreLocation: true,
+  minMatchCharLength: 2,
   includeScore: true,
 });
 
@@ -211,30 +214,7 @@ function SearchContent() {
               )}
             </>
           ) : (
-            <div className="text-center py-12">
-              <p className="text-[var(--color-foreground-muted)] mb-4">キーワードを入力して検索してください</p>
-              <div className="flex flex-wrap justify-center gap-2">
-                {['離乳食', '発達', '習い事', 'プログラミング', 'いじめ', 'アレルギー', '受験'].map(
-                  (tag) => (
-                    <button
-                      key={tag}
-                      onClick={() => setQuery(tag)}
-                      className="px-3 py-1.5 bg-[var(--color-warm-cream)] border border-[var(--color-paper-edge)] text-[var(--color-foreground-soft)] rounded-full text-sm hover:bg-[var(--color-surface)] hover:border-[var(--color-primary-light)] transition-colors"
-                    >
-                      {tag}
-                    </button>
-                  )
-                )}
-              </div>
-              <div className="mt-6 pt-6 border-t border-[var(--color-paper-edge)]">
-                <button
-                  onClick={() => setTab('worry')}
-                  className="text-sm text-[var(--color-primary-dark)] hover:underline"
-                >
-                  お悩みから記事を探すこともできます →
-                </button>
-              </div>
-            </div>
+            <SearchEmptyState onPickTag={setQuery} onSwitchToWorry={() => setTab('worry')} />
           )}
         </>
       )}

@@ -175,6 +175,12 @@ export default async function ArticlePage({ params }: PageProps) {
       '@type': 'SpeakableSpecification',
       cssSelector: ['.article-content h2', '.article-content > p:first-of-type'],
     },
+    citation: (article.source?.references ?? []).map((ref) => ({
+      '@type': 'CreativeWork',
+      name: ref.title,
+      url: ref.url,
+      ...(ref.org ? { publisher: { '@type': 'Organization', name: ref.org } } : {}),
+    })),
     isAccessibleForFree: true,
   };
 

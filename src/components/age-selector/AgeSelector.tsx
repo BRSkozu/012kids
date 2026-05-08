@@ -7,7 +7,13 @@ import { useState } from 'react';
 import { AGE_STAGES } from '@/data/stages';
 import { HERO_PHOTO, STAGE_ICON_PHOTOS } from '@/data/photos';
 
-export default function AgeSelector() {
+const POPULAR_KEYWORDS = ['夜泣き', '離乳食', '入学準備', '小1の壁', '習い事', '反抗期', 'いじめ'];
+
+interface Props {
+  totalArticles?: number;
+}
+
+export default function AgeSelector({ totalArticles }: Props = {}) {
   const router = useRouter();
   const [query, setQuery] = useState('');
 
@@ -15,6 +21,10 @@ export default function AgeSelector() {
     e.preventDefault();
     const q = query.trim();
     if (q) router.push(`/search?q=${encodeURIComponent(q)}`);
+  };
+
+  const handlePickKeyword = (kw: string) => {
+    router.push(`/search?q=${encodeURIComponent(kw)}`);
   };
 
   return (
@@ -32,15 +42,17 @@ export default function AgeSelector() {
             className="text-[2rem] md:text-[3.2rem] leading-[1.2] mb-4"
             style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, textShadow: '0 1px 8px rgba(255,253,247,0.8)' }}
           >
-            <span className="text-[var(--color-foreground)]">0歳から12歳の</span>
+            <span className="text-[var(--color-foreground)]">子育ての「どうしよう」を、</span>
             <br />
-            <span className="text-[var(--color-foreground)]">子育て情報</span>
+            <span className="text-[var(--color-foreground)]">ここで解決。</span>
           </h1>
           <p
-            className="text-sm md:text-[15px] text-[var(--color-foreground-soft)] max-w-lg mx-auto leading-[1.9]"
+            className="text-sm md:text-[15px] text-[var(--color-foreground-soft)] max-w-xl mx-auto leading-[1.9]"
             style={{ textShadow: '0 0 12px rgba(255,253,247,0.9)' }}
           >
-            専門家の知見をもとに、わかりやすくまとめました。
+            厚労省・文科省・小児科専門医のガイドラインから、0〜12歳のリアルなお悩み{totalArticles ? <strong className="text-[var(--color-primary-dark)]">{totalArticles.toLocaleString()}記事</strong> : '1,200記事以上'}を集約。
+            <br className="hidden sm:inline" />
+            広告なし、出典明記。
           </p>
         </div>
 
@@ -64,6 +76,20 @@ export default function AgeSelector() {
             >
               検索
             </button>
+          </div>
+          {/* Popular keywords */}
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            <span className="text-[11px] text-[var(--color-foreground-muted)] self-center mr-1">人気:</span>
+            {POPULAR_KEYWORDS.map((kw) => (
+              <button
+                key={kw}
+                type="button"
+                onClick={() => handlePickKeyword(kw)}
+                className="text-xs px-2.5 py-1 rounded-full bg-white/70 backdrop-blur border border-[var(--color-paper-edge)] text-[var(--color-foreground-soft)] hover:bg-[var(--color-warm-cream)] hover:border-[var(--color-primary-light)] transition-colors"
+              >
+                {kw}
+              </button>
+            ))}
           </div>
         </form>
 

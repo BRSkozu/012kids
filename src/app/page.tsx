@@ -57,7 +57,7 @@ export default function HomePage() {
       <ScrollTracker />
 
       {/* Hero: catchcopy + search + age buttons + trust badges */}
-      <AgeSelector />
+      <AgeSelector totalArticles={allArticles.length} />
 
       {/* Seasonal Pickup — 季節コンテンツはファーストビュー近くに */}
       {seasonalArticles.length > 0 && (

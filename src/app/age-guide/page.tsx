@@ -24,10 +24,24 @@ export default function AgeGuideIndexPage() {
   const counts = getArticleCountByStage();
   const breadcrumbItems = [{ label: '年齢別ガイド' }];
   const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
+  const collectionLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: '年齢別ガイド一覧',
+    description: '0〜12歳を5つの成長ステージに分け、それぞれに合った子育て・教育情報をまとめたコレクションページ',
+    url: PAGE_URL,
+    isPartOf: { '@type': 'WebSite', name: '012.kids', url: 'https://012.kids' },
+    hasPart: AGE_STAGES.map((s) => ({
+      '@type': 'WebPage',
+      name: `${s.label}（${s.ageRange}）`,
+      url: `https://012.kids/age-guide/${s.id}`,
+    })),
+  };
 
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }} />
 
       <section className="bg-gradient-to-b from-[var(--color-warm-cream)] to-[var(--color-surface)] py-12">
         <div className="max-w-7xl mx-auto px-4">

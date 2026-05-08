@@ -24,10 +24,20 @@ export default function TagIndexPage() {
 
   const breadcrumbItems = [{ label: 'タグ' }];
   const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
+  const collectionLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'タグ一覧',
+    description: '012.kids 全記事に付与されたタグの一覧',
+    url: PAGE_URL,
+    isPartOf: { '@type': 'WebSite', name: '012.kids', url: 'https://012.kids' },
+    numberOfItems: total,
+  };
 
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }} />
 
       <section className="bg-gradient-to-b from-[var(--color-warm-cream)] to-[var(--color-surface)] py-12">
         <div className="max-w-7xl mx-auto px-4">

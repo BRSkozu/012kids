@@ -24,10 +24,25 @@ export default function CategoryIndexPage() {
   const counts = getArticleCountByCategory();
   const breadcrumbItems = [{ label: 'カテゴリ' }];
   const breadcrumbLd = generateBreadcrumbLd(breadcrumbItems);
+  const collectionLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'カテゴリ一覧',
+    description: '発達・食育・教育・健康・メンタル・デジタル・社会・暮らし・妊娠出産の9カテゴリ',
+    url: PAGE_URL,
+    isPartOf: { '@type': 'WebSite', name: '012.kids', url: 'https://012.kids' },
+    hasPart: CATEGORIES.map((c) => ({
+      '@type': 'WebPage',
+      name: c.label,
+      url: `https://012.kids/category/${c.id}`,
+      description: c.description,
+    })),
+  };
 
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }} />
 
       <section className="bg-gradient-to-b from-[var(--color-warm-cream)] to-[var(--color-surface)] py-12">
         <div className="max-w-7xl mx-auto px-4">
