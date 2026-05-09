@@ -10,6 +10,446 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1332",
+    slug: "spring-outdoor-nature",
+    title: "春の外遊びガイド：自然体験が子どもの発達に与える効果",
+    excerpt: "春の外遊びガイド：自然体験が子どもの発達に与える効果を文部科学省等の公的情報をもとに解説。外遊びの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "体験活動",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの遊び",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":91,"reliability":28,"neutrality":25,"freshness":19,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/spring-outdoor-nature.jpg",
+    readingTime: 11,
+    tags: ["外遊び","自然体験","発達"],
+    relatedArticleIds: ["art-734","art-720","art-970","art-981","art-975","art-736"],
+  },
+  {
+    id: "art-1327",
+    slug: "afterschool-private-vs-public",
+    title: "民間学童と公立学童どっちがいい？メリット・デメリットを徹底比較",
+    excerpt: "民間学童と公立学童どっちがいい？メリット・デメリットを徹底比較を厚生労働省等の公的情報をもとに解説。民間学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブ運営指針",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "教育と福祉の連携",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":81,"reliability":23,"neutrality":22,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/afterschool-private-vs-public.jpg",
+    readingTime: 8,
+    tags: ["民間学童","公立学童","比較"],
+    relatedArticleIds: ["art-069","art-1315","art-403","art-692","art-943","art-701"],
+  },
+  {
+    id: "art-1330",
+    slug: "child-dental-prevention",
+    title: "子どもの虫歯予防ガイド：年齢別の歯みがき方法とフッ素の効果",
+    excerpt: "子どもの虫歯予防ガイド：年齢別の歯みがき方法とフッ素の効果を厚生労働省等の公的情報をもとに解説。虫歯予防の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "歯科保健",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児歯科",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":22,"neutrality":25,"freshness":18,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/child-dental-prevention.jpg",
+    readingTime: 12,
+    tags: ["虫歯予防","歯みがき","フッ素"],
+    relatedArticleIds: ["art-1209","art-027","art-1115","art-662","art-138","art-1232"],
+  },
+  {
+    id: "art-1329",
+    slug: "child-sleep-regression",
+    title: "子どもの睡眠退行はなぜ起きる？年齢別の原因と乗り越え方",
+    excerpt: "子どもの睡眠退行はなぜ起きる？年齢別の原因と乗り越え方を国立成育医療研究センター等の公的情報をもとに解説。睡眠退行の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["health"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの睡眠",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "睡眠指針",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":92,"reliability":26,"neutrality":25,"freshness":19,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/child-sleep-regression.jpg",
+    readingTime: 9,
+    tags: ["睡眠退行","夜泣き","睡眠"],
+    relatedArticleIds: ["art-998","art-001","art-852","art-623","art-026","art-913"],
+  },
+  {
+    id: "art-1333",
+    slug: "spring-hay-fever-school",
+    title: "子どもの花粉症と学校生活：症状の見分け方と学校への伝え方",
+    excerpt: "子どもの花粉症と学校生活：症状の見分け方と学校への伝え方を厚生労働省等の公的情報をもとに解説。花粉症の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["health"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "アレルギー疾患",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "小児アレルギー",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "花粉症対策",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":88,"reliability":27,"neutrality":21,"freshness":19,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/spring-hay-fever-school.jpg",
+    readingTime: 12,
+    tags: ["花粉症","学校","症状"],
+    relatedArticleIds: ["art-660","art-919","art-1311","art-1267","art-148","art-115"],
+  },
+  {
+    id: "art-1326",
+    slug: "afterschool-care-summer",
+    title: "学童の夏休み：長期休暇の過ごし方と預け先の確保",
+    excerpt: "学童の夏休み：長期休暇の過ごし方と預け先の確保を厚生労働省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブ",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの居場所",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後活動",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":29,"neutrality":20,"freshness":15,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/afterschool-care-summer.jpg",
+    readingTime: 11,
+    tags: ["学童","夏休み","長期休暇"],
+    relatedArticleIds: ["art-1308","art-1300","art-1298","art-1311","art-1253","art-1309"],
+  },
+  {
+    id: "art-1334",
+    slug: "spring-new-routine",
+    title: "新年度の生活リズムづくり：朝型習慣を定着させる4つのステップ",
+    excerpt: "新年度の生活リズムづくり：朝型習慣を定着させる4つのステップを文部科学省等の公的情報をもとに解説。生活リズムの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "早寝早起き朝ごはん",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの睡眠",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "生活習慣",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":25,"neutrality":23,"freshness":17,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/spring-new-routine.jpg",
+    readingTime: 12,
+    tags: ["生活リズム","朝型","新年度"],
+    relatedArticleIds: ["art-1239","art-1221","art-1229","art-1056","art-1182","art-1237"],
+  },
+  {
+    id: "art-1328",
+    slug: "sibling-rivalry-solutions",
+    title: "きょうだいゲンカの仲裁法：公平な対応と仲良しを育てるコツ",
+    excerpt: "きょうだいゲンカの仲裁法：公平な対応と仲良しを育てるコツを国立成育医療研究センター等の公的情報をもとに解説。きょうだいの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの心",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "生徒指導",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":22,"neutrality":24,"freshness":16,"ageRelevance":12,"readability":8},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/sibling-rivalry-solutions.jpg",
+    readingTime: 9,
+    tags: ["きょうだい","ケンカ","仲裁"],
+    relatedArticleIds: ["art-1035","art-1134","art-797","art-1135","art-459","art-420"],
+  },
+  {
+    id: "art-1325",
+    slug: "afterschool-care-lunch-bento",
+    title: "学童のお弁当づくり：夏休み40日を乗り切る時短レシピと衛生管理",
+    excerpt: "学童のお弁当づくり：夏休み40日を乗り切る時短レシピと衛生管理を文部科学省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["nutrition"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "食育推進",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "食品衛生",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの栄養",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":89,"reliability":29,"neutrality":25,"freshness":17,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/afterschool-care-lunch-bento.jpg",
+    readingTime: 8,
+    tags: ["学童","お弁当","衛生管理"],
+    relatedArticleIds: ["art-1250","art-1013","art-989","art-288","art-286","art-789"],
+  },
+  {
+    id: "art-1331",
+    slug: "spring-school-lunch",
+    title: "春からの給食ガイド：好き嫌い・アレルギー・食べるペースの対応",
+    excerpt: "春からの給食ガイド：好き嫌い・アレルギー・食べるペースの対応を文部科学省等の公的情報をもとに解説。給食の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["nutrition"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "学校給食",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "食物アレルギー",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "cautious"
+          },
+          {
+                "title": "食育",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "日本小児科学会は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":87,"reliability":29,"neutrality":21,"freshness":18,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    imageUrl: "/articles/spring-school-lunch.jpg",
+    readingTime: 10,
+    tags: ["給食","アレルギー","好き嫌い"],
+    relatedArticleIds: ["art-286","art-989","art-789","art-1325","art-1250","art-1088"],
+  },
+  {
     id: "art-1318",
     slug: "screen-time-age-guide",
     title: "年齢別スクリーンタイムの目安：WHOガイドラインと実践的なルール",
@@ -975,7 +1415,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-food-allergy-basics.jpg",
     readingTime: 9,
     tags: ["食物アレルギー","症状","検査"],
-    relatedArticleIds: ["art-006","art-623","art-026","art-913","art-649","art-1129"],
+    relatedArticleIds: ["art-006","art-623","art-1329","art-026","art-913","art-649"],
   },
   {
     id: "art-1320",
@@ -1019,7 +1459,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/first-aid-kids-guide.jpg",
     readingTime: 9,
     tags: ["応急処置","ケガ","誤飲"],
-    relatedArticleIds: ["art-1129","art-029","art-1256","art-1126","art-623","art-026"],
+    relatedArticleIds: ["art-1129","art-029","art-1256","art-1126","art-623","art-1329"],
   },
   {
     id: "art-1311",
@@ -1837,7 +2277,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dry-skin-kids-winter-care.jpg",
     readingTime: 8,
     tags: ["乾燥肌","スキンケア","保湿"],
-    relatedArticleIds: ["art-073","art-1207","art-590","art-623","art-026","art-913"],
+    relatedArticleIds: ["art-073","art-1207","art-590","art-623","art-1329","art-026"],
   },
   {
     id: "art-1261",
@@ -1925,7 +2365,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sports-day-preparation-kids.jpg",
     readingTime: 9,
     tags: ["運動会","体力づくり","走り方"],
-    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
+    relatedArticleIds: ["art-919","art-1333","art-1311","art-1267","art-148","art-115"],
   },
   {
     id: "art-1263",
@@ -1969,7 +2409,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/winter-cold-prevention-family.jpg",
     readingTime: 9,
     tags: ["風邪予防","免疫力","手洗い"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1267",
@@ -2013,7 +2453,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/winter-exercise-indoor-kids.jpg",
     readingTime: 9,
     tags: ["運動不足","室内運動","冬"],
-    relatedArticleIds: ["art-919","art-1311","art-148","art-115","art-1297","art-1296"],
+    relatedArticleIds: ["art-919","art-1333","art-1311","art-148","art-115","art-1297"],
   },
   {
     id: "art-1265",
@@ -2277,7 +2717,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/heatstroke-prevention-kids.jpg",
     readingTime: 9,
     tags: ["熱中症","水分補給","応急処置"],
-    relatedArticleIds: ["art-1129","art-1320","art-1126","art-623","art-026","art-913"],
+    relatedArticleIds: ["art-1129","art-1320","art-1126","art-623","art-1329","art-026"],
   },
   {
     id: "art-1248",
@@ -2365,7 +2805,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sunscreen-kids-safe-choice.jpg",
     readingTime: 8,
     tags: ["日焼け止め","紫外線","肌ケア"],
-    relatedArticleIds: ["art-073","art-623","art-026","art-913","art-649","art-1129"],
+    relatedArticleIds: ["art-073","art-623","art-1329","art-026","art-913","art-649"],
   },
   {
     id: "art-1254",
@@ -2453,7 +2893,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/summer-vacation-schedule-kids.jpg",
     readingTime: 9,
     tags: ["夏休み","スケジュール","生活リズム"],
-    relatedArticleIds: ["art-1300","art-1311","art-1308","art-1309","art-1236","art-1298"],
+    relatedArticleIds: ["art-1300","art-1311","art-1308","art-1309","art-1236","art-1326"],
   },
   {
     id: "art-1250",
@@ -2497,7 +2937,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/food-poisoning-prevention-lunch.jpg",
     readingTime: 8,
     tags: ["食中毒","お弁当","衛生管理"],
-    relatedArticleIds: ["art-1013","art-989","art-288","art-286","art-789","art-1088"],
+    relatedArticleIds: ["art-1325","art-1013","art-989","art-288","art-286","art-789"],
   },
   {
     id: "art-1252",
@@ -2673,7 +3113,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/early-sleep-routine-spring.jpg",
     readingTime: 8,
     tags: ["早寝早起き","生活習慣","新年度"],
-    relatedArticleIds: ["art-1237","art-1229","art-1056","art-1182","art-1221","art-1178"],
+    relatedArticleIds: ["art-1334","art-1237","art-1229","art-1056","art-1182","art-1221"],
   },
   {
     id: "art-1238",
@@ -3377,7 +3817,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kids-dental-care-basics.jpg",
     readingTime: 9,
     tags: ["歯みがき","虫歯予防","歯科"],
-    relatedArticleIds: ["art-850","art-623","art-026","art-913","art-649","art-1129"],
+    relatedArticleIds: ["art-850","art-623","art-1329","art-026","art-913","art-649"],
   },
   {
     id: "art-1230",
@@ -3553,7 +3993,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dual-income-morning-routine.jpg",
     readingTime: 9,
     tags: ["共働き","時短","朝の支度"],
-    relatedArticleIds: ["art-1237","art-1056","art-1239","art-1182","art-1221","art-1178"],
+    relatedArticleIds: ["art-1237","art-1056","art-1334","art-1239","art-1182","art-1221"],
   },
   {
     id: "art-1236",
@@ -3641,7 +4081,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/morning-routine-independent-kids.jpg",
     readingTime: 8,
     tags: ["朝の支度","自立","生活習慣"],
-    relatedArticleIds: ["art-1229","art-1239","art-1056","art-1182","art-1221","art-1178"],
+    relatedArticleIds: ["art-1229","art-1239","art-1056","art-1334","art-1182","art-1221"],
   },
   {
     id: "art-1221",
@@ -3685,7 +4125,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/spring-sleep-rhythm-reset.jpg",
     readingTime: 8,
     tags: ["生活リズム","睡眠","春休み"],
-    relatedArticleIds: ["art-1229","art-1056","art-1239","art-1182","art-1237","art-1178"],
+    relatedArticleIds: ["art-1334","art-1229","art-1056","art-1239","art-1182","art-1237"],
   },
   {
     id: "art-1227",
@@ -4081,7 +4521,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/bedwetting-enuresis-guide.jpg",
     readingTime: 11,
     tags: ["夜尿症","おねしょ","小児泌尿器科"],
-    relatedArticleIds: ["art-194","art-1078","art-1000","art-734","art-720","art-970"],
+    relatedArticleIds: ["art-194","art-1332","art-1078","art-1000","art-734","art-720"],
   },
   {
     id: "art-1007",
@@ -4433,7 +4873,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/imitation-play-development.jpg",
     readingTime: 9,
     tags: ["模倣遊び","ごっこ遊び","社会性"],
-    relatedArticleIds: ["art-244","art-034","art-185","art-194","art-1078","art-1000"],
+    relatedArticleIds: ["art-244","art-034","art-185","art-194","art-1332","art-1078"],
   },
   {
     id: "art-1079",
@@ -4477,7 +4917,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/jumping-motor-skill.jpg",
     readingTime: 9,
     tags: ["ジャンプ","粗大運動","運動発達"],
-    relatedArticleIds: ["art-720","art-719","art-194","art-1078","art-1000","art-734"],
+    relatedArticleIds: ["art-720","art-719","art-194","art-1332","art-1078","art-1000"],
   },
   {
     id: "art-1212",
@@ -4609,7 +5049,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nail-biting-children.jpg",
     readingTime: 9,
     tags: ["爪噛み","ストレスサイン","習癖"],
-    relatedArticleIds: ["art-194","art-1078","art-1000","art-734","art-720","art-970"],
+    relatedArticleIds: ["art-194","art-1332","art-1078","art-1000","art-734","art-720"],
   },
   {
     id: "art-1008",
@@ -4653,7 +5093,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-therapy-benefits.jpg",
     readingTime: 10,
     tags: ["遊戯療法","心理療法","臨床心理"],
-    relatedArticleIds: ["art-194","art-1078","art-1000","art-734","art-720","art-970"],
+    relatedArticleIds: ["art-194","art-1332","art-1078","art-1000","art-734","art-720"],
   },
   {
     id: "art-1081",
@@ -4741,7 +5181,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/potty-training-guide.jpg",
     readingTime: 11,
     tags: ["おむつ卒業","トイレトレーニング","排泄"],
-    relatedArticleIds: ["art-096","art-194","art-1078","art-1000","art-734","art-720"],
+    relatedArticleIds: ["art-096","art-194","art-1332","art-1078","art-1000","art-734"],
   },
   {
     id: "art-1005",
@@ -4785,7 +5225,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/selective-mutism-guide.jpg",
     readingTime: 13,
     tags: ["場面緘黙","不安障害","特別支援"],
-    relatedArticleIds: ["art-194","art-1078","art-1000","art-734","art-720","art-970"],
+    relatedArticleIds: ["art-194","art-1332","art-1078","art-1000","art-734","art-720"],
   },
   {
     id: "art-1075",
@@ -5005,7 +5445,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/tricycle-practice-tips.jpg",
     readingTime: 8,
     tags: ["三輪車","運動能力","バランス感覚"],
-    relatedArticleIds: ["art-179","art-194","art-1000","art-734","art-720","art-970"],
+    relatedArticleIds: ["art-179","art-194","art-1332","art-1000","art-734","art-720"],
   },
   {
     id: "art-1077",
@@ -5049,7 +5489,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/two-word-sentence-delay.jpg",
     readingTime: 11,
     tags: ["二語文","言語発達","ことばの遅れ"],
-    relatedArticleIds: ["art-733","art-096","art-194","art-1078","art-1000","art-734"],
+    relatedArticleIds: ["art-733","art-096","art-194","art-1332","art-1078","art-1000"],
   },
   {
     id: "art-1152",
@@ -6985,7 +7425,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/accidental-ingestion-response.jpg",
     readingTime: 11,
     tags: ["誤飲","中毒","応急処置"],
-    relatedArticleIds: ["art-1320","art-649","art-1256","art-1126","art-623","art-026"],
+    relatedArticleIds: ["art-1320","art-649","art-1256","art-1126","art-623","art-1329"],
   },
   {
     id: "art-1027",
@@ -7029,7 +7469,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/adhd-kids-understanding.jpg",
     readingTime: 14,
     tags: ["ADHD","注意欠如多動症","特別支援"],
-    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
+    relatedArticleIds: ["art-919","art-1333","art-1311","art-1267","art-148","art-115"],
   },
   {
     id: "art-1208",
@@ -7073,7 +7513,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/asthma-children-management.jpg",
     readingTime: 12,
     tags: ["ぜんそく","喘息","吸入薬"],
-    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
+    relatedArticleIds: ["art-919","art-1333","art-1311","art-1267","art-148","art-115"],
   },
   {
     id: "art-1207",
@@ -7117,7 +7557,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/atopic-dermatitis-kids.jpg",
     readingTime: 12,
     tags: ["アトピー","皮膚炎","スキンケア"],
-    relatedArticleIds: ["art-073","art-1266","art-590","art-623","art-026","art-913"],
+    relatedArticleIds: ["art-073","art-1266","art-590","art-623","art-1329","art-026"],
   },
   {
     id: "art-1127",
@@ -7205,7 +7645,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/burn-first-aid-kids.jpg",
     readingTime: 9,
     tags: ["やけど","応急処置","熱傷"],
-    relatedArticleIds: ["art-1129","art-1256","art-1320","art-623","art-026","art-913"],
+    relatedArticleIds: ["art-1129","art-1256","art-1320","art-623","art-1329","art-026"],
   },
   {
     id: "art-1131",
@@ -7293,7 +7733,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/drowning-prevention-kids.jpg",
     readingTime: 10,
     tags: ["溺水","水の事故","安全対策"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1022",
@@ -7337,7 +7777,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/ent-kids-common-issues.jpg",
     readingTime: 12,
     tags: ["中耳炎","副鼻腔炎","耳鼻科"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1122",
@@ -7381,7 +7821,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/febrile-seizure-response.jpg",
     readingTime: 11,
     tags: ["熱性けいれん","発熱","けいれん対応"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1119",
@@ -7469,7 +7909,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/hand-foot-mouth-disease.jpg",
     readingTime: 10,
     tags: ["手足口病","感染症","登園基準"],
-    relatedArticleIds: ["art-028","art-170","art-1024","art-171","art-623","art-026"],
+    relatedArticleIds: ["art-028","art-170","art-1024","art-171","art-623","art-1329"],
   },
   {
     id: "art-1021",
@@ -7557,7 +7997,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/head-injury-children.jpg",
     readingTime: 10,
     tags: ["頭部打撲","脳震盪","救急対応"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1023",
@@ -7601,7 +8041,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/head-lice-treatment-kids.jpg",
     readingTime: 9,
     tags: ["アタマジラミ","感染症対策","学校保健"],
-    relatedArticleIds: ["art-919","art-1311","art-1267","art-148","art-115","art-1297"],
+    relatedArticleIds: ["art-919","art-1333","art-1311","art-1267","art-148","art-115"],
   },
   {
     id: "art-1114",
@@ -7645,7 +8085,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/herpangina-guide.jpg",
     readingTime: 9,
     tags: ["ヘルパンギーナ","夏かぜ","口内炎"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1024",
@@ -7689,7 +8129,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/impetigo-skin-infection-kids.jpg",
     readingTime: 9,
     tags: ["とびひ","皮膚感染症","登園基準"],
-    relatedArticleIds: ["art-1113","art-028","art-623","art-026","art-913","art-649"],
+    relatedArticleIds: ["art-1113","art-028","art-623","art-1329","art-026","art-913"],
   },
   {
     id: "art-1206",
@@ -7777,7 +8217,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kawasaki-disease-guide.jpg",
     readingTime: 12,
     tags: ["川崎病","高熱","冠動脈瘤"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1130",
@@ -7909,7 +8349,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/mycoplasma-pneumonia-kids.jpg",
     readingTime: 11,
     tags: ["マイコプラズマ","肺炎","長引く咳"],
-    relatedArticleIds: ["art-174","art-919","art-1311","art-1267","art-148","art-115"],
+    relatedArticleIds: ["art-174","art-919","art-1333","art-1311","art-1267","art-148"],
   },
   {
     id: "art-1025",
@@ -7953,7 +8393,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/norovirus-kids-prevention.jpg",
     readingTime: 10,
     tags: ["ノロウイルス","胃腸炎","消毒"],
-    relatedArticleIds: ["art-623","art-026","art-913","art-649","art-1129","art-006"],
+    relatedArticleIds: ["art-623","art-1329","art-026","art-913","art-649","art-1129"],
   },
   {
     id: "art-1125",
@@ -8129,7 +8569,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/rs-virus-infant-guide.jpg",
     readingTime: 10,
     tags: ["RSウイルス","細気管支炎","乳児"],
-    relatedArticleIds: ["art-171","art-623","art-026","art-913","art-649","art-1129"],
+    relatedArticleIds: ["art-171","art-623","art-1329","art-026","art-913","art-649"],
   },
   {
     id: "art-1116",
@@ -8173,7 +8613,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/streptococcal-infection.jpg",
     readingTime: 10,
     tags: ["溶連菌","咽頭炎","抗菌薬"],
-    relatedArticleIds: ["art-175","art-919","art-1311","art-1267","art-148","art-115"],
+    relatedArticleIds: ["art-175","art-919","art-1333","art-1311","art-1267","art-148"],
   },
   {
     id: "art-1132",
@@ -8261,7 +8701,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/tooth-decay-prevention-kids.jpg",
     readingTime: 10,
     tags: ["虫歯予防","歯磨き","小児歯科"],
-    relatedArticleIds: ["art-1115","art-662","art-138","art-165","art-114","art-1261"],
+    relatedArticleIds: ["art-1330","art-1115","art-662","art-138","art-165","art-114"],
   },
   {
     id: "art-1117",
@@ -8613,7 +9053,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/family-travel-with-kids.jpg",
     readingTime: 13,
     tags: ["子連れ旅行","家族旅行","持ち物"],
-    relatedArticleIds: ["art-1229","art-1239","art-1182","art-1237","art-1221","art-1178"],
+    relatedArticleIds: ["art-1229","art-1334","art-1239","art-1182","art-1237","art-1221"],
   },
   {
     id: "art-1183",
@@ -8789,7 +9229,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/name-labeling-methods.jpg",
     readingTime: 8,
     tags: ["名前つけ","入園準備","ラベリング"],
-    relatedArticleIds: ["art-1229","art-1056","art-1239","art-1237","art-1221","art-1178"],
+    relatedArticleIds: ["art-1229","art-1056","art-1334","art-1239","art-1237","art-1221"],
   },
   {
     id: "art-1181",
@@ -8833,7 +9273,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nursery-school-goods.jpg",
     readingTime: 9,
     tags: ["入園グッズ","入学準備","手作り"],
-    relatedArticleIds: ["art-1229","art-1056","art-1239","art-1182","art-1237","art-1221"],
+    relatedArticleIds: ["art-1229","art-1056","art-1334","art-1239","art-1182","art-1237"],
   },
   {
     id: "art-1179",
@@ -8965,7 +9405,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/pets-and-kids-benefits.jpg",
     readingTime: 10,
     tags: ["ペット","動物","情操教育"],
-    relatedArticleIds: ["art-1229","art-1056","art-1239","art-1182","art-1237","art-1221"],
+    relatedArticleIds: ["art-1229","art-1056","art-1334","art-1239","art-1182","art-1237"],
   },
   {
     id: "art-1052",
@@ -9141,7 +9581,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/shichigosan-preparation.jpg",
     readingTime: 9,
     tags: ["七五三","お祝い","着物"],
-    relatedArticleIds: ["art-1229","art-1056","art-1239","art-1182","art-1237","art-1221"],
+    relatedArticleIds: ["art-1229","art-1056","art-1334","art-1239","art-1182","art-1237"],
   },
   {
     id: "art-1174",
@@ -9317,7 +9757,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-storage-ideas.jpg",
     readingTime: 8,
     tags: ["おもちゃ収納","片付け","整理整頓"],
-    relatedArticleIds: ["art-1229","art-1056","art-1239","art-1182","art-1237","art-1221"],
+    relatedArticleIds: ["art-1229","art-1056","art-1334","art-1239","art-1182","art-1237"],
   },
   {
     id: "art-1030",
@@ -9405,7 +9845,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-regression-behavior.jpg",
     readingTime: 10,
     tags: ["赤ちゃん返り","退行","きょうだい"],
-    relatedArticleIds: ["art-1035","art-796","art-797","art-1135","art-459","art-420"],
+    relatedArticleIds: ["art-1035","art-796","art-1328","art-797","art-1135","art-459"],
   },
   {
     id: "art-1029",
@@ -10241,7 +10681,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sibling-mediation-techniques.jpg",
     readingTime: 9,
     tags: ["兄弟ゲンカ","きょうだい","仲裁"],
-    relatedArticleIds: ["art-1134","art-797","art-1135","art-459","art-420","art-457"],
+    relatedArticleIds: ["art-1328","art-1134","art-797","art-1135","art-459","art-420"],
   },
   {
     id: "art-1146",
@@ -10549,7 +10989,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/bento-making-guide-kids.jpg",
     readingTime: 12,
     tags: ["お弁当","栄養バランス","衛生管理"],
-    relatedArticleIds: ["art-1250","art-989","art-1093","art-303","art-288","art-286"],
+    relatedArticleIds: ["art-1325","art-1250","art-989","art-1093","art-303","art-288"],
   },
   {
     id: "art-1086",
@@ -10637,7 +11077,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/convenience-food-balance.jpg",
     readingTime: 9,
     tags: ["コンビニ食","栄養管理","食品選び"],
-    relatedArticleIds: ["art-286","art-989","art-789","art-1250","art-1088","art-023"],
+    relatedArticleIds: ["art-286","art-989","art-789","art-1325","art-1250","art-1331"],
   },
   {
     id: "art-1009",
@@ -10681,7 +11121,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dietary-fiber-kids-guide.jpg",
     readingTime: 10,
     tags: ["食物繊維","便秘","腸内環境"],
-    relatedArticleIds: ["art-286","art-989","art-789","art-1250","art-1088","art-023"],
+    relatedArticleIds: ["art-286","art-989","art-789","art-1325","art-1250","art-1331"],
   },
   {
     id: "art-1084",
@@ -10769,7 +11209,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/fish-cooking-for-kids.jpg",
     readingTime: 10,
     tags: ["魚料理","DHA","食育"],
-    relatedArticleIds: ["art-023","art-286","art-989","art-789","art-1250","art-1088"],
+    relatedArticleIds: ["art-023","art-286","art-989","art-789","art-1325","art-1250"],
   },
   {
     id: "art-1090",
@@ -10857,7 +11297,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/food-additives-basics.jpg",
     readingTime: 11,
     tags: ["食品添加物","食品安全","食品表示"],
-    relatedArticleIds: ["art-286","art-989","art-789","art-1250","art-1088","art-023"],
+    relatedArticleIds: ["art-286","art-989","art-789","art-1325","art-1250","art-1331"],
   },
   {
     id: "art-1014",
@@ -11253,7 +11693,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/quick-breakfast-for-kids.jpg",
     readingTime: 9,
     tags: ["朝ごはん","時短","栄養バランス"],
-    relatedArticleIds: ["art-1013","art-303","art-286","art-989","art-789","art-1250"],
+    relatedArticleIds: ["art-1013","art-303","art-286","art-989","art-789","art-1325"],
   },
   {
     id: "art-1088",
@@ -11297,7 +11737,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sports-drink-for-kids.jpg",
     readingTime: 9,
     tags: ["スポーツドリンク","糖分","電解質"],
-    relatedArticleIds: ["art-286","art-989","art-789","art-1250","art-023","art-022"],
+    relatedArticleIds: ["art-286","art-989","art-789","art-1325","art-1250","art-1331"],
   },
   {
     id: "art-1095",
@@ -14549,7 +14989,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/heat-stroke-prevention-kids.jpg",
     readingTime: 7,
     tags: ["熱中症","夏","予防","水分補給"],
-    relatedArticleIds: ["art-052","art-059","art-1311","art-919","art-1267","art-148"],
+    relatedArticleIds: ["art-052","art-059","art-1311","art-919","art-1333","art-1267"],
   },
   {
     id: "art-029",
@@ -15339,7 +15779,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kids-dental-care.jpg",
     readingTime: 6,
     tags: ["歯科ケア","むし歯予防","フッ素","乳歯"],
-    relatedArticleIds: ["art-026","art-003","art-029","art-1115","art-662","art-138"],
+    relatedArticleIds: ["art-026","art-003","art-029","art-1330","art-1115","art-662"],
   },
   {
     id: "art-050",
@@ -16397,7 +16837,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/posture-backpack-health.jpg",
     readingTime: 7,
     tags: ["姿勢","ランドセル","腰痛予防","小学生"],
-    relatedArticleIds: ["art-007","art-052","art-919","art-1311","art-1267","art-148"],
+    relatedArticleIds: ["art-007","art-052","art-919","art-1333","art-1311","art-1267"],
   },
   {
     id: "art-042",
@@ -17579,7 +18019,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/developmental-disability-support.jpg",
     readingTime: 20,
     tags: ["発達障害","ASD","ADHD","学習障害","療育","特別支援教育","ペアレントトレーニング"],
-    relatedArticleIds: ["art-194","art-1078","art-1000","art-734","art-720","art-970"],
+    relatedArticleIds: ["art-194","art-1332","art-1078","art-1000","art-734","art-720"],
   },
   {
     id: "art-088",
@@ -17729,7 +18169,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-crafts-activities.jpg",
     readingTime: 18,
     tags: ["季節の工作","行事","親子遊び","手作り","日本文化"],
-    relatedArticleIds: ["art-194","art-1078","art-1000","art-734","art-720","art-970"],
+    relatedArticleIds: ["art-194","art-1332","art-1078","art-1000","art-734","art-720"],
   },
   {
     id: "art-096",
@@ -17785,7 +18225,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toddler-development-1-3.jpg",
     readingTime: 15,
     tags: ["幼児発達","イヤイヤ期","言語発達","トイレトレーニング","自我の発達"],
-    relatedArticleIds: ["art-1072","art-1077","art-194","art-1078","art-1000","art-734"],
+    relatedArticleIds: ["art-1072","art-1077","art-194","art-1332","art-1078","art-1000"],
   },
   {
     id: "art-090",
@@ -17979,7 +18419,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-gear-essentials.jpg",
     readingTime: 18,
     tags: ["ベビーグッズ","出産準備","赤ちゃん用品","安全基準","節約"],
-    relatedArticleIds: ["art-077","art-075","art-623","art-026","art-913","art-649"],
+    relatedArticleIds: ["art-077","art-075","art-623","art-1329","art-026","art-913"],
   },
   {
     id: "art-097",
@@ -36881,7 +37321,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/special-diet-brain-food.jpg",
     readingTime: 14,
     tags: ["脳","食事","特別食"],
-    relatedArticleIds: ["art-989","art-992","art-286","art-1250","art-786","art-777"],
+    relatedArticleIds: ["art-989","art-992","art-286","art-1325","art-1250","art-786"],
   },
   {
     id: "art-788",
@@ -39693,7 +40133,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-development-age-3.jpg",
     readingTime: 8,
     tags: ["年齢別","3歳","発達","成長"],
-    relatedArticleIds: ["art-228","art-231","art-194","art-1000","art-734","art-720"],
+    relatedArticleIds: ["art-228","art-231","art-194","art-1332","art-1000","art-734"],
   },
   {
     id: "art-230",
@@ -39997,7 +40437,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-development-age-2.jpg",
     readingTime: 12,
     tags: ["年齢別","2歳","発達","成長"],
-    relatedArticleIds: ["art-229","art-231","art-194","art-1000","art-734","art-720"],
+    relatedArticleIds: ["art-229","art-231","art-194","art-1332","art-1000","art-734"],
   },
   {
     id: "art-745",
@@ -41213,7 +41653,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-balance-skill.jpg",
     readingTime: 18,
     tags: ["バランス","発達","運動"],
-    relatedArticleIds: ["art-720","art-726","art-725","art-729","art-719","art-734"],
+    relatedArticleIds: ["art-720","art-726","art-725","art-729","art-719","art-1332"],
   },
   {
     id: "art-729",
@@ -41251,7 +41691,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-hand-eye-coordination.jpg",
     readingTime: 14,
     tags: ["協調性","発達","運動"],
-    relatedArticleIds: ["art-720","art-728","art-726","art-725","art-719","art-734"],
+    relatedArticleIds: ["art-720","art-728","art-726","art-725","art-719","art-1332"],
   },
   {
     id: "art-730",
@@ -41897,7 +42337,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-gross-motor-3to4.jpg",
     readingTime: 18,
     tags: ["粗大運動","発達","運動"],
-    relatedArticleIds: ["art-719","art-728","art-726","art-725","art-729","art-734"],
+    relatedArticleIds: ["art-719","art-728","art-726","art-725","art-729","art-1332"],
   },
   {
     id: "art-721",
@@ -42239,7 +42679,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-gross-motor-2to3.jpg",
     readingTime: 17,
     tags: ["粗大運動","発達","運動"],
-    relatedArticleIds: ["art-720","art-728","art-726","art-725","art-729","art-734"],
+    relatedArticleIds: ["art-720","art-728","art-726","art-725","art-729","art-1332"],
   },
   {
     id: "art-197",
@@ -43417,7 +43857,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/food-extra-kitchen-hygiene-kids.jpg",
     readingTime: 19,
     tags: ["衛生","食事","安全"],
-    relatedArticleIds: ["art-989","art-789","art-286","art-1250","art-1088","art-023"],
+    relatedArticleIds: ["art-989","art-789","art-286","art-1325","art-1250","art-1331"],
   },
   {
     id: "art-183",
@@ -43683,7 +44123,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/food-extra-spring-bento-idea.jpg",
     readingTime: 11,
     tags: ["お弁当","食事","安全"],
-    relatedArticleIds: ["art-992","art-789","art-1250","art-1013","art-288","art-286"],
+    relatedArticleIds: ["art-992","art-789","art-1325","art-1250","art-1013","art-288"],
   },
   {
     id: "art-987",
@@ -44671,7 +45111,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-illness-strep-throat.jpg",
     readingTime: 13,
     tags: ["病気","感染症","溶連菌"],
-    relatedArticleIds: ["art-174","art-167","art-1116","art-169","art-919","art-1311"],
+    relatedArticleIds: ["art-174","art-167","art-1116","art-169","art-919","art-1333"],
   },
   {
     id: "art-978",
@@ -44975,7 +45415,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-illness-mycoplasma.jpg",
     readingTime: 13,
     tags: ["病気","感染症","マイコプラズマ"],
-    relatedArticleIds: ["art-175","art-167","art-1120","art-169","art-919","art-1311"],
+    relatedArticleIds: ["art-175","art-167","art-1120","art-169","art-919","art-1333"],
   },
   {
     id: "art-172",
@@ -45279,7 +45719,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-illness-hand-foot-mouth.jpg",
     readingTime: 15,
     tags: ["病気","感染症","手足口病"],
-    relatedArticleIds: ["art-1113","art-028","art-171","art-169","art-623","art-026"],
+    relatedArticleIds: ["art-1113","art-028","art-171","art-169","art-623","art-1329"],
   },
   {
     id: "art-171",
@@ -45697,7 +46137,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/seasonal-illness-summer-skin-trouble.jpg",
     readingTime: 14,
     tags: ["病気","感染症","皮膚"],
-    relatedArticleIds: ["art-175","art-174","art-169","art-919","art-1311","art-1267"],
+    relatedArticleIds: ["art-175","art-174","art-169","art-919","art-1333","art-1311"],
   },
   {
     id: "art-969",
@@ -47935,7 +48375,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/checkup-blood-test-child.jpg",
     readingTime: 15,
     tags: ["健診","血液検査","子どもの健康"],
-    relatedArticleIds: ["art-659","art-660","art-919","art-662","art-1311","art-1267"],
+    relatedArticleIds: ["art-659","art-660","art-919","art-662","art-1333","art-1311"],
   },
   {
     id: "art-148",
@@ -48543,7 +48983,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/checkup-school-health-check.jpg",
     readingTime: 12,
     tags: ["健診","学校","子どもの健康"],
-    relatedArticleIds: ["art-666","art-659","art-919","art-662","art-1311","art-1267"],
+    relatedArticleIds: ["art-666","art-659","art-1333","art-919","art-662","art-1311"],
   },
   {
     id: "art-141",
@@ -48847,7 +49287,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/checkup-5year-checkup.jpg",
     readingTime: 16,
     tags: ["健診","5歳","子どもの健康"],
-    relatedArticleIds: ["art-666","art-660","art-919","art-662","art-1311","art-1267"],
+    relatedArticleIds: ["art-666","art-660","art-919","art-662","art-1333","art-1311"],
   },
   {
     id: "art-138",
@@ -50785,7 +51225,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/health-detail-amblyopia-child.jpg",
     readingTime: 8,
     tags: ["弱視","小児科","基礎知識"],
-    relatedArticleIds: ["art-919","art-926","art-913","art-1311","art-1267","art-148"],
+    relatedArticleIds: ["art-919","art-926","art-913","art-1333","art-1311","art-1267"],
   },
   {
     id: "art-926",
@@ -50823,7 +51263,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/health-detail-color-blindness-child.jpg",
     readingTime: 19,
     tags: ["色覚","小児科","基礎知識"],
-    relatedArticleIds: ["art-919","art-925","art-913","art-1311","art-1267","art-148"],
+    relatedArticleIds: ["art-919","art-925","art-913","art-1333","art-1311","art-1267"],
   },
   {
     id: "art-641",
@@ -51507,7 +51947,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/health-detail-tonsillitis-child.jpg",
     readingTime: 8,
     tags: ["扁桃","小児科","基礎知識"],
-    relatedArticleIds: ["art-925","art-926","art-913","art-1311","art-1267","art-148"],
+    relatedArticleIds: ["art-925","art-926","art-913","art-1333","art-1311","art-1267"],
   },
   {
     id: "art-634",
@@ -52305,7 +52745,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-independence-guide.jpg",
     readingTime: 8,
     tags: ["自立","生活スキル","成長"],
-    relatedArticleIds: ["art-229","art-206","art-228","art-194","art-1078","art-734"],
+    relatedArticleIds: ["art-229","art-206","art-228","art-194","art-1332","art-1078"],
   },
   {
     id: "art-106",
@@ -53019,7 +53459,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-sleep-regression-complete.jpg",
     readingTime: 11,
     tags: ["睡眠退行","赤ちゃん","睡眠"],
-    relatedArticleIds: ["art-001","art-026","art-852","art-623","art-913","art-649"],
+    relatedArticleIds: ["art-1329","art-001","art-026","art-852","art-623","art-913"],
   },
   {
     id: "art-622",
