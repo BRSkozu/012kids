@@ -10,6 +10,446 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1343",
+    slug: "afterschool-homework-support",
+    title: "学童での宿題はどこまでやる？家庭学習との両立のコツ",
+    excerpt: "学童での宿題はどこまでやる？家庭学習との両立のコツを文部科学省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭学習の手引き",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "放課後の学習支援",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの学び",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":26,"neutrality":21,"freshness":17,"ageRelevance":14,"readability":5},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/afterschool-homework-support.jpg",
+    readingTime: 11,
+    tags: ["学童","宿題","家庭学習"],
+    relatedArticleIds: ["art-048","art-1298","art-1308","art-1310","art-1098","art-1300"],
+  },
+  {
+    id: "art-1344",
+    slug: "sho1-wall-overview",
+    title: "「小1の壁」とは？共働き家庭が直面する7つの課題と乗り越え方",
+    excerpt: "「小1の壁」とは？共働き家庭が直面する7つの課題と乗り越え方を厚生労働省等の公的情報をもとに解説。小1の壁の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "仕事と育児の両立",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":84,"reliability":27,"neutrality":20,"freshness":19,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/sho1-wall-overview.jpg",
+    readingTime: 10,
+    tags: ["小1の壁","共働き","課題"],
+    relatedArticleIds: ["art-1298","art-1301","art-1287","art-1289","art-1300","art-1308"],
+  },
+  {
+    id: "art-1337",
+    slug: "afterschool-care-friendships",
+    title: "学童での友だちトラブル：親ができるサポートと声かけ",
+    excerpt: "学童での友だちトラブル：親ができるサポートと声かけを国立成育医療研究センター等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの心の健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "生徒指導",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て相談",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":85,"reliability":25,"neutrality":24,"freshness":18,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/afterschool-care-friendships.jpg",
+    readingTime: 10,
+    tags: ["学童","友だち","トラブル"],
+    relatedArticleIds: ["art-1298","art-812","art-417","art-1339","art-1340","art-1301"],
+  },
+  {
+    id: "art-1339",
+    slug: "child-anxiety-symptoms",
+    title: "子どもの不安症状チェックリスト：見逃しやすいサインと対応法",
+    excerpt: "子どもの不安症状チェックリスト：見逃しやすいサインと対応法を国立成育医療研究センター等の公的情報をもとに解説。不安の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの心の健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "生徒指導",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":90,"reliability":28,"neutrality":24,"freshness":18,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/child-anxiety-symptoms.jpg",
+    readingTime: 11,
+    tags: ["不安","症状","チェックリスト"],
+    relatedArticleIds: ["art-1218","art-1322","art-1141","art-812","art-417","art-1298"],
+  },
+  {
+    id: "art-1340",
+    slug: "parent-child-talk-skills",
+    title: "親子の会話力を高める方法：「聞く」「伝える」の基本テクニック",
+    excerpt: "親子の会話力を高める方法：「聞く」「伝える」の基本テクニックを文部科学省等の公的情報をもとに解説。会話の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":89,"reliability":29,"neutrality":20,"freshness":18,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/parent-child-talk-skills.jpg",
+    readingTime: 11,
+    tags: ["会話","コミュニケーション","親子"],
+    relatedArticleIds: ["art-812","art-417","art-1339","art-1298","art-1301","art-1030"],
+  },
+  {
+    id: "art-1338",
+    slug: "positive-discipline-methods",
+    title: "ポジティブなしつけの実践法：叱らずに伝わる声かけテクニック",
+    excerpt: "ポジティブなしつけの実践法：叱らずに伝わる声かけテクニックをこども家庭庁等の公的情報をもとに解説。しつけの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "こども家庭庁等の公的情報",
+      references: [
+          {
+                "title": "子どもの権利",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "こども家庭庁のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":28,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/positive-discipline-methods.jpg",
+    readingTime: 11,
+    tags: ["しつけ","声かけ","ポジティブ"],
+    relatedArticleIds: ["art-1245","art-1214","art-1135","art-459","art-420","art-457"],
+  },
+  {
+    id: "art-1342",
+    slug: "spring-kindergarten-start",
+    title: "幼稚園入園直後の子どもの様子：泣く・行きたがらないへの対応",
+    excerpt: "幼稚園入園直後の子どもの様子：泣く・行きたがらないへの対応を文部科学省等の公的情報をもとに解説。幼稚園の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["mental"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "幼児期の教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "子育て相談",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":82,"reliability":24,"neutrality":24,"freshness":18,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/spring-kindergarten-start.jpg",
+    readingTime: 12,
+    tags: ["幼稚園","入園","泣く"],
+    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1338","art-1028"],
+  },
+  {
+    id: "art-1336",
+    slug: "afterschool-care-safety",
+    title: "学童保育の安全管理：送迎・防犯・災害時の対応",
+    excerpt: "学童保育の安全管理：送迎・防犯・災害時の対応を厚生労働省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブガイドライン",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの安全対策",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "学校安全",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "文部科学省は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":88,"reliability":26,"neutrality":25,"freshness":19,"ageRelevance":11,"readability":7},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/afterschool-care-safety.jpg",
+    readingTime: 8,
+    tags: ["学童","安全管理","防犯"],
+    relatedArticleIds: ["art-1324","art-1335","art-543","art-532","art-1317","art-1167"],
+  },
+  {
+    id: "art-1335",
+    slug: "afterschool-care-waiting",
+    title: "学童の待機児童問題：入れなかったときの代替案と対策",
+    excerpt: "学童の待機児童問題：入れなかったときの代替案と対策を厚生労働省等の公的情報をもとに解説。待機児童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "待機児童対策",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子ども・子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後対策",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "内閣府などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":28,"neutrality":23,"freshness":16,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/afterschool-care-waiting.jpg",
+    readingTime: 11,
+    tags: ["待機児童","学童","代替案"],
+    relatedArticleIds: ["art-1336","art-532","art-1317","art-1324","art-1167","art-1050"],
+  },
+  {
+    id: "art-1341",
+    slug: "spring-parent-network",
+    title: "新学期の保護者ネットワーク：ママ友・パパ友づくりの第一歩",
+    excerpt: "新学期の保護者ネットワーク：ママ友・パパ友づくりの第一歩を文部科学省等の公的情報をもとに解説。保護者の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["social"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭教育支援",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "地域の子育て",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":76,"reliability":22,"neutrality":20,"freshness":19,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-10",
+    updatedAt: "2026-05-10",
+    imageUrl: "/articles/spring-parent-network.jpg",
+    readingTime: 9,
+    tags: ["保護者","ネットワーク","ママ友"],
+    relatedArticleIds: ["art-1323","art-1317","art-1336","art-1324","art-1335","art-1167"],
+  },
+  {
     id: "art-1332",
     slug: "spring-outdoor-nature",
     title: "春の外遊びガイド：自然体験が子どもの発達に与える効果",
@@ -1761,7 +2201,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sho1wall-parent-work-prep.jpg",
     readingTime: 13,
     tags: ["小1の壁","共働き","時短勤務","在宅勤務","転職","働き方","育児休業"],
-    relatedArticleIds: ["art-1298","art-1299","art-1300","art-1287","art-1289","art-1308"],
+    relatedArticleIds: ["art-1298","art-1299","art-1300","art-1287","art-1289","art-1344"],
   },
   {
     id: "art-1300",
@@ -1969,7 +2409,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/spring-class-change-anxiety.jpg",
     readingTime: 8,
     tags: ["クラス替え","不安","声かけ"],
-    relatedArticleIds: ["art-1218","art-1141","art-812","art-417","art-1298","art-1301"],
+    relatedArticleIds: ["art-1339","art-1218","art-1141","art-812","art-417","art-1298"],
   },
   {
     id: "art-1317",
@@ -2013,7 +2453,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/afterschool-activities-options.jpg",
     readingTime: 11,
     tags: ["放課後","過ごし方","安全"],
-    relatedArticleIds: ["art-1324","art-1167","art-1050","art-1051","art-1169","art-614"],
+    relatedArticleIds: ["art-1324","art-1336","art-1335","art-1167","art-1050","art-1051"],
   },
   {
     id: "art-1324",
@@ -2057,7 +2497,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/spring-commute-safety.jpg",
     readingTime: 12,
     tags: ["通学路","安全","防犯"],
-    relatedArticleIds: ["art-1317","art-1051","art-543","art-1167","art-1050","art-1169"],
+    relatedArticleIds: ["art-1317","art-1336","art-1051","art-543","art-1335","art-1167"],
   },
   {
     id: "art-1323",
@@ -2101,7 +2541,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/spring-new-teacher.jpg",
     readingTime: 10,
     tags: ["担任","新学期","保護者"],
-    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
+    relatedArticleIds: ["art-1341","art-1317","art-1336","art-1324","art-1335","art-1167"],
   },
   {
     id: "art-1262",
@@ -3333,7 +3773,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/self-esteem-building-activities.jpg",
     readingTime: 10,
     tags: ["自己肯定感","声かけ","褒め方"],
-    relatedArticleIds: ["art-1214","art-423","art-1135","art-459","art-420","art-457"],
+    relatedArticleIds: ["art-1214","art-1338","art-423","art-1135","art-459","art-420"],
   },
   {
     id: "art-1242",
@@ -3421,7 +3861,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/friendship-trouble-resolution.jpg",
     readingTime: 11,
     tags: ["友達トラブル","対人関係","介入"],
-    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
+    relatedArticleIds: ["art-1317","art-1336","art-1324","art-1335","art-1167","art-1050"],
   },
   {
     id: "art-1222",
@@ -3685,7 +4125,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/homework-habits-lower-elementary.jpg",
     readingTime: 9,
     tags: ["宿題","学習習慣","小学1年生"],
-    relatedArticleIds: ["art-1098","art-1310","art-048","art-332","art-008","art-403"],
+    relatedArticleIds: ["art-1098","art-1310","art-1343","art-048","art-332","art-008"],
   },
   {
     id: "art-1233",
@@ -4169,7 +4609,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-anger-management-guide.jpg",
     readingTime: 10,
     tags: ["かんしゃく","アンガーマネジメント","感情コントロール"],
-    relatedArticleIds: ["art-055","art-1135","art-459","art-420","art-457","art-1030"],
+    relatedArticleIds: ["art-055","art-1135","art-459","art-420","art-457","art-1338"],
   },
   {
     id: "art-1218",
@@ -4213,7 +4653,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-entry-anxiety-tips.jpg",
     readingTime: 10,
     tags: ["入学準備","不安","心のケア"],
-    relatedArticleIds: ["art-1298","art-1322","art-1141","art-812","art-417","art-1301"],
+    relatedArticleIds: ["art-1339","art-1298","art-1322","art-1141","art-812","art-417"],
   },
   {
     id: "art-1231",
@@ -4257,7 +4697,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/family-communication-tips.jpg",
     readingTime: 9,
     tags: ["親子関係","コミュニケーション","会話"],
-    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
+    relatedArticleIds: ["art-1317","art-1336","art-1324","art-1335","art-1167","art-1050"],
   },
   {
     id: "art-1220",
@@ -4301,7 +4741,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/new-school-friends-making.jpg",
     readingTime: 10,
     tags: ["友達づくり","新生活","社会性"],
-    relatedArticleIds: ["art-018","art-1317","art-1324","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-018","art-1317","art-1336","art-1324","art-1335","art-1167"],
   },
   {
     id: "art-1211",
@@ -6897,7 +7337,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/homework-motivation-tips.jpg",
     readingTime: 10,
     tags: ["宿題","やる気","学習習慣"],
-    relatedArticleIds: ["art-1224","art-1310","art-048","art-332","art-008","art-403"],
+    relatedArticleIds: ["art-1224","art-1310","art-1343","art-048","art-332","art-008"],
   },
   {
     id: "art-1018",
@@ -9801,7 +10241,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/anger-management-kids.jpg",
     readingTime: 10,
     tags: ["アンガーマネジメント","怒り","感情コントロール"],
-    relatedArticleIds: ["art-1147","art-1144","art-812","art-417","art-1298","art-1301"],
+    relatedArticleIds: ["art-1147","art-1144","art-812","art-417","art-1339","art-1298"],
   },
   {
     id: "art-1134",
@@ -9889,7 +10329,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/emotional-education-kids.jpg",
     readingTime: 11,
     tags: ["感情教育","SEL","感情リテラシー"],
-    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1028","art-1035"],
+    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1338","art-1028"],
   },
   {
     id: "art-1137",
@@ -9933,7 +10373,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/fear-of-dark-children.jpg",
     readingTime: 9,
     tags: ["暗闇恐怖","恐怖症","不安"],
-    relatedArticleIds: ["art-1133","art-1135","art-459","art-420","art-457","art-1028"],
+    relatedArticleIds: ["art-1133","art-1135","art-459","art-420","art-457","art-1338"],
   },
   {
     id: "art-1215",
@@ -9977,7 +10417,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/friendship-trouble-support.jpg",
     readingTime: 10,
     tags: ["友達トラブル","仲間外れ","社会性"],
-    relatedArticleIds: ["art-431","art-812","art-417","art-1298","art-1301","art-1030"],
+    relatedArticleIds: ["art-431","art-812","art-417","art-1339","art-1298","art-1340"],
   },
   {
     id: "art-1147",
@@ -10021,7 +10461,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/game-losing-anger.jpg",
     readingTime: 9,
     tags: ["ゲーム","怒り","感情コントロール"],
-    relatedArticleIds: ["art-1030","art-1144","art-812","art-417","art-1298","art-1301"],
+    relatedArticleIds: ["art-1030","art-1144","art-812","art-417","art-1339","art-1298"],
   },
   {
     id: "art-1028",
@@ -10065,7 +10505,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/hsc-highly-sensitive-child.jpg",
     readingTime: 13,
     tags: ["HSC","敏感","気質"],
-    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1035","art-430"],
+    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1338","art-1035"],
   },
   {
     id: "art-1143",
@@ -10109,7 +10549,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/introverted-child-parenting.jpg",
     readingTime: 10,
     tags: ["内向的","気質","個性"],
-    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-1145"],
+    relatedArticleIds: ["art-812","art-417","art-1339","art-1298","art-1340","art-1301"],
   },
   {
     id: "art-1133",
@@ -10153,7 +10593,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kindergarten-reluctance.jpg",
     readingTime: 10,
     tags: ["登園しぶり","登園拒否","不安"],
-    relatedArticleIds: ["art-1137","art-1135","art-459","art-420","art-457","art-1028"],
+    relatedArticleIds: ["art-1137","art-1135","art-459","art-420","art-457","art-1338"],
   },
   {
     id: "art-1145",
@@ -10197,7 +10637,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lying-child-response.jpg",
     readingTime: 10,
     tags: ["嘘","道徳性","親子関係"],
-    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-808"],
+    relatedArticleIds: ["art-812","art-417","art-1339","art-1298","art-1340","art-1301"],
   },
   {
     id: "art-1138",
@@ -10241,7 +10681,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/monster-fear-imagination.jpg",
     readingTime: 8,
     tags: ["モンスター恐怖","想像力","幼児の不安"],
-    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1028","art-1035"],
+    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1338","art-1028"],
   },
   {
     id: "art-1140",
@@ -10285,7 +10725,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nail-biting-psychology.jpg",
     readingTime: 9,
     tags: ["爪噛み心理","ストレス","心理的習癖"],
-    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-1145"],
+    relatedArticleIds: ["art-812","art-417","art-1339","art-1298","art-1340","art-1301"],
   },
   {
     id: "art-1032",
@@ -10373,7 +10813,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/night-terrors-guide.jpg",
     readingTime: 10,
     tags: ["夜驚症","睡眠障害","夜泣き"],
-    relatedArticleIds: ["art-792","art-1135","art-459","art-420","art-457","art-1028"],
+    relatedArticleIds: ["art-792","art-1135","art-459","art-420","art-457","art-1338"],
   },
   {
     id: "art-1136",
@@ -10505,7 +10945,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/praise-vs-encouragement.jpg",
     readingTime: 10,
     tags: ["ほめ方","成長マインドセット","動機づけ"],
-    relatedArticleIds: ["art-1214","art-1135","art-459","art-420","art-457","art-1028"],
+    relatedArticleIds: ["art-1214","art-1135","art-459","art-420","art-457","art-1338"],
   },
   {
     id: "art-1034",
@@ -10593,7 +11033,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/self-esteem-building-kids.jpg",
     readingTime: 11,
     tags: ["自己肯定感","声かけ","ほめ方"],
-    relatedArticleIds: ["art-1245","art-1216","art-423","art-1135","art-459","art-420"],
+    relatedArticleIds: ["art-1245","art-1338","art-1216","art-423","art-1135","art-459"],
   },
   {
     id: "art-1033",
@@ -10725,7 +11165,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sneaky-eating-response.jpg",
     readingTime: 9,
     tags: ["盗み食い","食行動","心理"],
-    relatedArticleIds: ["art-812","art-417","art-1298","art-1301","art-1030","art-1145"],
+    relatedArticleIds: ["art-812","art-417","art-1339","art-1298","art-1340","art-1301"],
   },
   {
     id: "art-1144",
@@ -10769,7 +11209,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sore-loser-child.jpg",
     readingTime: 9,
     tags: ["負けず嫌い","競争心","感情コントロール"],
-    relatedArticleIds: ["art-1030","art-1147","art-812","art-417","art-1298","art-1301"],
+    relatedArticleIds: ["art-1030","art-1147","art-812","art-417","art-1339","art-1298"],
   },
   {
     id: "art-1217",
@@ -10813,7 +11253,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/temper-tantrum-toddler.jpg",
     readingTime: 10,
     tags: ["イヤイヤ期","癇癪","2歳"],
-    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1028","art-1035"],
+    relatedArticleIds: ["art-1135","art-459","art-420","art-457","art-1338","art-1028"],
   },
   {
     id: "art-1135",
@@ -10857,7 +11297,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/thumb-sucking-graduation.jpg",
     readingTime: 9,
     tags: ["指しゃぶり卒業","習癖","歯科"],
-    relatedArticleIds: ["art-459","art-420","art-457","art-1028","art-1035","art-430"],
+    relatedArticleIds: ["art-459","art-420","art-457","art-1338","art-1028","art-1035"],
   },
   {
     id: "art-1141",
@@ -10901,7 +11341,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/tic-disorder-mental-support.jpg",
     readingTime: 11,
     tags: ["チック症","心理的支援","不安"],
-    relatedArticleIds: ["art-1218","art-1322","art-812","art-417","art-1298","art-1301"],
+    relatedArticleIds: ["art-1339","art-1218","art-1322","art-812","art-417","art-1298"],
   },
   {
     id: "art-1031",
@@ -13101,7 +13541,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/bicycle-safety-kids.jpg",
     readingTime: 10,
     tags: ["自転車","ヘルメット","交通安全"],
-    relatedArticleIds: ["art-1051","art-539","art-896","art-895","art-1317","art-1324"],
+    relatedArticleIds: ["art-1051","art-539","art-896","art-895","art-1317","art-1336"],
   },
   {
     id: "art-1049",
@@ -13321,7 +13761,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/foreign-roots-parenting.jpg",
     readingTime: 12,
     tags: ["外国ルーツ","多文化共生","日本語支援"],
-    relatedArticleIds: ["art-058","art-1317","art-1324","art-1167","art-1050","art-1051"],
+    relatedArticleIds: ["art-058","art-1317","art-1336","art-1324","art-1335","art-1167"],
   },
   {
     id: "art-1045",
@@ -13453,7 +13893,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kodomo-shokudo-guide.jpg",
     readingTime: 11,
     tags: ["子ども食堂","地域福祉","子どもの貧困"],
-    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
+    relatedArticleIds: ["art-1317","art-1336","art-1324","art-1335","art-1167","art-1050"],
   },
   {
     id: "art-1169",
@@ -13497,7 +13937,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/library-utilization-kids.jpg",
     readingTime: 8,
     tags: ["図書館","読書習慣","学び"],
-    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-614"],
+    relatedArticleIds: ["art-1317","art-1336","art-1324","art-1335","art-1167","art-1050"],
   },
   {
     id: "art-1172",
@@ -13541,7 +13981,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/local-sports-club-guide.jpg",
     readingTime: 9,
     tags: ["スポーツ少年団","スポ少","地域スポーツ"],
-    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
+    relatedArticleIds: ["art-1317","art-1336","art-1324","art-1335","art-1167","art-1050"],
   },
   {
     id: "art-1170",
@@ -13585,7 +14025,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/museum-art-gallery-kids.jpg",
     readingTime: 9,
     tags: ["博物館","美術館","文化体験"],
-    relatedArticleIds: ["art-1317","art-1324","art-1167","art-1050","art-1051","art-1169"],
+    relatedArticleIds: ["art-1317","art-1336","art-1324","art-1335","art-1167","art-1050"],
   },
   {
     id: "art-1050",
@@ -13629,7 +14069,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/pta-participation-guide.jpg",
     readingTime: 11,
     tags: ["PTA","学校運営","保護者会"],
-    relatedArticleIds: ["art-607","art-1317","art-1324","art-1167","art-1051","art-1169"],
+    relatedArticleIds: ["art-607","art-1317","art-1336","art-1324","art-1335","art-1167"],
   },
   {
     id: "art-1051",
@@ -13673,7 +14113,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-route-safety.jpg",
     readingTime: 10,
     tags: ["通学路","交通安全","見守り"],
-    relatedArticleIds: ["art-1324","art-1167","art-539","art-1317","art-1050","art-1169"],
+    relatedArticleIds: ["art-1324","art-1167","art-539","art-1317","art-1336","art-1335"],
   },
   {
     id: "art-1168",
@@ -14877,7 +15317,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/multicultural-education-home.jpg",
     readingTime: 7,
     tags: ["多文化共生","異文化理解","人権教育","友達関係"],
-    relatedArticleIds: ["art-060","art-013","art-1047","art-1317","art-1324","art-1167"],
+    relatedArticleIds: ["art-060","art-013","art-1047","art-1317","art-1336","art-1324"],
   },
   {
     id: "art-009",
@@ -15387,7 +15827,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/home-study-habits-elementary.jpg",
     readingTime: 17,
     tags: ["家庭学習","学習習慣","小学生","学年別"],
-    relatedArticleIds: ["art-007","art-009","art-048","art-1098","art-1224","art-332"],
+    relatedArticleIds: ["art-007","art-009","art-048","art-1098","art-1343","art-1224"],
   },
   {
     id: "art-062",
@@ -16115,7 +16555,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/community-activities-kids.jpg",
     readingTime: 5,
     tags: ["地域活動","社会性","体験活動","子ども会"],
-    relatedArticleIds: ["art-020","art-016","art-009","art-1220","art-1317","art-1324"],
+    relatedArticleIds: ["art-020","art-016","art-009","art-1220","art-1317","art-1336"],
   },
   {
     id: "art-055",
@@ -16445,7 +16885,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/homework-support-parents.jpg",
     readingTime: 7,
     tags: ["宿題","家庭学習","親の関わり方","小学生"],
-    relatedArticleIds: ["art-008","art-042","art-041","art-1310","art-1098","art-1224"],
+    relatedArticleIds: ["art-008","art-042","art-041","art-1343","art-1310","art-1098"],
   },
   {
     id: "art-024",
@@ -18787,7 +19227,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/mama-friend-dynamics.jpg",
     readingTime: 15,
     tags: ["ママ友","人間関係","コミュニケーション","トラブル予防","距離感"],
-    relatedArticleIds: ["art-034","art-1135","art-459","art-420","art-457","art-1028"],
+    relatedArticleIds: ["art-034","art-1135","art-459","art-420","art-457","art-1338"],
   },
   {
     id: "art-081",
@@ -19769,7 +20209,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-camping-family.jpg",
     readingTime: 12,
     tags: ["生活","キャンプ"],
-    relatedArticleIds: ["art-608","art-595","art-613","art-607","art-1317","art-1324"],
+    relatedArticleIds: ["art-608","art-595","art-613","art-607","art-1317","art-1336"],
   },
   {
     id: "art-612",
@@ -19845,7 +20285,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-travel-international.jpg",
     readingTime: 18,
     tags: ["生活","海外旅行"],
-    relatedArticleIds: ["art-614","art-608","art-595","art-607","art-1317","art-1324"],
+    relatedArticleIds: ["art-614","art-608","art-595","art-607","art-1317","art-1336"],
   },
   {
     id: "art-609",
@@ -20073,7 +20513,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-school-volunteer.jpg",
     readingTime: 8,
     tags: ["生活","ボランティア"],
-    relatedArticleIds: ["art-614","art-595","art-613","art-607","art-1317","art-1324"],
+    relatedArticleIds: ["art-614","art-595","art-613","art-607","art-1317","art-1336"],
   },
   {
     id: "art-605",
@@ -20415,7 +20855,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lifestyle-family-meeting.jpg",
     readingTime: 12,
     tags: ["生活","家族会議"],
-    relatedArticleIds: ["art-614","art-608","art-613","art-607","art-1317","art-1324"],
+    relatedArticleIds: ["art-614","art-608","art-613","art-607","art-1317","art-1336"],
   },
   {
     id: "art-596",
@@ -22467,7 +22907,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/social-stranger-danger.jpg",
     readingTime: 8,
     tags: ["防犯","制度","子育て支援"],
-    relatedArticleIds: ["art-539","art-532","art-1324","art-1317","art-535","art-1167"],
+    relatedArticleIds: ["art-539","art-532","art-1336","art-1324","art-1317","art-535"],
   },
   {
     id: "art-541",
@@ -22809,7 +23249,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/social-after-school-club.jpg",
     readingTime: 13,
     tags: ["学童","制度","子育て支援"],
-    relatedArticleIds: ["art-543","art-539","art-1317","art-535","art-1324","art-1167"],
+    relatedArticleIds: ["art-543","art-539","art-1336","art-1335","art-1317","art-535"],
   },
   {
     id: "art-533",
@@ -23321,7 +23761,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/cooperation-3to6.jpg",
     readingTime: 18,
     tags: ["協調性","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-518","art-515","art-510","art-1317","art-1324","art-1167"],
+    relatedArticleIds: ["art-518","art-515","art-510","art-1317","art-1336","art-1324"],
   },
   {
     id: "art-518",
@@ -23359,7 +23799,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/environment-3to6.jpg",
     readingTime: 17,
     tags: ["環境教育","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-515","art-510","art-522","art-1317","art-1324","art-1167"],
+    relatedArticleIds: ["art-515","art-510","art-522","art-1317","art-1336","art-1324"],
   },
   {
     id: "art-519",
@@ -23473,7 +23913,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/diversity-3to6.jpg",
     readingTime: 11,
     tags: ["多様性の理解","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-518","art-510","art-522","art-1317","art-1324","art-1167"],
+    relatedArticleIds: ["art-518","art-510","art-522","art-1317","art-1336","art-1324"],
   },
   {
     id: "art-516",
@@ -23739,7 +24179,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/community-3to6.jpg",
     readingTime: 14,
     tags: ["地域のつながり","3〜6歳","年齢別"],
-    relatedArticleIds: ["art-518","art-515","art-522","art-1317","art-1324","art-1167"],
+    relatedArticleIds: ["art-518","art-515","art-522","art-1317","art-1336","art-1324"],
   },
   {
     id: "art-511",

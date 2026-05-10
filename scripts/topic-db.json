@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-05-09",
-    "totalGenerated": 70
+    "lastGeneratedAt": "2026-05-10",
+    "totalGenerated": 80
   },
   "pools": {
     "seasonal": {
@@ -5061,6 +5061,16 @@
     "spring-school-lunch",
     "spring-outdoor-nature",
     "spring-hay-fever-school",
-    "spring-new-routine"
+    "spring-new-routine",
+    "afterschool-care-waiting",
+    "afterschool-care-safety",
+    "afterschool-care-friendships",
+    "positive-discipline-methods",
+    "child-anxiety-symptoms",
+    "parent-child-talk-skills",
+    "spring-parent-network",
+    "spring-kindergarten-start",
+    "afterschool-homework-support",
+    "sho1-wall-overview"
   ]
 }
