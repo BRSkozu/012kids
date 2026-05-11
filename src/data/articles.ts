@@ -142,6 +142,138 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-1345","art-1346","art-007","art-198","art-722","art-977"],
   },
   {
+    id: "art-1358",
+    slug: "adachi-gakudo-guide",
+    title: "足立区の学童保育ガイド：住区センター児童館を活用した保活",
+    excerpt: "足立区の住区センター児童館と放課後子ども教室の仕組み、対象学年、利用料、申込スケジュールを整理。家賃水準が抑えめでファミリー人気の足立区の保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "足立区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "足立区の住区センター児童館・放課後子ども教室",
+                "url": "https://www.city.adachi.tokyo.jp/",
+                "org": "足立区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "足立区は子育て支援に力を入れており、住区センター児童館を中心に放課後支援を整備しています。",
+          "neutral": "区域が広く、北千住・綾瀬・西新井など主要駅周辺と郊外で住環境が異なります。",
+          "cautious": "区が広いため、住居選びは学童施設・通学路との位置関係を意識する必要があります。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/adachi-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","足立区","北千住","綾瀬","西新井","東京","23区"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1357",
+    slug: "arakawa-gakudo-guide",
+    title: "荒川区の学童保育「にこにこすくーる」ガイド：子育て先進区の保活",
+    excerpt: "荒川区の「にこにこすくーる」と学童クラブの仕組み、対象学年、利用料、申込スケジュールを整理。子育て施策に力を入れる荒川区の保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "荒川区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "荒川区のにこにこすくーる・学童クラブ",
+                "url": "https://www.city.arakawa.tokyo.jp/",
+                "org": "荒川区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "荒川区は子育て支援に力を入れており、にこにこすくーるも全区立小で展開されています。",
+          "neutral": "下町情緒と再開発エリアが混在し、家賃水準は23区平均より抑えめです。",
+          "cautious": "都電荒川線沿線などは通学路の交通事情を事前に確認しておきましょう。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/arakawa-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","荒川区","にこにこすくーる","日暮里","町屋","東京","23区"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1351",
+    slug: "chuo-gakudo-guide",
+    title: "中央区の学童保育「プレディ」ガイド：銀座・日本橋・月島の共働き保活",
+    excerpt: "中央区の学童クラブと放課後子ども教室「プレディ」の仕組み、対象学年、利用料、申込スケジュールを整理。再開発で子育て世帯が増える中央区の保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "中央区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "中央区の学童クラブ・プレディ",
+                "url": "https://www.city.chuo.lg.jp/",
+                "org": "中央区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "中央区は子育て世帯への独自支援が手厚く、月島・勝どきなど湾岸エリアの再開発でファミリー層の流入も増えています。",
+          "neutral": "オフィス街と住宅地が混在し、エリアごとに学童ニーズが大きく異なります。",
+          "cautious": "月島・勝どき・晴海など湾岸エリアでは児童数急増の影響で学童需要が逼迫する可能性があります。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/chuo-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","中央区","プレディ","月島","勝どき","東京","23区"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
     id: "art-1349",
     slug: "elementary-school-life-by-grade",
     title: "小学校6年間の学校生活ガイド：学年別の特徴と家庭サポート",
@@ -184,6 +316,94 @@ export const ARTICLES: Article[] = [
     readingTime: 15,
     tags: ["小学校","学年別","学校生活","学習","家庭サポート"],
     relatedArticleIds: ["art-1347","art-007","art-1298","art-1299","art-1310","art-366"],
+  },
+  {
+    id: "art-1356",
+    slug: "kita-gakudo-guide",
+    title: "北区の学童保育「わくわく☆ひろば」ガイド：赤羽・王子エリアの保活",
+    excerpt: "北区の学童クラブと「わくわく☆ひろば」の仕組み、対象学年、利用料、申込スケジュールを整理。赤羽・王子・田端など多様なエリアの保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "北区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "北区の学童クラブ・わくわく☆ひろば",
+                "url": "https://www.city.kita.tokyo.jp/",
+                "org": "北区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "北区は家賃水準が23区平均より抑えめで、ファミリー世帯にやさしい区です。",
+          "neutral": "赤羽・王子の再開発で街の様相が変わってきており、子育て世帯の流入も増えています。",
+          "cautious": "区域が南北に長く、エリアによって生活環境と通勤事情が異なります。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/kita-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","北区","赤羽","王子","わくわくひろば","東京","23区"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1353",
+    slug: "meguro-gakudo-guide",
+    title: "目黒区の学童保育「ランドセル来館事業」ガイド：教育意識の高い区の保活",
+    excerpt: "目黒区の学童保育クラブとランドセル来館事業の仕組み、対象学年、利用料、申込スケジュールを整理。教育環境への関心が高い世帯が多い目黒区の保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "目黒区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "目黒区の学童保育クラブ",
+                "url": "https://www.city.meguro.tokyo.jp/",
+                "org": "目黒区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "目黒区は教育意識の高い世帯が多く、区立小学校の評価や習い事の選択肢が豊富です。",
+          "neutral": "学区によって人気の差があり、需要が高いエリアでは学童申込の早めの確認が必要です。",
+          "cautious": "家賃水準は23区トップクラスで、住居費を含めた総合判断が必要です。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/meguro-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","目黒区","中目黒","自由が丘","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
   },
   {
     id: "art-1350",
@@ -272,6 +492,138 @@ export const ARTICLES: Article[] = [
     readingTime: 14,
     tags: ["絵本","年齢別","読み聞かせ","知育","言語発達"],
     relatedArticleIds: ["art-1345","art-1347","art-1346","art-1233","art-674","art-1350"],
+  },
+  {
+    id: "art-1354",
+    slug: "shibuya-gakudo-guide",
+    title: "渋谷区の学童保育「放課後クラブ」ガイド：都心型運営の実情",
+    excerpt: "渋谷区の放課後クラブ（全児童型）の仕組み、対象学年、利用料、申込スケジュールを整理。都心型住宅と教育環境のバランスを解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "渋谷区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "渋谷区の放課後クラブ",
+                "url": "https://www.city.shibuya.tokyo.jp/",
+                "org": "渋谷区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "渋谷区は子育て予算が手厚く、独自の支援メニューや教育ICT施策が進んでいます。",
+          "neutral": "オフィス街と高級住宅地が混在し、エリアによって子育て環境が大きく異なります。",
+          "cautious": "家賃水準が23区最上位クラスで、共働き家庭のコスト試算は丁寧に。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/shibuya-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","渋谷区","放課後クラブ","恵比寿","代々木","東京","23区"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1352",
+    slug: "taito-gakudo-guide",
+    title: "台東区の学童保育ガイド：上野・浅草・谷中エリアの保活事情",
+    excerpt: "台東区の学童クラブの仕組み、対象学年、利用料、申込スケジュールを整理。上野・浅草・谷根千など下町情緒のあるエリアの子育て事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "台東区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "台東区の学童クラブ",
+                "url": "https://www.city.taito.lg.jp/",
+                "org": "台東区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "台東区は下町の地域コミュニティが厚く、伝統文化や上野公園など子育てに豊かな環境があります。",
+          "neutral": "区内人口は比較的小規模ですが、近年は子育て世帯の流入が緩やかに増えています。",
+          "cautious": "観光地中心で通学路の交通量に注意が必要なエリアもあります。"
+    },
+    },
+    score: {"total":82,"reliability":25,"neutrality":22,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/taito-gakudo-guide.jpg",
+    readingTime: 9,
+    tags: ["学童保育","台東区","上野","浅草","東京","23区"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+  },
+  {
+    id: "art-1355",
+    slug: "toshima-gakudo-guide",
+    title: "豊島区の学童保育「子どもスキップ」ガイド：池袋を中心とした保活",
+    excerpt: "豊島区の学童クラブと「子どもスキップ」の仕組み、対象学年、利用料、申込スケジュールを整理。池袋・巣鴨・大塚など多彩なエリアの保活事情を解説します。",
+    content: '',
+    stage: "early",
+    categories: ["education","lifestyle"],
+    source: {
+      name: "豊島区・厚生労働省 公式情報",
+      references: [
+          {
+                "title": "豊島区の学童クラブ・子どもスキップ",
+                "url": "https://www.city.toshima.lg.jp/",
+                "org": "豊島区",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後児童健全育成事業の実施状況",
+                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "放課後子供総合プラン",
+                "url": "https://www.mext.go.jp/a_menu/education/houkago/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "豊島区は子育て支援に力を入れており、子どもスキップ事業も全区立小で展開されています。",
+          "neutral": "池袋を中心に交通利便性が高く、子育て世帯の流入も進んでいます。",
+          "cautious": "池袋駅周辺は人通りが多く、通学路の安全確認が必要なエリアもあります。"
+    },
+    },
+    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/toshima-gakudo-guide.jpg",
+    readingTime: 10,
+    tags: ["学童保育","豊島区","子どもスキップ","池袋","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
   },
   {
     id: "art-1343",
