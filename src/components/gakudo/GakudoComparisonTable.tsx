@@ -22,12 +22,12 @@ const MODEL_TYPE_BADGE_CLASS: Record<GakudoModelType, string> = {
   unknown: 'bg-gray-50 text-gray-600 border border-gray-200',
 };
 
-const AREA_ACCENT: Record<GakudoAreaGroup, { dot: string; soft: string; border: string }> = {
-  central: { dot: 'bg-rose-400', soft: 'bg-rose-50', border: 'border-rose-200' },
-  south: { dot: 'bg-amber-400', soft: 'bg-amber-50', border: 'border-amber-200' },
-  west: { dot: 'bg-emerald-400', soft: 'bg-emerald-50', border: 'border-emerald-200' },
-  north: { dot: 'bg-indigo-400', soft: 'bg-indigo-50', border: 'border-indigo-200' },
-  east: { dot: 'bg-sky-400', soft: 'bg-sky-50', border: 'border-sky-200' },
+const AREA_ACCENT: Record<GakudoAreaGroup, { dot: string; soft: string; border: string; crestBg: string; crestText: string; crestRing: string }> = {
+  central: { dot: 'bg-rose-400', soft: 'bg-rose-50', border: 'border-rose-200', crestBg: 'bg-rose-100', crestText: 'text-rose-800', crestRing: 'ring-rose-300' },
+  south: { dot: 'bg-amber-400', soft: 'bg-amber-50', border: 'border-amber-200', crestBg: 'bg-amber-100', crestText: 'text-amber-800', crestRing: 'ring-amber-300' },
+  west: { dot: 'bg-emerald-400', soft: 'bg-emerald-50', border: 'border-emerald-200', crestBg: 'bg-emerald-100', crestText: 'text-emerald-800', crestRing: 'ring-emerald-300' },
+  north: { dot: 'bg-indigo-400', soft: 'bg-indigo-50', border: 'border-indigo-200', crestBg: 'bg-indigo-100', crestText: 'text-indigo-800', crestRing: 'ring-indigo-300' },
+  east: { dot: 'bg-sky-400', soft: 'bg-sky-50', border: 'border-sky-200', crestBg: 'bg-sky-100', crestText: 'text-sky-800', crestRing: 'ring-sky-300' },
 };
 
 const AREAS: GakudoAreaGroup[] = ['central', 'south', 'west', 'north', 'east'];
@@ -85,6 +85,31 @@ function ModelBadge({ type }: { type: GakudoModelType }) {
   );
 }
 
+/**
+ * 区名から「区章風」モノグラム表示用の文字を取得。
+ * 「千代田区」→「千代」、「港区」→「港」、「江戸川区」→「江戸」のように
+ * 末尾の「区」を除いた頭2文字以内を返す。
+ */
+function getWardMonogram(wardName: string): string {
+  const trimmed = wardName.replace(/区$/, '');
+  return trimmed.slice(0, 2);
+}
+
+function WardCrest({ ward, areaGroup }: { ward: string; areaGroup: GakudoAreaGroup }) {
+  const accent = AREA_ACCENT[areaGroup];
+  const monogram = getWardMonogram(ward);
+  const isLong = monogram.length >= 2;
+  return (
+    <div
+      aria-hidden
+      className={`shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-full ${accent.crestBg} ${accent.crestText} ring-1 ring-inset ${accent.crestRing} font-bold ${isLong ? 'text-[11px] tracking-tighter' : 'text-base'}`}
+      style={{ fontFamily: 'var(--font-serif)' }}
+    >
+      {monogram}
+    </div>
+  );
+}
+
 function WardCard({ ward }: { ward: GakudoWardData }) {
   const accent = AREA_ACCENT[ward.areaGroup];
   return (
@@ -93,27 +118,31 @@ function WardCard({ ward }: { ward: GakudoWardData }) {
     >
       <div className={`absolute top-0 left-0 right-0 h-1 ${accent.dot}`} aria-hidden />
       <div className="p-4">
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3
-            className="text-base text-[var(--color-foreground)]"
-            style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
-          >
-            {ward.articleSlug ? (
-              <Link
-                href={`${bp}/articles/${ward.articleSlug}`}
-                className="hover:text-[var(--color-primary-dark)]"
+        <div className="flex items-start gap-3 mb-2.5">
+          <WardCrest ward={ward.ward} areaGroup={ward.areaGroup} />
+          <div className="min-w-0 flex-1">
+            <div className="flex items-start justify-between gap-2">
+              <h3
+                className="text-base text-[var(--color-foreground)] leading-snug"
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 700 }}
               >
-                {ward.ward}
-              </Link>
-            ) : (
-              ward.ward
-            )}
-          </h3>
-          <ModelBadge type={ward.modelType} />
-        </div>
-
-        <div className="text-xs text-[var(--color-foreground-soft)] mb-2.5 leading-relaxed">
-          {ward.programName}
+                {ward.articleSlug ? (
+                  <Link
+                    href={`${bp}/articles/${ward.articleSlug}`}
+                    className="hover:text-[var(--color-primary-dark)]"
+                  >
+                    {ward.ward}
+                  </Link>
+                ) : (
+                  ward.ward
+                )}
+              </h3>
+              <ModelBadge type={ward.modelType} />
+            </div>
+            <div className="text-xs text-[var(--color-foreground-soft)] mt-1 leading-relaxed">
+              {ward.programName}
+            </div>
+          </div>
         </div>
 
         {ward.highlights && ward.highlights.length > 0 && (
