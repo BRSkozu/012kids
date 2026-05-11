@@ -95,17 +95,47 @@ function getWardMonogram(wardName: string): string {
   return trimmed.slice(0, 2);
 }
 
-function WardCrest({ ward, areaGroup }: { ward: string; areaGroup: GakudoAreaGroup }) {
+function WardCrest({
+  ward,
+  areaGroup,
+  crestPath,
+}: {
+  ward: string;
+  areaGroup: GakudoAreaGroup;
+  crestPath?: string;
+}) {
   const accent = AREA_ACCENT[areaGroup];
   const monogram = getWardMonogram(ward);
   const isLong = monogram.length >= 2;
+  // 画像読み込み失敗時はモノグラムにフォールバック。
+  // 公式区章SVGはユーザーが scripts/fetch-ward-crests.mjs で /public/ward-crests/ に配置する想定。
+  const [imgError, setImgError] = useState(false);
+  const showImage = crestPath && !imgError;
+
   return (
     <div
-      aria-hidden
-      className={`shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-full ${accent.crestBg} ${accent.crestText} ring-1 ring-inset ${accent.crestRing} font-bold ${isLong ? 'text-[11px] tracking-tighter' : 'text-base'}`}
-      style={{ fontFamily: 'var(--font-serif)' }}
+      aria-label={`${ward}章`}
+      className={`shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-full ${accent.crestBg} ${accent.crestText} ring-1 ring-inset ${accent.crestRing} overflow-hidden`}
     >
-      {monogram}
+      {showImage ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={`${bp}${crestPath}`}
+          alt=""
+          width={28}
+          height={28}
+          className="w-7 h-7 object-contain"
+          onError={() => setImgError(true)}
+        />
+      ) : (
+        <span
+          aria-hidden
+          className={`font-bold ${isLong ? 'text-[11px] tracking-tighter' : 'text-base'}`}
+          style={{ fontFamily: 'var(--font-serif)' }}
+        >
+          {monogram}
+        </span>
+      )}
     </div>
   );
 }
@@ -119,7 +149,7 @@ function WardCard({ ward }: { ward: GakudoWardData }) {
       <div className={`absolute top-0 left-0 right-0 h-1 ${accent.dot}`} aria-hidden />
       <div className="p-4">
         <div className="flex items-start gap-3 mb-2.5">
-          <WardCrest ward={ward.ward} areaGroup={ward.areaGroup} />
+          <WardCrest ward={ward.ward} areaGroup={ward.areaGroup} crestPath={ward.crestPath} />
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between gap-2">
               <h3
