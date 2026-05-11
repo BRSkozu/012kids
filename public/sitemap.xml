@@ -147,7 +147,7 @@
   </url>
   <url>
     <loc>https://012.kids/category/lifestyle</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -224,6 +224,48 @@
     </news:news>
   </url>
   <url>
+    <loc>https://012.kids/articles/adachi-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>足立区の学童保育ガイド：住区センター児童館を活用した保活</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/arakawa-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>荒川区の学童保育「にこにこすくーる」ガイド：子育て先進区の保活</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/chuo-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>中央区の学童保育「プレディ」ガイド：銀座・日本橋・月島の共働き保活</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://012.kids/articles/elementary-school-life-by-grade</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -235,6 +277,34 @@
       </news:publication>
       <news:publication_date>2026-05-11</news:publication_date>
       <news:title>小学校6年間の学校生活ガイド：学年別の特徴と家庭サポート</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kita-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>北区の学童保育「わくわく☆ひろば」ガイド：赤羽・王子エリアの保活</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/meguro-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>目黒区の学童保育「ランドセル来館事業」ガイド：教育意識の高い区の保活</news:title>
     </news:news>
   </url>
   <url>
@@ -263,6 +333,48 @@
       </news:publication>
       <news:publication_date>2026-05-11</news:publication_date>
       <news:title>年齢別 絵本の選び方完全ガイド：0歳〜6歳まで発達に合わせて</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/shibuya-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>渋谷区の学童保育「放課後クラブ」ガイド：都心型運営の実情</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/taito-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>台東区の学童保育ガイド：上野・浅草・谷中エリアの保活事情</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/toshima-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>012.kids</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-11</news:publication_date>
+      <news:title>豊島区の学童保育「子どもスキップ」ガイド：池袋を中心とした保活</news:title>
     </news:news>
   </url>
   <url>
