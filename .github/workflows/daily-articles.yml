@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: '生成する記事数（デフォルト10件）'
+        description: '生成する記事数（デフォルト3件）'
         required: false
-        default: '10'
+        default: '3'
       skip_deploy:
         description: 'デプロイをスキップする'
         required: false
@@ -47,8 +47,9 @@ jobs:
         run: npm test
 
       # Step 1: Generate new articles
+      # 1日3件に絞り込み（既に1300件超で量より質重視のフェーズ）
       - name: Generate new articles
-        run: node scripts/daily-article-generator.mjs --count ${{ github.event.inputs.count || '10' }}
+        run: node scripts/daily-article-generator.mjs --count ${{ github.event.inputs.count || '3' }}
 
       # Step 2: Rebuild index & assets
       - name: Regenerate article index and assets

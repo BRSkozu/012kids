@@ -31,7 +31,9 @@ const TOPIC_DB_PATH = path.join(__dirname, 'topic-db.json');
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
 const countIdx = args.indexOf('--count');
-const DAILY_COUNT = countIdx >= 0 ? parseInt(args[countIdx + 1], 10) : 10;
+// デフォルトは3件/日（既存1300件超で量より質重視）。
+// 大量生成が必要なときは --count N で明示指定。
+const DAILY_COUNT = countIdx >= 0 ? parseInt(args[countIdx + 1], 10) : 3;
 
 // ---------------------------------------------------------------------------
 // Load topic DB
