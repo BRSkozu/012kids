@@ -51,7 +51,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/age-appropriate-toy-guide.jpg",
     readingTime: 16,
     tags: ["おもちゃ","年齢別","発達","知育","安全"],
-    relatedArticleIds: ["art-1345","art-1347","art-723","art-1240","art-003","art-1241"],
+    relatedArticleIds: ["art-1345","art-1347","art-723","art-1365","art-1240","art-003"],
   },
   {
     id: "art-1345",
@@ -95,7 +95,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-development-by-month.jpg",
     readingTime: 18,
     tags: ["月齢別","発達","赤ちゃん","0歳","育児","乳児"],
-    relatedArticleIds: ["art-007","art-014","art-001","art-723","art-1346","art-1240"],
+    relatedArticleIds: ["art-007","art-014","art-001","art-723","art-1346","art-1365"],
   },
   {
     id: "art-1347",
@@ -142,6 +142,94 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-1345","art-1346","art-007","art-198","art-722","art-977"],
   },
   {
+    id: "art-1365",
+    slug: "growth-milestone-chart",
+    title: "子どもの発達マイルストーン一覧：0歳〜12歳の成長の目安",
+    excerpt: "子どもの発達マイルストーン一覧：0歳〜12歳の成長の目安を厚生労働省等の公的情報をもとに解説。発達の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "乳幼児健診",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":88,"reliability":28,"neutrality":24,"freshness":16,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/growth-milestone-chart.jpg",
+    readingTime: 8,
+    tags: ["発達","マイルストーン","成長"],
+    relatedArticleIds: ["art-003","art-723","art-1345","art-1346","art-1240","art-1241"],
+  },
+  {
+    id: "art-1361",
+    slug: "independence-by-age",
+    title: "年齢別・子どもの自立ステップ：「自分でできる」を増やす見守り方",
+    excerpt: "年齢別・子どもの自立ステップ：「自分でできる」を増やす見守り方を国立成育医療研究センター等の公的情報をもとに解説。自立の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "生活習慣",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":26,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/independence-by-age.jpg",
+    readingTime: 11,
+    tags: ["自立","年齢別","見守り"],
+    relatedArticleIds: ["art-194","art-1000","art-202","art-197","art-209","art-206"],
+  },
+  {
     id: "art-1358",
     slug: "adachi-gakudo-guide",
     title: "足立区の学童保育ガイド：住区センター児童館を活用した保活",
@@ -183,7 +271,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/adachi-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","足立区","北千住","綾瀬","西新井","東京","23区"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1357",
@@ -227,7 +315,51 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/arakawa-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","荒川区","にこにこすくーる","日暮里","町屋","東京","23区"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
+  },
+  {
+    id: "art-1360",
+    slug: "bilingual-parenting-guide",
+    title: "バイリンガル子育てのリアル：メリット・注意点・継続のコツ",
+    excerpt: "バイリンガル子育てのリアル：メリット・注意点・継続のコツを文部科学省等の公的情報をもとに解説。バイリンガルの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "外国語教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "言語発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児教育",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":28,"neutrality":23,"freshness":16,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/bilingual-parenting-guide.jpg",
+    readingTime: 9,
+    tags: ["バイリンガル","英語","言語発達"],
+    relatedArticleIds: ["art-675","art-389","art-384","art-383","art-377","art-678"],
   },
   {
     id: "art-1351",
@@ -271,7 +403,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/chuo-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","中央区","プレディ","月島","勝どき","東京","23区"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1349",
@@ -359,7 +491,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kita-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","北区","赤羽","王子","わくわくひろば","東京","23区"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1353",
@@ -403,7 +535,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/meguro-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","目黒区","中目黒","自由が丘","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1350",
@@ -494,6 +626,50 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-1345","art-1347","art-1346","art-1233","art-674","art-1350"],
   },
   {
+    id: "art-1363",
+    slug: "pocket-money-education",
+    title: "お小遣いの始め方ガイド：金額の目安と金銭感覚の育て方",
+    excerpt: "お小遣いの始め方ガイド：金額の目安と金銭感覚の育て方を文部科学省等の公的情報をもとに解説。お小遣いの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "金融経済教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "消費者教育",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの自立",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":27,"neutrality":22,"freshness":15,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/pocket-money-education.jpg",
+    readingTime: 9,
+    tags: ["お小遣い","金銭教育","金額"],
+    relatedArticleIds: ["art-403","art-692","art-943","art-701","art-1298","art-386"],
+  },
+  {
     id: "art-1354",
     slug: "shibuya-gakudo-guide",
     title: "渋谷区の学童保育「放課後クラブ」ガイド：都心型運営の実情",
@@ -535,7 +711,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/shibuya-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","渋谷区","放課後クラブ","恵比寿","代々木","東京","23区"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1352",
@@ -579,7 +755,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/taito-gakudo-guide.jpg",
     readingTime: 9,
     tags: ["学童保育","台東区","上野","浅草","東京","23区"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1355",
@@ -623,7 +799,139 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toshima-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","豊島区","子どもスキップ","池袋","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
+  },
+  {
+    id: "art-1364",
+    slug: "disaster-prep-family",
+    title: "家族の防災準備ガイド：子連れ避難の持ち物と避難計画",
+    excerpt: "家族の防災準備ガイド：子連れ避難の持ち物と避難計画を文部科学省等の公的情報をもとに解説。防災の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "防災教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "災害対策",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "cautious"
+          },
+          {
+                "title": "子どもの安全",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "内閣府は、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":82,"reliability":25,"neutrality":20,"freshness":18,"ageRelevance":12,"readability":7},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/disaster-prep-family.jpg",
+    readingTime: 12,
+    tags: ["防災","避難","子連れ"],
+    relatedArticleIds: ["art-1176","art-1174","art-1186","art-1179","art-1057","art-1173"],
+  },
+  {
+    id: "art-1362",
+    slug: "family-rules-creation",
+    title: "家庭のルールづくりガイド：年齢に合ったルールと守らせるコツ",
+    excerpt: "家庭のルールづくりガイド：年齢に合ったルールと守らせるコツを文部科学省等の公的情報をもとに解説。ルールの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの権利",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":78,"reliability":22,"neutrality":21,"freshness":19,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/family-rules-creation.jpg",
+    readingTime: 11,
+    tags: ["ルール","家庭","しつけ"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1291","art-1287","art-1311"],
+  },
+  {
+    id: "art-1359",
+    slug: "sho1-wall-schedule-gap",
+    title: "保育園と小学校のスケジュールの違い：時間のギャップを埋める方法",
+    excerpt: "保育園と小学校のスケジュールの違い：時間のギャップを埋める方法を厚生労働省等の公的情報をもとに解説。小1の壁の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブ",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "就学前後の接続",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":24,"neutrality":24,"freshness":17,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/sho1-wall-schedule-gap.jpg",
+    readingTime: 9,
+    tags: ["小1の壁","スケジュール","保育園"],
+    relatedArticleIds: ["art-1298","art-1301","art-1287","art-1253","art-1289","art-1344"],
   },
   {
     id: "art-1343",
@@ -711,7 +1019,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sho1-wall-overview.jpg",
     readingTime: 10,
     tags: ["小1の壁","共働き","課題"],
-    relatedArticleIds: ["art-1298","art-1301","art-1287","art-1289","art-1300","art-1308"],
+    relatedArticleIds: ["art-1298","art-1301","art-1287","art-1289","art-1300","art-1291"],
   },
   {
     id: "art-1337",
@@ -1591,7 +1899,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/afterschool-care-choosing-guide.jpg",
     readingTime: 9,
     tags: ["学童保育","選び方","比較"],
-    relatedArticleIds: ["art-1287","art-1307","art-1304","art-1305","art-1302","art-1292"],
+    relatedArticleIds: ["art-1291","art-1287","art-1307","art-1304","art-1305","art-1302"],
   },
   {
     id: "art-1307",
@@ -1635,13 +1943,13 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/bunkyo-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","文京区","育成室","東京","23区","共働き","教育"],
-    relatedArticleIds: ["art-1287","art-069","art-1304","art-1305","art-1302","art-1292"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1304","art-1305","art-1302"],
   },
   {
     id: "art-1291",
     slug: "chiyoda-gakudo-guide",
-    title: "千代田区の学童保育（学童クラブ・放課後子ども教室）ガイド",
-    excerpt: "千代田区の学童クラブと放課後子ども教室の仕組み、対象学年、利用料、申込スケジュール、独自の子育て支援を整理しました。",
+    title: "千代田区の学童保育 完全ガイド：制度・料金・申込・選び方",
+    excerpt: "千代田区の学童クラブと放課後子ども教室について、制度の全体像、料金内訳、申込スケジュール、入会選考、エリア別保活事情、よくある質問までを公的情報をもとに整理しました。",
     content: '',
     stage: "early",
     categories: ["education","lifestyle"],
@@ -1649,7 +1957,13 @@ export const ARTICLES: Article[] = [
       name: "千代田区・厚生労働省 公式情報",
       references: [
           {
-                "title": "千代田区の学童クラブ",
+                "title": "千代田区 学童クラブ",
+                "url": "https://www.city.chiyoda.lg.jp/",
+                "org": "千代田区",
+                "stance": "neutral"
+          },
+          {
+                "title": "千代田区 児童館",
                 "url": "https://www.city.chiyoda.lg.jp/",
                 "org": "千代田区",
                 "stance": "neutral"
@@ -1665,21 +1979,27 @@ export const ARTICLES: Article[] = [
                 "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
                 "org": "厚生労働省",
                 "stance": "positive"
+          },
+          {
+                "title": "千代田区 子育てガイドブック",
+                "url": "https://www.city.chiyoda.lg.jp/",
+                "org": "千代田区",
+                "stance": "positive"
           }
     ],
       perspectives: {
-          "positive": "千代田区は人口規模が小さく行政の目が届きやすい区で、子育て施策の独自性も高い。",
-          "neutral": "区民の通学圏が他区と重なるケースが多く、就労区と居住区を分けた家庭設計が必要。",
-          "cautious": "オフィス街中心で住居選択肢が限られ、学童ニーズも特殊な傾向（共働き比率が高い等）。"
+          "positive": "千代田区は23区で最も人口規模が小さく、子育て予算が手厚い。独自の上乗せ施策が多いため、共働き家庭が経済的にも環境的にも安心しやすい。",
+          "neutral": "オフィス街中心で住居選択肢は限られ、学童施設の絶対数も少ない。住居選びと学童選びを連動して考える必要がある。",
+          "cautious": "番町・麹町など人気学区への流入で需要は高め。希望する施設の枠が限られるため早めの情報収集と申込が必須。"
     },
     },
-    score: {"total":84,"reliability":26,"neutrality":23,"freshness":19,"ageRelevance":11,"readability":5},
+    score: {"total":88,"reliability":28,"neutrality":24,"freshness":20,"ageRelevance":11,"readability":5},
     publishedAt: "2026-05-08",
-    updatedAt: "2026-05-08",
+    updatedAt: "2026-05-11",
     imageUrl: "/articles/chiyoda-gakudo-guide.jpg",
-    readingTime: 10,
-    tags: ["学童保育","千代田区","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    readingTime: 18,
+    tags: ["学童保育","千代田区","番町","麹町","神田","東京","23区","共働き"],
+    relatedArticleIds: ["art-1287","art-069","art-1298","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1290",
@@ -1723,7 +2043,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/edogawa-gakudo-guide.jpg",
     readingTime: 12,
     tags: ["学童保育","江戸川区","すくすくスクール","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-007","art-1307","art-1304","art-1305"],
+    relatedArticleIds: ["art-1287","art-069","art-007","art-1291","art-1307","art-1304"],
   },
   {
     id: "art-1304",
@@ -1767,7 +2087,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/itabashi-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","板橋区","あいキッズ","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1305","art-1302","art-1292"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1305","art-1302"],
   },
   {
     id: "art-1314",
@@ -1811,7 +2131,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/katsushika-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","葛飾区","わくわくチャレンジ広場","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1305",
@@ -1855,7 +2175,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/koto-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","江東区","江東きっずクラブ","豊洲","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1302","art-1292"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1302"],
   },
   {
     id: "art-1289",
@@ -1899,7 +2219,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/minato-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","港区","東京","23区","共働き","小1の壁"],
-    relatedArticleIds: ["art-1287","art-069","art-007","art-1307","art-1304","art-1305"],
+    relatedArticleIds: ["art-1287","art-069","art-007","art-1291","art-1307","art-1304"],
   },
   {
     id: "art-1293",
@@ -1943,7 +2263,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nakano-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","中野区","キッズプラザ","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1302",
@@ -1987,7 +2307,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nerima-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","練馬区","ねりっこクラブ","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1292"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1303",
@@ -2031,7 +2351,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/ota-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","大田区","おおたっ子ひろば","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1288",
@@ -2075,7 +2395,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/setagaya-gakudo-guide.jpg",
     readingTime: 12,
     tags: ["学童保育","世田谷区","新BOP","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-007","art-1307","art-1304","art-1305"],
+    relatedArticleIds: ["art-1287","art-069","art-007","art-1291","art-1307","art-1304"],
   },
   {
     id: "art-1292",
@@ -2119,7 +2439,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/shinagawa-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","品川区","すまいるスクール","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1306",
@@ -2163,7 +2483,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/shinjuku-gakudo-guide.jpg",
     readingTime: 11,
     tags: ["学童保育","新宿区","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1299",
@@ -2295,7 +2615,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/suginami-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","杉並区","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1312",
@@ -2339,7 +2659,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sumida-gakudo-guide.jpg",
     readingTime: 10,
     tags: ["学童保育","墨田区","東京","23区","共働き"],
-    relatedArticleIds: ["art-1287","art-069","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1287","art-069","art-1291","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1310",
@@ -2427,7 +2747,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/tokyo-23ku-gakudo-overview.jpg",
     readingTime: 18,
     tags: ["学童保育","東京","23区","小1の壁","共働き","放課後"],
-    relatedArticleIds: ["art-069","art-007","art-1288","art-1289","art-1290","art-1307"],
+    relatedArticleIds: ["art-069","art-007","art-1288","art-1289","art-1290","art-1291"],
   },
   {
     id: "art-1319",
@@ -2603,7 +2923,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/afterschool-care-cost.jpg",
     readingTime: 9,
     tags: ["学童保育","費用","料金"],
-    relatedArticleIds: ["art-1287","art-1307","art-1304","art-1305","art-1302","art-1292"],
+    relatedArticleIds: ["art-1291","art-1287","art-1307","art-1304","art-1305","art-1302"],
   },
   {
     id: "art-1297",
@@ -2899,7 +3219,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/spring-school-supplies-list.jpg",
     readingTime: 12,
     tags: ["新学期","持ち物","チェックリスト"],
-    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1291","art-1287","art-1311"],
   },
   {
     id: "art-1309",
@@ -3553,7 +3873,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/new-year-money-education.jpg",
     readingTime: 9,
     tags: ["お年玉","金銭教育","お金の管理"],
-    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1291","art-1287","art-1311"],
   },
   {
     id: "art-1264",
@@ -3949,7 +4269,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/summer-vacation-schedule-kids.jpg",
     readingTime: 9,
     tags: ["夏休み","スケジュール","生活リズム"],
-    relatedArticleIds: ["art-1300","art-1311","art-1308","art-1309","art-1236","art-1326"],
+    relatedArticleIds: ["art-1300","art-1311","art-1308","art-1309","art-1236","art-1359"],
   },
   {
     id: "art-1250",
@@ -4081,7 +4401,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toilet-training-before-school.jpg",
     readingTime: 10,
     tags: ["トイレトレーニング","入園準備","発達"],
-    relatedArticleIds: ["art-723","art-1345","art-1346","art-003","art-1241","art-974"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-1365","art-003","art-1241"],
   },
   {
     id: "art-1241",
@@ -4125,7 +4445,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/year-end-growth-review.jpg",
     readingTime: 9,
     tags: ["成長記録","発達","ふりかえり"],
-    relatedArticleIds: ["art-723","art-1345","art-1346","art-1240","art-003","art-974"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-1365","art-1240","art-003"],
   },
   {
     id: "art-1239",
@@ -4213,7 +4533,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-supply-preparation-guide.jpg",
     readingTime: 10,
     tags: ["入学準備","ランドセル","文房具"],
-    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1291","art-1287","art-1311"],
   },
   {
     id: "art-1243",
@@ -5093,7 +5413,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dual-income-summer-childcare.jpg",
     readingTime: 10,
     tags: ["共働き","夏休み","学童保育"],
-    relatedArticleIds: ["art-1287","art-1308","art-1307","art-1304","art-1305","art-1302"],
+    relatedArticleIds: ["art-1291","art-1287","art-1308","art-1307","art-1304","art-1305"],
   },
   {
     id: "art-1237",
@@ -5489,7 +5809,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-teeth-growth-order.jpg",
     readingTime: 9,
     tags: ["乳歯","歯の生え方","歯磨き"],
-    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1365"],
   },
   {
     id: "art-1068",
@@ -5533,7 +5853,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-visual-development.jpg",
     readingTime: 10,
     tags: ["視覚発達","赤ちゃんの目","視力"],
-    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1365"],
   },
   {
     id: "art-1003",
@@ -5797,7 +6117,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/first-walking-timing.jpg",
     readingTime: 10,
     tags: ["一人歩き","歩行","発達の目安"],
-    relatedArticleIds: ["art-723","art-1345","art-1213","art-1346","art-1240","art-001"],
+    relatedArticleIds: ["art-723","art-1345","art-1213","art-1346","art-1365","art-1240"],
   },
   {
     id: "art-1076",
@@ -5885,7 +6205,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/handedness-development-kids.jpg",
     readingTime: 10,
     tags: ["利き手","左利き","発達"],
-    relatedArticleIds: ["art-723","art-1345","art-1346","art-1240","art-003","art-1241"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-1365","art-1240","art-003"],
   },
   {
     id: "art-1082",
@@ -6061,7 +6381,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/mirror-interest-baby.jpg",
     readingTime: 8,
     tags: ["鏡","自己認識","認知発達"],
-    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1365"],
   },
   {
     id: "art-1074",
@@ -6325,7 +6645,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/stranger-anxiety-baby.jpg",
     readingTime: 9,
     tags: ["人見知り","社会性発達","愛着形成"],
-    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1365"],
   },
   {
     id: "art-1002",
@@ -6413,7 +6733,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/thumb-sucking-habit.jpg",
     readingTime: 9,
     tags: ["指しゃぶり","口腔習癖","歯並び"],
-    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1365"],
   },
   {
     id: "art-1004",
@@ -10197,7 +10517,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kids-room-design-guide.jpg",
     readingTime: 10,
     tags: ["子ども部屋","収納","学習環境"],
-    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1287","art-1311","art-1308"],
+    relatedArticleIds: ["art-1298","art-1301","art-1053","art-1291","art-1287","art-1311"],
   },
   {
     id: "art-1053",
@@ -10241,7 +10561,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/military-family-parenting.jpg",
     readingTime: 10,
     tags: ["転勤族","転校","環境変化"],
-    relatedArticleIds: ["art-1052","art-1298","art-1301","art-1287","art-1311","art-1308"],
+    relatedArticleIds: ["art-1052","art-1298","art-1301","art-1291","art-1287","art-1311"],
   },
   {
     id: "art-1182",
@@ -10505,7 +10825,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/relocation-kids-adjustment.jpg",
     readingTime: 10,
     tags: ["引越し","転校","適応"],
-    relatedArticleIds: ["art-1053","art-1298","art-1301","art-1287","art-1311","art-1308"],
+    relatedArticleIds: ["art-1053","art-1298","art-1301","art-1291","art-1287","art-1311"],
   },
   {
     id: "art-1055",
@@ -18895,7 +19215,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/infant-development-milestones.jpg",
     readingTime: 7,
     tags: ["発達","マイルストーン","運動発達","言語発達"],
-    relatedArticleIds: ["art-001","art-004","art-095","art-723","art-1345","art-1213"],
+    relatedArticleIds: ["art-001","art-004","art-1365","art-095","art-723","art-1345"],
   },
   {
     id: "art-026",
@@ -19125,7 +19445,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/indoor-play-ideas.jpg",
     readingTime: 18,
     tags: ["室内遊び","雨の日","年齢別","知育","運動遊び"],
-    relatedArticleIds: ["art-194","art-756","art-760","art-246","art-244","art-256"],
+    relatedArticleIds: ["art-194","art-756","art-1361","art-760","art-246","art-244"],
   },
   {
     id: "art-095",
@@ -41189,7 +41509,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-first-words.jpg",
     readingTime: 12,
     tags: ["初語","言葉","発達"],
-    relatedArticleIds: ["art-723","art-1345","art-1346","art-1240","art-003","art-1241"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-1365","art-1240","art-003"],
   },
   {
     id: "art-733",
@@ -41835,7 +42155,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-fine-motor-0to1.jpg",
     readingTime: 12,
     tags: ["微細運動","発達","運動"],
-    relatedArticleIds: ["art-724","art-718","art-717","art-1345","art-1346","art-1240"],
+    relatedArticleIds: ["art-724","art-718","art-717","art-1345","art-1346","art-1365"],
   },
   {
     id: "art-724",
@@ -41873,7 +42193,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-fine-motor-1to2.jpg",
     readingTime: 16,
     tags: ["微細運動","発達","運動"],
-    relatedArticleIds: ["art-723","art-718","art-717","art-1345","art-1346","art-1240"],
+    relatedArticleIds: ["art-723","art-718","art-717","art-1345","art-1346","art-1365"],
   },
   {
     id: "art-722",
@@ -52205,7 +52525,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-independence-guide.jpg",
     readingTime: 8,
     tags: ["自立","生活スキル","成長"],
-    relatedArticleIds: ["art-206","art-194","art-1332","art-1078","art-734","art-720"],
+    relatedArticleIds: ["art-1361","art-206","art-194","art-1332","art-1078","art-734"],
   },
   {
     id: "art-106",

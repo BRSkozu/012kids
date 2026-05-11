@@ -6,7 +6,7 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 11 May 2026 06:31:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 22:10:06 GMT</lastBuildDate>
     <item>
       <title>年齢別おもちゃの選び方完全ガイド：0歳〜6歳まで発達に合わせて</title>
       <link>https://012.kids/articles/age-appropriate-toy-guide</link>
@@ -29,6 +29,20 @@
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>子どもの発達マイルストーン一覧：0歳〜12歳の成長の目安</title>
+      <link>https://012.kids/articles/growth-milestone-chart</link>
+      <guid isPermaLink="true">https://012.kids/articles/growth-milestone-chart</guid>
+      <description>子どもの発達マイルストーン一覧：0歳〜12歳の成長の目安を厚生労働省等の公的情報をもとに解説。発達の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>年齢別・子どもの自立ステップ：「自分でできる」を増やす見守り方</title>
+      <link>https://012.kids/articles/independence-by-age</link>
+      <guid isPermaLink="true">https://012.kids/articles/independence-by-age</guid>
+      <description>年齢別・子どもの自立ステップ：「自分でできる」を増やす見守り方を国立成育医療研究センター等の公的情報をもとに解説。自立の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>足立区の学童保育ガイド：住区センター児童館を活用した保活</title>
       <link>https://012.kids/articles/adachi-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/adachi-gakudo-guide</guid>
@@ -40,6 +54,13 @@
       <link>https://012.kids/articles/arakawa-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/arakawa-gakudo-guide</guid>
       <description>荒川区の「にこにこすくーる」と学童クラブの仕組み、対象学年、利用料、申込スケジュールを整理。子育て施策に力を入れる荒川区の保活事情を解説します。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>バイリンガル子育てのリアル：メリット・注意点・継続のコツ</title>
+      <link>https://012.kids/articles/bilingual-parenting-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/bilingual-parenting-guide</guid>
+      <description>バイリンガル子育てのリアル：メリット・注意点・継続のコツを文部科学省等の公的情報をもとに解説。バイリンガルの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -85,6 +106,13 @@
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>お小遣いの始め方ガイド：金額の目安と金銭感覚の育て方</title>
+      <link>https://012.kids/articles/pocket-money-education</link>
+      <guid isPermaLink="true">https://012.kids/articles/pocket-money-education</guid>
+      <description>お小遣いの始め方ガイド：金額の目安と金銭感覚の育て方を文部科学省等の公的情報をもとに解説。お小遣いの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>渋谷区の学童保育「放課後クラブ」ガイド：都心型運営の実情</title>
       <link>https://012.kids/articles/shibuya-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/shibuya-gakudo-guide</guid>
@@ -103,6 +131,27 @@
       <link>https://012.kids/articles/toshima-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/toshima-gakudo-guide</guid>
       <description>豊島区の学童クラブと「子どもスキップ」の仕組み、対象学年、利用料、申込スケジュールを整理。池袋・巣鴨・大塚など多彩なエリアの保活事情を解説します。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>家族の防災準備ガイド：子連れ避難の持ち物と避難計画</title>
+      <link>https://012.kids/articles/disaster-prep-family</link>
+      <guid isPermaLink="true">https://012.kids/articles/disaster-prep-family</guid>
+      <description>家族の防災準備ガイド：子連れ避難の持ち物と避難計画を文部科学省等の公的情報をもとに解説。防災の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>家庭のルールづくりガイド：年齢に合ったルールと守らせるコツ</title>
+      <link>https://012.kids/articles/family-rules-creation</link>
+      <guid isPermaLink="true">https://012.kids/articles/family-rules-creation</guid>
+      <description>家庭のルールづくりガイド：年齢に合ったルールと守らせるコツを文部科学省等の公的情報をもとに解説。ルールの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育園と小学校のスケジュールの違い：時間のギャップを埋める方法</title>
+      <link>https://012.kids/articles/sho1-wall-schedule-gap</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-schedule-gap</guid>
+      <description>保育園と小学校のスケジュールの違い：時間のギャップを埋める方法を厚生労働省等の公的情報をもとに解説。小1の壁の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -167,55 +216,6 @@
       <guid isPermaLink="true">https://012.kids/articles/afterschool-care-waiting</guid>
       <description>学童の待機児童問題：入れなかったときの代替案と対策を厚生労働省等の公的情報をもとに解説。待機児童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
       <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>新学期の保護者ネットワーク：ママ友・パパ友づくりの第一歩</title>
-      <link>https://012.kids/articles/spring-parent-network</link>
-      <guid isPermaLink="true">https://012.kids/articles/spring-parent-network</guid>
-      <description>新学期の保護者ネットワーク：ママ友・パパ友づくりの第一歩を文部科学省等の公的情報をもとに解説。保護者の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>春の外遊びガイド：自然体験が子どもの発達に与える効果</title>
-      <link>https://012.kids/articles/spring-outdoor-nature</link>
-      <guid isPermaLink="true">https://012.kids/articles/spring-outdoor-nature</guid>
-      <description>春の外遊びガイド：自然体験が子どもの発達に与える効果を文部科学省等の公的情報をもとに解説。外遊びの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>民間学童と公立学童どっちがいい？メリット・デメリットを徹底比較</title>
-      <link>https://012.kids/articles/afterschool-private-vs-public</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-private-vs-public</guid>
-      <description>民間学童と公立学童どっちがいい？メリット・デメリットを徹底比較を厚生労働省等の公的情報をもとに解説。民間学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>子どもの虫歯予防ガイド：年齢別の歯みがき方法とフッ素の効果</title>
-      <link>https://012.kids/articles/child-dental-prevention</link>
-      <guid isPermaLink="true">https://012.kids/articles/child-dental-prevention</guid>
-      <description>子どもの虫歯予防ガイド：年齢別の歯みがき方法とフッ素の効果を厚生労働省等の公的情報をもとに解説。虫歯予防の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>子どもの睡眠退行はなぜ起きる？年齢別の原因と乗り越え方</title>
-      <link>https://012.kids/articles/child-sleep-regression</link>
-      <guid isPermaLink="true">https://012.kids/articles/child-sleep-regression</guid>
-      <description>子どもの睡眠退行はなぜ起きる？年齢別の原因と乗り越え方を国立成育医療研究センター等の公的情報をもとに解説。睡眠退行の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>子どもの花粉症と学校生活：症状の見分け方と学校への伝え方</title>
-      <link>https://012.kids/articles/spring-hay-fever-school</link>
-      <guid isPermaLink="true">https://012.kids/articles/spring-hay-fever-school</guid>
-      <description>子どもの花粉症と学校生活：症状の見分け方と学校への伝え方を厚生労働省等の公的情報をもとに解説。花粉症の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>学童の夏休み：長期休暇の過ごし方と預け先の確保</title>
-      <link>https://012.kids/articles/afterschool-care-summer</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-summer</guid>
-      <description>学童の夏休み：長期休暇の過ごし方と預け先の確保を厚生労働省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

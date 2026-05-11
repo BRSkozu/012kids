@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-05-10",
-    "totalGenerated": 80
+    "lastGeneratedAt": "2026-05-11",
+    "totalGenerated": 87
   },
   "pools": {
     "seasonal": {
@@ -5071,6 +5071,13 @@
     "spring-parent-network",
     "spring-kindergarten-start",
     "afterschool-homework-support",
-    "sho1-wall-overview"
+    "sho1-wall-overview",
+    "sho1-wall-schedule-gap",
+    "bilingual-parenting-guide",
+    "independence-by-age",
+    "family-rules-creation",
+    "pocket-money-education",
+    "disaster-prep-family",
+    "growth-milestone-chart"
   ]
 }
