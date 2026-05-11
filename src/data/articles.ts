@@ -28378,7 +28378,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-403",
     slug: "lesson-choir",
-    title: "子どもの習い事：合唱の始めどきと選び方",
+    title: "合唱を始める年齢と選び方｜サークル・スクール・費用",
     excerpt: "合唱教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28416,7 +28416,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-405",
     slug: "lesson-dance",
-    title: "子どもの習い事：ダンスの始めどきと選び方",
+    title: "ダンス教室の始めどきと選び方｜費用・年齢・ジャンル",
     excerpt: "ダンス教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "pre",
@@ -28454,7 +28454,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-404",
     slug: "lesson-drama-class",
-    title: "子どもの習い事：演劇の始めどきと選び方",
+    title: "演劇・劇団を始める年齢と選び方｜費用・通わせ方",
     excerpt: "演劇教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28492,7 +28492,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-402",
     slug: "lesson-ice-skating",
-    title: "子どもの習い事：アイススケートの始めどきと選び方",
+    title: "アイススケート教室の始めどきと選び方｜費用・年齢",
     excerpt: "スケート教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28530,7 +28530,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-401",
     slug: "lesson-track-and-field",
-    title: "子どもの習い事：陸上競技の始めどきと選び方",
+    title: "陸上競技を始める年齢と選び方｜クラブ・スクール・費用",
     excerpt: "陸上教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "mid",
@@ -28568,7 +28568,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-398",
     slug: "lesson-baseball",
-    title: "子どもの習い事：野球の始めどきと選び方",
+    title: "野球を始める年齢と選び方｜少年団・スクール・費用",
     excerpt: "野球教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28606,7 +28606,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-400",
     slug: "lesson-basketball",
-    title: "子どもの習い事：バスケットボールの始めどきと選び方",
+    title: "バスケットボールを始める年齢と選び方｜スクール・費用",
     excerpt: "バスケ教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28644,7 +28644,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-399",
     slug: "lesson-tennis",
-    title: "子どもの習い事：テニスの始めどきと選び方",
+    title: "テニス教室の始めどきと選び方｜費用・年齢の目安",
     excerpt: "テニス教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28682,7 +28682,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-395",
     slug: "lesson-english-class",
-    title: "子どもの習い事：英会話の始めどきと選び方",
+    title: "英会話教室の始めどきと選び方｜費用・年齢の目安",
     excerpt: "英会話教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28720,7 +28720,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-396",
     slug: "lesson-programming-class",
-    title: "子どもの習い事：プログラミングの始めどきと選び方",
+    title: "プログラミング教室の選び方｜費用・始める年齢の目安",
     excerpt: "プログラミング教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "mid",
@@ -28758,7 +28758,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-397",
     slug: "lesson-robotics",
-    title: "子どもの習い事：ロボット教室の始めどきと選び方",
+    title: "ロボット教室の始めどきと選び方｜費用・年齢の目安",
     excerpt: "ロボット教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "mid",
@@ -28796,7 +28796,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-392",
     slug: "lesson-abacus",
-    title: "子どもの習い事：そろばんの始めどきと選び方",
+    title: "そろばん教室の始めどきと選び方｜費用・年齢の目安・通わせ方",
     excerpt: "そろばん教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28834,7 +28834,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-394",
     slug: "lesson-art-class",
-    title: "子どもの習い事：絵画教室の始めどきと選び方",
+    title: "絵画教室の始めどきと選び方｜費用・年齢の目安・通わせ方",
     excerpt: "絵画教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "pre",
@@ -28872,7 +28872,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-393",
     slug: "lesson-gymnastics",
-    title: "子どもの習い事：体操教室の始めどきと選び方",
+    title: "体操教室の始めどきと選び方｜費用・年齢の目安",
     excerpt: "体操教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "pre",
@@ -28910,7 +28910,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-389",
     slug: "lesson-ballet",
-    title: "子どもの習い事：バレエの始めどきと選び方",
+    title: "バレエ教室の始めどきと選び方｜費用・年齢の目安・通わせ方",
     excerpt: "バレエ教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "pre",
@@ -28948,7 +28948,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-391",
     slug: "lesson-calligraphy",
-    title: "子どもの習い事：書道の始めどきと選び方",
+    title: "書道教室の始めどきと選び方｜費用・年齢の目安・通わせ方",
     excerpt: "書道教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -28986,7 +28986,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-390",
     slug: "lesson-martial-arts",
-    title: "子どもの習い事：武道（柔道・空手・剣道）の始めどきと選び方",
+    title: "武道（柔道・空手・剣道）の始めどきと選び方｜費用・年齢",
     excerpt: "武道教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -29024,7 +29024,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-386",
     slug: "lesson-piano",
-    title: "子どもの習い事：ピアノの始めどきと選び方",
+    title: "ピアノ教室の始めどきと選び方｜費用・年齢の目安",
     excerpt: "ピアノ教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -29062,7 +29062,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-388",
     slug: "lesson-soccer",
-    title: "子どもの習い事：サッカーの始めどきと選び方",
+    title: "サッカーを始める年齢と選び方｜スクール・少年団・費用",
     excerpt: "サッカー教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "early",
@@ -29100,7 +29100,7 @@ export const ARTICLES: Article[] = [
   {
     id: "art-387",
     slug: "lesson-swimming",
-    title: "子どもの習い事：水泳の始めどきと選び方",
+    title: "水泳教室の始めどきと選び方｜費用・年齢の目安",
     excerpt: "水泳教室の費用・メリット・始める年齢の目安・教室選びのポイントを解説します。",
     content: '',
     stage: "pre",
