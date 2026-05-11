@@ -112,7 +112,38 @@ export function getCurrentSeasonalTheme(): SeasonalTheme {
 }
 
 /**
- * 記事が季節テーマにマッチするかスコアリング
+ * 季節と直接矛盾するキーワード（タイトル・タグに含まれていたら
+ * 大きく減点して季節ピックアップから除外する）。
+ *
+ * 各エントリは、その月レンジの「ピックアップとして不適切な単語」を列挙。
+ * 例: 5-6月のピックアップに「冬の運動」「クリスマス」記事を出さない。
+ */
+const ANTI_SEASON_KEYWORDS: Record<string, string[]> = {
+  // 春 3-4月：他季節の典型語を弾く
+  '3-4': ['夏休み', '熱中症', '紅葉', '読書の秋', 'ハロウィン', 'クリスマス', '年末', 'お正月', '冬', '雪', 'インフルエンザ', '節分'],
+  // 初夏 5-6月：冬・秋・受験ピーク・お正月などを弾く
+  '5-6': ['冬', '雪', '紅葉', '読書の秋', 'ハロウィン', 'クリスマス', '年末', 'お正月', 'インフルエンザ', '節分', '受験直前', '入試直前', '新年度'],
+  // 夏 7-8月
+  '7-8': ['冬', '雪', '紅葉', '読書の秋', 'ハロウィン', 'クリスマス', '年末', 'お正月', 'インフルエンザ', '節分', '入学', '新生活', '花粉'],
+  // 秋 9-10月
+  '9-10': ['梅雨', '夏休み', '熱中症', 'クリスマス', '年末', 'お正月', '節分', '入学', '新生活', '花粉'],
+  // 晩秋 11月
+  '11': ['梅雨', '夏休み', '熱中症', '入学', '新生活', '花粉', '節分'],
+  // 冬 12-1月
+  '12-1': ['梅雨', '夏休み', '熱中症', '紅葉', '入学', '新生活', '花粉'],
+  // 受験期 2月
+  '2': ['梅雨', '夏休み', '熱中症', '紅葉', '入学', '花粉'],
+};
+
+function getSeasonKey(theme: SeasonalTheme): string {
+  // テーマの月リストをキー化（例: [5,6] -> "5-6"）
+  return theme.months.join('-');
+}
+
+/**
+ * 記事が季節テーマにマッチするかスコアリング。
+ * - タグ・タイトルへのキーワードマッチで加点
+ * - 他季節の典型語が含まれていたら大きく減点（季節外し対策）
  */
 export function getSeasonalScore(
   articleTags: string[],
@@ -132,6 +163,16 @@ export function getSeasonalScore(
   for (const kw of theme.titleKeywords) {
     if (articleTitle.includes(kw)) {
       score += 3;
+    }
+  }
+
+  // 反シーズン語が含まれていたら大幅減点（季節外しを除外）
+  const seasonKey = getSeasonKey(theme);
+  const antiKeywords = ANTI_SEASON_KEYWORDS[seasonKey] ?? [];
+  const haystack = `${articleTitle} ${articleTags.join(' ')}`;
+  for (const anti of antiKeywords) {
+    if (haystack.includes(anti)) {
+      score -= 10;
     }
   }
 

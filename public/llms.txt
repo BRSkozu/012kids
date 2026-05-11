@@ -5,21 +5,21 @@
 ## サイト概要
 
 012.kidsは、子育て・教育に関する公的機関や専門家の情報を中立的な立場でまとめた情報サイトです。
-現在1325記事を掲載しています。
+現在1286記事を掲載しています。
 
 ## 対象年齢
 
-- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 303記事
-- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 433記事
-- [6〜8歳（低学年）](https://012.kids/age-guide/early): 324記事
-- [9〜10歳（中学年）](https://012.kids/age-guide/mid): 170記事
-- [11〜12歳（高学年）](https://012.kids/age-guide/upper): 95記事
+- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 290記事
+- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 426記事
+- [6〜8歳（低学年）](https://012.kids/age-guide/early): 315記事
+- [9〜10歳（中学年）](https://012.kids/age-guide/mid): 165記事
+- [11〜12歳（高学年）](https://012.kids/age-guide/upper): 90記事
 
 ## カテゴリ
 
-- [発達・成長](https://012.kids/category/development): 201記事
+- [発達・成長](https://012.kids/category/development): 175記事
 - [食育・栄養](https://012.kids/category/nutrition): 153記事
-- [教育・学習](https://012.kids/category/education): 238記事
+- [教育・学習](https://012.kids/category/education): 225記事
 - [健康・医療](https://012.kids/category/health): 290記事
 - [メンタル・心理](https://012.kids/category/mental): 147記事
 - [デジタル・メディア](https://012.kids/category/digital): 90記事
@@ -38,6 +38,12 @@
 
 ## 記事一覧
 
+- [年齢別おもちゃの選び方完全ガイド：0歳〜6歳まで発達に合わせて](https://012.kids/articles/age-appropriate-toy-guide): 0歳から6歳までの年齢別おもちゃの選び方を、発達段階に合わせて整理。安全性・遊びの広がり・知育効果の観点から具体例も紹介します。...  (0〜2歳（乳児期）)
+- [生後2ヶ月〜11ヶ月の赤ちゃんの発達まとめ：月齢別ポイント完全ガイド](https://012.kids/articles/baby-development-by-month): 生後2ヶ月から11ヶ月までの赤ちゃんの発達を月齢別に整理。身体・知能・情緒の目安、関わり方のポイント、相談すべきサインを公的データに基づいてまとめました。...  (0〜2歳（乳児期）)
+- [2歳〜12歳の子どもの発達まとめ：年齢別ポイント完全ガイド](https://012.kids/articles/child-development-by-age): 2歳から12歳までの子どもの発達を年齢別に整理。身体・認知・社会性・情緒の目安と、その年齢ならではの関わり方のポイントを公的データに基づいてまとめました。...  (6〜8歳（低学年）)
+- [小学校6年間の学校生活ガイド：学年別の特徴と家庭サポート](https://012.kids/articles/elementary-school-life-by-grade): 小1から小6までの学年別に学校生活の特徴、学習内容、友達関係の変化、家庭でのサポートポイントを公的情報をもとにまとめました。...  (6〜8歳（低学年）)
+- [保育園 年齢別クラス生活ガイド：0歳〜2歳の発達と園での過ごし方](https://012.kids/articles/nursery-school-life-by-age): 0歳児・1歳児・2歳児クラスの保育園生活を年齢別に整理。1日の流れ、発達の特徴、家庭と園の連携ポイントを公的情報をもとにまとめました。...  (0〜2歳（乳児期）)
+- [年齢別 絵本の選び方完全ガイド：0歳〜6歳まで発達に合わせて](https://012.kids/articles/picture-books-by-age): 0歳から6歳までの年齢別に、絵本選びのポイントとおすすめジャンルを整理。読み聞かせの効果と進め方のコツも公的情報をもとに解説します。...  (0〜2歳（乳児期）)
 - [学童での宿題はどこまでやる？家庭学習との両立のコツ](https://012.kids/articles/afterschool-homework-support): 学童での宿題はどこまでやる？家庭学習との両立のコツを文部科学省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまと...  (6〜8歳（低学年）)
 - [「小1の壁」とは？共働き家庭が直面する7つの課題と乗り越え方](https://012.kids/articles/sho1-wall-overview): 「小1の壁」とは？共働き家庭が直面する7つの課題と乗り越え方を厚生労働省等の公的情報をもとに解説。小1の壁の基礎知識から家庭でできる対応、相談先まで6〜8歳の保...  (6〜8歳（低学年）)
 - [学童での友だちトラブル：親ができるサポートと声かけ](https://012.kids/articles/afterschool-care-friendships): 学童での友だちトラブル：親ができるサポートと声かけを国立成育医療研究センター等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保...  (6〜8歳（低学年）)
@@ -724,31 +730,22 @@
 - [ヘルメットの選び方](https://012.kids/articles/product-child-helmet): ヘルメットの選び方のポイントを専門家の視点で解説します。...  (6〜8歳（低学年）)
 - [赤ちゃん用救急セット](https://012.kids/articles/product-first-aid-kit-baby): 救急セットの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [子どもにあいさつを教えるコツ](https://012.kids/articles/manners-greeting): あいさつを年齢に合わせて教える具体的な方法とNG対応を紹介します。...  (3〜5歳（幼児期）)
-- [小学6年生の学校生活](https://012.kids/articles/school-life-elementary-6y): 小6で身につけたい力、行事、保護者の関わり方をまとめました。...  (11〜12歳（高学年）)
 - [中学進学準備ガイド](https://012.kids/articles/school-life-junior-high-prep): 中学準備で身につけたい力、行事、保護者の関わり方をまとめました。...  (11〜12歳（高学年）)
 - [ベビーフードメーカーの選び方](https://012.kids/articles/product-baby-food-maker): フードメーカーの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [搾乳器の選び方](https://012.kids/articles/product-breast-pump-guide): 搾乳器の選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [体温計の選び方（子ども向け）](https://012.kids/articles/product-thermometer-guide): 体温計の選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
-- [小学3年生の学校生活](https://012.kids/articles/school-life-elementary-3y): 小3で身につけたい力、行事、保護者の関わり方をまとめました。...  (9〜10歳（中学年）)
-- [小学4年生の学校生活](https://012.kids/articles/school-life-elementary-4y): 小4で身につけたい力、行事、保護者の関わり方をまとめました。...  (9〜10歳（中学年）)
-- [小学5年生の学校生活](https://012.kids/articles/school-life-elementary-5y): 小5で身につけたい力、行事、保護者の関わり方をまとめました。...  (11〜12歳（高学年）)
 - [空気清浄機の選び方（子ども向け）](https://012.kids/articles/product-air-purifier-guide): 空気清浄機の選び方のポイントを専門家の視点で解説します。...  (3〜5歳（幼児期）)
 - [哺乳瓶の選び方](https://012.kids/articles/product-baby-bottle-guide): 哺乳瓶の選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [赤ちゃん用洗剤の選び方](https://012.kids/articles/product-laundry-detergent-baby): 洗剤の選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
-- [小学1年生の学校生活](https://012.kids/articles/school-life-elementary-1y): 小1で身につけたい力、行事、保護者の関わり方をまとめました。...  (6〜8歳（低学年）)
-- [小学2年生の学校生活](https://012.kids/articles/school-life-elementary-2y): 小2で身につけたい力、行事、保護者の関わり方をまとめました。...  (6〜8歳（低学年）)
 - [年長（5歳）の園生活](https://012.kids/articles/school-life-kindergarten-5y): 年長で身につけたい力、行事、保護者の関わり方をまとめました。...  (6〜8歳（低学年）)
 - [ベビー服のサイズと選び方](https://012.kids/articles/product-baby-clothes-guide): ベビー服の選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [赤ちゃん用スキンケアの選び方](https://012.kids/articles/product-baby-skincare-product): スキンケアの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [加湿器の選び方（子ども部屋）](https://012.kids/articles/product-humidifier-guide): 加湿器の選び方のポイントを専門家の視点で解説します。...  (3〜5歳（幼児期）)
 - [年少（3歳）の幼稚園・保育園生活](https://012.kids/articles/school-life-kindergarten-3y): 年少で身につけたい力、行事、保護者の関わり方をまとめました。...  (3〜5歳（幼児期）)
 - [年中（4歳）の園生活](https://012.kids/articles/school-life-kindergarten-4y): 年中で身につけたい力、行事、保護者の関わり方をまとめました。...  (6〜8歳（低学年）)
-- [2歳児クラスの保育園生活](https://012.kids/articles/school-life-nursery-2y): 2歳児クラスで身につけたい力、行事、保護者の関わり方をまとめました。...  (3〜5歳（幼児期）)
 - [ベビーベッドの選び方](https://012.kids/articles/product-crib-guide): ベビーベッドの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [おむつの選び方比較](https://012.kids/articles/product-diaper-guide): おむつの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [ハイチェアの選び方](https://012.kids/articles/product-high-chair-guide): ハイチェアの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
-- [0歳児クラスの保育園生活](https://012.kids/articles/school-life-nursery-0y): 0歳児クラスで身につけたい力、行事、保護者の関わり方をまとめました。...  (0〜2歳（乳児期）)
-- [1歳児クラスの保育園生活](https://012.kids/articles/school-life-nursery-1y): 1歳児クラスで身につけたい力、行事、保護者の関わり方をまとめました。...  (0〜2歳（乳児期）)
 - [抱っこひもの選び方](https://012.kids/articles/product-baby-carrier-guide): 抱っこひもの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [ベビーカーの選び方](https://012.kids/articles/product-stroller-guide): ベビーカーの選び方のポイントを専門家の視点で解説します。...  (0〜2歳（乳児期）)
 - [【3〜6歳】集中力のポイントと家庭でできるサポート](https://012.kids/articles/concentration-3to6): 3〜6歳のお子さんの集中力について、発達段階に合わせた具体的なアドバイスをまとめました。...  (6〜8歳（低学年）)
@@ -996,41 +993,15 @@
 - [工作・クラフト用品の選び方ガイド](https://012.kids/articles/toy-guide-toy-craft-supply): 工作のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (3〜5歳（幼児期）)
 - [外遊びグッズの選び方ガイド](https://012.kids/articles/toy-guide-toy-outdoor): 外遊びのおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (3〜5歳（幼児期）)
 - [STEM玩具の選び方ガイド](https://012.kids/articles/toy-guide-toy-stem): STEMのおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (9〜10歳（中学年）)
-- [9歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-9): 9歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (9〜10歳（中学年）)
-- [6歳向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-6y): 6歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (6〜8歳（低学年）)
 - [モンテッソーリ教具の選び方ガイド](https://012.kids/articles/toy-guide-toy-montessori): モンテッソーリのおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (3〜5歳（幼児期）)
 - [木のおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-wooden): 木製のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (3〜5歳（幼児期）)
-- [6歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-6): 6歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (6〜8歳（低学年）)
-- [7歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-7): 7歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (9〜10歳（中学年）)
-- [8歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-8): 8歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (9〜10歳（中学年）)
-- [3歳向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-3y): 3歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (3〜5歳（幼児期）)
-- [4歳向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-4y): 4歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (6〜8歳（低学年）)
-- [5歳向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-5y): 5歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (6〜8歳（低学年）)
-- [3歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-3): 3歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (3〜5歳（幼児期）)
-- [4歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-4): 4歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (6〜8歳（低学年）)
-- [5歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-5): 5歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (6〜8歳（低学年）)
-- [1歳向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-1y): 1歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (0〜2歳（乳児期）)
-- [2歳向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-2y): 2歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (3〜5歳（幼児期）)
-- [6〜12ヶ月向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-6to12m): 6〜12ヶ月のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (0〜2歳（乳児期）)
-- [生後10ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-10): 生後10ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
-- [生後11ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-11): 生後11ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
-- [2歳児の発達と成長：年齢別子育てガイド](https://012.kids/articles/child-development-age-2): 2歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。...  (3〜5歳（幼児期）)
 - [ディベート力を育てる](https://012.kids/articles/lang-debate-skill): ディベートに関する発達の目安と家庭での取り組み方を解説します。...  (11〜12歳（高学年）)
 - [プレゼンテーション力](https://012.kids/articles/lang-presentation-skill): プレゼンに関する発達の目安と家庭での取り組み方を解説します。...  (11〜12歳（高学年）)
-- [0〜6ヶ月向けおもちゃの選び方ガイド](https://012.kids/articles/toy-guide-toy-0to6m): 0〜6ヶ月のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。...  (0〜2歳（乳児期）)
-- [生後7ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-7): 生後7ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
-- [生後8ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-8): 生後8ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
-- [生後9ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-9): 生後9ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
 - [作文力を伸ばす方法](https://012.kids/articles/lang-composition-skill): 作文に関する発達の目安と家庭での取り組み方を解説します。...  (9〜10歳（中学年）)
 - [漢字学習のコツ](https://012.kids/articles/lang-kanji-learning): 漢字に関する発達の目安と家庭での取り組み方を解説します。...  (9〜10歳（中学年）)
 - [ひらがな・カタカナの教え方](https://012.kids/articles/lang-phonics-japanese): ひらがなに関する発達の目安と家庭での取り組み方を解説します。...  (6〜8歳（低学年）)
-- [生後5ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-5): 生後5ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
-- [生後6ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-6): 生後6ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
 - [読む力の準備（就学前）](https://012.kids/articles/lang-reading-readiness): 読む準備に関する発達の目安と家庭での取り組み方を解説します。...  (6〜8歳（低学年）)
 - [書く力の準備（就学前）](https://012.kids/articles/lang-writing-readiness): 書く準備に関する発達の目安と家庭での取り組み方を解説します。...  (6〜8歳（低学年）)
-- [生後2ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-2): 生後2ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
-- [生後3ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-3): 生後3ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
-- [生後4ヶ月の赤ちゃんの発達と育児ポイント](https://012.kids/articles/baby-development-month-4): 生後4ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。...  (0〜2歳（乳児期）)
 - [バイリンガル子育て](https://012.kids/articles/lang-bilingual-child): バイリンガルに関する発達の目安と家庭での取り組み方を解説します。...  (3〜5歳（幼児期）)
 - [言葉が遅い子のサポート](https://012.kids/articles/lang-late-talker): 言葉の遅れに関する発達の目安と家庭での取り組み方を解説します。...  (3〜5歳（幼児期）)
 - [言語聴覚士への相談](https://012.kids/articles/lang-speech-therapy): 言語聴覚士に関する発達の目安と家庭での取り組み方を解説します。...  (3〜5歳（幼児期）)
@@ -1201,25 +1172,18 @@
 - [プログラミングアプリレビュー](https://012.kids/articles/digital-extra-coding-app-review): プログラミングアプリについて、子ども向けのポイントをまとめました。...  (9〜10歳（中学年）)
 - [知育ゲームレビュー](https://012.kids/articles/digital-extra-educational-game-review): 知育ゲームについて、子ども向けのポイントをまとめました。...  (3〜5歳（幼児期）)
 - [家族共有カレンダーの活用](https://012.kids/articles/digital-extra-family-shared-calendar): 共有カレンダーについて、子ども向けのポイントをまとめました。...  (9〜10歳（中学年）)
-- [4歳向け絵本おすすめ20選](https://012.kids/articles/book-4y-picture-book): 4歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。...  (6〜8歳（低学年）)
-- [5歳向け絵本おすすめ20選](https://012.kids/articles/book-5y-picture-book): 5歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。...  (6〜8歳（低学年）)
-- [6歳向け絵本おすすめ20選](https://012.kids/articles/book-6y-picture-book): 6歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。...  (6〜8歳（低学年）)
 - [【6〜9歳】子どもの姿勢改善のポイントと家庭でできるサポート](https://012.kids/articles/child-posture-6to9): 6〜9歳のお子さんの子どもの姿勢改善について、発達段階に合わせた具体的なアドバイスをまとめました。...  (9〜10歳（中学年）)
 - [【9〜12歳】子どもの姿勢改善のポイントと家庭でできるサポート](https://012.kids/articles/child-posture-9to12): 9〜12歳のお子さんの子どもの姿勢改善について、発達段階に合わせた具体的なアドバイスをまとめました。...  (11〜12歳（高学年）)
 - [BCGワクチンの基礎知識](https://012.kids/articles/vaccine-bcg-guide): BCGワクチンの接種時期・回数・副反応・注意点をまとめました。...  (0〜2歳（乳児期）)
 - [お絵かきアプリレビュー](https://012.kids/articles/digital-extra-art-app-review): お絵かきアプリについて、子ども向けのポイントをまとめました。...  (3〜5歳（幼児期）)
 - [音楽学習アプリレビュー](https://012.kids/articles/digital-extra-music-app-review): 音楽アプリについて、子ども向けのポイントをまとめました。...  (6〜8歳（低学年）)
 - [理科学習アプリレビュー](https://012.kids/articles/digital-extra-science-app-review): 理科アプリについて、子ども向けのポイントをまとめました。...  (9〜10歳（中学年）)
-- [1歳向け絵本おすすめ20選](https://012.kids/articles/book-1y-picture-book): 1歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。...  (0〜2歳（乳児期）)
-- [2歳向け絵本おすすめ20選](https://012.kids/articles/book-2y-picture-book): 2歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。...  (3〜5歳（幼児期）)
-- [3歳向け絵本おすすめ20選](https://012.kids/articles/book-3y-picture-book): 3歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。...  (3〜5歳（幼児期）)
 - [【6〜9歳】子どもの肥満のポイントと家庭でできるサポート](https://012.kids/articles/child-obesity-6to9): 6〜9歳のお子さんの子どもの肥満について、発達段階に合わせた具体的なアドバイスをまとめました。...  (9〜10歳（中学年）)
 - [【9〜12歳】子どもの肥満のポイントと家庭でできるサポート](https://012.kids/articles/child-obesity-9to12): 9〜12歳のお子さんの子どもの肥満について、発達段階に合わせた具体的なアドバイスをまとめました。...  (11〜12歳（高学年）)
 - [【3〜6歳】子どもの姿勢改善のポイントと家庭でできるサポート](https://012.kids/articles/child-posture-3to6): 3〜6歳のお子さんの子どもの姿勢改善について、発達段階に合わせた具体的なアドバイスをまとめました。...  (6〜8歳（低学年）)
 - [英語学習アプリレビュー](https://012.kids/articles/digital-extra-english-app-review): 英語アプリについて、子ども向けのポイントをまとめました。...  (6〜8歳（低学年）)
 - [算数学習アプリレビュー](https://012.kids/articles/digital-extra-math-app-review): 算数アプリについて、子ども向けのポイントをまとめました。...  (6〜8歳（低学年）)
 - [読書アプリレビュー](https://012.kids/articles/digital-extra-reading-app-review): 読書アプリについて、子ども向けのポイントをまとめました。...  (6〜8歳（低学年）)
-- [0歳向け絵本おすすめ20選](https://012.kids/articles/book-0y-picture-book): 0歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。...  (0〜2歳（乳児期）)
 - [アレルギー検査のポイントと準備](https://012.kids/articles/checkup-allergy-testing): アレルギー検査で見るポイント・持ち物・よくある質問をまとめました。...  (3〜5歳（幼児期）)
 - [子どもの血液検査のポイントと準備](https://012.kids/articles/checkup-blood-test-child): 血液検査で見るポイント・持ち物・よくある質問をまとめました。...  (6〜8歳（低学年）)
 - [【3〜6歳】子どもの肥満のポイントと家庭でできるサポート](https://012.kids/articles/child-obesity-3to6): 3〜6歳のお子さんの子どもの肥満について、発達段階に合わせた具体的なアドバイスをまとめました。...  (6〜8歳（低学年）)
@@ -1346,9 +1310,6 @@
 - [舌小帯短縮症の基礎知識](https://012.kids/articles/health-detail-tongue-tie): 舌小帯の症状・検査・治療について解説します。...  (0〜2歳（乳児期）)
 - [斜頸（しゃけい）の対応の基礎知識](https://012.kids/articles/health-detail-torticollis-baby): 斜頸の症状・検査・治療について解説します。...  (0〜2歳（乳児期）)
 - [歯が生える時期の痛みケア](https://012.kids/articles/health-teething-pain): 歯ぐずりの症状・対処法・受診の目安を小児科の知見をもとに解説します。...  (0〜2歳（乳児期）)
-- [10歳児の発達と成長：「10歳の壁」と思春期の入口を理解する](https://012.kids/articles/child-development-age-10): 10歳の子どもの身体・認知・社会性の発達特徴と、いわゆる「10歳の壁」の乗り越え方、思春期の始まりへの対応をまとめました。...  (11〜12歳（高学年）)
-- [11歳児の発達と成長：反抗期・友達関係・勉強への向き合い方](https://012.kids/articles/child-development-age-11): 11歳（小学5年生）の子どもの発達特徴と、反抗期の対応、複雑化する友人関係、学力格差への対処法をまとめました。...  (11〜12歳（高学年）)
-- [12歳児の発達と成長：小学校最終学年、中学進学への準備と自立](https://012.kids/articles/child-development-age-12): 12歳（小学6年生）の発達特徴と、中学進学への心構え、思春期の深まり、親の関わり方の転換期について解説します。...  (11〜12歳（高学年）)
 - [保護者と先生のコミュニケーション術](https://012.kids/articles/parent-teacher-communication): 園や学校の先生との効果的なコミュニケーション方法を紹介します。...  (6〜8歳（低学年）)
 - [【0〜1歳】赤ちゃんの風邪のポイントと家庭でできるサポート](https://012.kids/articles/baby-cold-care-0to1): 0〜1歳のお子さんの赤ちゃんの風邪について、発達段階に合わせた具体的なアドバイスをまとめました。...  (0〜2歳（乳児期）)
 - [【0〜1歳】赤ちゃんの発熱のポイントと家庭でできるサポート](https://012.kids/articles/baby-fever-care-0to1): 0〜1歳のお子さんの赤ちゃんの発熱について、発達段階に合わせた具体的なアドバイスをまとめました。...  (0〜2歳（乳児期）)

@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: '生成する記事数（デフォルト10件）'
+        description: '生成する記事数（デフォルト3件）'
         required: false
-        default: '10'
+        default: '3'
       skip_deploy:
         description: 'デプロイをスキップする'
         required: false
@@ -47,8 +47,9 @@ jobs:
         run: npm test
 
       # Step 1: Generate new articles
+      # 1日3件に絞り込み（既に1300件超で量より質重視のフェーズ）
       - name: Generate new articles
-        run: node scripts/daily-article-generator.mjs --count ${{ github.event.inputs.count || '10' }}
+        run: node scripts/daily-article-generator.mjs --count ${{ github.event.inputs.count || '3' }}
 
       # Step 2: Rebuild index & assets
       - name: Regenerate article index and assets
@@ -69,15 +70,29 @@ jobs:
       - name: Count new articles
         id: count
         run: |
-          NEW_COUNT=$(git diff --name-only --diff-filter=A | grep '\.mdx$' | wc -l)
-          MODIFIED_COUNT=$(git diff --name-only --diff-filter=M | grep '\.mdx$' | wc -l)
+          # Count both newly created (untracked) and modified mdx files.
+          # `git diff --diff-filter=A` does NOT see untracked files, so we
+          # use `git status --porcelain` to detect newly created mdx.
+          NEW_COUNT=$(git status --porcelain content/articles/ | awk '/^\?\?/ && /\.mdx$/' | wc -l)
+          MODIFIED_COUNT=$(git diff --name-only -- content/articles/ | grep '\.mdx$' | wc -l)
           echo "new_articles=$NEW_COUNT" >> $GITHUB_OUTPUT
           echo "modified_articles=$MODIFIED_COUNT" >> $GITHUB_OUTPUT
           TOTAL=$(find content/articles -name '*.mdx' | wc -l)
           echo "total_articles=$TOTAL" >> $GITHUB_OUTPUT
-          HAS_CHANGES=$(git diff --quiet && echo "false" || echo "true")
-          echo "has_changes=$HAS_CHANGES" >> $GITHUB_OUTPUT
+          # has_changes: include untracked files so feed/sitemap-only diffs
+          # are not the only signal.
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
           echo "📊 New: $NEW_COUNT, Modified: $MODIFIED_COUNT, Total: $TOTAL"
+
+      - name: Warn if no new articles
+        if: steps.count.outputs.new_articles == '0'
+        run: |
+          echo "⚠️  新規記事が0件です。topic-db のプール枯渇か生成エラーの可能性があります。"
+          echo "::warning::Daily generator produced 0 new articles. Check topic pool."
 
       - name: Commit and push
         if: steps.count.outputs.has_changes == 'true'
