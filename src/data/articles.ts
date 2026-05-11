@@ -10,6 +10,270 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1346",
+    slug: "age-appropriate-toy-guide",
+    title: "年齢別おもちゃの選び方完全ガイド：0歳〜6歳まで発達に合わせて",
+    excerpt: "0歳から6歳までの年齢別おもちゃの選び方を、発達段階に合わせて整理。安全性・遊びの広がり・知育効果の観点から具体例も紹介します。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省・経済産業省・国民生活センター 公的情報",
+      references: [
+          {
+                "title": "玩具の安全基準（STマーク）",
+                "url": "https://www.toys.or.jp/",
+                "org": "日本玩具協会",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの製品事故",
+                "url": "https://www.caa.go.jp/",
+                "org": "消費者庁",
+                "stance": "positive"
+          },
+          {
+                "title": "幼児期の運動指針",
+                "url": "https://www.mext.go.jp/a_menu/sports/undousisin/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "発達に合ったおもちゃは認知・運動・社会性を伸ばす効果が期待できます。",
+          "neutral": "高価なおもちゃより、年齢に合っているか・安全かを優先する判断軸が大切。",
+          "cautious": "誤飲・破損・対象年齢の不一致による事故は実際に起きています。安全表示の確認は必須。"
+    },
+    },
+    score: {"total":88,"reliability":27,"neutrality":24,"freshness":21,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/age-appropriate-toy-guide.jpg",
+    readingTime: 16,
+    tags: ["おもちゃ","年齢別","発達","知育","安全"],
+    relatedArticleIds: ["art-1345","art-1347","art-723","art-1240","art-003","art-1241"],
+  },
+  {
+    id: "art-1345",
+    slug: "baby-development-by-month",
+    title: "生後2ヶ月〜11ヶ月の赤ちゃんの発達まとめ：月齢別ポイント完全ガイド",
+    excerpt: "生後2ヶ月から11ヶ月までの赤ちゃんの発達を月齢別に整理。身体・知能・情緒の目安、関わり方のポイント、相談すべきサインを公的データに基づいてまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省・こども家庭庁 公的情報",
+      references: [
+          {
+                "title": "乳幼児身体発育調査",
+                "url": "https://www.mhlw.go.jp/toukei/list/dl/73-22-01.pdf",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "母子健康手帳の様式",
+                "url": "https://www.cfa.go.jp/policies/boshihoken/kenkou-shinsa/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "乳幼児健診（厚生労働省 e-ヘルスネット）",
+                "url": "https://www.e-healthnet.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "発達の目安は子育てに安心感をもたらします。早期に気づくことで適切なサポートにつなげられます。",
+          "neutral": "発達には個人差が大きく、目安はあくまで参考。月齢ぴったりでなくても焦らず見守ることが大切です。",
+          "cautious": "目安と大きく異なる場合は、自己判断せず小児科や地域の保健センターに相談してください。"
+    },
+    },
+    score: {"total":90,"reliability":28,"neutrality":25,"freshness":21,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/baby-development-by-month.jpg",
+    readingTime: 18,
+    tags: ["月齢別","発達","赤ちゃん","0歳","育児","乳児"],
+    relatedArticleIds: ["art-007","art-014","art-001","art-723","art-1346","art-1240"],
+  },
+  {
+    id: "art-1347",
+    slug: "child-development-by-age",
+    title: "2歳〜12歳の子どもの発達まとめ：年齢別ポイント完全ガイド",
+    excerpt: "2歳から12歳までの子どもの発達を年齢別に整理。身体・認知・社会性・情緒の目安と、その年齢ならではの関わり方のポイントを公的データに基づいてまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["development"],
+    source: {
+      name: "厚生労働省・こども家庭庁・文部科学省 公的情報",
+      references: [
+          {
+                "title": "幼児期運動指針",
+                "url": "https://www.mext.go.jp/a_menu/sports/undousisin/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "母子健康手帳の様式",
+                "url": "https://www.cfa.go.jp/policies/boshihoken/kenkou-shinsa/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "小学校学習指導要領",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "発達段階の理解は子どもへの関わり方の幅を広げ、家庭の安心感を高めます。",
+          "neutral": "発達には個人差があり、目安はあくまで参考。子の個性を尊重した関わりが大切。",
+          "cautious": "目安と大きく異なる場合や心配な点があれば、早めに保健センターや小児科に相談を。"
+    },
+    },
+    score: {"total":90,"reliability":28,"neutrality":25,"freshness":21,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/child-development-by-age.jpg",
+    readingTime: 19,
+    tags: ["年齢別","発達","育児","幼児","小学生"],
+    relatedArticleIds: ["art-1345","art-1346","art-007","art-198","art-722","art-977"],
+  },
+  {
+    id: "art-1349",
+    slug: "elementary-school-life-by-grade",
+    title: "小学校6年間の学校生活ガイド：学年別の特徴と家庭サポート",
+    excerpt: "小1から小6までの学年別に学校生活の特徴、学習内容、友達関係の変化、家庭でのサポートポイントを公的情報をもとにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省・国立教育政策研究所 公的情報",
+      references: [
+          {
+                "title": "小学校学習指導要領",
+                "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "学校教育法施行規則",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "国立教育政策研究所",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "小学校6年間は子どもの学習姿勢と社会性の土台が築かれる重要な期間です。",
+          "neutral": "学年ごとの特徴を知ることで、家庭サポートに自然な軸が生まれます。",
+          "cautious": "学年・地域・学校で内容に幅があるため、目安として参考にしてください。"
+    },
+    },
+    score: {"total":89,"reliability":27,"neutrality":25,"freshness":21,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/elementary-school-life-by-grade.jpg",
+    readingTime: 15,
+    tags: ["小学校","学年別","学校生活","学習","家庭サポート"],
+    relatedArticleIds: ["art-1347","art-007","art-1298","art-1299","art-1310","art-366"],
+  },
+  {
+    id: "art-1350",
+    slug: "nursery-school-life-by-age",
+    title: "保育園 年齢別クラス生活ガイド：0歳〜2歳の発達と園での過ごし方",
+    excerpt: "0歳児・1歳児・2歳児クラスの保育園生活を年齢別に整理。1日の流れ、発達の特徴、家庭と園の連携ポイントを公的情報をもとにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["education"],
+    source: {
+      name: "厚生労働省・こども家庭庁 公的情報",
+      references: [
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.cfa.go.jp/policies/hoiku/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "保育所等関連状況",
+                "url": "https://www.cfa.go.jp/policies/hoiku/torimatome/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "母子健康手帳の様式",
+                "url": "https://www.cfa.go.jp/policies/boshihoken/kenkou-shinsa/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "保育園は同世代との関わりや専門スタッフの見守りで発達を支える環境です。",
+          "neutral": "0〜2歳児は発達差が大きく、園での生活も子のペースに合わせて進みます。",
+          "cautious": "預け始めの慣らし期は親も子も疲れやすい時期、無理せず段階的に。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":20,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/nursery-school-life-by-age.jpg",
+    readingTime: 12,
+    tags: ["保育園","年齢別","0歳児","1歳児","2歳児","子育て"],
+    relatedArticleIds: ["art-1345","art-1347","art-1348","art-932","art-1233","art-033"],
+  },
+  {
+    id: "art-1348",
+    slug: "picture-books-by-age",
+    title: "年齢別 絵本の選び方完全ガイド：0歳〜6歳まで発達に合わせて",
+    excerpt: "0歳から6歳までの年齢別に、絵本選びのポイントとおすすめジャンルを整理。読み聞かせの効果と進め方のコツも公的情報をもとに解説します。",
+    content: '',
+    stage: "0stage",
+    categories: ["education"],
+    source: {
+      name: "文部科学省・国立国会図書館 公的情報",
+      references: [
+          {
+                "title": "子どもの読書活動の推進に関する基本的な計画",
+                "url": "https://www.mext.go.jp/a_menu/sports/dokusyo/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "国際子ども図書館（国立国会図書館）",
+                "url": "https://www.kodomo.go.jp/",
+                "org": "国立国会図書館",
+                "stance": "positive"
+          },
+          {
+                "title": "ブックスタート事業",
+                "url": "https://www.bookstart.or.jp/",
+                "org": "NPO法人ブックスタート",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "絵本の読み聞かせは言語発達・親子の絆・想像力の育成に効果的とされています。",
+          "neutral": "「絵本好き」を強要する必要はなく、子の興味を起点に始めるのが自然。",
+          "cautious": "テレビや動画と比較する文脈ではなく、それぞれの良さを活かす考え方を。"
+    },
+    },
+    score: {"total":87,"reliability":27,"neutrality":24,"freshness":20,"ageRelevance":11,"readability":5},
+    publishedAt: "2026-05-11",
+    updatedAt: "2026-05-11",
+    imageUrl: "/articles/picture-books-by-age.jpg",
+    readingTime: 14,
+    tags: ["絵本","年齢別","読み聞かせ","知育","言語発達"],
+    relatedArticleIds: ["art-1345","art-1347","art-1346","art-1233","art-674","art-1350"],
+  },
+  {
     id: "art-1343",
     slug: "afterschool-homework-support",
     title: "学童での宿題はどこまでやる？家庭学習との両立のコツ",
@@ -1591,7 +1855,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sho1wall-academic-prep.jpg",
     readingTime: 12,
     tags: ["小1の壁","学習","入学準備","国語","算数","自学自習"],
-    relatedArticleIds: ["art-1298","art-1300","art-1301","art-1310","art-680","art-1287"],
+    relatedArticleIds: ["art-1298","art-1300","art-1301","art-1310","art-1349","art-680"],
   },
   {
     id: "art-1298",
@@ -1761,7 +2025,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/summer-break-homework-coaching.jpg",
     readingTime: 12,
     tags: ["夏休み","宿題","自由研究","読書感想文","学習","子育て"],
-    relatedArticleIds: ["art-1308","art-1299","art-008","art-1255","art-1298","art-1098"],
+    relatedArticleIds: ["art-1308","art-1299","art-008","art-1255","art-1298","art-1349"],
   },
   {
     id: "art-1287",
@@ -2069,7 +2333,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/rainy-season-indoor-play.jpg",
     readingTime: 10,
     tags: ["梅雨","室内遊び","年齢別","子育て","季節"],
-    relatedArticleIds: ["art-1294","art-1296","art-1308","art-1297","art-231","art-198"],
+    relatedArticleIds: ["art-1294","art-1296","art-1308","art-1297","art-198","art-1347"],
   },
   {
     id: "art-1296",
@@ -2629,7 +2893,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/autumn-study-habits-upper.jpg",
     readingTime: 11,
     tags: ["学習習慣","受験","勉強計画"],
-    relatedArticleIds: ["art-334","art-371","art-406","art-408","art-036","art-407"],
+    relatedArticleIds: ["art-334","art-406","art-408","art-036","art-407","art-411"],
   },
   {
     id: "art-1258",
@@ -2673,7 +2937,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/reading-habit-autumn-guide.jpg",
     readingTime: 10,
     tags: ["読書","読み聞かせ","読書習慣"],
-    relatedArticleIds: ["art-041","art-680","art-349","art-672","art-685","art-679"],
+    relatedArticleIds: ["art-041","art-680","art-349","art-685","art-679","art-403"],
   },
   {
     id: "art-1266",
@@ -3465,7 +3729,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toilet-training-before-school.jpg",
     readingTime: 10,
     tags: ["トイレトレーニング","入園準備","発達"],
-    relatedArticleIds: ["art-723","art-003","art-225","art-221","art-1241","art-226"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-003","art-1241","art-974"],
   },
   {
     id: "art-1241",
@@ -3509,7 +3773,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/year-end-growth-review.jpg",
     readingTime: 9,
     tags: ["成長記録","発達","ふりかえり"],
-    relatedArticleIds: ["art-723","art-1240","art-003","art-225","art-221","art-226"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-1240","art-003","art-974"],
   },
   {
     id: "art-1239",
@@ -3905,7 +4169,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kindergarten-adaptation-guide.jpg",
     readingTime: 10,
     tags: ["慣らし保育","適応","分離不安"],
-    relatedArticleIds: ["art-1076","art-1071","art-723","art-1213","art-1240","art-001"],
+    relatedArticleIds: ["art-1076","art-1071","art-723","art-1345","art-1213","art-1346"],
   },
   {
     id: "art-1228",
@@ -3993,7 +4257,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/puberty-early-signs-boys.jpg",
     readingTime: 11,
     tags: ["思春期","第二次性徴","男の子"],
-    relatedArticleIds: ["art-1234","art-192","art-235","art-252","art-196","art-187"],
+    relatedArticleIds: ["art-1234","art-192","art-252","art-196","art-187","art-181"],
   },
   {
     id: "art-1234",
@@ -4037,7 +4301,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/puberty-early-signs-girls.jpg",
     readingTime: 11,
     tags: ["思春期","第二次性徴","女の子"],
-    relatedArticleIds: ["art-1235","art-192","art-235","art-252","art-196","art-187"],
+    relatedArticleIds: ["art-1235","art-192","art-252","art-196","art-187","art-181"],
   },
   {
     id: "art-1223",
@@ -4081,7 +4345,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toilet-training-for-toddler-age.jpg",
     readingTime: 10,
     tags: ["トイレトレーニング","2歳","発達段階"],
-    relatedArticleIds: ["art-1240","art-1071","art-723","art-1213","art-001","art-1070"],
+    relatedArticleIds: ["art-1240","art-1071","art-723","art-1345","art-1213","art-1346"],
   },
   {
     id: "art-1224",
@@ -4169,7 +4433,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/reading-aloud-methods-comparison.jpg",
     readingTime: 10,
     tags: ["読み聞かせ","対話型","絵本"],
-    relatedArticleIds: ["art-668","art-674","art-667","art-675","art-680","art-678"],
+    relatedArticleIds: ["art-1348","art-674","art-675","art-680","art-1350","art-678"],
   },
   {
     id: "art-1226",
@@ -4785,7 +5049,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-sign-language-guide.jpg",
     readingTime: 9,
     tags: ["ベビーサイン","手話","コミュニケーション"],
-    relatedArticleIds: ["art-1081","art-1071","art-723","art-1213","art-1240","art-001"],
+    relatedArticleIds: ["art-1081","art-1071","art-723","art-1345","art-1213","art-1346"],
   },
   {
     id: "art-1210",
@@ -4829,7 +5093,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-sleep-training.jpg",
     readingTime: 11,
     tags: ["ネントレ","寝かしつけ","睡眠習慣"],
-    relatedArticleIds: ["art-001","art-1071","art-723","art-1213","art-1240","art-1070"],
+    relatedArticleIds: ["art-001","art-1071","art-723","art-1345","art-1213","art-1346"],
   },
   {
     id: "art-1069",
@@ -4873,7 +5137,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-teeth-growth-order.jpg",
     readingTime: 9,
     tags: ["乳歯","歯の生え方","歯磨き"],
-    relatedArticleIds: ["art-1071","art-723","art-1213","art-1240","art-001","art-1070"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
   },
   {
     id: "art-1068",
@@ -4917,7 +5181,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-visual-development.jpg",
     readingTime: 10,
     tags: ["視覚発達","赤ちゃんの目","視力"],
-    relatedArticleIds: ["art-1071","art-723","art-1213","art-1240","art-001","art-1070"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
   },
   {
     id: "art-1003",
@@ -5049,7 +5313,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/crawling-importance.jpg",
     readingTime: 9,
     tags: ["はいはい","ハイハイ","運動発達"],
-    relatedArticleIds: ["art-003","art-095","art-1071","art-723","art-1213","art-1240"],
+    relatedArticleIds: ["art-003","art-095","art-1071","art-723","art-1345","art-1213"],
   },
   {
     id: "art-1006",
@@ -5093,7 +5357,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dcd-coordination-disorder.jpg",
     readingTime: 12,
     tags: ["DCD","協調運動","作業療法"],
-    relatedArticleIds: ["art-231","art-198","art-722","art-1299","art-1004","art-251"],
+    relatedArticleIds: ["art-198","art-1347","art-722","art-1299","art-1004","art-251"],
   },
   {
     id: "art-1213",
@@ -5181,7 +5445,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/first-walking-timing.jpg",
     readingTime: 10,
     tags: ["一人歩き","歩行","発達の目安"],
-    relatedArticleIds: ["art-723","art-1213","art-1240","art-001","art-1070","art-1210"],
+    relatedArticleIds: ["art-723","art-1345","art-1213","art-1346","art-1240","art-001"],
   },
   {
     id: "art-1076",
@@ -5225,7 +5489,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/following-parent-phase.jpg",
     readingTime: 9,
     tags: ["後追い","愛着","分離不安"],
-    relatedArticleIds: ["art-1222","art-1071","art-723","art-1213","art-1240","art-001"],
+    relatedArticleIds: ["art-1222","art-1071","art-723","art-1345","art-1213","art-1346"],
   },
   {
     id: "art-1001",
@@ -5269,7 +5533,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/handedness-development-kids.jpg",
     readingTime: 10,
     tags: ["利き手","左利き","発達"],
-    relatedArticleIds: ["art-723","art-1240","art-003","art-225","art-221","art-1241"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-1240","art-003","art-1241"],
   },
   {
     id: "art-1082",
@@ -5401,7 +5665,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/left-hand-writing-support.jpg",
     readingTime: 9,
     tags: ["左利き","書字","利き手"],
-    relatedArticleIds: ["art-730","art-231","art-198","art-722","art-1299","art-1004"],
+    relatedArticleIds: ["art-730","art-198","art-1347","art-722","art-1299","art-1004"],
   },
   {
     id: "art-1080",
@@ -5445,7 +5709,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/mirror-interest-baby.jpg",
     readingTime: 8,
     tags: ["鏡","自己認識","認知発達"],
-    relatedArticleIds: ["art-1071","art-723","art-1213","art-1240","art-001","art-1070"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
   },
   {
     id: "art-1074",
@@ -5577,7 +5841,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/pointing-meaning-baby.jpg",
     readingTime: 9,
     tags: ["指差し","コミュニケーション","言語前発達"],
-    relatedArticleIds: ["art-1211","art-1071","art-723","art-1213","art-1240","art-001"],
+    relatedArticleIds: ["art-1211","art-1071","art-723","art-1345","art-1213","art-1346"],
   },
   {
     id: "art-1072",
@@ -5709,7 +5973,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/stranger-anxiety-baby.jpg",
     readingTime: 9,
     tags: ["人見知り","社会性発達","愛着形成"],
-    relatedArticleIds: ["art-1071","art-723","art-1213","art-1240","art-001","art-1070"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
   },
   {
     id: "art-1002",
@@ -5753,7 +6017,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/stuttering-support-kids.jpg",
     readingTime: 12,
     tags: ["吃音","ことばの発達","言語聴覚士"],
-    relatedArticleIds: ["art-031","art-1071","art-723","art-1213","art-1240","art-001"],
+    relatedArticleIds: ["art-031","art-1071","art-723","art-1345","art-1213","art-1346"],
   },
   {
     id: "art-1073",
@@ -5797,7 +6061,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/thumb-sucking-habit.jpg",
     readingTime: 9,
     tags: ["指しゃぶり","口腔習癖","歯並び"],
-    relatedArticleIds: ["art-1071","art-723","art-1213","art-1240","art-001","art-1070"],
+    relatedArticleIds: ["art-1071","art-723","art-1345","art-1213","art-1346","art-1240"],
   },
   {
     id: "art-1004",
@@ -5841,7 +6105,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/tic-disorder-children.jpg",
     readingTime: 11,
     tags: ["チック","神経発達","トゥレット症候群"],
-    relatedArticleIds: ["art-231","art-198","art-722","art-1299","art-251","art-761"],
+    relatedArticleIds: ["art-198","art-1347","art-722","art-1299","art-251","art-761"],
   },
   {
     id: "art-1078",
@@ -7029,7 +7293,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/classroom-collapse-response.jpg",
     readingTime: 12,
     tags: ["学級崩壊","学級経営","保護者連携"],
-    relatedArticleIds: ["art-369","art-945","art-1018","art-1103","art-1016","art-712"],
+    relatedArticleIds: ["art-945","art-1018","art-1103","art-1016","art-712","art-936"],
   },
   {
     id: "art-1019",
@@ -7117,7 +7381,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/cram-school-selection.jpg",
     readingTime: 10,
     tags: ["塾選び","学習塾","受験準備"],
-    relatedArticleIds: ["art-369","art-945","art-1018","art-1108","art-1103","art-1016"],
+    relatedArticleIds: ["art-945","art-1018","art-1108","art-1103","art-1016","art-712"],
   },
   {
     id: "art-1101",
@@ -7161,7 +7425,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/essay-writing-help.jpg",
     readingTime: 10,
     tags: ["作文","文章力","国語"],
-    relatedArticleIds: ["art-369","art-945","art-1018","art-1108","art-1103","art-1016"],
+    relatedArticleIds: ["art-945","art-1018","art-1108","art-1103","art-1016","art-712"],
   },
   {
     id: "art-1103",
@@ -7205,7 +7469,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/free-research-themes.jpg",
     readingTime: 11,
     tags: ["自由研究","夏休み","探究学習"],
-    relatedArticleIds: ["art-044","art-1018","art-1255","art-711","art-369","art-945"],
+    relatedArticleIds: ["art-044","art-1018","art-1255","art-711","art-945","art-1310"],
   },
   {
     id: "art-1105",
@@ -7249,7 +7513,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/graduation-ceremony-prep.jpg",
     readingTime: 8,
     tags: ["卒業式","服装","マナー"],
-    relatedArticleIds: ["art-369","art-945","art-1018","art-1108","art-1103","art-1016"],
+    relatedArticleIds: ["art-945","art-1018","art-1108","art-1103","art-1016","art-712"],
   },
   {
     id: "art-1017",
@@ -7381,7 +7645,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/inquiry-based-learning-kids.jpg",
     readingTime: 11,
     tags: ["探究学習","アクティブラーニング","主体的な学び"],
-    relatedArticleIds: ["art-1103","art-369","art-945","art-1108","art-1016","art-712"],
+    relatedArticleIds: ["art-1103","art-945","art-1108","art-1016","art-712","art-936"],
   },
   {
     id: "art-1111",
@@ -7733,7 +7997,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-refusal-alternative-learning.jpg",
     readingTime: 14,
     tags: ["不登校","フリースクール","オンライン学習"],
-    relatedArticleIds: ["art-369","art-945","art-1018","art-1108","art-1103","art-712"],
+    relatedArticleIds: ["art-945","art-1018","art-1108","art-1103","art-712","art-936"],
   },
   {
     id: "art-1109",
@@ -14483,7 +14747,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kids-money-allowance.jpg",
     readingTime: 14,
     tags: ["お小遣い","金融教育","お金の教育","貯金"],
-    relatedArticleIds: ["art-047","art-012","art-369","art-945","art-1018","art-1108"],
+    relatedArticleIds: ["art-047","art-012","art-945","art-1018","art-1108","art-1103"],
   },
   {
     id: "art-072",
@@ -14801,7 +15065,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/self-study-skills-upper-elementary.jpg",
     readingTime: 7,
     tags: ["自主学習","高学年","学習法","自立"],
-    relatedArticleIds: ["art-011","art-008","art-371","art-406","art-408","art-036"],
+    relatedArticleIds: ["art-011","art-008","art-406","art-408","art-036","art-407"],
   },
   {
     id: "art-035",
@@ -15827,7 +16091,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/home-study-habits-elementary.jpg",
     readingTime: 17,
     tags: ["家庭学習","学習習慣","小学生","学年別"],
-    relatedArticleIds: ["art-007","art-009","art-048","art-1098","art-1343","art-1224"],
+    relatedArticleIds: ["art-007","art-009","art-048","art-1349","art-1098","art-1343"],
   },
   {
     id: "art-062",
@@ -16051,7 +16315,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/first-grade-preparation.jpg",
     readingTime: 8,
     tags: ["入学準備","小学校","年長","チェックリスト"],
-    relatedArticleIds: ["art-008","art-1298","art-1299","art-367","art-368","art-403"],
+    relatedArticleIds: ["art-008","art-1298","art-1349","art-1299","art-403","art-692"],
   },
   {
     id: "art-046",
@@ -16717,7 +16981,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/english-education-elementary.jpg",
     readingTime: 7,
     tags: ["英語教育","小学生","家庭学習","教材"],
-    relatedArticleIds: ["art-008","art-044","art-046","art-369","art-945","art-1018"],
+    relatedArticleIds: ["art-008","art-044","art-046","art-945","art-1018","art-1108"],
   },
   {
     id: "art-004",
@@ -17221,7 +17485,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/kindergarten-preparation.jpg",
     readingTime: 9,
     tags: ["幼稚園","保育園","園選び","入園準備"],
-    relatedArticleIds: ["art-004","art-087","art-363","art-364","art-675","art-389"],
+    relatedArticleIds: ["art-004","art-087","art-364","art-675","art-389","art-384"],
   },
   {
     id: "art-051",
@@ -17563,7 +17827,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/baby-sleep-training-guide.jpg",
     readingTime: 18,
     tags: ["睡眠","赤ちゃん","月齢別","寝かしつけ"],
-    relatedArticleIds: ["art-002","art-003","art-225","art-221","art-226","art-223"],
+    relatedArticleIds: ["art-002","art-003","art-1345","art-998","art-1329","art-026"],
   },
   {
     id: "art-038",
@@ -17787,7 +18051,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/reading-habit-kids.jpg",
     readingTime: 7,
     tags: ["読書","読み聞かせ","本選び","言語発達"],
-    relatedArticleIds: ["art-004","art-007","art-1258","art-680","art-672","art-685"],
+    relatedArticleIds: ["art-004","art-007","art-1258","art-680","art-685","art-679"],
   },
   {
     id: "art-020",
@@ -17999,7 +18263,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/puberty-early-signs.jpg",
     readingTime: 8,
     tags: ["思春期","体の変化","二次性徴","親子関係"],
-    relatedArticleIds: ["art-050","art-014","art-060","art-001","art-236","art-237"],
+    relatedArticleIds: ["art-050","art-014","art-060","art-001","art-032","art-061"],
   },
   {
     id: "art-025",
@@ -18279,7 +18543,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/infant-development-milestones.jpg",
     readingTime: 7,
     tags: ["発達","マイルストーン","運動発達","言語発達"],
-    relatedArticleIds: ["art-001","art-004","art-095","art-723","art-1213","art-1240"],
+    relatedArticleIds: ["art-001","art-004","art-095","art-723","art-1345","art-1213"],
   },
   {
     id: "art-026",
@@ -18565,7 +18829,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/month-by-month-baby-0-12.jpg",
     readingTime: 15,
     tags: ["月齢別発達","赤ちゃん","運動発達","言語発達","社会性"],
-    relatedArticleIds: ["art-003","art-1213","art-001","art-1070","art-031","art-1007"],
+    relatedArticleIds: ["art-003","art-1345","art-1213","art-001","art-1070","art-031"],
   },
   {
     id: "art-089",
@@ -18765,7 +19029,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nursery-kindergarten-choosing.jpg",
     readingTime: 15,
     tags: ["保育園","幼稚園","認定こども園","保活","園選び"],
-    relatedArticleIds: ["art-005","art-363","art-364","art-675","art-389","art-384"],
+    relatedArticleIds: ["art-005","art-364","art-675","art-389","art-384","art-383"],
   },
   {
     id: "art-091",
@@ -28299,7 +28563,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lesson-track-and-field.jpg",
     readingTime: 14,
     tags: ["習い事","陸上"],
-    relatedArticleIds: ["art-009","art-396","art-397","art-369","art-945","art-1018"],
+    relatedArticleIds: ["art-009","art-396","art-397","art-945","art-1018","art-1108"],
   },
   {
     id: "art-398",
@@ -28489,7 +28753,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lesson-programming-class.jpg",
     readingTime: 15,
     tags: ["習い事","プログラミング"],
-    relatedArticleIds: ["art-009","art-046","art-397","art-401","art-369","art-945"],
+    relatedArticleIds: ["art-009","art-046","art-397","art-401","art-945","art-1018"],
   },
   {
     id: "art-397",
@@ -28527,7 +28791,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lesson-robotics.jpg",
     readingTime: 9,
     tags: ["習い事","ロボット"],
-    relatedArticleIds: ["art-009","art-396","art-401","art-369","art-945","art-1018"],
+    relatedArticleIds: ["art-009","art-396","art-401","art-945","art-1018","art-1108"],
   },
   {
     id: "art-392",
@@ -29822,44 +30086,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-384","art-383","art-377","art-375","art-379","art-376"],
   },
   {
-    id: "art-372",
-    slug: "school-life-elementary-6y",
-    title: "小学6年生の学校生活",
-    excerpt: "小6で身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":76,"reliability":17,"neutrality":18,"freshness":19,"ageRelevance":14,"readability":8},
-    publishedAt: "2025-07-04",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-elementary-6y.jpg",
-    readingTime: 12,
-    tags: ["小学校","学校生活","準備"],
-    relatedArticleIds: ["art-371","art-373","art-369","art-367","art-370","art-368"],
-  },
-  {
     id: "art-373",
     slug: "school-life-junior-high-prep",
     title: "中学進学準備ガイド",
@@ -29895,7 +30121,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-life-junior-high-prep.jpg",
     readingTime: 17,
     tags: ["中学校","学校生活","準備"],
-    relatedArticleIds: ["art-371","art-372","art-369","art-406","art-408","art-036"],
+    relatedArticleIds: ["art-406","art-408","art-036","art-407","art-411","art-340"],
   },
   {
     id: "art-892",
@@ -30012,120 +30238,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-885","art-877","art-879","art-894","art-892","art-882"],
   },
   {
-    id: "art-369",
-    slug: "school-life-elementary-3y",
-    title: "小学3年生の学校生活",
-    excerpt: "小3で身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "mid",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":96,"reliability":29,"neutrality":23,"freshness":20,"ageRelevance":14,"readability":10},
-    publishedAt: "2025-07-03",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-elementary-3y.jpg",
-    readingTime: 12,
-    tags: ["小学校","学校生活","準備"],
-    relatedArticleIds: ["art-370","art-371","art-367","art-372","art-368","art-945"],
-  },
-  {
-    id: "art-370",
-    slug: "school-life-elementary-4y",
-    title: "小学4年生の学校生活",
-    excerpt: "小4で身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "mid",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":80,"reliability":23,"neutrality":21,"freshness":19,"ageRelevance":12,"readability":5},
-    publishedAt: "2025-07-03",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-elementary-4y.jpg",
-    readingTime: 19,
-    tags: ["小学校","学校生活","準備"],
-    relatedArticleIds: ["art-369","art-371","art-367","art-372","art-368","art-945"],
-  },
-  {
-    id: "art-371",
-    slug: "school-life-elementary-5y",
-    title: "小学5年生の学校生活",
-    excerpt: "小5で身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":90,"reliability":28,"neutrality":22,"freshness":19,"ageRelevance":12,"readability":9},
-    publishedAt: "2025-07-03",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-elementary-5y.jpg",
-    readingTime: 11,
-    tags: ["小学校","学校生活","準備"],
-    relatedArticleIds: ["art-372","art-373","art-369","art-367","art-370","art-368"],
-  },
-  {
     id: "art-888",
     slug: "product-air-purifier-guide",
     title: "空気清浄機の選び方（子ども向け）",
@@ -30240,82 +30352,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-885","art-877","art-879","art-894","art-892","art-893"],
   },
   {
-    id: "art-367",
-    slug: "school-life-elementary-1y",
-    title: "小学1年生の学校生活",
-    excerpt: "小1で身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "early",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":81,"reliability":21,"neutrality":22,"freshness":18,"ageRelevance":14,"readability":6},
-    publishedAt: "2025-07-02",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-elementary-1y.jpg",
-    readingTime: 8,
-    tags: ["小学校","学校生活","準備"],
-    relatedArticleIds: ["art-368","art-366","art-365","art-369","art-371","art-007"],
-  },
-  {
-    id: "art-368",
-    slug: "school-life-elementary-2y",
-    title: "小学2年生の学校生活",
-    excerpt: "小2で身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "early",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":71,"reliability":23,"neutrality":15,"freshness":16,"ageRelevance":10,"readability":7},
-    publishedAt: "2025-07-02",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-elementary-2y.jpg",
-    readingTime: 12,
-    tags: ["小学校","学校生活","準備"],
-    relatedArticleIds: ["art-367","art-366","art-365","art-369","art-371","art-007"],
-  },
-  {
     id: "art-366",
     slug: "school-life-kindergarten-5y",
     title: "年長（5歳）の園生活",
@@ -30351,7 +30387,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-life-kindergarten-5y.jpg",
     readingTime: 15,
     tags: ["幼稚園","学校生活","準備"],
-    relatedArticleIds: ["art-365","art-367","art-368","art-364","art-369","art-403"],
+    relatedArticleIds: ["art-365","art-1349","art-364","art-403","art-692","art-943"],
   },
   {
     id: "art-885",
@@ -30503,7 +30539,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-life-kindergarten-3y.jpg",
     readingTime: 19,
     tags: ["幼稚園","学校生活","準備"],
-    relatedArticleIds: ["art-363","art-005","art-366","art-365","art-087","art-675"],
+    relatedArticleIds: ["art-005","art-366","art-365","art-087","art-675","art-389"],
   },
   {
     id: "art-365",
@@ -30541,45 +30577,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-life-kindergarten-4y.jpg",
     readingTime: 10,
     tags: ["幼稚園","学校生活","準備"],
-    relatedArticleIds: ["art-366","art-367","art-368","art-364","art-369","art-403"],
-  },
-  {
-    id: "art-363",
-    slug: "school-life-nursery-2y",
-    title: "2歳児クラスの保育園生活",
-    excerpt: "2歳児クラスで身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "pre",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":84,"reliability":29,"neutrality":15,"freshness":17,"ageRelevance":14,"readability":9},
-    publishedAt: "2025-07-01",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-nursery-2y.jpg",
-    readingTime: 8,
-    tags: ["保育園","学校生活","準備"],
-    relatedArticleIds: ["art-364","art-361","art-005","art-362","art-087","art-675"],
+    relatedArticleIds: ["art-366","art-1349","art-364","art-403","art-692","art-943"],
   },
   {
     id: "art-883",
@@ -30694,82 +30692,6 @@ export const ARTICLES: Article[] = [
     readingTime: 9,
     tags: ["ハイチェア","選び方","子育てグッズ"],
     relatedArticleIds: ["art-885","art-877","art-879","art-894","art-892","art-893"],
-  },
-  {
-    id: "art-361",
-    slug: "school-life-nursery-0y",
-    title: "0歳児クラスの保育園生活",
-    excerpt: "0歳児クラスで身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "0stage",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":85,"reliability":25,"neutrality":23,"freshness":17,"ageRelevance":12,"readability":8},
-    publishedAt: "2025-06-30",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-nursery-0y.jpg",
-    readingTime: 13,
-    tags: ["保育園","学校生活","準備"],
-    relatedArticleIds: ["art-362","art-363","art-369","art-371","art-932","art-1233"],
-  },
-  {
-    id: "art-362",
-    slug: "school-life-nursery-1y",
-    title: "1歳児クラスの保育園生活",
-    excerpt: "1歳児クラスで身につけたい力、行事、保護者の関わり方をまとめました。",
-    content: '',
-    stage: "0stage",
-    categories: ["education"],
-    source: {
-      name: "学校教育に関する公的情報",
-      references: [
-          {
-                "title": "学習指導要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "保育所保育指針",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":76,"reliability":23,"neutrality":14,"freshness":19,"ageRelevance":15,"readability":5},
-    publishedAt: "2025-06-30",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/school-life-nursery-1y.jpg",
-    readingTime: 17,
-    tags: ["保育園","学校生活","準備"],
-    relatedArticleIds: ["art-361","art-363","art-369","art-371","art-932","art-1233"],
   },
   {
     id: "art-881",
@@ -38749,7 +38671,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-guide-string-craft.jpg",
     readingTime: 18,
     tags: ["遊び","ひも通し","知育"],
-    relatedArticleIds: ["art-241","art-747","art-033","art-974","art-967","art-749"],
+    relatedArticleIds: ["art-241","art-1346","art-033","art-974","art-967","art-968"],
   },
   {
     id: "art-774",
@@ -38939,7 +38861,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-guide-card-game.jpg",
     readingTime: 12,
     tags: ["遊び","カード","知育"],
-    relatedArticleIds: ["art-252","art-757","art-192","art-251","art-235","art-246"],
+    relatedArticleIds: ["art-252","art-757","art-192","art-251","art-246","art-244"],
   },
   {
     id: "art-254",
@@ -39015,7 +38937,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-guide-science-experiment.jpg",
     readingTime: 9,
     tags: ["遊び","実験","知育"],
-    relatedArticleIds: ["art-253","art-757","art-192","art-251","art-235","art-246"],
+    relatedArticleIds: ["art-253","art-757","art-192","art-251","art-246","art-244"],
   },
   {
     id: "art-771",
@@ -39851,7 +39773,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-guide-music-play.jpg",
     readingTime: 18,
     tags: ["遊び","音楽","知育"],
-    relatedArticleIds: ["art-255","art-747","art-033","art-974","art-967","art-749"],
+    relatedArticleIds: ["art-255","art-1346","art-033","art-974","art-967","art-968"],
   },
   {
     id: "art-242",
@@ -39927,7 +39849,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-educational-app.jpg",
     readingTime: 18,
     tags: ["アプリ","知育","選び方"],
-    relatedArticleIds: ["art-752","art-753","art-754","art-251","art-250","art-247"],
+    relatedArticleIds: ["art-251","art-250","art-247","art-245","art-198","art-1347"],
   },
   {
     id: "art-760",
@@ -39965,7 +39887,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-musical.jpg",
     readingTime: 19,
     tags: ["楽器","知育","選び方"],
-    relatedArticleIds: ["art-756","art-750","art-758","art-751","art-755","art-759"],
+    relatedArticleIds: ["art-756","art-758","art-755","art-759","art-246","art-244"],
   },
   {
     id: "art-239",
@@ -40079,7 +40001,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-craft-supply.jpg",
     readingTime: 11,
     tags: ["工作","知育","選び方"],
-    relatedArticleIds: ["art-756","art-760","art-750","art-758","art-751","art-755"],
+    relatedArticleIds: ["art-756","art-760","art-758","art-755","art-246","art-244"],
   },
   {
     id: "art-758",
@@ -40117,7 +40039,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-outdoor.jpg",
     readingTime: 10,
     tags: ["外遊び","知育","選び方"],
-    relatedArticleIds: ["art-756","art-760","art-750","art-751","art-755","art-759"],
+    relatedArticleIds: ["art-756","art-760","art-755","art-759","art-1332","art-246"],
   },
   {
     id: "art-757",
@@ -40155,83 +40077,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-stem.jpg",
     readingTime: 19,
     tags: ["STEM","知育","選び方"],
-    relatedArticleIds: ["art-252","art-253","art-192","art-761","art-235","art-756"],
-  },
-  {
-    id: "art-235",
-    slug: "child-development-age-9",
-    title: "9歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "9歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "mid",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":87,"reliability":20,"neutrality":23,"freshness":19,"ageRelevance":15,"readability":10},
-    publishedAt: "2025-05-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-9.jpg",
-    readingTime: 15,
-    tags: ["年齢別","9歳","発達","成長"],
-    relatedArticleIds: ["art-234","art-233","art-231","art-192","art-229","art-196"],
-  },
-  {
-    id: "art-754",
-    slug: "toy-guide-toy-6y",
-    title: "6歳向けおもちゃの選び方ガイド",
-    excerpt: "6歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "early",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":68,"reliability":20,"neutrality":17,"freshness":12,"ageRelevance":14,"readability":5},
-    publishedAt: "2025-05-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-6y.jpg",
-    readingTime: 8,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-752","art-753","art-761","art-251","art-750","art-747"],
+    relatedArticleIds: ["art-252","art-253","art-192","art-761","art-756","art-760"],
   },
   {
     id: "art-756",
@@ -40269,7 +40115,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-montessori.jpg",
     readingTime: 17,
     tags: ["モンテッソーリ","知育","選び方"],
-    relatedArticleIds: ["art-760","art-750","art-758","art-751","art-755","art-759"],
+    relatedArticleIds: ["art-760","art-758","art-755","art-759","art-246","art-244"],
   },
   {
     id: "art-755",
@@ -40307,577 +40153,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/toy-guide-toy-wooden.jpg",
     readingTime: 17,
     tags: ["木のおもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-756","art-760","art-750","art-758","art-751","art-759"],
-  },
-  {
-    id: "art-232",
-    slug: "child-development-age-6",
-    title: "6歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "6歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "early",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":67,"reliability":17,"neutrality":15,"freshness":18,"ageRelevance":10,"readability":7},
-    publishedAt: "2025-05-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-6.jpg",
-    readingTime: 15,
-    tags: ["年齢別","6歳","発達","成長"],
-    relatedArticleIds: ["art-231","art-230","art-198","art-722","art-235","art-977"],
-  },
-  {
-    id: "art-233",
-    slug: "child-development-age-7",
-    title: "7歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "7歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "mid",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":66,"reliability":17,"neutrality":16,"freshness":16,"ageRelevance":10,"readability":7},
-    publishedAt: "2025-05-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-7.jpg",
-    readingTime: 17,
-    tags: ["年齢別","7歳","発達","成長"],
-    relatedArticleIds: ["art-235","art-234","art-231","art-192","art-229","art-196"],
-  },
-  {
-    id: "art-234",
-    slug: "child-development-age-8",
-    title: "8歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "8歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "mid",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":76,"reliability":29,"neutrality":14,"freshness":12,"ageRelevance":15,"readability":6},
-    publishedAt: "2025-05-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-8.jpg",
-    readingTime: 18,
-    tags: ["年齢別","8歳","発達","成長"],
-    relatedArticleIds: ["art-235","art-233","art-231","art-192","art-229","art-196"],
-  },
-  {
-    id: "art-751",
-    slug: "toy-guide-toy-3y",
-    title: "3歳向けおもちゃの選び方ガイド",
-    excerpt: "3歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "pre",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":71,"reliability":15,"neutrality":21,"freshness":19,"ageRelevance":10,"readability":6},
-    publishedAt: "2025-05-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-3y.jpg",
-    readingTime: 9,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-750","art-756","art-760","art-758","art-755","art-759"],
-  },
-  {
-    id: "art-752",
-    slug: "toy-guide-toy-4y",
-    title: "4歳向けおもちゃの選び方ガイド",
-    excerpt: "4歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "early",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":77,"reliability":19,"neutrality":22,"freshness":12,"ageRelevance":14,"readability":10},
-    publishedAt: "2025-05-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-4y.jpg",
-    readingTime: 13,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-753","art-754","art-761","art-251","art-750","art-747"],
-  },
-  {
-    id: "art-753",
-    slug: "toy-guide-toy-5y",
-    title: "5歳向けおもちゃの選び方ガイド",
-    excerpt: "5歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "early",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":72,"reliability":20,"neutrality":20,"freshness":14,"ageRelevance":12,"readability":6},
-    publishedAt: "2025-05-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-5y.jpg",
-    readingTime: 8,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-752","art-754","art-761","art-251","art-750","art-747"],
-  },
-  {
-    id: "art-229",
-    slug: "child-development-age-3",
-    title: "3歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "3歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "pre",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":82,"reliability":23,"neutrality":23,"freshness":17,"ageRelevance":13,"readability":6},
-    publishedAt: "2025-05-15",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-3.jpg",
-    readingTime: 8,
-    tags: ["年齢別","3歳","発達","成長"],
-    relatedArticleIds: ["art-228","art-231","art-194","art-1332","art-1000","art-734"],
-  },
-  {
-    id: "art-230",
-    slug: "child-development-age-4",
-    title: "4歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "4歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "early",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":77,"reliability":21,"neutrality":17,"freshness":17,"ageRelevance":12,"readability":10},
-    publishedAt: "2025-05-15",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-4.jpg",
-    readingTime: 18,
-    tags: ["年齢別","4歳","発達","成長"],
-    relatedArticleIds: ["art-231","art-232","art-198","art-722","art-235","art-977"],
-  },
-  {
-    id: "art-231",
-    slug: "child-development-age-5",
-    title: "5歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "5歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "early",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":97,"reliability":28,"neutrality":24,"freshness":21,"ageRelevance":14,"readability":10},
-    publishedAt: "2025-05-15",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-5.jpg",
-    readingTime: 15,
-    tags: ["年齢別","5歳","発達","成長"],
-    relatedArticleIds: ["art-230","art-232","art-198","art-722","art-235","art-977"],
-  },
-  {
-    id: "art-749",
-    slug: "toy-guide-toy-1y",
-    title: "1歳向けおもちゃの選び方ガイド",
-    excerpt: "1歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":75,"reliability":19,"neutrality":17,"freshness":19,"ageRelevance":10,"readability":10},
-    publishedAt: "2025-05-15",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-1y.jpg",
-    readingTime: 10,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-747","art-748","art-750","art-752","art-255","art-241"],
-  },
-  {
-    id: "art-750",
-    slug: "toy-guide-toy-2y",
-    title: "2歳向けおもちゃの選び方ガイド",
-    excerpt: "2歳のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "pre",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":83,"reliability":26,"neutrality":22,"freshness":16,"ageRelevance":14,"readability":5},
-    publishedAt: "2025-05-15",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-2y.jpg",
-    readingTime: 11,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-751","art-756","art-760","art-758","art-755","art-759"],
-  },
-  {
-    id: "art-748",
-    slug: "toy-guide-toy-6to12m",
-    title: "6〜12ヶ月向けおもちゃの選び方ガイド",
-    excerpt: "6〜12ヶ月のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":75,"reliability":29,"neutrality":14,"freshness":12,"ageRelevance":15,"readability":5},
-    publishedAt: "2025-05-15",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-6to12m.jpg",
-    readingTime: 18,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-747","art-749","art-750","art-752","art-255","art-241"],
-  },
-  {
-    id: "art-226",
-    slug: "baby-development-month-10",
-    title: "生後10ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後10ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":81,"reliability":27,"neutrality":20,"freshness":14,"ageRelevance":12,"readability":8},
-    publishedAt: "2025-05-14",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-10.jpg",
-    readingTime: 15,
-    tags: ["月齢別","10ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-223","art-218","art-222","art-220"],
-  },
-  {
-    id: "art-227",
-    slug: "baby-development-month-11",
-    title: "生後11ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後11ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":70,"reliability":21,"neutrality":15,"freshness":14,"ageRelevance":13,"readability":7},
-    publishedAt: "2025-05-14",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-11.jpg",
-    readingTime: 15,
-    tags: ["月齢別","11ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-226","art-223","art-218","art-222"],
-  },
-  {
-    id: "art-228",
-    slug: "child-development-age-2",
-    title: "2歳児の発達と成長：年齢別子育てガイド",
-    excerpt: "2歳の子どもの身体・認知・社会性の発達特徴と、家庭でできるサポートについてまとめました。",
-    content: '',
-    stage: "pre",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "幼稚園教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":69,"reliability":17,"neutrality":16,"freshness":19,"ageRelevance":10,"readability":7},
-    publishedAt: "2025-05-14",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/child-development-age-2.jpg",
-    readingTime: 12,
-    tags: ["年齢別","2歳","発達","成長"],
-    relatedArticleIds: ["art-229","art-231","art-194","art-1332","art-1000","art-734"],
+    relatedArticleIds: ["art-756","art-760","art-758","art-759","art-246","art-244"],
   },
   {
     id: "art-745",
@@ -40915,7 +40191,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-debate-skill.jpg",
     readingTime: 18,
     tags: ["ディベート","言葉","発達"],
-    relatedArticleIds: ["art-746","art-236","art-734","art-237","art-238","art-736"],
+    relatedArticleIds: ["art-746","art-734","art-736","art-056","art-741","art-738"],
   },
   {
     id: "art-746",
@@ -40953,159 +40229,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-presentation-skill.jpg",
     readingTime: 18,
     tags: ["プレゼン","言葉","発達"],
-    relatedArticleIds: ["art-745","art-236","art-734","art-237","art-238","art-736"],
-  },
-  {
-    id: "art-747",
-    slug: "toy-guide-toy-0to6m",
-    title: "0〜6ヶ月向けおもちゃの選び方ガイド",
-    excerpt: "0〜6ヶ月のおもちゃ・教材の選び方と、発達を促す遊び方を紹介します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "子どもの遊びと発達に関する情報",
-      references: [
-          {
-                "title": "遊びと育ちに関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "positive"
-          },
-          {
-                "title": "幼児教育要領",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":80,"reliability":19,"neutrality":23,"freshness":14,"ageRelevance":15,"readability":9},
-    publishedAt: "2025-05-14",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/toy-guide-toy-0to6m.jpg",
-    readingTime: 19,
-    tags: ["おもちゃ","知育","選び方"],
-    relatedArticleIds: ["art-749","art-748","art-750","art-752","art-255","art-241"],
-  },
-  {
-    id: "art-223",
-    slug: "baby-development-month-7",
-    title: "生後7ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後7ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":78,"reliability":25,"neutrality":16,"freshness":13,"ageRelevance":15,"readability":9},
-    publishedAt: "2025-05-13",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-7.jpg",
-    readingTime: 15,
-    tags: ["月齢別","7ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-226","art-218","art-222","art-220"],
-  },
-  {
-    id: "art-224",
-    slug: "baby-development-month-8",
-    title: "生後8ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後8ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":63,"reliability":15,"neutrality":16,"freshness":12,"ageRelevance":14,"readability":6},
-    publishedAt: "2025-05-13",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-8.jpg",
-    readingTime: 10,
-    tags: ["月齢別","8ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-226","art-223","art-218","art-222"],
-  },
-  {
-    id: "art-225",
-    slug: "baby-development-month-9",
-    title: "生後9ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後9ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":83,"reliability":29,"neutrality":17,"freshness":19,"ageRelevance":13,"readability":5},
-    publishedAt: "2025-05-13",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-9.jpg",
-    readingTime: 10,
-    tags: ["月齢別","9ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-221","art-226","art-223","art-218","art-222","art-220"],
+    relatedArticleIds: ["art-745","art-734","art-736","art-056","art-741","art-738"],
   },
   {
     id: "art-744",
@@ -41143,7 +40267,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-composition-skill.jpg",
     readingTime: 16,
     tags: ["作文","言葉","発達"],
-    relatedArticleIds: ["art-743","art-235","art-234","art-233","art-734","art-192"],
+    relatedArticleIds: ["art-743","art-734","art-192","art-736","art-1235","art-1234"],
   },
   {
     id: "art-743",
@@ -41181,7 +40305,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-kanji-learning.jpg",
     readingTime: 19,
     tags: ["漢字","言葉","発達"],
-    relatedArticleIds: ["art-744","art-235","art-234","art-233","art-734","art-192"],
+    relatedArticleIds: ["art-744","art-734","art-192","art-736","art-1235","art-1234"],
   },
   {
     id: "art-742",
@@ -41219,83 +40343,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-phonics-japanese.jpg",
     readingTime: 9,
     tags: ["ひらがな","言葉","発達"],
-    relatedArticleIds: ["art-741","art-740","art-231","art-722","art-977","art-980"],
-  },
-  {
-    id: "art-221",
-    slug: "baby-development-month-5",
-    title: "生後5ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後5ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":83,"reliability":25,"neutrality":24,"freshness":12,"ageRelevance":12,"readability":10},
-    publishedAt: "2025-05-12",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-5.jpg",
-    readingTime: 8,
-    tags: ["月齢別","5ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-226","art-223","art-218","art-222","art-220"],
-  },
-  {
-    id: "art-222",
-    slug: "baby-development-month-6",
-    title: "生後6ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後6ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":72,"reliability":17,"neutrality":21,"freshness":12,"ageRelevance":12,"readability":10},
-    publishedAt: "2025-05-12",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-6.jpg",
-    readingTime: 17,
-    tags: ["月齢別","6ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-226","art-223","art-218","art-220"],
+    relatedArticleIds: ["art-741","art-740","art-1347","art-722","art-977","art-980"],
   },
   {
     id: "art-740",
@@ -41333,7 +40381,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-reading-readiness.jpg",
     readingTime: 10,
     tags: ["読む力","言葉","発達"],
-    relatedArticleIds: ["art-741","art-742","art-231","art-722","art-977","art-980"],
+    relatedArticleIds: ["art-741","art-742","art-1347","art-722","art-977","art-980"],
   },
   {
     id: "art-741",
@@ -41371,121 +40419,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-writing-readiness.jpg",
     readingTime: 17,
     tags: ["書く力","言葉","発達"],
-    relatedArticleIds: ["art-740","art-742","art-231","art-722","art-977","art-980"],
-  },
-  {
-    id: "art-218",
-    slug: "baby-development-month-2",
-    title: "生後2ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後2ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":73,"reliability":15,"neutrality":19,"freshness":19,"ageRelevance":10,"readability":10},
-    publishedAt: "2025-05-11",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-2.jpg",
-    readingTime: 9,
-    tags: ["月齢別","2ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-226","art-223","art-222","art-220"],
-  },
-  {
-    id: "art-219",
-    slug: "baby-development-month-3",
-    title: "生後3ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後3ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":67,"reliability":16,"neutrality":14,"freshness":13,"ageRelevance":14,"readability":10},
-    publishedAt: "2025-05-11",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-3.jpg",
-    readingTime: 17,
-    tags: ["月齢別","3ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-226","art-223","art-218","art-222"],
-  },
-  {
-    id: "art-220",
-    slug: "baby-development-month-4",
-    title: "生後4ヶ月の赤ちゃんの発達と育児ポイント",
-    excerpt: "生後4ヶ月の赤ちゃんの身体・知能・情緒の発達目安と、この時期に大切な関わり方を解説します。",
-    content: '',
-    stage: "0stage",
-    categories: ["development"],
-    source: {
-      name: "乳幼児の発達に関する公的データ",
-      references: [
-          {
-                "title": "乳幼児身体発育調査",
-                "url": "https://www.mhlw.go.jp/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          },
-          {
-                "title": "母子健康手帳の様式",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":72,"reliability":16,"neutrality":15,"freshness":19,"ageRelevance":14,"readability":8},
-    publishedAt: "2025-05-11",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/baby-development-month-4.jpg",
-    readingTime: 14,
-    tags: ["月齢別","4ヶ月","発達","赤ちゃん"],
-    relatedArticleIds: ["art-225","art-221","art-226","art-223","art-218","art-222"],
+    relatedArticleIds: ["art-740","art-742","art-1347","art-722","art-977","art-980"],
   },
   {
     id: "art-737",
@@ -41827,7 +40761,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/physical-fitness-9to12.jpg",
     readingTime: 15,
     tags: ["体力づくり","9〜12歳","年齢別"],
-    relatedArticleIds: ["art-200","art-188","art-236","art-237","art-238","art-056"],
+    relatedArticleIds: ["art-200","art-188","art-056","art-215","art-216","art-746"],
   },
   {
     id: "art-731",
@@ -41865,7 +40799,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-body-awareness.jpg",
     readingTime: 9,
     tags: ["ボディイメージ","発達","運動"],
-    relatedArticleIds: ["art-722","art-721","art-730","art-727","art-231","art-977"],
+    relatedArticleIds: ["art-722","art-721","art-730","art-727","art-1347","art-977"],
   },
   {
     id: "art-732",
@@ -41903,7 +40837,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/lang-first-words.jpg",
     readingTime: 12,
     tags: ["初語","言葉","発達"],
-    relatedArticleIds: ["art-723","art-1240","art-003","art-225","art-221","art-1241"],
+    relatedArticleIds: ["art-723","art-1345","art-1346","art-1240","art-003","art-1241"],
   },
   {
     id: "art-733",
@@ -42169,7 +41103,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-left-hand-right-hand.jpg",
     readingTime: 18,
     tags: ["利き手","発達","運動"],
-    relatedArticleIds: ["art-722","art-721","art-731","art-727","art-231","art-977"],
+    relatedArticleIds: ["art-722","art-721","art-731","art-727","art-1347","art-977"],
   },
   {
     id: "art-209",
@@ -42397,7 +41331,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-fine-motor-4to6.jpg",
     readingTime: 11,
     tags: ["微細運動","発達","運動"],
-    relatedArticleIds: ["art-722","art-721","art-731","art-730","art-231","art-723"],
+    relatedArticleIds: ["art-722","art-721","art-731","art-730","art-723","art-1347"],
   },
   {
     id: "art-206",
@@ -42549,7 +41483,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-fine-motor-0to1.jpg",
     readingTime: 12,
     tags: ["微細運動","発達","運動"],
-    relatedArticleIds: ["art-724","art-718","art-717","art-1240","art-003","art-225"],
+    relatedArticleIds: ["art-724","art-718","art-717","art-1345","art-1346","art-1240"],
   },
   {
     id: "art-724",
@@ -42587,7 +41521,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-fine-motor-1to2.jpg",
     readingTime: 16,
     tags: ["微細運動","発達","運動"],
-    relatedArticleIds: ["art-723","art-718","art-717","art-1240","art-003","art-225"],
+    relatedArticleIds: ["art-723","art-718","art-717","art-1345","art-1346","art-1240"],
   },
   {
     id: "art-722",
@@ -42625,7 +41559,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-gross-motor-5to6.jpg",
     readingTime: 18,
     tags: ["粗大運動","発達","運動"],
-    relatedArticleIds: ["art-721","art-731","art-730","art-727","art-231","art-720"],
+    relatedArticleIds: ["art-721","art-731","art-730","art-727","art-1347","art-720"],
   },
   {
     id: "art-203",
@@ -42701,7 +41635,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/sensory-development-0to1.jpg",
     readingTime: 11,
     tags: ["感覚","0〜1歳","年齢別"],
-    relatedArticleIds: ["art-201","art-193","art-189","art-182","art-178","art-1071"],
+    relatedArticleIds: ["art-201","art-193","art-189","art-182","art-178","art-1346"],
   },
   {
     id: "art-205",
@@ -42815,7 +41749,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-gross-motor-4to5.jpg",
     readingTime: 11,
     tags: ["粗大運動","発達","運動"],
-    relatedArticleIds: ["art-722","art-731","art-730","art-727","art-231","art-720"],
+    relatedArticleIds: ["art-722","art-731","art-730","art-727","art-1347","art-720"],
   },
   {
     id: "art-201",
@@ -42853,7 +41787,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-development-0to1.jpg",
     readingTime: 10,
     tags: ["遊びと発達","0〜1歳","年齢別"],
-    relatedArticleIds: ["art-204","art-193","art-189","art-182","art-178","art-1071"],
+    relatedArticleIds: ["art-204","art-193","art-189","art-182","art-178","art-1346"],
   },
   {
     id: "art-202",
@@ -43005,7 +41939,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/creativity-9to12.jpg",
     readingTime: 8,
     tags: ["創造力","9〜12歳","年齢別"],
-    relatedArticleIds: ["art-188","art-217","art-198","art-236","art-237","art-238"],
+    relatedArticleIds: ["art-188","art-217","art-198","art-056","art-197","art-746"],
   },
   {
     id: "art-717",
@@ -43043,7 +41977,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-gross-motor-0to1.jpg",
     readingTime: 18,
     tags: ["粗大運動","発達","運動"],
-    relatedArticleIds: ["art-718","art-723","art-724","art-722","art-720","art-1240"],
+    relatedArticleIds: ["art-718","art-723","art-724","art-1345","art-722","art-720"],
   },
   {
     id: "art-718",
@@ -43081,7 +42015,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/dev-gross-motor-1to2.jpg",
     readingTime: 8,
     tags: ["粗大運動","発達","運動"],
-    relatedArticleIds: ["art-717","art-723","art-724","art-722","art-720","art-1240"],
+    relatedArticleIds: ["art-717","art-723","art-724","art-1345","art-722","art-720"],
   },
   {
     id: "art-719",
@@ -43309,7 +42243,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/vacation-holiday-learning.jpg",
     readingTime: 10,
     tags: ["学習計画","長期休み","計画"],
-    relatedArticleIds: ["art-712","art-710","art-711","art-044","art-369","art-945"],
+    relatedArticleIds: ["art-712","art-710","art-711","art-044","art-945","art-1018"],
   },
   {
     id: "art-715",
@@ -43423,7 +42357,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/emotional-development-0to1.jpg",
     readingTime: 10,
     tags: ["情緒","0〜1歳","年齢別"],
-    relatedArticleIds: ["art-204","art-201","art-189","art-182","art-178","art-1071"],
+    relatedArticleIds: ["art-204","art-201","art-189","art-182","art-178","art-1346"],
   },
   {
     id: "art-194",
@@ -43537,7 +42471,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/vacation-summer-science.jpg",
     readingTime: 8,
     tags: ["自由研究","長期休み","計画"],
-    relatedArticleIds: ["art-712","art-716","art-710","art-1103","art-044","art-369"],
+    relatedArticleIds: ["art-712","art-716","art-710","art-1103","art-044","art-945"],
   },
   {
     id: "art-712",
@@ -43575,7 +42509,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/vacation-winter-plan.jpg",
     readingTime: 8,
     tags: ["冬休み","長期休み","計画"],
-    relatedArticleIds: ["art-716","art-710","art-711","art-696","art-369","art-945"],
+    relatedArticleIds: ["art-716","art-710","art-711","art-696","art-945","art-1018"],
   },
   {
     id: "art-996",
@@ -43651,7 +42585,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/cognitive-development-0to1.jpg",
     readingTime: 9,
     tags: ["認知能力","0〜1歳","年齢別"],
-    relatedArticleIds: ["art-204","art-201","art-193","art-182","art-178","art-1071"],
+    relatedArticleIds: ["art-204","art-201","art-193","art-182","art-178","art-1346"],
   },
   {
     id: "art-190",
@@ -43841,7 +42775,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/vacation-summer-reading.jpg",
     readingTime: 14,
     tags: ["読書感想文","長期休み","計画"],
-    relatedArticleIds: ["art-712","art-716","art-711","art-369","art-945","art-1018"],
+    relatedArticleIds: ["art-712","art-716","art-711","art-945","art-1018","art-1108"],
   },
   {
     id: "art-995",
@@ -44069,7 +43003,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/social-skill-9to12.jpg",
     readingTime: 16,
     tags: ["社会性","9〜12歳","年齢別"],
-    relatedArticleIds: ["art-200","art-217","art-236","art-237","art-238","art-056"],
+    relatedArticleIds: ["art-200","art-217","art-056","art-187","art-746","art-186"],
   },
   {
     id: "art-706",
@@ -44107,7 +43041,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-school-camp.jpg",
     readingTime: 10,
     tags: ["林間","学校","行事"],
-    relatedArticleIds: ["art-690","art-696","art-691","art-702","art-704","art-369"],
+    relatedArticleIds: ["art-690","art-696","art-691","art-702","art-704","art-692"],
   },
   {
     id: "art-705",
@@ -44145,7 +43079,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-student-council.jpg",
     readingTime: 13,
     tags: ["児童会","学校","行事"],
-    relatedArticleIds: ["art-693","art-692","art-701","art-371","art-694","art-406"],
+    relatedArticleIds: ["art-693","art-692","art-701","art-694","art-406","art-699"],
   },
   {
     id: "art-707",
@@ -44487,7 +43421,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-room-organization.jpg",
     readingTime: 8,
     tags: ["整理","学校","行事"],
-    relatedArticleIds: ["art-706","art-690","art-696","art-691","art-704","art-369"],
+    relatedArticleIds: ["art-706","art-690","art-696","art-691","art-704","art-692"],
   },
   {
     id: "art-704",
@@ -44525,7 +43459,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-school-club.jpg",
     readingTime: 11,
     tags: ["クラブ","学校","行事"],
-    relatedArticleIds: ["art-706","art-690","art-696","art-691","art-702","art-369"],
+    relatedArticleIds: ["art-706","art-690","art-696","art-691","art-702","art-692"],
   },
   {
     id: "art-989",
@@ -44677,7 +43611,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/language-development-0to1.jpg",
     readingTime: 11,
     tags: ["言葉","0〜1歳","年齢別"],
-    relatedArticleIds: ["art-204","art-201","art-193","art-189","art-178","art-732"],
+    relatedArticleIds: ["art-204","art-201","art-193","art-189","art-178","art-1346"],
   },
   {
     id: "art-181",
@@ -44753,7 +43687,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-climbing-play.jpg",
     readingTime: 14,
     tags: ["クライミング","遊び","発達"],
-    relatedArticleIds: ["art-977","art-980","art-984","art-983","art-973","art-231"],
+    relatedArticleIds: ["art-977","art-980","art-984","art-983","art-973","art-1347"],
   },
   {
     id: "art-985",
@@ -44905,7 +43839,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/motor-skill-0to1.jpg",
     readingTime: 11,
     tags: ["運動能力","0〜1歳","年齢別"],
-    relatedArticleIds: ["art-204","art-201","art-193","art-189","art-182","art-1071"],
+    relatedArticleIds: ["art-204","art-201","art-193","art-189","art-182","art-1346"],
   },
   {
     id: "art-179",
@@ -45057,7 +43991,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-dance-for-kids.jpg",
     readingTime: 15,
     tags: ["ダンス","遊び","発達"],
-    relatedArticleIds: ["art-977","art-980","art-984","art-973","art-986","art-231"],
+    relatedArticleIds: ["art-977","art-980","art-984","art-973","art-986","art-1347"],
   },
   {
     id: "art-984",
@@ -45095,7 +44029,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-martial-arts-kids.jpg",
     readingTime: 8,
     tags: ["武道","遊び","発達"],
-    relatedArticleIds: ["art-977","art-980","art-983","art-973","art-986","art-231"],
+    relatedArticleIds: ["art-977","art-980","art-983","art-973","art-986","art-1347"],
   },
   {
     id: "art-697",
@@ -45285,7 +44219,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-role-play.jpg",
     readingTime: 8,
     tags: ["ロール","遊び","発達"],
-    relatedArticleIds: ["art-977","art-984","art-983","art-973","art-986","art-231"],
+    relatedArticleIds: ["art-977","art-984","art-983","art-973","art-986","art-1347"],
   },
   {
     id: "art-979",
@@ -45627,7 +44561,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-risky-play.jpg",
     readingTime: 17,
     tags: ["リスキー","遊び","発達"],
-    relatedArticleIds: ["art-980","art-984","art-983","art-973","art-986","art-231"],
+    relatedArticleIds: ["art-980","art-984","art-983","art-973","art-986","art-1347"],
   },
   {
     id: "art-976",
@@ -45703,7 +44637,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-culture-festival.jpg",
     readingTime: 15,
     tags: ["文化祭","学校","行事"],
-    relatedArticleIds: ["art-706","art-690","art-696","art-702","art-704","art-369"],
+    relatedArticleIds: ["art-706","art-690","art-696","art-702","art-704","art-692"],
   },
   {
     id: "art-693",
@@ -45741,7 +44675,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-open-school.jpg",
     readingTime: 14,
     tags: ["学校見学","学校","行事"],
-    relatedArticleIds: ["art-705","art-692","art-701","art-371","art-694","art-406"],
+    relatedArticleIds: ["art-705","art-692","art-701","art-694","art-406","art-699"],
   },
   {
     id: "art-692",
@@ -45931,7 +44865,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-cooperative-play.jpg",
     readingTime: 15,
     tags: ["協同","遊び","発達"],
-    relatedArticleIds: ["art-977","art-980","art-984","art-983","art-986","art-231"],
+    relatedArticleIds: ["art-977","art-980","art-984","art-983","art-986","art-1347"],
   },
   {
     id: "art-975",
@@ -46007,7 +44941,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-solitary-play.jpg",
     readingTime: 9,
     tags: ["ひとり","遊び","発達"],
-    relatedArticleIds: ["art-967","art-968","art-969","art-723","art-1240","art-003"],
+    relatedArticleIds: ["art-967","art-968","art-969","art-723","art-1345","art-1346"],
   },
   {
     id: "art-688",
@@ -46083,7 +45017,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/school-school-trip.jpg",
     readingTime: 19,
     tags: ["遠足","学校","行事"],
-    relatedArticleIds: ["art-706","art-696","art-691","art-702","art-704","art-369"],
+    relatedArticleIds: ["art-706","art-696","art-691","art-702","art-704","art-692"],
   },
   {
     id: "art-689",
@@ -46387,7 +45321,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-body-book.jpg",
     readingTime: 13,
     tags: ["絵本","体","読み聞かせ"],
-    relatedArticleIds: ["art-680","art-672","art-679","art-671","art-673","art-1258"],
+    relatedArticleIds: ["art-680","art-679","art-1258","art-041","art-675","art-403"],
   },
   {
     id: "art-686",
@@ -46425,7 +45359,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-manners-book.jpg",
     readingTime: 19,
     tags: ["絵本","マナー","読み聞かせ"],
-    relatedArticleIds: ["art-675","art-678","art-676","art-682","art-681","art-670"],
+    relatedArticleIds: ["art-675","art-678","art-676","art-682","art-681","art-684"],
   },
   {
     id: "art-687",
@@ -46615,7 +45549,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-heuristic-play.jpg",
     readingTime: 15,
     tags: ["ヒューリスティック","遊び","発達"],
-    relatedArticleIds: ["art-974","art-967","art-968","art-723","art-1240","art-003"],
+    relatedArticleIds: ["art-974","art-967","art-968","art-723","art-1345","art-1346"],
   },
   {
     id: "art-967",
@@ -46653,7 +45587,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-sensory-bin.jpg",
     readingTime: 15,
     tags: ["センサリー","遊び","発達"],
-    relatedArticleIds: ["art-974","art-968","art-969","art-723","art-1240","art-003"],
+    relatedArticleIds: ["art-974","art-968","art-969","art-723","art-1345","art-1346"],
   },
   {
     id: "art-968",
@@ -46691,7 +45625,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/play-type-treasure-basket.jpg",
     readingTime: 9,
     tags: ["トレジャー","遊び","発達"],
-    relatedArticleIds: ["art-974","art-967","art-969","art-723","art-1240","art-003"],
+    relatedArticleIds: ["art-974","art-967","art-969","art-723","art-1345","art-1346"],
   },
   {
     id: "art-684",
@@ -46767,7 +45701,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-friendship-book.jpg",
     readingTime: 14,
     tags: ["絵本","友達","読み聞かせ"],
-    relatedArticleIds: ["art-675","art-678","art-676","art-681","art-686","art-670"],
+    relatedArticleIds: ["art-675","art-678","art-676","art-681","art-686","art-684"],
   },
   {
     id: "art-683",
@@ -47051,7 +45985,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-emotion-book.jpg",
     readingTime: 17,
     tags: ["絵本","感情","読み聞かせ"],
-    relatedArticleIds: ["art-675","art-678","art-676","art-682","art-686","art-670"],
+    relatedArticleIds: ["art-675","art-678","art-676","art-682","art-686","art-684"],
   },
   {
     id: "art-680",
@@ -47089,7 +46023,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-math-book.jpg",
     readingTime: 19,
     tags: ["絵本","算数","読み聞かせ"],
-    relatedArticleIds: ["art-672","art-685","art-679","art-671","art-673","art-1299"],
+    relatedArticleIds: ["art-685","art-679","art-1299","art-1258","art-1099","art-041"],
   },
   {
     id: "art-162",
@@ -47329,7 +46263,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-science-book.jpg",
     readingTime: 9,
     tags: ["絵本","科学","読み聞かせ"],
-    relatedArticleIds: ["art-680","art-672","art-685","art-671","art-673","art-1258"],
+    relatedArticleIds: ["art-680","art-685","art-1258","art-041","art-675","art-403"],
   },
   {
     id: "art-677",
@@ -47405,7 +46339,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-seasonal-book-winter.jpg",
     readingTime: 9,
     tags: ["絵本","冬","読み聞かせ"],
-    relatedArticleIds: ["art-675","art-676","art-682","art-681","art-686","art-670"],
+    relatedArticleIds: ["art-675","art-676","art-682","art-681","art-686","art-684"],
   },
   {
     id: "art-160",
@@ -47689,7 +46623,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-bedtime-story.jpg",
     readingTime: 17,
     tags: ["絵本","寝かしつけ","読み聞かせ"],
-    relatedArticleIds: ["art-1233","art-668","art-667","art-675","art-680","art-678"],
+    relatedArticleIds: ["art-1348","art-1233","art-675","art-680","art-1350","art-678"],
   },
   {
     id: "art-675",
@@ -47727,7 +46661,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-seasonal-book-spring.jpg",
     readingTime: 12,
     tags: ["絵本","春","読み聞かせ"],
-    relatedArticleIds: ["art-678","art-676","art-682","art-681","art-686","art-670"],
+    relatedArticleIds: ["art-678","art-676","art-682","art-681","art-686","art-684"],
   },
   {
     id: "art-676",
@@ -47765,7 +46699,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/book-seasonal-book-summer.jpg",
     readingTime: 9,
     tags: ["絵本","夏","読み聞かせ"],
-    relatedArticleIds: ["art-675","art-678","art-682","art-681","art-686","art-670"],
+    relatedArticleIds: ["art-675","art-678","art-682","art-681","art-686","art-684"],
   },
   {
     id: "art-156",
@@ -48014,120 +46948,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-948","art-956","art-961","art-491","art-947","art-966"],
   },
   {
-    id: "art-671",
-    slug: "book-4y-picture-book",
-    title: "4歳向け絵本おすすめ20選",
-    excerpt: "4歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。",
-    content: '',
-    stage: "early",
-    categories: ["education"],
-    source: {
-      name: "子どもの読書に関する公的情報",
-      references: [
-          {
-                "title": "読書活動推進",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "子どもの読書に関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":67,"reliability":18,"neutrality":18,"freshness":14,"ageRelevance":12,"readability":5},
-    publishedAt: "2025-04-18",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/book-4y-picture-book.jpg",
-    readingTime: 19,
-    tags: ["絵本","4歳","読み聞かせ"],
-    relatedArticleIds: ["art-680","art-672","art-685","art-679","art-673","art-1258"],
-  },
-  {
-    id: "art-672",
-    slug: "book-5y-picture-book",
-    title: "5歳向け絵本おすすめ20選",
-    excerpt: "5歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。",
-    content: '',
-    stage: "early",
-    categories: ["education"],
-    source: {
-      name: "子どもの読書に関する公的情報",
-      references: [
-          {
-                "title": "読書活動推進",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "子どもの読書に関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":76,"reliability":22,"neutrality":19,"freshness":14,"ageRelevance":11,"readability":10},
-    publishedAt: "2025-04-18",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/book-5y-picture-book.jpg",
-    readingTime: 15,
-    tags: ["絵本","5歳","読み聞かせ"],
-    relatedArticleIds: ["art-680","art-685","art-679","art-671","art-673","art-1258"],
-  },
-  {
-    id: "art-673",
-    slug: "book-6y-picture-book",
-    title: "6歳向け絵本おすすめ20選",
-    excerpt: "6歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。",
-    content: '',
-    stage: "early",
-    categories: ["education"],
-    source: {
-      name: "子どもの読書に関する公的情報",
-      references: [
-          {
-                "title": "読書活動推進",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "子どもの読書に関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":64,"reliability":16,"neutrality":18,"freshness":12,"ageRelevance":11,"readability":7},
-    publishedAt: "2025-04-18",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/book-6y-picture-book.jpg",
-    readingTime: 19,
-    tags: ["絵本","6歳","読み聞かせ"],
-    relatedArticleIds: ["art-680","art-672","art-685","art-679","art-671","art-1258"],
-  },
-  {
     id: "art-152",
     slug: "child-posture-6to9",
     title: "【6〜9歳】子どもの姿勢改善のポイントと家庭でできるサポート",
@@ -48362,120 +47182,6 @@ export const ARTICLES: Article[] = [
     relatedArticleIds: ["art-948","art-956","art-961","art-491","art-947","art-966"],
   },
   {
-    id: "art-668",
-    slug: "book-1y-picture-book",
-    title: "1歳向け絵本おすすめ20選",
-    excerpt: "1歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。",
-    content: '',
-    stage: "0stage",
-    categories: ["education"],
-    source: {
-      name: "子どもの読書に関する公的情報",
-      references: [
-          {
-                "title": "読書活動推進",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "子どもの読書に関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":71,"reliability":15,"neutrality":25,"freshness":13,"ageRelevance":13,"readability":5},
-    publishedAt: "2025-04-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/book-1y-picture-book.jpg",
-    readingTime: 13,
-    tags: ["絵本","1歳","読み聞かせ"],
-    relatedArticleIds: ["art-1233","art-674","art-667","art-675","art-680","art-678"],
-  },
-  {
-    id: "art-669",
-    slug: "book-2y-picture-book",
-    title: "2歳向け絵本おすすめ20選",
-    excerpt: "2歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。",
-    content: '',
-    stage: "pre",
-    categories: ["education"],
-    source: {
-      name: "子どもの読書に関する公的情報",
-      references: [
-          {
-                "title": "読書活動推進",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "子どもの読書に関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":68,"reliability":16,"neutrality":18,"freshness":15,"ageRelevance":10,"readability":9},
-    publishedAt: "2025-04-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/book-2y-picture-book.jpg",
-    readingTime: 15,
-    tags: ["絵本","2歳","読み聞かせ"],
-    relatedArticleIds: ["art-675","art-678","art-676","art-682","art-681","art-686"],
-  },
-  {
-    id: "art-670",
-    slug: "book-3y-picture-book",
-    title: "3歳向け絵本おすすめ20選",
-    excerpt: "3歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。",
-    content: '',
-    stage: "pre",
-    categories: ["education"],
-    source: {
-      name: "子どもの読書に関する公的情報",
-      references: [
-          {
-                "title": "読書活動推進",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "子どもの読書に関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":75,"reliability":17,"neutrality":18,"freshness":20,"ageRelevance":11,"readability":9},
-    publishedAt: "2025-04-17",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/book-3y-picture-book.jpg",
-    readingTime: 9,
-    tags: ["絵本","3歳","読み聞かせ"],
-    relatedArticleIds: ["art-675","art-678","art-676","art-682","art-681","art-686"],
-  },
-  {
     id: "art-149",
     slug: "child-obesity-6to9",
     title: "【6〜9歳】子どもの肥満のポイントと家庭でできるサポート",
@@ -48702,44 +47408,6 @@ export const ARTICLES: Article[] = [
     readingTime: 12,
     tags: ["読書","デジタル"],
     relatedArticleIds: ["art-964","art-950","art-500","art-488","art-1040","art-494"],
-  },
-  {
-    id: "art-667",
-    slug: "book-0y-picture-book",
-    title: "0歳向け絵本おすすめ20選",
-    excerpt: "0歳におすすめの絵本を厳選して紹介します。選び方のポイントと読み聞かせのコツも解説。",
-    content: '',
-    stage: "0stage",
-    categories: ["education"],
-    source: {
-      name: "子どもの読書に関する公的情報",
-      references: [
-          {
-                "title": "読書活動推進",
-                "url": "https://www.mext.go.jp/",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "子どもの読書に関する情報",
-                "url": "https://www.cfa.go.jp/",
-                "org": "こども家庭庁",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "公的機関のガイドラインや研究データに基づいた信頼性の高い情報です。",
-          "neutral": "お子さんの状況は個人差が大きいため、あくまで一般的な目安としてご参照ください。",
-          "cautious": "お子さんの状況は一人ひとり異なります。この記事の情報は一般的な内容であり、個別の判断は専門家にご相談ください。"
-    },
-    },
-    score: {"total":64,"reliability":23,"neutrality":14,"freshness":12,"ageRelevance":10,"readability":5},
-    publishedAt: "2025-04-16",
-    updatedAt: "2026-03-09",
-    imageUrl: "/articles/book-0y-picture-book.jpg",
-    readingTime: 16,
-    tags: ["絵本","0歳","読み聞かせ"],
-    relatedArticleIds: ["art-1233","art-668","art-674","art-675","art-680","art-678"],
   },
   {
     id: "art-665",
@@ -49347,7 +48015,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/method-sex-education-child.jpg",
     readingTime: 15,
     tags: ["性教育","教育法","家庭教育"],
-    relatedArticleIds: ["art-936","art-937","art-935","art-016","art-369","art-943"],
+    relatedArticleIds: ["art-936","art-937","art-935","art-016","art-943","art-946"],
   },
   {
     id: "art-661",
@@ -50259,7 +48927,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/method-inquiry-based-learning.jpg",
     readingTime: 9,
     tags: ["探究","教育法","家庭教育"],
-    relatedArticleIds: ["art-945","art-936","art-935","art-016","art-369","art-943"],
+    relatedArticleIds: ["art-945","art-936","art-935","art-016","art-943","art-946"],
   },
   {
     id: "art-936",
@@ -50297,7 +48965,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/method-project-based-learning.jpg",
     readingTime: 18,
     tags: ["PBL","教育法","家庭教育"],
-    relatedArticleIds: ["art-945","art-937","art-935","art-016","art-369","art-943"],
+    relatedArticleIds: ["art-945","art-937","art-935","art-016","art-943","art-946"],
   },
   {
     id: "art-652",
@@ -50563,7 +49231,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/method-cooperative-learning.jpg",
     readingTime: 14,
     tags: ["協同学習","教育法","家庭教育"],
-    relatedArticleIds: ["art-945","art-936","art-937","art-016","art-369","art-943"],
+    relatedArticleIds: ["art-945","art-936","art-937","art-016","art-943","art-946"],
   },
   {
     id: "art-933",
@@ -50905,7 +49573,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/method-glen-doman.jpg",
     readingTime: 9,
     tags: ["ドーマン","教育法","家庭教育"],
-    relatedArticleIds: ["art-943","art-946","art-945","art-933","art-361","art-927"],
+    relatedArticleIds: ["art-943","art-946","art-945","art-1350","art-1348","art-933"],
   },
   {
     id: "art-930",
@@ -53185,7 +51853,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/child-independence-guide.jpg",
     readingTime: 8,
     tags: ["自立","生活スキル","成長"],
-    relatedArticleIds: ["art-229","art-206","art-228","art-194","art-1332","art-1078"],
+    relatedArticleIds: ["art-206","art-194","art-1332","art-1078","art-734","art-720"],
   },
   {
     id: "art-106",
@@ -53528,150 +52196,6 @@ export const ARTICLES: Article[] = [
     readingTime: 10,
     tags: ["歯","対処法","受診目安"],
     relatedArticleIds: ["art-623","art-649","art-624","art-622","art-627","art-628"],
-  },
-  {
-    id: "art-236",
-    slug: "child-development-age-10",
-    title: "10歳児の発達と成長：「10歳の壁」と思春期の入口を理解する",
-    excerpt: "10歳の子どもの身体・認知・社会性の発達特徴と、いわゆる「10歳の壁」の乗り越え方、思春期の始まりへの対応をまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "学校保健統計調査（発育・体力）",
-                "url": "https://www.mext.go.jp/b_menu/toukei/chousa05/hoken/1268826.htm",
-                "org": "文部科学省",
-                "stance": "neutral"
-          },
-          {
-                "title": "子どもの心の診療に関する情報",
-                "url": "https://www.ncchd.go.jp/",
-                "org": "国立成育医療研究センター",
-                "stance": "neutral"
-          },
-          {
-                "title": "生徒指導提要",
-                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1404008.htm",
-                "org": "文部科学省",
-                "stance": "positive"
-          },
-          {
-                "title": "全国学力・学習状況調査",
-                "url": "https://www.nier.go.jp/kaihatsu/zenkokugakuryoku.html",
-                "org": "国立教育政策研究所",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "10歳は抽象的思考が発達し始め、知的好奇心が大きく広がる時期です。",
-          "neutral": "「10歳の壁」は多くの子に見られますが、その表れ方や深刻度は個人差が大きいです。",
-          "cautious": "この時期の自己肯定感の低下は、その後の思春期・青年期のメンタルヘルスにも影響する可能性があります。"
-    },
-    },
-    score: {"total":88,"reliability":28,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
-    publishedAt: "2025-04-01",
-    updatedAt: "2026-03-11",
-    imageUrl: "/articles/child-development-age-10.jpg",
-    readingTime: 14,
-    tags: ["10歳","10歳の壁","思春期","反抗期","発達","小学4年生"],
-    relatedArticleIds: ["art-237","art-235","art-056","art-426","art-238","art-746"],
-  },
-  {
-    id: "art-237",
-    slug: "child-development-age-11",
-    title: "11歳児の発達と成長：反抗期・友達関係・勉強への向き合い方",
-    excerpt: "11歳（小学5年生）の子どもの発達特徴と、反抗期の対応、複雑化する友人関係、学力格差への対処法をまとめました。",
-    content: '',
-    stage: "upper",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "学校保健統計調査",
-                "url": "https://www.mext.go.jp/b_menu/toukei/chousa05/hoken/1268826.htm",
-                "org": "文部科学省",
-                "stance": "neutral"
-          },
-          {
-                "title": "子どもの心の診療に関する情報",
-                "url": "https://www.ncchd.go.jp/",
-                "org": "国立成育医療研究センター",
-                "stance": "neutral"
-          },
-          {
-                "title": "児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査",
-                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1302902.htm",
-                "org": "文部科学省",
-                "stance": "neutral"
-          }
-    ],
-      perspectives: {
-          "positive": "11歳は知的能力が飛躍的に伸び、大人と対等な議論ができるようになる時期です。",
-          "neutral": "反抗期の表れ方は個人差が大きく、「反抗しない＝問題ない」とは限りません。",
-          "cautious": "この時期の不登校やいじめの増加は統計的にも示されており、注意深い見守りが必要です。"
-    },
-    },
-    score: {"total":87,"reliability":27,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
-    publishedAt: "2025-04-01",
-    updatedAt: "2026-03-11",
-    imageUrl: "/articles/child-development-age-11.jpg",
-    readingTime: 14,
-    tags: ["11歳","反抗期","思春期","小学5年生","友達関係"],
-    relatedArticleIds: ["art-236","art-238","art-056","art-433","art-200","art-746"],
-  },
-  {
-    id: "art-238",
-    slug: "child-development-age-12",
-    title: "12歳児の発達と成長：小学校最終学年、中学進学への準備と自立",
-    excerpt: "12歳（小学6年生）の発達特徴と、中学進学への心構え、思春期の深まり、親の関わり方の転換期について解説します。",
-    content: '',
-    stage: "upper",
-    categories: ["development"],
-    source: {
-      name: "子どもの発達に関する公的情報",
-      references: [
-          {
-                "title": "学校保健統計調査",
-                "url": "https://www.mext.go.jp/b_menu/toukei/chousa05/hoken/1268826.htm",
-                "org": "文部科学省",
-                "stance": "neutral"
-          },
-          {
-                "title": "児童生徒の問題行動・不登校等に関する調査",
-                "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1302902.htm",
-                "org": "文部科学省",
-                "stance": "neutral"
-          },
-          {
-                "title": "子どもの心の診療に関する情報",
-                "url": "https://www.ncchd.go.jp/",
-                "org": "国立成育医療研究センター",
-                "stance": "neutral"
-          },
-          {
-                "title": "思春期の健康に関する情報",
-                "url": "https://www.mhlw.go.jp/kokoro/youth/",
-                "org": "厚生労働省",
-                "stance": "positive"
-          }
-    ],
-      perspectives: {
-          "positive": "12歳は抽象的思考が成熟し始め、将来の可能性が大きく広がる時期です。",
-          "neutral": "中学進学への不安は多くの子にありますが、その程度や表れ方は一人ひとり異なります。",
-          "cautious": "中1ギャップは実在する課題であり、小学校卒業前からの準備とフォローが重要です。"
-    },
-    },
-    score: {"total":87,"reliability":27,"neutrality":24,"freshness":17,"ageRelevance":13,"readability":6},
-    publishedAt: "2025-04-01",
-    updatedAt: "2026-03-11",
-    imageUrl: "/articles/child-development-age-12.jpg",
-    readingTime: 14,
-    tags: ["12歳","小学6年生","中学進学","思春期","反抗期","中1ギャップ"],
-    relatedArticleIds: ["art-237","art-056","art-373","art-007","art-236","art-200"],
   },
   {
     id: "art-999",
@@ -54177,7 +52701,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/friendship-trouble-9to12.jpg",
     readingTime: 13,
     tags: ["友達トラブル","いじめ","仲間外れ","LINE","小学校高学年"],
-    relatedArticleIds: ["art-013","art-236","art-237","art-039","art-426","art-050"],
+    relatedArticleIds: ["art-013","art-1347","art-1347","art-039","art-426","art-050"],
   },
   {
     id: "art-426",
@@ -54221,7 +52745,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/self-esteem-9to12.jpg",
     readingTime: 12,
     tags: ["自己肯定感","小学校高学年","メンタルケア","自信"],
-    relatedArticleIds: ["art-014","art-236","art-237","art-440","art-433","art-411"],
+    relatedArticleIds: ["art-014","art-1347","art-1347","art-440","art-433","art-411"],
   }
 ];
 

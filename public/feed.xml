@@ -6,7 +6,49 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 10 May 2026 21:52:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 01:06:43 GMT</lastBuildDate>
+    <item>
+      <title>年齢別おもちゃの選び方完全ガイド：0歳〜6歳まで発達に合わせて</title>
+      <link>https://012.kids/articles/age-appropriate-toy-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/age-appropriate-toy-guide</guid>
+      <description>0歳から6歳までの年齢別おもちゃの選び方を、発達段階に合わせて整理。安全性・遊びの広がり・知育効果の観点から具体例も紹介します。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>生後2ヶ月〜11ヶ月の赤ちゃんの発達まとめ：月齢別ポイント完全ガイド</title>
+      <link>https://012.kids/articles/baby-development-by-month</link>
+      <guid isPermaLink="true">https://012.kids/articles/baby-development-by-month</guid>
+      <description>生後2ヶ月から11ヶ月までの赤ちゃんの発達を月齢別に整理。身体・知能・情緒の目安、関わり方のポイント、相談すべきサインを公的データに基づいてまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>2歳〜12歳の子どもの発達まとめ：年齢別ポイント完全ガイド</title>
+      <link>https://012.kids/articles/child-development-by-age</link>
+      <guid isPermaLink="true">https://012.kids/articles/child-development-by-age</guid>
+      <description>2歳から12歳までの子どもの発達を年齢別に整理。身体・認知・社会性・情緒の目安と、その年齢ならではの関わり方のポイントを公的データに基づいてまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>小学校6年間の学校生活ガイド：学年別の特徴と家庭サポート</title>
+      <link>https://012.kids/articles/elementary-school-life-by-grade</link>
+      <guid isPermaLink="true">https://012.kids/articles/elementary-school-life-by-grade</guid>
+      <description>小1から小6までの学年別に学校生活の特徴、学習内容、友達関係の変化、家庭でのサポートポイントを公的情報をもとにまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育園 年齢別クラス生活ガイド：0歳〜2歳の発達と園での過ごし方</title>
+      <link>https://012.kids/articles/nursery-school-life-by-age</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-school-life-by-age</guid>
+      <description>0歳児・1歳児・2歳児クラスの保育園生活を年齢別に整理。1日の流れ、発達の特徴、家庭と園の連携ポイントを公的情報をもとにまとめました。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>年齢別 絵本の選び方完全ガイド：0歳〜6歳まで発達に合わせて</title>
+      <link>https://012.kids/articles/picture-books-by-age</link>
+      <guid isPermaLink="true">https://012.kids/articles/picture-books-by-age</guid>
+      <description>0歳から6歳までの年齢別に、絵本選びのポイントとおすすめジャンルを整理。読み聞かせの効果と進め方のコツも公的情報をもとに解説します。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>学童での宿題はどこまでやる？家庭学習との両立のコツ</title>
       <link>https://012.kids/articles/afterschool-homework-support</link>
@@ -173,48 +215,6 @@
       <link>https://012.kids/articles/chiyoda-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/chiyoda-gakudo-guide</guid>
       <description>千代田区の学童クラブと放課後子ども教室の仕組み、対象学年、利用料、申込スケジュール、独自の子育て支援を整理しました。</description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>江戸川区の学童保育（すくすくスクール）ガイド：制度の特徴と独自支援</title>
-      <link>https://012.kids/articles/edogawa-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/edogawa-gakudo-guide</guid>
-      <description>江戸川区の放課後児童施策「すくすくスクール」の仕組みと、独自の子育て支援制度を整理。共働き家庭の保活・引越し検討に役立つ情報をまとめました。</description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>板橋区の学童保育「あいキッズ」ガイド：全児童型統合運営の実情</title>
-      <link>https://012.kids/articles/itabashi-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/itabashi-gakudo-guide</guid>
-      <description>板橋区の「あいキッズ」（全児童型放課後事業）の仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。</description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>葛飾区の学童保育「わくわくチャレンジ広場」ガイド</title>
-      <link>https://012.kids/articles/katsushika-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/katsushika-gakudo-guide</guid>
-      <description>葛飾区の学童保育クラブと「わくわくチャレンジ広場」の仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。</description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>江東区の学童保育「江東きっずクラブ」ガイド：湾岸エリア急増の実情</title>
-      <link>https://012.kids/articles/koto-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/koto-gakudo-guide</guid>
-      <description>江東区の学童クラブと「江東きっずクラブ」（A・B登録制）の仕組み、対象学年、利用料、申込スケジュールを整理。湾岸エリアの保活事情も解説します。</description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>港区の学童保育（学童クラブ）ガイド：制度・利用料・小1の壁対策</title>
-      <link>https://012.kids/articles/minato-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/minato-gakudo-guide</guid>
-      <description>港区の放課後児童クラブの仕組み、対象学年、利用料、申込スケジュールを整理。子育て予算が23区トップクラスの港区での「小1の壁」対策に役立つ情報をまとめました。</description>
-      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>中野区の学童保育（学童クラブ・キッズ・プラザ）ガイド</title>
-      <link>https://012.kids/articles/nakano-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/nakano-gakudo-guide</guid>
-      <description>中野区の学童クラブとキッズ・プラザの仕組み、対象学年、利用料、申込スケジュールを整理。共働き家庭の保活・小1の壁対策に。</description>
       <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
