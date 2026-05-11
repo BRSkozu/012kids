@@ -166,13 +166,14 @@ export function getSeasonalScore(
     }
   }
 
-  // 反シーズン語が含まれていたら大幅減点（季節外しを除外）
+  // 反シーズン語が含まれていたら絶対除外レベルで減点
+  // （加点が大きい記事でも確実にフィルタから外れるよう -1000 を適用）
   const seasonKey = getSeasonKey(theme);
   const antiKeywords = ANTI_SEASON_KEYWORDS[seasonKey] ?? [];
   const haystack = `${articleTitle} ${articleTags.join(' ')}`;
   for (const anti of antiKeywords) {
     if (haystack.includes(anti)) {
-      score -= 10;
+      score -= 1000;
     }
   }
 
