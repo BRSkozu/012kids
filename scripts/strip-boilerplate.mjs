@@ -1,20 +1,22 @@
 #!/usr/bin/env node
 /**
- * Strip the generic auto-generated "見解を比較" boilerplate from
- * the article body.
+ * Strip the "## 各機関の見解を比較" / "### 見解の詳細" section from
+ * the article body, regardless of whether the content is the auto-generated
+ * placeholder or topic-specific text.
  *
- * The same exact text appears in 838+ articles, providing no per-article
- * value. The general E-E-A-T disclaimer it conveys belongs on the
- * editorial-policy page, not in every article.
+ * Rationale:
+ *   - Even when content is topic-specific, the same section structure
+ *     repeats in every article and the "見解の詳細" subsection duplicates
+ *     the table immediately above.
+ *   - The 3-perspective information is preserved in the frontmatter
+ *     `perspectives:` field and is rendered separately by the article
+ *     page UI (more compactly).
  *
  * What this removes:
  *   - The "## 各機関の見解を比較" section
- *   - The same-text table (積極的 / 中立的 / 慎重派 with placeholder rows)
- *   - The "### 見解の詳細" subsection with the 3 paragraphs of placeholders
+ *   - The 立場/機関/見解の要旨 table
+ *   - The "### 見解の詳細" subsection with the 3 paragraph repeats
  *   - The trailing `---` delimiter
- *
- * It leaves untouched any article that does NOT contain the canonical
- * placeholder phrase ("公的機関のガイドラインや研究データに基づいた信頼性の高い情報です").
  *
  * Usage:
  *   node scripts/strip-boilerplate.mjs            # apply
@@ -29,8 +31,6 @@ const CONTENT_DIR = path.join(__dirname, '..', 'content', 'articles');
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
-
-const PLACEHOLDER_TEXT = '公的機関のガイドラインや研究データに基づいた信頼性の高い情報です';
 
 function getAllMdxFiles() {
   const files = [];
@@ -47,37 +47,24 @@ function getAllMdxFiles() {
 }
 
 /**
- * Strip the boilerplate block:
- *   - Starts at "## 各機関の見解を比較"
- *   - Ends at (and consumes) the next "---" delimiter on its own line
- *
- * Only strip when the placeholder phrase is present in the block; otherwise
- * we might destroy a manually-written 見解 section.
+ * Strip the section: from "## 各機関の見解を比較" to the next "---" on
+ * its own line. Removes everything in between regardless of content.
  */
-function stripBoilerplate(content) {
+function stripPerspectivesSection(content) {
   const startMarker = /^## 各機関の見解を比較\s*$/m;
   const match = startMarker.exec(content);
   if (!match) return { changed: false, content };
 
   const startIdx = match.index;
-  // Find the end: first "---" line after startIdx, but only within a reasonable distance
   const tail = content.slice(startIdx);
   const endMatch = /^---\s*$/m.exec(tail);
   if (!endMatch) return { changed: false, content };
 
   const block = tail.slice(0, endMatch.index + endMatch[0].length);
-  if (!block.includes(PLACEHOLDER_TEXT)) {
-    // The 見解 section here is NOT the auto-generated boilerplate.
-    return { changed: false, content };
-  }
-
-  // Remove the block and any leading/trailing blank lines around it
   const before = content.slice(0, startIdx);
-  const afterStart = startIdx + block.length;
-  let after = content.slice(afterStart);
-  // Trim leading newlines from `after` to avoid stacking blank lines
+  let after = content.slice(startIdx + block.length);
+
   after = after.replace(/^\s*\n/, '\n');
-  // Remove trailing blank lines from `before`
   const beforeTrimmed = before.replace(/\n+$/, '\n');
 
   return { changed: true, content: beforeTrimmed + after };
@@ -90,7 +77,7 @@ function run() {
 
   for (const fp of files) {
     const raw = fs.readFileSync(fp, 'utf8');
-    const { changed, content } = stripBoilerplate(raw);
+    const { changed, content } = stripPerspectivesSection(raw);
     if (changed) {
       changedCount++;
       changedFiles.push(fp);
@@ -101,7 +88,7 @@ function run() {
   }
 
   console.log(`Scanned: ${files.length} files`);
-  console.log(`Boilerplate found in: ${changedCount} files`);
+  console.log(`見解 section found in: ${changedCount} files`);
   if (DRY_RUN) {
     console.log('(dry-run — no files written)');
     for (const f of changedFiles.slice(0, 10)) {

@@ -303,23 +303,36 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Medical Alert Box for health/development articles */}
-      {(article.categories.includes('health') || article.categories.includes('development')) && (
-        <div className="mb-6 rounded-xl border-l-4 border-red-400 bg-red-50 p-4">
-          <div className="flex items-start gap-2">
-            <span className="text-red-500 text-lg leading-none mt-0.5">&#9888;</span>
-            <div>
-              <p className="text-sm font-bold text-red-800 mb-1">受診の目安</p>
-              <ul className="text-xs text-red-700 leading-relaxed space-y-0.5">
-                <li>高熱が続く・ぐったりしている・水分が取れない場合は<strong>すぐに受診</strong></li>
-                <li>症状が3日以上改善しない場合は<strong>かかりつけ医に相談</strong></li>
-                <li>夜間・休日の急な症状は<strong>#8000（子ども医療電話相談）</strong>へ</li>
-              </ul>
-              <p className="text-[11px] text-red-600 mt-2">この記事は情報提供を目的としたものであり、医療上の助言ではありません。</p>
+      {/* 緊急性のある医療・症状記事に限定した受診目安アラート */}
+      {(() => {
+        const haystack = `${article.title} ${(article.tags ?? []).join(' ')}`;
+        // 急性症状・受診判断が必要なテーマでのみ表示する
+        const emergencyKeywords = [
+          '発熱', '高熱', '熱性けいれん', 'けいれん', '嘔吐', '下痢',
+          'アレルギー反応', 'アナフィラキシー', 'ぜんそく', '喘息発作',
+          '誤飲', '誤嚥', 'ケガ', '転倒', 'やけど', '中毒',
+          '感染症', 'インフルエンザ', 'ノロ', 'RS', 'ウイルス',
+          '受診', '救急', '緊急', '応急処置',
+        ];
+        const isEmergencyTopic = emergencyKeywords.some((k) => haystack.includes(k));
+        if (!isEmergencyTopic) return null;
+        return (
+          <div className="mb-6 rounded-xl border-l-4 border-red-400 bg-red-50 p-4">
+            <div className="flex items-start gap-2">
+              <span className="text-red-500 text-lg leading-none mt-0.5">&#9888;</span>
+              <div>
+                <p className="text-sm font-bold text-red-800 mb-1">受診の目安</p>
+                <ul className="text-xs text-red-700 leading-relaxed space-y-0.5">
+                  <li>高熱が続く・ぐったりしている・水分が取れない場合は<strong>すぐに受診</strong></li>
+                  <li>症状が3日以上改善しない場合は<strong>かかりつけ医に相談</strong></li>
+                  <li>夜間・休日の急な症状は<strong>#8000（子ども医療電話相談）</strong>へ</li>
+                </ul>
+                <p className="text-[11px] text-red-600 mt-2">この記事は情報提供を目的としたものであり、医療上の助言ではありません。</p>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
       {/* Share Buttons (top) */}
       <div className="mb-6">
@@ -340,6 +353,50 @@ export default async function ArticlePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 
+      {/* 3つの視点（積極的・中立的・慎重派）— 個別記事固有の見解を控えめに表示 */}
+      {article.source?.perspectives && (
+        article.source.perspectives.positive ||
+        article.source.perspectives.neutral ||
+        article.source.perspectives.cautious
+      ) && (
+        <aside className="mb-10 rounded-xl border border-[var(--color-paper-edge)] bg-[var(--color-warm-cream)]/40 p-5">
+          <h3
+            className="text-sm font-bold text-[var(--color-foreground)] mb-3 flex items-center gap-2"
+            style={{ fontFamily: 'var(--font-serif)' }}
+          >
+            <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary-dark)] font-medium">
+              編集視点
+            </span>
+            <span>3つの立場で見たこのテーマ</span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+            {article.source.perspectives.positive && (
+              <div className="rounded-lg bg-white border border-emerald-100 p-3">
+                <div className="text-[10px] font-bold text-emerald-700 mb-1.5 tracking-wider">積極的</div>
+                <p className="text-[var(--color-foreground-soft)] leading-relaxed">
+                  {article.source.perspectives.positive}
+                </p>
+              </div>
+            )}
+            {article.source.perspectives.neutral && (
+              <div className="rounded-lg bg-white border border-blue-100 p-3">
+                <div className="text-[10px] font-bold text-blue-700 mb-1.5 tracking-wider">中立的</div>
+                <p className="text-[var(--color-foreground-soft)] leading-relaxed">
+                  {article.source.perspectives.neutral}
+                </p>
+              </div>
+            )}
+            {article.source.perspectives.cautious && (
+              <div className="rounded-lg bg-white border border-amber-100 p-3">
+                <div className="text-[10px] font-bold text-amber-700 mb-1.5 tracking-wider">慎重派</div>
+                <p className="text-[var(--color-foreground-soft)] leading-relaxed">
+                  {article.source.perspectives.cautious}
+                </p>
+              </div>
+            )}
+          </div>
+        </aside>
+      )}
 
       {/* Recommended Links */}
       <RecommendedLinks links={getRecommendedLinks(article.categories, 8, article.tags)} currentSlug={article.slug} />
