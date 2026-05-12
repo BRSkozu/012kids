@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 11 May 2026 22:10:06 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 22:15:19 GMT</lastBuildDate>
+    <item>
+      <title>子どもの肥満予防ガイド：食事・運動・生活習慣の見直しポイント</title>
+      <link>https://012.kids/articles/child-obesity-prevention</link>
+      <guid isPermaLink="true">https://012.kids/articles/child-obesity-prevention</guid>
+      <description>子どもの肥満予防ガイド：食事・運動・生活習慣の見直しポイントを厚生労働省等の公的情報をもとに解説。肥満の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>鍵っ子の安全対策：GPS・見守りサービス・ルール作り</title>
+      <link>https://012.kids/articles/sho1-wall-latchkey-safety</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-latchkey-safety</guid>
+      <description>鍵っ子の安全対策：GPS・見守りサービス・ルール作りをこども家庭庁等の公的情報をもとに解説。鍵っ子の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PTA活動の負担を減らす：共働きでもできる関わり方ガイド</title>
+      <link>https://012.kids/articles/sho1-wall-pta-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-pta-guide</guid>
+      <description>PTA活動の負担を減らす：共働きでもできる関わり方ガイドを文部科学省等の公的情報をもとに解説。PTAの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>年齢別おもちゃの選び方完全ガイド：0歳〜6歳まで発達に合わせて</title>
       <link>https://012.kids/articles/age-appropriate-toy-guide</link>
@@ -43,20 +64,6 @@
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>足立区の学童保育ガイド：住区センター児童館を活用した保活</title>
-      <link>https://012.kids/articles/adachi-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/adachi-gakudo-guide</guid>
-      <description>足立区の住区センター児童館と放課後子ども教室の仕組み、対象学年、利用料、申込スケジュールを整理。家賃水準が抑えめでファミリー人気の足立区の保活事情を解説します。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>荒川区の学童保育「にこにこすくーる」ガイド：子育て先進区の保活</title>
-      <link>https://012.kids/articles/arakawa-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/arakawa-gakudo-guide</guid>
-      <description>荒川区の「にこにこすくーる」と学童クラブの仕組み、対象学年、利用料、申込スケジュールを整理。子育て施策に力を入れる荒川区の保活事情を解説します。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
       <title>バイリンガル子育てのリアル：メリット・注意点・継続のコツ</title>
       <link>https://012.kids/articles/bilingual-parenting-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/bilingual-parenting-guide</guid>
@@ -64,10 +71,17 @@
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>中央区の学童保育「プレディ」ガイド：銀座・日本橋・月島の共働き保活</title>
+      <title>文京区の学童保育 完全ガイド：教育意識の高い区で公立＋民間をどう組むか</title>
+      <link>https://012.kids/articles/bunkyo-gakudo-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/bunkyo-gakudo-guide</guid>
+      <description>文京区の学童保育を公立（育成室）と民間の両面から徹底解説。誠之・千駄木・湯島など人気学区の保活事情、料金、申込、選び方を網羅。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>中央区の学童保育 完全ガイド：プレディ＋民間で湾岸保活を乗り切る</title>
       <link>https://012.kids/articles/chuo-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/chuo-gakudo-guide</guid>
-      <description>中央区の学童クラブと放課後子ども教室「プレディ」の仕組み、対象学年、利用料、申込スケジュールを整理。再開発で子育て世帯が増える中央区の保活事情を解説します。</description>
+      <description>中央区の学童保育を公立（プレディ・学童クラブ）と民間の両面から解説。月島・勝どき・晴海など湾岸エリアの保活事情、料金内訳、申込スケジュール、選び方まで網羅。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -78,17 +92,10 @@
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>北区の学童保育「わくわく☆ひろば」ガイド：赤羽・王子エリアの保活</title>
-      <link>https://012.kids/articles/kita-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/kita-gakudo-guide</guid>
-      <description>北区の学童クラブと「わくわく☆ひろば」の仕組み、対象学年、利用料、申込スケジュールを整理。赤羽・王子・田端など多様なエリアの保活事情を解説します。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>目黒区の学童保育「ランドセル来館事業」ガイド：教育意識の高い区の保活</title>
+      <title>目黒区の学童保育 完全ガイド：教育意識の高い区で公立＋民間をどう組むか</title>
       <link>https://012.kids/articles/meguro-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/meguro-gakudo-guide</guid>
-      <description>目黒区の学童保育クラブとランドセル来館事業の仕組み、対象学年、利用料、申込スケジュールを整理。教育環境への関心が高い世帯が多い目黒区の保活事情を解説します。</description>
+      <description>目黒区の学童保育を公立（学童保育クラブ・ランドセル来館事業）と民間の両面から解説。中目黒・自由が丘・学芸大学エリアの保活事情、料金、申込、選び方を網羅。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -113,24 +120,31 @@
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>渋谷区の学童保育「放課後クラブ」ガイド：都心型運営の実情</title>
+      <title>民間学童ブランド完全比較ガイド：主要8社の特色・料金・選び方</title>
+      <link>https://012.kids/articles/private-gakudo-brands-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/private-gakudo-brands-guide</guid>
+      <description>民間（私立）学童の主要8ブランドを特色・料金・送迎・夕食・教育プログラム別に比較。公立学童との違い、選び方の判断軸、年間費用シミュレーションまで網羅した保活ガイド。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>渋谷区の学童保育 完全ガイド：放課後クラブ＋民間で都心型保活</title>
       <link>https://012.kids/articles/shibuya-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/shibuya-gakudo-guide</guid>
-      <description>渋谷区の放課後クラブ（全児童型）の仕組み、対象学年、利用料、申込スケジュールを整理。都心型住宅と教育環境のバランスを解説します。</description>
+      <description>渋谷区の学童保育を公立（放課後クラブ）と民間の両面から徹底解説。恵比寿・代々木・原宿・笹塚エリアの保活事情、料金、申込、選び方を網羅。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>台東区の学童保育ガイド：上野・浅草・谷中エリアの保活事情</title>
+      <title>新宿区の学童保育 完全ガイド：公立＋民間で都心通勤ファミリーの保活</title>
+      <link>https://012.kids/articles/shinjuku-gakudo-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/shinjuku-gakudo-guide</guid>
+      <description>新宿区の学童保育を公立（学童クラブ・放課後子どもひろば）と民間の両面から解説。新宿駅周辺・落合・四谷・牛込エリアの保活事情、料金、申込、選び方を網羅。</description>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>台東区の学童保育 完全ガイド：下町コミュニティで公立＋民間をどう組むか</title>
       <link>https://012.kids/articles/taito-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/taito-gakudo-guide</guid>
-      <description>台東区の学童クラブの仕組み、対象学年、利用料、申込スケジュールを整理。上野・浅草・谷根千など下町情緒のあるエリアの子育て事情を解説します。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>豊島区の学童保育「子どもスキップ」ガイド：池袋を中心とした保活</title>
-      <link>https://012.kids/articles/toshima-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/toshima-gakudo-guide</guid>
-      <description>豊島区の学童クラブと「子どもスキップ」の仕組み、対象学年、利用料、申込スケジュールを整理。池袋・巣鴨・大塚など多彩なエリアの保活事情を解説します。</description>
+      <description>台東区の学童保育を公立と民間の両面から徹底解説。上野・浅草・谷中など下町情緒のあるエリアの保活事情、料金、申込、選び方を網羅。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -201,20 +215,6 @@
       <link>https://012.kids/articles/spring-kindergarten-start</link>
       <guid isPermaLink="true">https://012.kids/articles/spring-kindergarten-start</guid>
       <description>幼稚園入園直後の子どもの様子：泣く・行きたがらないへの対応を文部科学省等の公的情報をもとに解説。幼稚園の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>学童保育の安全管理：送迎・防犯・災害時の対応</title>
-      <link>https://012.kids/articles/afterschool-care-safety</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-safety</guid>
-      <description>学童保育の安全管理：送迎・防犯・災害時の対応を厚生労働省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>学童の待機児童問題：入れなかったときの代替案と対策</title>
-      <link>https://012.kids/articles/afterschool-care-waiting</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-waiting</guid>
-      <description>学童の待機児童問題：入れなかったときの代替案と対策を厚生労働省等の公的情報をもとに解説。待機児童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
       <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
