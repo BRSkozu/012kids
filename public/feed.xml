@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 13 May 2026 03:42:08 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 22:17:21 GMT</lastBuildDate>
+    <item>
+      <title>小1の朝の支度：自分でできる子に育てる段階的サポート</title>
+      <link>https://012.kids/articles/sho1-wall-morning-support</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-morning-support</guid>
+      <description>小1の朝の支度：自分でできる子に育てる段階的サポートを文部科学省等の公的情報をもとに解説。朝の支度の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ギフテッドの子どもの理解とサポート：才能を伸ばす環境づくり</title>
+      <link>https://012.kids/articles/gifted-child-support</link>
+      <guid isPermaLink="true">https://012.kids/articles/gifted-child-support</guid>
+      <description>ギフテッドの子どもの理解とサポート：才能を伸ばす環境づくりを文部科学省等の公的情報をもとに解説。ギフテッドの基礎知識から家庭でできる対応、相談先まで9〜10歳の保護者向けにまとめました。</description>
+      <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>小1から始める学習習慣：無理なく続く勉強のリズムづくり</title>
+      <link>https://012.kids/articles/sho1-wall-study-start</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-study-start</guid>
+      <description>小1から始める学習習慣：無理なく続く勉強のリズムづくりを文部科学省等の公的情報をもとに解説。学習習慣の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>子どもの肥満予防ガイド：食事・運動・生活習慣の見直しポイント</title>
       <link>https://012.kids/articles/child-obesity-prevention</link>
@@ -194,27 +215,6 @@
       <link>https://012.kids/articles/child-anxiety-symptoms</link>
       <guid isPermaLink="true">https://012.kids/articles/child-anxiety-symptoms</guid>
       <description>子どもの不安症状チェックリスト：見逃しやすいサインと対応法を国立成育医療研究センター等の公的情報をもとに解説。不安の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>親子の会話力を高める方法：「聞く」「伝える」の基本テクニック</title>
-      <link>https://012.kids/articles/parent-child-talk-skills</link>
-      <guid isPermaLink="true">https://012.kids/articles/parent-child-talk-skills</guid>
-      <description>親子の会話力を高める方法：「聞く」「伝える」の基本テクニックを文部科学省等の公的情報をもとに解説。会話の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>ポジティブなしつけの実践法：叱らずに伝わる声かけテクニック</title>
-      <link>https://012.kids/articles/positive-discipline-methods</link>
-      <guid isPermaLink="true">https://012.kids/articles/positive-discipline-methods</guid>
-      <description>ポジティブなしつけの実践法：叱らずに伝わる声かけテクニックをこども家庭庁等の公的情報をもとに解説。しつけの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>幼稚園入園直後の子どもの様子：泣く・行きたがらないへの対応</title>
-      <link>https://012.kids/articles/spring-kindergarten-start</link>
-      <guid isPermaLink="true">https://012.kids/articles/spring-kindergarten-start</guid>
-      <description>幼稚園入園直後の子どもの様子：泣く・行きたがらないへの対応を文部科学省等の公的情報をもとに解説。幼稚園の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
       <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
