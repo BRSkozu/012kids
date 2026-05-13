@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-05-11",
-    "totalGenerated": 87
+    "lastGeneratedAt": "2026-05-12",
+    "totalGenerated": 90
   },
   "pools": {
     "seasonal": {
@@ -5078,6 +5078,9 @@
     "family-rules-creation",
     "pocket-money-education",
     "disaster-prep-family",
-    "growth-milestone-chart"
+    "growth-milestone-chart",
+    "sho1-wall-pta-guide",
+    "child-obesity-prevention",
+    "sho1-wall-latchkey-safety"
   ]
 }

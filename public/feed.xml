@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 13 May 2026 02:54:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 03:42:08 GMT</lastBuildDate>
+    <item>
+      <title>子どもの肥満予防ガイド：食事・運動・生活習慣の見直しポイント</title>
+      <link>https://012.kids/articles/child-obesity-prevention</link>
+      <guid isPermaLink="true">https://012.kids/articles/child-obesity-prevention</guid>
+      <description>子どもの肥満予防ガイド：食事・運動・生活習慣の見直しポイントを厚生労働省等の公的情報をもとに解説。肥満の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>鍵っ子の安全対策：GPS・見守りサービス・ルール作り</title>
+      <link>https://012.kids/articles/sho1-wall-latchkey-safety</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-latchkey-safety</guid>
+      <description>鍵っ子の安全対策：GPS・見守りサービス・ルール作りをこども家庭庁等の公的情報をもとに解説。鍵っ子の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PTA活動の負担を減らす：共働きでもできる関わり方ガイド</title>
+      <link>https://012.kids/articles/sho1-wall-pta-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-pta-guide</guid>
+      <description>PTA活動の負担を減らす：共働きでもできる関わり方ガイドを文部科学省等の公的情報をもとに解説。PTAの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>年齢別おもちゃの選び方完全ガイド：0歳〜6歳まで発達に合わせて</title>
       <link>https://012.kids/articles/age-appropriate-toy-guide</link>
@@ -194,27 +215,6 @@
       <link>https://012.kids/articles/spring-kindergarten-start</link>
       <guid isPermaLink="true">https://012.kids/articles/spring-kindergarten-start</guid>
       <description>幼稚園入園直後の子どもの様子：泣く・行きたがらないへの対応を文部科学省等の公的情報をもとに解説。幼稚園の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>学童保育の安全管理：送迎・防犯・災害時の対応</title>
-      <link>https://012.kids/articles/afterschool-care-safety</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-safety</guid>
-      <description>学童保育の安全管理：送迎・防犯・災害時の対応を厚生労働省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>学童の待機児童問題：入れなかったときの代替案と対策</title>
-      <link>https://012.kids/articles/afterschool-care-waiting</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-waiting</guid>
-      <description>学童の待機児童問題：入れなかったときの代替案と対策を厚生労働省等の公的情報をもとに解説。待機児童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>新学期の保護者ネットワーク：ママ友・パパ友づくりの第一歩</title>
-      <link>https://012.kids/articles/spring-parent-network</link>
-      <guid isPermaLink="true">https://012.kids/articles/spring-parent-network</guid>
-      <description>新学期の保護者ネットワーク：ママ友・パパ友づくりの第一歩を文部科学省等の公的情報をもとに解説。保護者の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
       <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
