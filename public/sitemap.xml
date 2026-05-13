@@ -159,25 +159,25 @@
   </url>
   <url>
     <loc>https://012.kids/experts</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://012.kids/about</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://012.kids/editorial-policy</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://012.kids/contact</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -186,434 +186,180 @@
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>年齢別おもちゃの選び方完全ガイド：0歳〜6歳まで発達に合わせて</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/baby-development-by-month</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>生後2ヶ月〜11ヶ月の赤ちゃんの発達まとめ：月齢別ポイント完全ガイド</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/child-development-by-age</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>2歳〜12歳の子どもの発達まとめ：年齢別ポイント完全ガイド</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/growth-milestone-chart</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>子どもの発達マイルストーン一覧：0歳〜12歳の成長の目安</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/independence-by-age</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>年齢別・子どもの自立ステップ：「自分でできる」を増やす見守り方</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://012.kids/articles/adachi-gakudo-guide</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>足立区の学童保育ガイド：住区センター児童館を活用した保活</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://012.kids/articles/arakawa-gakudo-guide</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>荒川区の学童保育「にこにこすくーる」ガイド：子育て先進区の保活</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/bilingual-parenting-guide</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>バイリンガル子育てのリアル：メリット・注意点・継続のコツ</news:title>
-    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/bunkyo-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/chuo-gakudo-guide</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>中央区の学童保育「プレディ」ガイド：銀座・日本橋・月島の共働き保活</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/elementary-school-life-by-grade</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>小学校6年間の学校生活ガイド：学年別の特徴と家庭サポート</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://012.kids/articles/kita-gakudo-guide</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>北区の学童保育「わくわく☆ひろば」ガイド：赤羽・王子エリアの保活</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/meguro-gakudo-guide</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>目黒区の学童保育「ランドセル来館事業」ガイド：教育意識の高い区の保活</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/nursery-school-life-by-age</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>保育園 年齢別クラス生活ガイド：0歳〜2歳の発達と園での過ごし方</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/picture-books-by-age</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>年齢別 絵本の選び方完全ガイド：0歳〜6歳まで発達に合わせて</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/pocket-money-education</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>お小遣いの始め方ガイド：金額の目安と金銭感覚の育て方</news:title>
-    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/private-gakudo-brands-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/shibuya-gakudo-guide</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>渋谷区の学童保育「放課後クラブ」ガイド：都心型運営の実情</news:title>
-    </news:news>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/shinjuku-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/taito-gakudo-guide</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>台東区の学童保育ガイド：上野・浅草・谷中エリアの保活事情</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://012.kids/articles/toshima-gakudo-guide</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>豊島区の学童保育「子どもスキップ」ガイド：池袋を中心とした保活</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/disaster-prep-family</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>家族の防災準備ガイド：子連れ避難の持ち物と避難計画</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/family-rules-creation</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>家庭のルールづくりガイド：年齢に合ったルールと守らせるコツ</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sho1-wall-schedule-gap</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11</news:publication_date>
-      <news:title>保育園と小学校のスケジュールの違い：時間のギャップを埋める方法</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/afterschool-homework-support</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>学童での宿題はどこまでやる？家庭学習との両立のコツ</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sho1-wall-overview</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>「小1の壁」とは？共働き家庭が直面する7つの課題と乗り越え方</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/afterschool-care-friendships</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>学童での友だちトラブル：親ができるサポートと声かけ</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/child-anxiety-symptoms</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>子どもの不安症状チェックリスト：見逃しやすいサインと対応法</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/parent-child-talk-skills</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>親子の会話力を高める方法：「聞く」「伝える」の基本テクニック</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/positive-discipline-methods</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>ポジティブなしつけの実践法：叱らずに伝わる声かけテクニック</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/spring-kindergarten-start</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>幼稚園入園直後の子どもの様子：泣く・行きたがらないへの対応</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/afterschool-care-safety</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>学童保育の安全管理：送迎・防犯・災害時の対応</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/afterschool-care-waiting</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>学童の待機児童問題：入れなかったときの代替案と対策</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/spring-parent-network</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>新学期の保護者ネットワーク：ママ友・パパ友づくりの第一歩</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/spring-outdoor-nature</loc>
@@ -682,14 +428,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://012.kids/articles/adachi-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://012.kids/articles/afterschool-care-choosing-guide</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://012.kids/articles/bunkyo-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <loc>https://012.kids/articles/arakawa-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -701,67 +453,67 @@
   </url>
   <url>
     <loc>https://012.kids/articles/edogawa-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/itabashi-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/katsushika-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/kita-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/koto-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/minato-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/nakano-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/nerima-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/ota-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/setagaya-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/shinagawa-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://012.kids/articles/shinjuku-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -779,13 +531,13 @@
   </url>
   <url>
     <loc>https://012.kids/articles/suginami-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://012.kids/articles/sumida-gakudo-guide</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -798,6 +550,12 @@
   <url>
     <loc>https://012.kids/articles/tokyo-23ku-gakudo-overview</loc>
     <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://012.kids/articles/toshima-gakudo-guide</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
