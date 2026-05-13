@@ -82,6 +82,7 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#C66B1F" />
+        <meta name="google-site-verification" content="XUoTiWwEDWBijfLP_9OdQhfdDoUWkoRYObVdfu6P8FU" />
         {/* AI/LLM crawler discovery */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
         <meta name="ai-content-declaration" content="human-authored, AI-assisted editing" />
