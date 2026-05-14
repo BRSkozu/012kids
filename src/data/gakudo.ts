@@ -78,6 +78,51 @@ export interface GakudoWardData {
   gradeRange?: string;
   /** 補足メモ（編集者の短評） */
   notes?: string;
+  /**
+   * 区が直営・運営する主な児童館・児童センター・学童クラブの一覧。
+   * 区公式サイトに個別ページが存在するもののみ掲載する。
+   */
+  publicFacilities?: GakudoPublicFacility[];
+  /**
+   * 区内（または隣接駅徒歩圏）に拠点を持つ民間学童ブランド。
+   * ブランド公式の拠点ページ URL が確認できたもののみ掲載する。
+   */
+  privateProviders?: GakudoPrivateProvider[];
+}
+
+/**
+ * 区が直営する児童館・児童センター等に併設された学童クラブの個別施設情報。
+ */
+export interface GakudoPublicFacility {
+  /** 施設名（学童クラブ名を含めて表示するのが望ましい） */
+  name: string;
+  /** 施設種別 */
+  type: '児童館' | '児童センター' | 'わんぱくひろば' | '学童クラブ分室' | 'その他';
+  /** 所在エリア（町名等。区内位置の目安として） */
+  area?: string;
+  /** 区公式サイトの当該施設ページ URL */
+  url: string;
+  /** 補足（同居施設、最寄駅、特徴等） */
+  notes?: string;
+}
+
+/**
+ * 区内に拠点を持つ民間学童ブランドの個別拠点情報。
+ * 「区委託の民間運営」は notes に明記する。
+ */
+export interface GakudoPrivateProvider {
+  /** ブランド名（例: ベネッセ学童クラブ） */
+  brand: string;
+  /** 拠点名・校舎名（例: 内神田校） */
+  location: string;
+  /** ブランド公式の拠点ページ URL */
+  url: string;
+  /** 運営会社（任意） */
+  operator?: string;
+  /** 区委託の場合 true。完全民間は false / 未指定 */
+  contractedWithWard?: boolean;
+  /** 補足（料金特徴、対象学年、運営形態等） */
+  notes?: string;
 }
 
 export const GAKUDO_DATA: GakudoWardData[] = [
@@ -90,11 +135,80 @@ export const GAKUDO_DATA: GakudoWardData[] = [
     highlights: ["子育て予算手厚い", "都心アクセス◎", "住居費トップ級"],
     crestPath: '/ward-crests/chiyoda.svg',
     articleSlug: 'chiyoda-gakudo-guide',
-    officialUrl: 'https://www.city.chiyoda.lg.jp/',
+    officialUrl: 'https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/gakudo.html',
     monthlyFee: '4,000〜6,000円目安',
     weekdayEnd: '18:00（延長19:00）',
     gradeRange: '小1〜小3（学童）',
     notes: '人口規模が小さく独自支援が手厚い区',
+    publicFacilities: [
+      {
+        name: '一番町児童館（一番町学童クラブ）',
+        type: '児童館',
+        area: '一番町',
+        url: 'https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/ichiran/1bancho.html',
+        notes: '麹町駅徒歩圏。番町・麹町エリアの中核',
+      },
+      {
+        name: '神田児童館（神田学童クラブ）',
+        type: '児童館',
+        area: '外神田（昌平童夢館5F）',
+        url: 'https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/ichiran/kanda.html',
+        notes: '昌平小学校・幼稚園・保育園・図書館との複合施設「昌平童夢館」5階',
+      },
+      {
+        name: '西神田児童センター（西神田学童クラブ）',
+        type: '児童センター',
+        area: '西神田',
+        url: 'https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/ichiran/nishikanda.html',
+        notes: '西神田コスモス角ビル内、神保町・水道橋エリア',
+      },
+      {
+        name: '富士見わんぱくひろば（学童クラブ）',
+        type: 'わんぱくひろば',
+        area: '富士見',
+        url: 'https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/ichiran/fujimi.html',
+        notes: '富士見みらい館内、JR飯田橋駅徒歩6分',
+      },
+      {
+        name: '富士見わんぱくひろば学童クラブ分室',
+        type: '学童クラブ分室',
+        area: '富士見',
+        url: 'https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/gakudo.html',
+        notes: '児童館非併設の独立分室',
+      },
+    ],
+    privateProviders: [
+      {
+        brand: '二番町こどもクラブ',
+        location: '二番町TSビル4階',
+        url: 'https://www.nihonhoiku.co.jp/blog/nibanchokodomo/',
+        operator: '株式会社日本保育サービス（JPホールディングス）',
+        contractedWithWard: true,
+        notes: '区委託運営の学童クラブ。二番町・麹町エリア',
+      },
+      {
+        brand: 'グローバルキッズ',
+        location: '飯田橋第一学童クラブ',
+        url: 'https://www.gkids.co.jp/facilities/child_013.html',
+        operator: '株式会社グローバルキッズ',
+        contractedWithWard: true,
+        notes: '区委託運営の学童クラブ',
+      },
+      {
+        brand: 'ベネッセ学童クラブ',
+        location: '内神田校',
+        url: 'https://gakudou.benesse-style-care.co.jp/facilities/area_tokyo/chiyoda/g-uchikanda/',
+        operator: '株式会社ベネッセスタイルケア',
+        notes: '民間運営。学習・体験プログラム付き',
+      },
+      {
+        brand: 'ウィズダムアカデミー',
+        location: 'PRIME 市ヶ谷飯田橋校',
+        url: 'https://wisdom-academy.com/school/ichigaya/',
+        operator: '株式会社ウィズダムアカデミー',
+        notes: '完全民間。受験塾・習い事提携、市ヶ谷・飯田橋エリア',
+      },
+    ],
   },
   {
     ward: '中央区',
