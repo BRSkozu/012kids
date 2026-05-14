@@ -10,6 +10,138 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1375",
+    slug: "sho1-wall-school-communication",
+    title: "学校との連絡方法：連絡帳・懇談会・個人面談の活用法",
+    excerpt: "学校との連絡方法：連絡帳・懇談会・個人面談の活用法を文部科学省等の公的情報をもとに解説。連絡帳の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "家庭と学校の連携",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "positive"
+          },
+          {
+                "title": "教育相談",
+                "url": "https://www.nier.go.jp/",
+                "org": "国立教育政策研究所",
+                "stance": "neutral"
+          },
+          {
+                "title": "保護者支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "文部科学省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":84,"reliability":24,"neutrality":25,"freshness":17,"ageRelevance":10,"readability":8},
+    publishedAt: "2026-05-14",
+    updatedAt: "2026-05-14",
+    imageUrl: "/articles/sho1-wall-school-communication.jpg",
+    readingTime: 12,
+    tags: ["連絡帳","懇談会","学校"],
+    relatedArticleIds: ["art-694","art-692","art-701","art-699","art-703","art-697"],
+  },
+  {
+    id: "art-1374",
+    slug: "single-parent-resources",
+    title: "ひとり親家庭の支援制度まとめ：手当・助成・相談窓口の活用法",
+    excerpt: "ひとり親家庭の支援制度まとめ：手当・助成・相談窓口の活用法を厚生労働省等の公的情報をもとに解説。ひとり親の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "ひとり親支援",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "児童扶養手当",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "厚生労働省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":81,"reliability":24,"neutrality":23,"freshness":15,"ageRelevance":11,"readability":8},
+    publishedAt: "2026-05-14",
+    updatedAt: "2026-05-14",
+    imageUrl: "/articles/single-parent-resources.jpg",
+    readingTime: 10,
+    tags: ["ひとり親","支援制度","手当"],
+    relatedArticleIds: ["art-1187","art-1176","art-1174","art-1186","art-1179","art-1057"],
+  },
+  {
+    id: "art-1373",
+    slug: "sho1-wall-new-friends",
+    title: "小学校での友だちづくり：人見知りの子どもへのサポート",
+    excerpt: "小学校での友だちづくり：人見知りの子どもへのサポートを国立成育医療研究センター等の公的情報をもとに解説。友だちの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["mental"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの社会性",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "生徒指導",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":28,"neutrality":20,"freshness":18,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-05-14",
+    updatedAt: "2026-05-14",
+    imageUrl: "/articles/sho1-wall-new-friends.jpg",
+    readingTime: 12,
+    tags: ["友だち","人見知り","小学校"],
+    relatedArticleIds: ["art-1337","art-812","art-417","art-1339","art-1298","art-1340"],
+  },
+  {
     id: "art-1370",
     slug: "sho1-wall-morning-support",
     title: "小1の朝の支度：自分でできる子に育てる段階的サポート",
@@ -2269,14 +2401,20 @@ export const ARTICLES: Article[] = [
       name: "千代田区・厚生労働省 公式情報",
       references: [
           {
-                "title": "千代田区 学童クラブ",
-                "url": "https://www.city.chiyoda.lg.jp/",
+                "title": "千代田区 学童クラブ一覧",
+                "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/gakudo.html",
                 "org": "千代田区",
                 "stance": "neutral"
           },
           {
-                "title": "千代田区 子育てガイドブック",
-                "url": "https://www.city.chiyoda.lg.jp/",
+                "title": "千代田区 学童クラブ入会案内",
+                "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/gakudo-nyukai.html",
+                "org": "千代田区",
+                "stance": "neutral"
+          },
+          {
+                "title": "千代田区 児童センター・児童館・学童クラブ",
+                "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/jidocenter/index.html",
                 "org": "千代田区",
                 "stance": "positive"
           },
@@ -2291,12 +2429,6 @@ export const ARTICLES: Article[] = [
                 "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160769.html",
                 "org": "厚生労働省",
                 "stance": "positive"
-          },
-          {
-                "title": "民間学童 ブランド一覧（業界団体・各社公式）",
-                "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000027098.html",
-                "org": "厚生労働省（参考）",
-                "stance": "neutral"
           }
     ],
       perspectives: {

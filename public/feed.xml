@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 13 May 2026 22:17:21 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 22:14:23 GMT</lastBuildDate>
+    <item>
+      <title>学校との連絡方法：連絡帳・懇談会・個人面談の活用法</title>
+      <link>https://012.kids/articles/sho1-wall-school-communication</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-school-communication</guid>
+      <description>学校との連絡方法：連絡帳・懇談会・個人面談の活用法を文部科学省等の公的情報をもとに解説。連絡帳の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ひとり親家庭の支援制度まとめ：手当・助成・相談窓口の活用法</title>
+      <link>https://012.kids/articles/single-parent-resources</link>
+      <guid isPermaLink="true">https://012.kids/articles/single-parent-resources</guid>
+      <description>ひとり親家庭の支援制度まとめ：手当・助成・相談窓口の活用法を厚生労働省等の公的情報をもとに解説。ひとり親の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>小学校での友だちづくり：人見知りの子どもへのサポート</title>
+      <link>https://012.kids/articles/sho1-wall-new-friends</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-new-friends</guid>
+      <description>小学校での友だちづくり：人見知りの子どもへのサポートを国立成育医療研究センター等の公的情報をもとに解説。友だちの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>小1の朝の支度：自分でできる子に育てる段階的サポート</title>
       <link>https://012.kids/articles/sho1-wall-morning-support</link>
@@ -194,27 +215,6 @@
       <link>https://012.kids/articles/afterschool-homework-support</link>
       <guid isPermaLink="true">https://012.kids/articles/afterschool-homework-support</guid>
       <description>学童での宿題はどこまでやる？家庭学習との両立のコツを文部科学省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>「小1の壁」とは？共働き家庭が直面する7つの課題と乗り越え方</title>
-      <link>https://012.kids/articles/sho1-wall-overview</link>
-      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-overview</guid>
-      <description>「小1の壁」とは？共働き家庭が直面する7つの課題と乗り越え方を厚生労働省等の公的情報をもとに解説。小1の壁の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>学童での友だちトラブル：親ができるサポートと声かけ</title>
-      <link>https://012.kids/articles/afterschool-care-friendships</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-care-friendships</guid>
-      <description>学童での友だちトラブル：親ができるサポートと声かけを国立成育医療研究センター等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>子どもの不安症状チェックリスト：見逃しやすいサインと対応法</title>
-      <link>https://012.kids/articles/child-anxiety-symptoms</link>
-      <guid isPermaLink="true">https://012.kids/articles/child-anxiety-symptoms</guid>
-      <description>子どもの不安症状チェックリスト：見逃しやすいサインと対応法を国立成育医療研究センター等の公的情報をもとに解説。不安の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
       <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

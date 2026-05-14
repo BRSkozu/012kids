@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-05-13",
-    "totalGenerated": 93
+    "lastGeneratedAt": "2026-05-14",
+    "totalGenerated": 96
   },
   "pools": {
     "seasonal": {
@@ -5084,6 +5084,9 @@
     "sho1-wall-latchkey-safety",
     "sho1-wall-morning-support",
     "gifted-child-support",
-    "sho1-wall-study-start"
+    "sho1-wall-study-start",
+    "sho1-wall-new-friends",
+    "single-parent-resources",
+    "sho1-wall-school-communication"
   ]
 }
