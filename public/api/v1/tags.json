@@ -1,16 +1,11 @@
 {
-  "total_unique": 1044,
-  "updated_at": "2026-04-21T08:57:09.949Z",
+  "total_unique": 1016,
+  "updated_at": "2026-05-15T00:58:00.114Z",
   "tags": [
     {
       "tag": "年齢別",
-      "count": 226,
+      "count": 218,
       "url": "https://012.kids/tag/%E5%B9%B4%E9%BD%A2%E5%88%A5"
-    },
-    {
-      "tag": "発達",
-      "count": 70,
-      "url": "https://012.kids/tag/%E7%99%BA%E9%81%94"
     },
     {
       "tag": "妊娠",
@@ -38,6 +33,11 @@
       "url": "https://012.kids/tag/%E5%AF%BE%E5%87%A6%E6%B3%95"
     },
     {
+      "tag": "発達",
+      "count": 51,
+      "url": "https://012.kids/tag/%E7%99%BA%E9%81%94"
+    },
+    {
       "tag": "1〜3歳",
       "count": 49,
       "url": "https://012.kids/tag/1%E3%80%9C3%E6%AD%B3"
@@ -46,11 +46,6 @@
       "tag": "メンタルヘルス",
       "count": 49,
       "url": "https://012.kids/tag/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9"
-    },
-    {
-      "tag": "選び方",
-      "count": 45,
-      "url": "https://012.kids/tag/%E9%81%B8%E3%81%B3%E6%96%B9"
     },
     {
       "tag": "デジタル",
@@ -68,14 +63,14 @@
       "url": "https://012.kids/tag/%E9%81%8A%E3%81%B3"
     },
     {
+      "tag": "選び方",
+      "count": 37,
+      "url": "https://012.kids/tag/%E9%81%B8%E3%81%B3%E6%96%B9"
+    },
+    {
       "tag": "9〜12歳",
       "count": 34,
       "url": "https://012.kids/tag/9%E3%80%9C12%E6%AD%B3"
-    },
-    {
-      "tag": "知育",
-      "count": 33,
-      "url": "https://012.kids/tag/%E7%9F%A5%E8%82%B2"
     },
     {
       "tag": "生活",
@@ -103,6 +98,11 @@
       "url": "https://012.kids/tag/%E5%8F%97%E8%A8%BA%E7%9B%AE%E5%AE%89"
     },
     {
+      "tag": "知育",
+      "count": 25,
+      "url": "https://012.kids/tag/%E7%9F%A5%E8%82%B2"
+    },
+    {
       "tag": "食材",
       "count": 24,
       "url": "https://012.kids/tag/%E9%A3%9F%E6%9D%90"
@@ -111,16 +111,6 @@
       "tag": "学校",
       "count": 22,
       "url": "https://012.kids/tag/%E5%AD%A6%E6%A0%A1"
-    },
-    {
-      "tag": "絵本",
-      "count": 21,
-      "url": "https://012.kids/tag/%E7%B5%B5%E6%9C%AC"
-    },
-    {
-      "tag": "読み聞かせ",
-      "count": 21,
-      "url": "https://012.kids/tag/%E8%AA%AD%E3%81%BF%E8%81%9E%E3%81%8B%E3%81%9B"
     },
     {
       "tag": "習い事",
@@ -218,6 +208,16 @@
       "url": "https://012.kids/tag/%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AE%E5%81%A5%E5%BA%B7"
     },
     {
+      "tag": "絵本",
+      "count": 14,
+      "url": "https://012.kids/tag/%E7%B5%B5%E6%9C%AC"
+    },
+    {
+      "tag": "読み聞かせ",
+      "count": 14,
+      "url": "https://012.kids/tag/%E8%AA%AD%E3%81%BF%E8%81%9E%E3%81%8B%E3%81%9B"
+    },
+    {
       "tag": "予防接種",
       "count": 14,
       "url": "https://012.kids/tag/%E4%BA%88%E9%98%B2%E6%8E%A5%E7%A8%AE"
@@ -226,21 +226,6 @@
       "tag": "ワクチン",
       "count": 14,
       "url": "https://012.kids/tag/%E3%83%AF%E3%82%AF%E3%83%81%E3%83%B3"
-    },
-    {
-      "tag": "準備",
-      "count": 14,
-      "url": "https://012.kids/tag/%E6%BA%96%E5%82%99"
-    },
-    {
-      "tag": "学校生活",
-      "count": 13,
-      "url": "https://012.kids/tag/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB"
-    },
-    {
-      "tag": "赤ちゃん",
-      "count": 12,
-      "url": "https://012.kids/tag/%E8%B5%A4%E3%81%A1%E3%82%83%E3%82%93"
     },
     {
       "tag": "保護者",
@@ -268,16 +253,6 @@
       "url": "https://012.kids/tag/%E4%B8%AD%E5%AD%A6%E5%8F%97%E9%A8%93"
     },
     {
-      "tag": "成長",
-      "count": 10,
-      "url": "https://012.kids/tag/%E6%88%90%E9%95%B7"
-    },
-    {
-      "tag": "月齢別",
-      "count": 10,
-      "url": "https://012.kids/tag/%E6%9C%88%E9%BD%A2%E5%88%A5"
-    },
-    {
       "tag": "長期休み",
       "count": 10,
       "url": "https://012.kids/tag/%E9%95%B7%E6%9C%9F%E4%BC%91%E3%81%BF"
@@ -286,11 +261,6 @@
       "tag": "計画",
       "count": 10,
       "url": "https://012.kids/tag/%E8%A8%88%E7%94%BB"
-    },
-    {
-      "tag": "おもちゃ",
-      "count": 8,
-      "url": "https://012.kids/tag/%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83"
     },
     {
       "tag": "粗大運動",
@@ -328,11 +298,6 @@
       "url": "https://012.kids/tag/%E6%B0%B4%E5%88%86%E8%A3%9C%E7%B5%A6"
     },
     {
-      "tag": "小学校",
-      "count": 6,
-      "url": "https://012.kids/tag/%E5%B0%8F%E5%AD%A6%E6%A0%A1"
-    },
-    {
       "tag": "ストレスサイン",
       "count": 5,
       "url": "https://012.kids/tag/%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E3%82%B5%E3%82%A4%E3%83%B3"
@@ -366,6 +331,11 @@
       "tag": "読書習慣",
       "count": 5,
       "url": "https://012.kids/tag/%E8%AA%AD%E6%9B%B8%E7%BF%92%E6%85%A3"
+    },
+    {
+      "tag": "準備",
+      "count": 5,
+      "url": "https://012.kids/tag/%E6%BA%96%E5%82%99"
     },
     {
       "tag": "微細運動",
@@ -446,6 +416,11 @@
       "tag": "不安への対処",
       "count": 4,
       "url": "https://012.kids/tag/%E4%B8%8D%E5%AE%89%E3%81%B8%E3%81%AE%E5%AF%BE%E5%87%A6"
+    },
+    {
+      "tag": "学校生活",
+      "count": 4,
+      "url": "https://012.kids/tag/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB"
     },
     {
       "tag": "集中力",
@@ -563,11 +538,6 @@
       "url": "https://012.kids/tag/%E5%AE%8C%E7%92%A7%E4%B8%BB%E7%BE%A9"
     },
     {
-      "tag": "2歳",
-      "count": 3,
-      "url": "https://012.kids/tag/2%E6%AD%B3"
-    },
-    {
       "tag": "歯科",
       "count": 3,
       "url": "https://012.kids/tag/%E6%AD%AF%E7%A7%91"
@@ -638,11 +608,6 @@
       "url": "https://012.kids/tag/%E5%B9%BC%E7%A8%9A%E5%9C%92"
     },
     {
-      "tag": "保育園",
-      "count": 3,
-      "url": "https://012.kids/tag/%E4%BF%9D%E8%82%B2%E5%9C%92"
-    },
-    {
       "tag": "宿題サポート",
       "count": 3,
       "url": "https://012.kids/tag/%E5%AE%BF%E9%A1%8C%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88"
@@ -686,16 +651,6 @@
       "tag": "歯",
       "count": 3,
       "url": "https://012.kids/tag/%E6%AD%AF"
-    },
-    {
-      "tag": "3歳",
-      "count": 3,
-      "url": "https://012.kids/tag/3%E6%AD%B3"
-    },
-    {
-      "tag": "5歳",
-      "count": 3,
-      "url": "https://012.kids/tag/5%E6%AD%B3"
     },
     {
       "tag": "数の概念",
@@ -756,16 +711,6 @@
       "tag": "子どもの中耳炎",
       "count": 3,
       "url": "https://012.kids/tag/%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AE%E4%B8%AD%E8%80%B3%E7%82%8E"
-    },
-    {
-      "tag": "思春期",
-      "count": 3,
-      "url": "https://012.kids/tag/%E6%80%9D%E6%98%A5%E6%9C%9F"
-    },
-    {
-      "tag": "反抗期",
-      "count": 3,
-      "url": "https://012.kids/tag/%E5%8F%8D%E6%8A%97%E6%9C%9F"
     },
     {
       "tag": "寝かしつけ",
@@ -981,6 +926,11 @@
       "tag": "伝統行事",
       "count": 2,
       "url": "https://012.kids/tag/%E4%BC%9D%E7%B5%B1%E8%A1%8C%E4%BA%8B"
+    },
+    {
+      "tag": "赤ちゃん",
+      "count": 2,
+      "url": "https://012.kids/tag/%E8%B5%A4%E3%81%A1%E3%82%83%E3%82%93"
     },
     {
       "tag": "チャイルドシート",
@@ -1208,11 +1158,6 @@
       "url": "https://012.kids/tag/%E5%A1%BE"
     },
     {
-      "tag": "小学4年生",
-      "count": 2,
-      "url": "https://012.kids/tag/%E5%B0%8F%E5%AD%A64%E5%B9%B4%E7%94%9F"
-    },
-    {
       "tag": "ダンス",
       "count": 2,
       "url": "https://012.kids/tag/%E3%83%80%E3%83%B3%E3%82%B9"
@@ -1268,6 +1213,11 @@
       "url": "https://012.kids/tag/%E6%84%9F%E6%83%85"
     },
     {
+      "tag": "成長",
+      "count": 2,
+      "url": "https://012.kids/tag/%E6%88%90%E9%95%B7"
+    },
+    {
       "tag": "お絵かき",
       "count": 2,
       "url": "https://012.kids/tag/%E3%81%8A%E7%B5%B5%E3%81%8B%E3%81%8D"
@@ -1283,31 +1233,6 @@
       "url": "https://012.kids/tag/%E3%83%A2%E3%83%B3%E3%83%86%E3%83%83%E3%82%BD%E3%83%BC%E3%83%AA"
     },
     {
-      "tag": "6歳",
-      "count": 2,
-      "url": "https://012.kids/tag/6%E6%AD%B3"
-    },
-    {
-      "tag": "4歳",
-      "count": 2,
-      "url": "https://012.kids/tag/4%E6%AD%B3"
-    },
-    {
-      "tag": "9ヶ月",
-      "count": 2,
-      "url": "https://012.kids/tag/9%E3%83%B6%E6%9C%88"
-    },
-    {
-      "tag": "6ヶ月",
-      "count": 2,
-      "url": "https://012.kids/tag/6%E3%83%B6%E6%9C%88"
-    },
-    {
-      "tag": "3ヶ月",
-      "count": 2,
-      "url": "https://012.kids/tag/3%E3%83%B6%E6%9C%88"
-    },
-    {
       "tag": "冬休み",
       "count": 2,
       "url": "https://012.kids/tag/%E5%86%AC%E4%BC%91%E3%81%BF"
@@ -1316,11 +1241,6 @@
       "tag": "目",
       "count": 2,
       "url": "https://012.kids/tag/%E7%9B%AE"
-    },
-    {
-      "tag": "1歳",
-      "count": 2,
-      "url": "https://012.kids/tag/1%E6%AD%B3"
     },
     {
       "tag": "子どもの鼻のケア",

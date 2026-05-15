@@ -10,6 +10,19 @@ import { validateAllArticles } from './validate-articles.mjs';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content', 'articles');
 const OUTPUT_FILE = path.join(process.cwd(), 'src', 'data', 'articles.ts');
+const SEARCH_INDEX_FILE = path.join(process.cwd(), 'src', 'data', 'article-search-index.ts');
+
+function stripMdxToText(body) {
+  return body
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, ' $1 ')
+    .replace(/[#*_~`>|]/g, ' ')
+    .replace(/-{2,}/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 function getAllMdxFiles() {
   const files = [];
@@ -27,8 +40,8 @@ function getAllMdxFiles() {
 
 function parseArticle(filePath) {
   const fileContent = fs.readFileSync(filePath, 'utf-8');
-  const { data } = matter(fileContent);
-  return data;
+  const { data, content } = matter(fileContent);
+  return { ...data, __body: stripMdxToText(content) };
 }
 
 function computeRelatedIds(target, allArticles, max = 6) {
@@ -171,3 +184,18 @@ const output = generateOutput(articles);
 
 fs.writeFileSync(OUTPUT_FILE, output, 'utf-8');
 console.log(`Generated ${OUTPUT_FILE} with ${articles.length} articles`);
+
+// Write separate search index (id -> stripped body text) for lazy-loaded full-text search
+const searchIndex = Object.fromEntries(articles.map((a) => [a.id, a.__body || '']));
+const searchIndexOutput = `// AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
+// Generated from content/articles/**/*.mdx by scripts/generate-articles.mjs
+// Run: npm run prebuild
+//
+// Maps article id -> stripped plain-text body for client-side full-text search.
+// Loaded lazily by the /search page to avoid bloating the main bundle.
+
+export const ARTICLE_SEARCH_INDEX: Record<string, string> = ${JSON.stringify(searchIndex, null, 2)};
+`;
+fs.writeFileSync(SEARCH_INDEX_FILE, searchIndexOutput, 'utf-8');
+const sizeKb = Math.round(Buffer.byteLength(searchIndexOutput) / 1024);
+console.log(`Generated ${SEARCH_INDEX_FILE} (${sizeKb} KB)`);

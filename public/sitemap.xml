@@ -159,25 +159,25 @@
   </url>
   <url>
     <loc>https://012.kids/experts</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://012.kids/about</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://012.kids/editorial-policy</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://012.kids/contact</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -228,42 +228,18 @@
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13</news:publication_date>
-      <news:title>小1の朝の支度：自分でできる子に育てる段階的サポート</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/gifted-child-support</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13</news:publication_date>
-      <news:title>ギフテッドの子どもの理解とサポート：才能を伸ばす環境づくり</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/sho1-wall-study-start</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <news:news>
-      <news:publication>
-        <news:name>012.kids</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13</news:publication_date>
-      <news:title>小1から始める学習習慣：無理なく続く勉強のリズムづくり</news:title>
-    </news:news>
   </url>
   <url>
     <loc>https://012.kids/articles/child-obesity-prevention</loc>

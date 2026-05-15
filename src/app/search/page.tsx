@@ -14,18 +14,26 @@ import { CATEGORIES } from '@/data/categories';
 import { ARTICLES } from '@/data/articles';
 import { AgeStage, ContentCategory } from '@/types';
 
-const fuse = new Fuse(ARTICLES, {
-  keys: [
-    { name: 'title', weight: 3 },
-    { name: 'excerpt', weight: 2 },
-    { name: 'tags', weight: 2 },
-    { name: 'categories', weight: 1 },
-  ],
+const FUSE_KEYS = [
+  { name: 'title', weight: 4 },
+  { name: 'tags', weight: 3 },
+  { name: 'excerpt', weight: 2 },
+  { name: 'searchText', weight: 1 },
+  { name: 'categories', weight: 1 },
+];
+
+const FUSE_OPTIONS = {
+  keys: FUSE_KEYS,
   threshold: 0.3,
   ignoreLocation: true,
   minMatchCharLength: 2,
   includeScore: true,
-});
+};
+
+type SearchableArticle = (typeof ARTICLES)[number] & { searchText?: string };
+
+// Initial Fuse without body text — used until the search index loads.
+const baseFuse: Fuse<SearchableArticle> = new Fuse(ARTICLES as SearchableArticle[], FUSE_OPTIONS);
 
 function SearchContent() {
   const searchParams = useSearchParams();
@@ -35,11 +43,29 @@ function SearchContent() {
   const [selectedStage, setSelectedStage] = useState<AgeStage | 'all'>('all');
   const [selectedCategory, setSelectedCategory] = useState<ContentCategory | 'all'>('all');
   const [tab, setTab] = useState<'keyword' | 'worry'>(initialTab);
+  const [fuse, setFuse] = useState<Fuse<SearchableArticle>>(baseFuse);
 
   useEffect(() => {
     document.title = tab === 'worry'
       ? 'お悩みから探す | 012キッズ'
       : '記事を検索 | 012キッズ';
+  }, [tab]);
+
+  // Lazy-load the full-text search index and rebuild Fuse with body text.
+  useEffect(() => {
+    if (tab !== 'keyword') return;
+    let cancelled = false;
+    import('@/data/article-search-index').then(({ ARTICLE_SEARCH_INDEX }) => {
+      if (cancelled) return;
+      const enriched = ARTICLES.map((a) => ({
+        ...a,
+        searchText: ARTICLE_SEARCH_INDEX[a.id] || '',
+      }));
+      setFuse(new Fuse(enriched, FUSE_OPTIONS));
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [tab]);
 
   // Tokenize Japanese query into meaningful words by stripping particles/punctuation
@@ -90,7 +116,7 @@ function SearchContent() {
       }
     }
     return { results: applyFilters(merged), isFallback: true, fallbackTokens: tokens };
-  }, [query, selectedStage, selectedCategory]);
+  }, [query, selectedStage, selectedCategory, fuse]);
 
   const showResults = query.trim() || selectedStage !== 'all' || selectedCategory !== 'all';
 
