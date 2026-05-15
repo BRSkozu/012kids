@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-05-14",
-    "totalGenerated": 96
+    "lastGeneratedAt": "2026-05-15",
+    "totalGenerated": 99
   },
   "pools": {
     "seasonal": {
@@ -5087,6 +5087,9 @@
     "sho1-wall-study-start",
     "sho1-wall-new-friends",
     "single-parent-resources",
-    "sho1-wall-school-communication"
+    "sho1-wall-school-communication",
+    "sho1-wall-working-parent",
+    "sho1-wall-summer-vacation",
+    "hokatsu-strategy-guide"
   ]
 }

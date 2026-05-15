@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 15 May 2026 00:57:57 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 22:02:15 GMT</lastBuildDate>
+    <item>
+      <title>保活の始め方ガイド：いつから何をする？点数制度と戦略</title>
+      <link>https://012.kids/articles/hokatsu-strategy-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/hokatsu-strategy-guide</guid>
+      <description>保活の始め方ガイド：いつから何をする？点数制度と戦略を厚生労働省等の公的情報をもとに解説。保活の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>小1の夏休み：働く親の過ごし方ガイドと預け先一覧</title>
+      <link>https://012.kids/articles/sho1-wall-summer-vacation</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-summer-vacation</guid>
+      <description>小1の夏休み：働く親の過ごし方ガイドと預け先一覧を厚生労働省等の公的情報をもとに解説。夏休みの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>小1の壁を乗り越える：ワーママ・ワーパパの実践テクニック</title>
+      <link>https://012.kids/articles/sho1-wall-working-parent</link>
+      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-working-parent</guid>
+      <description>小1の壁を乗り越える：ワーママ・ワーパパの実践テクニックを厚生労働省等の公的情報をもとに解説。ワーママの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
+      <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>学校との連絡方法：連絡帳・懇談会・個人面談の活用法</title>
       <link>https://012.kids/articles/sho1-wall-school-communication</link>
@@ -195,27 +216,6 @@
       <guid isPermaLink="true">https://012.kids/articles/disaster-prep-family</guid>
       <description>家族の防災準備ガイド：子連れ避難の持ち物と避難計画を文部科学省等の公的情報をもとに解説。防災の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>家庭のルールづくりガイド：年齢に合ったルールと守らせるコツ</title>
-      <link>https://012.kids/articles/family-rules-creation</link>
-      <guid isPermaLink="true">https://012.kids/articles/family-rules-creation</guid>
-      <description>家庭のルールづくりガイド：年齢に合ったルールと守らせるコツを文部科学省等の公的情報をもとに解説。ルールの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>保育園と小学校のスケジュールの違い：時間のギャップを埋める方法</title>
-      <link>https://012.kids/articles/sho1-wall-schedule-gap</link>
-      <guid isPermaLink="true">https://012.kids/articles/sho1-wall-schedule-gap</guid>
-      <description>保育園と小学校のスケジュールの違い：時間のギャップを埋める方法を厚生労働省等の公的情報をもとに解説。小1の壁の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>学童での宿題はどこまでやる？家庭学習との両立のコツ</title>
-      <link>https://012.kids/articles/afterschool-homework-support</link>
-      <guid isPermaLink="true">https://012.kids/articles/afterschool-homework-support</guid>
-      <description>学童での宿題はどこまでやる？家庭学習との両立のコツを文部科学省等の公的情報をもとに解説。学童の基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Sun, 10 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

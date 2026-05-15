@@ -10,6 +10,138 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1378",
+    slug: "hokatsu-strategy-guide",
+    title: "保活の始め方ガイド：いつから何をする？点数制度と戦略",
+    excerpt: "保活の始め方ガイド：いつから何をする？点数制度と戦略を厚生労働省等の公的情報をもとに解説。保活の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育所入所",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "待機児童対策",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":80,"reliability":24,"neutrality":21,"freshness":17,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-05-15",
+    updatedAt: "2026-05-15",
+    imageUrl: "/articles/hokatsu-strategy-guide.jpg",
+    readingTime: 9,
+    tags: ["保活","保育園","点数制度"],
+    relatedArticleIds: ["art-1176","art-1174","art-1186","art-1179","art-1057","art-1173"],
+  },
+  {
+    id: "art-1377",
+    slug: "sho1-wall-summer-vacation",
+    title: "小1の夏休み：働く親の過ごし方ガイドと預け先一覧",
+    excerpt: "小1の夏休み：働く親の過ごし方ガイドと預け先一覧を厚生労働省等の公的情報をもとに解説。夏休みの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "放課後児童クラブ",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの居場所",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "体験活動",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":28,"neutrality":21,"freshness":16,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-05-15",
+    updatedAt: "2026-05-15",
+    imageUrl: "/articles/sho1-wall-summer-vacation.jpg",
+    readingTime: 8,
+    tags: ["夏休み","小1","預け先"],
+    relatedArticleIds: ["art-1311","art-1308","art-1253","art-1309","art-1236","art-1300"],
+  },
+  {
+    id: "art-1376",
+    slug: "sho1-wall-working-parent",
+    title: "小1の壁を乗り越える：ワーママ・ワーパパの実践テクニック",
+    excerpt: "小1の壁を乗り越える：ワーママ・ワーパパの実践テクニックを厚生労働省等の公的情報をもとに解説。ワーママの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。",
+    content: '',
+    stage: "early",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "仕事と育児の両立支援",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "positive"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "家庭教育",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "厚生労働省などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":78,"reliability":23,"neutrality":21,"freshness":16,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-05-15",
+    updatedAt: "2026-05-15",
+    imageUrl: "/articles/sho1-wall-working-parent.jpg",
+    readingTime: 11,
+    tags: ["ワーママ","小1の壁","両立"],
+    relatedArticleIds: ["art-1298","art-1301","art-1287","art-1344","art-1300","art-1359"],
+  },
+  {
     id: "art-1375",
     slug: "sho1-wall-school-communication",
     title: "学校との連絡方法：連絡帳・懇談会・個人面談の活用法",
