@@ -2442,7 +2442,7 @@ export const ARTICLES: Article[] = [
     updatedAt: "2026-05-11",
     imageUrl: "/articles/chiyoda-gakudo-guide.jpg",
     readingTime: 25,
-    tags: ["学童保育","民間学童","千代田区","番町","麹町","神田","共働き","23区"],
+    tags: ["学童保育","民間学童","千代田区","番町","麹町","神田","共働き","23区","一番町児童館","神田児童館","昌平童夢館","富士見わんぱくひろば","二番町こどもクラブ","内神田校"],
     relatedArticleIds: ["art-1287","art-069","art-1298","art-1305","art-1288","art-1354"],
   },
   {
