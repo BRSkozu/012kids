@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 15 May 2026 22:02:15 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 21:54:44 GMT</lastBuildDate>
+    <item>
+      <title>保育園選びで見るべき10のポイント：見学チェックリスト付き</title>
+      <link>https://012.kids/articles/nursery-choosing-points</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-choosing-points</guid>
+      <description>保育園選びで見るべき10のポイント：見学チェックリスト付きを厚生労働省等の公的情報をもとに解説。保育園選びの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育園で風邪ばかり？子どもの免疫と病気の付き合い方</title>
+      <link>https://012.kids/articles/nursery-illness-immunity</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-illness-immunity</guid>
+      <description>保育園で風邪ばかり？子どもの免疫と病気の付き合い方を日本小児科学会等の公的情報をもとに解説。保育園の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>慣らし保育の進め方：泣く子どもへの対応と期間の目安</title>
+      <link>https://012.kids/articles/nursery-adaptation-period</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-adaptation-period</guid>
+      <description>慣らし保育の進め方：泣く子どもへの対応と期間の目安を厚生労働省等の公的情報をもとに解説。慣らし保育の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>保活の始め方ガイド：いつから何をする？点数制度と戦略</title>
       <link>https://012.kids/articles/hokatsu-strategy-guide</link>
@@ -194,27 +215,6 @@
       <link>https://012.kids/articles/shibuya-gakudo-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/shibuya-gakudo-guide</guid>
       <description>渋谷区の学童保育を公立（放課後クラブ）と民間の両面から徹底解説。恵比寿・代々木・原宿・笹塚エリアの保活事情、料金、申込、選び方を網羅。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>新宿区の学童保育 完全ガイド：公立＋民間で都心通勤ファミリーの保活</title>
-      <link>https://012.kids/articles/shinjuku-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/shinjuku-gakudo-guide</guid>
-      <description>新宿区の学童保育を公立（学童クラブ・放課後子どもひろば）と民間の両面から解説。新宿駅周辺・落合・四谷・牛込エリアの保活事情、料金、申込、選び方を網羅。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>台東区の学童保育 完全ガイド：下町コミュニティで公立＋民間をどう組むか</title>
-      <link>https://012.kids/articles/taito-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/taito-gakudo-guide</guid>
-      <description>台東区の学童保育を公立と民間の両面から徹底解説。上野・浅草・谷中など下町情緒のあるエリアの保活事情、料金、申込、選び方を網羅。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>家族の防災準備ガイド：子連れ避難の持ち物と避難計画</title>
-      <link>https://012.kids/articles/disaster-prep-family</link>
-      <guid isPermaLink="true">https://012.kids/articles/disaster-prep-family</guid>
-      <description>家族の防災準備ガイド：子連れ避難の持ち物と避難計画を文部科学省等の公的情報をもとに解説。防災の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

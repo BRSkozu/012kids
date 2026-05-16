@@ -5,12 +5,12 @@
 ## サイト概要
 
 012.kidsは、子育て・教育に関する公的機関や専門家の情報を中立的な立場でまとめた情報サイトです。
-現在1314記事を掲載しています。
+現在1317記事を掲載しています。
 
 ## 対象年齢
 
-- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 294記事
-- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 428記事
+- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 296記事
+- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 429記事
 - [6〜8歳（低学年）](https://012.kids/age-guide/early): 336記事
 - [9〜10歳（中学年）](https://012.kids/age-guide/mid): 166記事
 - [11〜12歳（高学年）](https://012.kids/age-guide/upper): 90記事
@@ -19,9 +19,9 @@
 
 - [発達・成長](https://012.kids/category/development): 178記事
 - [食育・栄養](https://012.kids/category/nutrition): 153記事
-- [教育・学習](https://012.kids/category/education): 239記事
-- [健康・医療](https://012.kids/category/health): 291記事
-- [メンタル・心理](https://012.kids/category/mental): 148記事
+- [教育・学習](https://012.kids/category/education): 240記事
+- [健康・医療](https://012.kids/category/health): 292記事
+- [メンタル・心理](https://012.kids/category/mental): 149記事
 - [デジタル・メディア](https://012.kids/category/digital): 90記事
 - [社会・環境](https://012.kids/category/social): 200記事
 - [暮らし・家計](https://012.kids/category/lifestyle): 79記事
@@ -38,6 +38,9 @@
 
 ## 記事一覧
 
+- [保育園選びで見るべき10のポイント：見学チェックリスト付き](https://012.kids/articles/nursery-choosing-points): 保育園選びで見るべき10のポイント：見学チェックリスト付きを厚生労働省等の公的情報をもとに解説。保育園選びの基礎知識から家庭でできる対応、相談先まで0〜2歳の保...  (0〜2歳（乳児期）)
+- [保育園で風邪ばかり？子どもの免疫と病気の付き合い方](https://012.kids/articles/nursery-illness-immunity): 保育園で風邪ばかり？子どもの免疫と病気の付き合い方を日本小児科学会等の公的情報をもとに解説。保育園の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向け...  (3〜5歳（幼児期）)
+- [慣らし保育の進め方：泣く子どもへの対応と期間の目安](https://012.kids/articles/nursery-adaptation-period): 慣らし保育の進め方：泣く子どもへの対応と期間の目安を厚生労働省等の公的情報をもとに解説。慣らし保育の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向け...  (0〜2歳（乳児期）)
 - [保活の始め方ガイド：いつから何をする？点数制度と戦略](https://012.kids/articles/hokatsu-strategy-guide): 保活の始め方ガイド：いつから何をする？点数制度と戦略を厚生労働省等の公的情報をもとに解説。保活の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにま...  (0〜2歳（乳児期）)
 - [小1の夏休み：働く親の過ごし方ガイドと預け先一覧](https://012.kids/articles/sho1-wall-summer-vacation): 小1の夏休み：働く親の過ごし方ガイドと預け先一覧を厚生労働省等の公的情報をもとに解説。夏休みの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまと...  (6〜8歳（低学年）)
 - [小1の壁を乗り越える：ワーママ・ワーパパの実践テクニック](https://012.kids/articles/sho1-wall-working-parent): 小1の壁を乗り越える：ワーママ・ワーパパの実践テクニックを厚生労働省等の公的情報をもとに解説。ワーママの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者...  (6〜8歳（低学年）)

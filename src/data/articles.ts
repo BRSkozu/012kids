@@ -10,6 +10,138 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1379",
+    slug: "nursery-choosing-points",
+    title: "保育園選びで見るべき10のポイント：見学チェックリスト付き",
+    excerpt: "保育園選びで見るべき10のポイント：見学チェックリスト付きを厚生労働省等の公的情報をもとに解説。保育園選びの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["education"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "保育の質",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの環境",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "国立成育医療研究センターなどの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":87,"reliability":26,"neutrality":25,"freshness":15,"ageRelevance":14,"readability":7},
+    publishedAt: "2026-05-16",
+    updatedAt: "2026-05-16",
+    imageUrl: "/articles/nursery-choosing-points.jpg",
+    readingTime: 8,
+    tags: ["保育園選び","見学","チェックリスト"],
+    relatedArticleIds: ["art-1350","art-1348","art-932","art-1233","art-033","art-045"],
+  },
+  {
+    id: "art-1381",
+    slug: "nursery-illness-immunity",
+    title: "保育園で風邪ばかり？子どもの免疫と病気の付き合い方",
+    excerpt: "保育園で風邪ばかり？子どもの免疫と病気の付き合い方を日本小児科学会等の公的情報をもとに解説。保育園の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["health"],
+    source: {
+      name: "日本小児科学会等の公的情報",
+      references: [
+          {
+                "title": "子どもの感染症",
+                "url": "https://www.jpeds.or.jp/",
+                "org": "日本小児科学会",
+                "stance": "neutral"
+          },
+          {
+                "title": "感染症対策",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの健康",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "日本小児科学会のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":81,"reliability":22,"neutrality":24,"freshness":19,"ageRelevance":10,"readability":6},
+    publishedAt: "2026-05-16",
+    updatedAt: "2026-05-16",
+    imageUrl: "/articles/nursery-illness-immunity.jpg",
+    readingTime: 11,
+    tags: ["保育園","風邪","免疫"],
+    relatedArticleIds: ["art-1115","art-662","art-138","art-165","art-114","art-1261"],
+  },
+  {
+    id: "art-1380",
+    slug: "nursery-adaptation-period",
+    title: "慣らし保育の進め方：泣く子どもへの対応と期間の目安",
+    excerpt: "慣らし保育の進め方：泣く子どもへの対応と期間の目安を厚生労働省等の公的情報をもとに解説。慣らし保育の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["mental"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育所保育指針",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て相談",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":82,"reliability":27,"neutrality":20,"freshness":17,"ageRelevance":13,"readability":5},
+    publishedAt: "2026-05-16",
+    updatedAt: "2026-05-16",
+    imageUrl: "/articles/nursery-adaptation-period.jpg",
+    readingTime: 9,
+    tags: ["慣らし保育","泣く","適応"],
+    relatedArticleIds: ["art-1033","art-1136","art-1032","art-1242","art-038","art-1246"],
+  },
+  {
     id: "art-1378",
     slug: "hokatsu-strategy-guide",
     title: "保活の始め方ガイド：いつから何をする？点数制度と戦略",
