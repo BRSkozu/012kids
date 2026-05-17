@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 16 May 2026 21:54:44 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 21:58:55 GMT</lastBuildDate>
+    <item>
+      <title>保育園の朝を15分短縮：準備の時短テクニックと前日仕込み</title>
+      <link>https://012.kids/articles/nursery-morning-efficiency</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-morning-efficiency</guid>
+      <description>保育園の朝を15分短縮：準備の時短テクニックと前日仕込みをこども家庭庁等の公的情報をもとに解説。保育園の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育園の給食とアレルギー対応：除去食・代替食の進め方</title>
+      <link>https://012.kids/articles/nursery-allergy-lunch</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-allergy-lunch</guid>
+      <description>保育園の給食とアレルギー対応：除去食・代替食の進め方を厚生労働省等の公的情報をもとに解説。アレルギーの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育園の保護者会・行事ガイド：参加のコツと付き合い方</title>
+      <link>https://012.kids/articles/nursery-parent-events</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-parent-events</guid>
+      <description>保育園の保護者会・行事ガイド：参加のコツと付き合い方を厚生労働省等の公的情報をもとに解説。保護者会の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
+      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>保育園選びで見るべき10のポイント：見学チェックリスト付き</title>
       <link>https://012.kids/articles/nursery-choosing-points</link>
@@ -194,27 +215,6 @@
       <link>https://012.kids/articles/picture-books-by-age</link>
       <guid isPermaLink="true">https://012.kids/articles/picture-books-by-age</guid>
       <description>0歳から6歳までの年齢別に、絵本選びのポイントとおすすめジャンルを整理。読み聞かせの効果と進め方のコツも公的情報をもとに解説します。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>お小遣いの始め方ガイド：金額の目安と金銭感覚の育て方</title>
-      <link>https://012.kids/articles/pocket-money-education</link>
-      <guid isPermaLink="true">https://012.kids/articles/pocket-money-education</guid>
-      <description>お小遣いの始め方ガイド：金額の目安と金銭感覚の育て方を文部科学省等の公的情報をもとに解説。お小遣いの基礎知識から家庭でできる対応、相談先まで6〜8歳の保護者向けにまとめました。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>民間学童ブランド完全比較ガイド：主要8社の特色・料金・選び方</title>
-      <link>https://012.kids/articles/private-gakudo-brands-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/private-gakudo-brands-guide</guid>
-      <description>民間（私立）学童の主要8ブランドを特色・料金・送迎・夕食・教育プログラム別に比較。公立学童との違い、選び方の判断軸、年間費用シミュレーションまで網羅した保活ガイド。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>渋谷区の学童保育 完全ガイド：放課後クラブ＋民間で都心型保活</title>
-      <link>https://012.kids/articles/shibuya-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/shibuya-gakudo-guide</guid>
-      <description>渋谷区の学童保育を公立（放課後クラブ）と民間の両面から徹底解説。恵比寿・代々木・原宿・笹塚エリアの保活事情、料金、申込、選び方を網羅。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

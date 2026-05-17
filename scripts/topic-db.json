@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-05-16",
-    "totalGenerated": 102
+    "lastGeneratedAt": "2026-05-17",
+    "totalGenerated": 105
   },
   "pools": {
     "seasonal": {
@@ -5093,6 +5093,9 @@
     "hokatsu-strategy-guide",
     "nursery-choosing-points",
     "nursery-adaptation-period",
-    "nursery-illness-immunity"
+    "nursery-illness-immunity",
+    "nursery-morning-efficiency",
+    "nursery-allergy-lunch",
+    "nursery-parent-events"
   ]
 }
