@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 17 May 2026 21:58:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 22:06:05 GMT</lastBuildDate>
+    <item>
+      <title>お昼寝卒業のタイミング：保育園と家庭での生活リズム調整</title>
+      <link>https://012.kids/articles/nursery-nap-graduation</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-nap-graduation</guid>
+      <description>お昼寝卒業のタイミング：保育園と家庭での生活リズム調整を国立成育医療研究センター等の公的情報をもとに解説。お昼寝の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育園の転園ガイド：手続き・タイミング・子どもの心のケア</title>
+      <link>https://012.kids/articles/nursery-transfer-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-transfer-guide</guid>
+      <description>保育園の転園ガイド：手続き・タイミング・子どもの心のケアを厚生労働省等の公的情報をもとに解説。転園の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育士さんとのコミュニケーション：連絡帳の書き方と相談のコツ</title>
+      <link>https://012.kids/articles/nursery-teacher-talk</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-teacher-talk</guid>
+      <description>保育士さんとのコミュニケーション：連絡帳の書き方と相談のコツを厚生労働省等の公的情報をもとに解説。保育士の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>保育園の朝を15分短縮：準備の時短テクニックと前日仕込み</title>
       <link>https://012.kids/articles/nursery-morning-efficiency</link>
@@ -194,27 +215,6 @@
       <link>https://012.kids/articles/elementary-school-life-by-grade</link>
       <guid isPermaLink="true">https://012.kids/articles/elementary-school-life-by-grade</guid>
       <description>小1から小6までの学年別に学校生活の特徴、学習内容、友達関係の変化、家庭でのサポートポイントを公的情報をもとにまとめました。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>目黒区の学童保育 完全ガイド：教育意識の高い区で公立＋民間をどう組むか</title>
-      <link>https://012.kids/articles/meguro-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/meguro-gakudo-guide</guid>
-      <description>目黒区の学童保育を公立（学童保育クラブ・ランドセル来館事業）と民間の両面から解説。中目黒・自由が丘・学芸大学エリアの保活事情、料金、申込、選び方を網羅。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>保育園 年齢別クラス生活ガイド：0歳〜2歳の発達と園での過ごし方</title>
-      <link>https://012.kids/articles/nursery-school-life-by-age</link>
-      <guid isPermaLink="true">https://012.kids/articles/nursery-school-life-by-age</guid>
-      <description>0歳児・1歳児・2歳児クラスの保育園生活を年齢別に整理。1日の流れ、発達の特徴、家庭と園の連携ポイントを公的情報をもとにまとめました。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>年齢別 絵本の選び方完全ガイド：0歳〜6歳まで発達に合わせて</title>
-      <link>https://012.kids/articles/picture-books-by-age</link>
-      <guid isPermaLink="true">https://012.kids/articles/picture-books-by-age</guid>
-      <description>0歳から6歳までの年齢別に、絵本選びのポイントとおすすめジャンルを整理。読み聞かせの効果と進め方のコツも公的情報をもとに解説します。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

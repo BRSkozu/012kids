@@ -10,6 +10,138 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1386",
+    slug: "nursery-nap-graduation",
+    title: "お昼寝卒業のタイミング：保育園と家庭での生活リズム調整",
+    excerpt: "お昼寝卒業のタイミング：保育園と家庭での生活リズム調整を国立成育医療研究センター等の公的情報をもとに解説。お昼寝の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["development"],
+    source: {
+      name: "国立成育医療研究センター等の公的情報",
+      references: [
+          {
+                "title": "子どもの睡眠",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          },
+          {
+                "title": "睡眠指針",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "生活習慣",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "国立成育医療研究センターのデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":25,"freshness":16,"ageRelevance":12,"readability":6},
+    publishedAt: "2026-05-18",
+    updatedAt: "2026-05-18",
+    imageUrl: "/articles/nursery-nap-graduation.jpg",
+    readingTime: 10,
+    tags: ["お昼寝","生活リズム","発達"],
+    relatedArticleIds: ["art-1332","art-734","art-720","art-970","art-981","art-975"],
+  },
+  {
+    id: "art-1387",
+    slug: "nursery-transfer-guide",
+    title: "保育園の転園ガイド：手続き・タイミング・子どもの心のケア",
+    excerpt: "保育園の転園ガイド：手続き・タイミング・子どもの心のケアを厚生労働省等の公的情報をもとに解説。転園の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["mental"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育所利用",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子どもの心",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "cautious"
+          },
+          {
+                "title": "子育て相談",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "適切な知識と対応で、多くの場合は十分にサポートできるとされています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "国立成育医療研究センターは、自己判断だけでなく必要に応じて専門家への相談を推奨しています。"
+    },
+    },
+    score: {"total":87,"reliability":29,"neutrality":20,"freshness":18,"ageRelevance":14,"readability":6},
+    publishedAt: "2026-05-18",
+    updatedAt: "2026-05-18",
+    imageUrl: "/articles/nursery-transfer-guide.jpg",
+    readingTime: 9,
+    tags: ["転園","手続き","心のケア"],
+    relatedArticleIds: ["art-1033","art-1136","art-1032","art-1242","art-038","art-1246"],
+  },
+  {
+    id: "art-1385",
+    slug: "nursery-teacher-talk",
+    title: "保育士さんとのコミュニケーション：連絡帳の書き方と相談のコツ",
+    excerpt: "保育士さんとのコミュニケーション：連絡帳の書き方と相談のコツを厚生労働省等の公的情報をもとに解説。保育士の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["social"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育の質の向上",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "保育者の専門性",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":79,"reliability":27,"neutrality":21,"freshness":16,"ageRelevance":10,"readability":5},
+    publishedAt: "2026-05-18",
+    updatedAt: "2026-05-18",
+    imageUrl: "/articles/nursery-teacher-talk.jpg",
+    readingTime: 9,
+    tags: ["保育士","連絡帳","コミュニケーション"],
+    relatedArticleIds: ["art-885","art-877","art-879","art-1049","art-894","art-892"],
+  },
+  {
     id: "art-1382",
     slug: "nursery-morning-efficiency",
     title: "保育園の朝を15分短縮：準備の時短テクニックと前日仕込み",
@@ -271,7 +403,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nursery-adaptation-period.jpg",
     readingTime: 9,
     tags: ["慣らし保育","泣く","適応"],
-    relatedArticleIds: ["art-1033","art-1136","art-1032","art-1242","art-038","art-1246"],
+    relatedArticleIds: ["art-1033","art-1136","art-1387","art-1032","art-1242","art-038"],
   },
   {
     id: "art-1378",

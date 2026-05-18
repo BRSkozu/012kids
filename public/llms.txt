@@ -5,25 +5,25 @@
 ## サイト概要
 
 012.kidsは、子育て・教育に関する公的機関や専門家の情報を中立的な立場でまとめた情報サイトです。
-現在1320記事を掲載しています。
+現在1323記事を掲載しています。
 
 ## 対象年齢
 
-- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 298記事
-- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 430記事
+- [0〜2歳（乳児期）](https://012.kids/age-guide/0stage): 300記事
+- [3〜5歳（幼児期）](https://012.kids/age-guide/pre): 431記事
 - [6〜8歳（低学年）](https://012.kids/age-guide/early): 336記事
 - [9〜10歳（中学年）](https://012.kids/age-guide/mid): 166記事
 - [11〜12歳（高学年）](https://012.kids/age-guide/upper): 90記事
 
 ## カテゴリ
 
-- [発達・成長](https://012.kids/category/development): 178記事
+- [発達・成長](https://012.kids/category/development): 179記事
 - [食育・栄養](https://012.kids/category/nutrition): 154記事
 - [教育・学習](https://012.kids/category/education): 240記事
 - [健康・医療](https://012.kids/category/health): 292記事
-- [メンタル・心理](https://012.kids/category/mental): 149記事
+- [メンタル・心理](https://012.kids/category/mental): 150記事
 - [デジタル・メディア](https://012.kids/category/digital): 90記事
-- [社会・環境](https://012.kids/category/social): 201記事
+- [社会・環境](https://012.kids/category/social): 202記事
 - [暮らし・家計](https://012.kids/category/lifestyle): 80記事
 - [妊娠・出産](https://012.kids/category/pregnancy): 91記事
 
@@ -38,6 +38,9 @@
 
 ## 記事一覧
 
+- [お昼寝卒業のタイミング：保育園と家庭での生活リズム調整](https://012.kids/articles/nursery-nap-graduation): お昼寝卒業のタイミング：保育園と家庭での生活リズム調整を国立成育医療研究センター等の公的情報をもとに解説。お昼寝の基礎知識から家庭でできる対応、相談先まで3〜5...  (3〜5歳（幼児期）)
+- [保育園の転園ガイド：手続き・タイミング・子どもの心のケア](https://012.kids/articles/nursery-transfer-guide): 保育園の転園ガイド：手続き・タイミング・子どもの心のケアを厚生労働省等の公的情報をもとに解説。転園の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向け...  (0〜2歳（乳児期）)
+- [保育士さんとのコミュニケーション：連絡帳の書き方と相談のコツ](https://012.kids/articles/nursery-teacher-talk): 保育士さんとのコミュニケーション：連絡帳の書き方と相談のコツを厚生労働省等の公的情報をもとに解説。保育士の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護...  (0〜2歳（乳児期）)
 - [保育園の朝を15分短縮：準備の時短テクニックと前日仕込み](https://012.kids/articles/nursery-morning-efficiency): 保育園の朝を15分短縮：準備の時短テクニックと前日仕込みをこども家庭庁等の公的情報をもとに解説。保育園の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者...  (0〜2歳（乳児期）)
 - [保育園の給食とアレルギー対応：除去食・代替食の進め方](https://012.kids/articles/nursery-allergy-lunch): 保育園の給食とアレルギー対応：除去食・代替食の進め方を厚生労働省等の公的情報をもとに解説。アレルギーの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向...  (0〜2歳（乳児期）)
 - [保育園の保護者会・行事ガイド：参加のコツと付き合い方](https://012.kids/articles/nursery-parent-events): 保育園の保護者会・行事ガイド：参加のコツと付き合い方を厚生労働省等の公的情報をもとに解説。保護者会の基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向け...  (3〜5歳（幼児期）)
