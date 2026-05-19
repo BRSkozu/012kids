@@ -6,7 +6,28 @@
     <description>0歳から12歳の子どもに関わるすべての方に向けて、子育て・教育情報をまとめて紹介するサイト</description>
     <language>ja</language>
     <atom:link href="https://012.kids/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 18 May 2026 22:06:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 22:18:57 GMT</lastBuildDate>
+    <item>
+      <title>幼稚園選びの完全ガイド：教育方針・費用・立地で比較する方法</title>
+      <link>https://012.kids/articles/kindergarten-complete-guide</link>
+      <guid isPermaLink="true">https://012.kids/articles/kindergarten-complete-guide</guid>
+      <description>幼稚園選びの完全ガイド：教育方針・費用・立地で比較する方法を文部科学省等の公的情報をもとに解説。幼稚園選びの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>保育料はいくら？無償化制度と自治体ごとの違いを解説</title>
+      <link>https://012.kids/articles/nursery-cost-system</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-cost-system</guid>
+      <description>保育料はいくら？無償化制度と自治体ごとの違いを解説を内閣府等の公的情報をもとに解説。保育料の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>きょうだい同時入園のコツ：加点制度とポイント戦略</title>
+      <link>https://012.kids/articles/nursery-sibling-entry</link>
+      <guid isPermaLink="true">https://012.kids/articles/nursery-sibling-entry</guid>
+      <description>きょうだい同時入園のコツ：加点制度とポイント戦略を厚生労働省等の公的情報をもとに解説。きょうだいの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。</description>
+      <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>お昼寝卒業のタイミング：保育園と家庭での生活リズム調整</title>
       <link>https://012.kids/articles/nursery-nap-graduation</link>
@@ -194,27 +215,6 @@
       <link>https://012.kids/articles/bilingual-parenting-guide</link>
       <guid isPermaLink="true">https://012.kids/articles/bilingual-parenting-guide</guid>
       <description>バイリンガル子育てのリアル：メリット・注意点・継続のコツを文部科学省等の公的情報をもとに解説。バイリンガルの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>文京区の学童保育 完全ガイド：教育意識の高い区で公立＋民間をどう組むか</title>
-      <link>https://012.kids/articles/bunkyo-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/bunkyo-gakudo-guide</guid>
-      <description>文京区の学童保育を公立（育成室）と民間の両面から徹底解説。誠之・千駄木・湯島など人気学区の保活事情、料金、申込、選び方を網羅。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>中央区の学童保育 完全ガイド：プレディ＋民間で湾岸保活を乗り切る</title>
-      <link>https://012.kids/articles/chuo-gakudo-guide</link>
-      <guid isPermaLink="true">https://012.kids/articles/chuo-gakudo-guide</guid>
-      <description>中央区の学童保育を公立（プレディ・学童クラブ）と民間の両面から解説。月島・勝どき・晴海など湾岸エリアの保活事情、料金内訳、申込スケジュール、選び方まで網羅。</description>
-      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>小学校6年間の学校生活ガイド：学年別の特徴と家庭サポート</title>
-      <link>https://012.kids/articles/elementary-school-life-by-grade</link>
-      <guid isPermaLink="true">https://012.kids/articles/elementary-school-life-by-grade</guid>
-      <description>小1から小6までの学年別に学校生活の特徴、学習内容、友達関係の変化、家庭でのサポートポイントを公的情報をもとにまとめました。</description>
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

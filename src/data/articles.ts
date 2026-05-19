@@ -10,6 +10,138 @@ import { Article } from '@/types';
 
 export const ARTICLES: Article[] = [
   {
+    id: "art-1390",
+    slug: "kindergarten-complete-guide",
+    title: "幼稚園選びの完全ガイド：教育方針・費用・立地で比較する方法",
+    excerpt: "幼稚園選びの完全ガイド：教育方針・費用・立地で比較する方法を文部科学省等の公的情報をもとに解説。幼稚園選びの基礎知識から家庭でできる対応、相談先まで3〜5歳の保護者向けにまとめました。",
+    content: '',
+    stage: "pre",
+    categories: ["education"],
+    source: {
+      name: "文部科学省等の公的情報",
+      references: [
+          {
+                "title": "幼稚園教育要領",
+                "url": "https://www.mext.go.jp/",
+                "org": "文部科学省",
+                "stance": "neutral"
+          },
+          {
+                "title": "幼児教育",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "子どもの発達",
+                "url": "https://www.ncchd.go.jp/",
+                "org": "国立成育医療研究センター",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "文部科学省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":89,"reliability":25,"neutrality":23,"freshness":19,"ageRelevance":14,"readability":8},
+    publishedAt: "2026-05-19",
+    updatedAt: "2026-05-19",
+    imageUrl: "/articles/kindergarten-complete-guide.jpg",
+    readingTime: 10,
+    tags: ["幼稚園選び","教育方針","比較"],
+    relatedArticleIds: ["art-675","art-389","art-384","art-383","art-377","art-678"],
+  },
+  {
+    id: "art-1388",
+    slug: "nursery-cost-system",
+    title: "保育料はいくら？無償化制度と自治体ごとの違いを解説",
+    excerpt: "保育料はいくら？無償化制度と自治体ごとの違いを解説を内閣府等の公的情報をもとに解説。保育料の基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "内閣府等の公的情報",
+      references: [
+          {
+                "title": "幼児教育・保育の無償化",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "positive"
+          },
+          {
+                "title": "保育所利用",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "内閣府などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "内閣府のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":86,"reliability":27,"neutrality":21,"freshness":18,"ageRelevance":13,"readability":7},
+    publishedAt: "2026-05-19",
+    updatedAt: "2026-05-19",
+    imageUrl: "/articles/nursery-cost-system.jpg",
+    readingTime: 8,
+    tags: ["保育料","無償化","費用"],
+    relatedArticleIds: ["art-1176","art-1174","art-1186","art-1179","art-1057","art-1173"],
+  },
+  {
+    id: "art-1389",
+    slug: "nursery-sibling-entry",
+    title: "きょうだい同時入園のコツ：加点制度とポイント戦略",
+    excerpt: "きょうだい同時入園のコツ：加点制度とポイント戦略を厚生労働省等の公的情報をもとに解説。きょうだいの基礎知識から家庭でできる対応、相談先まで0〜2歳の保護者向けにまとめました。",
+    content: '',
+    stage: "0stage",
+    categories: ["lifestyle"],
+    source: {
+      name: "厚生労働省等の公的情報",
+      references: [
+          {
+                "title": "保育所入所",
+                "url": "https://www.mhlw.go.jp/",
+                "org": "厚生労働省",
+                "stance": "neutral"
+          },
+          {
+                "title": "子育て支援",
+                "url": "https://www.cfa.go.jp/",
+                "org": "こども家庭庁",
+                "stance": "positive"
+          },
+          {
+                "title": "待機児童対策",
+                "url": "https://www.cao.go.jp/",
+                "org": "内閣府",
+                "stance": "neutral"
+          }
+    ],
+      perspectives: {
+          "positive": "こども家庭庁などの機関は、適切な対応と正しい知識があれば、このテーマに関する多くの課題は解決可能としています。",
+          "neutral": "厚生労働省のデータによると、このテーマについては子どもの個性や環境に応じた個別の対応が重要とされています。",
+          "cautious": "専門家への相談を適宜行うことが推奨されています。"
+    },
+    },
+    score: {"total":83,"reliability":28,"neutrality":21,"freshness":17,"ageRelevance":11,"readability":6},
+    publishedAt: "2026-05-19",
+    updatedAt: "2026-05-19",
+    imageUrl: "/articles/nursery-sibling-entry.jpg",
+    readingTime: 8,
+    tags: ["きょうだい","入園","保活"],
+    relatedArticleIds: ["art-1186","art-1378","art-1176","art-1174","art-1388","art-1179"],
+  },
+  {
     id: "art-1386",
     slug: "nursery-nap-graduation",
     title: "お昼寝卒業のタイミング：保育園と家庭での生活リズム調整",
@@ -183,7 +315,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/nursery-morning-efficiency.jpg",
     readingTime: 12,
     tags: ["保育園","朝","時短"],
-    relatedArticleIds: ["art-1378","art-1176","art-1174","art-1186","art-1179","art-1057"],
+    relatedArticleIds: ["art-1378","art-1176","art-1174","art-1388","art-1186","art-1179"],
   },
   {
     id: "art-1383",
@@ -447,7 +579,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/hokatsu-strategy-guide.jpg",
     readingTime: 9,
     tags: ["保活","保育園","点数制度"],
-    relatedArticleIds: ["art-1382","art-1176","art-1174","art-1186","art-1179","art-1057"],
+    relatedArticleIds: ["art-1389","art-1382","art-1176","art-1174","art-1388","art-1186"],
   },
   {
     id: "art-1377",
@@ -623,7 +755,7 @@ export const ARTICLES: Article[] = [
     imageUrl: "/articles/single-parent-resources.jpg",
     readingTime: 10,
     tags: ["ひとり親","支援制度","手当"],
-    relatedArticleIds: ["art-1187","art-1176","art-1174","art-1186","art-1179","art-1057"],
+    relatedArticleIds: ["art-1187","art-1176","art-1174","art-1388","art-1186","art-1179"],
   },
   {
     id: "art-1373",

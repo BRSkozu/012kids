@@ -2,8 +2,8 @@
   "meta": {
     "description": "012.kids トピックDB - 毎日10件ずつ良質な記事を生成するためのトピック管理",
     "version": 1,
-    "lastGeneratedAt": "2026-05-18",
-    "totalGenerated": 108
+    "lastGeneratedAt": "2026-05-19",
+    "totalGenerated": 111
   },
   "pools": {
     "seasonal": {
@@ -5099,6 +5099,9 @@
     "nursery-parent-events",
     "nursery-teacher-talk",
     "nursery-nap-graduation",
-    "nursery-transfer-guide"
+    "nursery-transfer-guide",
+    "nursery-cost-system",
+    "nursery-sibling-entry",
+    "kindergarten-complete-guide"
   ]
 }
