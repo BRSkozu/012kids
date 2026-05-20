@@ -95,22 +95,49 @@ function getWardMonogram(wardName: string): string {
   return trimmed.slice(0, 2);
 }
 
+// Wikipedia Commons 上の23区章ファイル名は区によって命名が異なるため、
+// Special:FilePath 経由で複数パターンを順に試す（onError で次のパターンへフォールバック）。
+const WARD_CREST_COMMONS_NAME: Record<string, string> = {
+  chiyoda: 'Chiyoda', chuo: 'Chuo', minato: 'Minato', shinjuku: 'Shinjuku',
+  bunkyo: 'Bunkyo', taito: 'Taito', sumida: 'Sumida', koto: 'Koto',
+  shinagawa: 'Shinagawa', meguro: 'Meguro', ota: 'Ota', setagaya: 'Setagaya',
+  shibuya: 'Shibuya', nakano: 'Nakano', suginami: 'Suginami', toshima: 'Toshima',
+  kita: 'Kita', arakawa: 'Arakawa', itabashi: 'Itabashi', nerima: 'Nerima',
+  adachi: 'Adachi', katsushika: 'Katsushika', edogawa: 'Edogawa',
+};
+
+const CREST_PATTERNS = [
+  'Symbol_of_{NAME},_Tokyo.svg',
+  'Emblem_of_{NAME},_Tokyo.svg',
+  'Flag_of_{NAME},_Tokyo.svg',
+];
+
+function buildCrestUrls(wardSlug: string): string[] {
+  const name = WARD_CREST_COMMONS_NAME[wardSlug];
+  if (!name) return [];
+  return CREST_PATTERNS.map(
+    (p) =>
+      `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(
+        p.replace('{NAME}', name),
+      )}`,
+  );
+}
+
 function WardCrest({
   ward,
   areaGroup,
-  crestPath,
+  wardSlug,
 }: {
   ward: string;
   areaGroup: GakudoAreaGroup;
-  crestPath?: string;
+  wardSlug: string;
 }) {
   const accent = AREA_ACCENT[areaGroup];
   const monogram = getWardMonogram(ward);
   const isLong = monogram.length >= 2;
-  // 画像読み込み失敗時はモノグラムにフォールバック。
-  // 公式区章SVGはユーザーが scripts/fetch-ward-crests.mjs で /public/ward-crests/ に配置する想定。
-  const [imgError, setImgError] = useState(false);
-  const showImage = crestPath && !imgError;
+  const urls = useMemo(() => buildCrestUrls(wardSlug), [wardSlug]);
+  const [patternIdx, setPatternIdx] = useState(0);
+  const showImage = patternIdx < urls.length;
 
   return (
     <div
@@ -120,12 +147,14 @@ function WardCrest({
       {showImage ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={`${bp}${crestPath}`}
+          src={urls[patternIdx]}
           alt=""
           width={28}
           height={28}
           className="w-7 h-7 object-contain"
-          onError={() => setImgError(true)}
+          onError={() => setPatternIdx((i) => i + 1)}
+          loading="lazy"
+          referrerPolicy="no-referrer"
         />
       ) : (
         <span
@@ -149,7 +178,7 @@ function WardCard({ ward }: { ward: GakudoWardData }) {
       <div className={`absolute top-0 left-0 right-0 h-1 ${accent.dot}`} aria-hidden />
       <div className="p-4">
         <div className="flex items-start gap-3 mb-2.5">
-          <WardCrest ward={ward.ward} areaGroup={ward.areaGroup} crestPath={ward.crestPath} />
+          <WardCrest ward={ward.ward} areaGroup={ward.areaGroup} wardSlug={ward.wardSlug} />
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between gap-2">
               <h3
